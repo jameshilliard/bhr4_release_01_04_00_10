@@ -1,0 +1,5342 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pavuk-0.9pl25e\n"
+"POT-Creation-Date: 2001-07-30 10:14+0200\n"
+"PO-Revision-Date: 2000-04-28 12:00+01\n"
+"Last-Translator: Antonio Fragola <mrshark@linuxfan.com>\n"
+"Language-Team: ITALIAN <it@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: abstract.c:46
+#, c-format
+msgid "Suspending download for %d seconds.\n"
+msgstr ""
+
+#: abstract.c:84 doc.c:550
+msgid "File redirect\n"
+msgstr "Ridirezione file\n"
+
+#: abstract.c:120
+#, c-format
+msgid "Loading copy from local NS cache - %s\n"
+msgstr "Caricamento di una copia dalla cache locale di NS - %s\n"
+
+#: abstract.c:152
+#, fuzzy, c-format
+msgid "Loading copy from local Mozilla cache - %s\n"
+msgstr "Caricamento di una copia dalla cache locale di NS - %s\n"
+
+#: abstract.c:185
+#, fuzzy, c-format
+msgid "Loading copy from local MSIE cache - %s\n"
+msgstr "Caricamento di una copia dalla cache locale di NS - %s\n"
+
+#: abstract.c:221
+msgid "Unsupported URL\n"
+msgstr "URL non gestita\n"
+
+#: abstract.c:341 abstract.c:377
+msgid "Warning: broken ftp transfer ...\n"
+msgstr "Attenzione: trasferimento ftp interrotto ...\n"
+
+#: abstract.c:351
+msgid "Error removing FTP document from remote server\n"
+msgstr ""
+
+#: abstract.c:496
+msgid "Error reading document with \"chunked\" transfer encoding!\n"
+msgstr ""
+"Errore in lettura del documento con codifica di trasferimento \"chunked\"!\n"
+
+#: ainterface.c:118
+#, c-format
+msgid "Removing unsupported URL: %s\n"
+msgstr "Rimozione URL non gestita: %s\n"
+
+#: ainterface.c:199
+msgid "Specify at least one starting URL!"
+msgstr "Specifica almeno un'URL di partenza!"
+
+#: ainterface.c:201
+msgid "Specify at least one starting URL!\n"
+msgstr "Specifica almeno un'URL di partenza!\n"
+
+#: ainterface.c:472
+msgid "Can't list available message catalogs\n"
+msgstr "Impossibile elencare i cataloghi di messaggi disponibili\n"
+
+#: authinfo.c:107
+msgid "Bad section - specify protocol\n"
+msgstr "Sezione errata - specificare il protocollo\n"
+
+#: authinfo.c:112
+msgid "Bad section - specify hostname\n"
+msgstr "Sezione errata - specificare il nome dell'host\n"
+
+#: authinfo.c:159
+#, c-format
+msgid "Unable to parse : \"%s\"\n"
+msgstr "Impossibile interpretare : \"%s\"\n"
+
+#: authinfo.c:179
+#, c-format
+msgid "Bad protocol - %s\n"
+msgstr "Protocollo errato - %s\n"
+
+#: authinfo.c:190
+#, c-format
+msgid "Bad port number %s\n"
+msgstr "Numero di porta errato %s\n"
+
+#: authinfo.c:211
+#, c-format
+msgid "Unknown auth type - %s\n"
+msgstr "Tipo di autorizzazione sconosciuto - %s\n"
+
+#: cleanup.c:60
+msgid "press any key to exit\n"
+msgstr "premere una tasto per uscire\n"
+
+#: cmdparse.c:129
+#, fuzzy, c-format
+msgid "Error parsing commandline at: %s\n"
+msgstr "Errore di pianificazione\n"
+
+#: cmdparse.c:186
+#, fuzzy, c-format
+msgid "Unable to parse commandline: %s\n"
+msgstr "Impossibile interpretare : %s\n"
+
+#: config.c:44
+msgid "Level order"
+msgstr "Ordinamento per livello"
+
+#: config.c:45
+msgid "Level order, inline first"
+msgstr "Ordinamento per livello, prima inline"
+
+#: config.c:46
+msgid "Pre order"
+msgstr "Pre-ordinamento"
+
+#: config.c:47
+msgid "Pre order, inline first"
+msgstr "Pre-ordinamento, prima inline"
+
+#: config.c:115
+#, c-format
+msgid ""
+"Usage:  %s  [options]  [any number of URLS]\n"
+"pavuk-%s %s\n"
+msgstr ""
+"Usage:  %s  [opzioni]  [qualsiasi numero di URL]\n"
+"pavuk-%s %s\n"
+
+#: config.c:131
+#, fuzzy, c-format
+msgid "Type \"%s --help\" for long help\n"
+msgstr "Digita \"%s -h\" per aiuto esteso\n"
+
+#: config.c:139
+msgid "Optional features available :\n"
+msgstr "Caratteristiche opzionali disponibili :\n"
+
+#: config.c:141
+msgid " - Debug mode\n"
+msgstr " - Modalità debug\n"
+
+#: config.c:145
+msgid " - GNU gettext internationalization of messages\n"
+msgstr " - Internazionalizzazione dei messaggi GNU gettext\n"
+
+#: config.c:149
+msgid " - flock() document locking\n"
+msgstr " - flock() blocco dei documenti\n"
+
+#: config.c:153
+msgid " - fcntl() document locking\n"
+msgstr " - fcntl() blocco dei documenti\n"
+
+#: config.c:158
+msgid " - Gtk GUI interface\n"
+msgstr " - Interfaccia GUI Gtk\n"
+
+#: config.c:161
+msgid " - URL tree preview\n"
+msgstr " - Anteprima dell'albero dell'URL\n"
+
+#: config.c:166
+msgid " - http over SSL\n"
+msgstr " - http su SSL\n"
+
+#: config.c:171
+msgid " - Socks v4 proxy support\n"
+msgstr " - Gestione proxy Socks v4\n"
+
+#: config.c:173
+msgid " - Socks v5 proxy support\n"
+msgstr " - Gestione proxy Socks v5\n"
+
+#: config.c:177
+msgid " - with filesystem free space checking\n"
+msgstr " - con controllo dello spazio libero su disco\n"
+
+#: config.c:181
+msgid " - with optional regex patterns in -fnrules and -*rpattern options\n"
+msgstr " - con pattern opzionali RE nelle opzioni -fnrules e -*rpattern\n"
+
+#: config.c:185
+msgid " - with POSIX regexp\n"
+msgstr " - con RE POSIX\n"
+
+#: config.c:189
+msgid " - with Bell V8 regexp\n"
+msgstr " - con RE Bell V8\n"
+
+#: config.c:193
+msgid " - with BSD regexp\n"
+msgstr " - con RE BSD\n"
+
+#: config.c:197
+msgid " - with GNU regexp\n"
+msgstr " - con RE GNU\n"
+
+#: config.c:201
+#, fuzzy
+msgid " - with PCRE regexp\n"
+msgstr " - con RE POSIX\n"
+
+#: config.c:205
+msgid " - with support for loading files from Netscape browser cache\n"
+msgstr " - con supporto per caricare i file dalla cache del browser Netscape\n"
+
+#: config.c:209
+msgid ""
+" - with support for detecting whether pavuk is running as background job\n"
+msgstr ""
+" - con supporto per determinare se pavuk sta funzionando come job sullo "
+"sfondo\n"
+
+#: config.c:213
+msgid " - with multithreading support\n"
+msgstr ""
+
+#: config.c:217
+msgid " - with NTLM authorization support\n"
+msgstr ""
+
+#: config.c:221
+msgid " - with JavaScript bindings\n"
+msgstr ""
+
+#: config.c:295
+#, c-format
+msgid "HTML tag not supported : %s.%s\n"
+msgstr "Tag HTML non gestito : %s.%s\n"
+
+#: config.c:654
+#, fuzzy
+msgid "Error parsing commandline\n"
+msgstr "Errore di pianificazione\n"
+
+#: config.c:661
+#, fuzzy, c-format
+msgid "Not enough number of parameters for \"-%s\" option\n"
+msgstr "Numero di parametri insufficiente \"%s\"\n"
+
+#: config.c:668
+#, fuzzy, c-format
+msgid "Unknown option %s\n"
+msgstr "Porta sconosciuta \"%s\"\n"
+
+#: config.c:675
+#, c-format
+msgid "Wrong format of option %s\n"
+msgstr ""
+
+#: config.c:684
+#, c-format
+msgid "WARNING: option \"-%s\" not supported in current configuration!\n"
+msgstr ""
+
+#: config.c:697
+#, fuzzy, c-format
+msgid "Please specify number with parameter \"-%s\"\n"
+msgstr "Per favore specifica un numero col parametro \"%s\"\n"
+
+#: config.c:762 config.c:1113 http_proxy.c:120
+#, c-format
+msgid "Unknown port \"%s\"\n"
+msgstr "Porta sconosciuta \"%s\"\n"
+
+#: config.c:778 config.c:1126
+#, c-format
+msgid "Bad auth scheme \"%s\"\n"
+msgstr "Tipo di autorizzazione errata \"%s\"\n"
+
+#: config.c:788 config.c:1136
+#, c-format
+msgid "Unknow operation mode \"%s\"\n"
+msgstr "Modalità operativa sconosciuta \"%s\"\n"
+
+#: config.c:810
+#, fuzzy, c-format
+msgid "Please specify floating number with parameter \"-%s\"\n"
+msgstr ""
+"Per favore specifica un numero in virgola mobile col parametro \"%s\"\n"
+
+#: config.c:829
+#, fuzzy, c-format
+msgid "Please specify proper condition type for -%s (%s)\n"
+msgstr "Per favore specifica un tipo di condizione adeguata per %s (%s)\n"
+
+#: config.c:852
+#, fuzzy, c-format
+msgid "Please specify valid RE with parameter \"-%s\"\n"
+msgstr "Per favore specifica una RE valida col parametro \"%s\"\n"
+
+#: config.c:863 config.c:1248
+#, c-format
+msgid "Unknown URL scheduling strategy - \"%s\"\n"
+msgstr "Strategia di pianificazione per l'URL sconosciuta - \"%s\"\n"
+
+#: config.c:871 config.c:1259
+#, c-format
+msgid "Unknown SSL version - \"%s\"\n"
+msgstr "Versione di SSL sconosciuta - \"%s\"\n"
+
+#: config.c:880 config.c:1270
+#, c-format
+msgid "Invalid additional HTTP header - \"%s\"\n"
+msgstr "Header HTTP aggiuntivo non valido - \"%s\"\n"
+
+#: config.c:903 config.c:1293
+#, c-format
+msgid "Invalid request specification - \"%s\"\n"
+msgstr "Specifica di richiesta non valida - \"%s\"\n"
+
+#: config.c:948
+#, fuzzy, c-format
+msgid "Invalid parameters for \"-%s\" option\n"
+msgstr "Parametro tempo errato \"%s\"\n"
+
+#: config.c:964
+#, fuzzy, c-format
+msgid "Invalid number list \"%s\" for option \"-%s\"\n"
+msgstr "Parametro tempo errato \"%s\"\n"
+
+#: config.c:981
+#, fuzzy, c-format
+msgid "Invalid FTP login handshake string \"%s\" for option \"-%s\"\n"
+msgstr "Parametro tempo errato \"%s\"\n"
+
+#: config.c:1031
+#, c-format
+msgid "WARNING: option \"%s\" not supported in current configuration!\n"
+msgstr ""
+
+#: config.c:1055
+#, c-format
+msgid "Please specify number \"%s\"\n"
+msgstr "Per favore specifica un numero \"%s\"\n"
+
+#: config.c:1073
+#, c-format
+msgid "Only \"true\" & \"false\" is allowed : \"%s\"\n"
+msgstr "Solo \"true\" & \"false\" sono ammessi : \"%s\"\n"
+
+#: config.c:1147
+#, c-format
+msgid "Bad time parameter \"%s\"\n"
+msgstr "Parametro tempo errato \"%s\"\n"
+
+#: config.c:1178
+#, c-format
+msgid "Please specify floating number \"%s\"\n"
+msgstr "Per favore specifica un numero in virgola mobile \"%s\"\n"
+
+#: config.c:1195
+#, c-format
+msgid "Please specify proper arguments for %s\n"
+msgstr "Per favore specifica un argomento adeguato per %s\n"
+
+#: config.c:1207
+#, c-format
+msgid "Please specify proper condition type for %s (%s)\n"
+msgstr "Per favore specifica un tipo di condizione adeguata per %s (%s)\n"
+
+#: config.c:1235
+#, c-format
+msgid "Please specify valid RE \"%s\"\n"
+msgstr "Per favore specifica una RE valida \"%s\"\n"
+
+#: config.c:1327
+#, fuzzy, c-format
+msgid "Invalid js_transform specification - \"%s\"\n"
+msgstr "Specifica di richiesta non valida - \"%s\"\n"
+
+#: config.c:1347
+#, fuzzy, c-format
+msgid "Invalid number list specification - \"%s\"\n"
+msgstr "Specifica di richiesta non valida - \"%s\"\n"
+
+#: config.c:1362
+#, c-format
+msgid "Invalid FTP login handshake string \"%s\".\n"
+msgstr ""
+
+#: config.c:1388
+#, c-format
+msgid "Unable to parse \"%s\"\n"
+msgstr "Impossibile interpretare \"%s\"\n"
+
+#: config.c:1430
+#, fuzzy, c-format
+msgid "ERROR: Scenario loading failed (%s)\n"
+msgstr "ATTENZIONE: Fallito il caricamento dello scenario (%s)\n"
+
+#: cookie.c:216
+#, c-format
+msgid "Unable to parse : %s\n"
+msgstr "Impossibile interpretare : %s\n"
+
+#: cookie.c:389
+msgid "Updating cookie file\n"
+msgstr "Aggiornamento del file dei cookie\n"
+
+#: cookie.c:418
+msgid "Cookie file has changed - > synchronizing\n"
+msgstr "Il file del cookie è cambiato - > sincronizzazione\n"
+
+#: cookie.c:567
+#, c-format
+msgid "Server %s is trying to set cookie for %s domain\n"
+msgstr "Il server %s sta provando a impostare un cookie per il dominio %s\n"
+
+#: cookie.c:578
+#, c-format
+msgid "Removing cookie from disabled domain %s\n"
+msgstr "Rimozione del cookie dal dominio disabiliato %s\n"
+
+#: debugl.c:16
+msgid "HTML parsers"
+msgstr "Interpreti HTML"
+
+#: debugl.c:17
+msgid "Server responses"
+msgstr "Risposte del server"
+
+#: debugl.c:18
+msgid "Client requests"
+msgstr "Richieste del client"
+
+#: debugl.c:19
+msgid "Procedure calling"
+msgstr "Chiamata a procedura"
+
+#: debugl.c:20
+msgid "File locking"
+msgstr "Blocco del file"
+
+#: debugl.c:21
+msgid "Networking code"
+msgstr "Codice di rete"
+
+#: debugl.c:22
+msgid "Miscelanous"
+msgstr "Varie"
+
+#: debugl.c:23
+msgid "Extended user infos"
+msgstr "Informazioni estese dell'utente"
+
+#: debugl.c:24
+msgid "Multithreading - locking"
+msgstr "Multithreading - blocco"
+
+#: debugl.c:25
+msgid "Multithreading - threads"
+msgstr "Multithreading - threads"
+
+#: debugl.c:26
+msgid "POST request data"
+msgstr "Richiesta di dati POST"
+
+#: debugl.c:27
+msgid "Limiting conditions"
+msgstr ""
+
+#: debugl.c:66
+#, c-format
+msgid "Bad debug level selection : %s\n"
+msgstr "Selezione errata del livello di debug : %s\n"
+
+#: decode.c:184
+msgid "decode"
+msgstr "decodifica"
+
+#: digest_auth.c:155
+msgid "Trying to do HTTP Digest authorization\n"
+msgstr ""
+
+#: digest_auth.c:202
+msgid "Trying to do HTTP proxy Digest authorization\n"
+msgstr ""
+
+#: dinfo.c:368 dinfo.c:387
+#, c-format
+msgid "Error parsing .pavuk_info file field: %s\n"
+msgstr "Errore di interpretazione nel file .pavuk_info del campo: %s\n"
+
+#: doc.c:297
+msgid "Transfering data"
+msgstr "Trasferimento dei dati"
+
+#: doc.c:312
+msgid "setsockopt: SO_RCVBUF failed"
+msgstr "setsockopt: SO_RCVBUF fallito"
+
+#: doc.c:333
+msgid "storing document"
+msgstr "memorizzazione del documento"
+
+#: doc.c:399
+#, fuzzy
+msgid "Document transfer data"
+msgstr "Trasferimento dei dati completato"
+
+#: doc.c:420
+msgid "Data transfer done"
+msgstr "Trasferimento dei dati completato"
+
+#: doc.c:597
+#, c-format
+msgid "Trying to resume from position %d \n"
+msgstr "Tentativo di ripresa (resume) dalla posizione %d \n"
+
+#: doc.c:662
+msgid "Opening connection"
+msgstr "Apertura connessione"
+
+#: doc.c:686
+msgid "Loading local copy\n"
+msgstr "Caricamento della copia locale\n"
+
+#: doc.c:912
+msgid "File may be truncated\n"
+msgstr "Il file può essere troncato\n"
+
+#: doc.c:936
+msgid "Decoding document - OK\n"
+msgstr "Decodifica del documento - OK\n"
+
+#: doc.c:939
+msgid "Decoding document - failed\n"
+msgstr "Decodifica del documento - fallita\n"
+
+#: doc.c:942
+msgid "Unsupported document encoding\n"
+msgstr "Codifica del documento non supportata\n"
+
+#: doc.c:946
+msgid "Received Encoded file but decoding not allowed (untouched)\n"
+msgstr ""
+"Ricevuto un file codificato ma la decodifica non è permessa (intatto)\n"
+
+#: doc.c:1116
+#, c-format
+msgid "Removing improper document : %s\n"
+msgstr "Rimozione del documento irregolare : %s\n"
+
+#: doc.c:1178 doc.c:1244
+msgid "Local file"
+msgstr "File locale"
+
+#: doc.c:1184
+msgid "Gopher/Text File"
+msgstr "Gopher/File di testo"
+
+#: doc.c:1187
+msgid "Gopher/Directory"
+msgstr "Gopher/Directory"
+
+#: doc.c:1190
+msgid "Gopher/CSO phone book"
+msgstr "Gopher/Rubrica CSO"
+
+#: doc.c:1193
+msgid "Gopher/Error"
+msgstr "Gopher/Errore"
+
+#: doc.c:1196
+msgid "Gopher/BINHEX"
+msgstr "Gopher/BINHEX"
+
+#: doc.c:1199
+msgid "Gopher/DOS bin"
+msgstr "Gopher/Binario DOS"
+
+#: doc.c:1202
+msgid "Gopher/UUencoded"
+msgstr "Gopher/UUencoded"
+
+#: doc.c:1205
+msgid "Gopher/Search index"
+msgstr "Gopher/Indice di ricerca"
+
+#: doc.c:1208
+msgid "Gopher/Telnet session"
+msgstr "Gopher/Sessione Telnet"
+
+#: doc.c:1211
+msgid "Gopher/bin"
+msgstr "Gopher/binario"
+
+#: doc.c:1214
+msgid "Gopher/Duplicated server"
+msgstr "Gopher/Server Duplicato"
+
+#: doc.c:1217
+msgid "Gopher/TN3270"
+msgstr "Gopher/TN3270"
+
+#: doc.c:1220
+msgid "Gopher/GIF"
+msgstr "Gopher/GIF"
+
+#: doc.c:1223
+msgid "Gopher/Image"
+msgstr "Gopher/Immagine"
+
+#: doc.c:1229
+msgid "FTP/Directory"
+msgstr "FTP/Directory"
+
+#: doc.c:1231
+msgid "FTP/File"
+msgstr "FTP/File"
+
+#: doc.c:1235
+msgid "FTPS/Directory"
+msgstr "FTPS/Directory"
+
+#: doc.c:1237
+msgid "FTPS/File"
+msgstr "FTPS/File"
+
+#: doc.c:1240
+msgid "Unsupported type"
+msgstr "Tipo non gestito"
+
+#: doc.c:1447
+#, c-format
+msgid "S: %s [R: %s] [ET: %s] [RT: %s] \r"
+msgstr "S: %s [R: %s] [ET: %s] [RT: %s] \r"
+
+#: doc.c:1450
+#, c-format
+msgid "S: %s [R: %s] [ET: %s] \r"
+msgstr "S: %s [R: %s] [ET: %s] \r"
+
+#: doc.c:1490
+#, c-format
+msgid "Waiting to releases document lock on: %s\n"
+msgstr "Attesa per il rilascio del blocco sul documento: %s\n"
+
+#: doc.c:1730
+msgid "Rewriting links inside parent documents"
+msgstr "Riscrittura dei collegamenti all'interno dei documenti d'origine"
+
+#: errcode.c:21
+#, c-format
+msgid "%s: user break\n"
+msgstr "%s: interruzione dell'utente\n"
+
+#: errcode.c:28
+#, c-format
+msgid "%s: OK\n"
+msgstr "%s: OK\n"
+
+#: errcode.c:31
+#, c-format
+msgid "%s: ERROR: storing document\n"
+msgstr "%s: ERRORE: durante la memorizzazione del documento\n"
+
+#: errcode.c:34
+#, c-format
+msgid "%s: ERROR: opening file\n"
+msgstr "%s: ERRORE: in apertura del file\n"
+
+#: errcode.c:37
+#, c-format
+msgid "%s: ERROR: URL pointing to local directory is not supported\n"
+msgstr ""
+"%s: ERRORE: un'URL che punta ad una directory locale non è supportata\n"
+
+#: errcode.c:40
+#, c-format
+msgid "%s: ERROR: unknown\n"
+msgstr "%s: ERRORE: sconosciuto\n"
+
+#: errcode.c:43
+#, c-format
+msgid "%s: ERROR: document is locked\n"
+msgstr "%s: ERRORE: il documento è bloccato\n"
+
+#: errcode.c:46
+#, c-format
+msgid "%s: ERROR: reading socket\n"
+msgstr "%s: ERRORE: in lettura del socket\n"
+
+#: errcode.c:49
+#, c-format
+msgid "%s: MESSAGE: bigger than maximal allowed size\n"
+msgstr "%s: MESSAGGIO: più grande della dimensione massima ammessa\n"
+
+#: errcode.c:52
+#, c-format
+msgid "%s: MESSAGE: disabled by user-exit script condition\n"
+msgstr ""
+"%s: MESSAGGIO: disabilitato dalla condizione dello script in uscita "
+"dell'utente\n"
+
+#: errcode.c:55
+#, c-format
+msgid "%s: MESSAGE: smaller than minimal allowed size\n"
+msgstr "%s: MESSAGGIO: più piccolo della dimensione minima ammessa\n"
+
+#: errcode.c:58
+#, c-format
+msgid "%s: MESSAGE: this mime type is not allowed (%s)\n"
+msgstr "%s: MESSAGGIO: questo tipo mime non è consentito (%s)\n"
+
+#: errcode.c:61
+#, c-format
+msgid "%s: ERROR: error in proxy connect\n"
+msgstr "%s: ERRORE: errore di connessione al proxy\n"
+
+#: errcode.c:64
+#, c-format
+msgid "%s: ERROR: transfer broken by user\n"
+msgstr "%s: ERRORE: trasferimento interrotto dall'utente\n"
+
+#: errcode.c:67
+#, c-format
+msgid "%s: MESSAGE: file modification time doesn't fit to specified interval\n"
+msgstr ""
+"%s: MESSAGGIO: il tempo di modifica del file non rientra nell'intervallo "
+"specificato\n"
+
+#: errcode.c:70
+#, c-format
+msgid "%s: ERROR: file has zero size - possible error\n"
+msgstr "%s: ERRORE: il file ha dimensione zero - possibile errore\n"
+
+#: errcode.c:73
+#, c-format
+msgid "%s: MESSAGE: document was already processed\n"
+msgstr "%s: MESSAGGIO: il documento è già stato elaborato\n"
+
+#: errcode.c:76
+#, c-format
+msgid "%s: MESSAGE: document was disabled by user\n"
+msgstr "%s: MESSAGGIO: il documento è stato disabilitato dall'utente\n"
+
+#: errcode.c:79
+#, c-format
+msgid "%s: MESSAGE: document was disabled by limiting rules\n"
+msgstr ""
+"%s: MESSAGGIO: il documento è stato disabilitato dalle regole di "
+"limitazione\n"
+
+#: errcode.c:82
+#, c-format
+msgid "%s: WARNING: transfer rate lower than minimal allowed\n"
+msgstr ""
+"%s: ATTENZIONE: il tasso di trasferimento è più basso del limite consentito\n"
+
+#: errcode.c:85
+#, c-format
+msgid "%s: WARNING: file size quota exceeded, rest will be truncated\n"
+msgstr ""
+"%s: ATTENZIONE: quota per la dimensione del file superata, il resto sarà "
+"troncato\n"
+
+#: errcode.c:88
+#, c-format
+msgid "%s: WARNING: transfer quota exceeded, breaking download\n"
+msgstr ""
+"%s: ATTENZIONE: quota di trasferimento superata, interruzione dello "
+"scaricamento\n"
+
+#: errcode.c:91
+#, c-format
+msgid "%s: ERROR: low free space on filesystem, breaking transfer\n"
+msgstr ""
+"%s: ERRORE: spazio libero insufficiente nel filesystem, interruzione dello "
+"scaricamento\n"
+
+#: errcode.c:94
+#, c-format
+msgid ""
+"%s: WARNING: maximal allowed running time exceeded, downloading will break\n"
+msgstr ""
+"%s: ATTENZIONE: tempo massimo di esecuzione superato, lo scaricamento sarà "
+"interrotto\n"
+
+#: errcode.c:97
+#, c-format
+msgid "%s: ERROR: unnown FTP error\n"
+msgstr "%s: ERRORE: errore FTP sconosciuto\n"
+
+#: errcode.c:100
+#, c-format
+msgid "%s: ERROR: FTP server doesn't support REST command\n"
+msgstr "%s: ERRORE: il server FTP non supporta il comando REST\n"
+
+#: errcode.c:104
+#, c-format
+msgid "%s: ERROR: unable to list directory content\n"
+msgstr "%s: ERRORE: impossibile fare l'elenco del contenuto della directory\n"
+
+#: errcode.c:107
+#, c-format
+msgid "%s: ERROR: unable to connect to FTP server\n"
+msgstr "%s: ERRORE: connessione impossibile al server FTP\n"
+
+#: errcode.c:110
+#, c-format
+msgid "%s: ERROR: FTP authentification - bad username\n"
+msgstr "%s: ERRORE: autenticazione FTP - nome utente errato\n"
+
+#: errcode.c:113
+#, c-format
+msgid "%s: ERROR: FTP authentification - bad password\n"
+msgstr "%s: ERRORE: autenticazione FTP - password errata\n"
+
+#: errcode.c:116
+#, fuzzy, c-format
+msgid "%s: ERROR: FTP proxy authentification - bad username\n"
+msgstr "%s: ERRORE: autenticazione FTP - nome utente errato\n"
+
+#: errcode.c:119
+#, fuzzy, c-format
+msgid "%s: ERROR: FTP proxy authentification - bad password\n"
+msgstr "%s: ERRORE: autenticazione FTP - password errata\n"
+
+#: errcode.c:122
+#, c-format
+msgid "%s: ERROR: unable to open FTP data connection\n"
+msgstr "%s: ERRORE: impossibile aprire una connessione dati FTP\n"
+
+#: errcode.c:125
+#, c-format
+msgid "%s: ERROR: unable to get file from FTP server\n"
+msgstr "%s: ERRORE: impossibile ricevere il file dal server FTP\n"
+
+#: errcode.c:128
+#, c-format
+msgid "%s: ERROR: FTP server doesn't support MDTM command\n"
+msgstr "%s: ERRORE: il server FTP non supporta il comando MDTM\n"
+
+#: errcode.c:131
+#, c-format
+msgid "%s: ERROR: file from FTP server is truncated\n"
+msgstr "%s: ERRORE: il file dal server FTP è troncato\n"
+
+#: errcode.c:135
+#, c-format
+msgid "%s: MESSAGE: reget unneeded - file is up to date\n"
+msgstr "%s: MESSAGGIO: riscaricamento non necessario - il file è aggiornato\n"
+
+#: errcode.c:138
+#, c-format
+msgid "%s: MESSAGE: FTP transfer not allowed because of rules\n"
+msgstr "%s: MESSAGGIO: trasferimento FTP non consentito dalle regole\n"
+
+#: errcode.c:141
+#, c-format
+msgid ""
+"%s: WARNING: FTP directory URL, but FTP directory not allowed (-FTPdir)\n"
+msgstr ""
+"%s: ATTENZIONE: URL di directory FTP, ma le directory FTP non sono "
+"consentite (-FTPdir)\n"
+
+#: errcode.c:144
+#, c-format
+msgid "%s: WARNING: FTP login_handshake failed\n"
+msgstr ""
+
+#: errcode.c:147
+#, c-format
+msgid "%s: ERROR: unknown HTTP error\n"
+msgstr "%s: ERRORE: errore HTTP sconosciuto\n"
+
+#: errcode.c:150
+#, c-format
+msgid "%s: ERROR: unable to connect to HTTP server\n"
+msgstr "%s: ERRORE: impossibile connettersi al server HTTP\n"
+
+#: errcode.c:153
+#, c-format
+msgid "%s: ERROR: HTTP server doesn't support partial content retrieving\n"
+msgstr ""
+"%s: ERRORE: il server HTTP non consente lo scaricamento parziale di "
+"contenuti\n"
+
+#: errcode.c:156
+#, c-format
+msgid "%s: ERROR: broken HTTP request send\n"
+msgstr "%s: ERRORE: invio della richiesta HTTP interrotto\n"
+
+#: errcode.c:159
+#, fuzzy, c-format
+msgid "%s: ERROR: failed to read HTTP response\n"
+msgstr "%s: ERRORE: impossibile inviare i dati della richiesta HTTP\n"
+
+#: errcode.c:162
+#, c-format
+msgid "%s: ERROR: unexpected HTTP response code after trying to reget\n"
+msgstr ""
+
+#: errcode.c:166
+#, c-format
+msgid "%s: ERROR: unable to send HTTP request data\n"
+msgstr "%s: ERRORE: impossibile inviare i dati della richiesta HTTP\n"
+
+#: errcode.c:169
+#, c-format
+msgid "%s: MESSAGE: redirecting to another location\n"
+msgstr "%s: MESSAGGIO: ridirezione in un'altra posizione\n"
+
+#: errcode.c:172
+#, c-format
+msgid "%s: ERROR: HTTP document is truncated\n"
+msgstr "%s: ERRORE: il documento HTTP è truncato\n"
+
+#: errcode.c:175
+#, c-format
+msgid "%s: ERROR: cyclic redirection!\n"
+msgstr "%s: ERRORE: ridirezione ciclica!\n"
+
+#: errcode.c:178
+#, c-format
+msgid "%s: ERROR: redirecting to unsupported URL\n"
+msgstr "%s: ERRORE: ridirezione ad un'URL non supportata\n"
+
+#: errcode.c:181
+#, c-format
+msgid "%s: ERROR: unable to connect to proxy server\n"
+msgstr "%s: ERRORE: impossibile connettersi al server proxy\n"
+
+#: errcode.c:184
+#, fuzzy, c-format
+msgid "%s: ERROR: received bad redirect response from server\n"
+msgstr "%s: ERRORE: il documento è stato rimosso dal server HTTP\n"
+
+#: errcode.c:187
+#, fuzzy, c-format
+msgid "%s: ERROR: unable to do NTLM authorization\n"
+msgstr "%s: ERRORE: impossibile aprire una connessione dati FTP\n"
+
+#: errcode.c:190
+#, fuzzy, c-format
+msgid "%s: ERROR: unable to do HTTP Digest authorization\n"
+msgstr "%s: ERRORE: impossibile inviare i dati della richiesta HTTP\n"
+
+#: errcode.c:193
+#, fuzzy, c-format
+msgid "%s: ERROR: unable to do NTLM proxy authorization\n"
+msgstr "%s: ERRORE: impossibile aprire una connessione dati FTP\n"
+
+#: errcode.c:196
+#, fuzzy, c-format
+msgid "%s: ERROR: unable to do HTTP proxy Digest authorization\n"
+msgstr "%s: ERRORE: impossibile inviare i dati della richiesta HTTP\n"
+
+#: errcode.c:199
+#, fuzzy, c-format
+msgid "%s: ERROR: HTTP client sends bad request\n"
+msgstr "%s: ERRORE: il client HTTP invia richieste errate\n"
+
+#: errcode.c:202
+#, c-format
+msgid "%s: ERROR: HTTP authentication is required\n"
+msgstr "%s: ERRORE: è richiesta l'autenticazione HTTP\n"
+
+#: errcode.c:205
+#, c-format
+msgid "%s: ERROR: HTTP proxy authentication is required\n"
+msgstr "%s: ERRORE: è richiesta l'autenticazione HTTP proxy\n"
+
+#: errcode.c:208
+#, c-format
+msgid "%s: ERROR: HTTP payment required\n"
+msgstr "%s: ERRORE: è richiesto HTTP payment\n"
+
+#: errcode.c:211
+#, c-format
+msgid "%s: ERROR: forbidden HTTP request\n"
+msgstr "%s: ERRORE: richiesta HTTP proibita\n"
+
+#: errcode.c:214
+#, c-format
+msgid "%s: ERROR: HTTP document not found\n"
+msgstr "%s: ERRORE: documento HTTP non trovato\n"
+
+#: errcode.c:217
+#, c-format
+msgid "%s: ERROR: HTTP remote server error\n"
+msgstr "%s: ERRORE: errore del server HTTP remoto\n"
+
+#: errcode.c:220
+#, c-format
+msgid "%s: ERROR: HTTP server replied with connection timeout response\n"
+msgstr ""
+"%s: ERROR: il server HTTP ha replicato con una risposta di tempo limite di "
+"connessione\n"
+
+#: errcode.c:223
+#, c-format
+msgid "%s: ERROR: HTTP server replied with conflict response\n"
+msgstr ""
+"%s: ERRORE: il server HTTP ha replicato con una risposta di conflitto\n"
+
+#: errcode.c:226
+#, c-format
+msgid "%s: ERROR: document was removed from HTTP server\n"
+msgstr "%s: ERRORE: il documento è stato rimosso dal server HTTP\n"
+
+#: errcode.c:229
+#, c-format
+msgid "%s: ERROR: you must use proxy to access this URL\n"
+msgstr ""
+
+#: errcode.c:232
+#, fuzzy, c-format
+msgid "%s: ERROR: 306\n"
+msgstr "%s: ERRORE: sconosciuto\n"
+
+#: errcode.c:235
+#, c-format
+msgid ""
+"%s: ERROR: used HTTP method is not supported or not allowed for this URL\n"
+msgstr ""
+
+#: errcode.c:238
+#, fuzzy, c-format
+msgid "%s: ERROR: client doesn't accept MIME type of requested URL\n"
+msgstr "%s: ERRORE: il client HTTP invia richieste errate\n"
+
+#: errcode.c:241
+#, c-format
+msgid "%s: ERROR: in request header is missing Content-Length: header\n"
+msgstr ""
+
+#: errcode.c:244
+#, fuzzy, c-format
+msgid "%s: ERROR: preconditions in request failed for requested URL\n"
+msgstr "%s: ERRORE: ridirezione ad un'URL non supportata\n"
+
+#: errcode.c:247
+#, fuzzy, c-format
+msgid "%s: ERROR: request body too large\n"
+msgstr "%s: ERRORE: impossibile connettersi al server proxy\n"
+
+#: errcode.c:250
+#, fuzzy, c-format
+msgid "%s: ERROR: request URL too long\n"
+msgstr "%s: ERRORE: invio della richiesta HTTP interrotto\n"
+
+#: errcode.c:253
+#, fuzzy, c-format
+msgid "%s: ERROR: resource in format unsupported for this request\n"
+msgstr "%s: ERRORE: ridirezione ad un'URL non supportata\n"
+
+#: errcode.c:256
+#, fuzzy, c-format
+msgid "%s: ERROR: requested bad range of document\n"
+msgstr "%s: ERRORE: durante la memorizzazione del documento\n"
+
+#: errcode.c:259
+#, fuzzy, c-format
+msgid "%s: ERROR: failed to fulfill expectation from request\n"
+msgstr "%s: ERRORE: impossibile ricevere il file dal server FTP\n"
+
+#: errcode.c:262
+#, fuzzy, c-format
+msgid "%s: ERROR: requested HTTP method not implemented on server side\n"
+msgstr "%s: ERRORE: errore del server HTTP remoto\n"
+
+#: errcode.c:265
+#, fuzzy, c-format
+msgid "%s: ERROR: gatewaying failed for this URL\n"
+msgstr "%s: ERRORE: in apertura del file\n"
+
+#: errcode.c:268
+#, fuzzy, c-format
+msgid "%s: ERROR: HTTP service currently not available, check later\n"
+msgstr ""
+"%s: ERRORE: il server HTTP non consente lo scaricamento parziale di "
+"contenuti\n"
+
+#: errcode.c:271
+#, c-format
+msgid ""
+"%s: ERROR: timeout occured in communication between gateway and remote "
+"server\n"
+msgstr ""
+
+#: errcode.c:274
+#, fuzzy, c-format
+msgid ""
+"%s: ERROR: HTTP version used in request is unsupported by remote server\n"
+msgstr ""
+"%s: ERRORE: il server HTTP non consente lo scaricamento parziale di "
+"contenuti\n"
+
+#: errcode.c:277
+#, c-format
+msgid "%s: ERROR: unable to connect to GOPHER server\n"
+msgstr "%s: ERRORE: impossibile connettersi al server GOPHER\n"
+
+#: errcode.c:280
+#, c-format
+msgid "%s: ERROR: unknown GOPHER error\n"
+msgstr "%s: ERRORE: errore sconosciuto GOPHER\n"
+
+#: errcode.c:283
+#, c-format
+msgid "%s: ERROR: unable to connect to HTTPS server\n"
+msgstr "%s: ERRORE: impossibile connettersi al server HTTPS\n"
+
+#: errcode.c:286
+#, c-format
+msgid "%s: ERROR: unable to establish SSL control connection to FTPS server\n"
+msgstr ""
+"%s: ERRORE: impossibile stabilire un controllo SSL sulla connessione al "
+"server FTPS\n"
+
+#: errcode.c:289
+#, c-format
+msgid "%s: ERROR: this FTP server doesn't support SSL connections\n"
+msgstr "%s: ERRORE: questo server FTP non supporta le connessioni SSL\n"
+
+#: errcode.c:292
+#, c-format
+msgid "%s: ERROR: unable to establish SSL data connection to FTPS server\n"
+msgstr ""
+"%s: ERRORE: impossibile stabilire una connessione dati SSL con il server "
+"FTPS\n"
+
+#: errcode.c:295
+#, c-format
+msgid "%s: ERROR: unknown errcode : %d\n"
+msgstr "%s: ERRORE: codice d'errore sconosciuto : %d\n"
+
+#: file.c:35
+msgid "Can't open directory\n"
+msgstr "Impossibile aprire la directory\n"
+
+#: form.c:1074 form.c:1139 form.c:1296
+#, c-format
+msgid "Unsupported form type in context: %d\n"
+msgstr "Tipo di modulo non supportato nel contesto: %d\n"
+
+#: form.c:1395
+msgid "Browse"
+msgstr "Sfoglia"
+
+#: form.c:1410
+msgid "URLs with forms"
+msgstr "URL con moduli"
+
+#: form.c:1419
+msgid "Refresh URL list"
+msgstr "Aggiorna l'elenco delle URL"
+
+#: form.c:1453 form.c:1454 url.c:1002
+msgid "unknown"
+msgstr "sconosciuto"
+
+#: form.c:1604
+msgid "Pavuk: load form file"
+msgstr "Pavuk: carica il file del modulo"
+
+#: form.c:1628
+msgid "Fill forms"
+msgstr "Riempi i moduli"
+
+#: form.c:1635
+msgid "Form number: "
+msgstr "Modulo nunero: "
+
+#: form.c:1647
+msgid "Action URL: "
+msgstr "URL su cui agire: "
+
+#: form.c:1656 gui_common.c:706
+msgid "Request method: "
+msgstr "Metodo di richiesta: "
+
+#: form.c:1665 gui_common.c:725 gui_tree.c:140
+msgid "Request encoding: "
+msgstr "Codifica della richiesta: "
+
+#: form.c:1674
+msgid "HTML form content"
+msgstr "Contenuto del modulo HTML"
+
+#: form.c:1689
+msgid "Load HTML file ..."
+msgstr "Carica il file HTML ..."
+
+#: form.c:1742
+msgid "Pavuk: HTML forms editor"
+msgstr "Pavuk: Editor dei moduli HTML"
+
+#: form.c:1764 gui_jscons.c:192
+msgid "Close"
+msgstr "Chiudi"
+
+#: ftp.c:118
+msgid "ftp_get_response: ftp control connection closed before any response\n"
+msgstr ""
+"ftp_get_response: controllo di connessione ftp chiuso prima di qualsiasi "
+"risposta\n"
+
+#: ftp.c:189
+msgid "ftp: setsockopt TOS - THROUGHPUT failed"
+msgstr "ftp: setsockopt TOS - THROUGHPUT fallito"
+
+#: ftp.c:551
+msgid "Re-using established FTP control connection\n"
+msgstr "Riusare il controllo della connessione FTP stabilita\n"
+
+#: ftp.c:758 http.c:1392
+msgid "Size differs, regeting whole\n"
+msgstr "La dimensione è diverso, riscaricamento completo\n"
+
+#: ftp.c:768 http.c:1278 http.c:1402
+msgid "Modified from last download - regeting whole\n"
+msgstr "Modificato dall'ultimo scaricamento - riscaricamento completo\n"
+
+#: ftp.c:849
+msgid ""
+"Warning: FTP server undertand REST command, but can't handle it properly.\n"
+msgstr ""
+
+#: ftp.c:1094 ftp.c:1421
+#, c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory of %s://%s:%d%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>List of FTP directory %s://%s:%d/%s </H1><BR><UL>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory di %s://%s:%d%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>Elenco della directory FTP  %s://%s:%d/%s </H1><BR><UL>"
+
+#: ftp.c:1490
+#, c-format
+msgid ""
+"ERROR: unable to parse FTP list line :\n"
+"\t%s\n"
+msgstr ""
+"ERRORE: impossibile interpretare nell'elenco FTP la riga:\n"
+"\t%s\n"
+
+#: ftp.c:1683
+#, c-format
+msgid "Making symlink \"%s\" to \"%s\"\n"
+msgstr "Creazione del collegamento simbolico \"%s\" a \"%s\"\n"
+
+#: gauthinfo.c:107
+msgid "Pavuk: Save auth. info file"
+msgstr "Pavuk: Salva il file con le informazioni di autenticazione"
+
+#: gauthinfo.c:159
+msgid "Pavuk: Load auth. info file"
+msgstr "Pavuk: Carica il file con le informazioni di autenticazione"
+
+#: gauthinfo.c:340
+msgid "Pavuk: Authorization info editor"
+msgstr "Pavuk: Editor delle informazioni di autorizzazione"
+
+#: gauthinfo.c:359
+msgid "Protocol"
+msgstr "Protocollo"
+
+#: gauthinfo.c:360 gui_common.c:1819
+msgid "Host"
+msgstr "Host"
+
+#: gauthinfo.c:361
+msgid "User"
+msgstr "Utente"
+
+#: gauthinfo.c:362
+msgid "Password"
+msgstr "Password"
+
+#: gauthinfo.c:363
+msgid "Base dir."
+msgstr "Directory di partenza"
+
+#: gauthinfo.c:364
+msgid "Realm"
+msgstr "Dominio"
+
+#: gauthinfo.c:365
+msgid "Scheme"
+msgstr "Schema"
+
+#: gauthinfo.c:394
+msgid "Protocol: "
+msgstr "Protocollo: "
+
+#: gauthinfo.c:419 gui_common.c:1837 gui_common.c:1898 gui_common.c:1921
+#: gui_common.c:1950
+msgid "Host: "
+msgstr "Host: "
+
+#: gauthinfo.c:428
+msgid "User: "
+msgstr "Utente: "
+
+#: gauthinfo.c:437 gui_common.c:2120 gui_common.c:2170 gui_common.c:2194
+msgid "Password: "
+msgstr "Passoword: "
+
+#: gauthinfo.c:446
+msgid "Base directory: "
+msgstr "Directory di partenza: "
+
+#: gauthinfo.c:455
+msgid "Realm: "
+msgstr "Dominio: "
+
+#: gauthinfo.c:473 gui_common.c:2064
+msgid "User auth. scheme"
+msgstr "Tipo di autorizzazione dell'utente"
+
+#: gauthinfo.c:478
+msgid "Base auth. scheme"
+msgstr "Tipo di autorizzazione di base"
+
+#: gauthinfo.c:483 gui_common.c:2066
+msgid "Digest auth. scheme"
+msgstr "Tipo di autorizzazione Digest"
+
+#: gauthinfo.c:489 gui_common.c:2068
+#, fuzzy
+msgid "NTLM auth. scheme"
+msgstr "Tipo di autorizzazione dell'utente"
+
+#: gauthinfo.c:500 gui_addurl.c:171 gui_common.c:629 gui_common.c:778
+#: gui_common.c:957 gui_common.c:1057 gui_common.c:1847 gui_common.c:2620
+#: gui_common.c:2868 gui_tools.c:648
+msgid "Append"
+msgstr "Appendi"
+
+#: gauthinfo.c:508 gui_common.c:645 gui_common.c:785 gui_common.c:973
+#: gui_common.c:1064 gui_common.c:1853 gui_common.c:2626 gui_common.c:2874
+#: gui_tools.c:670
+msgid "Modify"
+msgstr "Modifica"
+
+#: gauthinfo.c:516 gui_common.c:654 gui_common.c:982 gui_common.c:1859
+#: gui_common.c:2632 gui_common.c:2880 gui_tools.c:683
+msgid "Clear"
+msgstr "Pulisci"
+
+#: gauthinfo.c:524 gui_common.c:663 gui_common.c:792 gui_common.c:991
+#: gui_common.c:1071 gui_common.c:1865 gui_common.c:2638 gui_common.c:2886
+#: gui_tools.c:696
+msgid "Delete"
+msgstr "Cancella"
+
+#: gauthinfo.c:537 gui_common.c:2963 gui_limits.c:512 gui_sched.c:131
+msgid "OK"
+msgstr "OK"
+
+#: gauthinfo.c:548 gui_common.c:2972 gui_limits.c:521
+msgid "Apply"
+msgstr "Applica"
+
+#: gauthinfo.c:556
+msgid "Load"
+msgstr "Carica"
+
+#: gauthinfo.c:564
+msgid "Save"
+msgstr "Salva"
+
+#: gauthinfo.c:575 gui_about.c:67 gui_addurl.c:180 gui_common.c:2988
+#: gui_limits.c:537 gui_sched.c:140 gui_tree.c:657 gui_tree.c:797 stats.c:507
+msgid "Cancel"
+msgstr "Annulla"
+
+#: gkeys.c:64 gkeys.c:82 gkeys.c:95
+#, c-format
+msgid "Unable to parse: %s\n"
+msgstr "Impossibile interpretare: %s\n"
+
+#: gkeys.c:117
+msgid "Unable to create ~/.pavuk_keys file\n"
+msgstr "Impossibile creare il file ~/.pavuk_keys\n"
+
+#: gkeys.c:121
+#, c-format
+msgid ""
+"# This file was generated by %s\n"
+"# You may edit it if you're careful!\n"
+"\n"
+msgstr ""
+"# Questo file è stato generato da %s\n"
+"# Puoi modificarlo, ma fai attenzione!\n"
+"\n"
+
+#: gopher.c:65
+msgid "********************* Gopher request **************\n"
+msgstr "********************* Richiesta Gopher **************\n"
+
+#: gopher.c:103
+#, c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory of gopher://%s:%d/%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>Directory of gopher://%s:%d/%s </H1><BR><BR><UL>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory di gopher://%s:%d/%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>Directory di gopher://%s:%d/%s </H1><BR><BR><UL>"
+
+#: gopher.c:151
+#, c-format
+msgid ""
+"Failed to parse Gopher directory entry:\n"
+"%s\n"
+msgstr ""
+
+#: gui_about.c:38
+msgid "Pavuk: About"
+msgstr "Pavuk: Informazioni"
+
+#: gui_about.c:60
+#, c-format
+msgid ""
+"Pavuk %s %s\n"
+" \n"
+"an automatic WEB file grabber\n"
+" \n"
+"By Stefan Ondrejicka\n"
+" \n"
+"(ondrej@idata.sk)\n"
+" \n"
+"URL : http://www.idata.sk/~ondrej/pavuk/\n"
+" "
+msgstr ""
+"Pavuk %s %s\n"
+" \n"
+"un grabber automatico di file WEB\n"
+" \n"
+"By Stefan Ondrejicka\n"
+" \n"
+"(ondrej@idata.sk)\n"
+" \n"
+"URL : http://www.idata.sk/~ondrej/pavuk/\n"
+" "
+
+#: gui_api.c:168
+#, c-format
+msgid "Processed: %5d"
+msgstr "Elaborato: %5d"
+
+#: gui_api.c:170
+#, c-format
+msgid "Queued: %5d"
+msgstr "Accodato: %5d"
+
+#: gui_api.c:172
+#, c-format
+msgid "Failed: %4d"
+msgstr "Fallito: %4d"
+
+#: gui_api.c:174
+#, c-format
+msgid "Rejected: %5d"
+msgstr "Rifiutato: %5d"
+
+#: gui_api.c:475 gui_api.c:492
+msgid "Start"
+msgstr "Inizia"
+
+#: gui_api.c:616
+msgid "Starting ..."
+msgstr "Inizio ..."
+
+#: gui_api.c:681
+#, fuzzy
+msgid "Too high timeout value for GUI interface implementation of timeout\n"
+msgstr ""
+"Valore troppo alto del tempo limite per l'avvio dell'interfaccia GUI di "
+"connessione\n"
+
+#: gui_addurl.c:73 gui_main.c:270
+#, c-format
+msgid "Dropped URL : %s\n"
+msgstr "URL eliminata: %s\n"
+
+#: gui_addurl.c:128
+msgid "Pavuk: Append URL"
+msgstr "Pavuk: Appendi l'URL"
+
+#: gui_addurl.c:140
+msgid "New URL:"
+msgstr "Nuova URL:"
+
+#: gui_common.c:580 gui_common.c:596 gui_main.c:803
+msgid "URL"
+msgstr "URL"
+
+#: gui_common.c:597
+#, fuzzy
+msgid "Local filename"
+msgstr "Nome del file locale: %s\n"
+
+#: gui_common.c:616
+msgid "Request URL: "
+msgstr "Richiedi l'URL: "
+
+#: gui_common.c:619
+#, fuzzy
+msgid "Local filename: "
+msgstr "Nome del file locale: %s\n"
+
+#: gui_common.c:687
+msgid "Extended informations for HTTP POST request"
+msgstr "Informazioni estese per la richiesta POST HTTP"
+
+#: gui_common.c:744 gui_common.c:1023
+msgid "Query fields: "
+msgstr "Campi della query: "
+
+#: gui_common.c:758 gui_common.c:1037 gui_common.c:2563
+msgid "Type"
+msgstr "Tipo"
+
+#: gui_common.c:759 gui_common.c:1038
+msgid "Name"
+msgstr "Nome"
+
+#: gui_common.c:760 gui_common.c:1039
+msgid "Value"
+msgstr "Valore"
+
+#: gui_common.c:804 gui_common.c:1083
+msgid "Type: "
+msgstr "Tipo: "
+
+#: gui_common.c:833 gui_common.c:1112
+msgid "Name: "
+msgstr "Nome: "
+
+#: gui_common.c:835 gui_common.c:1114
+msgid "Value: "
+msgstr "Valore: "
+
+#: gui_common.c:865 gui_common.c:1144
+msgid "Pavuk: Choose form field file"
+msgstr "Pavuk: Scegli il file con i campi del modulo"
+
+#: gui_common.c:914
+msgid "Form data"
+msgstr "Dati del modulo"
+
+#: gui_common.c:942
+msgid "Matching action URL: "
+msgstr "URL su cui agire corrispondente: "
+
+#: gui_common.c:1206
+msgid "Grabber I"
+msgstr "Grabber I"
+
+#: gui_common.c:1214
+msgid "Cache Directory: "
+msgstr "Directory cache: "
+
+#: gui_common.c:1217
+msgid "Default URL prefix: "
+msgstr ""
+
+#: gui_common.c:1220
+#, fuzzy
+msgid "Separate info directory: "
+msgstr "Directory di partenza: "
+
+#: gui_common.c:1223
+msgid "Index file name: "
+msgstr "Nome del file di indice: "
+
+#: gui_common.c:1226
+msgid "Store file name: "
+msgstr "Nome del file da memorizzare: "
+
+#: gui_common.c:1229
+msgid "Identity string: "
+msgstr "Stringa dell'identità: "
+
+#: gui_common.c:1233
+msgid "Netscape browser cache directory: "
+msgstr "Directory cache del browser Netscape: "
+
+#: gui_common.c:1236
+#, fuzzy
+msgid "Mozilla browser cache directory: "
+msgstr "Directory cache del browser Netscape: "
+
+#: gui_common.c:1241
+msgid "Browser: "
+msgstr "Browser: "
+
+#: gui_common.c:1245
+msgid "Reminder command: "
+msgstr "Comando del promemoria: "
+
+#: gui_common.c:1248
+msgid "Post command: "
+msgstr "Comando Post: "
+
+#: gui_common.c:1264
+msgid "How many times retry on fail: "
+msgstr "Quante volte riprovare in caso di fallimento: "
+
+#: gui_common.c:1267
+msgid "How many moved links to follow: "
+msgstr "Quanti collegamenti spostati seguire: "
+
+#: gui_common.c:1270
+msgid "How many times to reget file: "
+msgstr "Quante volte riscaricare un file: "
+
+#: gui_common.c:1273
+msgid "Document age before syncing with server: "
+msgstr "Età del documento prima della sincronizzazione col server: "
+
+#: gui_common.c:1275
+msgid " days "
+msgstr " giorni "
+
+#: gui_common.c:1281
+msgid "Read buffer size: "
+msgstr "Dimensione del buffer di lettura: "
+
+#: gui_common.c:1286
+msgid " kB "
+msgstr " kB "
+
+#: gui_common.c:1292
+msgid "Hash tables size: "
+msgstr "Dimensione delle tabelle Hash: "
+
+#: gui_common.c:1294
+msgid " entries "
+msgstr ""
+
+#: gui_common.c:1308
+msgid "Sleep time between transfers: "
+msgstr "Pausa tra gli scaricamenti: "
+
+#: gui_common.c:1310
+msgid " sec."
+msgstr " sec."
+
+#: gui_common.c:1315
+msgid "randomize"
+msgstr ""
+
+#: gui_common.c:1321
+msgid "Rollback amount on reget: "
+msgstr "Quantità da scartare quando si riscarica: "
+
+#: gui_common.c:1323
+msgid " bytes"
+msgstr " bytes"
+
+#: gui_common.c:1329
+msgid "Transfer quota: "
+msgstr "Quota di trasferimento: "
+
+#: gui_common.c:1331 gui_common.c:1339 gui_common.c:1348
+msgid " kB"
+msgstr " kB"
+
+#: gui_common.c:1337
+msgid "File size quota: "
+msgstr "Quota di dimensione del file: "
+
+#: gui_common.c:1346
+msgid "Filesystem freespace quota: "
+msgstr "Quota di spazio libero nel filesystem: "
+
+#: gui_common.c:1364
+msgid "Number of downloading threads: "
+msgstr "Numero di thread di scaricamento: "
+
+#: gui_common.c:1392
+msgid "Grabber II"
+msgstr "Grabber II"
+
+#: gui_common.c:1395
+msgid "HTML document URL rewriting"
+msgstr "Riscrittura delle URL del documento HTML"
+
+#: gui_common.c:1404
+msgid "Rewrite URLs inside HTML doc."
+msgstr "Riscrivi le URL all'interno dei documenti HTML"
+
+#: gui_common.c:1412
+msgid "Rewrite URLs to local when stored locally"
+msgstr "Riscrivi le URL come locali quando memorizzate localmente"
+
+#: gui_common.c:1418
+msgid "Rewrite all suitable URLs to local"
+msgstr "Riscrivi tutte le URL adatte come remote"
+
+#: gui_common.c:1424
+msgid "Rewrite all URLs to local immediately"
+msgstr "Riscrivi tutte le URL come locali immediatamente"
+
+#: gui_common.c:1430
+msgid "Rewrite all URLs to remote immediately"
+msgstr "Riscrivi tutte le URL come remote immediatamente"
+
+#: gui_common.c:1436
+msgid "Rewrite only one currently download URL"
+msgstr ""
+
+#: gui_common.c:1442
+msgid "Misc settings"
+msgstr "Impostazioni varie"
+
+#: gui_common.c:1451
+msgid "Always generate unique name for document"
+msgstr ""
+
+#: gui_common.c:1456
+msgid "Delete FTP document after succesful download"
+msgstr ""
+
+#: gui_common.c:1461
+msgid "Preserve document modification time"
+msgstr "Preserva il tempo di modifica del documento "
+
+#: gui_common.c:1466
+msgid "Preserve FTP document permissions"
+msgstr "Preserva i permessi del documento FTP"
+
+#: gui_common.c:1471
+#, fuzzy
+msgid "Preserve FTP symbolic links paths"
+msgstr "Preserva i collegamenti simbolici FTP"
+
+#: gui_common.c:1476
+#, fuzzy
+msgid "Retrieve FTP symbolic links like files"
+msgstr "Preserva i collegamenti simbolici FTP"
+
+#: gui_common.c:1482
+msgid "Whole reget when partial not supported"
+msgstr "Riscaricamento intero quando la parziale non è supportata"
+
+#: gui_common.c:1488
+msgid "Use gzip encoding for transfer"
+msgstr "Usa la codifica gzip per il trasferimento"
+
+#: gui_common.c:1493
+msgid "Remove improper documents"
+msgstr "Rimozione dei documenti irregolari"
+
+#: gui_common.c:1498
+msgid "Check transferred size of document"
+msgstr "Controlla la dimensione del documento trasferito"
+
+#: gui_common.c:1503
+msgid "Store directory URLs as index files"
+msgstr "Memorizza le URL di directory come file di indice"
+
+#: gui_common.c:1508
+msgid "Store info files with each document"
+msgstr "Memorizza i file di informazione con ogni documento"
+
+#: gui_common.c:1513
+msgid "Send self URL as Referer for starting URLs"
+msgstr "Manda l'URL stessa come Referer per le URL di partenza"
+
+#: gui_common.c:1518
+msgid "Send If-Range header field when regeting"
+msgstr "Invia l'header If-Range nelle richieste HTTP durante il riscaricamento"
+
+#: gui_common.c:1523
+msgid "Show time of start and end of downloading"
+msgstr "Mostra il tempo di inizio e conclusione dello scaricamento"
+
+#: gui_common.c:1531
+msgid "URL scheduling strategy: "
+msgstr "Strategia di pianificazione delle URL: "
+
+#: gui_common.c:1628
+msgid "Net"
+msgstr "Rete"
+
+#: gui_common.c:1635
+msgid "Allowed protocols"
+msgstr "Protocolli ammessi"
+
+#: gui_common.c:1644
+msgid "HTTP"
+msgstr "HTTP"
+
+#: gui_common.c:1649
+msgid "FTP"
+msgstr "FTP"
+
+#: gui_common.c:1654
+msgid "Gopher"
+msgstr "Gopher"
+
+#: gui_common.c:1660
+msgid "HTTPS"
+msgstr "HTTPS"
+
+#: gui_common.c:1665
+msgid "FTPS"
+msgstr "FTPS"
+
+#: gui_common.c:1671
+msgid "FTP data connection type "
+msgstr "Tipo di connessione dati FTP "
+
+#: gui_common.c:1680
+msgid "Active"
+msgstr "Attivo"
+
+#: gui_common.c:1687
+msgid "Passive"
+msgstr "Passivo"
+
+#: gui_common.c:1694
+msgid "Communication timeout: "
+msgstr "Tempo limite di comunicazione: "
+
+#: gui_common.c:1707
+msgid " min."
+msgstr " min."
+
+#: gui_common.c:1713
+msgid "Maximal transfer rate: "
+msgstr "Tasso di trasferimento massimo: "
+
+#: gui_common.c:1726 gui_common.c:1745
+msgid " kB/s"
+msgstr " kB/s"
+
+#: gui_common.c:1732
+msgid "Minimal transfer rate: "
+msgstr "Tasso di trasferimento minimo: "
+
+#: gui_common.c:1751
+msgid "Local interface address: "
+msgstr "Indirizzo dell'interfaccia locale: "
+
+#: gui_common.c:1762
+msgid "Additional HTTP headers: "
+msgstr "Header HTTP aggiuntivi: "
+
+#: gui_common.c:1773
+#, fuzzy
+msgid "Additional FTP list options: "
+msgstr "Header HTTP aggiuntivi: "
+
+#: gui_common.c:1786
+msgid "Use wide listing of FTP directories"
+msgstr "Usa l'elenco esteso delle directory FTP"
+
+#: gui_common.c:1792
+msgid "Fix detection of nonexisting FTP directories on WuFTPD FTP servers"
+msgstr ""
+
+#: gui_common.c:1798
+msgid "Use HTTP/1.1 protocol for HTTP communication"
+msgstr "Usa protocollo HTTP/1.1 per le comunicazioni HTTP"
+
+#: gui_common.c:1804
+msgid "FTP login handshake rules"
+msgstr ""
+
+#: gui_common.c:1820
+msgid "Login handshake"
+msgstr ""
+
+#: gui_common.c:1840
+msgid "Handshake: "
+msgstr ""
+
+#: gui_common.c:1882
+msgid "Proxy"
+msgstr "Proxy"
+
+#: gui_common.c:1888
+msgid "Gopher proxy"
+msgstr "Proxy Gopher"
+
+#: gui_common.c:1901 gui_common.c:1924 gui_common.c:1953
+msgid "Port: "
+msgstr "Porta: "
+
+#: gui_common.c:1905
+msgid "Gopher via HTTP proxy"
+msgstr "Proxy per Gopher via HTTP"
+
+#: gui_common.c:1910
+msgid "FTP proxy"
+msgstr "Proxy FTP"
+
+#: gui_common.c:1927
+msgid "FTP via HTTP proxy"
+msgstr "Proxy per FTP via HTTP"
+
+#: gui_common.c:1933
+msgid "FTP via HTTP tunneling proxy"
+msgstr "Proxy per tunneling FTP via HTTP"
+
+#: gui_common.c:1940
+msgid "SSL proxy"
+msgstr "Proxy SSL"
+
+#: gui_common.c:1957
+msgid "HTTP proxy"
+msgstr "Proxy HTTP"
+
+#: gui_common.c:1963
+msgid "Proxy: "
+msgstr "Proxy: "
+
+#: gui_common.c:1968
+msgid "Allow caching of documents"
+msgstr "Permetti il caching dei documenti"
+
+#: gui_common.c:2023
+msgid "Languages"
+msgstr "Lingua"
+
+#: gui_common.c:2026
+msgid "Preffered languages"
+msgstr ""
+
+#: gui_common.c:2031
+#, fuzzy
+msgid "Language code: "
+msgstr "Lingua"
+
+#: gui_common.c:2043
+#, fuzzy
+msgid "Preffered character sets"
+msgstr "Insiemi di caratteri"
+
+#: gui_common.c:2048
+#, fuzzy
+msgid "Character set code: "
+msgstr "Insieme di caratteri: "
+
+#: gui_common.c:2065
+#, fuzzy
+msgid "Basic auth. scheme"
+msgstr "Tipo di autorizzazione di base"
+
+#: gui_common.c:2075
+msgid "Auth"
+msgstr "Autorizzazione"
+
+#: gui_common.c:2082
+#, fuzzy
+msgid "User authentification"
+msgstr "Autentificazione dell'utente per HTTP"
+
+#: gui_common.c:2091 gui_common.c:2140
+#, fuzzy
+msgid "Scheme: "
+msgstr "Schema"
+
+#: gui_common.c:2117 gui_common.c:2167 gui_common.c:2191
+#, fuzzy
+msgid "User name: "
+msgstr "Utente: "
+
+#: gui_common.c:2123 gui_common.c:2173
+#, fuzzy
+msgid "NTLM domain: "
+msgstr "Dominio: "
+
+#: gui_common.c:2126 gui_common.c:2176
+msgid "Reuse HTTP Digest access nonce"
+msgstr "Riusa un accesso HTTP Digest per questa volta"
+
+#: gui_common.c:2131
+msgid "HTTP proxy user authentification"
+msgstr "Autentificazione dell'utente per il proxy HTTP"
+
+#: gui_common.c:2181
+#, fuzzy
+msgid "FTP proxy user authentification"
+msgstr "Autentificazione dell'utente per il proxy HTTP"
+
+#: gui_common.c:2196
+msgid "Misc"
+msgstr ""
+
+#: gui_common.c:2210
+msgid "E-mail address: "
+msgstr "Indirizzo E-mail: "
+
+#: gui_common.c:2212
+msgid "Send From: header with HTTP request"
+msgstr "Invia l'header From: con le richieste HTTP"
+
+#: gui_common.c:2226
+msgid "SSL"
+msgstr "SSL"
+
+#: gui_common.c:2229
+msgid "SSL client certificate"
+msgstr "Certificato del client SSL"
+
+#: gui_common.c:2238
+msgid "Certificate password: "
+msgstr "Password del certificato: "
+
+#: gui_common.c:2241
+msgid "Certificate PEM file: "
+msgstr "File del certificato PEM: "
+
+#: gui_common.c:2244
+msgid "Certificate key file: "
+msgstr "File della chiave certificata: "
+
+#: gui_common.c:2247
+msgid "List of preffered ciphers: "
+msgstr "Elenco delle codifiche preferite: "
+
+#: gui_common.c:2253
+msgid "SSL protocol version"
+msgstr "Versione del protocollo SSL"
+
+#: gui_common.c:2261
+msgid "SSLv23"
+msgstr "SSLv23"
+
+#: gui_common.c:2267
+msgid "SSLv2"
+msgstr "SSLv2"
+
+#: gui_common.c:2273
+msgid "SSLv3"
+msgstr "SSLv3"
+
+#: gui_common.c:2280
+msgid "TLSv1"
+msgstr ""
+
+#: gui_common.c:2287
+#, fuzzy
+msgid "Miscelanous SSL settings"
+msgstr "Impostazioni varie"
+
+#: gui_common.c:2297
+msgid "EGD daemon socket path: "
+msgstr ""
+
+#: gui_common.c:2301
+msgid "Unique ID for all SSL sessions"
+msgstr "ID univoco per tutte le sessioni SSL"
+
+#: gui_common.c:2316 gui_main.c:1896
+msgid "Log"
+msgstr "Log"
+
+#: gui_common.c:2323
+msgid "Try to find unique name, when original log file locked"
+msgstr ""
+"Prova a trovare un nome univoco, quando il file di log originale è bloccato"
+
+#: gui_common.c:2328
+msgid "Log file: "
+msgstr "File del log: "
+
+#: gui_common.c:2331
+msgid "Shortlog file: "
+msgstr "File del log breve: "
+
+#: gui_common.c:2334
+msgid "Log window length: "
+msgstr "Lunghezza della finestra di log: "
+
+#: gui_common.c:2347
+msgid "Cookies"
+msgstr "Cookie"
+
+#: gui_common.c:2350
+msgid "Disabled cookie domains"
+msgstr "Domini con i cookie disabilitati"
+
+#: gui_common.c:2355 gui_limits.c:247
+msgid "Domain: "
+msgstr "Dominio: "
+
+#: gui_common.c:2358
+#, fuzzy
+msgid "Cookies settings"
+msgstr "Impostazioni varie"
+
+#: gui_common.c:2367
+msgid "Update cookies"
+msgstr "Aggiorna i cookie"
+
+#: gui_common.c:2372
+msgid "Send cookies"
+msgstr "Invia i cookie"
+
+#: gui_common.c:2377
+msgid "Accept cookies"
+msgstr "Accetta i cookie"
+
+#: gui_common.c:2382
+msgid "Check cookies domain"
+msgstr "Controlla i domini dei cookie"
+
+#: gui_common.c:2390
+msgid "Cookies maximal number: "
+msgstr "Numero massimo di cookie: "
+
+#: gui_common.c:2405
+msgid "Cookie file: "
+msgstr "File del cookie: "
+
+#: gui_common.c:2491
+msgid "Filename"
+msgstr "Nome del file"
+
+#: gui_common.c:2494
+msgid "Local filename conversion rules"
+msgstr "Regole di conversione del nome locale del file"
+
+#: gui_common.c:2502
+msgid "Replace String1 with String2 in filename"
+msgstr "Sostituisci Stringa1 con Stringa2 nel nome del file"
+
+#: gui_common.c:2511
+msgid "String1: "
+msgstr "Stringa 1: "
+
+#: gui_common.c:2514
+msgid "String2: "
+msgstr "Stringa 2: "
+
+#: gui_common.c:2516
+msgid "Delete characters from filename"
+msgstr "Cancella i caratteri dal nome del file"
+
+#: gui_common.c:2525
+msgid "Character set: "
+msgstr "Insieme di caratteri: "
+
+#: gui_common.c:2527
+msgid "Replace chars from Set1 with chars from Set2 in filename"
+msgstr ""
+"Sostituisci nel nome del file i caratteri dall'insieme 1 con i caratteri "
+"dall'insieme 2"
+
+#: gui_common.c:2536
+msgid "Character set1: "
+msgstr "Insieme di caratteri 1: "
+
+#: gui_common.c:2539
+msgid "Character set2: "
+msgstr "Insieme di caratteri 2: "
+
+#: gui_common.c:2546
+msgid "Base level of tree: "
+msgstr "Livello base dell'albero: "
+
+#: gui_common.c:2548
+msgid "Local filename mapping rules"
+msgstr "Regole di generazione del nome locale del file"
+
+#: gui_common.c:2564
+msgid "Match pattern"
+msgstr "Confronta pattern"
+
+#: gui_common.c:2565
+msgid "Rule"
+msgstr "Regola"
+
+#: gui_common.c:2587
+msgid "wildcard pattern"
+msgstr "pattern wildcard"
+
+#: gui_common.c:2594
+msgid "RE pattern"
+msgstr "Pattern RE"
+
+#: gui_common.c:2606
+msgid "Matching pattern: "
+msgstr "Pattern di confronto: "
+
+#: gui_common.c:2613
+msgid "Construction rule: "
+msgstr "Regola di costruzione: "
+
+#: gui_common.c:2653
+msgid "Advertisement"
+msgstr "Pubblicità"
+
+#: gui_common.c:2660
+msgid "Enable removing of advertisement banners"
+msgstr "Abilita la rimozione dei banner pubblicitari"
+
+#: gui_common.c:2665
+msgid "RE for advertisement URLs: "
+msgstr "RE per le URL pubblicitarie: "
+
+#: gui_common.c:2777
+msgid "Javascript"
+msgstr ""
+
+#: gui_common.c:2785
+msgid "Processing of javascript"
+msgstr ""
+
+#: gui_common.c:2789
+#, fuzzy
+msgid "Javascript patterns"
+msgstr "Pattern di confronto per le URL: "
+
+#: gui_common.c:2794
+#, fuzzy
+msgid "RE for Javascript patterns: "
+msgstr "Pattern di confronto per le URL: "
+
+#: gui_common.c:2800
+#, fuzzy
+msgid "Javascript patterns with transform rules"
+msgstr "Pattern di confronto per le URL: "
+
+#: gui_common.c:2815
+#, fuzzy
+msgid "Pattern"
+msgstr "Pattern RE"
+
+#: gui_common.c:2816
+#, fuzzy
+msgid "Transform rule"
+msgstr "Tasso di trasferimento"
+
+#: gui_common.c:2817
+#, fuzzy
+msgid "HTML tag"
+msgstr "HTML"
+
+#: gui_common.c:2818
+#, fuzzy
+msgid "HTML tag attribute"
+msgstr "Seleziona i tag ed attributi HTML consentiti"
+
+#: gui_common.c:2819
+msgid "Rewrite"
+msgstr ""
+
+#: gui_common.c:2840
+#, fuzzy
+msgid "Pattern: "
+msgstr "Pattern RE"
+
+#: gui_common.c:2843
+#, fuzzy
+msgid "Tranform rule: "
+msgstr "Quota di trasferimento: "
+
+#: gui_common.c:2852
+msgid "HTML tag: "
+msgstr ""
+
+#: gui_common.c:2856
+#, fuzzy
+msgid "HTML tag attribute: "
+msgstr "Seleziona i tag ed attributi HTML consentiti"
+
+#: gui_common.c:2858
+#, fuzzy
+msgid "Rewrite URL part in HTML document"
+msgstr "Riscrivi le URL all'interno dei documenti HTML"
+
+#: gui_common.c:2913
+msgid "Pavuk: Common config"
+msgstr "Pavuk: Configurazione generale"
+
+#: gui_common.c:2980
+msgid "Limitations ..."
+msgstr "Limitazioni ..."
+
+#: gui_jscons.c:150
+#, fuzzy
+msgid "Pavuk: JavaScript console"
+msgstr "Pavuk: Salva il file con le informazioni di autenticazione"
+
+#: gui_jscons.c:169
+msgid "Reload script file"
+msgstr ""
+
+#: gui_jscons.c:174
+#, fuzzy
+msgid "Save script to file"
+msgstr "Salva lo scenario ..."
+
+#: gui_jscons.c:181
+msgid "Load script to JavaScript runtime"
+msgstr ""
+
+#: gui_jscons.c:186
+msgid "Restart JavaScript runtime"
+msgstr ""
+
+#: gui_jscons.c:215
+#, fuzzy
+msgid "Prompt: "
+msgstr "Porta: "
+
+#: gui_jscons.c:228
+msgid "JavaScript source file: "
+msgstr ""
+
+#: gui_limits.c:44
+msgid "Tree"
+msgstr "Albero"
+
+#: gui_limits.c:56
+msgid "Download cgi-generated pages"
+msgstr "Scarica le pagine generate da CGI"
+
+#: gui_limits.c:62
+msgid "Recurse through FTP directory"
+msgstr "Esegui la ricorsione attraverso la directory FTP"
+
+#: gui_limits.c:68
+msgid "Allow \"robots.txt\""
+msgstr "Permetti \"robots.txt\""
+
+#: gui_limits.c:74
+msgid "Process HTML files downloaded over FTP"
+msgstr "Elabora i file HTML scaricati via FTP"
+
+#: gui_limits.c:80
+msgid "Don't leave starting site"
+msgstr "Non abbandonare il sito di partenza"
+
+#: gui_limits.c:86
+msgid "Don't leave starting directory"
+msgstr "Non abbandonare la directory di partenza"
+
+#: gui_limits.c:92
+#, fuzzy
+msgid "Don't leave site enter directory"
+msgstr "Non abbandonare la directory di partenza"
+
+#: gui_limits.c:98
+#, fuzzy
+msgid "Download just single page"
+msgstr "Scarica le pagine generate da CGI"
+
+#: gui_limits.c:104
+msgid "Apply limiting options on inline objects"
+msgstr ""
+
+#: gui_limits.c:119
+msgid "Max. count of documents: "
+msgstr "Conteggio massimo di documenti: "
+
+#: gui_limits.c:122
+msgid "Max. depth of tree: "
+msgstr "Profondità massima dell'albero: "
+
+#: gui_limits.c:125
+msgid "Max. levels to leave from starting site: "
+msgstr "Numero massimo di livelli da attraversare dal sito di partenza: "
+
+#: gui_limits.c:128
+msgid "Max. document size: "
+msgstr "Dimensione massima del documento: "
+
+#: gui_limits.c:131
+msgid "Min. document size: "
+msgstr "Dimensione minima del documento: "
+
+#: gui_limits.c:134
+msgid "Max. site levels to leave from starting site: "
+msgstr ""
+"Numero massimo di livelli di siti da attraversare dal sito di partenza: "
+
+#: gui_limits.c:145
+msgid "Working subdirectory :"
+msgstr "Subdirectory di lavoro :"
+
+#: gui_limits.c:148
+msgid "User condition script: "
+msgstr "Script con le condizioni dell'utente: "
+
+#: gui_limits.c:151
+#, fuzzy
+msgid "Follow command: "
+msgstr "Comando Post: "
+
+#: gui_limits.c:162
+#, fuzzy
+msgid "Patterns"
+msgstr "Pattern RE"
+
+#: gui_limits.c:165
+msgid "Wildcard patterns"
+msgstr "Pattern wildcard"
+
+#: gui_limits.c:174 gui_limits.c:195
+msgid "Documents matching pattern: "
+msgstr "Pattern di confronto per i documenti: "
+
+#: gui_limits.c:177 gui_limits.c:183 gui_limits.c:198 gui_limits.c:204
+#: gui_limits.c:266
+msgid "skip: "
+msgstr "salta: "
+
+#: gui_limits.c:180 gui_limits.c:201
+msgid "URL matching pattern: "
+msgstr "Pattern di confronto per le URL: "
+
+#: gui_limits.c:186
+msgid "RE patterns"
+msgstr "Pattern RE"
+
+#: gui_limits.c:215
+msgid "Hosts"
+msgstr "Host"
+
+#: gui_limits.c:224
+msgid "Allow / Disallow sites"
+msgstr "Permetti / Vieta i siti"
+
+#: gui_limits.c:230
+msgid "Site: "
+msgstr "Sito: "
+
+#: gui_limits.c:241
+msgid "Allow / Disallow domains"
+msgstr "Permetti / Vieta i domini"
+
+#: gui_limits.c:253
+msgid "IP address RE patterns"
+msgstr "Pattern RE per gli indirizzi IP"
+
+#: gui_limits.c:263
+msgid "Server IP address matching pattern: "
+msgstr "Pattern di confronto per gli indirizzi IP del server: "
+
+#: gui_limits.c:269
+#, fuzzy
+msgid "Server ports"
+msgstr "Risposte del server"
+
+#: gui_limits.c:279
+msgid "Allow/denny"
+msgstr ""
+
+#: gui_limits.c:284
+#, fuzzy
+msgid "Ports: "
+msgstr "Porta: "
+
+#: gui_limits.c:295
+msgid "Documents"
+msgstr "Documenti"
+
+#: gui_limits.c:304
+msgid "Allow / Disallow suffix"
+msgstr "Permetti / Vieta il suffisso"
+
+#: gui_limits.c:310
+msgid "Suffix: "
+msgstr "Suffisso: "
+
+#: gui_limits.c:321
+msgid "Allow / Disallow prefix"
+msgstr "Permetti / Vieta il prefisso"
+
+#: gui_limits.c:327
+msgid "Prefix: "
+msgstr "Prefisso: "
+
+#: gui_limits.c:341 gui_limits.c:353
+msgid "MIME types"
+msgstr "Tipi MIME"
+
+#: gui_limits.c:349
+msgid "Allow / Disallow MIME type"
+msgstr "Permetti / Vieta il tipo MIME"
+
+#: gui_limits.c:358
+#, fuzzy
+msgid "MIME type: "
+msgstr "Tipi MIME"
+
+#: gui_limits.c:371
+msgid "Time"
+msgstr "Tempo"
+
+#: gui_limits.c:377
+msgid "Lower document time limit"
+msgstr "Limite inferiore del tempo del documento"
+
+#: gui_limits.c:387
+msgid "Check if doc. time newer than this"
+msgstr "Controlla se il tempo del documento è più nuovo di questo"
+
+#: gui_limits.c:391
+msgid "Upper document time limit"
+msgstr "Limite superiore del tempo del documento"
+
+#: gui_limits.c:401
+msgid "Check if doc. time older than this"
+msgstr "Controlla se il tempo del documento è più vecchio di questo"
+
+#: gui_limits.c:410
+msgid "Maximal allowed time of downloading: "
+msgstr "Tempo massimo consentito per lo scaricamento: "
+
+#: gui_limits.c:413
+msgid " min"
+msgstr " min"
+
+#: gui_limits.c:426
+msgid "Select allowed HTML tags and attributes"
+msgstr "Seleziona i tag ed attributi HTML consentiti"
+
+#: gui_limits.c:428
+msgid "HTML"
+msgstr "HTML"
+
+#: gui_limits.c:443
+#, c-format
+msgid "%s of %s"
+msgstr "%s di %s"
+
+#: gui_limits.c:476
+msgid "Pavuk: Limits config"
+msgstr "Pavuk: Configurazione delle limitazioni"
+
+#: gui_limits.c:529
+msgid "Common ..."
+msgstr "Generale ..."
+
+#: gui_main.c:433
+msgid "Unknown window to popup"
+msgstr "Finestra da mostrare sconosciuta"
+
+#: gui_main.c:498
+#, c-format
+msgid "Fetched URL from clipboard : %s\n"
+msgstr "URL scaricata dalla clipboard : %s\n"
+
+#: gui_main.c:542
+#, fuzzy, c-format
+msgid "Fetched URL from browser : %s\n"
+msgstr "URL scaricata dalla clipboard : %s\n"
+
+#: gui_main.c:788
+msgid "Both"
+msgstr "Entrambi"
+
+#: gui_main.c:789
+msgid "Icons only"
+msgstr "Solo icone"
+
+#: gui_main.c:790
+msgid "Text only"
+msgstr "Solo testo"
+
+#: gui_main.c:802
+msgid "Nr."
+msgstr "N°"
+
+#: gui_main.c:804
+msgid "Status"
+msgstr "Stato"
+
+#: gui_main.c:805
+msgid "Size"
+msgstr "Dimensione"
+
+#: gui_main.c:806
+msgid "Transfer rate"
+msgstr "Tasso di trasferimento"
+
+#: gui_main.c:807
+msgid "Elapsed time"
+msgstr "Tempo trascorso"
+
+#: gui_main.c:808
+msgid "Remaining time"
+msgstr "Tempo rimanente"
+
+#: gui_main.c:956
+msgid "Open _URL ..."
+msgstr "Apri _URL ..."
+
+#: gui_main.c:969
+msgid "Append URL ..."
+msgstr "Appendi URL ..."
+
+#: gui_main.c:978
+msgid "Fetch URL from Clipboard"
+msgstr "Scarica l'URL dalla Clipboard"
+
+#: gui_main.c:996
+#, fuzzy
+msgid "Fetch URL from browser"
+msgstr "Scarica l'URL dalla Clipboard"
+
+#: gui_main.c:1006
+msgid "Load scenario ..."
+msgstr "Carica uno scenario ..."
+
+#: gui_main.c:1015
+msgid "Add scenario ..."
+msgstr "Aggiungi uno scenario ..."
+
+#: gui_main.c:1024
+msgid "Save scenario ..."
+msgstr "Salva lo scenario ..."
+
+#: gui_main.c:1033
+msgid "Save settings to ~/.pavukrc"
+msgstr "Salva le impostazioni in ~/.pavukrc"
+
+#: gui_main.c:1046
+msgid "Schedule ..."
+msgstr "Pianifica ..."
+
+#: gui_main.c:1055
+msgid "Auth. info editor ..."
+msgstr "Editor delle informazioni di autorizzazione ..."
+
+#: gui_main.c:1068
+msgid "E_xit"
+msgstr "_Esci"
+
+#: gui_main.c:1077
+msgid "_File"
+msgstr "_File"
+
+#: gui_main.c:1093
+msgid "Document _Tree ..."
+msgstr "Albero dei Documen_ti ..."
+
+#: gui_main.c:1102
+msgid "Status page ..."
+msgstr "Pagina di stato ..."
+
+#: gui_main.c:1110
+msgid "HTML forms editor ..."
+msgstr "Editor dei moduli HTML ..."
+
+#: gui_main.c:1119
+#, fuzzy
+msgid "Javascript console ..."
+msgstr "Pattern di confronto per le URL: "
+
+#: gui_main.c:1132
+msgid "Clear log window"
+msgstr "Svuota la finestra di log"
+
+#: gui_main.c:1141
+msgid "_View"
+msgstr "_Visualizza"
+
+#: gui_main.c:1159
+msgid "normal recurse"
+msgstr "risorsione normale"
+
+#: gui_main.c:1169
+msgid "synchronize"
+msgstr "sincronizza"
+
+#: gui_main.c:1180
+msgid "single page"
+msgstr "pagina singola"
+
+#: gui_main.c:1190
+msgid "update local links"
+msgstr "aggiorna i collegamenti locali"
+
+#: gui_main.c:1200
+msgid "resume files"
+msgstr "riprendi (resume) file"
+
+#: gui_main.c:1210
+msgid "unlimited reget"
+msgstr "riscaricamento illimitato"
+
+#: gui_main.c:1220
+msgid "transfer but don't store"
+msgstr "trasferisci ma non memorizzare"
+
+#: gui_main.c:1230
+msgid "reminder"
+msgstr "promemoria"
+
+#: gui_main.c:1240
+msgid "list ftp directory"
+msgstr "elenca directory ftp"
+
+#: gui_main.c:1250
+msgid "_Mode"
+msgstr "_Modalità"
+
+#: gui_main.c:1268
+msgid "C_ommon ..."
+msgstr "C_omune ..."
+
+#: gui_main.c:1277
+msgid "_Limitations ..."
+msgstr "_Limitazioni ..."
+
+#: gui_main.c:1286
+msgid "Reset configuration"
+msgstr "Azzera la configurazione"
+
+#: gui_main.c:1301
+msgid "Toolbar"
+msgstr "Barra dei pulsanti"
+
+#: gui_main.c:1309
+msgid "Toggle toolbar"
+msgstr "(Dis)attiva la barra dei pulsanti"
+
+#: gui_main.c:1364
+msgid "Progressbar"
+msgstr "Barra di progresso"
+
+#: gui_main.c:1396
+msgid "Language"
+msgstr "Lingua"
+
+#: gui_main.c:1446
+msgid "Debug level"
+msgstr "Livello di debug"
+
+#: gui_main.c:1469
+msgid "All"
+msgstr "Tutto"
+
+#: gui_main.c:1476
+msgid "None"
+msgstr "Niente"
+
+#: gui_main.c:1483
+msgid "Debug"
+msgstr "Debug"
+
+#: gui_main.c:1499
+#, fuzzy
+msgid "Allow tooltips"
+msgstr "Protocolli ammessi"
+
+#: gui_main.c:1509
+msgid "Log window autoscroll"
+msgstr "Scorrimento automatico della finestra di log"
+
+#: gui_main.c:1518
+msgid "Use preferences"
+msgstr "Usa preferenze"
+
+#: gui_main.c:1527
+msgid "Quiet"
+msgstr "Silenzioso"
+
+#: gui_main.c:1539
+msgid "Immediate messages"
+msgstr "Messaggi immediati"
+
+#: gui_main.c:1551
+msgid "_Config"
+msgstr "_Configura"
+
+#: gui_main.c:1567
+msgid "_Restart"
+msgstr "_Riavvia"
+
+#: gui_main.c:1577
+msgid "Co_ntinue"
+msgstr "Co_ntinua"
+
+#: gui_main.c:1587
+msgid "Sto_p"
+msgstr "_Ferma"
+
+#: gui_main.c:1597
+msgid "_Break"
+msgstr "_Interrompi"
+
+#: gui_main.c:1607
+msgid "_Action"
+msgstr "_Azione"
+
+#: gui_main.c:1627
+msgid "About ..."
+msgstr "Informazioni ..."
+
+#: gui_main.c:1636
+msgid "_Help"
+msgstr "_Aiuto"
+
+#: gui_main.c:1667
+msgid "Config"
+msgstr "Configurazione"
+
+#: gui_main.c:1668
+msgid "Popup config window"
+msgstr "Mostra la finestra di configurazione"
+
+#: gui_main.c:1672
+msgid "Limits"
+msgstr "Limitazioni"
+
+#: gui_main.c:1673
+msgid "Popup limits window"
+msgstr "Mostra la finestra delle limitazioni"
+
+#: gui_main.c:1679
+msgid "Go bg"
+msgstr "Vai sullo sfondo"
+
+#: gui_main.c:1680
+msgid "Destroy window as soon as posible and continue on terminal"
+msgstr "Distruggi la finestra al più presto possibile e continua in terminale"
+
+#: gui_main.c:1684 gui_main.c:1757
+msgid "Restart"
+msgstr "Riavvia"
+
+#: gui_main.c:1685
+msgid "Start working on currently set starting URLs"
+msgstr "Inizia ad operare sull'insieme corrente di URL di partenza"
+
+#: gui_main.c:1689 gui_main.c:1762
+msgid "Continue"
+msgstr "Continua"
+
+#: gui_main.c:1690
+msgid "Continue after stop or break"
+msgstr "Continua dopo un arresto o interruzione"
+
+#: gui_main.c:1696 gui_main.c:1767
+msgid "Stop"
+msgstr "Fermati"
+
+#: gui_main.c:1697
+msgid "Finish this transfer and stop"
+msgstr "Concludi questo trasferimento e fermati"
+
+#: gui_main.c:1701 gui_main.c:1772
+msgid "Break"
+msgstr "Interrompi"
+
+#: gui_main.c:1702
+msgid "Break transfer and stop"
+msgstr "Interrompi il trasferimento e fermati"
+
+#: gui_main.c:1708
+msgid "Exit"
+msgstr "Esci"
+
+#: gui_main.c:1709
+msgid "Immediately quit the program"
+msgstr "Chiudi immediatamente il programma"
+
+#: gui_main.c:1777
+msgid "Show whole main window"
+msgstr "Mostra l'intera finestra principale"
+
+#: gui_main.c:1782
+msgid "Quit"
+msgstr "Chiudi"
+
+#: gui_main.c:1861
+#, fuzzy
+msgid "Pavuk: save log"
+msgstr "Pavuk: salva la pagina di stato"
+
+#: gui_main.c:1924
+msgid "Select all"
+msgstr ""
+
+#: gui_main.c:1932
+msgid "Clear selection"
+msgstr ""
+
+#: gui_main.c:1940
+msgid "Copy selection"
+msgstr ""
+
+#: gui_main.c:1952
+#, fuzzy
+msgid "Save log ..."
+msgstr "Salva..."
+
+#: gui_main.c:1959
+#, fuzzy
+msgid "Clear log"
+msgstr "Svuota la finestra di log"
+
+#: gui_main.c:2046 gui_main.c:2164
+msgid "Processed:       "
+msgstr "Elaborato:       "
+
+#: gui_main.c:2055 gui_main.c:2173
+msgid "Failed:       "
+msgstr "Fallito:       "
+
+#: gui_main.c:2064 gui_main.c:2182
+msgid "Queued:       "
+msgstr "Accodato:       "
+
+#: gui_main.c:2073 gui_main.c:2191
+msgid "Rejected:       "
+msgstr "Rifiutato:       "
+
+#: gui_main.c:2123
+msgid "S:                     "
+msgstr "S:                     "
+
+#: gui_main.c:2132
+msgid "R:          "
+msgstr "R:          "
+
+#: gui_main.c:2141
+msgid "ET:          "
+msgstr "ET:          "
+
+#: gui_main.c:2150
+msgid "RT:          "
+msgstr "RT:          "
+
+#: gui_scenario.c:46
+msgid "Pavuk: Scenario saver"
+msgstr "Pavuk: salvataggio scenario"
+
+#: gui_scenario.c:139
+msgid "Pavuk: Scenario loader"
+msgstr "Pavuk: caricamento scenario"
+
+#: gui_scenario.c:231
+msgid "Pavuk: Scenario add"
+msgstr "Pavuk: caricamento scenario"
+
+#: gui_sched.c:55 pavuk.c:495
+msgid "Error scheduling\n"
+msgstr "Errore di pianificazione\n"
+
+#: gui_sched.c:78
+msgid "Pavuk: Scheduler"
+msgstr "Pavuk: Pianificazione"
+
+#: gui_sched.c:97
+msgid "Scheduling command: "
+msgstr "Comando di pianificazione: "
+
+#: gui_sched.c:107
+msgid "Reschedule after "
+msgstr "Ripianifica dopo "
+
+#: gui_sched.c:117
+msgid " hours"
+msgstr " ore"
+
+#: gui_tools.c:28
+msgid "January"
+msgstr "Gennaio"
+
+#: gui_tools.c:29
+msgid "February"
+msgstr "Febbraio"
+
+#: gui_tools.c:30
+msgid "March"
+msgstr "Marzo"
+
+#: gui_tools.c:31
+msgid "April"
+msgstr "Aprile"
+
+#: gui_tools.c:32
+msgid "May"
+msgstr "Maggio"
+
+#: gui_tools.c:33
+msgid "June"
+msgstr "Giugno"
+
+#: gui_tools.c:34
+msgid "July"
+msgstr "Luglio"
+
+#: gui_tools.c:35
+msgid "August"
+msgstr "Agosto"
+
+#: gui_tools.c:36
+msgid "September"
+msgstr "Settembre"
+
+#: gui_tools.c:37
+msgid "October"
+msgstr "Ottobre"
+
+#: gui_tools.c:38
+msgid "November"
+msgstr "Novembre"
+
+#: gui_tools.c:39
+msgid "December"
+msgstr "Dicembre"
+
+#: gui_tools.c:43
+msgid "Sun"
+msgstr "Dom"
+
+#: gui_tools.c:44
+msgid "Mon"
+msgstr "Lun"
+
+#: gui_tools.c:45
+msgid "Tue"
+msgstr "Mar"
+
+#: gui_tools.c:46
+msgid "Wed"
+msgstr "Mer"
+
+#: gui_tools.c:47
+msgid "Thu"
+msgstr "Gio"
+
+#: gui_tools.c:48
+msgid "Fri"
+msgstr "Ven"
+
+#: gui_tools.c:49
+msgid "Sat"
+msgstr "Sab"
+
+#: gui_tools.c:171
+msgid "Time: "
+msgstr "Tempo: "
+
+#: gui_tools.c:180
+msgid " : "
+msgstr " : "
+
+#: gui_tools.c:360
+#, c-format
+msgid "Pavuk: select %s"
+msgstr "Pavuk: selezione %s"
+
+#: gui_tools.c:361
+#, fuzzy
+msgid "file"
+msgstr "_File"
+
+#: gui_tools.c:459
+msgid "Browse ..."
+msgstr "Sfoglia ..."
+
+#: gui_tree.c:117
+#, c-format
+msgid "URL: %s\n"
+msgstr "URL: %s\n"
+
+#: gui_tree.c:130 gui_tree.c:136 gui_tree.c:175
+msgid "Request type: "
+msgstr "Tipo di richiesta: "
+
+#: gui_tree.c:151
+msgid "Query values:\n"
+msgstr "Valori della query:\n"
+
+#: gui_tree.c:181
+msgid "Status: "
+msgstr "Stato: "
+
+#: gui_tree.c:187
+msgid "not processed yet\n"
+msgstr "non ancora elaborato\n"
+
+#: gui_tree.c:193
+msgid "loaded from NS cache\n"
+msgstr "caricato dalla cache di NS\n"
+
+#: gui_tree.c:199
+msgid "loaded from local URL tree\n"
+msgstr "caricato dall'albero locale dell'URL\n"
+
+#: gui_tree.c:205
+msgid "moved to another URL\n"
+msgstr "spostato ad un'altra URL\n"
+
+#: gui_tree.c:211
+msgid "URL not found on remote server\n"
+msgstr "URL non trovata sul server remoto\n"
+
+#: gui_tree.c:217
+msgid "truncated\n"
+msgstr "troncato\n"
+
+#: gui_tree.c:223
+msgid "downloaded OK\n"
+msgstr "scaricamento OK\n"
+
+#: gui_tree.c:229
+msgid "rejected by rules\n"
+msgstr "rifiutato dalle regole\n"
+
+#: gui_tree.c:235
+msgid "disabled by user\n"
+msgstr "disattivato dall'utente\n"
+
+#: gui_tree.c:241
+msgid "probably recoverable error\n"
+msgstr "errore probabilmente recuperabile\n"
+
+#: gui_tree.c:247
+msgid "unrecoverable error\n"
+msgstr "errore non recuperabile\n"
+
+#: gui_tree.c:253
+msgid "unknown\n"
+msgstr "sconosciuto\n"
+
+#: gui_tree.c:263
+#, c-format
+msgid "Moved to URL: %s\n"
+msgstr "Spostato all'URL: %s\n"
+
+#: gui_tree.c:273
+#, c-format
+msgid "Type: %s\n"
+msgstr "Tipo: %s\n"
+
+#: gui_tree.c:275
+msgid "Type: unknown\n"
+msgstr "Tipo: sconosciuto\n"
+
+#: gui_tree.c:281
+#, c-format
+msgid "Size: %d\n"
+msgstr "Dimensione: %d\n"
+
+#: gui_tree.c:290
+msgid "Modification time: %a, %d %b %Y %H:%M:%S %Z\n"
+msgstr "Tempo di modifica: %a, %d %b %Y %H:%M:%S %Z\n"
+
+#: gui_tree.c:300
+#, c-format
+msgid "Local filename: %s\n"
+msgstr "Nome del file locale: %s\n"
+
+#: gui_tree.c:311
+msgid "Parent URLs:\n"
+msgstr "URL d'origine:\n"
+
+#: gui_tree.c:612
+msgid "Pavuk: Store tree"
+msgstr "Pavuk: Memorizza albero"
+
+#: gui_tree.c:656 gui_tree.c:684
+msgid "Pavuk: URL tree preview"
+msgstr "Pavuk: anteprima albero dell'URL"
+
+#: gui_tree.c:659 gui_tree.c:788
+msgid "Store tree ..."
+msgstr "Memorizza l'albero ..."
+
+#: gui_tree.c:660 gui_tree.c:704
+msgid "Automaticaly watch last processed URLs"
+msgstr "Controlla automaticamente l'ultima URL elaborata"
+
+#: gui_tree.c:662 gui_tree.c:821
+msgid "Properties"
+msgstr "Proprietà"
+
+#: gui_tree.c:663 gui_tree.c:829
+msgid "Launch browser"
+msgstr "Avvia il browser"
+
+#: gui_tree.c:664 gui_tree.c:837
+msgid "Disable URL"
+msgstr "Disattiva l'URL"
+
+#: gui_tree.c:665 gui_tree.c:845
+msgid "Enable URL"
+msgstr "Attiva l'URL"
+
+#: gui_tree.c:666 gui_tree.c:853
+msgid "Download URL"
+msgstr "Scarica l'URL"
+
+#: gui_tree.c:670 gui_tree.c:724
+msgid "URL tree"
+msgstr "Albero dell'URL"
+
+#: html.c:253 htmlparser.c:281
+#, c-format
+msgid "Unsupported BASE URL -  %s (probably bad handled)\n"
+msgstr "BASE URL non gestita-  %s (probabilmente errata gestione)\n"
+
+#: html.c:522
+msgid "Can't work on directory\n"
+msgstr "Impossibile operare nella directory\n"
+
+#: html.c:548 html.c:552
+msgid "rewrite parent"
+msgstr "riscrittura origine"
+
+#: http.c:366
+msgid "****************** Proxy connect request *****************\n"
+msgstr "****************** richiesta di connessione Proxy *****************\n"
+
+#: http.c:413
+msgid "***************** Proxy connect response *****************\n"
+msgstr "***************** risposta di connessione Proxy *****************\n"
+
+#: http.c:469
+msgid "Sending request ..."
+msgstr "Invia richiesta ..."
+
+#: http.c:716
+msgid "************ Client HTTP MIME header ***************\n"
+msgstr "************ header Client HTTP MIME ***************\n"
+
+#: http.c:733
+msgid "Sending data ..."
+msgstr "Invio dati ..."
+
+#: http.c:734
+msgid "************ HTTP request data ***************\n"
+msgstr "************ richiesta dati HTTP ***************\n"
+
+#: http.c:744
+msgid "Waiting for response ..."
+msgstr "Attesa per una risposta ..."
+
+#: http.c:759
+msgid "Error reading HTTP 1xx class response\n"
+msgstr "Errore in lettura della risposta HTTP classe 1xx\n"
+
+#: http.c:764
+msgid "***************** class 1xx HTTP response ****************\n"
+msgstr "***************** risposta HTTP classe 1xx ****************\n"
+
+#: http.c:875
+msgid "Connecting ..."
+msgstr "Connessione ..."
+
+#: http.c:1159
+msgid "*********** HTTP Server response MIME header **********\n"
+msgstr "*********** Header MIME di risposta del server HTTP **********\n"
+
+#: http.c:1262
+msgid "Regeting whole file\n"
+msgstr "Riscaricamento del file intero\n"
+
+#: http.c:1312
+#, c-format
+msgid "Unexpected response \"%d %s\" when trying to reget!\n"
+msgstr ""
+
+#: http_proxy.c:150
+#, c-format
+msgid "Checking HTTP proxy server %s:%d\n"
+msgstr ""
+
+#: http_proxy.c:162 http_proxy.c:174 http_proxy.c:181 http_proxy.c:190
+msgid "Failed to check proxy !\n"
+msgstr ""
+
+#: http_proxy.c:196
+#, c-format
+msgid "Proxy %s:%d is HTTP/%d.%d proxy\n"
+msgstr ""
+
+#: jsbind.c:76
+#, fuzzy
+msgid "bad parameter"
+msgstr "Parametro tempo errato \"%s\"\n"
+
+#: jsbind.c:529
+#, fuzzy
+msgid "not enough parameters"
+msgstr "Numero di parametri insufficiente \"-msgcat\"\n"
+
+#: jsbind.c:553
+msgid "unknown limiting condition"
+msgstr ""
+
+#: lfname.c:479 lfname.c:491 lfname.c:500 lfname.c:513 lfname.c:536
+#: lfname.c:645 lfname.c:658 lfname.c:670 lfname.c:685 lfname.c:698 re.c:51
+#: re.c:61 re.c:68 re.c:80 re.c:95
+#, c-format
+msgid "Error compiling regular expression : %s\n"
+msgstr "Errore di compilazione dell'espressione regolare : %s\n"
+
+#: lfname.c:553 lfname.c:617 lfname.c:939 lfname.c:1057
+#, c-format
+msgid "LSP analyze error: bad token at - %s\n"
+msgstr "Errore di analisi LSP: token errato a - %s\n"
+
+#: lfname.c:950
+#, c-format
+msgid "LSP analyze error: bad numeric value at - %s\n"
+msgstr "Errore di analisi LSP: valore numerico errato a - %s\n"
+
+#: lfname.c:964
+#, c-format
+msgid "LSP analyze error: bad macro at - %s\n"
+msgstr "Errore di analisi LSP: macro errata a - %s\n"
+
+#: lfname.c:992
+#, c-format
+msgid "LSP analyze error: unterminated string at - %s\n"
+msgstr "Errore di analisi LSP: stringa non terminata a - %s\n"
+
+#: lfname.c:1013 lfname.c:1029 lfname.c:1047
+#, c-format
+msgid "LSP analyze error: bad parameter type at - %s\n"
+msgstr "Errore di analisi LSP: tipo di parametro errato a - %s\n"
+
+#: log.c:203
+msgid "Ending log : %H:%M:%S %d.%m.%Y\n"
+msgstr "Conclusione log : %H:%M:%S %d.%m.%Y\n"
+
+#: log.c:224
+msgid "Unable to open log file - disabling logging\n"
+msgstr "Impossibile aprire il file di log - disabilitazione log\n"
+
+#: log.c:232
+msgid "Log file is locked by another process - "
+msgstr "Il file di log è bloccato da un altro processo - "
+
+#: log.c:236
+msgid "generating new log filename\n"
+msgstr "generazione nuovo file di log\n"
+
+#: log.c:241
+msgid "disabling logging\n"
+msgstr "disabilitazione log\n"
+
+#: log.c:263
+msgid "Starting log : %H:%M:%S %d.%m.%Y\n"
+msgstr "Avvio log : %H:%M:%S %d.%m.%Y\n"
+
+#: mozcache.c:184
+#, fuzzy, c-format
+msgid "Unable to open Mozilla cache index - %s\n"
+msgstr "Impossibile aprire l'indice della cache di Netscape - %s\n"
+
+#: myssl.c:49
+msgid "Failed obtaining entropy pathname\n"
+msgstr ""
+
+#: myssl.c:59
+msgid "Failed to initialize random seed for OpenSSL via EGD daemon\n"
+msgstr ""
+
+#: myssl.c:70
+msgid "Seeding entropy pool INSECURELY!\n"
+msgstr ""
+
+#: myssl.c:157
+msgid "Unable to set certificate file (wrong password?)\n"
+msgstr "Impossibile impostare il file del certificato (password errata?)\n"
+
+#: myssl.c:167
+msgid "Unable to set public key file\n"
+msgstr "Impossibile impostare il file della chiave pubblica\n"
+
+#: myssl.c:183
+msgid "Private key does not match the certificate public key\n"
+msgstr "La chiave privata non corrisponde alla chiave pubblica certificata\n"
+
+#: myssl.c:231
+#, c-format
+msgid "SSL connection is using %s\n"
+msgstr "La connessione SSL sta usando %s\n"
+
+#: myssl.c:234
+msgid "Server certificate:\n"
+msgstr "Certificato del server:\n"
+
+#: myssl.c:238
+#, c-format
+msgid "\t subject: %s\n"
+msgstr "\t subject: %s\n"
+
+#: myssl.c:243
+#, c-format
+msgid "\t issuer: %s\n"
+msgstr "\t distributore: %s\n"
+
+#: nscache.c:103
+#, c-format
+msgid "Unable to open Netscape cache index - %s\n"
+msgstr "Impossibile aprire l'indice della cache di Netscape - %s\n"
+
+#: ntlm_auth.c:416
+msgid "Trying to do NTLM authorization\n"
+msgstr ""
+
+#: ntlm_auth.c:425 ntlm_auth.c:506 ntlm_auth.c:587 ntlm_auth.c:667
+msgid "NTLM authorization supported only on persistent connections!\n"
+msgstr ""
+
+#: ntlm_auth.c:448 ntlm_auth.c:609
+msgid "Not enough data for NTLM authorization!\n"
+msgstr ""
+
+#: ntlm_auth.c:449 ntlm_auth.c:610
+#, fuzzy
+msgid "Missing:\n"
+msgstr "Impostazioni varie"
+
+#: ntlm_auth.c:450 ntlm_auth.c:611
+msgid "       domain\n"
+msgstr ""
+
+#: ntlm_auth.c:451 ntlm_auth.c:612
+msgid "       username\n"
+msgstr ""
+
+#: ntlm_auth.c:452 ntlm_auth.c:613
+msgid "       password\n"
+msgstr ""
+
+#: ntlm_auth.c:453 ntlm_auth.c:614
+msgid "       local hostname\n"
+msgstr ""
+
+#: ntlm_auth.c:489 ntlm_auth.c:497 ntlm_auth.c:522 ntlm_auth.c:650
+#: ntlm_auth.c:658 ntlm_auth.c:683
+msgid "Got unexpected response\n"
+msgstr ""
+
+#: ntlm_auth.c:532
+msgid "Failed NTLM nonce negotiation\n"
+msgstr ""
+
+#: ntlm_auth.c:574
+msgid "Trying to do proxy NTLM authorization\n"
+msgstr ""
+
+#: ntlm_auth.c:693
+msgid "Failed NTLM proxy nonce negotiation\n"
+msgstr ""
+
+#: options.h:193
+msgid "\t-v                 - print version number\n"
+msgstr "\t-v                 - mostra il numero di versione\n"
+
+#: options.h:204
+msgid "\t-h                 - help\n"
+msgstr "\t-h                 - aiuto\n"
+
+#: options.h:218
+msgid "\t-X                 - start GUI interface\n"
+msgstr "\t-X                 - avvia l'interfaccia GUI\n"
+
+#: options.h:249
+msgid ""
+"\t-runX              - after start of GUI interface, immediately\n"
+"\t                     start processing of entered URLs\n"
+msgstr ""
+"\t-runX              - dopo l'avvio dell'interfaccia GUI, inizia l'\n"
+"\t                     elaborazione delle URL inserite immediatamente\n"
+
+#: options.h:265
+msgid "\t-prefs/-noprefs    - load preferences from ~/.pavuk_prefs file\n"
+msgstr "\t-prefs/-noprefs    - carica le preferenze dal file ~/.pavuk_prefs\n"
+
+#: options.h:494
+msgid ""
+"\t-progress/-noprogress\n"
+"\t                   - show retrieving progress while running on terminal\n"
+msgstr ""
+"\t-progress/-noprogress\n"
+"\t                   - mostra l'indicatore di progresso durante l'avvio in "
+"terminale\n"
+
+#: options.h:517
+msgid "\t-lmax $nr          - allowed depth of tree\n"
+msgstr "\t-lmax $nr          - profondità richiesta dell'albero\n"
+
+#: options.h:528
+msgid "\t-dmax $nr          - maximal number of downloaded documents\n"
+msgstr "\t-dmax $nr          - numero massimo di documenti scaricati\n"
+
+#: options.h:539
+msgid ""
+"\t-sleep $nr         - sleep for $nr seconds between transfers,\n"
+"\t                     default 0 seconds\n"
+msgstr ""
+"\t-sleep $nr         - fermati per $nr secondi tra i trasferimenti,\n"
+"\t                     default 0 secondi\n"
+
+#: options.h:551
+#, fuzzy
+msgid ""
+"\t-rsleep/-norsleep  - randomize sleeping time between transfers\n"
+"\t                     from 0 to -sleep time\n"
+msgstr ""
+"\t-sleep $nr         - fermati per $nr secondi tra i trasferimenti,\n"
+"\t                     default 0 secondi\n"
+
+#: options.h:574
+msgid "\t-retry $nr         - number of retries if anything failed\n"
+msgstr "\t-retry $nr         - numero di tentativi se qualcosa fallisce\n"
+
+#: options.h:585
+msgid "\t-nregets $nr       - max number of regets on single file, default 2\n"
+msgstr ""
+"\t-nregets $nr       - numero massimo di riscaricamenti per singolo file, "
+"default 2\n"
+
+#: options.h:596
+msgid ""
+"\t-nredirs $nr       - max number of followed HTTP redirections, default 5\n"
+msgstr ""
+"\t-nredirs $nr       - numero massimo di ridirezioni HTTP da seguire, "
+"default 5\n"
+
+#: options.h:607
+#, fuzzy
+msgid ""
+"\t-timeout $nr       - timeout for network communications (min).\n"
+"\t                     0 == no timeout, default = 0\n"
+msgstr ""
+"\t-timeout $nr       - tempo limite per le comunicazioni di rete (min).\n"
+"\t                     0 == nessun limite,\n"
+"\t                     default = 0\n"
+
+#: options.h:619
+msgid ""
+"\t-rollback $nr      - number of bytes to discard (counted from end\n"
+"\t                     of file) if regetting, default 0\n"
+msgstr ""
+"\t-rollback $nr      - numero di byte da scartare (contati dalla fine\n"
+"\t                     del file) se si riscarica, default 0\n"
+
+#: options.h:632
+msgid ""
+"\t-ddays $nr         - number of days since last access when document is\n"
+"\t                     checked in sync mode\n"
+msgstr ""
+"\t-ddays $nr         - numero di giorni dall'ultimo accesso per il "
+"controllo\n"
+"\t                     del documento in modalità sincronizzata\n"
+
+#: options.h:644
+msgid ""
+"\t-nocache/-cache    - disallow caching of HTTP documents (on proxy cache)\n"
+msgstr ""
+"\t-nocache/-cache    - impedisci il caching di documenti HTTP (nella cache "
+"del proxy)\n"
+
+#: options.h:666
+msgid "\t-noRobots/-Robots  - care about \"robots.txt\" file ?\n"
+msgstr "\t-noRobots/-Robots  - tieni conto dei file \"robots.txt\" ?\n"
+
+#: options.h:688
+msgid "\t-noFTP/-FTP        - don't download FTP files\n"
+msgstr "\t-noFTP/-FTP        - non scariacare i file FTP\n"
+
+#: options.h:710
+msgid "\t-noHTTP/-HTTP      - don't download HTTP files\n"
+msgstr "\t-noHTTP/-HTTP      - non scaricare i file HTTP\n"
+
+#: options.h:735
+msgid "\t-noSSL/-SSL        - don't download (HTTPS) SSL files\n"
+msgstr "\t-noSSL/-SSL        - non scaricare i file SSL (HTTPS)\n"
+
+#: options.h:765
+msgid "\t-noFTPS/-FTPS      - don't download FTPS files\n"
+msgstr "\t-noFTPS/-FTPS      - non scaricare i file FTPS\n"
+
+#: options.h:792
+msgid "\t-noGopher/-Gopher  - download Gopher files ?\n"
+msgstr "\t-noGopher/-Gopher  - scarica i file Gopher ?\n"
+
+#: options.h:814
+msgid "\t-noCGI/-CGI        - download parametric CGI pages ?\n"
+msgstr "\t-noCGI/-CGI        - scarica le pagine CGI parametriche ?\n"
+
+#: options.h:836
+msgid "\t-noEnc/-Enc        - allow transfer of encoded files ?\n"
+msgstr ""
+"\t-noEnc/-Enc        - permetti il trasferimento di file codificati ?\n"
+
+#: options.h:858
+msgid ""
+"\t-noRelocate/-Relocate\n"
+"\t                   - don't rewrite links\n"
+msgstr ""
+"\t-noRelocate/-Relocate\n"
+"\t                   - non riscrivere i collegamenti\n"
+
+#: options.h:881
+msgid ""
+"\t-FTPhtml/-noFTPhtml\n"
+"\t                   - process HTML files downloaded over FTP\n"
+msgstr ""
+"\t-FTPhtml/-noFTPhtml\n"
+"\t                   - elabora i file HTML scaricati via FTP\n"
+
+#: options.h:904
+msgid ""
+"\t-FTPlist/-noFTPlist\n"
+"\t                   - use wide FTP directory listing\n"
+msgstr ""
+"\t-FTPlist/-noFTPlist\n"
+"\t                   - usa l'elenco esteso per le directory FTP\n"
+
+#: options.h:927
+msgid "\t-FTPdir/-noFTPdir  - recurse FTP directory\n"
+msgstr "\t-FTPdir/-noFTPdir  - esegui la ricorsione della directory FTP\n"
+
+#: options.h:949
+msgid ""
+"\t-store_index/-nostore_index\n"
+"\t                   - store directory URLs as index files\n"
+msgstr ""
+"\t-store_index/-nostore_index\n"
+"\t                   - memorizza le URL delle directory come file di indice\n"
+
+#: options.h:972
+msgid ""
+"\t-force_reget/-noforce_reget\n"
+"\t                   - force reget of whole file when server doesn't\n"
+"\t                     support reget\n"
+msgstr ""
+"\t-force_reget/-noforce_reget\n"
+"\t                   - forza il riscaricamento dell'intero file\n"
+"\t                     quando il server non gestisce il reget\n"
+
+#: options.h:1000
+msgid "\t-debug             - turn on debug mode\n"
+msgstr "\t-debug             - attiva la modalità debug\n"
+
+#: options.h:1030
+msgid ""
+"\t-debug_level $l    - debug level number, see manual for $l description\n"
+msgstr ""
+"\t-debug_level $l    - numero del livello di debug, guarda il manuale\n"
+"\t                     per la descrizione di $1\n"
+
+#: options.h:1042
+msgid "\t-asite $list       - comma-separated list of allowed sites\n"
+msgstr ""
+"\t-asite $list       - elenco separato da virgole dei siti consentiti\n"
+
+#: options.h:1053
+msgid "\t-dsite $list       - comma-separated list of disallowed sites\n"
+msgstr "\t-dsite $list       - elenco separato da virgole dei siti vietati\n"
+
+#: options.h:1064
+msgid "\t-adomain $list     - list of allowed domains\n"
+msgstr "\t-adomain $list     - elenco dei domini consentiti\n"
+
+#: options.h:1075
+msgid "\t-ddomain $list     - list of disallowed domains\n"
+msgstr "\t-ddomain $list     - elenco dei domini vietati\n"
+
+#: options.h:1086
+msgid "\t-aprefix $list     - list of allowed directory/file prefixes\n"
+msgstr "\t-aprefix $list     - elenco delle directory/file consentiti\n"
+
+#: options.h:1097
+msgid "\t-dprefix $list     - list of disallowed directory/file prefixes\n"
+msgstr "\t-dprefix $list     - elenco delle directory/file vietati\n"
+
+#: options.h:1108
+msgid "\t-asfx $list        - list of allowed suffixes\n"
+msgstr "\t-asfx $list        - elenco dei suffissi consentiti\n"
+
+#: options.h:1119
+msgid "\t-dsfx $list        - list of disallowed suffixes\n"
+msgstr "\t-dsfx $list        - elenco dei siti vietati\n"
+
+#: options.h:1130
+msgid "\t-amimet $list      - list of alloved MIME types\n"
+msgstr "\t-amimet $list      - elenco dei tipi MIME consentiti\n"
+
+#: options.h:1141
+msgid "\t-dmimet $list      - list of disallowed MIME types\n"
+msgstr "\t-dmimet $list      - elenco dei tipi MIME vietati\n"
+
+#: options.h:1152
+msgid "\t-alang $list       - list of preferred languages (only via HTTP)\n"
+msgstr "\t-alang $list       - elenco delle lingue preferite (solo via HTTP)\n"
+
+#: options.h:1163
+msgid ""
+"\t-acharset $list    - list of preferred character sets (only via HTTP)\n"
+msgstr ""
+"\t-acharset $list    - elenco degli insiemi di caratteri preferiti (solo via "
+"HTTP)\n"
+
+#: options.h:1174
+msgid ""
+"\t-scndir $dir       - directory ,where are stored your scenarios\n"
+"\t                     (config files)\n"
+msgstr ""
+"\t-scndir $dir       - directory, dove sono memorizzati i tuoi scenari\n"
+"\t                     (file di configurazione)\n"
+
+#: options.h:1186
+msgid "\t-cdir $dir         - directory for storing documents\n"
+msgstr "\t-cdir $dir         - directory in cui memorizzare i documenti\n"
+
+#: options.h:1197
+msgid "\t-subdir $dir       - subdirectory of cdir to operate on\n"
+msgstr ""
+"\t-subdir $dir       - subdirectory di quella corrente su cui operare\n"
+
+#: options.h:1208
+msgid ""
+"\t-scenario $str     - name of scenario from scenario directory to load\n"
+"\t                     and or run\n"
+msgstr ""
+"\t-scenario $str     - nome dello scenario dalla directory degli scenari\n"
+"\t                     da caricare e/o avviare\n"
+
+#: options.h:1220
+msgid ""
+"\t-auth_scheme 1/2/3 - HTTP authorization scheme 1-user 2-Basic 3-Digest,\n"
+"\t                     default 2\n"
+msgstr ""
+"\t-auth_scheme 1/2/3 - tipo di autorizzazione HTTP: 1-Utente 2-Base "
+"3-Digest,\n"
+"\t                     default 2\n"
+
+#: options.h:1232
+msgid "\t-auth_name $str    - name for Authorization (only via HTTP)\n"
+msgstr "\t-auth_name $str    - nome per l'Autorizzazione (solo via HTTP)\n"
+
+#: options.h:1243
+msgid "\t-auth_passwd $str  - password for Authorization (only via HTTP)\n"
+msgstr "\t-auth_passwd $str  - password per l'Autorizzazione (solo via HTTP)\n"
+
+#: options.h:1254
+msgid ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - reuse one HTTP digest access authorization\n"
+"\t                     nonce for more requests\n"
+msgstr ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - riusa un'autorizzazione Digest per accesso\n"
+"\t                     HTTP in caso di altre richieste\n"
+
+#: options.h:1278
+msgid ""
+"\t-auth_reuse_proxy_nonce/-noauth_reuse_proxy_nonce\n"
+"\t                   - reuse one HTTP proxy digest access\n"
+"\t                     authorization nonce for more requests\n"
+msgstr ""
+"\t-auth_reuse_proxy_nonce/-noauth_reuse_proxy_nonce\n"
+"\t                   - riusa un'autorizzazione Digest per accesso\n"
+"\t                     HTTP proxy in caso di altre richieste\n"
+
+#: options.h:1305
+msgid ""
+"\t-ssl_cert_passwd $str\n"
+"\t                   - password for SSL certification file\n"
+msgstr ""
+"\t-ssl_cert_passwd $str\n"
+"\t                   - password per il file di certificazione SSL\n"
+
+#: options.h:1321
+msgid ""
+"\t-ssl_cert_file $str\n"
+"\t                   - SSL certification file\n"
+msgstr ""
+"\t-ssl_cert_file $str\n"
+"\t                   - file di certificazione SSL\n"
+
+#: options.h:1337
+msgid "\t-ssl_key_file $str - SSL certification key file\n"
+msgstr "\t-ssl_key_file $str - file della chiave di certificazione SSL\n"
+
+#: options.h:1352
+msgid ""
+"\t-ssl_cipher_list $str\n"
+"\t                   - list of prefered SSL ciphers in SSL communication\n"
+msgstr ""
+"\t-ssl_cipher_list $str\n"
+"\t                   - elenco delle codifiche SSL preferite per le "
+"comunicazioni SSL\n"
+
+#: options.h:1368
+msgid "\t-egd_socket $file  - path to EGD listening socket\n"
+msgstr ""
+
+#: options.h:1380
+msgid "\t-from $str         - e-mail address used for user identification\n"
+msgstr ""
+"\t-from $str         - indirizzo e-mail usato per l'identificazione "
+"dell'utente\n"
+
+#: options.h:1391
+msgid ""
+"\t-send_from/-nosend_from\n"
+"\t                   - send From: header in HTTP request with your\n"
+"\t                     e-mail address\n"
+msgstr ""
+"\t-send_from/-nosend_from\n"
+"\t                   - invia l'header From: nelle richieste HTTP con il tuo\n"
+"\t                     indirizzo e-mail\n"
+
+#: options.h:1415
+msgid "\t-identity $str     - contents of User-agent: field in HTTP request\n"
+msgstr ""
+"\t-identity $str     - contenuto dell'header User-agent: nelle richieste "
+"HTTP\n"
+
+#: options.h:1426
+msgid "\t-pattern $list     - list of wildcard patterns for files\n"
+msgstr "\t-pattern $list     - elenco dei pattern wildcard per i file\n"
+
+#: options.h:1440
+msgid "\t-rpattern $re      - RE matching pattern for files\n"
+msgstr "\t-rpattern $re      - file che corrispondono al pattern RE\n"
+
+#: options.h:1452
+msgid ""
+"\t-skip_pattern $list\n"
+"\t                   - list of skip wildcard patterns for files\n"
+msgstr ""
+"\t-skip_pattern $list\n"
+"\t                   - evita i file il cui pattern wildcard è nell'elenco\n"
+
+#: options.h:1467
+msgid ""
+"\t-skip_rpattern $re\n"
+"\t                   - skip RE matching pattern for files\n"
+msgstr ""
+"\t-skip_rpattern $re\n"
+"\t                   - evita i file che corrispondono al pattern RE\n"
+
+#: options.h:1480
+msgid "\t-url_pattern $list - list of wildcard patterns for urls\n"
+msgstr "\t-url_pattern $list - URL il cui pattern wildcard è nell'elenco\n"
+
+#: options.h:1494
+msgid "\t-url_rpattern $re  - RE matching pattern for urls\n"
+msgstr "\t-url_rpattern $re  - URL che corrispondono al pattern RE\n"
+
+#: options.h:1506
+msgid ""
+"\t-skip_url_pattern $list\n"
+"\t                   - list of wildcard patterns for urls\n"
+msgstr ""
+"\t-skip_url_pattern $list\n"
+"\t                   - evita le URL il cui pattern wildcard è nell'elenco\n"
+
+#: options.h:1521
+msgid ""
+"\t-skip_url_rpattern $re\n"
+"\t                   - RE matching patterns for urls\n"
+msgstr ""
+"\t-skip_url_rpattern $re\n"
+"\t                   - evita le URL che corrispondono al pattern RE\n"
+
+#: options.h:1534
+msgid ""
+"\t-mode $mode        - set operation mode\n"
+"\t                         normal - recurse throught WWW (default)\n"
+"\t                         linkupdate - update remote links in local tree\n"
+"\t                         sync - synchronize local tree with remote WWW\n"
+"\t                                servers\n"
+"\t                         singlepage - single page with inline objects\n"
+"\t                         singlereget - reget file until not whole\n"
+"\t                         resumeregets - reget all files which are broken\n"
+"\t                         dontstore - transfer documents, but don't store\n"
+"\t                         reminder - checks URLs if they are changed\n"
+"\t                         ftpdir - list content of FTP directory\n"
+msgstr ""
+"\t-mode $mode        - imposta modalità operativa\n"
+"\t                         normal - ricorsione attraverso WWW (default)\n"
+"\t                         linkupdate - aggiorna i collegamenti remoti\n"
+"\t                         nell'albero locale\n"
+"\t                         sync - sincronizza l'albero locale con i server\n"
+"\t                         WWW remoti\n"
+"\t                         singlepage - pagina singola con oggetti "
+"incorporati\n"
+"\t                         singlereget - riscarica il file finché non è "
+"intero\n"
+"\t                         resumeregets - riscarica tutti i file che sono "
+"interrotti\n"
+"\t                         dontstore - trasferisci i documenti, ma non "
+"memorizzarli\n"
+"\t                         reminder - controlla le URL se sono cambiate\n"
+"\t                         ftpdir - elenca contenuto delle directory FTP\n"
+
+#: options.h:1555
+msgid ""
+"\t-ftp_proxy $site[:$port]\n"
+"\t                   - ftp proxy/cache server\n"
+msgstr ""
+"\t-ftp_proxy $site[:$port]\n"
+"\t                   - ftp proxy/cache server\n"
+
+#: options.h:1567
+msgid ""
+"\t-http_proxy $site[:$port]\n"
+"\t                   - http proxy/cache server\n"
+msgstr ""
+"\t-http_proxy $site[:$port]\n"
+"\t                   - http proxy/cache server\n"
+
+#: options.h:1579
+msgid ""
+"\t-gopher_proxy $site[:$port]\n"
+"\t                   - gopher proxy/cache server\n"
+msgstr ""
+"\t-gopher_proxy $site[:$port]\n"
+"\t                   - gopher proxy/cache server\n"
+
+#: options.h:1594
+msgid ""
+"\t-ssl_proxy $site[:$port]\n"
+"\t                   - ssl proxy server\n"
+msgstr ""
+"\t-ssl_proxy $site[:$port]\n"
+"\t                   - ssl proxy server\n"
+
+#: options.h:1607
+msgid ""
+"\t-gopher_httpgw/-nogopher_httpgw\n"
+"\t                   - specified gopher proxy is HTTP gateway for Gopher\n"
+msgstr ""
+"\t-gopher_httpgw/-nogopher_httpgw\n"
+"\t                   - il proxy gopher specificato è il gateway HTTP per "
+"Gopher\n"
+
+#: options.h:1631
+msgid ""
+"\t-ftp_httpgw/-noftp_httpgw\n"
+"\t                   - specified ftp proxy is HTTP gateway for FTP\n"
+msgstr ""
+"\t-ftp_httpgw/-noftp_httpgw\n"
+"\t                   - il proxy ftp specificato è il gateway HTTP per FTP\n"
+
+#: options.h:1655
+msgid ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - use CONNECT request to HTTP proxy for FTP\n"
+"\t                     connections\n"
+msgstr ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - usa la richiesta CONNECT al proxy HTTP per\n"
+"\t                     le connessioni FTP\n"
+
+#: options.h:1682
+msgid "\t-browser $str      - your preferred browser programm\n"
+msgstr "\t-browser $str      - il tuo browser preferito\n"
+
+#: options.h:1697
+msgid "\t-xmaxlog           - maximal length of log window\n"
+msgstr "\t-xmaxlog           - lunghezza massima della finestra di log\n"
+
+#: options.h:1709
+msgid "\t-dumpscn $str      - save scenario in scndir with name $str\n"
+msgstr ""
+"\t-dumpscn $str      - salva lo scenario nella directory apposita con il "
+"nome $str\n"
+
+#: options.h:1720
+msgid "\t-maxsize $nr       - maximal allowed size of document in bytes\n"
+msgstr ""
+"\t-maxsize $nr       - dimensione massima consentita dei documenti in byte\n"
+
+#: options.h:1731
+msgid "\t-minsize $nr       - minimal allowed size of document in bytes\n"
+msgstr ""
+"\t-minsize $nr       - dimensione minima consentita dei documenti in byte\n"
+
+#: options.h:1742
+msgid ""
+"\t-http_proxy_pass $str\n"
+"\t                   - password for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_pass $str\n"
+"\t                   - password per l'autorizzazione HTTP proxy\n"
+
+#: options.h:1754
+msgid ""
+"\t-http_proxy_user $str\n"
+"\t                   - user name for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - nome utente per l'autorizzazione HTTP proxy\n"
+
+#: options.h:1766
+msgid ""
+"\t-http_proxy_auth 1/2/3\n"
+"\t                   - authorization scheme for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_auth 1/2/3\n"
+"\t                   - tipo di autorizzazione per l'autorizzazione per "
+"l'HTTP proxy\n"
+
+#: options.h:1778
+msgid "\t-logfile $file     - name of file where mesages are stored\n"
+msgstr ""
+"\t-logfile $file     - nome del file in cui sono memorizzati i messaggi\n"
+
+#: options.h:1789
+msgid "\t-slogfile $file    - name of file where short log will be stored\n"
+msgstr ""
+"\t-slogfile $file    - nome del file in cui sarà memorizzato il log breve\n"
+
+#: options.h:1800
+msgid "\t-stime/-nostime    - write starting and ending time of transfer\n"
+msgstr ""
+"\t-stime/-nostime    - scrivi il tempo di inizio e conclusione del "
+"trasferimento\n"
+
+#: options.h:1822
+msgid ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - remove improper files or directories while running\n"
+"\t                     in sync mode\n"
+msgstr ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - rimuovi file o directory irregolari quando lanciato "
+"in\n"
+"\t                     modalità sincronizzata\n"
+
+#: options.h:1847
+msgid ""
+"\t-auth_file $file   - file where you have stored your auth infos\n"
+"\t                     see manual for format description\n"
+msgstr ""
+"\t-auth_file $file   - file in cui hai memorizzato le tue informazioni di\n"
+"\t                     autorizzazione\n"
+"\t                     guarda il manuale per la descriozione del formato\n"
+
+#: options.h:1859
+msgid ""
+"\t-base_level $nr    - number of levels of directory tree to omit from top\n"
+msgstr ""
+"\t-base_level $nr    - numero di livelli dell'albero di directory da\n"
+"\t                     tralasciare dalla cima\n"
+
+#: options.h:1870
+msgid "\t-ftp_active        - select active FTP data connection\n"
+msgstr "\t-ftp_active        - seleziona la connessione dati FTP attiva\n"
+
+#: options.h:1881
+msgid "\t-ftp_passive       - select passive FTP data connection\n"
+msgstr "\t-ftp_passive       - seleziona la connessione dati FTP passiva\n"
+
+#: options.h:1895
+msgid "\t-msgcat $dir       - directory where message catalogs are stored\n"
+msgstr ""
+"\t-msgcat $dir       - directory in cui sono memorizzati i cataloghi di "
+"messaggi\n"
+
+#: options.h:1910
+msgid "\t-language $str     - set language for messages\n"
+msgstr "\t-language $str     - imposta la lingua per i messaggi\n"
+
+#: options.h:1922
+msgid "\t-quiet             - don't show output messages\n"
+msgstr "\t-quiet             - non mostrare i messaggi di output\n"
+
+#: options.h:1933
+msgid "\t-verbose           - show output messages (default)\n"
+msgstr "\t-verbose           - mostra i messaggi di output (default)\n"
+
+#: options.h:1944
+msgid ""
+"\t-newer_than $time  - download only documents newer than $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-newer_than $time  - scarica solo i documenti più nuovi di $time\n"
+"\t                     formato di $time: YYYY.MM.DD.hh:mm\n"
+
+#: options.h:1956
+msgid ""
+"\t-older_than $time  - download only documents older than $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-older_than $time  - scarica solo i documenti più vecchi di $time\n"
+"\t                     formato di $time: YYYY.MM.DD.hh:mm\n"
+
+#: options.h:1968
+msgid ""
+"\t-schedule $time    - schedule pavuk start at $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-schedule $time    - pianifica l'avvio di pavuk alle $time\n"
+"\t                     formato di $time: YYYY.MM.DD.hh:mm\n"
+
+#: options.h:1980
+msgid ""
+"\t-reschedule $nr    - number of hours between two runs\n"
+"\t                     for cyclic scheduling\n"
+msgstr ""
+"\t-reschedule $nr    - numero di ore tra due avvii\n"
+"\t                     per pianificazioni cicliche\n"
+
+#: options.h:1992
+msgid ""
+"\t-dont_leave_site/-leave_site\n"
+"\t                   - don't/leave site of starting URL\n"
+msgstr ""
+"\t-dont_leave_site/-leave_site\n"
+"\t                   - non/abbandonare il sito con l'URL di partenza\n"
+
+#: options.h:2015
+msgid ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - don't/leave directory of starting URL\n"
+msgstr ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - non/abbandonare la directory con l'URL di partenza\n"
+
+#: options.h:2038
+msgid ""
+"\t-preserve_time/-nopreserve_time\n"
+"\t                   - preserve document modification time\n"
+msgstr ""
+"\t-preserve_time/-nopreserve_time\n"
+"\t                   - preserva il tempo di modifica del documento\n"
+
+#: options.h:2061
+msgid ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - preserve document permissions\n"
+msgstr ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - preserva i permessi del documento\n"
+
+#: options.h:2084
+msgid ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - preserve absolute symlinks\n"
+msgstr ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - preserva i collegamenti simbolici assoluti\n"
+
+#: options.h:2107
+msgid ""
+"\t-leave_level $nr   - how many tree levels leave from starting\n"
+"\t                     site , (0 == don't care) default 0\n"
+msgstr ""
+"\t-leave_level $nr   - quanti livelli dell'albero attraversare dal sito\n"
+"\t                     di partenza, (0 == non importa) default 0\n"
+
+#: options.h:2119
+msgid "\t-cookie_file $file - file where are stored cookie infos\n"
+msgstr ""
+"\t-cookie_file $file - file in cui sono memorizzate le informazioni sul "
+"cookie\n"
+
+#: options.h:2130
+msgid ""
+"\t-cookie_send/-nocookie_send\n"
+"\t                   - send cookie info in HTTP request\n"
+msgstr ""
+"\t-cookie_send/-nocookie_send\n"
+"\t                   - invia le informazioni sul cookie nelle richieste "
+"HTTP\n"
+
+#: options.h:2153
+msgid ""
+"\t-cookie_recv/-nocookie_recv\n"
+"\t                   - accept cookies from HTTP response\n"
+msgstr ""
+"\t-cookie_recv/-nocookie_recv\n"
+"\t                   - accetta cookie dalle risposte HTTP\n"
+
+#: options.h:2176
+msgid ""
+"\t-cookie_update/-nocookie_update\n"
+"\t                   - update cookies in cookies file\n"
+msgstr ""
+"\t-cookie_update/-nocookie_update\n"
+"\t                   - aggiorna i cookie nel file dei cookie\n"
+
+#: options.h:2199
+msgid ""
+"\t-cookie_check/-nocookie_check\n"
+"\t                   - check if cookies are set for source domain\n"
+msgstr ""
+"\t-cookie_check/-nocookie_check\n"
+"\t                   - controlla se i cookie sono impostati dal dominio "
+"d'origine\n"
+
+#: options.h:2222
+msgid "\t-cookies_max $nr   - maximal number of cookies in cookie cache\n"
+msgstr ""
+"\t-cookies_max $nr   - numero massimo di cookie nella cache dei cookie\n"
+
+#: options.h:2233
+msgid ""
+"\t-disabled_cookie_domains $list\n"
+"\t                   - comma-separated list of disabled cookie domains\n"
+msgstr ""
+"\t-disabled_cookie_domains $list\n"
+"\t                   - elenco separato da virgole dei domini con cookie "
+"disabilitati\n"
+
+#: options.h:2245
+msgid ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - disable processing of URLs from\n"
+"\t                     attribute $ATTRIB of HTML tag $TAG\n"
+msgstr ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - disabilita l'elaborazione delle URL dall'\n"
+"\t                     attributo $ATTRIB del tag HTML $TAG\n"
+
+#: options.h:2258
+msgid ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - enable proccessing of URLs from\n"
+"\t                     attribute $ATTRIB of HTML tag $TAG\n"
+msgstr ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - abilita l'elaborazione delle URL dall'\n"
+"\t                     attributo $ATTRIB del tag HTML $TAG\n"
+
+#: options.h:2274
+msgid "\t-gui_font $font    - font name used in GUI interface\n"
+msgstr "\t-gui_font $font    - nome del font usato nell'interfaccia GUI\n"
+
+#: options.h:2286
+msgid ""
+"\t-user_condition $str\n"
+"\t                   - user exit script used to restrict some URLs\n"
+"\t                     for more informations see manpage\n"
+msgstr ""
+"\t-user_condition $str\n"
+"\t                   - script in uscita dell'utente usato per limitare "
+"alcune URL\n"
+"\t                     per ulteriori informazioni guardare la pagina man\n"
+
+#: options.h:2299
+msgid ""
+"\t-tr_del_chr $str   - characters that will be deleted from\n"
+"\t                     local filename\n"
+msgstr ""
+"\t-tr_del_chr $str   - caratteri che saranno cancellati dai nomi\n"
+"\t                     dei file locali\n"
+
+#: options.h:2311
+msgid ""
+"\t-tr_str_str $str1 $str2\n"
+"\t                   - translate $str1 to $str2 in local filename\n"
+msgstr ""
+"\t-tr_str_str $str1 $str2\n"
+"\t                   - trasforma $str1 in $str2 nei nomi dei file locali\n"
+
+#: options.h:2323
+msgid ""
+"\t-tr_chr_chr $chrset1 $chrset2\n"
+"\t                   - translate $chrset1 to $chrset2 in local filename\n"
+msgstr ""
+"\t-tr_chr_chr $chrset1 $chrset2\n"
+"\t                   - trasforma $chrset1 in $chrset2 nei nomi dei file "
+"locali\n"
+
+#: options.h:2335
+msgid "\t-index_name $str   - name of directory index instead of _._.html\n"
+msgstr ""
+"\t-index_name $str   - nome dell'indice della directory invece di _._.html\n"
+
+#: options.h:2346
+#, fuzzy
+msgid "\t-store_name $str   - filename for first downloaded document\n"
+msgstr "\t-dmax $nr          - numero massimo di documenti scaricati\n"
+
+#: options.h:2368
+msgid ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - compare received size of file with\n"
+"\t                     that provided by remote server\n"
+msgstr ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - confronta la dimensione del file ricevuto con\n"
+"\t                     quella fornita dal server remoto\n"
+
+#: options.h:2392
+msgid ""
+"\t-urls_file $file   - URLs should be read from file, until\n"
+"\t                     line with single \".\" occurs in input\n"
+msgstr ""
+"\t-urls_file $file   - le URL dovrebbero essere lette dal file, fino a\n"
+"\t                     quando giunge in input una riga con un singolo \".\"\n"
+
+#: options.h:2404
+msgid ""
+"\t-bg/-nobg          - detach pavuk proces from terminal and\n"
+"\t                     don't output any messages on screen\n"
+msgstr ""
+"\t-bg/-nobg          - stacca il processo di pavuk dal terminale e\n"
+"\t                     non emettere alcun messaggio sullo schermo\n"
+
+#: options.h:2427
+msgid "\t-maxrate $nr       - limit to maximal speed of transfer (kB/s)\n"
+msgstr ""
+"\t-maxrate $nr       - limita al massimo la velocità di trasferimento "
+"(kB/s)\n"
+
+#: options.h:2438
+msgid "\t-minrate $nr       - limit to minimal speed of transfer (kB/s)\n"
+msgstr ""
+"\t-minrate $nr       - limita al minimo la velocità di trasferimento (kB/s)\n"
+
+#: options.h:2449
+msgid "\t-bufsize $nr       - size of read buffer (kB)\n"
+msgstr "\t-bufsize $nr       - dimensione del buffer di lettura (kB)\n"
+
+#: options.h:2460
+msgid "\t-file_quota $nr    - maximal size of file to transfer (kB)\n"
+msgstr ""
+"\t-file_quota $nr    - dimensione massima del file da trasferire (kB)\n"
+
+#: options.h:2471
+msgid "\t-trans_quota $nr   - maximal amount of transfer per session (kB)\n"
+msgstr ""
+"\t-trans_quota $nr   - ammontare massimo di trasferimenti per sessione (kB)\n"
+
+#: options.h:2482
+msgid "\t-fs_quota $nr      - disk free space quota (kB)\n"
+msgstr "\t-fs_quota $nr      - quota di spazio libero su disco (kB)\n"
+
+#: options.h:2493
+msgid ""
+"\t-enable_js/-disable_js\n"
+"\t                   - enable downloading of javascript source files\n"
+msgstr ""
+"\t-enable_js/-disable_js\n"
+"\t                   - abilita lo scaricamento dei file sorgenti javascript\n"
+
+#: options.h:2516
+msgid ""
+"\t-fnrules $t $m $r  - local filename construction rules\n"
+"\t                     (for better description see manual)\n"
+msgstr ""
+"\t-fnrules $t $m $r  - regole per la costruzione dei nomi dei file locali\n"
+"\t                     (per una descrizione migliore guarda il manuale)\n"
+
+#: options.h:2528
+msgid ""
+"\t-store_info/-nostore_info\n"
+"\t                   - store document info files with each document\n"
+msgstr ""
+"\t-store_info/-nostore_info\n"
+"\t                   - memorizza i file con le informazioni sul documento\n"
+"\t                     insieme a ciascun documento\n"
+
+#: options.h:2551
+msgid ""
+"\t-all_to_local/-noall_to_local\n"
+"\t                   - change all links inside HTML document to\n"
+"\t                     local immediately after download\n"
+msgstr ""
+"\t-all_to_local/-noall_to_local\n"
+"\t                   - cambia in locali tutti i collegamenti all'interno "
+"del\n"
+"\t                     documento HTML immediatamente dopo lo scaricamento\n"
+
+#: options.h:2575
+msgid ""
+"\t-sel_to_local/-nosel_to_local\n"
+"\t                   - change all links inside HTML document\n"
+"\t                     which acomplish the limits, to\n"
+"\t                     local immediately after download\n"
+msgstr ""
+"\t-sel_to_local/-nosel_to_local\n"
+"\t                   - cambia in locali tutti i collegamenti all'\n"
+"\t                     interno del documento HTML che soddisfano le\n"
+"\t                     limitazioni, immediatamente dopo lo scaricamento\n"
+
+#: options.h:2600
+msgid ""
+"\t-all_to_remote/-noall_to_remote\n"
+"\t                   - change all links inside HTML document to\n"
+"\t                     remote immediately after download and\n"
+"\t                     don't do any further changes to it\n"
+msgstr ""
+"\t-all_to_remote/-noall_to_remote\n"
+"\t                   - cambia in remoti tutti i collegamenti all'interno\n"
+"\t                     del documento immediatamente dopo lo scaricamento e\n"
+"\t                     non fare ulteriori cambiamenti ad esso\n"
+
+#: options.h:2625
+msgid "\t-remind_cmd $str   - command which sends result from reminder mode\n"
+msgstr ""
+"\t-remind_cmd $str   - comando che invia il risultato dalla modalità\n"
+"\t                     reminder (promemoria)\n"
+
+#: options.h:2636
+msgid ""
+"\t-auto_referer/-noauto_referer\n"
+"\t                   - in HTTP request send for each starting URL\n"
+"\t                     Referer: field which contains its own URL\n"
+msgstr ""
+"\t-auto_referer/-noauto_referer\n"
+"\t                   - nelle richieste HTTP invia per ogni URL di partenza\n"
+"\t                     il campo Referer: che contiene la sua propria URL\n"
+
+#: options.h:2660
+msgid ""
+"\t-url_strategy $strategy\n"
+"\t                   - scheduling strategy for URLs\n"
+"\t                     (this means order how URLs will be downloaded)\n"
+"\t                     $strategy is one of :\n"
+"\t                        level  - level order in URL tree\n"
+"\t                        leveli - level order in URL tree,\n"
+"\t                                 but inline objects go first\n"
+"\t                        pre    - pre-order in URL tree\n"
+"\t                        prei   - pre-order in URL tree,\n"
+"\t                                 but inline objects go first\n"
+msgstr ""
+"\t-url_strategy $strategy\n"
+"\t                   - strategia di pianificazione per le URL\n"
+"\t                     (cioè l'ordine in cui le URL saranno scaricate)\n"
+"\t                     $strategy è una tra :\n"
+"\t                        level  - ordinamento per livello nell'albero delle "
+"URL\n"
+"\t                        leveli - ordinamento per livello nell'albero delle "
+"URL,\n"
+"\t                                 ma gli oggetti incorporati vengono prima\n"
+"\t                        pre    - pre-ordinamento per livello nell'albero "
+"delle URL\n"
+"\t                        prei   - pre-ordinamento per livello nell'albero "
+"delle URL,\n"
+"\t                                 ma gli oggetti incorporati vengono prima\n"
+
+#: options.h:2683
+msgid "\t-nscache_dir $dir  - path to Netcape browser cache directory\n"
+msgstr ""
+"\t-nscache_dir $dir  - percorso della directory della cache del browser "
+"Netscape\n"
+
+#: options.h:2698
+#, fuzzy
+msgid "\t-ie_cache          - allow loading of files from MSIE browser cache\n"
+msgstr " - con supporto per caricare i file dalla cache del browser Netscape\n"
+
+#: options.h:2728
+msgid ""
+"\t-remove_adv/-noremove_adv\n"
+"\t                   - enable removing of advertisement banners\n"
+"\t                     assumes you have setup regular expresions\n"
+"\t                     for matching adv banners with -adv_re option\n"
+msgstr ""
+"\t-remove_adv/-noremove_adv\n"
+"\t                   - abilita la rimozione dei banner pubblicitari\n"
+"\t                     suppone che tu abbia impostato delle espressioni "
+"regolari\n"
+"\t                     per il riconoscimento dei banner con l'opzione "
+"-adv_re\n"
+
+#: options.h:2761
+msgid ""
+"\t-adv_re $RE        - regular expressions for matching advertisement\n"
+"\t                     banner URLs\n"
+msgstr ""
+"\t-adv_re $RE        - espressioni regolari per il riconoscimento\n"
+"\t                     delle URL dei banner pubblicitari\n"
+
+#: options.h:2777
+msgid ""
+"\t-check_bg/-nocheck_bg\n"
+"\t                   - if running at background, don't write any\n"
+"\t                     messages to screen\n"
+msgstr ""
+"\t-check_bg/-nocheck_bg\n"
+"\t                   - se funzionante sullo sfondo, non scrivere\n"
+"\t                     alcun messagggio sullo schermo\n"
+
+#: options.h:2806
+msgid ""
+"\t-send_if_range/-nosend_if_range\n"
+"\t                   - send If-Range header in HTTP request\n"
+"\t                     turn this of when server support reget, but\n"
+"\t                     generates different Etags for two requests\n"
+msgstr ""
+"\t-send_if_range/-nosend_if_range\n"
+"\t                   - invia l'header If-Range nelle richieste HTTP\n"
+"\t                     disabilita questa opzione se il server gestisce il "
+"reget,\n"
+"\t                     ma genera Etags diversi per due richieste\n"
+
+#: options.h:2831
+msgid "\t-sched_cmd $str    - command for scheduling\n"
+msgstr "\t-sched_cmd $str    - comando per la pianificazione\n"
+
+#: options.h:2842
+msgid ""
+"\t-unique_log/-nounique_log\n"
+"\t                   - when original log file locked try to find other\n"
+"\t                     with numbering extension which is not locked\n"
+msgstr ""
+"\t-unique_log/-nounique_log\n"
+"\t                   - quando il file di log originale è bloccato, prova a "
+"cercarne\n"
+"\t                     un altro con estensione numerica che non è bloccata\n"
+
+#: options.h:2866
+msgid ""
+"\t-post_cmd $str     - postprocessing command, which will be invoked\n"
+"\t                     after document will be successfully downloaded\n"
+msgstr ""
+"\t-post_cmd $str     - comando di post-elaborazione, che sarà attivato\n"
+"\t                     dopo che il documento sarà scaricato con successo\n"
+
+#: options.h:2882
+#, fuzzy
+msgid ""
+"\t-ssl_version $v    - version of SSL protocol used for communication,\n"
+"\t                     valid values: ssl23,ssl2,ssl3,tls1\n"
+msgstr ""
+"\t-ssl_version $v    - versione del protocollo SSL usata per le "
+"comunicazioni,\n"
+"\t                     valori ammessi: ssl23,ssl2,ssl3\n"
+
+#: options.h:2885
+msgid ""
+"\t-ssl_version $v    - version of SSL protocol used for communication,\n"
+"\t                     valid values: ssl23,ssl2,ssl3\n"
+msgstr ""
+"\t-ssl_version $v    - versione del protocollo SSL usata per le "
+"comunicazioni,\n"
+"\t                     valori ammessi: ssl23,ssl2,ssl3\n"
+
+#: options.h:2903
+msgid ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - use unique SSL ID with each SSL session\n"
+msgstr ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - usa un ID SSL univoco per ogni sessione\n"
+
+#: options.h:2931
+msgid "\t-httpad $hdr       - additional HTTP header\n"
+msgstr "\t-httpad $hdr       - header HTTP aggiuntivo\n"
+
+#: options.h:2942
+msgid "\t-statfile $str     - statistical report from downloading progress\n"
+msgstr ""
+"\t-statfile $str     - rapporto statistico sull'avanzamento dello "
+"scaricamento\n"
+
+#: options.h:2956
+msgid ""
+"\t-ewait             - wait to finish program after downloading progress\n"
+"\t                     is done\n"
+msgstr ""
+"\t-ewait             - aspetta a chiudere il programma dopo che "
+"l'avanzamento\n"
+"\t                     dello scaricamento è completato\n"
+
+#: options.h:2987
+msgid "\t-aip_pattern $re   - pattern for allowed IP addresses of servers\n"
+msgstr "\t-aip_pattern $re   - pattern per gli IP dei server ammessi\n"
+
+#: options.h:3002
+msgid "\t-dip_pattern $re   - pattern for disallowed IP addresses of servers\n"
+msgstr "\t-dip_pattern $re   - pattern per gli IP dei server vietati\n"
+
+#: options.h:3014
+msgid ""
+"\t-site_level $nr    - maximum allowed number of sites to leave from\n"
+"\t                     starting site\n"
+msgstr ""
+"\t-site_level $nr    - numero massimo ammesso di siti da attraversare dal\n"
+"\t                     sito di partenza\n"
+
+#: options.h:3026
+msgid ""
+"\t-use_http11/-nouse_http11\n"
+"\t                   - enable or disable using of HTTP/1.1 protocol\n"
+"\t                     features, default is off now\n"
+msgstr ""
+"\t-use_http11/-nouse_http11\n"
+"\t                   - abilita o disabilita l'uso delle caratteristiche\n"
+"\t                     del protocollo HTTP/1.1, default è off adesso\n"
+
+#: options.h:3050
+#, fuzzy
+msgid ""
+"\t-max_time $nr      - set maximal amount of time for program run\n"
+"\t                     in minutes, default 0 == no limit\n"
+"\t                     you can use floating point numbers, to\n"
+"\t                     specify subminute times\n"
+msgstr ""
+"\t-max_time $nr      - imposta il tempo massimo di esecuzione del programma\n"
+"\t                     in minuti, default 0 == nessuna limitazione\n"
+
+#: options.h:3065
+msgid ""
+"\t-local_ip $str     - use this local ip address of network interface.\n"
+"\t                     This option is for multihomed machines.\n"
+msgstr ""
+"\t-local_ip $str     - usa questo indirizzo IP locale dell'interfaccia di "
+"rete.\n"
+"\t                     Questa opzione è per macchine con più indirizzi IP.\n"
+
+#: options.h:3077
+#, fuzzy
+msgid ""
+"\t-request $req      - extended request informations, used to specify\n"
+"\t                     information for GET or POST requests.\n"
+"\t                     format of $req :\n"
+"\t                     \"URL:$url METHOD:[GET|POST] ENCODING:[m|u]\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\n"
+"\t                       LNAME:$local_filename\"\n"
+"\t                     (for more informations see manual page)\n"
+msgstr ""
+"\t-request $req      - informazioni estese per le richieste, usata per "
+"specificare\n"
+"\t                     le informazioni per le richieste GET o POST.\n"
+"\t                     formato di $req :\n"
+"\t                     \"URL:$url METHOD:[GET|POST] ENCODING:[m|u]\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\"\n"
+"\t                     (per altre informazioni guarda la pagina man)\n"
+
+#: options.h:3095
+msgid ""
+"\t-hash_size $nr     - size of internal hash tables for performance tuning\n"
+msgstr ""
+"\t-hash_size $nr     - dimensione delle tabelle hash interne per migliorare\n"
+"\t                     le prestazioni\n"
+
+#: options.h:3109
+msgid "\t-nthreads $nr      - set number of concurent downloading threads\n"
+msgstr ""
+"\t-nthreads $nr      - imposta il numero di thread concorrenti di "
+"scaricamento\n"
+
+#: options.h:3124
+#, fuzzy
+msgid ""
+"\t-immesg/-noimmesg  - write messages immediately after produced, not\n"
+"\t                     just when safe (from MT point of view)\n"
+msgstr ""
+"\t-immesg/-noimmesg - scrivi i messaggi quando generati immediatamente, non\n"
+"\t                    solo quando si salva (dal punto di vista del MT)\n"
+
+#: options.h:3152
+msgid ""
+"\t-formdata $data    - used to specify HTML form fields, for HTML\n"
+"\t                     forms found during traversing document tree.\n"
+"\t                     Only forms mentiond in this option will be\n"
+"\t                     processed automaticaly.\n"
+"\t                     \"URL:$url\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\"\n"
+"\t                     (for more informations see manual page)\n"
+msgstr ""
+"\t-formdata $data    - usato per specificare i campi di un modulo HTML, per\n"
+"\t                     i moduli HTML trovati durante l'attraversamento "
+"dell'\n"
+"\t                     albero del documento. Solo i moduli citati in questa\n"
+"\t                     opzione saranno elaborati automaticamente.\n"
+"\t                     \"URL:$url\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\"\n"
+"\t                     (per altre informazioni guarda la pagina man)\n"
+
+#: options.h:3170
+msgid ""
+"\t-dumpfd $nr        - number of filedescriptor where to output\n"
+"\t                     document contents instead to file\n"
+msgstr ""
+"\t-dumpfd $nr        - numero del descrittore di file in cui inviare in "
+"output\n"
+"\t                     il contenuto del documento invece di un file\n"
+
+#: options.h:3182
+#, fuzzy
+msgid ""
+"\t-dump_urlfd $nr    - number of filedescriptor where to output\n"
+"\t                     all URLs found in documents\n"
+msgstr ""
+"\t-dumpfd $nr        - numero del descrittore di file in cui inviare in "
+"output\n"
+"\t                     il contenuto del documento invece di un file\n"
+
+#: options.h:3194
+#, fuzzy
+msgid ""
+"\t-del_after/-nodel_after\n"
+"\t                   - delete FTP document after succesfull transfer\n"
+msgstr ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - preserva i permessi del documento\n"
+
+#: options.h:3217
+#, fuzzy
+msgid ""
+"\t-unique_name/-nounique_name\n"
+"\t                   - always generate unique name for each document\n"
+msgstr ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - usa un ID SSL univoco per ogni sessione\n"
+
+#: options.h:3240
+#, fuzzy
+msgid ""
+"\t-leave_site_enter_dir/-dont_leave_site_enter_dir\n"
+"\t                   - leave directory which we first entered on site\n"
+msgstr ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - non/abbandonare la directory con l'URL di partenza\n"
+
+#: options.h:3263
+msgid ""
+"\t-singlepage/-nosinglepage\n"
+"\t                   - donwload single HTML page with all inline objects\n"
+msgstr ""
+
+#: options.h:3286
+#, fuzzy
+msgid ""
+"\t-dump_after/-nodump_after\n"
+"\t                   - when used with option -dumpfd, dump document after\n"
+"\t                     successful download and processing of HTML\n"
+"\t                     documents\n"
+msgstr ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - riusa un'autorizzazione Digest per accesso\n"
+"\t                     HTTP in caso di altre richieste\n"
+
+#: options.h:3311
+#, fuzzy
+msgid ""
+"\t-dump_response/-nodump_response\n"
+"\t                   - when used with option -dumpfd, also responses\n"
+"\t                     from HTTP servers will be dumped\n"
+msgstr ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - riusa un'autorizzazione Digest per accesso\n"
+"\t                     HTTP in caso di altre richieste\n"
+
+#: options.h:3338
+#, fuzzy
+msgid ""
+"\t-auth_ntlm_domain $str\n"
+"\t                   - SMB domain name for HTTP NTLM authorization\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - nome utente per l'autorizzazione HTTP proxy\n"
+
+#: options.h:3354
+#, fuzzy
+msgid ""
+"\t-auth_proxy_ntlm_domain $str\n"
+"\t                   - SMB domain name for HTTP proxy NTLM authorization\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - nome utente per l'autorizzazione HTTP proxy\n"
+
+#: options.h:3370
+msgid ""
+"\t-js_pattern $re    - additional RE patterns for matching URLs in DOM\n"
+"\t                     event attributes of HTML tags\n"
+msgstr ""
+
+#: options.h:3383
+#, fuzzy
+msgid ""
+"\t-follow_cmd $str   - user exit script used tell if you want to follow\n"
+"\t                     any link from current HTML document\n"
+msgstr ""
+"\t-dumpfd $nr        - numero del descrittore di file in cui inviare in "
+"output\n"
+"\t                     il contenuto del documento invece di un file\n"
+
+#: options.h:3395
+#, fuzzy
+msgid ""
+"\t-retrieve_symlink/-noretrieve_symlink\n"
+"\t                   - retrieve symliks like regular files or directories\n"
+msgstr ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - preserva i collegamenti simbolici assoluti\n"
+
+#: options.h:3421
+msgid ""
+"\t-js_transform $p $t $h $a\n"
+"\t                   - custom JS pattern with transformation\n"
+"\t                     $p - pattern\n"
+"\t                     $t - transfomation\n"
+"\t                     $h - HTML tag or * or \"\"\n"
+"\t                     $a - HTML attrib\n"
+msgstr ""
+
+#: options.h:3441
+msgid ""
+"\t-js_transform2 $p $t $h $a\n"
+"\t                   - custom JS pattern with transformation and\n"
+"\t                     rewriting of URLs in first subpattern\n"
+"\t                     $p - pattern\n"
+"\t                     $t - transfomation\n"
+"\t                     $h - HTML tag or * or \"\"\n"
+"\t                     $a - HTML attrib\n"
+msgstr ""
+
+#: options.h:3459
+#, fuzzy
+msgid ""
+"\t-ftp_proxy_user $str\n"
+"\t                   - username for access authorization to FTP proxy\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - nome utente per l'autorizzazione HTTP proxy\n"
+
+#: options.h:3471
+#, fuzzy
+msgid ""
+"\t-ftp_proxy_pass $str\n"
+"\t                   - password for access authorization to FTP proxy\n"
+msgstr ""
+"\t-http_proxy_pass $str\n"
+"\t                   - password per l'autorizzazione HTTP proxy\n"
+
+#: options.h:3483
+msgid ""
+"\t-limit_inlines/-dont_limit_inlines\n"
+"\t                   - apply limiting options on page inline objects?\n"
+msgstr ""
+
+#: options.h:3506
+#, fuzzy
+msgid ""
+"\t-ftp_list_options $str\n"
+"\t                   - additional options or parameters to FTP LIST or\n"
+"\t                     NLST commands\n"
+msgstr ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - usa la richiesta CONNECT al proxy HTTP per\n"
+"\t                     le connessioni FTP\n"
+
+#: options.h:3519
+msgid ""
+"\t-fix_wuftpd_list/-nofix_wuftpd_list\n"
+"\t                   - do extensive checking of FTP directory presence to\n"
+"\t                     workaround WuFTPD broken responses when trying\n"
+"\t                     to list nonexisting directory\n"
+msgstr ""
+
+#: options.h:3544
+#, fuzzy
+msgid ""
+"\t-post_update/-nopost_update\n"
+"\t                  - update in parent documents only links pointing\n"
+"\t                    to current document\n"
+msgstr ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - rimuovi file o directory irregolari quando lanciato "
+"in\n"
+"\t                     modalità sincronizzata\n"
+
+#: options.h:3568
+#, fuzzy
+msgid ""
+"\t-info_dir $dir    - separate directory where will stored info files\n"
+"\t                    instead of directly into document tree\n"
+msgstr ""
+"\t-scndir $dir       - directory, dove sono memorizzati i tuoi scenari\n"
+"\t                     (file di configurazione)\n"
+
+#: options.h:3583
+#, fuzzy
+msgid "\t-mozcache_dir $dir - path to Mozilla browser cache directory\n"
+msgstr ""
+"\t-nscache_dir $dir  - percorso della directory della cache del browser "
+"Netscape\n"
+
+#: options.h:3595
+msgid ""
+"\t-aport $list       - allow downloading of documents from servers\n"
+"\t                     siting on listed ports\n"
+msgstr ""
+
+#: options.h:3607
+msgid ""
+"\t-dport $list       - deny downloading of documents from servers\n"
+"\t                     siting on listed ports\n"
+msgstr ""
+
+#: options.h:3619
+#, fuzzy
+msgid ""
+"\t-hack_add_index/-nohack_add_index\n"
+"\t                   - this is hack to allow adding of also directories\n"
+"\t                     of all queued files\n"
+msgstr ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - confronta la dimensione del file ricevuto con\n"
+"\t                     quella fornita dal server remoto\n"
+
+#: options.h:3643
+#, fuzzy
+msgid ""
+"\t-default_prefix $str\n"
+"\t                  - default URL prefix for subdirectory of\n"
+"\t                    mirrored files\n"
+msgstr ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - usa la richiesta CONNECT al proxy HTTP per\n"
+"\t                     le connessioni FTP\n"
+
+#: options.h:3659
+#, fuzzy
+msgid ""
+"\t-js_script_file $file\n"
+"\t                  - script file with JavaScript functions\n"
+msgstr ""
+"\t-ssl_cert_file $str\n"
+"\t                   - file di certificazione SSL\n"
+
+#: options.h:3672
+msgid ""
+"\t-ftp_login_handshake $host $handshake\n"
+"\t                   - customize login handshake for FTP server\n"
+msgstr ""
+
+#: pavuk.c:106
+msgid "QUIT signal catched\n"
+msgstr "Intercettato segnale QUIT\n"
+
+#: pavuk.c:259
+msgid "Not enough number of parameters \"-msgcat\"\n"
+msgstr "Numero di parametri insufficiente \"-msgcat\"\n"
+
+#: pavuk.c:273
+msgid "Not enough number of parameters \"-scenario\"\n"
+msgstr "Numero di parametri insufficiente \"-scenario\"\n"
+
+#: pavuk.c:303
+msgid "Error: Supplied bad file descriptor in -dumpfd option\n"
+msgstr "Errore: Fornito un descrittore di file errato nell'opzione -dumpfd\n"
+
+#: pavuk.c:314
+#, fuzzy
+msgid "Error: Supplied bad file descriptor in -dump_urlfd option\n"
+msgstr "Errore: Fornito un descrittore di file errato nell'opzione -dumpfd\n"
+
+#: pavuk.c:366
+msgid "WARNING: scndir not specified - saving to current directory\n"
+msgstr ""
+"ATTENZIONE: scndir non specificata - salvataggio nella directory corrente\n"
+
+#: pavuk.c:403
+msgid "Unable to fork pavuk to background - running in foreground\n"
+msgstr "Impossibile spostare pavuk sullo sfondo - esecuzione in primo piano\n"
+
+#: pavuk.c:407
+#, c-format
+msgid "Pavuk will run at backround as PID %d\n"
+msgstr "Pavuk sarà eseguito in backround con PID %d\n"
+
+#: pavuk.c:427
+#, c-format
+msgid "reading URLs from file - %s\n"
+msgstr "lettura delle URL dal file - %s\n"
+
+#: recurse.c:82
+#, c-format
+msgid "Rescheduling locked URL as no. %d\n"
+msgstr "Ripianificazione dell'URL bloccata N° %d\n"
+
+#: recurse.c:95
+msgid "Running post-processing command\n"
+msgstr "Avvio comando di post-elaborazione\n"
+
+#: recurse.c:243
+#, c-format
+msgid "retry no. %d\n"
+msgstr "tentativo N° %d\n"
+
+#: recurse.c:246
+#, c-format
+msgid "URL[%2d]: %5d(%d) of %5d  %s\n"
+msgstr "URL[%2d]: %5d(%d) di %5d  %s\n"
+
+#: recurse.c:249
+#, c-format
+msgid "URL: %5d(%d) of %5d  %s\n"
+msgstr "URL: %5d(%d) di %5d  %s\n"
+
+#: recurse.c:260 recurse.c:394
+msgid "Starting download"
+msgstr "Inizio scaricamento"
+
+#: recurse.c:284
+msgid "Already processed\n"
+msgstr "Già elaborato\n"
+
+#: recurse.c:291
+msgid "Disallowed by user\n"
+msgstr "Vietato dall'utente\n"
+
+#: recurse.c:305
+msgid "Disallowed by rules\n"
+msgstr "Vietato dalle regole\n"
+
+#: recurse.c:312
+msgid "Checking \"robots.txt\""
+msgstr "Controllo \"robots.txt\""
+
+#: recurse.c:316
+msgid "Disallowed by \"robots.txt\"\n"
+msgstr "Vietato da \"robots.txt\"\n"
+
+#: recurse.c:326
+msgid "This URL type is not supported with ftpdir mode\n"
+msgstr "Questo tipo di URL non è gestito con la modalità ftpdir\n"
+
+#: recurse.c:346
+msgid "No transfer - file not expired\n"
+msgstr "Nessun trasferimento - file non scaduto\n"
+
+#: recurse.c:362
+#, c-format
+msgid "Starting time :  %s\n"
+msgstr "Tempo di inizio :  %s\n"
+
+#: recurse.c:404 recurse.c:563
+#, c-format
+msgid "Ending time :    %s\n"
+msgstr "Tempo di conclusione :    %s\n"
+
+#: recurse.c:411 recurse.c:566
+msgid "download"
+msgstr "scaricamento"
+
+#: recurse.c:511
+msgid "last document locked -> sleeping for 5 seconds\n"
+msgstr "ultimo documento bloccato -> pausa di 5 secondi\n"
+
+#: recurse.c:577
+#, fuzzy
+msgid "Relocating and scanning HTML document"
+msgstr "Spostamento dei documenti HTML"
+
+#: recurse.c:629
+#, fuzzy
+msgid "Dumping processed document"
+msgstr "non ancora elaborato\n"
+
+#: recurse.c:649
+msgid "Storing document"
+msgstr "Memorizzazione del documento"
+
+#: recurse.c:655
+msgid "Store failed\n"
+msgstr "Memorizzazione fallita\n"
+
+#: recurse.c:762 recurse.c:845
+msgid "Done"
+msgstr "Fatto"
+
+#: recurse.c:922 remind.c:379
+msgid "Sleeping ..."
+msgstr "Pausa ..."
+
+#: recurse.c:936 remind.c:396
+msgid "Exiting ..."
+msgstr "Uscita ..."
+
+#: recurse.c:1048
+#, c-format
+msgid "\t%s    (%d bytes)\n"
+msgstr "\t%s    (%d byte)\n"
+
+#: recurse.c:1106
+msgid "Searching for files to resume"
+msgstr "Ricerca dei file da riprendere"
+
+#: recurse.c:1133
+#, c-format
+msgid "Adding %s to resume list\n"
+msgstr "Aggiunta di %s all'elenco di ripresa\n"
+
+#: recurse.c:1165
+msgid "Searching for documents to synchronize"
+msgstr "Ricerca dei documenti da sincronizzare"
+
+#: recurse.c:1220 recurse.c:1245
+#, fuzzy, c-format
+msgid "Adding file %s to sync list as URL %s\n"
+msgstr "Aggiunta di %s all'elenco di sincronizzazione\n"
+
+#: remind.c:45
+#, c-format
+msgid "Checking: %s\n"
+msgstr "Controllo: %s\n"
+
+#: remind.c:170
+#, c-format
+msgid "Bad reminder db entry - %s\n"
+msgstr "Registrazione errata nel db del promemoria - %s\n"
+
+#: remind.c:529
+msgid ""
+"This is the result of running pavuk reminder mode\n"
+"\n"
+msgstr ""
+"Questo è il risultato dell'esecuzione di pavuk in modalità reminder "
+"(promemoria)\n"
+"\n"
+
+#: remind.c:540
+msgid "Changed URLs\n"
+msgstr "URL cambiata\n"
+
+#: remind.c:561
+msgid "URLs with some errors\n"
+msgstr "URL con alcuni errori\n"
+
+#: robots.c:166
+msgid "transfering \"robots.txt\""
+msgstr "trasferimento di \"robots.txt\""
+
+#: robots.c:169
+msgid "transfering \"robots.txt\"\n"
+msgstr "trasferimento di \"robots.txt\"\n"
+
+#: robots.c:230
+#, c-format
+msgid "Hmm: redirecting \"robots.txt\" to %s ???\n"
+msgstr "Hmm: ridirezione di \"robots.txt\" a %s ???\n"
+
+#: stats.c:138 stats.c:221
+#, c-format
+msgid "Total number of URLs in queue: %d\n"
+msgstr "Numero totale di URL in coda: %d\n"
+
+#: stats.c:139 stats.c:223
+#, c-format
+msgid "Starting urls: %d\n"
+msgstr "URL di partenza: %d\n"
+
+#: stats.c:142 stats.c:228
+msgid "Not processed yet: %d (%3d%%)\n"
+msgstr "Non ancora elaborato: %d (%3d%%)\n"
+
+#: stats.c:147 stats.c:235
+msgid "Processed OK: %d (%3d%%)\n"
+msgstr "Elaborazione OK: %d (%3d%%)\n"
+
+#: stats.c:150 stats.c:241
+msgid "Loaded from local tree: %d (%3d%%)\n"
+msgstr "Caricato dall'albero locale: %d (%3d%%)\n"
+
+#: stats.c:153 stats.c:247
+msgid "Loaded from Netscape browser cache dir: %d (%3d%%)\n"
+msgstr "Caricato dalla directory cache del browser Netscape: %d (%3d%%)\n"
+
+#: stats.c:156 stats.c:253
+msgid "Downloaded over network: %d (%3d%%)\n"
+msgstr "Scaricamenti su rete: %d (%3d%%)\n"
+
+#: stats.c:159 stats.c:259
+msgid "Moved to another location: %d (%3d%%)\n"
+msgstr "Spostato in un'altra posizione: %d (%3d%%)\n"
+
+#: stats.c:163 stats.c:265
+msgid "Downloaded truncated: %d (%3d%%)\n"
+msgstr "Scaricamenti interrotti: %d (%3d%%)\n"
+
+#: stats.c:169 stats.c:272
+msgid "Non fatal errors: %d (%3d%%)\n"
+msgstr "Errori non fatali: %d (%3d%%)\n"
+
+#: stats.c:175 stats.c:279
+msgid "Not found documents: %d (%3d%%)\n"
+msgstr "Documento non trovati: %d (%3d%%)\n"
+
+#: stats.c:181 stats.c:286
+msgid "Documents with fatal errors: %d (%3d%%)\n"
+msgstr "Documenti con errori fatali: %d (%3d%%)\n"
+
+#: stats.c:187
+msgid "Documents with unknown status: %d (%3d%%)\n"
+msgstr "Documenti con stato sconosciuto: %d (%3d%%)\n"
+
+#: stats.c:293
+msgid "Documents with unspecific status: %d (%3d%%)\n"
+msgstr "Documenti con stato non specificato: %d (%3d%%)\n"
+
+#: stats.c:358
+msgid "Pavuk: save status page"
+msgstr "Pavuk: salva la pagina di stato"
+
+#: stats.c:379 stats.c:537
+msgid "Not available yet"
+msgstr "Non ancora disponibile"
+
+#: stats.c:462
+msgid "Pavuk: status page"
+msgstr "Pavuk: pagina di stato"
+
+#: stats.c:479
+msgid "Status page"
+msgstr "Pagina di stato"
+
+#: stats.c:492
+msgid "Save ..."
+msgstr "Salva..."
+
+#: stats.c:499
+msgid "Refresh"
+msgstr "Aggiorna"
+
+#: stats.c:526
+msgid "Try download"
+msgstr "Prova il download"
+
+#: tools.c:109
+msgid "no error"
+msgstr "nessun errore"
+
+#: tools.c:114
+msgid "host not found"
+msgstr "host non trovato"
+
+#: tools.c:119
+msgid "temporary error (try again later)"
+msgstr "errore temporaneo (riprova più tardi)"
+
+#: tools.c:124
+msgid "non recoverable error"
+msgstr "errore non recuperabile"
+
+#: tools.c:129
+msgid "name is valid, but doesn't have an IP address"
+msgstr "il nome è valido, ma non ha un indirizzo IP"
+
+#: tools.c:133
+msgid "unknown hostname translation error"
+msgstr "errore sconosciuto di traduzione del nome dell'host"
+
+#: tools.c:315 tools.c:330
+#, c-format
+msgid "waiting to release lock on FD : %d\n"
+msgstr "attesa per il rilascio del blocco sul FD : %d\n"
+
+#: uconfig.c:998
+msgid "Bad parameter - Working subdirectory"
+msgstr "Parametro errato - Subdirectory di lavoro"
+
+#: uconfig.c:1178
+msgid "Bad parameter - Cache directory"
+msgstr "Parametro errato - Cache directory"
+
+#: uexit.c:30
+msgid "Error occured while executing user-exit script"
+msgstr "Errore insorto durante l'esecuzione dello script in uscita dell'utente"
+
+#: update_links.c:40
+#, c-format
+msgid "Entering directory %s\n"
+msgstr "Ingresso directory %s\n"
+
+#: update_links.c:69
+#, c-format
+msgid "Relocating %s\n"
+msgstr "Trasferimento %s\n"
+
+#: update_links.c:72
+#, c-format
+msgid "Omitting %s\n"
+msgstr "Tralascio %s\n"
+
+#: update_links.c:86
+#, c-format
+msgid "Leaving directory %s\n"
+msgstr "Abbandono directory %s\n"
+
+#: update_links.c:104
+#, c-format
+msgid "Can't open directory %s\n"
+msgstr "Impossibile aprire la directory %s\n"
+
+#: url.c:1000
+#, c-format
+msgid "unsupported URL type \"%s\"\n"
+msgstr "tipo di URL non gestito \"%s\"\n"
+
+#: url.c:1152
+msgid "Moved to already processed URL.\n"
+msgstr "Spostato ad un'URL già elaborata.\n"
+
+#: url.c:2767
+#, fuzzy
+msgid "Missing specification of URL in request\n"
+msgstr "Specifica mancante dei campi di richiesta per la richiesta POST\n"
+
+#: url.c:2776
+msgid "Missing request fields specification for POST request\n"
+msgstr "Specifica mancante dei campi di richiesta per la richiesta POST\n"
+
+#: url.c:2784
+msgid "Multipart encoding not supported with GET requests\n"
+msgstr "Codifica Multipart gestita con le richieste GET\n"

@@ -1,0 +1,10 @@
+# this is example of pavukrc file for using nondefault icons
+
+BtnConfigureIcon: configure.xpm
+BtnGoBgIcon: gobg.xpm
+BtnRestartIcon: restart.xpm
+BtnContinueIcon: continue.xpm
+BtnStopIcon: stop.xpm
+BtnBreakIcon: break.xpm
+BtnExitIcon: exit.xpm
+

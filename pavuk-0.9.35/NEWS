@@ -1,0 +1,288 @@
+This file contains new features introduced by particular pavuk versions.
+For more precise description of changes look into ChangeLog file.
+Fileds signed as <CLI> are for commandline new features, <GUI> are for new
+feature available only for GUI, <DOC> significant changes in documentation.
+
+version 0.9pl22
+---------------
+<CLI> new option -ssl_version used to set required SSL protocol version
+<CLI> new options -unique_sslid/-nounique_sslid used to specify if pavuk
+      should use unique SSL ID with each SSL session
+<GUI> New Append URL dialog used to append URLs while running downloading
+      process
+<CLI> new option -httpad used for adding user defined HTTP headers to HTTP
+      requests
+<CLI> new option -statfile for saving download progress statistics to file
+      when finished
+<GUI> new dialog window for previewing statistics reports
+<CLI> new option -debug_level to enable control on amount of debug messages
+<CLI> new WIN32 specific option -ewait to disable pavuk console close when
+      pavuk finished his job
+<GUI> new posibility to save tree structure from URL tree preview dialog
+
+version 0.9pl23
+---------------
+<CLI> new option -aip_pattern & -dip_pattern to specify allowed/disallowed
+      server IP addreses with regular expressions
+<CLI> new option -site_level for limiting through how many site in URL tree
+      can pavuk go
+<CLI> new mode "ftpdir" for listing FTP directories
+<CLI> new option -site_level for limiting how many site levels can be
+      downloaded
+<CLI> new protocol added - FTP over SSL
+<CLI> new option -FTPS/-noFTPS for enabling/disabling of documents via
+      FTP over SSL
+<CLI> new option -ssl_cipher_list to specify list of preffered ciphers in 
+      SSL communication
+<CLI> new protocol added - HTTP/1.1
+<CLI> new option -use_http11/-nouse_http11 for enabling/disabling use of 
+      HTTP/1.1 protocol in communication with HTTP server
+<CLI> new option -max_time to specify maximal time of downloading
+<CLI> new option -local_ip to binf specified network interface on multihomed
+      hosts
+
+version 0.9pl24
+---------------
+<CLI> new option -request for specify richer information for request, this
+      option is required for doing HTTP POST requests
+<CLI> new option -hash_size used to set size of internal hash tables for
+      URL and filename lookup. Usable for performance tuning when mirrorng
+      huge amount of URLs
+<CLI> extended posibilities of option -fnrules to be able to perform several
+      functions for generating local names
+<GUI> implemented droping of URLs into URL Append dialog
+<GUI> implemented posibility to watch downloading process inside 
+      URL tree preview dialog
+
+version 0.9pl25
+---------------
+<GUI> removed support for Xt GUI
+<CLI> posibility to use multiple HTTP proxy servers with round robin scheduling
+<CLI/GUI> optional multithreading support (see option -nthreads)
+<CLI> new multithreading related pair of options -immesg/-noimmesg for
+      controling per thread bufering of messages till download is finished
+<CLI> posibility to fill noninteractively matching HTML forms (see option
+      -formdata in manual)
+<CLI> new option -dumpfd to be able directly dump documents to pipe instead 
+      of file in document tree
+<GUI> 'Load scenario' now resets configuration before loading new scenario
+<GUI> Added new menu entry to add scenario to current setup
+
+version 0.9pl26
+---------------
+<CLI> added new option -del_after to allow removing of remote FTP documents
+      after successfull download
+<CLI> added new options -unique_name/-nounique_name which allows to to turn
+      on/off generating of unique names for documents using numbering of 
+      overlaying documents
+<CLI> it is now possible to specify in -request option to specify also
+      filename in which will be specified starting document stored
+<CLI> added new option -dump_urlsfd to enable outputing URLs from downloaded
+      HTML documents to selected file descriptor - usable for scripting
+<DOC> added new document file wget-pavuk.HOWTO to aid wget users start using
+      pavuk
+<CLI> new options -singlepage/-nosinglepage to allow using single page transfers
+      in different modes (this makes -mode singlepage obsoleted)
+
+version 0.9pl27
+---------------
+<GUI> added support to retieve URL from currently opened document in Netscape
+      browser window
+<CLI> options  -disable_html_tag / -enable_html_tag now accept parameter
+      "all" to disable / enable all HTML tags
+<CLI> added support for reading MSIE cache on WIN32. Use options -ie_cache
+      and -noie_cache to enable/disable this feature
+<CLI> new macro for -fnrules option %q for handling query strings from POST
+      request
+<CLI> added new functions for -fnrules option - "sif", "!", "|", "&" .
+<CLI> added support for GNU getopt() like long/short commandline options
+      You can now use this syntax of options:
+	-lmax 3
+	--lmax 3
+	--lmax=3
+	-l 3
+	-l3
+      It is also able to combine multiple short options.
+      For example -xl3 means -X -lmax 3
+<CLI> added new options -dump_after/-nodump_after. This option can be used
+      with option -dumpfd x , and you can control with it when document will
+      writen to output. When -dump_after is active, document will be dumped
+      just after download and processing of HTML documents. Else document
+      will be dumped during download. With this option you can also use
+      option -dumpfd succesfully in multithreaded version of pavuk without
+      mixing documents on output
+<CLI> added support for processing simple JS patterns in DOM event tags and
+      script bodies and javascript:... URLs
+<CLI> added support for NTLM authorization
+<CLI> added support for HTTP/1.0 persistent proxy connections
+<CLI> added new option -js_pattern which will allow you to specify custom
+      JS RE patterns for processing
+<CLI> added option -follow_cmd, which allows to cotrol pavuk with external
+      command. By exit code you can tell if pavuk can follow links from
+      current doc.
+<CLI> new options -retrieve_symlink/-noretrieve_symlink to enable downloading
+      of symbolic links like regular files/directories from server
+<CLI> new option -js_transform , it is more powerfull form of -js_pattern
+      option, which allows you to specify transform rule for pattern and
+      also allow you to specify exact HTML tag and attribute where to look
+      for the pattern
+<CLI> Added support for FTP proxy athorization (new options -ftp_proxy_user
+      and -ftp_proxy_pass)
+
+version 0.9pl28
+---------------
+<CLI> added new option (-limit_inlines/-dont_limit_inlines) to disable
+      checking of limiting options for inline objects
+<CLI> added new option -ftp_list_options to allow passing options to FTP
+      LIST/NLST commands
+<CLI> added new option (-fix_wuftpd/-nofix_wuftpd) to workaround wuftpd
+      broken responses when trying to list non existing FTP directory
+<CLI> added new option (-post_update/-nopost_update) to force pavuks URL
+      updating engine to update in parents documents only URL currently
+      downloaded
+<CLI> new function for -fnrules option - getval,getext,seq
+<CLI> extended -fnrules option - new macros %M, %E for setting local document
+      name by its MIME type (assumes using of -post_update option)
+<CLI> new option -info_dir to allow storing info files outside of document
+      tree
+<CLI> added new option -js_transform2 which have similar function as
+      -js_transform option, just it allows also rewriting of matched URLs.
+      This is also very suitable to add tags/attributes which are not
+      supported by pavuk at default.
+<CLI> added support for loading files from Mozilla browser cache directory
+<CLI> added new options (-aport/-dport) to restric loading of documents
+      from servers on specified ports
+<CLI> new option -default_prefix added. This option is helpfull when you
+      want do directory based synchronization and use -base_level option.
+<GUI> new right mouse button menu in the log window
+<CLI> extended -fnrules option - new "ud" function for decoding urlencoded
+      strings
+<CLI> new option -egd_socket used to set path of EGD deamon socket 
+<CLI> new option -js_script_file used to specify which file contains
+      JavaScript functions used by pavuk
+<CLI> extended -fnrules option - new "jsf" function for calling JavaScript
+      functions for generating local names
+<CLI> new option -ftp_login_handshake for customizing login procedure for
+      FTP servers
+
+version 0.9pl29
+---------------
+<CLI> added support for SSL by using of GPL'ed Netscape NSS3 as optional
+      replacement for OpenSSL which is said not GPL compatible
+<CLI> new option -nss_cert_dir used to set certificate directory for NSS3
+<CLI> new option -nss_accept_unknown_cert/-nonss_accept_unknown_cert to
+      allow controling of certificate checking with NSS3
+<CLI> added new option --dont_touch_url_pattern to deny download and rewrite
+      of particular URLs specified by wildcard pattern in HTML tags
+<CLI> added new option --dont_touch_url_rpattern to deny download and rewrite
+      of particular URLs specified by regular expresions in HTML tags
+<CLI> added new option --dont_touch_tag_rpattern to deny download and rewrite
+      of URLs in particular HTML tags specified by regular expresions
+<GUI> improved usability of GoBg function. Now GUI disappear mostly immediatly
+      without needing to wait for end of current transfer
+<CLI> new options -nss_domestic_policy/-nss_export_policy for selecting
+      SSL cipher suites in NSS
+<CLI> added support for new cache format of Mozilla browser used in 0.9 and
+      newer Mozilla versions
+<CLI> added new options -tag_pattern and -tag_rpattern for precise matching of
+      URLs inside HTML tags based on selection of patterns for HTML tag name
+      HTML tag attribute name and URL itself. -tag_pattern option uses wildcard
+      patterns form matching and -tag_rpattern option uses regular expresion
+      patterns.
+
+version 0.9pl30a
+----------------
+
+<CLI> Added new mode MIRROR that is supposed to get an exact copy of the remote
+      server. Mode SYNC tries to get as many files from the remote site as 
+      possible while mode MIRROR in case of http mirroring will not try to
+      load files that are no longer linked to (as mode SYNC tries to do).
+
+<CLI> Mode MIRROR uses the same file names as the remote site. No quoting of
+      possible unsafe characters in file names is done like for mode SYNC. 
+
+<CLI> Now the exit code of pavuk indicates if an exact
+      copy of the remote server could be made. The original mode SYNC considered
+      skipping of downloads (e.g. because the remote file is already present on
+      the local system) to be an ERROR!
+
+      Now exit code 0 is used to indicate an exact copy and no download errors.
+
+<CLI> New option -active_ftp_port_range permits to specify the ports used for
+      active ftp. This permits easier firewall configuration since the range
+      of ports can be restricted.
+
+      Pavuk will randomly choose a number from within the specified
+      range until an open port is found. Should no open ports be found
+      within the given range, pavuk will default to a normal
+      kernel-assigned port, and a message (debug level net) is output.
+
+      The port range selected must be in the non-privileged range
+      (eg. greater than or equal to 1024); it is STRONGLY RECOMMENDED that
+      the chosen range be large enough to handle many simultaneous
+      active connections (for example, 49152-65534, the IANA-registered
+      ephemeral port range).
+
+<CLI> Bug fixed that caused system chrash in case of some relative links
+      that specified no filename (e.g. '<a href="#top">'). See htmlparse.c
+      for details (search for "'#'").
+
+<CLI> When parsing the FTP listing pavuk now also tries to evaluate the 
+      modification time of the listed files. This only works if -ftplist
+      is specified (possibly also requiring -ftp_list_options -a) and
+      at the moment only for UNIX file system listings.
+
+<CLI> Originally pavuk in ftp mirror mode (e.g. SYN, MIRROR) sent the
+      following commands to the remote server for every file: "TYPE I" 
+      (binary mode) and then got remote file size and remote modification time.
+      Now the system uses the remote file size and remote modification time
+      if this was already determined when listing the remote directory.
+      See above point.
+
+      "TYPE I" is now only sent if a file (or part of) is downloaded.
+
+      These changes reduce the amount of sent ftp commands and thus fasten 
+      comparisons of remote file system and local file system.
+
+      Note that the file system listing usually has lower time precision than
+      "MDTM". This means that the local file modification time might be 
+      different than on the remote system.
+
+      Use option -always_mdtm if you need the same modification time as the
+      remote file; see below.
+
+<CLI> New option -always_mdtm can be used to assure that pavuk always uses 
+      "MDTM" to determine the file modification time and never uses cached times
+      determined when listing the remote files.
+
+<CLI> New option -remove_before_store/-noremove_before_store can be used to
+      unlink files before new content is stored. This is helpful if the
+      local files are hardlinked to some other directory and after mirroring the
+      hardlinks are checked. All "broken" hardlinks indicate a file update.
+
+<CLI> If remote file modification times are "in the future" (e.g. if the remote
+      server's clock is inaccurate), then pavuk would not download files
+      silently assuming that they are not yet expired. 
+      (It only loaded files older than a specified number of days. If
+      this number is not specified, the value 0 is used which means: do not
+      load files newer than the current time; current time == current time of
+      pavuk).
+
+      Now such "No transfer - file not expired" is only done if an expire 
+      time (option -ddays) is specified (i.e. value != 0).
+
+<CLI> Fixed a bug that crashed pavuk when doing multi threaded downloads.
+
+<CLI> The -max_time timeout is now also assured with alarm(). If pavuk fails
+      to abort one minute after the given timeout, then alarm() will terminate
+      it.
+
+version 0.9pl30b
+----------------
+<CLI> added new option -referer and -noreferer to enable and disable the
+      transfer of HTTP referer field.
+
+version 0.9.32
+----------------
+<GUI> GTK2 compiles, still some problems.
+<CLI> read support for KDE2 cookie file (~/.kde/share/apps/kcookiejar/cookies)

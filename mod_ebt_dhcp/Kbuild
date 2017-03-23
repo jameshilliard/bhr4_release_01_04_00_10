@@ -1,0 +1,4 @@
+obj-m := mod_ebt_dhcp.o
+mod_ebt_dhcp-y := ebt_dhcp.o
+EXTRA_CFLAGS := 
+KBUILD_EXTRA_SYMBOLS := 

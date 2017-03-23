@@ -1,0 +1,32 @@
+Pavuk is World Wide Web graber (mirroring tool for FTP/HTTP/Gopher/(SSL)).
+Pavuk was originaly writen for UNIX environment.
+
+This port of pavuk was made by using of gnu-win32 alias cygwin development 
+environment.
+
+        check out http://sourceware.cygnus.com/cygwin/
+
+This package contains executable file pavuk.exe and cygwin1.dll & cygz.dll
+(from cygwin net release 1.3.2) libraries taken from cygwin. 
+To use pavuk in Windows, just copy this files to some directory and use it.
+It doesn't need any other instalation steps.
+
+Pavuk-gnu-win32 is comand line driven program so grab manual page from 
+source distribution and check syntax or look into pavuk.html file.
+
+This win32 port of pavuk is full featured version. It lacks only GUI. 
+If you want Win32 pavuk with GUI download file pavuk-win32gui-0.9pl28.exe
+
+!!!! WARNING !!!!
+This version of pavuk was compiled with new cygwin POSIX runtime. It have
+significant changes in file paths handling, so please check your scenarios 
+and correct paths if you was using old cygwin paths //[drive]/ to 
+/cygdrive/[drive]/
+!!!! WARNING !!!!
+
+For new informations check pavuk homepage at URL:
+
+        http://pavuk.sourceforge.net/
+
+Stevo Ondrejicka
+

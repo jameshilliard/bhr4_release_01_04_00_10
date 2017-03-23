@@ -1,0 +1,23 @@
+/* XPM */
+static char *binary_xpm[] = {
+" 14 14 4 1",
+/* colors */
+". c #ffffff",
+"# c #808080",
+"a c #c8c8c8",
+"b c #000000",
+/* pixels */
+".............#",
+".aaaaaaaaaaab#",
+".abababaabaab#",
+".abababababab#",
+".abababababab#",
+".abababababab#",
+".abababaabaab#",
+".aaaaaaaaaaab#",
+".aabaabaabaab#",
+".abababababab#",
+".abababababab#",
+".abababababab#",
+".aabaabaabaab#",
+".bbbbbbbbbbbb#"};

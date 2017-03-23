@@ -1,0 +1,23 @@
+#########################
+# this is sample .pavukrc
+#########################
+
+MaxRetry: 3
+MaxRegets: 3
+CommTimeout: 20
+DocExpiration: 2
+UseCache: false
+UseRobots: false
+AllowFTPRecursion: true
+ForceReget: true
+Debug: true
+#ScenarioDirectory: /home/ondrej/work/.pavukscn/
+#WorkingDir: /home/ondrej/work/pavuk
+#FTPProxy: amber:22
+#HTTPProxy: amber:8080
+ShowProgres: true
+#EmailAddress: -ondrej@elf-linux.sk
+XMaxLogSize: 1000
+ShowDownloadTime: true
+RemoveOldDocuments: false
+

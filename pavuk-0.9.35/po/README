@@ -1,0 +1,18 @@
+How to translate (for beginners):
+
+1) Do the normal configure steps in main directory to get makefiles.
+2) Do 'make ln.pox', where <ln> is your language to get a new pox-file
+3) Translating the new file:
+   a) Enter texts for any new translation string.
+   b) Remove any commented old strings (at end of file).
+   c) Correct anything with "fuzzy" keyword and remove the keyword afterwards.
+   d) Be careful - fuzzy somethimes means printf-specifiers may have changed - 
+      e.g. from %d to %u - fix these or it will be very hard to find the
+      errors resulting from this.
+   e) Use diff between old and new file as often as necessary to find
+      everything which needs to be changed.
+4) Copy the new pox file to the corresponding po file and call make to see if
+   there are warnings or errors.
+5) Have a last look at the complete file to see if something has been forgotten
+   or is wrong.
+6) Send the new file to the current maintainer for inclusion in release.

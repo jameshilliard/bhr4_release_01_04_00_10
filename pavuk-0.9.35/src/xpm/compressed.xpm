@@ -1,0 +1,28 @@
+/* XPM */
+static char *compressed_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"14 14 7 1",
+/* colors */
+"  c none",
+". c #ffffff",
+"# c #ff3333",
+"b c #999999",
+"c c #660000",
+"d c #333333",
+"e c #000000",
+/* pixels */
+"   ddddd      ",
+"   d..d.d     ",
+"   d..d..d    ",
+"   d..dedde   ",
+" c d...eeee c ",
+" c#d....bbe#c ",
+" c##.....b##c ",
+" c###....###c ",
+" c##c....c##c ",
+" c#c.....bc#c ",
+" ccd.....becc ",
+"   d.....be   ",
+"   d.....be   ",
+"   ddddddee   "};
+

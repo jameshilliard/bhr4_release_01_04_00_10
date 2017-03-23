@@ -1,0 +1,5188 @@
+# Czech message catalog form pavuk web graber.
+# Copyright (C) 1998,1999 Free Software Foundation, Inc.
+# Petr Vyhnalek <petr.vyhnalek@email.cz> , 1998, 1999
+# Petr Èech <cech@debian.cz> , 1999, 2000, 2001
+msgid ""
+msgstr ""
+"Project-Id-Version: pavuk-0.9pl28\n"
+"POT-Creation-Date: 2001-07-30 10:14+0200\n"
+"PO-Revision-Date: 2001-08-22 22:31+0200\n"
+"Last-Translator: Petr Èech <cech@debian.org>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: abstract.c:46
+#, c-format
+msgid "Suspending download for %d seconds.\n"
+msgstr "Pozastavuji stahování na %d sekund.\n"
+
+#: abstract.c:84 doc.c:550
+msgid "File redirect\n"
+msgstr "Pøesmìrování na soubor\n"
+
+#: abstract.c:120
+#, c-format
+msgid "Loading copy from local NS cache - %s\n"
+msgstr "Ètu kopii z místní NS cache - %s\n"
+
+#: abstract.c:152
+#, c-format
+msgid "Loading copy from local Mozilla cache - %s\n"
+msgstr "Ètu kopii z místní Mozilla cache - %s\n"
+
+#: abstract.c:185
+#, c-format
+msgid "Loading copy from local MSIE cache - %s\n"
+msgstr "Ètu kopii z místní MSIE cache - %s\n"
+
+#: abstract.c:221
+msgid "Unsupported URL\n"
+msgstr "Nepodporované URL\n"
+
+#: abstract.c:341 abstract.c:377
+msgid "Warning: broken ftp transfer ...\n"
+msgstr "Pozor: poru¹ený FTP pøenos ...\n"
+
+#: abstract.c:351
+msgid "Error removing FTP document from remote server\n"
+msgstr "Chyba pøi odstraòování FTP dokumentu ze vzdáleného serveru\n"
+
+#: abstract.c:496
+msgid "Error reading document with \"chunked\" transfer encoding!\n"
+msgstr "Chyba ètení dokumentu v pøenosovém kódování \"chunked\" !\n"
+
+#: ainterface.c:118
+#, c-format
+msgid "Removing unsupported URL: %s\n"
+msgstr "Odstraòuji nepodporované URL: %s\n"
+
+#: ainterface.c:199
+msgid "Specify at least one starting URL!"
+msgstr "Uveïte alespoò jednu startovací URL adresu!"
+
+#: ainterface.c:201
+msgid "Specify at least one starting URL!\n"
+msgstr "Uveïte alespoò jednu startovací URL adresu!\n"
+
+#: ainterface.c:472
+msgid "Can't list available message catalogs\n"
+msgstr "Nelze vypsat seznam dostupnych pøekladù\n"
+
+#: authinfo.c:107
+msgid "Bad section - specify protocol\n"
+msgstr "©patná sekce - specifikuje protokol\n"
+
+#: authinfo.c:112
+msgid "Bad section - specify hostname\n"
+msgstr "©patná sekce - specifikuj jméno serveru\n"
+
+#: authinfo.c:159
+#, c-format
+msgid "Unable to parse : \"%s\"\n"
+msgstr "Nemohu zpracovat: \"%s\"\n"
+
+#: authinfo.c:179
+#, c-format
+msgid "Bad protocol - %s\n"
+msgstr "©patný protokol - %s\n"
+
+#: authinfo.c:190
+#, c-format
+msgid "Bad port number %s\n"
+msgstr "©patné èíslo portu %s\n"
+
+#: authinfo.c:211
+#, c-format
+msgid "Unknown auth type - %s\n"
+msgstr "Neznámý typ autorizace - %s\n"
+
+#: cleanup.c:60
+msgid "press any key to exit\n"
+msgstr "stisknìte klávesu k ukonèení\n"
+
+#: cmdparse.c:129
+#, c-format
+msgid "Error parsing commandline at: %s\n"
+msgstr "Chyba pøi zpracování pøíkazové øádky na: %s\n"
+
+#: cmdparse.c:186
+#, c-format
+msgid "Unable to parse commandline: %s\n"
+msgstr "Chyba pøi zpracování pøíkazové øádky: %s\n"
+
+#: config.c:44
+msgid "Level order"
+msgstr "Øazení podle hloubky"
+
+#: config.c:45
+msgid "Level order, inline first"
+msgstr "Øazení podle houbky, vlo¾ené nejdøíve"
+
+#: config.c:46
+msgid "Pre order"
+msgstr "Setøídìné"
+
+#: config.c:47
+msgid "Pre order, inline first"
+msgstr "Setøídìné, vlo¾ené nejdøíve"
+
+#: config.c:115
+#, c-format
+msgid ""
+"Usage:  %s  [options]  [any number of URLS]\n"
+"pavuk-%s %s\n"
+msgstr ""
+"Pou¾ití:  %s  [parametry]  [libovolný poèet URL]\n"
+"pavuk-%s %s\n"
+
+#: config.c:131
+#, c-format
+msgid "Type \"%s --help\" for long help\n"
+msgstr "Napi¹te \"%s --help\" pro podrobnou nápovìdu\n"
+
+#: config.c:139
+msgid "Optional features available :\n"
+msgstr "Dostupné volitelné funkce a vlastnosti :\n"
+
+#: config.c:141
+msgid " - Debug mode\n"
+msgstr " - Ladící mód\n"
+
+#: config.c:145
+msgid " - GNU gettext internationalization of messages\n"
+msgstr " - internacionalizace zpráv pomocí GNU gettext\n"
+
+#: config.c:149
+msgid " - flock() document locking\n"
+msgstr " - zamykání souborù pomocí flock()\n"
+
+#: config.c:153
+msgid " - fcntl() document locking\n"
+msgstr " - zamykání souborù pomocí fcntl()\n"
+
+#: config.c:158
+msgid " - Gtk GUI interface\n"
+msgstr " - Gtk grafické rozhraní\n"
+
+#: config.c:161
+msgid " - URL tree preview\n"
+msgstr " - náhled URL stromu\n"
+
+#: config.c:166
+msgid " - http over SSL\n"
+msgstr " - http pøes SSL\n"
+
+#: config.c:171
+msgid " - Socks v4 proxy support\n"
+msgstr " - podpora Socks v4 proxy\n"
+
+#: config.c:173
+msgid " - Socks v5 proxy support\n"
+msgstr " - podpora Socks v5 proxy\n"
+
+#: config.c:177
+msgid " - with filesystem free space checking\n"
+msgstr " - s testem volného místa na disku\n"
+
+#: config.c:181
+msgid " - with optional regex patterns in -fnrules and -*rpattern options\n"
+msgstr " - s volitelnými regulárnímy výrazy ve volbách -fnrules a -*rpattern\n"
+
+#: config.c:185
+msgid " - with POSIX regexp\n"
+msgstr " - s POSIX regulárnímy výrazy\n"
+
+#: config.c:189
+msgid " - with Bell V8 regexp\n"
+msgstr " - s Bell V8 regulárnímy výrazy\n"
+
+#: config.c:193
+msgid " - with BSD regexp\n"
+msgstr " - s BSD regulárnímy výrazy\n"
+
+#: config.c:197
+msgid " - with GNU regexp\n"
+msgstr " - s GNU regulárnímy výrazy\n"
+
+#: config.c:201
+msgid " - with PCRE regexp\n"
+msgstr " - s PCRE regulárnímy výrazy\n"
+
+#: config.c:205
+msgid " - with support for loading files from Netscape browser cache\n"
+msgstr " - s podporou naèítání souborù z cache prohlí¾eèe Netscape\n"
+
+#: config.c:209
+msgid ""
+" - with support for detecting whether pavuk is running as background job\n"
+msgstr " - s podporou detekce bìhu pavuka na pozadí\n"
+
+#: config.c:213
+msgid " - with multithreading support\n"
+msgstr " - s podporou více vláken\n"
+
+#: config.c:217
+msgid " - with NTLM authorization support\n"
+msgstr " - s podporou NTLM autorizace\n"
+
+#: config.c:221
+msgid " - with JavaScript bindings\n"
+msgstr " - s JavaScriptem\n"
+
+#: config.c:295
+#, c-format
+msgid "HTML tag not supported : %s.%s\n"
+msgstr "HTML tag nepodporován : %s.%s\n"
+
+#: config.c:654
+msgid "Error parsing commandline\n"
+msgstr "Chyba pøi zpracování pøíkazové øádky\n"
+
+#: config.c:661
+#, c-format
+msgid "Not enough number of parameters for \"-%s\" option\n"
+msgstr "Nedostateèný poèet parametrù pro volbu \"-%s\"\n"
+
+#: config.c:668
+#, c-format
+msgid "Unknown option %s\n"
+msgstr "Neznámá volba %s\n"
+
+#: config.c:675
+#, c-format
+msgid "Wrong format of option %s\n"
+msgstr "Chybný formát volby %s\n"
+
+#: config.c:684
+#, c-format
+msgid "WARNING: option \"-%s\" not supported in current configuration!\n"
+msgstr "VAROVÁNÍ: volba \"-%s\" není podporována v souèasné konfiguraci!\n"
+
+#: config.c:697
+#, c-format
+msgid "Please specify number with parameter \"-%s\"\n"
+msgstr "Prosím specifikuj èíslo s parametrem \"-%s\"\n"
+
+#: config.c:762 config.c:1113 http_proxy.c:120
+#, c-format
+msgid "Unknown port \"%s\"\n"
+msgstr "Neznámy port \"%s\"\n"
+
+#: config.c:778 config.c:1126
+#, c-format
+msgid "Bad auth scheme \"%s\"\n"
+msgstr "©patné autorizaèní schéma \"%s\"\n"
+
+#: config.c:788 config.c:1136
+#, c-format
+msgid "Unknow operation mode \"%s\"\n"
+msgstr "Neznamý mód \"%s\"\n"
+
+#: config.c:810
+#, c-format
+msgid "Please specify floating number with parameter \"-%s\"\n"
+msgstr "Prosím specifikujte reálné èíslo s parametrem \"-%s\"\n"
+
+#: config.c:829
+#, c-format
+msgid "Please specify proper condition type for -%s (%s)\n"
+msgstr "Prosím specifikujte správnou podmínku pro -%s (%s)\n"
+
+#: config.c:852
+#, c-format
+msgid "Please specify valid RE with parameter \"-%s\"\n"
+msgstr "Prosím specifikujte správný RE s parametrem \"-%s\"\n"
+
+#: config.c:863 config.c:1248
+#, c-format
+msgid "Unknown URL scheduling strategy - \"%s\"\n"
+msgstr "Neznámá strategie výbìru URL - \"%s\"\n"
+
+#: config.c:871 config.c:1259
+#, c-format
+msgid "Unknown SSL version - \"%s\"\n"
+msgstr "Neznama verse SSL - \"%s\"\n"
+
+#: config.c:880 config.c:1270
+#, c-format
+msgid "Invalid additional HTTP header - \"%s\"\n"
+msgstr "Neplatná dodateèná HTTP hlavièka - \"%s\"\n"
+
+#: config.c:903 config.c:1293
+#, c-format
+msgid "Invalid request specification - \"%s\"\n"
+msgstr "Chybná specifikace po¾adavku - \"%s\"\n"
+
+#: config.c:948
+#, c-format
+msgid "Invalid parameters for \"-%s\" option\n"
+msgstr "©patný parametr pro volbu \"-%s\"\n"
+
+#: config.c:964
+#, c-format
+msgid "Invalid number list \"%s\" for option \"-%s\"\n"
+msgstr "Chybný parametr èíselného seznamu \"%s\" pro volbu \"-%s\"\n"
+
+#: config.c:981
+#, c-format
+msgid "Invalid FTP login handshake string \"%s\" for option \"-%s\"\n"
+msgstr ""
+"Chybný parametr pøihla¹ovací procedury k FTP serveru\n"
+" - \"%s\" pro volbu \"-%s\"\n"
+
+#: config.c:1031
+#, c-format
+msgid "WARNING: option \"%s\" not supported in current configuration!\n"
+msgstr "VAROVÁNÍ: volba \"%s\" není podporována v souèasné konfiguraci!\n"
+
+#: config.c:1055
+#, c-format
+msgid "Please specify number \"%s\"\n"
+msgstr "Prosím specifikuj èíslo \"%s\"\n"
+
+#: config.c:1073
+#, c-format
+msgid "Only \"true\" & \"false\" is allowed : \"%s\"\n"
+msgstr "Je povoleno pouze \"true\" a \"false\": \"%s\"\n"
+
+#: config.c:1147
+#, c-format
+msgid "Bad time parameter \"%s\"\n"
+msgstr "©patný parametr èasu \"%s\"\n"
+
+#: config.c:1178
+#, c-format
+msgid "Please specify floating number \"%s\"\n"
+msgstr "Prosím specifikujte reálné èíslo \"%s\"\n"
+
+#: config.c:1195
+#, c-format
+msgid "Please specify proper arguments for %s\n"
+msgstr "Prosím specifikujte správné argumenty pro %s\n"
+
+#: config.c:1207
+#, c-format
+msgid "Please specify proper condition type for %s (%s)\n"
+msgstr "Prosím specifikujte správnou podmínku pro %s (%s)\n"
+
+#: config.c:1235
+#, c-format
+msgid "Please specify valid RE \"%s\"\n"
+msgstr "Prosím specifikujte správný RE \"%s\"\n"
+
+#: config.c:1327
+#, c-format
+msgid "Invalid js_transform specification - \"%s\"\n"
+msgstr "Neplatné nastavení js_transform - \"%s\"\n"
+
+#: config.c:1347
+#, c-format
+msgid "Invalid number list specification - \"%s\"\n"
+msgstr "Chybná polo¾ka v èíselném seznamu - \"%s\"\n"
+
+#: config.c:1362
+#, c-format
+msgid "Invalid FTP login handshake string \"%s\".\n"
+msgstr "Chybné urèení pøihla¹ovací procedury k FTP serveru \"%s\".\n"
+
+#: config.c:1388
+#, c-format
+msgid "Unable to parse \"%s\"\n"
+msgstr "Nemohu oddìlit \"%s\"\n"
+
+#: config.c:1430
+#, c-format
+msgid "ERROR: Scenario loading failed (%s)\n"
+msgstr "CHYBA: Naètení scénáøe selhalo (%s)\n"
+
+#: cookie.c:216
+#, c-format
+msgid "Unable to parse : %s\n"
+msgstr "Nemohu oddìlit : %s\n"
+
+#: cookie.c:389
+msgid "Updating cookie file\n"
+msgstr "Aktualizace souboru s cookies\n"
+
+#: cookie.c:418
+msgid "Cookie file has changed - > synchronizing\n"
+msgstr "Soubor s cookie se zmìnil -> synchronizuji\n"
+
+#: cookie.c:567
+#, c-format
+msgid "Server %s is trying to set cookie for %s domain\n"
+msgstr "Server %s se pokou¹í nastavit cookie pro doménu %s\n"
+
+#: cookie.c:578
+#, c-format
+msgid "Removing cookie from disabled domain %s\n"
+msgstr "Odstraòuji cookie ze zakázané domény %s\n"
+
+#: debugl.c:16
+msgid "HTML parsers"
+msgstr "HTML parser"
+
+#: debugl.c:17
+msgid "Server responses"
+msgstr "Odpovìdi serveru"
+
+#: debugl.c:18
+msgid "Client requests"
+msgstr "Po¾adavky klientù"
+
+#: debugl.c:19
+msgid "Procedure calling"
+msgstr "Volání procedur"
+
+#: debugl.c:20
+msgid "File locking"
+msgstr "Zamykání souborù"
+
+#: debugl.c:21
+msgid "Networking code"
+msgstr "Sí»ování"
+
+#: debugl.c:22
+msgid "Miscelanous"
+msgstr "Rùzné"
+
+#: debugl.c:23
+msgid "Extended user infos"
+msgstr "Roz¹íøené informace o u¾ivateli"
+
+#: debugl.c:24
+msgid "Multithreading - locking"
+msgstr "Multithreading - zamykání"
+
+#: debugl.c:25
+msgid "Multithreading - threads"
+msgstr "Multithreading - vlákna"
+
+#: debugl.c:26
+msgid "POST request data"
+msgstr "data POST dotazu"
+
+#: debugl.c:27
+msgid "Limiting conditions"
+msgstr "Omezující podmínky"
+
+#: debugl.c:66
+#, c-format
+msgid "Bad debug level selection : %s\n"
+msgstr "Chybná úroveò ladících hlá¹ení : %s\n"
+
+#: decode.c:184
+msgid "decode"
+msgstr "decode"
+
+#: digest_auth.c:155
+msgid "Trying to do HTTP Digest authorization\n"
+msgstr "Pokus o HTTP Digest autorizaci\n"
+
+#: digest_auth.c:202
+msgid "Trying to do HTTP proxy Digest authorization\n"
+msgstr "Pokus o HTTP Proxy Digest autorizaci\n"
+
+#: dinfo.c:368 dinfo.c:387
+#, c-format
+msgid "Error parsing .pavuk_info file field: %s\n"
+msgstr "V .pavuk_info je chybnì polo¾ka %s\n"
+
+#: doc.c:297
+msgid "Transfering data"
+msgstr "Pøenos dat"
+
+#: doc.c:312
+msgid "setsockopt: SO_RCVBUF failed"
+msgstr "setsockopt: SO_RCVBUF selhalo"
+
+#: doc.c:333
+msgid "storing document"
+msgstr "ukládám dokument"
+
+#: doc.c:399
+msgid "Document transfer data"
+msgstr "Pøená¹ím data dokumentu"
+
+#: doc.c:420
+msgid "Data transfer done"
+msgstr "Pøenos dat ukonèen"
+
+#: doc.c:597
+#, c-format
+msgid "Trying to resume from position %d \n"
+msgstr "Pokus dokonèit pøenos od pozice %d \n"
+
+#: doc.c:662
+msgid "Opening connection"
+msgstr "Otvírám spojení"
+
+#: doc.c:686
+msgid "Loading local copy\n"
+msgstr "Naèítám místní kopii\n"
+
+#: doc.c:912
+msgid "File may be truncated\n"
+msgstr "Soubor mù¾e být neúplný\n"
+
+#: doc.c:936
+msgid "Decoding document - OK\n"
+msgstr "Dekódování dokumentu - OK\n"
+
+#: doc.c:939
+msgid "Decoding document - failed\n"
+msgstr "Dekódování dokumentu - selhalo\n"
+
+#: doc.c:942
+msgid "Unsupported document encoding\n"
+msgstr "Nepodporované kódování dokumentu\n"
+
+#: doc.c:946
+msgid "Received Encoded file but decoding not allowed (untouched)\n"
+msgstr "Obdr¾en zakódovaný dokument, ale odkódování není povoleni (nezmìnìn)\n"
+
+#: doc.c:1116
+#, c-format
+msgid "Removing improper document : %s\n"
+msgstr "Ma¾u neaktualní dokument : %s\n"
+
+#: doc.c:1178 doc.c:1244
+msgid "Local file"
+msgstr "Lokální soubor"
+
+#: doc.c:1184
+msgid "Gopher/Text File"
+msgstr "Gopher/Textový soubor"
+
+#: doc.c:1187
+msgid "Gopher/Directory"
+msgstr "Gopher/Adresáø"
+
+#: doc.c:1190
+msgid "Gopher/CSO phone book"
+msgstr "Gopher/CSO telefonní seznam"
+
+#: doc.c:1193
+msgid "Gopher/Error"
+msgstr "Gopher/Chyba"
+
+#: doc.c:1196
+msgid "Gopher/BINHEX"
+msgstr "Gopher/BINHEX"
+
+#: doc.c:1199
+msgid "Gopher/DOS bin"
+msgstr "Gopher/DOS bin"
+
+#: doc.c:1202
+msgid "Gopher/UUencoded"
+msgstr "Gopher/UUencoded"
+
+#: doc.c:1205
+msgid "Gopher/Search index"
+msgstr "Gopher/Vyhledavací index"
+
+#: doc.c:1208
+msgid "Gopher/Telnet session"
+msgstr "Gopher/Telnet sezení"
+
+#: doc.c:1211
+msgid "Gopher/bin"
+msgstr "Gopher/bin"
+
+#: doc.c:1214
+msgid "Gopher/Duplicated server"
+msgstr "Gopher/Duplikaèní server"
+
+#: doc.c:1217
+msgid "Gopher/TN3270"
+msgstr "Gopher/TN3270"
+
+#: doc.c:1220
+msgid "Gopher/GIF"
+msgstr "Gopher/GIF"
+
+#: doc.c:1223
+msgid "Gopher/Image"
+msgstr "Gopher/Obrázek"
+
+#: doc.c:1229
+msgid "FTP/Directory"
+msgstr "FTP/Adresáø"
+
+#: doc.c:1231
+msgid "FTP/File"
+msgstr "FTP/Soubor"
+
+#: doc.c:1235
+msgid "FTPS/Directory"
+msgstr "FTPS/Adresáø"
+
+#: doc.c:1237
+msgid "FTPS/File"
+msgstr "FTPS/Soubor"
+
+#: doc.c:1240
+msgid "Unsupported type"
+msgstr "Nepodporovaný typ"
+
+#: doc.c:1447
+#, c-format
+msgid "S: %s [R: %s] [ET: %s] [RT: %s] \r"
+msgstr "V: %s [R: %s] [OD: %s] [SÈ: %s] \r"
+
+#: doc.c:1450
+#, c-format
+msgid "S: %s [R: %s] [ET: %s] \r"
+msgstr "V: %s [R: %s] [OD: %s] \r"
+
+#: doc.c:1490
+#, c-format
+msgid "Waiting to releases document lock on: %s\n"
+msgstr "Èekám na uvolnìní zámku na dokumentu: %s\n"
+
+#: doc.c:1730
+msgid "Rewriting links inside parent documents"
+msgstr "Pøepisuji odkazy v rodièovských dokumentech"
+
+#: errcode.c:21
+#, c-format
+msgid "%s: user break\n"
+msgstr "%s: pøeru¹ení u¾ivatelem\n"
+
+#: errcode.c:28
+#, c-format
+msgid "%s: OK\n"
+msgstr "%s: OK\n"
+
+#: errcode.c:31
+#, c-format
+msgid "%s: ERROR: storing document\n"
+msgstr "%s: CHYBA: ukládání dokumentù\n"
+
+#: errcode.c:34
+#, c-format
+msgid "%s: ERROR: opening file\n"
+msgstr "%s: CHYBA: otevøení souboru\n"
+
+#: errcode.c:37
+#, c-format
+msgid "%s: ERROR: URL pointing to local directory is not supported\n"
+msgstr "%s: CHYBA: URL lokalního adresáøe není podporováno\n"
+
+#: errcode.c:40
+#, c-format
+msgid "%s: ERROR: unknown\n"
+msgstr "%s: CHYBA: neznamá\n"
+
+#: errcode.c:43
+#, c-format
+msgid "%s: ERROR: document is locked\n"
+msgstr "%s: CHYBA: dokument je uzamèený\n"
+
+#: errcode.c:46
+#, c-format
+msgid "%s: ERROR: reading socket\n"
+msgstr "%s: CHYBA: ètení soketu\n"
+
+#: errcode.c:49
+#, c-format
+msgid "%s: MESSAGE: bigger than maximal allowed size\n"
+msgstr "%s: ZPRÁVA: vet¹í ne¾ maximalní povolená velikost\n"
+
+#: errcode.c:52
+#, c-format
+msgid "%s: MESSAGE: disabled by user-exit script condition\n"
+msgstr "%s: ZPRÁVA: zakázáno u¾ivatelskùm skriptem pro pøístup\n"
+
+#: errcode.c:55
+#, c-format
+msgid "%s: MESSAGE: smaller than minimal allowed size\n"
+msgstr "%s: ZPRÁVA: men¹í ne¾ minimální povolená velikost\n"
+
+#: errcode.c:58
+#, c-format
+msgid "%s: MESSAGE: this mime type is not allowed (%s)\n"
+msgstr "%s: ZPRÁVA: tento mine typ dokumentu není podporován (%s)\n"
+
+#: errcode.c:61
+#, c-format
+msgid "%s: ERROR: error in proxy connect\n"
+msgstr "%s: CHYBA: chyba pøi komunikaci s proxy\n"
+
+#: errcode.c:64
+#, c-format
+msgid "%s: ERROR: transfer broken by user\n"
+msgstr "%s: CHYBA: pøenos pøeru¹en u¾ivatelem\n"
+
+#: errcode.c:67
+#, c-format
+msgid "%s: MESSAGE: file modification time doesn't fit to specified interval\n"
+msgstr ""
+"%s: ZPRÁVA: èas modifikace souboru neodpovídá specifikovanému intervalu\n"
+
+#: errcode.c:70
+#, c-format
+msgid "%s: ERROR: file has zero size - possible error\n"
+msgstr "%s: CHYBA: soubor má nulovou velikost - mo¾ná chyba\n"
+
+#: errcode.c:73
+#, c-format
+msgid "%s: MESSAGE: document was already processed\n"
+msgstr "%s: CHYBA: dokument byl ji¾ zpracován\n"
+
+#: errcode.c:76
+#, c-format
+msgid "%s: MESSAGE: document was disabled by user\n"
+msgstr "%s: ZPRÁVA: dokument zakázán u¾ivatelem\n"
+
+#: errcode.c:79
+#, c-format
+msgid "%s: MESSAGE: document was disabled by limiting rules\n"
+msgstr "%s: ZPRÁVA: dokument zakázán omezujícími pravidly\n"
+
+#: errcode.c:82
+#, c-format
+msgid "%s: WARNING: transfer rate lower than minimal allowed\n"
+msgstr "%s: POZOR: ni¾¹í ne¾ povolená minimální rychlost\n"
+
+#: errcode.c:85
+#, c-format
+msgid "%s: WARNING: file size quota exceeded, rest will be truncated\n"
+msgstr "%s: POZOR: pøekroèena maximální velikost souboru, zkráceno\n"
+
+#: errcode.c:88
+#, c-format
+msgid "%s: WARNING: transfer quota exceeded, breaking download\n"
+msgstr "%s: POZOR: maximální velikost pøenosu pøekroèena, pøeru¹uji pøenos\n"
+
+#: errcode.c:91
+#, c-format
+msgid "%s: ERROR: low free space on filesystem, breaking transfer\n"
+msgstr "%s: CHYBA: málo volného místa na disku, konèím pøenos\n"
+
+#: errcode.c:94
+#, c-format
+msgid ""
+"%s: WARNING: maximal allowed running time exceeded, downloading will break\n"
+msgstr "%s: POZOR: pøekroèena maximální doba bìhu, stahování skonèí\n"
+
+#: errcode.c:97
+#, c-format
+msgid "%s: ERROR: unnown FTP error\n"
+msgstr "%s: CHYBA: neznamá FTP chyba\n"
+
+#: errcode.c:100
+#, c-format
+msgid "%s: ERROR: FTP server doesn't support REST command\n"
+msgstr "%s: CHYBA: FTP server nepodporuje REST pøíkaz\n"
+
+#: errcode.c:104
+#, c-format
+msgid "%s: ERROR: unable to list directory content\n"
+msgstr "%s: CHYBA: není mo¾né získat obsah FTP adresáøe\n"
+
+#: errcode.c:107
+#, c-format
+msgid "%s: ERROR: unable to connect to FTP server\n"
+msgstr "%s: CHYBA: není mo¾né se spojit s FTP serverem\n"
+
+#: errcode.c:110
+#, c-format
+msgid "%s: ERROR: FTP authentification - bad username\n"
+msgstr "%s: CHYBA: FTP autentizace - ¹patné jméno\n"
+
+#: errcode.c:113
+#, c-format
+msgid "%s: ERROR: FTP authentification - bad password\n"
+msgstr "%s: CHYBA: FTP autentizace - ¹patné heslo\n"
+
+#: errcode.c:116
+#, c-format
+msgid "%s: ERROR: FTP proxy authentification - bad username\n"
+msgstr "%s: CHYBA: FTP proxy autentifikace - ¹patné jméno\n"
+
+#: errcode.c:119
+#, c-format
+msgid "%s: ERROR: FTP proxy authentification - bad password\n"
+msgstr "%s: CHYBA: FTP proxy autentifikace - ¹patné heslo\n"
+
+#: errcode.c:122
+#, c-format
+msgid "%s: ERROR: unable to open FTP data connection\n"
+msgstr "%s: CHYBA: nemù¾u otevøít FTP spojení\n"
+
+#: errcode.c:125
+#, c-format
+msgid "%s: ERROR: unable to get file from FTP server\n"
+msgstr "%s: CHYBA: nemù¾u pøenést soubor z FTP serveru\n"
+
+#: errcode.c:128
+#, c-format
+msgid "%s: ERROR: FTP server doesn't support MDTM command\n"
+msgstr "%s: CHYBA: FTP server nepodporuje MDTM pøíkaz\n"
+
+#: errcode.c:131
+#, c-format
+msgid "%s: ERROR: file from FTP server is truncated\n"
+msgstr "%s: CHYBA: soubor z FTP serveru je zkrácen\n"
+
+#: errcode.c:135
+#, c-format
+msgid "%s: MESSAGE: reget unneeded - file is up to date\n"
+msgstr "%s: ZPRÁVA: dokument není potøeba znovu pøená¹et, je aktualní\n"
+
+#: errcode.c:138
+#, c-format
+msgid "%s: MESSAGE: FTP transfer not allowed because of rules\n"
+msgstr "%s: ZPRÁVA: FTP pøenos není povolený podle pravidel\n"
+
+#: errcode.c:141
+#, c-format
+msgid ""
+"%s: WARNING: FTP directory URL, but FTP directory not allowed (-FTPdir)\n"
+msgstr "%s: UPOZORNÌNÍ: pøenos obsahu FTP adresáøe není povolený (-FTPdir)\n"
+
+#: errcode.c:144
+#, c-format
+msgid "%s: WARNING: FTP login_handshake failed\n"
+msgstr "%s: VAROVÁNÍ: FTP login_handshake selhal\n"
+
+#: errcode.c:147
+#, c-format
+msgid "%s: ERROR: unknown HTTP error\n"
+msgstr "%s: CHYBA: neznamá HTTP chyba\n"
+
+#: errcode.c:150
+#, c-format
+msgid "%s: ERROR: unable to connect to HTTP server\n"
+msgstr "%s: CHYBA: nemù¾u se spojit s HTTP serverem\n"
+
+#: errcode.c:153
+#, c-format
+msgid "%s: ERROR: HTTP server doesn't support partial content retrieving\n"
+msgstr "%s: CHYBA: HTTP nepodporuje èásteèný pøenos obsahu souboru\n"
+
+#: errcode.c:156
+#, c-format
+msgid "%s: ERROR: broken HTTP request send\n"
+msgstr "%s: CHYBA: po¹kozený HTTP po¾adavek\n"
+
+#: errcode.c:159
+#, c-format
+msgid "%s: ERROR: failed to read HTTP response\n"
+msgstr "%s: CHYBA: nelze pøeèíst HTTP odpovìï\n"
+
+#: errcode.c:162
+#, c-format
+msgid "%s: ERROR: unexpected HTTP response code after trying to reget\n"
+msgstr "%s: CHYBA: neoèekávaný HTTP kód po pokusu o napojení\n"
+
+#: errcode.c:166
+#, c-format
+msgid "%s: ERROR: unable to send HTTP request data\n"
+msgstr "%s: CHYBA: nelze poslat data HTTP po¾adavku\n"
+
+#: errcode.c:169
+#, c-format
+msgid "%s: MESSAGE: redirecting to another location\n"
+msgstr "%s: ZPRÁVA: pøesmìrování\n"
+
+#: errcode.c:172
+#, c-format
+msgid "%s: ERROR: HTTP document is truncated\n"
+msgstr "%s: CHYBA: HTTP dokument je neúplný\n"
+
+#: errcode.c:175
+#, c-format
+msgid "%s: ERROR: cyclic redirection!\n"
+msgstr "%s: CHYBA: kruhové pøesmìrování!\n"
+
+#: errcode.c:178
+#, c-format
+msgid "%s: ERROR: redirecting to unsupported URL\n"
+msgstr "%s: CHYBA: pøesmìrování na nepodporované URL\n"
+
+#: errcode.c:181
+#, c-format
+msgid "%s: ERROR: unable to connect to proxy server\n"
+msgstr "%s: CHYBA: není mo¾né se spojit s proxy serverem\n"
+
+#: errcode.c:184
+#, c-format
+msgid "%s: ERROR: received bad redirect response from server\n"
+msgstr "%s: CHYBA: neplatný redirekt od serveru\n"
+
+#: errcode.c:187
+#, c-format
+msgid "%s: ERROR: unable to do NTLM authorization\n"
+msgstr "%s: CHYBA: nelze provést NTML autorizaci\n"
+
+#: errcode.c:190
+#, c-format
+msgid "%s: ERROR: unable to do HTTP Digest authorization\n"
+msgstr "%s: CHYBA: nelze provést HTTP Digest autorizaci\n"
+
+#: errcode.c:193
+#, c-format
+msgid "%s: ERROR: unable to do NTLM proxy authorization\n"
+msgstr "%s: CHYBA: nelze provést NTML proxy autorizaci\n"
+
+#: errcode.c:196
+#, c-format
+msgid "%s: ERROR: unable to do HTTP proxy Digest authorization\n"
+msgstr "%s: CHYBA: nelze provést HTTP Proxy Digest autorizaci\n"
+
+#: errcode.c:199
+#, c-format
+msgid "%s: ERROR: HTTP client sends bad request\n"
+msgstr "%s: CHYBA: HTTP klient poslal ¹patný po¾adavek\n"
+
+#: errcode.c:202
+#, c-format
+msgid "%s: ERROR: HTTP authentication is required\n"
+msgstr "%s: CHYBA: je po¾adována HTTP autorizace\n"
+
+#: errcode.c:205
+#, c-format
+msgid "%s: ERROR: HTTP proxy authentication is required\n"
+msgstr "%s: CHYBA: je po¾adována autorizace u HTTP proxy\n"
+
+#: errcode.c:208
+#, c-format
+msgid "%s: ERROR: HTTP payment required\n"
+msgstr "%s: CHYBA: HTTP placená slu¾ba\n"
+
+#: errcode.c:211
+#, c-format
+msgid "%s: ERROR: forbidden HTTP request\n"
+msgstr "%s: CHYBA: zakazáný HTTP po¾adavek\n"
+
+#: errcode.c:214
+#, c-format
+msgid "%s: ERROR: HTTP document not found\n"
+msgstr "%s: CHYBA: HTTP dokument nenalezen\n"
+
+#: errcode.c:217
+#, c-format
+msgid "%s: ERROR: HTTP remote server error\n"
+msgstr "%s: CHYBA: chyba HTTP serveru\n"
+
+#: errcode.c:220
+#, c-format
+msgid "%s: ERROR: HTTP server replied with connection timeout response\n"
+msgstr "%s: CHYBA: odpovìï HTTP serveru je `connection timeout'\n"
+
+#: errcode.c:223
+#, c-format
+msgid "%s: ERROR: HTTP server replied with conflict response\n"
+msgstr "%s: CHYBA: odpovìï HTTP serveru je `conflict'\n"
+
+#: errcode.c:226
+#, c-format
+msgid "%s: ERROR: document was removed from HTTP server\n"
+msgstr "%s: CHYBA: dokument byl odstranìn z HTTP serveru\n"
+
+#: errcode.c:229
+#, c-format
+msgid "%s: ERROR: you must use proxy to access this URL\n"
+msgstr "%s: CHYBA: musíte pou¾ít pøístup pøez proxy pro toto URL\n"
+
+#: errcode.c:232
+#, c-format
+msgid "%s: ERROR: 306\n"
+msgstr "%s: CHYBA: 306\n"
+
+#: errcode.c:235
+#, c-format
+msgid ""
+"%s: ERROR: used HTTP method is not supported or not allowed for this URL\n"
+msgstr ""
+"%s: CHYBA: pou¾itá HTTP medona není podporována nebo povolena pro toto URL\n"
+
+#: errcode.c:238
+#, c-format
+msgid "%s: ERROR: client doesn't accept MIME type of requested URL\n"
+msgstr "%s: CHYBA: klient nepøijímá MIME typ po¾adovaného URL\n"
+
+#: errcode.c:241
+#, c-format
+msgid "%s: ERROR: in request header is missing Content-Length: header\n"
+msgstr "%s: CHYBA: v hlavièce po¾adavku chybí polo¾ka Content-Length:\n"
+
+#: errcode.c:244
+#, c-format
+msgid "%s: ERROR: preconditions in request failed for requested URL\n"
+msgstr "%s: CHYBA: podmínky pro po¾adavek nesplnìny pro toto URL\n"
+
+#: errcode.c:247
+#, c-format
+msgid "%s: ERROR: request body too large\n"
+msgstr "%s: CHYBA: tìlo pøíli¹ veliké\n"
+
+#: errcode.c:250
+#, c-format
+msgid "%s: ERROR: request URL too long\n"
+msgstr "%s: CHYBA: URL po¾adavku pøíli¹ dlouhé\n"
+
+#: errcode.c:253
+#, c-format
+msgid "%s: ERROR: resource in format unsupported for this request\n"
+msgstr ""
+"%s: CHYBA: prostøedek ve formátu není podporován pro tento dotaz\n"
+"\n"
+
+#: errcode.c:256
+#, c-format
+msgid "%s: ERROR: requested bad range of document\n"
+msgstr "%s: CHYBA: po¾adován neplatný úsek dokumentu\n"
+
+#: errcode.c:259
+#, c-format
+msgid "%s: ERROR: failed to fulfill expectation from request\n"
+msgstr "%s: CHYBA: nepodaøilo se splnit oèekávání od po¾adavku\n"
+
+#: errcode.c:262
+#, c-format
+msgid "%s: ERROR: requested HTTP method not implemented on server side\n"
+msgstr "%s: CHYBA: po¾adovaná HTTP metoda není podporována serverem\n"
+
+#: errcode.c:265
+#, c-format
+msgid "%s: ERROR: gatewaying failed for this URL\n"
+msgstr "%s: CHYBA: pøístup pøez bránu selhal pro toto URL\n"
+
+#: errcode.c:268
+#, c-format
+msgid "%s: ERROR: HTTP service currently not available, check later\n"
+msgstr "%s: CHYBA: HTTP není nyní k dispozici. Zkuste to za pozdìji\n"
+
+#: errcode.c:271
+#, c-format
+msgid ""
+"%s: ERROR: timeout occured in communication between gateway and remote "
+"server\n"
+msgstr "%s: CHYBA: timeout v komunikaci mezi bránou a vzdáleným serverem\n"
+
+#: errcode.c:274
+#, c-format
+msgid ""
+"%s: ERROR: HTTP version used in request is unsupported by remote server\n"
+msgstr "%s: CYBA: HTTP verze v po¾adavku není podporována vzdáleným serverem\n"
+
+#: errcode.c:277
+#, c-format
+msgid "%s: ERROR: unable to connect to GOPHER server\n"
+msgstr "%s: CHYBA: nemù¾u se spojit s GOPHER serverem\n"
+
+#: errcode.c:280
+#, c-format
+msgid "%s: ERROR: unknown GOPHER error\n"
+msgstr "%s: CHYBA: neznámá chyba GOPHER protokolu\n"
+
+#: errcode.c:283
+#, c-format
+msgid "%s: ERROR: unable to connect to HTTPS server\n"
+msgstr "%s: CHYBA: nemù¾u se spojit s HTTPS serverem\n"
+
+#: errcode.c:286
+#, c-format
+msgid "%s: ERROR: unable to establish SSL control connection to FTPS server\n"
+msgstr "%s: CHYBA: nelze vytvoøit kontrolní SSL spojení pro FTPS server\n"
+
+#: errcode.c:289
+#, c-format
+msgid "%s: ERROR: this FTP server doesn't support SSL connections\n"
+msgstr "%s: CHYBA: tento FTP server nepodporuje SSL spojení\n"
+
+#: errcode.c:292
+#, c-format
+msgid "%s: ERROR: unable to establish SSL data connection to FTPS server\n"
+msgstr "%s: CHYBA: nelze vytvoøit datové SSL spojení pro FTPS server\n"
+
+#: errcode.c:295
+#, c-format
+msgid "%s: ERROR: unknown errcode : %d\n"
+msgstr "%s: CHYBA: neznamá HTTP chyba : %d\n"
+
+#: file.c:35
+msgid "Can't open directory\n"
+msgstr "Nemù¾u otevøít adresáø\n"
+
+#: form.c:1074 form.c:1139 form.c:1296
+#, c-format
+msgid "Unsupported form type in context: %d\n"
+msgstr "Nepodporovaný typ formuláøe v kontextu: %d\n"
+
+#: form.c:1395
+msgid "Browse"
+msgstr "Prohlí¾eè"
+
+#: form.c:1410
+msgid "URLs with forms"
+msgstr "URL s formuláøi"
+
+#: form.c:1419
+msgid "Refresh URL list"
+msgstr "Obnovit seznam URL"
+
+#: form.c:1453 form.c:1454 url.c:1002
+msgid "unknown"
+msgstr "neznámý"
+
+#: form.c:1604
+msgid "Pavuk: load form file"
+msgstr "Pavuk: naèti soubor s formuláøi"
+
+#: form.c:1628
+msgid "Fill forms"
+msgstr "Vyplòte formuláø"
+
+#: form.c:1635
+msgid "Form number: "
+msgstr "Èíslo formuláøe: "
+
+#: form.c:1647
+msgid "Action URL: "
+msgstr "URL akce formuláøe: "
+
+#: form.c:1656 gui_common.c:706
+msgid "Request method: "
+msgstr "Metoda dotazu: "
+
+#: form.c:1665 gui_common.c:725 gui_tree.c:140
+msgid "Request encoding: "
+msgstr "Kódování dotazu: "
+
+#: form.c:1674
+msgid "HTML form content"
+msgstr "Obsah HTML formuláøe"
+
+#: form.c:1689
+msgid "Load HTML file ..."
+msgstr "Naèti HTML soubor ..."
+
+#: form.c:1742
+msgid "Pavuk: HTML forms editor"
+msgstr "Pavuk: editor HTML formuláøe"
+
+#: form.c:1764 gui_jscons.c:192
+msgid "Close"
+msgstr "Zavøít"
+
+#: ftp.c:118
+msgid "ftp_get_response: ftp control connection closed before any response\n"
+msgstr ""
+"ftp_get_response: ovládací FTP spojení bylo uzavøeno pøed jakoukoli "
+"odpovìdí\n"
+
+#: ftp.c:189
+msgid "ftp: setsockopt TOS - THROUGHPUT failed"
+msgstr "ftp: setsockopt TOS - THROUGHPUT selhalo"
+
+#: ftp.c:551
+msgid "Re-using established FTP control connection\n"
+msgstr "Dal¹í pou¾ití øídícího FTP spojení\n"
+
+#: ftp.c:758 http.c:1392
+msgid "Size differs, regeting whole\n"
+msgstr "Li¹í se velikost - pøenos startuje od zaèátku\n"
+
+#: ftp.c:768 http.c:1278 http.c:1402
+msgid "Modified from last download - regeting whole\n"
+msgstr "Dokument byl modifikován od posledního pøenosu - pøenos od zaèátku\n"
+
+#: ftp.c:849
+msgid ""
+"Warning: FTP server undertand REST command, but can't handle it properly.\n"
+msgstr "Varování: FTP server rozumí pøíkazu REST, ale ¹patnì.\n"
+
+#: ftp.c:1094 ftp.c:1421
+#, c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory of %s://%s:%d%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>List of FTP directory %s://%s:%d/%s </H1><BR><UL>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Adresáø z %s://%s:%d%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>Obsah FTP adresáøe %s://%s:%d/%s </H1><BR><UL>"
+
+#: ftp.c:1490
+#, c-format
+msgid ""
+"ERROR: unable to parse FTP list line :\n"
+"\t%s\n"
+msgstr ""
+"CHYBA: nelze rozlo¾it øádku FTP seznamu :\n"
+"\t%s\n"
+
+#: ftp.c:1683
+#, c-format
+msgid "Making symlink \"%s\" to \"%s\"\n"
+msgstr "Vytváøím symbolický odkaz z \"%s\" na \"%s\"\n"
+
+#: gauthinfo.c:107
+msgid "Pavuk: Save auth. info file"
+msgstr "Pavuk: Ulo¾ soubor s autentikacemi"
+
+#: gauthinfo.c:159
+msgid "Pavuk: Load auth. info file"
+msgstr "Pavuk: Naèítám autentikaèní informace"
+
+#: gauthinfo.c:340
+msgid "Pavuk: Authorization info editor"
+msgstr "Pavuk: Editor autentikaèních informací"
+
+#: gauthinfo.c:359
+msgid "Protocol"
+msgstr "Protokol"
+
+#: gauthinfo.c:360 gui_common.c:1819
+msgid "Host"
+msgstr "Server"
+
+#: gauthinfo.c:361
+msgid "User"
+msgstr "U¾ivatel"
+
+#: gauthinfo.c:362
+msgid "Password"
+msgstr "Heslo"
+
+#: gauthinfo.c:363
+msgid "Base dir."
+msgstr "Základní adresáø."
+
+#: gauthinfo.c:364
+msgid "Realm"
+msgstr "Oblast"
+
+#: gauthinfo.c:365
+msgid "Scheme"
+msgstr "Schéma"
+
+#: gauthinfo.c:394
+msgid "Protocol: "
+msgstr "Protokol: "
+
+#: gauthinfo.c:419 gui_common.c:1837 gui_common.c:1898 gui_common.c:1921
+#: gui_common.c:1950
+msgid "Host: "
+msgstr "Server: "
+
+#: gauthinfo.c:428
+msgid "User: "
+msgstr "U¾ivatel: "
+
+#: gauthinfo.c:437 gui_common.c:2120 gui_common.c:2170 gui_common.c:2194
+msgid "Password: "
+msgstr "Heslo:  "
+
+#: gauthinfo.c:446
+msgid "Base directory: "
+msgstr "Základní adresáø: "
+
+#: gauthinfo.c:455
+msgid "Realm: "
+msgstr "Oblast:  "
+
+#: gauthinfo.c:473 gui_common.c:2064
+msgid "User auth. scheme"
+msgstr "U¾ivatelské aut. schéma"
+
+#: gauthinfo.c:478
+msgid "Base auth. scheme"
+msgstr "Základní aut. schéma"
+
+#: gauthinfo.c:483 gui_common.c:2066
+msgid "Digest auth. scheme"
+msgstr "Aut. schéma digest"
+
+#: gauthinfo.c:489 gui_common.c:2068
+msgid "NTLM auth. scheme"
+msgstr "NTML auth. schéma"
+
+#: gauthinfo.c:500 gui_addurl.c:171 gui_common.c:629 gui_common.c:778
+#: gui_common.c:957 gui_common.c:1057 gui_common.c:1847 gui_common.c:2620
+#: gui_common.c:2868 gui_tools.c:648
+msgid "Append"
+msgstr "Pøidej"
+
+#: gauthinfo.c:508 gui_common.c:645 gui_common.c:785 gui_common.c:973
+#: gui_common.c:1064 gui_common.c:1853 gui_common.c:2626 gui_common.c:2874
+#: gui_tools.c:670
+msgid "Modify"
+msgstr "Zmìnit"
+
+#: gauthinfo.c:516 gui_common.c:654 gui_common.c:982 gui_common.c:1859
+#: gui_common.c:2632 gui_common.c:2880 gui_tools.c:683
+msgid "Clear"
+msgstr "Odstranit"
+
+#: gauthinfo.c:524 gui_common.c:663 gui_common.c:792 gui_common.c:991
+#: gui_common.c:1071 gui_common.c:1865 gui_common.c:2638 gui_common.c:2886
+#: gui_tools.c:696
+msgid "Delete"
+msgstr "Smazat"
+
+#: gauthinfo.c:537 gui_common.c:2963 gui_limits.c:512 gui_sched.c:131
+msgid "OK"
+msgstr "OK"
+
+#: gauthinfo.c:548 gui_common.c:2972 gui_limits.c:521
+msgid "Apply"
+msgstr "Pou¾ít"
+
+#: gauthinfo.c:556
+msgid "Load"
+msgstr "Naèíst"
+
+#: gauthinfo.c:564
+msgid "Save"
+msgstr "Ulo¾it"
+
+#: gauthinfo.c:575 gui_about.c:67 gui_addurl.c:180 gui_common.c:2988
+#: gui_limits.c:537 gui_sched.c:140 gui_tree.c:657 gui_tree.c:797 stats.c:507
+msgid "Cancel"
+msgstr "Zru¹it"
+
+#: gkeys.c:64 gkeys.c:82 gkeys.c:95
+#, c-format
+msgid "Unable to parse: %s\n"
+msgstr "Nemohu oddìlit: %s\n"
+
+#: gkeys.c:117
+msgid "Unable to create ~/.pavuk_keys file\n"
+msgstr "Nelze vytvoøit soubor ~/.pavuk_keys\n"
+
+#: gkeys.c:121
+#, c-format
+msgid ""
+"# This file was generated by %s\n"
+"# You may edit it if you're careful!\n"
+"\n"
+msgstr ""
+"# Tento soubor byl vygenerován %s\n"
+"# Mù¾ete ho editovat, pokud budete opatrní!\n"
+"\n"
+
+#: gopher.c:65
+msgid "********************* Gopher request **************\n"
+msgstr "********************* Gopher request **************\n"
+
+#: gopher.c:103
+#, c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory of gopher://%s:%d/%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>Directory of gopher://%s:%d/%s </H1><BR><BR><UL>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Adresáø gopher://%s:%d/%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>Adresáø gopher://%s:%d/%s </H1><BR><BR><UL>"
+
+#: gopher.c:151
+#, c-format
+msgid ""
+"Failed to parse Gopher directory entry:\n"
+"%s\n"
+msgstr ""
+"Chyba pøi zpracování polo¾ky Gopher adresáøe:\n"
+"%s\n"
+
+#: gui_about.c:38
+msgid "Pavuk: About"
+msgstr "Pavuk: O aplikaci"
+
+#: gui_about.c:60
+#, c-format
+msgid ""
+"Pavuk %s %s\n"
+" \n"
+"an automatic WEB file grabber\n"
+" \n"
+"By Stefan Ondrejicka\n"
+" \n"
+"(ondrej@idata.sk)\n"
+" \n"
+"URL : http://www.idata.sk/~ondrej/pavuk/\n"
+" "
+msgstr ""
+"Pavuk %s %s\n"
+" \n"
+"automatický stahovaè souborù\n"
+" \n"
+"vytvoøil ©tefan Ondrejièka\n"
+" \n"
+"(ondrej@idata.sk)\n"
+" \n"
+"èeské titulky: Petr VYHNÁLEK (petr.vyhnalek@email.cz)\n"
+"               Petr Èech (cech@atrey.karlin.mff.cuni.cz)\n"
+" \n"
+"URL : http://www.idata.sk/~ondrej/pavuk/\n"
+" "
+
+#: gui_api.c:168
+#, c-format
+msgid "Processed: %5d"
+msgstr "Zpracováno: %5d"
+
+#: gui_api.c:170
+#, c-format
+msgid "Queued: %5d"
+msgstr "Ve frontì: %5d"
+
+#: gui_api.c:172
+#, c-format
+msgid "Failed: %4d"
+msgstr "Selhalo: %4d"
+
+#: gui_api.c:174
+#, c-format
+msgid "Rejected: %5d"
+msgstr "Zakázáno: %5d"
+
+#: gui_api.c:475 gui_api.c:492
+msgid "Start"
+msgstr "Start"
+
+#: gui_api.c:616
+msgid "Starting ..."
+msgstr "Zaèínám ..."
+
+#: gui_api.c:681
+msgid "Too high timeout value for GUI interface implementation of timeout\n"
+msgstr "Pøíli¹ velká hodnota timeout pro grafickou implementaci\n"
+
+#: gui_addurl.c:73 gui_main.c:270
+#, c-format
+msgid "Dropped URL : %s\n"
+msgstr "Pøeta¾ené URL : %s\n"
+
+#: gui_addurl.c:128
+msgid "Pavuk: Append URL"
+msgstr "Pavuk: URL pøidáno"
+
+#: gui_addurl.c:140
+msgid "New URL:"
+msgstr "Nové URL: "
+
+#: gui_common.c:580 gui_common.c:596 gui_main.c:803
+msgid "URL"
+msgstr "URL"
+
+#: gui_common.c:597
+msgid "Local filename"
+msgstr "Lokální soubor"
+
+#: gui_common.c:616
+msgid "Request URL: "
+msgstr "URL po¾adavku: "
+
+#: gui_common.c:619
+msgid "Local filename: "
+msgstr "Lokální soubor: "
+
+#: gui_common.c:687
+msgid "Extended informations for HTTP POST request"
+msgstr "Roz¹íøené informace pro HTTP POST po¾adavek"
+
+#: gui_common.c:744 gui_common.c:1023
+msgid "Query fields: "
+msgstr "Polo¾ky po¾adavku: "
+
+#: gui_common.c:758 gui_common.c:1037 gui_common.c:2563
+msgid "Type"
+msgstr "Typ"
+
+#: gui_common.c:759 gui_common.c:1038
+msgid "Name"
+msgstr "Jméno"
+
+#: gui_common.c:760 gui_common.c:1039
+msgid "Value"
+msgstr "Hodnota"
+
+#: gui_common.c:804 gui_common.c:1083
+msgid "Type: "
+msgstr "Typ: "
+
+#: gui_common.c:833 gui_common.c:1112
+msgid "Name: "
+msgstr "Jméno:  "
+
+#: gui_common.c:835 gui_common.c:1114
+msgid "Value: "
+msgstr "Hodnota: "
+
+#: gui_common.c:865 gui_common.c:1144
+msgid "Pavuk: Choose form field file"
+msgstr "Pavuk: vyber soubor pro polo¾ku formuláøe"
+
+#: gui_common.c:914
+msgid "Form data"
+msgstr "Data formulá¾e"
+
+#: gui_common.c:942
+msgid "Matching action URL: "
+msgstr "URL akce formuláøe: "
+
+#: gui_common.c:1206
+msgid "Grabber I"
+msgstr "Stahovaè I"
+
+#: gui_common.c:1214
+msgid "Cache Directory: "
+msgstr "Cache adresáø (strom): "
+
+#: gui_common.c:1217
+msgid "Default URL prefix: "
+msgstr "Standardní prefix URL: "
+
+#: gui_common.c:1220
+msgid "Separate info directory: "
+msgstr "Samostatný adresáø pro info soubory: "
+
+#: gui_common.c:1223
+msgid "Index file name: "
+msgstr "Jméno indexového souboru: "
+
+#: gui_common.c:1226
+msgid "Store file name: "
+msgstr "Ulo¾ jméno souboru: "
+
+#: gui_common.c:1229
+msgid "Identity string: "
+msgstr "Identifikaèní øetìzec: "
+
+#: gui_common.c:1233
+msgid "Netscape browser cache directory: "
+msgstr "Cache adresáø prohlí¾eèe Netscape: "
+
+#: gui_common.c:1236
+msgid "Mozilla browser cache directory: "
+msgstr "Cache adresáø prohlí¾eèe Mozilla: "
+
+#: gui_common.c:1241
+msgid "Browser: "
+msgstr "Prohlí¾eè: "
+
+#: gui_common.c:1245
+msgid "Reminder command: "
+msgstr "Pøíkaz pro reminder: "
+
+#: gui_common.c:1248
+msgid "Post command: "
+msgstr "Pøíkaz pro Post: "
+
+#: gui_common.c:1264
+msgid "How many times retry on fail: "
+msgstr "Poèet opakování pøenosu pøi chybì: "
+
+#: gui_common.c:1267
+msgid "How many moved links to follow: "
+msgstr "Poèet pøesmìrování dokumentù: "
+
+#: gui_common.c:1270
+msgid "How many times to reget file: "
+msgstr "Maximum èásteèných pøenosù: "
+
+#: gui_common.c:1273
+msgid "Document age before syncing with server: "
+msgstr "Staøí dokumentu pøed synchronizací se serverrem: "
+
+#: gui_common.c:1275
+msgid " days "
+msgstr " dnù "
+
+#: gui_common.c:1281
+msgid "Read buffer size: "
+msgstr "Velikost vyrovnávací pamìti pro ètení: "
+
+#: gui_common.c:1286
+msgid " kB "
+msgstr " kB "
+
+#: gui_common.c:1292
+msgid "Hash tables size: "
+msgstr "Velikost hash tabulek: "
+
+#: gui_common.c:1294
+msgid " entries "
+msgstr " polo¾ek "
+
+#: gui_common.c:1308
+msgid "Sleep time between transfers: "
+msgstr "Pøestávka mezi pøenosy: "
+
+#: gui_common.c:1310
+msgid " sec."
+msgstr " sec."
+
+#: gui_common.c:1315
+msgid "randomize"
+msgstr "náhodnì"
+
+#: gui_common.c:1321
+msgid "Rollback amount on reget: "
+msgstr "Délka opakovaného pøenosu: "
+
+#: gui_common.c:1323
+msgid " bytes"
+msgstr " bytù"
+
+#: gui_common.c:1329
+msgid "Transfer quota: "
+msgstr "Maximální velikost pøenesených dat: "
+
+#: gui_common.c:1331 gui_common.c:1339 gui_common.c:1348
+msgid " kB"
+msgstr " kB"
+
+#: gui_common.c:1337
+msgid "File size quota: "
+msgstr "Maximální velikost souboru: "
+
+#: gui_common.c:1346
+msgid "Filesystem freespace quota: "
+msgstr "Velikost volného místa na disku: "
+
+#: gui_common.c:1364
+msgid "Number of downloading threads: "
+msgstr "Poèet stahovacích vláken: "
+
+#: gui_common.c:1392
+msgid "Grabber II"
+msgstr "Stahovaè II"
+
+#: gui_common.c:1395
+msgid "HTML document URL rewriting"
+msgstr "HTML dokument, pøepisuji URL"
+
+#: gui_common.c:1404
+msgid "Rewrite URLs inside HTML doc."
+msgstr "Pøepi¹ odkazy v HTML dokumentech"
+
+#: gui_common.c:1412
+msgid "Rewrite URLs to local when stored locally"
+msgstr "Pøepsat URL na místní pøi místním ulo¾ení"
+
+#: gui_common.c:1418
+msgid "Rewrite all suitable URLs to local"
+msgstr "Pøepsat v¹echna vhodná URL na místní"
+
+#: gui_common.c:1424
+msgid "Rewrite all URLs to local immediately"
+msgstr "Okam¾itì pøepsat v¹echna URL na místní"
+
+#: gui_common.c:1430
+msgid "Rewrite all URLs to remote immediately"
+msgstr "Okam¾itì pøepsat v¹echna URL na vzdálená"
+
+#: gui_common.c:1436
+msgid "Rewrite only one currently download URL"
+msgstr "Pøepi¹ pouze právì zpracovávané URL"
+
+#: gui_common.c:1442
+msgid "Misc settings"
+msgstr "Rùzná nastavení"
+
+#: gui_common.c:1451
+msgid "Always generate unique name for document"
+msgstr "V¾dy generuj jedineèné jméno dokumentu"
+
+#: gui_common.c:1456
+msgid "Delete FTP document after succesful download"
+msgstr "Sma¾ FTP dokument po úspì¹ném sta¾ení"
+
+#: gui_common.c:1461
+msgid "Preserve document modification time"
+msgstr "Ponechej èas modifikace dokumentu"
+
+#: gui_common.c:1466
+msgid "Preserve FTP document permissions"
+msgstr "Zachovej práva dokumentu pøes FTP"
+
+#: gui_common.c:1471
+msgid "Preserve FTP symbolic links paths"
+msgstr "Zachovej symbolické odkazy pøes FTP"
+
+#: gui_common.c:1476
+msgid "Retrieve FTP symbolic links like files"
+msgstr "Stáhni symbolické odkazy pøes FTP jako soubory"
+
+#: gui_common.c:1482
+msgid "Whole reget when partial not supported"
+msgstr "Pøenes celý dokument, kdy¾ to nejde po èástech"
+
+#: gui_common.c:1488
+msgid "Use gzip encoding for transfer"
+msgstr "Pou¾ij kódování gzipem pro pøenos"
+
+#: gui_common.c:1493
+msgid "Remove improper documents"
+msgstr "Sma¾ neaktuální dokumenty"
+
+#: gui_common.c:1498
+msgid "Check transferred size of document"
+msgstr "Zkontroluj velikost pøeneseného dokumentu"
+
+#: gui_common.c:1503
+msgid "Store directory URLs as index files"
+msgstr "Ukládej výpis adresáøe jako indexový soubor"
+
+#: gui_common.c:1508
+msgid "Store info files with each document"
+msgstr "Ukládat informace o ka¾dém dokumentu"
+
+#: gui_common.c:1513
+msgid "Send self URL as Referer for starting URLs"
+msgstr "Po¹li samotné URL jako Referer pro poèáteèní URL"
+
+#: gui_common.c:1518
+msgid "Send If-Range header field when regeting"
+msgstr "Po¹lu hlavièku If-Range pøi reget"
+
+#: gui_common.c:1523
+msgid "Show time of start and end of downloading"
+msgstr "Zobraz èas zaèátku a konce stahování"
+
+#: gui_common.c:1531
+msgid "URL scheduling strategy: "
+msgstr "Strategie plánování URL: "
+
+#: gui_common.c:1628
+msgid "Net"
+msgstr "Sít"
+
+#: gui_common.c:1635
+msgid "Allowed protocols"
+msgstr "Povolené protokoly"
+
+#: gui_common.c:1644
+msgid "HTTP"
+msgstr "HTTP"
+
+#: gui_common.c:1649
+msgid "FTP"
+msgstr "FTP"
+
+#: gui_common.c:1654
+msgid "Gopher"
+msgstr "Gopher"
+
+#: gui_common.c:1660
+msgid "HTTPS"
+msgstr "HTTPS"
+
+#: gui_common.c:1665
+msgid "FTPS"
+msgstr "FTPS"
+
+#: gui_common.c:1671
+msgid "FTP data connection type "
+msgstr "typ datového FTP spojení"
+
+#: gui_common.c:1680
+msgid "Active"
+msgstr "Aktivní"
+
+#: gui_common.c:1687
+msgid "Passive"
+msgstr "Pasivní"
+
+#: gui_common.c:1694
+msgid "Communication timeout: "
+msgstr "Timeout pøi sí»ové komunikaci: "
+
+#: gui_common.c:1707
+msgid " min."
+msgstr " min."
+
+#: gui_common.c:1713
+msgid "Maximal transfer rate: "
+msgstr "Maximální rychlost pøenosu: "
+
+#: gui_common.c:1726 gui_common.c:1745
+msgid " kB/s"
+msgstr " kB/s"
+
+#: gui_common.c:1732
+msgid "Minimal transfer rate: "
+msgstr "Minimální rychlost pøenosu: "
+
+#: gui_common.c:1751
+msgid "Local interface address: "
+msgstr "Adresa místního rozhraní: "
+
+#: gui_common.c:1762
+msgid "Additional HTTP headers: "
+msgstr "Dodateèné HTTP hlavièky: "
+
+#: gui_common.c:1773
+msgid "Additional FTP list options: "
+msgstr "Dal¹í parametry pro pøíkaz FTP LIST: "
+
+#: gui_common.c:1786
+msgid "Use wide listing of FTP directories"
+msgstr "Pou¾ij ¹iroký výpist FTP adresáøù"
+
+#: gui_common.c:1792
+msgid "Fix detection of nonexisting FTP directories on WuFTPD FTP servers"
+msgstr "Uprav detekci neexistujících adresáøù na WuFTPd serverch"
+
+#: gui_common.c:1798
+msgid "Use HTTP/1.1 protocol for HTTP communication"
+msgstr "Pou¾ij protokol HTTP/1.1 pro HTTP komunikaci"
+
+#: gui_common.c:1804
+msgid "FTP login handshake rules"
+msgstr "Pravidla pro pøihla¹ovací proceduru k FTP"
+
+#: gui_common.c:1820
+msgid "Login handshake"
+msgstr "Procedura"
+
+#: gui_common.c:1840
+msgid "Handshake: "
+msgstr "Procedura: "
+
+#: gui_common.c:1882
+msgid "Proxy"
+msgstr "Proxy"
+
+#: gui_common.c:1888
+msgid "Gopher proxy"
+msgstr "Gopher proxy"
+
+#: gui_common.c:1901 gui_common.c:1924 gui_common.c:1953
+msgid "Port: "
+msgstr "Port: "
+
+#: gui_common.c:1905
+msgid "Gopher via HTTP proxy"
+msgstr "Gopher pøes HTTP proxy"
+
+#: gui_common.c:1910
+msgid "FTP proxy"
+msgstr "FTP proxy"
+
+#: gui_common.c:1927
+msgid "FTP via HTTP proxy"
+msgstr "FTP pøes HTTP proxy"
+
+#: gui_common.c:1933
+msgid "FTP via HTTP tunneling proxy"
+msgstr "FTP pøes HTTP tunel proxy"
+
+#: gui_common.c:1940
+msgid "SSL proxy"
+msgstr "SSL proxy"
+
+#: gui_common.c:1957
+msgid "HTTP proxy"
+msgstr "HTTP proxy"
+
+#: gui_common.c:1963
+msgid "Proxy: "
+msgstr "Proxy: "
+
+#: gui_common.c:1968
+msgid "Allow caching of documents"
+msgstr "Povolení pøenosu kopií (cache)"
+
+#: gui_common.c:2023
+msgid "Languages"
+msgstr "Jazyky"
+
+#: gui_common.c:2026
+msgid "Preffered languages"
+msgstr "Upøednostòované jazyky"
+
+#: gui_common.c:2031
+msgid "Language code: "
+msgstr "Kód jazyku: "
+
+#: gui_common.c:2043
+msgid "Preffered character sets"
+msgstr "Preferovaná znaková sada"
+
+#: gui_common.c:2048
+msgid "Character set code: "
+msgstr "Kód znakové sady: "
+
+#: gui_common.c:2065
+msgid "Basic auth. scheme"
+msgstr "Základní auth. schéma"
+
+#: gui_common.c:2075
+msgid "Auth"
+msgstr "Autorizace"
+
+#: gui_common.c:2082
+msgid "User authentification"
+msgstr "U¾ivatelská autentifikace"
+
+#: gui_common.c:2091 gui_common.c:2140
+msgid "Scheme: "
+msgstr "Schéma: "
+
+#: gui_common.c:2117 gui_common.c:2167 gui_common.c:2191
+msgid "User name: "
+msgstr "U¾ivatel: "
+
+#: gui_common.c:2123 gui_common.c:2173
+msgid "NTLM domain: "
+msgstr "NTML doména: "
+
+#: gui_common.c:2126 gui_common.c:2176
+msgid "Reuse HTTP Digest access nonce"
+msgstr "Znovu pou¾ij token pro HTTP digest pøístup"
+
+#: gui_common.c:2131
+msgid "HTTP proxy user authentification"
+msgstr "HTTP proxy autentifikace u¾ivatele"
+
+#: gui_common.c:2181
+msgid "FTP proxy user authentification"
+msgstr "FTP proxy autentifikace u¾ivatele"
+
+#: gui_common.c:2196
+msgid "Misc"
+msgstr "Rùzné"
+
+#: gui_common.c:2210
+msgid "E-mail address: "
+msgstr "E-mail adresa:  "
+
+#: gui_common.c:2212
+msgid "Send From: header with HTTP request"
+msgstr "Posílej From: hlavièku v HTTP po¾adavcích"
+
+#: gui_common.c:2226
+msgid "SSL"
+msgstr "SSL"
+
+#: gui_common.c:2229
+msgid "SSL client certificate"
+msgstr "SSL certifikát klienta"
+
+#: gui_common.c:2238
+msgid "Certificate password: "
+msgstr "Heslo certifikátu: "
+
+#: gui_common.c:2241
+msgid "Certificate PEM file: "
+msgstr "PEM soubor certifikátu: "
+
+#: gui_common.c:2244
+msgid "Certificate key file: "
+msgstr "Soubor s klíèem certifikátu: "
+
+#: gui_common.c:2247
+msgid "List of preffered ciphers: "
+msgstr "Seznam preferovaných ¹ifer: "
+
+#: gui_common.c:2253
+msgid "SSL protocol version"
+msgstr "Verse protokolu SSL"
+
+#: gui_common.c:2261
+msgid "SSLv23"
+msgstr "SSLv23"
+
+#: gui_common.c:2267
+msgid "SSLv2"
+msgstr "SSLv2"
+
+#: gui_common.c:2273
+msgid "SSLv3"
+msgstr "SSLv3"
+
+#: gui_common.c:2280
+msgid "TLSv1"
+msgstr "TLSv1"
+
+#: gui_common.c:2287
+msgid "Miscelanous SSL settings"
+msgstr "Rùzná SSL nastavení"
+
+#: gui_common.c:2297
+msgid "EGD daemon socket path: "
+msgstr "Cesa k socketu EGD daemona: "
+
+#: gui_common.c:2301
+msgid "Unique ID for all SSL sessions"
+msgstr "Jedineèné ID pro v¹echny SSL seance"
+
+#: gui_common.c:2316 gui_main.c:1896
+msgid "Log"
+msgstr "Log"
+
+#: gui_common.c:2323
+msgid "Try to find unique name, when original log file locked"
+msgstr ""
+"Pokus se najít jedineèné jméno, pøi uzamèeném pùvodním logovacím souboru"
+
+#: gui_common.c:2328
+msgid "Log file: "
+msgstr "Soubor logù: "
+
+#: gui_common.c:2331
+msgid "Shortlog file: "
+msgstr "Soubor krátkých logù: "
+
+#: gui_common.c:2334
+msgid "Log window length: "
+msgstr "Poèet øádku logovacího okna: "
+
+#: gui_common.c:2347
+msgid "Cookies"
+msgstr "Cookies"
+
+#: gui_common.c:2350
+msgid "Disabled cookie domains"
+msgstr "Domény se zakázanými cookies"
+
+#: gui_common.c:2355 gui_limits.c:247
+msgid "Domain: "
+msgstr "Doména: "
+
+#: gui_common.c:2358
+msgid "Cookies settings"
+msgstr "Nastavení cookies"
+
+#: gui_common.c:2367
+msgid "Update cookies"
+msgstr "Aktualizuj cookies"
+
+#: gui_common.c:2372
+msgid "Send cookies"
+msgstr "Posílej cookies"
+
+#: gui_common.c:2377
+msgid "Accept cookies"
+msgstr "Pøijímej cookies"
+
+#: gui_common.c:2382
+msgid "Check cookies domain"
+msgstr "Zkontroluj doménu cookies"
+
+#: gui_common.c:2390
+msgid "Cookies maximal number: "
+msgstr "Maximální poèet cookies: "
+
+#: gui_common.c:2405
+msgid "Cookie file: "
+msgstr "Soubor s cookies: "
+
+#: gui_common.c:2491
+msgid "Filename"
+msgstr "Jména souborù"
+
+#: gui_common.c:2494
+msgid "Local filename conversion rules"
+msgstr "Pravidla na zmìnu jména lokálního souboru"
+
+#: gui_common.c:2502
+msgid "Replace String1 with String2 in filename"
+msgstr "Zamìò Øetìzec1 za Øetìzec2 ve jménu souboru"
+
+#: gui_common.c:2511
+msgid "String1: "
+msgstr "Øetìzec1: "
+
+#: gui_common.c:2514
+msgid "String2: "
+msgstr "Øetìzec2: "
+
+#: gui_common.c:2516
+msgid "Delete characters from filename"
+msgstr "Odstraò znaky ze jména souboru"
+
+#: gui_common.c:2525
+msgid "Character set: "
+msgstr "Seznam znakù: "
+
+#: gui_common.c:2527
+msgid "Replace chars from Set1 with chars from Set2 in filename"
+msgstr "Nahraï znaky ve jménì souboru ze Sezn1 znaky v Sezn2"
+
+#: gui_common.c:2536
+msgid "Character set1: "
+msgstr "Znaky sezn1: "
+
+#: gui_common.c:2539
+msgid "Character set2: "
+msgstr "Znaky sezn2: "
+
+#: gui_common.c:2546
+msgid "Base level of tree: "
+msgstr "Základní úroveò stromu: "
+
+#: gui_common.c:2548
+msgid "Local filename mapping rules"
+msgstr "Pravidla na zmìnu jména lokálního souboru"
+
+#: gui_common.c:2564
+msgid "Match pattern"
+msgstr "Hledaný výraz"
+
+#: gui_common.c:2565
+msgid "Rule"
+msgstr "Pravidlo"
+
+#: gui_common.c:2587
+msgid "wildcard pattern"
+msgstr "¾olíkový výraz"
+
+#: gui_common.c:2594
+msgid "RE pattern"
+msgstr "regulární výraz"
+
+#: gui_common.c:2606
+msgid "Matching pattern: "
+msgstr "Hledaný výraz: "
+
+#: gui_common.c:2613
+msgid "Construction rule: "
+msgstr "Pravidlo tvorby jména: "
+
+#: gui_common.c:2653
+msgid "Advertisement"
+msgstr "Reklamy"
+
+#: gui_common.c:2660
+msgid "Enable removing of advertisement banners"
+msgstr "Zapní odstraòování reklamních prou¾kù"
+
+#: gui_common.c:2665
+msgid "RE for advertisement URLs: "
+msgstr "RE pro reklamní URL: "
+
+#: gui_common.c:2777
+msgid "Javascript"
+msgstr "Javascript"
+
+#: gui_common.c:2785
+msgid "Processing of javascript"
+msgstr "Zpracovávám javascript"
+
+#: gui_common.c:2789
+msgid "Javascript patterns"
+msgstr "Javascript výraz"
+
+#: gui_common.c:2794
+msgid "RE for Javascript patterns: "
+msgstr "Regulární výraz pro Javascript: "
+
+#: gui_common.c:2800
+msgid "Javascript patterns with transform rules"
+msgstr "Javascript vzory s tranformaèními pravidly"
+
+#: gui_common.c:2815
+msgid "Pattern"
+msgstr "Vzor"
+
+#: gui_common.c:2816
+msgid "Transform rule"
+msgstr "Transformaèní pravidlo"
+
+#: gui_common.c:2817
+msgid "HTML tag"
+msgstr "HTML znaèka"
+
+#: gui_common.c:2818
+msgid "HTML tag attribute"
+msgstr "Atribut HTML znaèky"
+
+#: gui_common.c:2819
+msgid "Rewrite"
+msgstr "Pøepisuj"
+
+#: gui_common.c:2840
+msgid "Pattern: "
+msgstr "Vzor: "
+
+#: gui_common.c:2843
+msgid "Tranform rule: "
+msgstr "Transformaèní pravidlo: "
+
+#: gui_common.c:2852
+msgid "HTML tag: "
+msgstr "HTML znaèka: "
+
+#: gui_common.c:2856
+msgid "HTML tag attribute: "
+msgstr "Atributy HTML znaèky: "
+
+#: gui_common.c:2858
+msgid "Rewrite URL part in HTML document"
+msgstr "Pøepi¹ odkazy v HTML dokumentech"
+
+#: gui_common.c:2913
+msgid "Pavuk: Common config"
+msgstr "Pavuk: Základní konfigurace"
+
+#: gui_common.c:2980
+msgid "Limitations ..."
+msgstr "Omezení ..."
+
+#: gui_jscons.c:150
+msgid "Pavuk: JavaScript console"
+msgstr "Pavuk: JavaScript konzole"
+
+#: gui_jscons.c:169
+msgid "Reload script file"
+msgstr "Znovu naèti scénáø"
+
+#: gui_jscons.c:174
+msgid "Save script to file"
+msgstr "Ulo¾ scénáø do souboru"
+
+#: gui_jscons.c:181
+msgid "Load script to JavaScript runtime"
+msgstr "Na¹ti scénáø do JavaScript interpretru"
+
+#: gui_jscons.c:186
+msgid "Restart JavaScript runtime"
+msgstr "Restartuj JavaScript interpretr"
+
+#: gui_jscons.c:215
+msgid "Prompt: "
+msgstr "Prompt: "
+
+#: gui_jscons.c:228
+msgid "JavaScript source file: "
+msgstr "Zdrojový soubor JavaScriptu: "
+
+#: gui_limits.c:44
+msgid "Tree"
+msgstr "Strom"
+
+#: gui_limits.c:56
+msgid "Download cgi-generated pages"
+msgstr "Stahovaní stran generovaných CGI skripty"
+
+#: gui_limits.c:62
+msgid "Recurse through FTP directory"
+msgstr "Rekurzivní procházení FTP adresáøù"
+
+#: gui_limits.c:68
+msgid "Allow \"robots.txt\""
+msgstr "Povolení \"robots.txt\""
+
+#: gui_limits.c:74
+msgid "Process HTML files downloaded over FTP"
+msgstr "Zpracuj HTML soubory sta¾ené pomocí FTP"
+
+#: gui_limits.c:80
+msgid "Don't leave starting site"
+msgstr "Neopou¹tìj startovní místo"
+
+#: gui_limits.c:86
+msgid "Don't leave starting directory"
+msgstr "Neopou¹tìj startovní adresáø"
+
+#: gui_limits.c:92
+msgid "Don't leave site enter directory"
+msgstr "Neopou¹tìj místo vstupu na server"
+
+#: gui_limits.c:98
+msgid "Download just single page"
+msgstr "Stáhni jen jednu stránku"
+
+#: gui_limits.c:104
+msgid "Apply limiting options on inline objects"
+msgstr "Pou¾ij omezení i na vlo¾ené objeky"
+
+#: gui_limits.c:119
+msgid "Max. count of documents: "
+msgstr "Max. poèet dokumentù: "
+
+#: gui_limits.c:122
+msgid "Max. depth of tree: "
+msgstr "Max. hloubka stromu: "
+
+#: gui_limits.c:125
+msgid "Max. levels to leave from starting site: "
+msgstr "Max. poèet úrovní ponechání od startovního místa: "
+
+#: gui_limits.c:128
+msgid "Max. document size: "
+msgstr "Max. velikost dokumentù: "
+
+#: gui_limits.c:131
+msgid "Min. document size: "
+msgstr "Min. velikost dokumentu: "
+
+#: gui_limits.c:134
+msgid "Max. site levels to leave from starting site: "
+msgstr "Max.  poèet zmìn serverù od startovního místa: "
+
+#: gui_limits.c:145
+msgid "Working subdirectory :"
+msgstr "Pracovní podstrom :"
+
+#: gui_limits.c:148
+msgid "User condition script: "
+msgstr "Skript s u¾ivatelskými podmínkami: "
+
+#: gui_limits.c:151
+msgid "Follow command: "
+msgstr "Pøíkaz po zta¾ení: "
+
+#: gui_limits.c:162
+msgid "Patterns"
+msgstr "Vzory"
+
+#: gui_limits.c:165
+msgid "Wildcard patterns"
+msgstr "®olíkový výraz"
+
+#: gui_limits.c:174 gui_limits.c:195
+msgid "Documents matching pattern: "
+msgstr "Dokumenty vyhovující výrazu: "
+
+#: gui_limits.c:177 gui_limits.c:183 gui_limits.c:198 gui_limits.c:204
+#: gui_limits.c:266
+msgid "skip: "
+msgstr "pøeskoè: "
+
+#: gui_limits.c:180 gui_limits.c:201
+msgid "URL matching pattern: "
+msgstr "Regulární výraz pro URL: "
+
+#: gui_limits.c:186
+msgid "RE patterns"
+msgstr "Regulární výraz"
+
+#: gui_limits.c:215
+msgid "Hosts"
+msgstr "Servery"
+
+#: gui_limits.c:224
+msgid "Allow / Disallow sites"
+msgstr "Povolené / Zakázané servery"
+
+#: gui_limits.c:230
+msgid "Site: "
+msgstr "Server(site): "
+
+#: gui_limits.c:241
+msgid "Allow / Disallow domains"
+msgstr "Povolené / Zakázané domény"
+
+#: gui_limits.c:253
+msgid "IP address RE patterns"
+msgstr "Regulární výraz pro IP adresy"
+
+#: gui_limits.c:263
+msgid "Server IP address matching pattern: "
+msgstr "Výraz pro povolení IP adres serveru: "
+
+#: gui_limits.c:269
+msgid "Server ports"
+msgstr "Porty serveru"
+
+#: gui_limits.c:279
+msgid "Allow/denny"
+msgstr "Povol/zaka¾"
+
+#: gui_limits.c:284
+msgid "Ports: "
+msgstr "Porty: "
+
+#: gui_limits.c:295
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: gui_limits.c:304
+msgid "Allow / Disallow suffix"
+msgstr "Povolení / Zakázání pøípony"
+
+#: gui_limits.c:310
+msgid "Suffix: "
+msgstr "Pøípona: "
+
+#: gui_limits.c:321
+msgid "Allow / Disallow prefix"
+msgstr "Povolení / Zakázání pøedpony"
+
+#: gui_limits.c:327
+msgid "Prefix: "
+msgstr "Pøedpona: "
+
+#: gui_limits.c:341 gui_limits.c:353
+msgid "MIME types"
+msgstr "MIME typy"
+
+#: gui_limits.c:349
+msgid "Allow / Disallow MIME type"
+msgstr "Povolené / Zakázané  MIME typy"
+
+#: gui_limits.c:358
+msgid "MIME type: "
+msgstr "MIME typy: "
+
+#: gui_limits.c:371
+msgid "Time"
+msgstr "Èas"
+
+#: gui_limits.c:377
+msgid "Lower document time limit"
+msgstr "Spodní limit èasu pro dokument"
+
+#: gui_limits.c:387
+msgid "Check if doc. time newer than this"
+msgstr "data "
+
+#: gui_limits.c:391
+msgid "Upper document time limit"
+msgstr "Horní limit èasu pro dokument"
+
+#: gui_limits.c:401
+msgid "Check if doc. time older than this"
+msgstr "Zkontroluj zda je dokument star¹í"
+
+#: gui_limits.c:410
+msgid "Maximal allowed time of downloading: "
+msgstr "Maximální povolený èas stahování: "
+
+#: gui_limits.c:413
+msgid " min"
+msgstr " min"
+
+#: gui_limits.c:426
+msgid "Select allowed HTML tags and attributes"
+msgstr "Vyber povolené HTML tagy a atributy"
+
+#: gui_limits.c:428
+msgid "HTML"
+msgstr "HTML"
+
+#: gui_limits.c:443
+#, c-format
+msgid "%s of %s"
+msgstr "%s z %s"
+
+#: gui_limits.c:476
+msgid "Pavuk: Limits config"
+msgstr "Pavuk: Konfigurace omezení"
+
+#: gui_limits.c:529
+msgid "Common ..."
+msgstr "Spoleèné ..."
+
+#: gui_main.c:433
+msgid "Unknown window to popup"
+msgstr "Neznamé okno na popup"
+
+#: gui_main.c:498
+#, c-format
+msgid "Fetched URL from clipboard : %s\n"
+msgstr "URL získané ze schránky : %s\n"
+
+#: gui_main.c:542
+#, c-format
+msgid "Fetched URL from browser : %s\n"
+msgstr "Získej URL od prohlí¾eèe : %s\n"
+
+#: gui_main.c:788
+msgid "Both"
+msgstr "Text i ikony"
+
+#: gui_main.c:789
+msgid "Icons only"
+msgstr "Pouze ikony"
+
+#: gui_main.c:790
+msgid "Text only"
+msgstr "Pouze text"
+
+#: gui_main.c:802
+msgid "Nr."
+msgstr "Nr."
+
+#: gui_main.c:804
+msgid "Status"
+msgstr "Stavo"
+
+#: gui_main.c:805
+msgid "Size"
+msgstr "Velikost"
+
+#: gui_main.c:806
+msgid "Transfer rate"
+msgstr "Pøenosová rychlost"
+
+#: gui_main.c:807
+msgid "Elapsed time"
+msgstr "Uplynulý èas"
+
+#: gui_main.c:808
+msgid "Remaining time"
+msgstr "Zbývající èas"
+
+#: gui_main.c:956
+msgid "Open _URL ..."
+msgstr "Otevøení _URL ..."
+
+#: gui_main.c:969
+msgid "Append URL ..."
+msgstr "Pøidat URL ..."
+
+#: gui_main.c:978
+msgid "Fetch URL from Clipboard"
+msgstr "Vezmi URL ze schránky"
+
+#: gui_main.c:996
+msgid "Fetch URL from browser"
+msgstr "Vezmi URL od prohlí¾eèe"
+
+#: gui_main.c:1006
+msgid "Load scenario ..."
+msgstr "Naèti scénáø ..."
+
+#: gui_main.c:1015
+msgid "Add scenario ..."
+msgstr "Pøidej scénáø ..."
+
+#: gui_main.c:1024
+msgid "Save scenario ..."
+msgstr "Ulo¾ scénáø ..."
+
+#: gui_main.c:1033
+msgid "Save settings to ~/.pavukrc"
+msgstr "Ulo¾it nastavení do ~/.pavukrc"
+
+#: gui_main.c:1046
+msgid "Schedule ..."
+msgstr "Plánuj ..."
+
+#: gui_main.c:1055
+msgid "Auth. info editor ..."
+msgstr "Editor autentikaèních informací ..."
+
+#: gui_main.c:1068
+msgid "E_xit"
+msgstr "_Konec"
+
+#: gui_main.c:1077
+msgid "_File"
+msgstr "_Soubor"
+
+#: gui_main.c:1093
+msgid "Document _Tree ..."
+msgstr "S_trom dokumentù ..."
+
+#: gui_main.c:1102
+msgid "Status page ..."
+msgstr "Stavová stránka ..."
+
+#: gui_main.c:1110
+msgid "HTML forms editor ..."
+msgstr "Editor HTML formuláøù ..."
+
+#: gui_main.c:1119
+msgid "Javascript console ..."
+msgstr "Javascript konzole ..."
+
+#: gui_main.c:1132
+msgid "Clear log window"
+msgstr "Vyèisti okno se zprávami"
+
+#: gui_main.c:1141
+msgid "_View"
+msgstr "_Prohlí¾ení"
+
+#: gui_main.c:1159
+msgid "normal recurse"
+msgstr "bì¾ná (normalní) rekurze"
+
+#: gui_main.c:1169
+msgid "synchronize"
+msgstr "synchronizace"
+
+#: gui_main.c:1180
+msgid "single page"
+msgstr "jedna strana"
+
+#: gui_main.c:1190
+msgid "update local links"
+msgstr "obnov lokální odkazy"
+
+#: gui_main.c:1200
+msgid "resume files"
+msgstr "pokraèovaní souboru"
+
+#: gui_main.c:1210
+msgid "unlimited reget"
+msgstr "neomezený poèet pokusù o sta¾ení"
+
+#: gui_main.c:1220
+msgid "transfer but don't store"
+msgstr "pøenes ale neulo¾"
+
+#: gui_main.c:1230
+msgid "reminder"
+msgstr "pøipomínka"
+
+#: gui_main.c:1240
+msgid "list ftp directory"
+msgstr "výpist ftp adresáøe"
+
+#: gui_main.c:1250
+msgid "_Mode"
+msgstr "_Mód"
+
+#: gui_main.c:1268
+msgid "C_ommon ..."
+msgstr "Sp_oleèné ..."
+
+#: gui_main.c:1277
+msgid "_Limitations ..."
+msgstr "O_mezení ..."
+
+#: gui_main.c:1286
+msgid "Reset configuration"
+msgstr "Vyma¾ konfiguraci"
+
+#: gui_main.c:1301
+msgid "Toolbar"
+msgstr "Li¹ta"
+
+#: gui_main.c:1309
+msgid "Toggle toolbar"
+msgstr "Nastavení li¹ty"
+
+#: gui_main.c:1364
+msgid "Progressbar"
+msgstr "Progresbar"
+
+#: gui_main.c:1396
+msgid "Language"
+msgstr "Jazyk"
+
+#: gui_main.c:1446
+msgid "Debug level"
+msgstr "Úroveò ladìní"
+
+#: gui_main.c:1469
+msgid "All"
+msgstr "V¹e"
+
+#: gui_main.c:1476
+msgid "None"
+msgstr "Nic"
+
+#: gui_main.c:1483
+msgid "Debug"
+msgstr "Ladìní"
+
+#: gui_main.c:1499
+msgid "Allow tooltips"
+msgstr "Povol nápovìdu"
+
+#: gui_main.c:1509
+msgid "Log window autoscroll"
+msgstr "Automatický posun logovacího okna"
+
+#: gui_main.c:1518
+msgid "Use preferences"
+msgstr "Pou¾ij nastavení"
+
+#: gui_main.c:1527
+msgid "Quiet"
+msgstr "Ti¹e"
+
+#: gui_main.c:1539
+msgid "Immediate messages"
+msgstr "Okam¾ité zprávy"
+
+#: gui_main.c:1551
+msgid "_Config"
+msgstr "_Konfigurace"
+
+#: gui_main.c:1567
+msgid "_Restart"
+msgstr "_Restart"
+
+#: gui_main.c:1577
+msgid "Co_ntinue"
+msgstr "_Pokraèuj"
+
+#: gui_main.c:1587
+msgid "Sto_p"
+msgstr "Sto_p"
+
+#: gui_main.c:1597
+msgid "_Break"
+msgstr "Pøe_ru¹ení"
+
+#: gui_main.c:1607
+msgid "_Action"
+msgstr "_Akce"
+
+#: gui_main.c:1627
+msgid "About ..."
+msgstr "O aplikaci ..."
+
+#: gui_main.c:1636
+msgid "_Help"
+msgstr "_Nápovìda"
+
+#: gui_main.c:1667
+msgid "Config"
+msgstr "Konfigurace"
+
+#: gui_main.c:1668
+msgid "Popup config window"
+msgstr "Otevøení konfiguraèních oken"
+
+#: gui_main.c:1672
+msgid "Limits"
+msgstr "Limity"
+
+#: gui_main.c:1673
+msgid "Popup limits window"
+msgstr "Zobraz okno s omezeníni"
+
+#: gui_main.c:1679
+msgid "Go bg"
+msgstr "Na pozadí"
+
+#: gui_main.c:1680
+msgid "Destroy window as soon as posible and continue on terminal"
+msgstr "Zru¹ co nejdøíve okno aplikace a pokraèuj na terminálu"
+
+#: gui_main.c:1684 gui_main.c:1757
+msgid "Restart"
+msgstr "Restart"
+
+#: gui_main.c:1685
+msgid "Start working on currently set starting URLs"
+msgstr "Zaèni pracovat na zadaných URL"
+
+#: gui_main.c:1689 gui_main.c:1762
+msgid "Continue"
+msgstr "Pokraèuj"
+
+#: gui_main.c:1690
+msgid "Continue after stop or break"
+msgstr "Pokraèuj po pøeru¹ení"
+
+#: gui_main.c:1696 gui_main.c:1767
+msgid "Stop"
+msgstr "Zastavení"
+
+#: gui_main.c:1697
+msgid "Finish this transfer and stop"
+msgstr "Dokonèi aktuální pøenos a zastav"
+
+#: gui_main.c:1701 gui_main.c:1772
+msgid "Break"
+msgstr "Pøeru¹ení"
+
+#: gui_main.c:1702
+msgid "Break transfer and stop"
+msgstr "Pøeru¹ pøenos a zastav"
+
+#: gui_main.c:1708
+msgid "Exit"
+msgstr "Konec"
+
+#: gui_main.c:1709
+msgid "Immediately quit the program"
+msgstr "Okam¾itì ukonèi program"
+
+#: gui_main.c:1777
+msgid "Show whole main window"
+msgstr "Uka¾ celé hlavní okno"
+
+#: gui_main.c:1782
+msgid "Quit"
+msgstr "Konec"
+
+#: gui_main.c:1861
+msgid "Pavuk: save log"
+msgstr "Pavuk: ulo¾ log"
+
+#: gui_main.c:1924
+msgid "Select all"
+msgstr "Vyber v¹e"
+
+#: gui_main.c:1932
+msgid "Clear selection"
+msgstr "Sma¾ oznaèené"
+
+#: gui_main.c:1940
+msgid "Copy selection"
+msgstr "Zkopíruj oznaèené"
+
+#: gui_main.c:1952
+msgid "Save log ..."
+msgstr "Ulo¾ log ..."
+
+#: gui_main.c:1959
+msgid "Clear log"
+msgstr "Sma¾ okno výpisu"
+
+#: gui_main.c:2046 gui_main.c:2164
+msgid "Processed:       "
+msgstr "Zpracováno:      "
+
+#: gui_main.c:2055 gui_main.c:2173
+msgid "Failed:       "
+msgstr "Selhalo:      "
+
+#: gui_main.c:2064 gui_main.c:2182
+msgid "Queued:       "
+msgstr "Ve frontì:    "
+
+#: gui_main.c:2073 gui_main.c:2191
+msgid "Rejected:       "
+msgstr "Zakázáno:       "
+
+#: gui_main.c:2123
+msgid "S:                     "
+msgstr "S:                     "
+
+#: gui_main.c:2132
+msgid "R:          "
+msgstr "R:          "
+
+#: gui_main.c:2141
+msgid "ET:          "
+msgstr "ET:          "
+
+#: gui_main.c:2150
+msgid "RT:          "
+msgstr "RT:          "
+
+#: gui_scenario.c:46
+msgid "Pavuk: Scenario saver"
+msgstr "Pavuk: Ukladání scénáøe"
+
+#: gui_scenario.c:139
+msgid "Pavuk: Scenario loader"
+msgstr "Pavuk: Naètení scénáøe"
+
+#: gui_scenario.c:231
+msgid "Pavuk: Scenario add"
+msgstr "Pavuk: Pøidání scénáøe"
+
+#: gui_sched.c:55 pavuk.c:495
+msgid "Error scheduling\n"
+msgstr "Chyba plánovaní\n"
+
+#: gui_sched.c:78
+msgid "Pavuk: Scheduler"
+msgstr "Pavuk: Plánovaè"
+
+#: gui_sched.c:97
+msgid "Scheduling command: "
+msgstr "Pøíkaz pro plánování: "
+
+#: gui_sched.c:107
+msgid "Reschedule after "
+msgstr "Obnovuji plánovaní po "
+
+#: gui_sched.c:117
+msgid " hours"
+msgstr " hodin"
+
+#: gui_tools.c:28
+msgid "January"
+msgstr "Leden"
+
+#: gui_tools.c:29
+msgid "February"
+msgstr "Únor"
+
+#: gui_tools.c:30
+msgid "March"
+msgstr "Bøezen"
+
+#: gui_tools.c:31
+msgid "April"
+msgstr "Duben"
+
+#: gui_tools.c:32
+msgid "May"
+msgstr "Kvìten"
+
+#: gui_tools.c:33
+msgid "June"
+msgstr "Èerven"
+
+#: gui_tools.c:34
+msgid "July"
+msgstr "Èervenec"
+
+#: gui_tools.c:35
+msgid "August"
+msgstr "Srpen"
+
+#: gui_tools.c:36
+msgid "September"
+msgstr "Záøí"
+
+#: gui_tools.c:37
+msgid "October"
+msgstr "Øíjen"
+
+#: gui_tools.c:38
+msgid "November"
+msgstr "Listopad"
+
+#: gui_tools.c:39
+msgid "December"
+msgstr "Prosinec"
+
+#: gui_tools.c:43
+msgid "Sun"
+msgstr "Ned"
+
+#: gui_tools.c:44
+msgid "Mon"
+msgstr "Pon"
+
+#: gui_tools.c:45
+msgid "Tue"
+msgstr "Úte"
+
+#: gui_tools.c:46
+msgid "Wed"
+msgstr "Stø"
+
+#: gui_tools.c:47
+msgid "Thu"
+msgstr "Ètv"
+
+#: gui_tools.c:48
+msgid "Fri"
+msgstr "Pát"
+
+#: gui_tools.c:49
+msgid "Sat"
+msgstr "Sob"
+
+#: gui_tools.c:171
+msgid "Time: "
+msgstr "Èas: "
+
+#: gui_tools.c:180
+msgid " : "
+msgstr " : "
+
+#: gui_tools.c:360
+#, c-format
+msgid "Pavuk: select %s"
+msgstr "Pavuk: vyber %s"
+
+#: gui_tools.c:361
+msgid "file"
+msgstr "soubor"
+
+#: gui_tools.c:459
+msgid "Browse ..."
+msgstr "Vyber ..."
+
+#: gui_tree.c:117
+#, c-format
+msgid "URL: %s\n"
+msgstr "URL: %s\n"
+
+#: gui_tree.c:130 gui_tree.c:136 gui_tree.c:175
+msgid "Request type: "
+msgstr "Typ dotazu: "
+
+#: gui_tree.c:151
+msgid "Query values:\n"
+msgstr "Hodnoty dotazu:\n"
+
+#: gui_tree.c:181
+msgid "Status: "
+msgstr "Stavov: "
+
+#: gui_tree.c:187
+msgid "not processed yet\n"
+msgstr "je¹tì nezpracované\n"
+
+#: gui_tree.c:193
+msgid "loaded from NS cache\n"
+msgstr "naèteno z NS cache\n"
+
+#: gui_tree.c:199
+msgid "loaded from local URL tree\n"
+msgstr "naèteno z lokálního URL stromu\n"
+
+#: gui_tree.c:205
+msgid "moved to another URL\n"
+msgstr "pøesunito na jiné URL\n"
+
+#: gui_tree.c:211
+msgid "URL not found on remote server\n"
+msgstr "URL nenalezeno na vzdáleném serveru\n"
+
+#: gui_tree.c:217
+msgid "truncated\n"
+msgstr "zkráceno\n"
+
+#: gui_tree.c:223
+msgid "downloaded OK\n"
+msgstr "stahování v poøádku\n"
+
+#: gui_tree.c:229
+msgid "rejected by rules\n"
+msgstr "zakázáno podle pravidel\n"
+
+#: gui_tree.c:235
+msgid "disabled by user\n"
+msgstr "zakázáno u¾ivatelem\n"
+
+#: gui_tree.c:241
+msgid "probably recoverable error\n"
+msgstr "asi nenapravitelná chyba\n"
+
+#: gui_tree.c:247
+msgid "unrecoverable error\n"
+msgstr "nenapravitelná chyba\n"
+
+#: gui_tree.c:253
+msgid "unknown\n"
+msgstr "neznámý\n"
+
+#: gui_tree.c:263
+#, c-format
+msgid "Moved to URL: %s\n"
+msgstr "Pøesunito na URL : %s\n"
+
+#: gui_tree.c:273
+#, c-format
+msgid "Type: %s\n"
+msgstr "Typ: %s\n"
+
+#: gui_tree.c:275
+msgid "Type: unknown\n"
+msgstr "Typ: neznamý\n"
+
+#: gui_tree.c:281
+#, c-format
+msgid "Size: %d\n"
+msgstr "Server(site): %d\n"
+
+#: gui_tree.c:290
+msgid "Modification time: %a, %d %b %Y %H:%M:%S %Z\n"
+msgstr "Èas modifikace: %a, %d %b %Y %H:%M:%S %Z\n"
+
+#: gui_tree.c:300
+#, c-format
+msgid "Local filename: %s\n"
+msgstr "Lokální soubor: %s\n"
+
+#: gui_tree.c:311
+msgid "Parent URLs:\n"
+msgstr "Rodièovká URL:\n"
+
+#: gui_tree.c:612
+msgid "Pavuk: Store tree"
+msgstr "Pavuk: Ukládací strom"
+
+#: gui_tree.c:656 gui_tree.c:684
+msgid "Pavuk: URL tree preview"
+msgstr "Pavuk: Pøehled URL stromu"
+
+#: gui_tree.c:659 gui_tree.c:788
+msgid "Store tree ..."
+msgstr "Ukládací strom ..."
+
+#: gui_tree.c:660 gui_tree.c:704
+msgid "Automaticaly watch last processed URLs"
+msgstr "Automaticky sleduj poslední zpracovaná URL"
+
+#: gui_tree.c:662 gui_tree.c:821
+msgid "Properties"
+msgstr "Vlastnosti"
+
+#: gui_tree.c:663 gui_tree.c:829
+msgid "Launch browser"
+msgstr "Spus» prohlí¾eè"
+
+#: gui_tree.c:664 gui_tree.c:837
+msgid "Disable URL"
+msgstr "Zaka¾ URL"
+
+#: gui_tree.c:665 gui_tree.c:845
+msgid "Enable URL"
+msgstr "Povol URL"
+
+#: gui_tree.c:666 gui_tree.c:853
+msgid "Download URL"
+msgstr "Stáhni URL"
+
+#: gui_tree.c:670 gui_tree.c:724
+msgid "URL tree"
+msgstr "URL strom"
+
+#: html.c:253 htmlparser.c:281
+#, c-format
+msgid "Unsupported BASE URL -  %s (probably bad handled)\n"
+msgstr "Nepodporované BASE URL - %s (pravdìpodobnì ¹patnì zpracované)\n"
+
+#: html.c:522
+msgid "Can't work on directory\n"
+msgstr "Nemù¾u pracovat s adresáøem\n"
+
+#: html.c:548 html.c:552
+msgid "rewrite parent"
+msgstr "pøepisuji rodièe"
+
+#: http.c:366
+msgid "****************** Proxy connect request *****************\n"
+msgstr "****************** Proxy connect request *****************\n"
+
+#: http.c:413
+msgid "***************** Proxy connect response *****************\n"
+msgstr "***************** Proxy connect response *****************\n"
+
+#: http.c:469
+msgid "Sending request ..."
+msgstr "Posílám po¾adavek ..."
+
+#: http.c:716
+msgid "************ Client HTTP MIME header ***************\n"
+msgstr "************ Client HTTP MIME header ***************\n"
+
+#: http.c:733
+msgid "Sending data ..."
+msgstr "Posílám data ..."
+
+#: http.c:734
+msgid "************ HTTP request data ***************\n"
+msgstr "*********** data HTTP po¾adavku **************\n"
+
+#: http.c:744
+msgid "Waiting for response ..."
+msgstr "Èekám na odpovìï ..."
+
+#: http.c:759
+msgid "Error reading HTTP 1xx class response\n"
+msgstr "Chyba ètení odpovìdí tøídy HTTP 1xx\n"
+
+#: http.c:764
+msgid "***************** class 1xx HTTP response ****************\n"
+msgstr "***************** class 1xx HTTP response *****************\n"
+
+#: http.c:875
+msgid "Connecting ..."
+msgstr "Pøipojuji se ..."
+
+#: http.c:1159
+msgid "*********** HTTP Server response MIME header **********\n"
+msgstr "*********** HTTP Server response MIME header **********\n"
+
+#: http.c:1262
+msgid "Regeting whole file\n"
+msgstr "Znovu stahuji soubor\n"
+
+#: http.c:1312
+#, c-format
+msgid "Unexpected response \"%d %s\" when trying to reget!\n"
+msgstr "Neoèekávaná opovìï \"%d %s\" pøi pokusu o napojení!\n"
+
+#: http_proxy.c:150
+#, c-format
+msgid "Checking HTTP proxy server %s:%d\n"
+msgstr "Kontroluji HTTP proxy server %s:%d\n"
+
+#: http_proxy.c:162 http_proxy.c:174 http_proxy.c:181 http_proxy.c:190
+msgid "Failed to check proxy !\n"
+msgstr "Chyba pøi kontole proxy !\n"
+
+#: http_proxy.c:196
+#, c-format
+msgid "Proxy %s:%d is HTTP/%d.%d proxy\n"
+msgstr "Proxy %s:%d je HTTP/%d.%d proxy\n"
+
+#: jsbind.c:76
+msgid "bad parameter"
+msgstr "¹patný parametr"
+
+#: jsbind.c:529
+msgid "not enough parameters"
+msgstr "nedostateèný poèet parametrù"
+
+#: jsbind.c:553
+msgid "unknown limiting condition"
+msgstr "neznámá omezující podmínka"
+
+#: lfname.c:479 lfname.c:491 lfname.c:500 lfname.c:513 lfname.c:536
+#: lfname.c:645 lfname.c:658 lfname.c:670 lfname.c:685 lfname.c:698 re.c:51
+#: re.c:61 re.c:68 re.c:80 re.c:95
+#, c-format
+msgid "Error compiling regular expression : %s\n"
+msgstr "Chyba v regulárním výrazu : %s\n"
+
+#: lfname.c:553 lfname.c:617 lfname.c:939 lfname.c:1057
+#, c-format
+msgid "LSP analyze error: bad token at - %s\n"
+msgstr "LSP chyba analýzy: chybný symbol - %s\n"
+
+#: lfname.c:950
+#, c-format
+msgid "LSP analyze error: bad numeric value at - %s\n"
+msgstr "LSP chyba analýzy: chybné èíslo - %s\n"
+
+#: lfname.c:964
+#, c-format
+msgid "LSP analyze error: bad macro at - %s\n"
+msgstr "LSP chyba analýzy: chybné makro - %s\n"
+
+#: lfname.c:992
+#, c-format
+msgid "LSP analyze error: unterminated string at - %s\n"
+msgstr "LSP chyba analýzy: neukonèený øetìzec - %s\n"
+
+#: lfname.c:1013 lfname.c:1029 lfname.c:1047
+#, c-format
+msgid "LSP analyze error: bad parameter type at - %s\n"
+msgstr "LSP chyba analýzy: chybný typ parametru - %s\n"
+
+#: log.c:203
+msgid "Ending log : %H:%M:%S %d.%m.%Y\n"
+msgstr "Konèím log : %H:%M:%S %d.%m.%Y\n"
+
+#: log.c:224
+msgid "Unable to open log file - disabling logging\n"
+msgstr "Nelze otevøít logovací soubor - vypínám logování\n"
+
+#: log.c:232
+msgid "Log file is locked by another process - "
+msgstr "Logovací soubor je uzamèen dal¹ím procesem - "
+
+#: log.c:236
+msgid "generating new log filename\n"
+msgstr "generuji nové jméno logovacího souboru\n"
+
+#: log.c:241
+msgid "disabling logging\n"
+msgstr "vypínám logování\n"
+
+#: log.c:263
+msgid "Starting log : %H:%M:%S %d.%m.%Y\n"
+msgstr "Zaèínám log : %H:%M:%S %d.%m.%Y\n"
+
+#: mozcache.c:184
+#, c-format
+msgid "Unable to open Mozilla cache index - %s\n"
+msgstr "Nelze otevøít index Mozilla cache - %s\n"
+
+#: myssl.c:49
+msgid "Failed obtaining entropy pathname\n"
+msgstr "Chyba pøi získat cestu k souboru na inicializaci generátoru náhodných èísel\n"
+
+#: myssl.c:59
+msgid "Failed to initialize random seed for OpenSSL via EGD daemon\n"
+msgstr "Chyba pøi inicializaci generátoru náhodných èísel pro OpenSSL pomocí EGD daemona\n"
+
+#: myssl.c:70
+msgid "Seeding entropy pool INSECURELY!\n"
+msgstr "Inicializuji generátoru náhodných èísel nebezpeèným zpùsobem!\n"
+
+#: myssl.c:157
+msgid "Unable to set certificate file (wrong password?)\n"
+msgstr "Nelza nastavit soubor s certifikátem (¹patné heslo?)\n"
+
+#: myssl.c:167
+msgid "Unable to set public key file\n"
+msgstr "Nelze nastavit soubor s veøejným klíèem\n"
+
+#: myssl.c:183
+msgid "Private key does not match the certificate public key\n"
+msgstr "Soukromý klíè neodpovídá veøejnému klíèi certifikátu\n"
+
+#: myssl.c:231
+#, c-format
+msgid "SSL connection is using %s\n"
+msgstr "SSL spojení pou¾ívá %s\n"
+
+#: myssl.c:234
+msgid "Server certificate:\n"
+msgstr "Certifikát serveru:\n"
+
+#: myssl.c:238
+#, c-format
+msgid "\t subject: %s\n"
+msgstr "\t subject: %s\n"
+
+#: myssl.c:243
+#, c-format
+msgid "\t issuer: %s\n"
+msgstr "\t issuer: %s\n"
+
+#: nscache.c:103
+#, c-format
+msgid "Unable to open Netscape cache index - %s\n"
+msgstr "Nelze otevøít index Netscape cache - %s\n"
+
+#: ntlm_auth.c:416
+msgid "Trying to do NTLM authorization\n"
+msgstr "Zkou¹ím NTLM autorizaci\n"
+
+#: ntlm_auth.c:425 ntlm_auth.c:506 ntlm_auth.c:587 ntlm_auth.c:667
+msgid "NTLM authorization supported only on persistent connections!\n"
+msgstr "NTLM autorizace je podporována pouze pro trvalá spojení!\n"
+
+#: ntlm_auth.c:448 ntlm_auth.c:609
+msgid "Not enough data for NTLM authorization!\n"
+msgstr "Málo dat pro NTML autorizaci!\n"
+
+#: ntlm_auth.c:449 ntlm_auth.c:610
+msgid "Missing:\n"
+msgstr "Chybí:\n"
+
+#: ntlm_auth.c:450 ntlm_auth.c:611
+msgid "       domain\n"
+msgstr "       doména\n"
+
+#: ntlm_auth.c:451 ntlm_auth.c:612
+msgid "       username\n"
+msgstr "       u¾ivatelské jméno\n"
+
+#: ntlm_auth.c:452 ntlm_auth.c:613
+msgid "       password\n"
+msgstr "       heslo\n"
+
+#: ntlm_auth.c:453 ntlm_auth.c:614
+msgid "       local hostname\n"
+msgstr "       jméno poèítaèe\n"
+
+#: ntlm_auth.c:489 ntlm_auth.c:497 ntlm_auth.c:522 ntlm_auth.c:650
+#: ntlm_auth.c:658 ntlm_auth.c:683
+msgid "Got unexpected response\n"
+msgstr "Obdr¾ena neoèekávaná odpovìï\n"
+
+#: ntlm_auth.c:532
+msgid "Failed NTLM nonce negotiation\n"
+msgstr "Chyba pøi NTLM nonce dohodì\n"
+
+#: ntlm_auth.c:574
+msgid "Trying to do proxy NTLM authorization\n"
+msgstr "Zkou¹ím NTLM proxy autentikaci\n"
+
+#: ntlm_auth.c:693
+msgid "Failed NTLM proxy nonce negotiation\n"
+msgstr "Chyba pøi NTLM proxy nonce dohodì\n"
+
+#: options.h:193
+msgid "\t-v                 - print version number\n"
+msgstr "\t-v                 - výpis verze\n"
+
+#: options.h:204
+msgid "\t-h                 - help\n"
+msgstr "\t-h                 - nápovìda\n"
+
+#: options.h:218
+msgid "\t-X                 - start GUI interface\n"
+msgstr "\t-X                 - start grafikého rozhraní\n"
+
+#: options.h:249
+msgid ""
+"\t-runX              - after start of GUI interface, immediately\n"
+"\t                     start processing of entered URLs\n"
+msgstr ""
+"\t-runX              - okam¾itì po spu¹tìní grafického rozhraní\n"
+"\t                     zaèni zpracovávat zadaná URL\n"
+
+#: options.h:265
+msgid "\t-prefs/-noprefs    - load preferences from ~/.pavuk_prefs file\n"
+msgstr "\t-prefs/-noprefs    - nahraj nastavení ze souboru ~/.pavuk_prefs\n"
+
+#: options.h:494
+msgid ""
+"\t-progress/-noprogress\n"
+"\t                   - show retrieving progress while running on terminal\n"
+msgstr ""
+"\t-progress/-noprogress\n"
+"\t                   - uka¾ stav pøenosu, kdy¾ je spu¹tìn na terminálu\n"
+
+#: options.h:517
+msgid "\t-lmax $nr          - allowed depth of tree\n"
+msgstr "\t-lmax $nr          - povolená hloubka stromu\n"
+
+#: options.h:528
+msgid "\t-dmax $nr          - maximal number of downloaded documents\n"
+msgstr "\t-dmax $nr          - maximalní poèet stáhnutých dokumentù\n"
+
+#: options.h:539
+msgid ""
+"\t-sleep $nr         - sleep for $nr seconds between transfers,\n"
+"\t                     default 0 seconds\n"
+msgstr "\t-sleep $nr         - èekej $nr sekund mezi pøenosy, standardnì 0 s\n"
+
+#: options.h:551
+msgid ""
+"\t-rsleep/-norsleep  - randomize sleeping time between transfers\n"
+"\t                     from 0 to -sleep time\n"
+msgstr ""
+"\t-rsleep/-norsleep  - náhodná pauza mezí stahováním v rozmezí\n"
+"\t                     0 a¾ -sleep time\n"
+
+#: options.h:574
+msgid "\t-retry $nr         - number of retries if anything failed\n"
+msgstr "\t-retry $nr         - poèet pokusù, jestli¾e vznikla chyba\n"
+
+#: options.h:585
+msgid "\t-nregets $nr       - max number of regets on single file, default 2\n"
+msgstr ""
+"\t-nregets $nr       - max poèet pokusù stáhnutí samotného souboru, "
+"standardnì 2\n"
+
+#: options.h:596
+msgid ""
+"\t-nredirs $nr       - max number of followed HTTP redirections, default 5\n"
+msgstr ""
+"\t-nredirs $nr       - max poèet následovaných HTTP pøesmìrování, standardnì "
+"5\n"
+
+#: options.h:607
+msgid ""
+"\t-timeout $nr       - timeout for network communications (min).\n"
+"\t                     0 == no timeout, default = 0\n"
+msgstr ""
+"\t-timeout $nr       - timeout pro sí»ovou komunikaci (min).\n"
+"\t                     0 == ¾ádný timeout, standardnì = 0\n"
+
+#: options.h:619
+msgid ""
+"\t-rollback $nr      - number of bytes to discard (counted from end\n"
+"\t                     of file) if regetting, default 0\n"
+msgstr ""
+"\t-rollback $nr      - poèet bytù od konce souboru, které budou zahozené\n"
+"\t                     pøi obnovení spojení, standardnì 0\n"
+
+#: options.h:632
+msgid ""
+"\t-ddays $nr         - number of days since last access when document is\n"
+"\t                     checked in sync mode\n"
+msgstr ""
+"\t-ddays $nr         - poèet dní od posledního pøístupu, kdy¾ je dokument\n"
+"\t                     testován v sync modu\n"
+
+#: options.h:644
+msgid ""
+"\t-nocache/-cache    - disallow caching of HTTP documents (on proxy cache)\n"
+msgstr ""
+"\t-nocache/-cache    - zákaz cachování HTTP dokumentù (u proxy cache)\n"
+
+#: options.h:666
+msgid "\t-noRobots/-Robots  - care about \"robots.txt\" file ?\n"
+msgstr "\t-noRobots/-Robots  - pou¾ívat soubor \"robots.txt\" ?\n"
+
+#: options.h:688
+msgid "\t-noFTP/-FTP        - don't download FTP files\n"
+msgstr "\t-noFTP/-FTP        - nestahovat FTP soubory\n"
+
+#: options.h:710
+msgid "\t-noHTTP/-HTTP      - don't download HTTP files\n"
+msgstr "\t-noHTTP/-HTTP      - nestahovat HTTP soubory\n"
+
+#: options.h:735
+msgid "\t-noSSL/-SSL        - don't download (HTTPS) SSL files\n"
+msgstr "\t-noSSL/-SSL        - nestahovat (HTTPS) SSL soubory\n"
+
+#: options.h:765
+msgid "\t-noFTPS/-FTPS      - don't download FTPS files\n"
+msgstr "\t-noFTPS/-FTPS      - nestahovat FTPS soubory\n"
+
+#: options.h:792
+msgid "\t-noGopher/-Gopher  - download Gopher files ?\n"
+msgstr "\t-noGopher/-Gopher  - stáhnout Gopher soubory ?\n"
+
+#: options.h:814
+msgid "\t-noCGI/-CGI        - download parametric CGI pages ?\n"
+msgstr "\t-noCGI/-CGI        - stáhnout CGI stránky s parametry ?\n"
+
+#: options.h:836
+msgid "\t-noEnc/-Enc        - allow transfer of encoded files ?\n"
+msgstr "\t-noEnc/-Enc        - povolit pøenos kódovaných souborù ?\n"
+
+#: options.h:858
+msgid ""
+"\t-noRelocate/-Relocate\n"
+"\t                   - don't rewrite links\n"
+msgstr ""
+"\t-noRelocate/-Relocate\n"
+"\t                   - nepøepisovat odkazy\n"
+
+#: options.h:881
+msgid ""
+"\t-FTPhtml/-noFTPhtml\n"
+"\t                   - process HTML files downloaded over FTP\n"
+msgstr ""
+"\t-FTPhtml/-noFTPhtml\n"
+"\t                   - zpracuj HTML soubory sta¾ené pøes FTP\n"
+
+#: options.h:904
+msgid ""
+"\t-FTPlist/-noFTPlist\n"
+"\t                   - use wide FTP directory listing\n"
+msgstr ""
+"\t-FTPlist/-noFTPlist\n"
+"\t                   - pou¾ij ¹iroký výpis FTP adresáøe\n"
+
+#: options.h:927
+msgid "\t-FTPdir/-noFTPdir  - recurse FTP directory\n"
+msgstr "\t-FTPdir/-noFTPdir  - povolení pøenosu FTP adresáøù\n"
+
+#: options.h:949
+msgid ""
+"\t-store_index/-nostore_index\n"
+"\t                   - store directory URLs as index files\n"
+msgstr ""
+"\t-store_index/-nostore_index\n"
+"\t                   - ukládej výpis adresáøe jako indexový soubor\n"
+
+#: options.h:972
+msgid ""
+"\t-force_reget/-noforce_reget\n"
+"\t                   - force reget of whole file when server doesn't\n"
+"\t                     support reget\n"
+msgstr ""
+"\t-force_reget/-noforce_reget\n"
+"\t                   - pøenos celého dokumentu, kdy¾ server\n"
+"\t                     nepodporuje reget\n"
+
+#: options.h:1000
+msgid "\t-debug             - turn on debug mode\n"
+msgstr "\t-debug             - zapne debug mód\n"
+
+#: options.h:1030
+msgid ""
+"\t-debug_level $l    - debug level number, see manual for $l description\n"
+msgstr ""
+"\t-debug_level $l    - úroveò ladících hlá¹ení, popis $l v ej manuálu\n"
+
+#: options.h:1042
+msgid "\t-asite $list       - comma-separated list of allowed sites\n"
+msgstr ""
+"\t-asite $list       - èárkou oddìlený seznam povolených serverù (sites)\n"
+
+#: options.h:1053
+msgid "\t-dsite $list       - comma-separated list of disallowed sites\n"
+msgstr ""
+"\t-dsite $list       - èárkou oddìlený seznam zakázaných serverù (sites)\n"
+
+#: options.h:1064
+msgid "\t-adomain $list     - list of allowed domains\n"
+msgstr "\t-adomain $list     - seznam povolených domén\n"
+
+#: options.h:1075
+msgid "\t-ddomain $list     - list of disallowed domains\n"
+msgstr "\t-adomain $list     - seznam zakázaných domén\n"
+
+#: options.h:1086
+msgid "\t-aprefix $list     - list of allowed directory/file prefixes\n"
+msgstr "\t-aprefix $list     - seznam povolených pøedpon adresáøù/souborù\n"
+
+#: options.h:1097
+msgid "\t-dprefix $list     - list of disallowed directory/file prefixes\n"
+msgstr "\t-dprefix $list     - seznam zakázaných pøedpon adresáøù/souborù\n"
+
+#: options.h:1108
+msgid "\t-asfx $list        - list of allowed suffixes\n"
+msgstr "\t-asfx $list        - seznam povolených pøípon\n"
+
+#: options.h:1119
+msgid "\t-dsfx $list        - list of disallowed suffixes\n"
+msgstr "\t-dsfx $list        - seznam zakázaných pøípon\n"
+
+#: options.h:1130
+msgid "\t-amimet $list      - list of alloved MIME types\n"
+msgstr "\t-amimet $list      - seznam povolených MINE typù\n"
+
+#: options.h:1141
+msgid "\t-dmimet $list      - list of disallowed MIME types\n"
+msgstr "\t-dmimet $list      - seznam zakázaných MINE typù\n"
+
+#: options.h:1152
+msgid "\t-alang $list       - list of preferred languages (only via HTTP)\n"
+msgstr "\t-alang $list       - seznam preferovaných jazykù (pouze pro HTTP)\n"
+
+#: options.h:1163
+msgid ""
+"\t-acharset $list    - list of preferred character sets (only via HTTP)\n"
+msgstr ""
+"\t-acharset $list    - seznam preferovaných znakových sad\n"
+"\t                     (pouze pro HTTP)\n"
+
+#: options.h:1174
+msgid ""
+"\t-scndir $dir       - directory ,where are stored your scenarios\n"
+"\t                     (config files)\n"
+msgstr ""
+"\t-scndir $dir       - adresáø, kde jsou ulo¾eny scénáøe\n"
+"\t                     (konfiguraèní soubory)\n"
+
+#: options.h:1186
+msgid "\t-cdir $dir         - directory for storing documents\n"
+msgstr "\t-cdir $dir         - adresáø pro ukládání dokumentù\n"
+
+#: options.h:1197
+msgid "\t-subdir $dir       - subdirectory of cdir to operate on\n"
+msgstr "\t-subdir $dir       - podadresáø cdir-u, ve kterém se bude pracovat\n"
+
+#: options.h:1208
+msgid ""
+"\t-scenario $str     - name of scenario from scenario directory to load\n"
+"\t                     and or run\n"
+msgstr ""
+"\t-scenario $str     - jméno scénáøe z adresáøe scénáøù, který bude\n"
+"\t                     naèten a spu¹tìn\n"
+
+#: options.h:1220
+msgid ""
+"\t-auth_scheme 1/2/3 - HTTP authorization scheme 1-user 2-Basic 3-Digest,\n"
+"\t                     default 2\n"
+msgstr ""
+"\t-auth_scheme 1/2/3 - HTTP autorizace 1-user 2-Basic 3-Digest,\n"
+"\t                     standardnì 2\n"
+
+#: options.h:1232
+msgid "\t-auth_name $str    - name for Authorization (only via HTTP)\n"
+msgstr "\t-auth_name $str    - jméno pro autorizaci (pouze pøes HTTP)\n"
+
+#: options.h:1243
+msgid "\t-auth_passwd $str  - password for Authorization (only via HTTP)\n"
+msgstr "\t-auth_passwd $str  - heslo pro autorizaci (pouze pøes HTTP)\n"
+
+#: options.h:1254
+msgid ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - reuse one HTTP digest access authorization\n"
+"\t                     nonce for more requests\n"
+msgstr ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - pou¾ij jednu HTTP digest autorizaci pro více "
+"po¾adavkù\n"
+
+#: options.h:1278
+msgid ""
+"\t-auth_reuse_proxy_nonce/-noauth_reuse_proxy_nonce\n"
+"\t                   - reuse one HTTP proxy digest access\n"
+"\t                     authorization nonce for more requests\n"
+msgstr ""
+"\t-auth_reuse_proxy_nonce/-noauth_reuse_proxy_nonce\n"
+"\t                   - pou¾ij jednu proxy HTTP digest autorizaci\n"
+"\t                     pøístupu pro více po¾adavkù\n"
+
+#: options.h:1305
+msgid ""
+"\t-ssl_cert_passwd $str\n"
+"\t                   - password for SSL certification file\n"
+msgstr ""
+"\t-ssl_cert_passwd $str\n"
+"\t                   - heslo pro certifikaèní soubor SSL\n"
+
+#: options.h:1321
+msgid ""
+"\t-ssl_cert_file $str\n"
+"\t                   - SSL certification file\n"
+msgstr ""
+"\t-ssl_cert_file $str\n"
+"\t                   - certifikaèní soubor SSL\n"
+
+#: options.h:1337
+msgid "\t-ssl_key_file $str - SSL certification key file\n"
+msgstr "\t-ssl_key_file $str - soubor s certifikaèním klíèem SSL\n"
+
+#: options.h:1352
+msgid ""
+"\t-ssl_cipher_list $str\n"
+"\t                   - list of prefered SSL ciphers in SSL communication\n"
+msgstr ""
+"\t-ssl_cipher_list $str\n"
+"\t                   - seznam preferovaných SSL ¹ifer pro SSL komunikaci\n"
+
+#: options.h:1368
+msgid "\t-egd_socket $file  - path to EGD listening socket\n"
+msgstr "\t-egd_socket $file  - cesta k EGD socketu\n"
+
+#: options.h:1380
+msgid "\t-from $str         - e-mail address used for user identification\n"
+msgstr ""
+"\t-from $str         - e-mail adresa pou¾itá k identifikaci u¾ivatele\n"
+
+#: options.h:1391
+msgid ""
+"\t-send_from/-nosend_from\n"
+"\t                   - send From: header in HTTP request with your\n"
+"\t                     e-mail address\n"
+msgstr ""
+"\t-send_from/-nosend_from\n"
+"\t                   - po¹li hlavièku From: v HTTP po¾adavku\n"
+"\t                     s va¹í e-mail adresou\n"
+
+#: options.h:1415
+msgid "\t-identity $str     - contents of User-agent: field in HTTP request\n"
+msgstr "\t-identity $str     - obsah polo¾ky User-agent: v HTTP po¾adavku\n"
+
+#: options.h:1426
+msgid "\t-pattern $list     - list of wildcard patterns for files\n"
+msgstr "\t-pattern $list     - seznam ¾olíkových výrazù pro jména souborù\n"
+
+#: options.h:1440
+msgid "\t-rpattern $re      - RE matching pattern for files\n"
+msgstr "\t-rpattern $re      - seznam regulárních výrazù pro jména souborù\n"
+
+#: options.h:1452
+msgid ""
+"\t-skip_pattern $list\n"
+"\t                   - list of skip wildcard patterns for files\n"
+msgstr ""
+"\t-skip_pattern $list\n"
+"\t                   - seznam ¾olíkových výrazù pro dokumenty,\n"
+"\t                     které nebudou zpracovány\n"
+
+#: options.h:1467
+msgid ""
+"\t-skip_rpattern $re\n"
+"\t                   - skip RE matching pattern for files\n"
+msgstr ""
+"\t-skip_pattern $re\n"
+"\t                   - seznam regulárních výrazù pro dokumenty,\n"
+"\t                     které nebudou zpracovány\n"
+
+#: options.h:1480
+msgid "\t-url_pattern $list - list of wildcard patterns for urls\n"
+msgstr "\t-url_pattern $list - seznam ¾olíkových výrazù pro URL\n"
+
+#: options.h:1494
+msgid "\t-url_rpattern $re  - RE matching pattern for urls\n"
+msgstr "\t-url_rpattern $re  - seznam regulárních výrazù pro URL\n"
+
+#: options.h:1506
+msgid ""
+"\t-skip_url_pattern $list\n"
+"\t                   - list of wildcard patterns for urls\n"
+msgstr ""
+"\t-skip_url_pattern $list\n"
+"\t                   - seznam ¾olíkových výrazù pro URL,\n"
+"\t                     která nebudou zpracována\n"
+
+#: options.h:1521
+msgid ""
+"\t-skip_url_rpattern $re\n"
+"\t                   - RE matching patterns for urls\n"
+msgstr ""
+"\t-skip_url_pattern $re\n"
+"\t                   - seznam regulárních výrazù pro URL,\n"
+"\t                     která nebudou zpracována\n"
+
+#: options.h:1534
+msgid ""
+"\t-mode $mode        - set operation mode\n"
+"\t                         normal - recurse throught WWW (default)\n"
+"\t                         linkupdate - update remote links in local tree\n"
+"\t                         sync - synchronize local tree with remote WWW\n"
+"\t                                servers\n"
+"\t                         singlepage - single page with inline objects\n"
+"\t                         singlereget - reget file until not whole\n"
+"\t                         resumeregets - reget all files which are broken\n"
+"\t                         dontstore - transfer documents, but don't store\n"
+"\t                         reminder - checks URLs if they are changed\n"
+"\t                         ftpdir - list content of FTP directory\n"
+msgstr ""
+"\t-mode $mode        - nastavení módu\n"
+"\t                         normal - rekurzivnì pøes WWW (standardnì)\n"
+"\t                         linkupdate - update vzdálených odkazù v lokalním "
+"stromu\n"
+"\t                         sync - synchronizace lokalního stromu se "
+"vzdaleným WWW\n"
+"\t                                serverem\n"
+"\t                         singlepage - jedna stránka s inline objekty\n"
+"\t                         singlereget - stáhni soubor dokud není celý\n"
+"\t                         resumeregets - znovu stáhni v¹echny po¹kozené "
+"soubory\n"
+"\t                         dontstore - pøenes soubory, ale neukládej je\n"
+"\t                         reminder - provìø, zda se obsah URL nezmnìnil\n"
+"\t                         ftpdir - vypi¹ obsah FTP adresáøe\n"
+
+#: options.h:1555
+msgid ""
+"\t-ftp_proxy $site[:$port]\n"
+"\t                   - ftp proxy/cache server\n"
+msgstr ""
+"\t-ftp_proxy $site[:$port]\n"
+"\t                   - ftp proxy/cache server\n"
+
+#: options.h:1567
+msgid ""
+"\t-http_proxy $site[:$port]\n"
+"\t                   - http proxy/cache server\n"
+msgstr ""
+"\t-http_proxy $site[:$port]\n"
+"\t                   - http proxy/cache server\n"
+
+#: options.h:1579
+msgid ""
+"\t-gopher_proxy $site[:$port]\n"
+"\t                   - gopher proxy/cache server\n"
+msgstr ""
+"\t-gopher_proxy $site[:$port]\n"
+"\t                   - gopher proxy/cache server\n"
+
+#: options.h:1594
+msgid ""
+"\t-ssl_proxy $site[:$port]\n"
+"\t                   - ssl proxy server\n"
+msgstr ""
+"\t-ssl_proxy $site[:$port]\n"
+"\t                   - ssl proxy server\n"
+
+#: options.h:1607
+msgid ""
+"\t-gopher_httpgw/-nogopher_httpgw\n"
+"\t                   - specified gopher proxy is HTTP gateway for Gopher\n"
+msgstr ""
+"\t-gopher_httpgw/-nogopher_httpgw\n"
+"\t                   - uvedená gopher proxy HTTP gatewaye pro Gopher\n"
+
+#: options.h:1631
+msgid ""
+"\t-ftp_httpgw/-noftp_httpgw\n"
+"\t                   - specified ftp proxy is HTTP gateway for FTP\n"
+msgstr ""
+"\t-ftp_httpgw/-noftp_httpgw\n"
+"\t                   - specifikace ftp proxy, HTTP gatewaye pro FTP\n"
+
+#: options.h:1655
+msgid ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - use CONNECT request to HTTP proxy for FTP\n"
+"\t                     connections\n"
+msgstr ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - pou¾ij po¾adavek CONNECT na HTTP proxy pro FTP\n"
+"\t                     spojení\n"
+
+#: options.h:1682
+msgid "\t-browser $str      - your preferred browser programm\n"
+msgstr "\t-browser $str      - vá¹ preferovaný prohlí¾eè\n"
+
+#: options.h:1697
+msgid "\t-xmaxlog           - maximal length of log window\n"
+msgstr "\t-xmaxlog           - maximalní délka logovacího okna\n"
+
+#: options.h:1709
+msgid "\t-dumpscn $str      - save scenario in scndir with name $str\n"
+msgstr "\t-dumpscn $str      - ulo¾ scénáø v scndir se jménem $str\n"
+
+#: options.h:1720
+msgid "\t-maxsize $nr       - maximal allowed size of document in bytes\n"
+msgstr ""
+"\t-maxsize $nr       - maximalní povolená velikost dokumentu v bytech\n"
+
+#: options.h:1731
+msgid "\t-minsize $nr       - minimal allowed size of document in bytes\n"
+msgstr "\t-minsize $nr       - nejmen¹í povolená velikost dokumentu v bytech\n"
+
+#: options.h:1742
+msgid ""
+"\t-http_proxy_pass $str\n"
+"\t                   - password for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_pass $str\n"
+"\t                   - heslo pro HTTP proxy autorizaci\n"
+
+#: options.h:1754
+msgid ""
+"\t-http_proxy_user $str\n"
+"\t                   - user name for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - u¾ivatelské jméno pro HTTP proxy autorizaci\n"
+
+#: options.h:1766
+msgid ""
+"\t-http_proxy_auth 1/2/3\n"
+"\t                   - authorization scheme for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_auth 1/2/3\n"
+"\t                   - autorizaèní schéma pro HTTP proxy authorizaci\n"
+
+#: options.h:1778
+msgid "\t-logfile $file     - name of file where mesages are stored\n"
+msgstr "\t-logfile $file     - jméno souboru, kde se ulo¾í zprávy\n"
+
+#: options.h:1789
+msgid "\t-slogfile $file    - name of file where short log will be stored\n"
+msgstr "\t-slogfile $file    - jméno souboru pro ukládání zkrácených zpráv\n"
+
+#: options.h:1800
+msgid "\t-stime/-nostime    - write starting and ending time of transfer\n"
+msgstr "\t-stime/-nostime    - výpis èasu zaèátku a konce pøenosu\n"
+
+#: options.h:1822
+msgid ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - remove improper files or directories while running\n"
+"\t                     in sync mode\n"
+msgstr ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - pøi synchronizaci odstraò neplatné soubory a "
+"adresáøe\n"
+
+#: options.h:1847
+msgid ""
+"\t-auth_file $file   - file where you have stored your auth infos\n"
+"\t                     see manual for format description\n"
+msgstr ""
+"\t-auth_file $file   - soubor, kde máte ulo¾eny autorizaèní informace\n"
+"\t                     informace o formátu zápisu naleznete v dokumentaci\n"
+
+#: options.h:1859
+msgid ""
+"\t-base_level $nr    - number of levels of directory tree to omit from top\n"
+msgstr ""
+"\t-base_level $nr    - poèet úrovní adresáøového stromu, které se pøeskoèí\n"
+"\t                     od vrchního adresáøe\n"
+
+#: options.h:1870
+msgid "\t-ftp_active        - select active FTP data connection\n"
+msgstr "\t-ftp_active        - pou¾ij aktivní datové FTP spojení\n"
+
+#: options.h:1881
+msgid "\t-ftp_passive       - select passive FTP data connection\n"
+msgstr "\t-ftp_passive       - pou¾ij pasivní datové FTP spojení\n"
+
+#: options.h:1895
+msgid "\t-msgcat $dir       - directory where message catalogs are stored\n"
+msgstr "\t-msgcat $dir       - adresáø, kde jsou ulo¾eny pøeklady zpráv\n"
+
+#: options.h:1910
+msgid "\t-language $str     - set language for messages\n"
+msgstr "\t-language $str\t   - výbìr jazyka zpráv\n"
+
+#: options.h:1922
+msgid "\t-quiet             - don't show output messages\n"
+msgstr "\t-quiet             - neukazuj výstupní zprávy\n"
+
+#: options.h:1933
+msgid "\t-verbose           - show output messages (default)\n"
+msgstr "\t-verbose           - ukazuj výstupní zprávy (standardnì)\n"
+
+#: options.h:1944
+msgid ""
+"\t-newer_than $time  - download only documents newer than $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-newer_than $time  - stáhni pouze dokumenty novìj¹í ne¾ $time\n"
+"\t                     formát $time: RRRR.MM.DD.hh.mm\n"
+
+#: options.h:1956
+msgid ""
+"\t-older_than $time  - download only documents older than $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-older_than $time  - stáhni pouze dokumenty star¹í ne¾ $time\n"
+"\t                     formát $time: RRRR.MM.DD.hh.mm\n"
+
+#: options.h:1968
+msgid ""
+"\t-schedule $time    - schedule pavuk start at $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-schedule $time    - nastav spu¹tìní pavuka na $time\n"
+"\t                     formát $time: RRRR.MM.DD.hh:mm\n"
+
+#: options.h:1980
+msgid ""
+"\t-reschedule $nr    - number of hours between two runs\n"
+"\t                     for cyclic scheduling\n"
+msgstr ""
+"\t-reschedule $nr    - poèet hodin mezi dvìma spu¹tìníma\n"
+"\t                     pro cyklické spou¹tìní\n"
+
+#: options.h:1992
+msgid ""
+"\t-dont_leave_site/-leave_site\n"
+"\t                   - don't/leave site of starting URL\n"
+msgstr ""
+"\t-dont_leave_site/-leave_site\n"
+"\t                   - zaka¾/povol opu¹tìní serveru startovního URL\n"
+
+#: options.h:2015
+msgid ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - don't/leave directory of starting URL\n"
+msgstr ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - neopou¹tìj adresáø startovní URL\n"
+
+#: options.h:2038
+msgid ""
+"\t-preserve_time/-nopreserve_time\n"
+"\t                   - preserve document modification time\n"
+msgstr ""
+"\t-preserve_time/-nopreserve_time\n"
+"\t                   - zachovej datum modifikace souboru\n"
+
+#: options.h:2061
+msgid ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - preserve document permissions\n"
+msgstr ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - zachovej práva souboru\n"
+
+#: options.h:2084
+msgid ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - preserve absolute symlinks\n"
+msgstr ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - zachovej absolutní symbolické odkazy\n"
+
+#: options.h:2107
+msgid ""
+"\t-leave_level $nr   - how many tree levels leave from starting\n"
+"\t                     site , (0 == don't care) default 0\n"
+msgstr ""
+"\t-leave_level $nr   - kolik úrovní stromu od zaèátku\n"
+"\t                     místa mám opustit, (0 == nestarej se) standardnì 0\n"
+
+#: options.h:2119
+msgid "\t-cookie_file $file - file where are stored cookie infos\n"
+msgstr "\t-cookie_file $file - soubor, kde jsou ulo¾eny cookies\n"
+
+#: options.h:2130
+msgid ""
+"\t-cookie_send/-nocookie_send\n"
+"\t                   - send cookie info in HTTP request\n"
+msgstr ""
+"\t-cookie_send/-nocookie_send\n"
+"\t                   - poslat cookie informace v HTTP po¾adavku\n"
+
+#: options.h:2153
+msgid ""
+"\t-cookie_recv/-nocookie_recv\n"
+"\t                   - accept cookies from HTTP response\n"
+msgstr ""
+"\t-cookie_recv/-nocookie_recv\n"
+"\t                   - pøijmout cookie informace z HTTP odpovìdi\n"
+
+#: options.h:2176
+msgid ""
+"\t-cookie_update/-nocookie_update\n"
+"\t                   - update cookies in cookies file\n"
+msgstr ""
+"\t-cookie_update/-nocookie_update\n"
+"\t                   - aktualizace cookies v souboru s cookies\n"
+
+#: options.h:2199
+msgid ""
+"\t-cookie_check/-nocookie_check\n"
+"\t                   - check if cookies are set for source domain\n"
+msgstr ""
+"\t-cookie_check/-nocookie_check\n"
+"\t                   - zkontrolovat nastavení cookies pro zdrojovou doménu\n"
+
+#: options.h:2222
+msgid "\t-cookies_max $nr   - maximal number of cookies in cookie cache\n"
+msgstr "\t-cookies_max $nr   - maximální poèet cookies v cookie cachi\n"
+
+#: options.h:2233
+msgid ""
+"\t-disabled_cookie_domains $list\n"
+"\t                   - comma-separated list of disabled cookie domains\n"
+msgstr ""
+"\t-disabled_cookie_domains $list\n"
+"\t                   - seznam domén odkud nepøijímám cookies\n"
+
+#: options.h:2245
+msgid ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - disable processing of URLs from\n"
+"\t                     attribute $ATTRIB of HTML tag $TAG\n"
+msgstr ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - zaka¾ zpracování URL z atribudu $ATTRUB\n"
+"\t                     v HTML tagu $TAG\n"
+
+#: options.h:2258
+msgid ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - enable proccessing of URLs from\n"
+"\t                     attribute $ATTRIB of HTML tag $TAG\n"
+msgstr ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - povol zpracování URL z atributu $ATTRIB\n"
+"\t                     v HTML tagu $TAG\n"
+
+#: options.h:2274
+msgid "\t-gui_font $font    - font name used in GUI interface\n"
+msgstr "\t-gui_font $font    - jméno písma pou¾itého v grafickém rozhraní\n"
+
+#: options.h:2286
+msgid ""
+"\t-user_condition $str\n"
+"\t                   - user exit script used to restrict some URLs\n"
+"\t                     for more informations see manpage\n"
+msgstr ""
+"\t-user_condition $str\n"
+"\t                   - u¾ivatelský skript pro omezení nìkterých URL\n"
+"\t                     bli¾¹í informace naleznete v manuálové stránce\n"
+
+#: options.h:2299
+msgid ""
+"\t-tr_del_chr $str   - characters that will be deleted from\n"
+"\t                     local filename\n"
+msgstr ""
+"\t-tr_del_chr $str   - znaky které budou odstranìny ze jména\n"
+"\t                     místního souboru\n"
+
+#: options.h:2311
+msgid ""
+"\t-tr_str_str $str1 $str2\n"
+"\t                   - translate $str1 to $str2 in local filename\n"
+msgstr ""
+"\t-tr_str_str $str1 $str2\n"
+"\t                   - zmìò $str1 za $str2 ve jménì místního souboru\n"
+
+#: options.h:2323
+msgid ""
+"\t-tr_chr_chr $chrset1 $chrset2\n"
+"\t                   - translate $chrset1 to $chrset2 in local filename\n"
+msgstr ""
+"\t-tr_chr_chr $chrset1 $chrset2\n"
+"\t                   - zmìn znaky z $chrset1 za $chrset2 ve jménì místního "
+"souboru\n"
+
+#: options.h:2335
+msgid "\t-index_name $str   - name of directory index instead of _._.html\n"
+msgstr "\t-index_name $str   - jméno seznamu adresáøe místo _._.html\n"
+
+#: options.h:2346
+msgid "\t-store_name $str   - filename for first downloaded document\n"
+msgstr "\t--store_name $str   - jméno prvního stáhnutého dokumentu\n"
+
+#: options.h:2368
+msgid ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - compare received size of file with\n"
+"\t                     that provided by remote server\n"
+msgstr ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - porovnej velikost sta¾eného souboru\n"
+"\t                     s hodnotou udanou serverem\n"
+
+#: options.h:2392
+msgid ""
+"\t-urls_file $file   - URLs should be read from file, until\n"
+"\t                     line with single \".\" occurs in input\n"
+msgstr ""
+"\t-urls_file $file   - Ète URL ze souboru, dokud nenarazí\n"
+"\t                     na teèku \".\" na samostatném øádku.\n"
+
+#: options.h:2404
+msgid ""
+"\t-bg/-nobg          - detach pavuk proces from terminal and\n"
+"\t                     don't output any messages on screen\n"
+msgstr ""
+"\t-bg/-nobg          - odpoutej pavuka z terminálu a nezobrazuj\n"
+"\t                     nic na obrazovku\n"
+
+#: options.h:2427
+msgid "\t-maxrate $nr       - limit to maximal speed of transfer (kB/s)\n"
+msgstr "\t-maxrate $nr       - omez maximální rychlost pøenosu (kB/s)\n"
+
+#: options.h:2438
+msgid "\t-minrate $nr       - limit to minimal speed of transfer (kB/s)\n"
+msgstr "\t-minrate $nr       - omez minimální rychlost pøenosu (kB/s)\n"
+
+#: options.h:2449
+msgid "\t-bufsize $nr       - size of read buffer (kB)\n"
+msgstr "\t-bufsize $nr       - velikost vyrovnávací pamìti pro ètení (kB)\n"
+
+#: options.h:2460
+msgid "\t-file_quota $nr    - maximal size of file to transfer (kB)\n"
+msgstr "\t-file_quota $nr    - maximální velikost pøená¹eného souboru (kB)\n"
+
+#: options.h:2471
+msgid "\t-trans_quota $nr   - maximal amount of transfer per session (kB)\n"
+msgstr ""
+"\t-trans_quota $nr   - maximální velikost dat pøenesených\n"
+"\t                     v jedné seanci (kB)\n"
+
+#: options.h:2482
+msgid "\t-fs_quota $nr      - disk free space quota (kB)\n"
+msgstr "\t-fs_quota $nr      - velikost volného místa (kB)\n"
+
+#: options.h:2493
+msgid ""
+"\t-enable_js/-disable_js\n"
+"\t                   - enable downloading of javascript source files\n"
+msgstr ""
+"\t-enable_js/-disable_js\n"
+"\t                   - povol pøenos zdrojových kódù v javascriptu\n"
+
+#: options.h:2516
+msgid ""
+"\t-fnrules $t $m $r  - local filename construction rules\n"
+"\t                     (for better description see manual)\n"
+msgstr ""
+"\t-fnrules $t $m $r  - pravidla pro tvoøení jmen ulo¾ených souborù\n"
+"\t                     (více v manuálových stránkách)\n"
+
+#: options.h:2528
+msgid ""
+"\t-store_info/-nostore_info\n"
+"\t                   - store document info files with each document\n"
+msgstr ""
+"\t-store_info/-nostore_info\n"
+"\t                   - s ka¾dým souborem ulo¾ i informace o nìm\n"
+
+#: options.h:2551
+msgid ""
+"\t-all_to_local/-noall_to_local\n"
+"\t                   - change all links inside HTML document to\n"
+"\t                     local immediately after download\n"
+msgstr ""
+"\t-all_to_local/-noall_to_local\n"
+"\t                   - zmìò v¹echny odkazy v HTML dokumentu\n"
+"\t                     na místní ihned po sta¾ení\n"
+
+#: options.h:2575
+msgid ""
+"\t-sel_to_local/-nosel_to_local\n"
+"\t                   - change all links inside HTML document\n"
+"\t                     which acomplish the limits, to\n"
+"\t                     local immediately after download\n"
+msgstr ""
+"        -sel_to_local/-nosel_to_local\n"
+"                           - zmìò v¹echny odkazy v HTML dokumentu,\n"
+"                             který vyhovyje podmínkám, na místní\n"
+"                             ihned po sta¾ení\n"
+
+#: options.h:2600
+msgid ""
+"\t-all_to_remote/-noall_to_remote\n"
+"\t                   - change all links inside HTML document to\n"
+"\t                     remote immediately after download and\n"
+"\t                     don't do any further changes to it\n"
+msgstr ""
+"\t-all_to_remote/-noall_to_remote\n"
+"\t                   - zmìò v¹echny odkazy v HTML dokumentu\n"
+"\t                     na vzálení ihned po sta¾ení\n"
+"\t                     a ji¾ nemìò\n"
+
+#: options.h:2625
+msgid "\t-remind_cmd $str   - command which sends result from reminder mode\n"
+msgstr "\t-remind_cmd $str   - pøíkaz na odeslání výsledkù módu reminder\n"
+
+#: options.h:2636
+msgid ""
+"\t-auto_referer/-noauto_referer\n"
+"\t                   - in HTTP request send for each starting URL\n"
+"\t                     Referer: field which contains its own URL\n"
+msgstr ""
+"\t-auto_referer/-noauto_referer\n"
+"\t                   - pro ka¾dé úvodní URL po¹li v HTTP po¾adavku\n"
+"\t                     polo¾ku Referrer:, která je obsahuje\n"
+
+#: options.h:2660
+msgid ""
+"\t-url_strategy $strategy\n"
+"\t                   - scheduling strategy for URLs\n"
+"\t                     (this means order how URLs will be downloaded)\n"
+"\t                     $strategy is one of :\n"
+"\t                        level  - level order in URL tree\n"
+"\t                        leveli - level order in URL tree,\n"
+"\t                                 but inline objects go first\n"
+"\t                        pre    - pre-order in URL tree\n"
+"\t                        prei   - pre-order in URL tree,\n"
+"\t                                 but inline objects go first\n"
+msgstr ""
+"\t-url_strategie $strategie\n"
+"\t                   - strategie výbìru URL\n"
+"\t                     (poøadí v jakém budou URL stahována)\n"
+"\t                     $strategie je jedním z:\n"
+"\t                        level  - hloubka v URL stromu\n"
+"\t                        leveli - hloubka v URL stromu,\n"
+"\t                                 ale vlo¾ené objekty nejdøíve\n"
+"\t                        pre    - srovnaný URL strom\n"
+"\t                        prei   - srovnaný URL strom,\n"
+"\t                                 ale vlo¾ené objekty nejdøíve\n"
+
+#: options.h:2683
+msgid "\t-nscache_dir $dir  - path to Netcape browser cache directory\n"
+msgstr "\t-nscache_dir $dir  - cesta k cache adresáøi prohlí¾eèe Netscape\n"
+
+#: options.h:2698
+msgid "\t-ie_cache          - allow loading of files from MSIE browser cache\n"
+msgstr "\t-ie_cache          - povol naèítání z MSIE cache\n"
+
+#: options.h:2728
+msgid ""
+"\t-remove_adv/-noremove_adv\n"
+"\t                   - enable removing of advertisement banners\n"
+"\t                     assumes you have setup regular expresions\n"
+"\t                     for matching adv banners with -adv_re option\n"
+msgstr ""
+"\t-remove_adv/-noremove_adv\n"
+"\t-remove_adv/-noremove_adv\n"
+"\t                   - odstraòovat reklamní prou¾ky, pøedpokládá se\n"
+"\t                     nastavení regulárního výrazu pro testování\n"
+"\t                     reklamy volbou -adv_re\n"
+
+#: options.h:2761
+msgid ""
+"\t-adv_re $RE        - regular expressions for matching advertisement\n"
+"\t                     banner URLs\n"
+msgstr ""
+"\t-adv_re $RE        - regulární výraz pro testování na\n"
+"\t                     reklamní prou¾ky\n"
+
+#: options.h:2777
+msgid ""
+"\t-check_bg/-nocheck_bg\n"
+"\t                   - if running at background, don't write any\n"
+"\t                     messages to screen\n"
+msgstr ""
+"\t-check_bg/-nocheck_bg\n"
+"\t                   - pøí bìhu na pozadí nevypisuj ¾ádné zprávy\n"
+"\t                     na obrazovku\n"
+
+#: options.h:2806
+msgid ""
+"\t-send_if_range/-nosend_if_range\n"
+"\t                   - send If-Range header in HTTP request\n"
+"\t                     turn this of when server support reget, but\n"
+"\t                     generates different Etags for two requests\n"
+msgstr ""
+"\t-send_if_range/-nosend_if_range\n"
+"\t                   - po¹li hlavièku If-Range v HTTP po¾adavku\n"
+"\t                     toto zapnìte, pokud server podporuje reget, ale\n"
+"\t                     generuje rùzné Etags pro dva po¾adavky\n"
+
+#: options.h:2831
+msgid "\t-sched_cmd $str    - command for scheduling\n"
+msgstr "\t-sched_cmd $str    - pøíkaz na plánování\n"
+
+#: options.h:2842
+msgid ""
+"\t-unique_log/-nounique_log\n"
+"\t                   - when original log file locked try to find other\n"
+"\t                     with numbering extension which is not locked\n"
+msgstr ""
+"\t-unique_log/-nounique_log\n"
+"\t                   - pokud je pùvodní logovací soubor uzamèen, zkus najít\n"
+"\t                     dal¹í pøidáním èísla za jméno uzamèeného souboru\n"
+
+#: options.h:2866
+msgid ""
+"\t-post_cmd $str     - postprocessing command, which will be invoked\n"
+"\t                     after document will be successfully downloaded\n"
+msgstr ""
+"\t-post_cmd $str     - tento pøíkaz bude proveden po úspì¹ném sta¾ení\n"
+"\t                     dokumentu\n"
+
+#: options.h:2882
+msgid ""
+"\t-ssl_version $v    - version of SSL protocol used for communication,\n"
+"\t                     valid values: ssl23,ssl2,ssl3,tls1\n"
+msgstr ""
+"\t-ssl_version $v    - verse SSL protokolu, která bude pou¾ita pro spojení,\n"
+"\t                     pøípustné hodnoty: ssl23,ssl2,ssl3,tls1\n"
+
+#: options.h:2885
+msgid ""
+"\t-ssl_version $v    - version of SSL protocol used for communication,\n"
+"\t                     valid values: ssl23,ssl2,ssl3\n"
+msgstr ""
+"\t-ssl_version $v    - verse SSL protokolu, která bude pou¾ita pro spojení,\n"
+"\t                     pøípustné hodnoty: ssl23,ssl2,ssl3\n"
+
+#: options.h:2903
+msgid ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - use unique SSL ID with each SSL session\n"
+msgstr ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - pou¾ij jedineèné SSL ID pro ka¾dou SSL seanci\n"
+
+#: options.h:2931
+msgid "\t-httpad $hdr       - additional HTTP header\n"
+msgstr "\t-httpad $hdr       - dodateèné HTTP hlavièky\n"
+
+#: options.h:2942
+msgid "\t-statfile $str     - statistical report from downloading progress\n"
+msgstr "\t-statfile $str     - statistika stahovanýh programù\n"
+
+#: options.h:2956
+msgid ""
+"\t-ewait             - wait to finish program after downloading progress\n"
+"\t                     is done\n"
+msgstr ""
+"\t-ewait             - poèkej na zkonèení programu po zkonèení stahování\n"
+
+#: options.h:2987
+msgid "\t-aip_pattern $re   - pattern for allowed IP addresses of servers\n"
+msgstr "\t-aip_pattern $re   - RE pro povolené IP adresy serverù\n"
+
+#: options.h:3002
+msgid "\t-dip_pattern $re   - pattern for disallowed IP addresses of servers\n"
+msgstr "\t-dip_pattern $re   - RE zakázaných IP adres serverù\n"
+
+#: options.h:3014
+msgid ""
+"\t-site_level $nr    - maximum allowed number of sites to leave from\n"
+"\t                     starting site\n"
+msgstr "\t-site_level $nr    - maximální povolená vzdálenost od poèátku\n"
+
+#: options.h:3026
+msgid ""
+"\t-use_http11/-nouse_http11\n"
+"\t                   - enable or disable using of HTTP/1.1 protocol\n"
+"\t                     features, default is off now\n"
+msgstr ""
+"\t-use_http11/-nouse_http11\n"
+"\t                   - povolí nebo zaká¾e pou¾ití mo¾ností protokolu\n"
+"\t                     HTTP/1.1, standardnì vypnuto\n"
+
+#: options.h:3050
+msgid ""
+"\t-max_time $nr      - set maximal amount of time for program run\n"
+"\t                     in minutes, default 0 == no limit\n"
+"\t                     you can use floating point numbers, to\n"
+"\t                     specify subminute times\n"
+msgstr ""
+"\t-max_time $nr      - nastaví maximální dobu bìhu programu\n"
+"\t                     v minutách, standardnì 0 = bez limitu\n"
+"\t                     lze pou¾ít i desetinná èísla pro krat¹í dobu\n"
+
+#: options.h:3065
+msgid ""
+"\t-local_ip $str     - use this local ip address of network interface.\n"
+"\t                     This option is for multihomed machines.\n"
+msgstr ""
+"\t-local_ip $str     - pou¾ij tuto lokální IP adresu sí»ového rozhraní.\n"
+"\t                     Tato volba je pro multihomed poèítaèe.\n"
+
+#: options.h:3077
+msgid ""
+"\t-request $req      - extended request informations, used to specify\n"
+"\t                     information for GET or POST requests.\n"
+"\t                     format of $req :\n"
+"\t                     \"URL:$url METHOD:[GET|POST] ENCODING:[m|u]\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\n"
+"\t                       LNAME:$local_filename\"\n"
+"\t                     (for more informations see manual page)\n"
+msgstr ""
+"\t-request $req      - roz¹íøené informace pro po¾adavek, pou¾ito k "
+"nastavení\n"
+"\t                     informací pro GET a POST\n"
+"\t                     formát $req :\n"
+"\t                     \"URL:$url METHOD:[GET|POST] ENCODING:[m|u]\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\n"
+"\t                       LNAME:$local_filename\"\n"
+"\t                     (více informací v manuálové stránce)\n"
+
+#: options.h:3095
+msgid ""
+"\t-hash_size $nr     - size of internal hash tables for performance tuning\n"
+msgstr ""
+"\t-hash_size $nr     - velikost interní hash tabulek (pro ladìní výkonu)\n"
+
+#: options.h:3109
+msgid "\t-nthreads $nr      - set number of concurent downloading threads\n"
+msgstr "\t-nthreads $nr      - nastav poèet najednou bì¾ících vláken\n"
+
+#: options.h:3124
+msgid ""
+"\t-immesg/-noimmesg  - write messages immediately after produced, not\n"
+"\t                     just when safe (from MT point of view)\n"
+msgstr ""
+"\t-immesg/-noimmesg  - zapi¹ zprávy ihned po vygenerování, ne a¾\n"
+"\t                     to byde bezpeèné (z pohledu MT)\n"
+
+#: options.h:3152
+msgid ""
+"\t-formdata $data    - used to specify HTML form fields, for HTML\n"
+"\t                     forms found during traversing document tree.\n"
+"\t                     Only forms mentiond in this option will be\n"
+"\t                     processed automaticaly.\n"
+"\t                     \"URL:$url\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\"\n"
+"\t                     (for more informations see manual page)\n"
+msgstr ""
+"\t-formdata $data    - pou¾ito na urèení HTML polo¾ek formuláøù pro HTML\n"
+"\t                     formuláøe nalezené pøi stahování. Jen formuláøe\n"
+"\t                     zmínìné v této volbì budou automaticky zpracovány.\n"
+"\t                      \"URL:$url\"\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\n"
+"\t                     (více informací naleznete v manuálové stránce)\n"
+
+#: options.h:3170
+msgid ""
+"\t-dumpfd $nr        - number of filedescriptor where to output\n"
+"\t                     document contents instead to file\n"
+msgstr ""
+"\t-dumpfd $nr        - èíslo file descriptoru, kam se má dokument\n"
+"\t                     zapsat, místo do souboru\n"
+
+#: options.h:3182
+msgid ""
+"\t-dump_urlfd $nr    - number of filedescriptor where to output\n"
+"\t                     all URLs found in documents\n"
+msgstr ""
+"\t-dump_urlfd $nr    - èíslo file descriptoru, kam se mají zapsat\n"
+"\t                     URL nalezená v dokumentech\n"
+
+#: options.h:3194
+msgid ""
+"\t-del_after/-nodel_after\n"
+"\t                   - delete FTP document after succesfull transfer\n"
+msgstr ""
+"\t-del_after/-nodel_after\n"
+"\t                   - zma¾ FTP dokument po úspì¹ném pøenesení\n"
+
+#: options.h:3217
+msgid ""
+"\t-unique_name/-nounique_name\n"
+"\t                   - always generate unique name for each document\n"
+msgstr ""
+"\t-unique_name/-nounique_name\n"
+"\t                   - v¾dy vytvoø jedineèné jméno pro ka¾dý dokument\n"
+
+#: options.h:3240
+msgid ""
+"\t-leave_site_enter_dir/-dont_leave_site_enter_dir\n"
+"\t                   - leave directory which we first entered on site\n"
+msgstr ""
+"\t-leave_site_enter_dir/-dont_leave_site_enter_dir\n"
+"\t                   - neopou¹tìj adresáø, kterým jsme se vstoupili na tento "
+"server\n"
+
+#: options.h:3263
+msgid ""
+"\t-singlepage/-nosinglepage\n"
+"\t                   - donwload single HTML page with all inline objects\n"
+msgstr ""
+"\t-singlepage/-nosinglepage\n"
+"\t                   - stáhni jedinou HTML stránku se v¹emi vlo¾enými "
+"objekty\n"
+
+#: options.h:3286
+msgid ""
+"\t-dump_after/-nodump_after\n"
+"\t                   - when used with option -dumpfd, dump document after\n"
+"\t                     successful download and processing of HTML\n"
+"\t                     documents\n"
+msgstr ""
+"\t-dump_after/-nodump_after\n"
+"\t                   - pou¾ití spoleènì s -dumpfd, po úspì¹ném stáhnutí\n"
+"\t                     a zpracování HTML dokumentu ho po¹li do roury\n"
+
+#: options.h:3311
+msgid ""
+"\t-dump_response/-nodump_response\n"
+"\t                   - when used with option -dumpfd, also responses\n"
+"\t                     from HTTP servers will be dumped\n"
+msgstr ""
+"\t-dump_response/-nodump_response\n"
+"\t                   - pou¾ití spoleènì s -dumpfd, také odpovìdi HTTP "
+"serverù\n"
+"\t                     budou poslány do roury\t\n"
+
+#: options.h:3338
+msgid ""
+"\t-auth_ntlm_domain $str\n"
+"\t                   - SMB domain name for HTTP NTLM authorization\n"
+msgstr ""
+"\t-auth_ntlm_domain $str\n"
+"\t                   - u¾ivatelské jméno pro HTTP NTLM autorizaci\n"
+
+#: options.h:3354
+msgid ""
+"\t-auth_proxy_ntlm_domain $str\n"
+"\t                   - SMB domain name for HTTP proxy NTLM authorization\n"
+msgstr ""
+"\t-auth_ntlm_domain $str\n"
+"\t                   - u¾ivatelské jméno pro HTTP proxy NTLM autorizaci\n"
+
+#: options.h:3370
+msgid ""
+"\t-js_pattern $re    - additional RE patterns for matching URLs in DOM\n"
+"\t                     event attributes of HTML tags\n"
+msgstr ""
+"\t-js_pattern $re    - dal¹í regulární výraz pro zji¹»ování URL\n"
+"\t                     v DOM atributech HTML znaèek\n"
+
+#: options.h:3383
+msgid ""
+"\t-follow_cmd $str   - user exit script used tell if you want to follow\n"
+"\t                     any link from current HTML document\n"
+msgstr ""
+"\t-follow_cmd $str   - podle exit kódu programu se rozhodne, zda se mají\n"
+"\t                     zpracovat odkazy v aktuálním dokumentu\n"
+
+#: options.h:3395
+msgid ""
+"\t-retrieve_symlink/-noretrieve_symlink\n"
+"\t                   - retrieve symliks like regular files or directories\n"
+msgstr ""
+"\t-retrieve_symlink/-noretrieve_symlink\n"
+"\t                   - stáhni symbolické odkazy jako skuteèné soubory nebo "
+"adresáøe\n"
+
+#: options.h:3421
+msgid ""
+"\t-js_transform $p $t $h $a\n"
+"\t                   - custom JS pattern with transformation\n"
+"\t                     $p - pattern\n"
+"\t                     $t - transfomation\n"
+"\t                     $h - HTML tag or * or \"\"\n"
+"\t                     $a - HTML attrib\n"
+msgstr ""
+"\t-js_transform $p $t $h $a\n"
+"\t                   - vlastní javascript vzor pro transformaci\n"
+"\t                     $p - vzor\n"
+"\t                     $t - transformace\n"
+"\t                     $h - HTML znaèka nebo * nebo \"\"\n"
+"\t                     $a - HTML atribut\n"
+
+#: options.h:3441
+msgid ""
+"\t-js_transform2 $p $t $h $a\n"
+"\t                   - custom JS pattern with transformation and\n"
+"\t                     rewriting of URLs in first subpattern\n"
+"\t                     $p - pattern\n"
+"\t                     $t - transfomation\n"
+"\t                     $h - HTML tag or * or \"\"\n"
+"\t                     $a - HTML attrib\n"
+msgstr ""
+"\t-js_transform $p $t $h $a\n"
+"\t                   - vlastní javascript vzor pro transformaci\n"
+"\t                     a pøepisování URL v prvním vzoru\n"
+"\t                     $p - vzor\n"
+"\t                     $t - transformace\n"
+"\t                     $h - HTML znaèka nebo * nebo \"\"\n"
+"\t                     $a - HTML atribut\n"
+
+#: options.h:3459
+msgid ""
+"\t-ftp_proxy_user $str\n"
+"\t                   - username for access authorization to FTP proxy\n"
+msgstr ""
+"\t-ftp_proxy_user $str\n"
+"\t                   - u¾ivatelské jméno pro FTP proxy autorizaci\n"
+
+#: options.h:3471
+msgid ""
+"\t-ftp_proxy_pass $str\n"
+"\t                   - password for access authorization to FTP proxy\n"
+msgstr ""
+"\t-ftp_proxy_pass $str\n"
+"\t                   - heslo pro FTP proxy autorizaci\n"
+
+#: options.h:3483
+msgid ""
+"\t-limit_inlines/-dont_limit_inlines\n"
+"\t                   - apply limiting options on page inline objects?\n"
+msgstr ""
+"\t-limit_inlines/-dont_limit_inlines\n"
+"\t                   - pou¾íj omezovací podmínky také na vlo¾ené objekty\n"
+
+#: options.h:3506
+msgid ""
+"\t-ftp_list_options $str\n"
+"\t                   - additional options or parameters to FTP LIST or\n"
+"\t                     NLST commands\n"
+msgstr ""
+"\t-ftp_list_options $str\n"
+"\t                   - dal¹í volby nebo parametry FTP pøíkazu LIST\n"
+"\t                     nebo NLST\n"
+
+#: options.h:3519
+msgid ""
+"\t-fix_wuftpd_list/-nofix_wuftpd_list\n"
+"\t                   - do extensive checking of FTP directory presence to\n"
+"\t                     workaround WuFTPD broken responses when trying\n"
+"\t                     to list nonexisting directory\n"
+msgstr ""
+"\t-fix_wuftpd_list/-nofix_wuftpd_list\n"
+"\t                   - provìd zvlá¹tní kontrolu existence FTP adresáøe jako\n"
+"\t                     obejití chyby v WuFTPd odpovìdi pøi pokusu o vypsání\n"
+"\t                     neexistujícího adresáøe\n"
+
+#: options.h:3544
+msgid ""
+"\t-post_update/-nopost_update\n"
+"\t                  - update in parent documents only links pointing\n"
+"\t                    to current document\n"
+msgstr ""
+"\t-post_update/-nopost_update\n"
+"\t                  - v rodièovských dokumentech zmìò jenom okazy na\n"
+"\t                    aktuální dokument\n"
+
+#: options.h:3568
+msgid ""
+"\t-info_dir $dir    - separate directory where will stored info files\n"
+"\t                    instead of directly into document tree\n"
+msgstr ""
+"\t-info_dir $dir    - zvlá¹tní adresáø pro ulo¾ení info souborù\n"
+"\t                    místo pøímo do adresáøe s dokumenty\n"
+
+#: options.h:3583
+msgid "\t-mozcache_dir $dir - path to Mozilla browser cache directory\n"
+msgstr "\t-mozcache_dir $dir - cesta k cache adresáøi prohlí¾eèe Mozilla\n"
+
+#: options.h:3595
+msgid ""
+"\t-aport $list       - allow downloading of documents from servers\n"
+"\t                     siting on listed ports\n"
+msgstr "\t-aport $list       - povol stahování dokumentù ze serverù na tìchto portech\n"
+
+#: options.h:3607
+msgid ""
+"\t-dport $list       - deny downloading of documents from servers\n"
+"\t                     siting on listed ports\n"
+msgstr "\t-dport $list       - zaka¾ stahování dokumentù ze serverù na tìchto portech\n"
+
+#: options.h:3619
+msgid ""
+"\t-hack_add_index/-nohack_add_index\n"
+"\t                   - this is hack to allow adding of also directories\n"
+"\t                     of all queued files\n"
+msgstr ""
+"\t-hack_add_index/-nohack_add_index\n"
+"\t                   - toto je hack, který umo¾òuje pøidání adresáøù\n"
+"\t                     do fronty souborù\n"
+
+#: options.h:3643
+msgid ""
+"\t-default_prefix $str\n"
+"\t                  - default URL prefix for subdirectory of\n"
+"\t                    mirrored files\n"
+msgstr ""
+"\t-default_prefix $str\n"
+"\t                  - standardní URL pøedpona pro podadresáøe\n"
+"\t                    stahovaných souborù\n"
+
+#: options.h:3659
+msgid ""
+"\t-js_script_file $file\n"
+"\t                  - script file with JavaScript functions\n"
+msgstr ""
+"\t-js_script_file $file\n"
+"\t                  - soubor s JavaScript funkcemi\n"
+
+#: options.h:3672
+msgid ""
+"\t-ftp_login_handshake $host $handshake\n"
+"\t                   - customize login handshake for FTP server\n"
+msgstr ""
+"        -ftp_login_handshake $host $handshake\n"
+"                           - vlastní pøihla¹ovací procedura pro FTP server\n"
+
+#: pavuk.c:106
+msgid "QUIT signal catched\n"
+msgstr "zachycen signál QUIT\n"
+
+#: pavuk.c:259
+msgid "Not enough number of parameters \"-msgcat\"\n"
+msgstr "Nedostateèný poèet parametrù \"-msgcat\"\n"
+
+#: pavuk.c:273
+msgid "Not enough number of parameters \"-scenario\"\n"
+msgstr "Nedostateèný poèet parametrù \"-scenario\"\n"
+
+#: pavuk.c:303
+msgid "Error: Supplied bad file descriptor in -dumpfd option\n"
+msgstr "Chyba: File descriptor z volby -dumpfd je ¹patný\n"
+
+#: pavuk.c:314
+msgid "Error: Supplied bad file descriptor in -dump_urlfd option\n"
+msgstr "Chyba: File descriptor z volby -dump_urlfd ¹patný\n"
+
+#: pavuk.c:366
+msgid "WARNING: scndir not specified - saving to current directory\n"
+msgstr "POZOR: scndir není specifikován - ukládám do aktualního adresáøe\n"
+
+#: pavuk.c:403
+msgid "Unable to fork pavuk to background - running in foreground\n"
+msgstr "Nelze pøepnou pavuka na pozadí - pokraèuji v bìhu na popøedí\n"
+
+#: pavuk.c:407
+#, c-format
+msgid "Pavuk will run at backround as PID %d\n"
+msgstr "Pavuk pobì¾í na pozadí s PID %d\n"
+
+#: pavuk.c:427
+#, c-format
+msgid "reading URLs from file - %s\n"
+msgstr "ètu URL ze souboru - %s\n"
+
+#: recurse.c:82
+#, c-format
+msgid "Rescheduling locked URL as no. %d\n"
+msgstr "Znovu naplánuj zamknuté URL na è. %d\n"
+
+#: recurse.c:95
+msgid "Running post-processing command\n"
+msgstr "Spou¹tím program pro úpravu po sta¾ení\n"
+
+#: recurse.c:243
+#, c-format
+msgid "retry no. %d\n"
+msgstr "pokus è. %d\n"
+
+#: recurse.c:246
+#, c-format
+msgid "URL[%2d]: %5d(%d) of %5d  %s\n"
+msgstr "URL[%2d]: %5d(%d) of %5d  %s\n"
+
+#: recurse.c:249
+#, c-format
+msgid "URL: %5d(%d) of %5d  %s\n"
+msgstr "URL: %5d(%d) z %5d  %s\n"
+
+#: recurse.c:260 recurse.c:394
+msgid "Starting download"
+msgstr "Zaèínám stahovat"
+
+#: recurse.c:284
+msgid "Already processed\n"
+msgstr "Ji¾ zpracováno\n"
+
+#: recurse.c:291
+msgid "Disallowed by user\n"
+msgstr "Zakázáno u¾ivatelem\n"
+
+#: recurse.c:305
+msgid "Disallowed by rules\n"
+msgstr "Zakázané podle pravidel\n"
+
+#: recurse.c:312
+msgid "Checking \"robots.txt\""
+msgstr "Kontroluji \"robots.txt\""
+
+#: recurse.c:316
+msgid "Disallowed by \"robots.txt\"\n"
+msgstr "Zakázané v \"robots.txt\"\n"
+
+#: recurse.c:326
+msgid "This URL type is not supported with ftpdir mode\n"
+msgstr "Tento typ URL není podporován v módu ftpdir\n"
+
+#: recurse.c:346
+msgid "No transfer - file not expired\n"
+msgstr "®ádný pøenos - soubor neexpiroval\n"
+
+#: recurse.c:362
+#, c-format
+msgid "Starting time :  %s\n"
+msgstr "Èas startu : %s\n"
+
+#: recurse.c:404 recurse.c:563
+#, c-format
+msgid "Ending time :    %s\n"
+msgstr "Konec : %s\n"
+
+#: recurse.c:411 recurse.c:566
+msgid "download"
+msgstr "stahuj"
+
+#: recurse.c:511
+msgid "last document locked -> sleeping for 5 seconds\n"
+msgstr "poslední dokument uzamèen -> èekám 5 sekund\n"
+
+#: recurse.c:577
+msgid "Relocating and scanning HTML document"
+msgstr "Relokuji a prohledávám HTML dokument"
+
+#: recurse.c:629
+msgid "Dumping processed document"
+msgstr "Posílám zpracované dokumenty do roury"
+
+#: recurse.c:649
+msgid "Storing document"
+msgstr "Ukládám dokument"
+
+#: recurse.c:655
+msgid "Store failed\n"
+msgstr "Ukladání selhalo\n"
+
+#: recurse.c:762 recurse.c:845
+msgid "Done"
+msgstr "Hotovo"
+
+#: recurse.c:922 remind.c:379
+msgid "Sleeping ..."
+msgstr "Uspaný ..."
+
+#: recurse.c:936 remind.c:396
+msgid "Exiting ..."
+msgstr "Konèím ..."
+
+#: recurse.c:1048
+#, c-format
+msgid "\t%s    (%d bytes)\n"
+msgstr "\t%s    (%d bytù)\n"
+
+#: recurse.c:1106
+msgid "Searching for files to resume"
+msgstr "Hledám soubor pro pokraèování"
+
+#: recurse.c:1133
+#, c-format
+msgid "Adding %s to resume list\n"
+msgstr "Pøipojení %s do seznamu na dokonèení pøenosu\n"
+
+#: recurse.c:1165
+msgid "Searching for documents to synchronize"
+msgstr "Hledám dokumenty k synchronizaci"
+
+#: recurse.c:1220 recurse.c:1245
+#, c-format
+msgid "Adding file %s to sync list as URL %s\n"
+msgstr "Pøidávám soubor %s do seznamu pro synchronizaci jako URL %s\n"
+
+#: remind.c:45
+#, c-format
+msgid "Checking: %s\n"
+msgstr "Kontroluji: %s\n"
+
+#: remind.c:170
+#, c-format
+msgid "Bad reminder db entry - %s\n"
+msgstr "©patná polo¾ka v databázi reminder - %s\n"
+
+#: remind.c:529
+msgid ""
+"This is the result of running pavuk reminder mode\n"
+"\n"
+msgstr ""
+"Toto je výsledek spu¹tìní pavuka v modu reminder\n"
+"\n"
+
+#: remind.c:540
+msgid "Changed URLs\n"
+msgstr "Zmìnìná URL\n"
+
+#: remind.c:561
+msgid "URLs with some errors\n"
+msgstr "URL s chybami\n"
+
+#: robots.c:166
+msgid "transfering \"robots.txt\""
+msgstr "pøenos \"robots.txt\""
+
+#: robots.c:169
+msgid "transfering \"robots.txt\"\n"
+msgstr "pøenos \"robots.txt\"\n"
+
+#: robots.c:230
+#, c-format
+msgid "Hmm: redirecting \"robots.txt\" to %s ???\n"
+msgstr "Hmm: pøesmìrování \"robots.txt\" na  %s ???\n"
+
+#: stats.c:138 stats.c:221
+#, c-format
+msgid "Total number of URLs in queue: %d\n"
+msgstr "Celkový poèet URL ve frontì: %d\n"
+
+#: stats.c:139 stats.c:223
+#, c-format
+msgid "Starting urls: %d\n"
+msgstr "Poèáteèní URL: %d\n"
+
+#: stats.c:142 stats.c:228
+msgid "Not processed yet: %d (%3d%%)\n"
+msgstr "Je¹tì nezpracované: %d (%3d%%)\n"
+
+#: stats.c:147 stats.c:235
+msgid "Processed OK: %d (%3d%%)\n"
+msgstr "V poøádku zpracované: %d (%3d%%)\n"
+
+#: stats.c:150 stats.c:241
+msgid "Loaded from local tree: %d (%3d%%)\n"
+msgstr "Naèteno z lokálního stromu: %d (%3d%%)\n"
+
+#: stats.c:153 stats.c:247
+msgid "Loaded from Netscape browser cache dir: %d (%3d%%)\n"
+msgstr "Naèteno z cache adresáøe prohlí¾eèe Netscape: %d (%3%%)\n"
+
+#: stats.c:156 stats.c:253
+msgid "Downloaded over network: %d (%3d%%)\n"
+msgstr "Sta¾eno ze sítì: %d (%3d%%)\n"
+
+#: stats.c:159 stats.c:259
+msgid "Moved to another location: %d (%3d%%)\n"
+msgstr "Pøesunuto jinam: %d (%3d%%)\n"
+
+#: stats.c:163 stats.c:265
+msgid "Downloaded truncated: %d (%3d%%)\n"
+msgstr "Sta¾eno zkrácenì: %d (%3d%%)\n"
+
+#: stats.c:169 stats.c:272
+msgid "Non fatal errors: %d (%3d%%)\n"
+msgstr "Nekritické chyby: %d (%3d%%)\n"
+
+#: stats.c:175 stats.c:279
+msgid "Not found documents: %d (%3d%%)\n"
+msgstr "Nenalezené dokumenty: %d (%3d%%)\n"
+
+#: stats.c:181 stats.c:286
+msgid "Documents with fatal errors: %d (%3d%%)\n"
+msgstr "Dokumenty s kritickými chybami: %d (%3d%%)\n"
+
+#: stats.c:187
+msgid "Documents with unknown status: %d (%3d%%)\n"
+msgstr "Dokumenty s neznámým stavem: %d (%3d%%)\n"
+
+#: stats.c:293
+msgid "Documents with unspecific status: %d (%3d%%)\n"
+msgstr "Dokumenty s nespecifikovaným stavem: %d (%3d%%)\n"
+
+#: stats.c:358
+msgid "Pavuk: save status page"
+msgstr "Pavuk: ulo¾ stránku se stavem"
+
+#: stats.c:379 stats.c:537
+msgid "Not available yet"
+msgstr "Nedostupné"
+
+#: stats.c:462
+msgid "Pavuk: status page"
+msgstr "Pavuk: stavová stránka"
+
+#: stats.c:479
+msgid "Status page"
+msgstr "Stavová stránka"
+
+#: stats.c:492
+msgid "Save ..."
+msgstr "Ulo¾it ..."
+
+#: stats.c:499
+msgid "Refresh"
+msgstr "Obnovit"
+
+#: stats.c:526
+msgid "Try download"
+msgstr "Zkusit stáhnout"
+
+#: tools.c:109
+msgid "no error"
+msgstr "bez chyby"
+
+#: tools.c:114
+msgid "host not found"
+msgstr "server nenalezen"
+
+#: tools.c:119
+msgid "temporary error (try again later)"
+msgstr "doèasná chyba (zkuste to pozdìji)"
+
+#: tools.c:124
+msgid "non recoverable error"
+msgstr "nenapravitelná chyba"
+
+#: tools.c:129
+msgid "name is valid, but doesn't have an IP address"
+msgstr "platné jméno, ale nemá IP adresu"
+
+#: tools.c:133
+msgid "unknown hostname translation error"
+msgstr "neznámá chyba pøi pøekladu jména"
+
+#: tools.c:315 tools.c:330
+#, c-format
+msgid "waiting to release lock on FD : %d\n"
+msgstr "èekám na uvolnìní zámku na FD : %d\n"
+
+#: uconfig.c:998
+msgid "Bad parameter - Working subdirectory"
+msgstr "©patný parametr - pracovní adresáø"
+
+#: uconfig.c:1178
+msgid "Bad parameter - Cache directory"
+msgstr "©patný parametr - Cache adresáøe"
+
+#: uexit.c:30
+msgid "Error occured while executing user-exit script"
+msgstr "Nastala chyba pøi provádìní u¾ivatelského exit skriptu"
+
+#: update_links.c:40
+#, c-format
+msgid "Entering directory %s\n"
+msgstr "Vstupuji do adresáøe %s\n"
+
+#: update_links.c:69
+#, c-format
+msgid "Relocating %s\n"
+msgstr "Pøemístìní %s\n"
+
+#: update_links.c:72
+#, c-format
+msgid "Omitting %s\n"
+msgstr "Vynechávám %s\n"
+
+#: update_links.c:86
+#, c-format
+msgid "Leaving directory %s\n"
+msgstr "Opou¹tím adresáø %s\n"
+
+#: update_links.c:104
+#, c-format
+msgid "Can't open directory %s\n"
+msgstr "Není mo¾né otevøít adresáø %s\n"
+
+#: url.c:1000
+#, c-format
+msgid "unsupported URL type \"%s\"\n"
+msgstr "nepodporovaný typ URL\"%s\"\n"
+
+#: url.c:1152
+msgid "Moved to already processed URL.\n"
+msgstr "Ji¾ zpracované URL.\n"
+
+#: url.c:2767
+msgid "Missing specification of URL in request\n"
+msgstr "Chybí URL pro po¾adavek\n"
+
+#: url.c:2776
+msgid "Missing request fields specification for POST request\n"
+msgstr "Chybí polo¾ka request v dotazu POST\n"
+
+#: url.c:2784
+msgid "Multipart encoding not supported with GET requests\n"
+msgstr "Kódování multipart není podporováno v po¾adavku GET\n"

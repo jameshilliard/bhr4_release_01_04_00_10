@@ -1,0 +1,4 @@
+obj-m := mod_xt_trigger.o
+mod_xt_trigger-y := xt_trigger.o
+EXTRA_CFLAGS := -Wno-comment
+KBUILD_EXTRA_SYMBOLS := 

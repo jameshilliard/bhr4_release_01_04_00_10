@@ -1,0 +1,5367 @@
+# Перша спроба укра╖н╕зувати pavuk.
+# $Id: uk.po,v 1.2 2005/04/18 08:09:04 stoecker Exp $
+#
+# Вс╕ коп╕райти хай належать команд╕ Ukrainian, 2001,
+# <linux@linux.org.ua>
+#
+# Dmytro O. Redchuk <dima@redchuk.org.ua>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.9pl28\n"
+"POT-Creation-Date: 2001-09-18 22:21+0200\n"
+"PO-Revision-Date: 2001-08-27 11:50EEST\n"
+"Last-Translator: Dmytro O. Redchuk <dima@redchuk.org.ua>\n"
+"Language-Team: Ukrainian <linux@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=KOI8-U\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: abstract.c:42
+#, c-format
+msgid "Suspending download for %d seconds.\n"
+msgstr ""
+
+#: abstract.c:80 doc.c:547
+msgid "File redirect\n"
+msgstr "Перенаправлення\n"
+
+#: abstract.c:116
+#, c-format
+msgid "Loading copy from local NS cache - %s\n"
+msgstr "Беремо коп╕ю з локального кеша NS - %s\n"
+
+#: abstract.c:148
+#, c-format
+msgid "Loading copy from local Mozilla cache - %s\n"
+msgstr "Беремо коп╕ю з локального кеша Моз╕лли - %s\n"
+
+#: abstract.c:181
+#, c-format
+msgid "Loading copy from local MSIE cache - %s\n"
+msgstr "Беремо коп╕ю з локального кеша MSIE - %s\n"
+
+#: abstract.c:217
+msgid "Unsupported URL\n"
+msgstr "URL не п╕дтриму╓ться\n"
+
+#: abstract.c:312
+msgid "Warning: broken ftp transfer ...\n"
+msgstr "Пов╕домлення: об╕рвано ftp трансфер ...\n"
+
+#: abstract.c:322
+msgid "Error removing FTP document from remote server\n"
+msgstr "Помилка видалення документа FTP з в╕ддаленого сервера\n"
+
+#: abstract.c:384
+msgid "Error reading document with \"chunked\" transfer encoding!\n"
+msgstr ""
+
+#: ainterface.c:120
+#, c-format
+msgid "Removing unsupported URL: %s\n"
+msgstr "Видаля╓мо URL, що не п╕дтриму╓ться: %s\n"
+
+#: ainterface.c:209
+msgid "Specify at least one starting URL!"
+msgstr "Вкаж╕ть хоча б один стартовий URL!"
+
+#: ainterface.c:211
+msgid "Specify at least one starting URL!\n"
+msgstr "Вкаж╕ть хоча б один стартовий URL!\n"
+
+#: ainterface.c:477
+msgid "Can't list available message catalogs\n"
+msgstr ""
+
+#: authinfo.c:107
+msgid "Bad section - specify protocol\n"
+msgstr "Нев╕рна секц╕я - вкаж╕ть протокол\n"
+
+#: authinfo.c:112
+msgid "Bad section - specify hostname\n"
+msgstr "Нев╕рна секц╕я - вкаж╕ть ╕м'я сервера\n"
+
+#: authinfo.c:162
+#, c-format
+msgid "Unable to parse : \"%s\"\n"
+msgstr "Не можу роз╕брати : \"%s\"\n"
+
+#: authinfo.c:182
+#, c-format
+msgid "Bad protocol - %s\n"
+msgstr "Нев╕рний протокол - %s\n"
+
+#: authinfo.c:194
+#, c-format
+msgid "Bad port number %s\n"
+msgstr "Нев╕рний номер порта %s\n"
+
+#: authinfo.c:215
+#, c-format
+msgid "Unknown auth type - %s\n"
+msgstr "Нев╕домий тип авторизац╕╖ - %s\n"
+
+#: cleanup.c:65
+msgid "press any key to exit\n"
+msgstr "натис╕нь будь-що для виходу\n"
+
+#: cmdparse.c:129
+#, c-format
+msgid "Error parsing commandline at: %s\n"
+msgstr "Помилка розбирання командно╖ стр╕чки б╕ля: %s\n"
+
+#: cmdparse.c:186
+#, c-format
+msgid "Unable to parse commandline: %s\n"
+msgstr "Не можу роз╕брати командну стр╕чку: %s\n"
+
+#: config.c:45
+msgid "Level order"
+msgstr ""
+
+#: config.c:46
+msgid "Level order, inline first"
+msgstr ""
+
+#: config.c:47
+msgid "Pre order"
+msgstr ""
+
+#: config.c:48
+msgid "Pre order, inline first"
+msgstr ""
+
+#: config.c:116
+#, c-format
+msgid ""
+"Usage:  %s  [options]  [any number of URLS]\n"
+"pavuk-%s %s\n"
+msgstr ""
+"Використання:  %s  [опц╕╖]  [будь-яка к╕льк╕сть URL'╕в]\n"
+"pavuk-%s %s\n"
+
+#: config.c:132
+#, c-format
+msgid "Type \"%s --help\" for long help\n"
+msgstr "Набер╕ть \"%s --help\" для б╕льш докладно╖ п╕дказки\n"
+
+#: config.c:140
+msgid "Optional features available :\n"
+msgstr "Додатков╕ можливост╕ :\n"
+
+#: config.c:142
+msgid " - Debug mode\n"
+msgstr " - Debug mode\n"
+
+#: config.c:146
+msgid " - GNU gettext internationalization of messages\n"
+msgstr ""
+
+#: config.c:150
+msgid " - flock() document locking\n"
+msgstr ""
+
+#: config.c:154
+msgid " - fcntl() document locking\n"
+msgstr ""
+
+#: config.c:159
+msgid " - Gtk GUI interface\n"
+msgstr " - Gtk GUI ╕нтерфейс\n"
+
+#: config.c:162
+msgid " - URL tree preview\n"
+msgstr " - перегляд дерева URL\n"
+
+#: config.c:167
+#, fuzzy
+msgid " - HTTP and FTP over SSL\n"
+msgstr " - http через SSL\n"
+
+#: config.c:178
+#, c-format
+msgid " - SSL layer implemented with %s library\n"
+msgstr ""
+
+#: config.c:184
+msgid " - Socks v4 proxy support\n"
+msgstr " - п╕дтримка прокс╕ Socks v4\n"
+
+#: config.c:186
+msgid " - Socks v5 proxy support\n"
+msgstr " - п╕дтримка прокс╕ Socks v5\n"
+
+#: config.c:190
+msgid " - with filesystem free space checking\n"
+msgstr " - з перев╕ркою в╕льного м╕сця на файов╕й систем╕\n"
+
+#: config.c:194
+msgid " - with optional regex patterns in -fnrules and -*rpattern options\n"
+msgstr ""
+
+#: config.c:198
+msgid " - with POSIX regexp\n"
+msgstr " - з п╕дтримкою POSIX regexp\n"
+
+#: config.c:202
+msgid " - with Bell V8 regexp\n"
+msgstr " - з п╕дтримкою Bell V8 regexp\n"
+
+#: config.c:206
+msgid " - with BSD regexp\n"
+msgstr " - з п╕дтримкою BSD regexp\n"
+
+#: config.c:210
+msgid " - with GNU regexp\n"
+msgstr " - з п╕дтримкою GNU regexp\n"
+
+#: config.c:214
+msgid " - with PCRE regexp\n"
+msgstr " - з п╕дтримкою PCRE regexp\n"
+
+#: config.c:218
+msgid " - with support for loading files from Netscape browser cache\n"
+msgstr " - з п╕дтримкою завантаження файл╕в з кеша Netscape\n"
+
+#: config.c:222
+msgid ""
+" - with support for detecting whether pavuk is running as background job\n"
+msgstr " - з п╕дтримкою перев╕рки роботи Павука у \"п╕дп╕льному\" режим╕\n"
+
+#: config.c:226
+msgid " - with multithreading support\n"
+msgstr " - з п╕дтримкою багатопотоковост╕\n"
+
+#: config.c:230
+msgid " - with NTLM authorization support\n"
+msgstr " - з п╕дтримкою авторизац╕╖ NTLM\n"
+
+#: config.c:234
+msgid " - with JavaScript bindings\n"
+msgstr ""
+
+#: config.c:238
+#, fuzzy
+msgid " - with IPv6 support\n"
+msgstr " - з п╕дтримкою багатопотоковост╕\n"
+
+#: config.c:312
+#, c-format
+msgid "HTML tag not supported : %s.%s\n"
+msgstr "HTML-те╜ не п╕дтриму╓ться : %s.%s\n"
+
+#: config.c:691
+msgid "Error parsing commandline\n"
+msgstr "Помилка розбирання командно╖ стр╕чки\n"
+
+#: config.c:698
+#, c-format
+msgid "Not enough number of parameters for \"-%s\" option\n"
+msgstr "Недостатньо параметр╕в для опц╕╖ \"%s\"\n"
+
+#: config.c:705
+#, c-format
+msgid "Unknown option %s\n"
+msgstr "Нев╕дома опц╕я %s\n"
+
+#: config.c:712
+#, c-format
+msgid "Wrong format of option %s\n"
+msgstr "Нев╕рний формат опц╕╖ %s\n"
+
+#: config.c:721
+#, c-format
+msgid "WARNING: option \"-%s\" not supported in current configuration!\n"
+msgstr "УВАГА: опц╕я \"%s\" не працю╓ у дан╕й конф╕╜урац╕╖!\n"
+
+#: config.c:734
+#, c-format
+msgid "Please specify number with parameter \"-%s\"\n"
+msgstr "Будь-ласка, вкаж╕ть число з параметром \"%s\"\n"
+
+#: config.c:799 config.c:1164 http_proxy.c:123
+#, c-format
+msgid "Unknown port \"%s\"\n"
+msgstr "Нев╕домий порт \"%s\"\n"
+
+#: config.c:815 config.c:1177
+#, c-format
+msgid "Bad auth scheme \"%s\"\n"
+msgstr "Нев╕рна схема авторизац╕╖ \"%s\"\n"
+
+#: config.c:825 config.c:1187
+#, c-format
+msgid "Unknow operation mode \"%s\"\n"
+msgstr "Нев╕домий режим роботи \"%s\"\n"
+
+#: config.c:847
+#, c-format
+msgid "Please specify floating number with parameter \"-%s\"\n"
+msgstr "Будь-ласка, вкаж╕ть число з крапкою для параметра \"%s\"\n"
+
+#: config.c:866
+#, c-format
+msgid "Please specify proper condition type for -%s (%s)\n"
+msgstr "Будь-ласка, вкаж╕ть в╕рний тип умови для %s (%s)\n"
+
+#: config.c:889
+#, c-format
+msgid "Please specify valid RE with parameter \"-%s\"\n"
+msgstr "Будь-ласка, вкаж╕ть в╕рний RE шаблон з параметром \"%s\"\n"
+
+#: config.c:900 config.c:1299
+#, c-format
+msgid "Unknown URL scheduling strategy - \"%s\"\n"
+msgstr "Нев╕дома стратег╕я розкладу витягувань URL - \"%s\"\n"
+
+#: config.c:908 config.c:1310
+#, c-format
+msgid "Unknown SSL version - \"%s\"\n"
+msgstr "Нев╕дома верс╕я SSL - \"%s\"\n"
+
+#: config.c:917 config.c:1321
+#, c-format
+msgid "Invalid additional HTTP header - \"%s\"\n"
+msgstr "Нев╕рний додатковий заголовок HTTP - \"%s\"\n"
+
+#: config.c:940 config.c:1344
+#, c-format
+msgid "Invalid request specification - \"%s\"\n"
+msgstr "Нев╕рна специф╕кац╕я запиту - \"%s\"\n"
+
+#: config.c:985
+#, c-format
+msgid "Invalid parameters for \"-%s\" option\n"
+msgstr "Нев╕рний параметер для опц╕╖ \"%s\"\n"
+
+#: config.c:1001
+#, c-format
+msgid "Invalid number list \"%s\" for option \"-%s\"\n"
+msgstr ""
+
+#: config.c:1018
+#, c-format
+msgid "Invalid FTP login handshake string \"%s\" for option \"-%s\"\n"
+msgstr ""
+
+#: config.c:1080
+#, c-format
+msgid "WARNING: option \"%s\" not supported in current configuration!\n"
+msgstr "УВАГА: опц╕я \"%s\" не працю╓ у дан╕й конф╕╜урац╕╖!\n"
+
+#: config.c:1106
+#, c-format
+msgid "Please specify number \"%s\"\n"
+msgstr "Будь-ласка, вкаж╕ть число \"%s\"\n"
+
+#: config.c:1124
+#, c-format
+msgid "Only \"true\" & \"false\" is allowed : \"%s\"\n"
+msgstr "Лише \"true\" чи \"false\" дозволено : \"%s\"\n"
+
+#: config.c:1198
+#, c-format
+msgid "Bad time parameter \"%s\"\n"
+msgstr "Нев╕рний параметер часу \"%s\"\n"
+
+#: config.c:1229
+#, c-format
+msgid "Please specify floating number \"%s\"\n"
+msgstr "Будь-ласка, вкаж╕ть число з крапкою \"%s\"\n"
+
+#: config.c:1246
+#, c-format
+msgid "Please specify proper arguments for %s\n"
+msgstr "Будь-ласка, вкаж╕ть в╕рн╕ аргументи для %s\n"
+
+#: config.c:1258
+#, c-format
+msgid "Please specify proper condition type for %s (%s)\n"
+msgstr "Будь-ласка, вкаж╕ть в╕рний тип умови для %s (%s)\n"
+
+#: config.c:1286
+#, c-format
+msgid "Please specify valid RE \"%s\"\n"
+msgstr "Будь-ласка, вкаж╕ть в╕рний RE шаблон \"%s\"\n"
+
+#: config.c:1378
+#, c-format
+msgid "Invalid js_transform specification - \"%s\"\n"
+msgstr "Нев╕рна специф╕кац╕я js_transform - \"%s\"\n"
+
+#: config.c:1398
+#, c-format
+msgid "Invalid number list specification - \"%s\"\n"
+msgstr ""
+
+#: config.c:1413
+#, c-format
+msgid "Invalid FTP login handshake string \"%s\".\n"
+msgstr ""
+
+#: config.c:1459
+#, c-format
+msgid "Unable to parse \"%s\"\n"
+msgstr "Не можу роз╕брати \"%s\"\n"
+
+#: config.c:1501
+#, c-format
+msgid "ERROR: Scenario loading failed (%s)\n"
+msgstr "ПОМИЛКА: Не вдалося прочитати сценар╕й (%s)\n"
+
+#: cookie.c:212
+#, c-format
+msgid "Unable to parse : %s\n"
+msgstr "Не можу роз╕брати : %s\n"
+
+#: cookie.c:385
+msgid "Updating cookie file\n"
+msgstr "Поновлю╓мо файл з коржиками\n"
+
+#: cookie.c:414
+msgid "Cookie file has changed - > synchronizing\n"
+msgstr "Файл з коржиками зм╕нився - > синхрон╕зу╓мося\n"
+
+#: cookie.c:563
+#, c-format
+msgid "Server %s is trying to set cookie for %s domain\n"
+msgstr "Сервер %s намага╓ться дати коржика для домену %s\n"
+
+#: cookie.c:574
+#, c-format
+msgid "Removing cookie from disabled domain %s\n"
+msgstr "Видаля╓мо коржика з недозволеного домена %s\n"
+
+#: debugl.c:16
+msgid "HTML parsers"
+msgstr "Розбирач╕ HTML"
+
+#: debugl.c:17
+msgid "Server responses"
+msgstr "В╕дгуки сервера"
+
+#: debugl.c:18
+msgid "Client requests"
+msgstr "Запити кл╕╓нта"
+
+#: debugl.c:19
+msgid "Procedure calling"
+msgstr "Виклики процедур"
+
+#: debugl.c:20
+msgid "File locking"
+msgstr "Локування файл╕в"
+
+#: debugl.c:21
+msgid "Networking code"
+msgstr "Коди роботи з мережею"
+
+#: debugl.c:22
+msgid "Miscelanous"
+msgstr "Р╕зне"
+
+#: debugl.c:23
+msgid "Extended user infos"
+msgstr ""
+
+#: debugl.c:24
+msgid "Multithreading - locking"
+msgstr "Багатопотоков╕сть - локування"
+
+#: debugl.c:25
+msgid "Multithreading - threads"
+msgstr "Багатопотоков╕сть - потоки"
+
+#: debugl.c:26
+msgid "POST request data"
+msgstr "Дан╕ запиту POST"
+
+#: debugl.c:27
+msgid "Limiting conditions"
+msgstr "Умови обмежень"
+
+#: debugl.c:28
+msgid "SSL informations"
+msgstr ""
+
+#: debugl.c:67
+#, c-format
+msgid "Bad debug level selection : %s\n"
+msgstr "Нев╕рний виб╕р режиму в╕дладки : %s\n"
+
+#: decode.c:185
+msgid "decode"
+msgstr ""
+
+#: digest_auth.c:156
+msgid "Trying to do HTTP Digest authorization\n"
+msgstr "Намага╓мося пройти HTTP Digest авторизац╕ю\n"
+
+#: digest_auth.c:203
+msgid "Trying to do HTTP proxy Digest authorization\n"
+msgstr "Намага╓мося пройти HTTP proxy Digest авторизац╕ю\n"
+
+#: dinfo.c:368 dinfo.c:387
+#, c-format
+msgid "Error parsing .pavuk_info file field: %s\n"
+msgstr "Помилка розбирання файла .pavuk_info: %s\n"
+
+#: doc.c:294
+msgid "Transfering data"
+msgstr "Тягнемо дан╕"
+
+#: doc.c:309
+msgid "setsockopt: SO_RCVBUF failed"
+msgstr "setsockopt: зб╕й SO_RCVBUF"
+
+#: doc.c:330
+msgid "storing document"
+msgstr "збер╕га╓мо документ"
+
+#: doc.c:396
+msgid "Document transfer data"
+msgstr ""
+
+#: doc.c:417
+msgid "Data transfer done"
+msgstr "Дан╕ витягнуто"
+
+#: doc.c:594
+#, c-format
+msgid "Trying to resume from position %d \n"
+msgstr "Намага╓мося продовжити з позиц╕╖ %d \n"
+
+#: doc.c:659
+msgid "Opening connection"
+msgstr "В╕дкрива╓мо з'╓днання"
+
+#: doc.c:683
+msgid "Loading local copy\n"
+msgstr "Завантажу╓мо локальну коп╕ю\n"
+
+#: doc.c:909
+msgid "File may be truncated\n"
+msgstr "Файл може бути ус╕ченим\n"
+
+#: doc.c:933
+msgid "Decoding document - OK\n"
+msgstr "Декодування документа - ОК\n"
+
+#: doc.c:936
+msgid "Decoding document - failed\n"
+msgstr "Декодування документа - зб╕й\n"
+
+#: doc.c:939
+msgid "Unsupported document encoding\n"
+msgstr "Кодування документа, що не п╕дтриму╓ться\n"
+
+#: doc.c:943
+msgid "Received Encoded file but decoding not allowed (untouched)\n"
+msgstr "Отримано закодованим, та декодування не дозволене (лишили, як ╓)\n"
+
+#: doc.c:1113
+#, c-format
+msgid "Removing improper document : %s\n"
+msgstr "Видаля╓мо \"зб╕йний\" документ : %s\n"
+
+#: doc.c:1175 doc.c:1241
+msgid "Local file"
+msgstr "Локальний файл"
+
+#: doc.c:1181
+msgid "Gopher/Text File"
+msgstr "Gopher/Текстовий файл"
+
+#: doc.c:1184
+msgid "Gopher/Directory"
+msgstr "Gopher/Директор╕я"
+
+#: doc.c:1187
+msgid "Gopher/CSO phone book"
+msgstr "Телефонна книга Gopher/CSO"
+
+#: doc.c:1190
+msgid "Gopher/Error"
+msgstr "Gopher/Помилка"
+
+#: doc.c:1193
+msgid "Gopher/BINHEX"
+msgstr "Gopher/BINHEX"
+
+#: doc.c:1196
+msgid "Gopher/DOS bin"
+msgstr ""
+
+#: doc.c:1199
+msgid "Gopher/UUencoded"
+msgstr ""
+
+#: doc.c:1202
+msgid "Gopher/Search index"
+msgstr ""
+
+#: doc.c:1205
+msgid "Gopher/Telnet session"
+msgstr ""
+
+#: doc.c:1208
+msgid "Gopher/bin"
+msgstr ""
+
+#: doc.c:1211
+msgid "Gopher/Duplicated server"
+msgstr ""
+
+#: doc.c:1214
+msgid "Gopher/TN3270"
+msgstr ""
+
+#: doc.c:1217
+msgid "Gopher/GIF"
+msgstr ""
+
+#: doc.c:1220
+msgid "Gopher/Image"
+msgstr ""
+
+#: doc.c:1226
+msgid "FTP/Directory"
+msgstr "FTP/Директор╕я"
+
+#: doc.c:1228
+msgid "FTP/File"
+msgstr "FTP/Файл"
+
+#: doc.c:1232
+msgid "FTPS/Directory"
+msgstr "FTPS/Директор╕я"
+
+#: doc.c:1234
+msgid "FTPS/File"
+msgstr "FTPS/Файл"
+
+#: doc.c:1237
+msgid "Unsupported type"
+msgstr "Тип не п╕дтриму╓ться"
+
+#: doc.c:1438
+#, c-format
+msgid "S: %s [R: %s] [ET: %s] [RT: %s] \r"
+msgstr ""
+
+#: doc.c:1441
+#, c-format
+msgid "S: %s [R: %s] [ET: %s] \r"
+msgstr ""
+
+#: doc.c:1481
+#, c-format
+msgid "Waiting to releases document lock on: %s\n"
+msgstr "Чека╓мо на вив╕льнення документа: %s\n"
+
+#: doc.c:1721
+msgid "Rewriting links inside parent documents"
+msgstr "Переписування посилань у \"батьк╕вських\" документах"
+
+#: errcode.c:21
+#, c-format
+msgid "%s: user break\n"
+msgstr "%s : об╕рвано користувачем\n"
+
+#: errcode.c:28
+#, c-format
+msgid "%s: OK\n"
+msgstr ""
+
+#: errcode.c:31
+#, c-format
+msgid "%s: ERROR: storing document\n"
+msgstr "%s : ПОМИЛКА збер╕гання документа\n"
+
+#: errcode.c:34
+#, c-format
+msgid "%s: ERROR: opening file\n"
+msgstr "%s : ПОМИЛКА в╕дкривання файла\n"
+
+#: errcode.c:37
+#, c-format
+msgid "%s: ERROR: URL pointing to local directory is not supported\n"
+msgstr ""
+"%s : ПОМИЛКА: URL, що вказу╓ на локальну директор╕ю, не п╕дтриму╓ться\n"
+
+#: errcode.c:40
+#, c-format
+msgid "%s: ERROR: unknown\n"
+msgstr "%s : ПОМИЛКА: нев╕дома\n"
+
+#: errcode.c:43
+#, c-format
+msgid "%s: ERROR: document is locked\n"
+msgstr "%s : ПОМИЛКА: документ залоковано\n"
+
+#: errcode.c:46
+#, c-format
+msgid "%s: ERROR: reading socket\n"
+msgstr "%s : ПОМИЛКА читання з сокета\n"
+
+#: errcode.c:49
+#, c-format
+msgid "%s: MESSAGE: bigger than maximal allowed size\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: перевищу╓ макс. дозволений розм╕р\n"
+
+#: errcode.c:52
+#, c-format
+msgid "%s: MESSAGE: disabled by user-exit script condition\n"
+msgstr ""
+
+#: errcode.c:55
+#, c-format
+msgid "%s: MESSAGE: smaller than minimal allowed size\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: менше за м╕н. дозволений розм╕р\n"
+
+#: errcode.c:58
+#, c-format
+msgid "%s: MESSAGE: this mime type is not allowed (%s)\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: цей тип MIME заборонений (%s)\n"
+
+#: errcode.c:61
+#, c-format
+msgid "%s: ERROR: error in proxy connect\n"
+msgstr "%s : ПОМИЛКА: помилка п╕д'╓днання до прокс╕\n"
+
+#: errcode.c:64
+#, c-format
+msgid "%s: ERROR: transfer broken by user\n"
+msgstr "%s : ПОМИЛКА: трансфер об╕рвано користувачем\n"
+
+#: errcode.c:67
+#, c-format
+msgid "%s: MESSAGE: file modification time doesn't fit to specified interval\n"
+msgstr ""
+"%s : ПОВ╤ДОМЛЕННЯ: час зм╕ни файла не вклада╓ться у вказаний ╕нтервал\n"
+
+#: errcode.c:70
+#, c-format
+msgid "%s: ERROR: file has zero size - possible error\n"
+msgstr "%s : ПОМИЛКА: файл ма╓ нульову довжину - певно, помилка\n"
+
+#: errcode.c:73
+#, c-format
+msgid "%s: MESSAGE: document was already processed\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: документ вже було опрацьовано\n"
+
+#: errcode.c:76
+#, c-format
+msgid "%s: MESSAGE: document was disabled by user\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: документ було заборонено користувачем\n"
+
+#: errcode.c:79
+#, c-format
+msgid "%s: MESSAGE: document was disabled by limiting rules\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: документ було заборонено правилами обмежень\n"
+
+#: errcode.c:82
+#, c-format
+msgid "%s: WARNING: transfer rate lower than minimal allowed\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: швидк╕сть менша за м╕н╕мальну дозволену\n"
+
+#: errcode.c:85
+#, c-format
+msgid "%s: WARNING: file size quota exceeded, rest will be truncated\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: розм╕р файла перевищу╓ меж╕, файл буде ус╕чено\n"
+
+#: errcode.c:88
+#, c-format
+msgid "%s: WARNING: transfer quota exceeded, breaking download\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: швидк╕сть вийшла за меж╕, урива╓мо витягання\n"
+
+#: errcode.c:91
+#, c-format
+msgid "%s: ERROR: low free space on filesystem, breaking transfer\n"
+msgstr "%s : ПОМИЛКА: замало в╕льного м╕сця на ФС, урива╓мо витягання\n"
+
+#: errcode.c:94
+#, c-format
+msgid ""
+"%s: WARNING: maximal allowed running time exceeded, downloading will break\n"
+msgstr "%s : ПОМИЛКА: макс. час витягання перевищено, урива╓мо витягання\n"
+
+#: errcode.c:97
+#, c-format
+msgid "%s: ERROR: unnown FTP error\n"
+msgstr "%s : ПОМИЛКА: нев╕дома помилка FTP\n"
+
+#: errcode.c:100
+#, c-format
+msgid "%s: ERROR: FTP server doesn't support REST command\n"
+msgstr "%s : ПОМИЛКА: FTP сервер не п╕дтриму╓ команду REST\n"
+
+#: errcode.c:104
+#, c-format
+msgid "%s: ERROR: unable to list directory content\n"
+msgstr "%s : ПОМИЛКА: неможливо отримати список директор╕╖\n"
+
+#: errcode.c:107
+#, c-format
+msgid "%s: ERROR: unable to connect to FTP server\n"
+msgstr "%s : ПОМИЛКА: неможливо п╕д'╓днатися до сервера FTP\n"
+
+#: errcode.c:110
+#, c-format
+msgid "%s: ERROR: FTP authentification - bad username\n"
+msgstr "%s : ПОМИЛКА: автентиф╕кац╕я FTP - нев╕рне ╕м'я користувача\n"
+
+#: errcode.c:113
+#, c-format
+msgid "%s: ERROR: FTP authentification - bad password\n"
+msgstr "%s : ПОМИЛКА: автентиф╕кац╕я FTP - нев╕рний пароль\n"
+
+#: errcode.c:116
+#, c-format
+msgid "%s: ERROR: FTP proxy authentification - bad username\n"
+msgstr ""
+"%s : ПОМИЛКА: автентиф╕кац╕я на FTP прокс╕ - нев╕рне ╕м'я користувача\n"
+
+#: errcode.c:119
+#, c-format
+msgid "%s: ERROR: FTP proxy authentification - bad password\n"
+msgstr "%s : ПОМИЛКА: автентиф╕кац╕я на FTP прокс╕ - нев╕рний пароль\n"
+
+#: errcode.c:122
+#, c-format
+msgid "%s: ERROR: unable to open FTP data connection\n"
+msgstr "%s : ПОМИЛКА: неможливо в╕дкрити з'╓днання FTP data\n"
+
+#: errcode.c:125
+#, c-format
+msgid "%s: ERROR: unable to get file from FTP server\n"
+msgstr "%s : ПОМИЛКА: неможливо отримати файл з сервера FTP\n"
+
+#: errcode.c:128
+#, c-format
+msgid "%s: ERROR: FTP server doesn't support MDTM command\n"
+msgstr "%s : ПОМИЛКА: сервер FTP не п╕дтриму╓ команду MDTM\n"
+
+#: errcode.c:131
+#, c-format
+msgid "%s: ERROR: file from FTP server is truncated\n"
+msgstr "%s : ПОМИЛКА: файл з сервера FTP ус╕чено\n"
+
+#: errcode.c:135
+#, c-format
+msgid "%s: MESSAGE: reget unneeded - file is up to date\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: нема чого перевитягувати - файл не м╕нявся\n"
+
+#: errcode.c:138
+#, c-format
+msgid "%s: MESSAGE: FTP transfer not allowed because of rules\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: трансфер FTP заборонено правилами обмежень\n"
+
+#: errcode.c:141
+#, c-format
+msgid ""
+"%s: WARNING: FTP directory URL, but FTP directory not allowed (-FTPdir)\n"
+msgstr ""
+"%s : ПОВ╤ДОМЛЕННЯ: це URL директор╕╖ FTP, але робота з директор╕ями FTP не "
+"дозволена (-FTPdir)\n"
+
+#: errcode.c:144
+#, c-format
+msgid "%s: WARNING: FTP login_handshake failed\n"
+msgstr ""
+
+#: errcode.c:147
+#, c-format
+msgid "%s: ERROR: unknown HTTP error\n"
+msgstr "%s : ПОМИЛКА: нев╕дома помилка HTTP\n"
+
+#: errcode.c:150
+#, c-format
+msgid "%s: ERROR: unable to connect to HTTP server\n"
+msgstr "%s : ПОМИЛКА: неможливо п╕д'╓днатися до сервера HTTP\n"
+
+#: errcode.c:153
+#, c-format
+msgid "%s: ERROR: HTTP server doesn't support partial content retrieving\n"
+msgstr "%s : ПОМИЛКА: сервер HTTP не п╕дтриму╓ часткову передачу документ╕в\n"
+
+#: errcode.c:156
+#, c-format
+msgid "%s: ERROR: broken HTTP request send\n"
+msgstr ""
+
+#: errcode.c:159
+#, c-format
+msgid "%s: ERROR: failed to read HTTP response\n"
+msgstr "%s : ПОМИЛКА: зб╕й читання в╕дгука HTTP\n"
+
+#: errcode.c:162
+#, c-format
+msgid "%s: ERROR: unexpected HTTP response code after trying to reget\n"
+msgstr ""
+
+#: errcode.c:166
+#, c-format
+msgid "%s: ERROR: unable to send HTTP request data\n"
+msgstr "%s : ПОМИЛКА: неможливо над╕слати дан╕ запиту HTTP\n"
+
+#: errcode.c:169
+#, c-format
+msgid "%s: MESSAGE: redirecting to another location\n"
+msgstr "%s : ПОВ╤ДОМЛЕННЯ: перенаправлення до ╕ншого м╕сця\n"
+
+#: errcode.c:172
+#, c-format
+msgid "%s: ERROR: HTTP document is truncated\n"
+msgstr "%s : ПОМИЛКА: документ HTTP ус╕чений\n"
+
+#: errcode.c:175
+#, c-format
+msgid "%s: ERROR: cyclic redirection!\n"
+msgstr "%s : ПОМИЛКА: цикл╕чне перенаправлення!\n"
+
+#: errcode.c:178
+#, c-format
+msgid "%s: ERROR: redirecting to unsupported URL\n"
+msgstr "%s : ПОМИЛКА: перенаправлення до URL, що не п╕дтриму╓ться\n"
+
+#: errcode.c:181
+#, c-format
+msgid "%s: ERROR: unable to connect to proxy server\n"
+msgstr "%s : ПОМИЛКА: неможливо п╕д'╓днатися до прокс╕ сервера\n"
+
+#: errcode.c:184
+#, c-format
+msgid "%s: ERROR: received bad redirect response from server\n"
+msgstr "%s : ПОМИЛКА: отримано нев╕рний в╕дгук перенаправлення\n"
+
+#: errcode.c:187
+#, c-format
+msgid "%s: ERROR: unable to do NTLM authorization\n"
+msgstr "%s : ПОМИЛКА: неможливо зд╕йснити авторизац╕ю NTLM\n"
+
+#: errcode.c:190
+#, c-format
+msgid "%s: ERROR: unable to do HTTP Digest authorization\n"
+msgstr "%s : ПОМИЛКА: неможливо зд╕йснити авторизац╕ю HTTP Digest\n"
+
+#: errcode.c:193
+#, c-format
+msgid "%s: ERROR: unable to do NTLM proxy authorization\n"
+msgstr "%s : ПОМИЛКА: неможливо зд╕йснити авторизац╕ю NTLM proxy\n"
+
+#: errcode.c:196
+#, c-format
+msgid "%s: ERROR: unable to do HTTP proxy Digest authorization\n"
+msgstr "%s : ПОМИЛКА: неможливо зд╕йснити авторизац╕ю HTTP proxy Digest\n"
+
+#: errcode.c:199
+#, c-format
+msgid "%s: ERROR: HTTP client sends bad request\n"
+msgstr "%s : ПОМИЛКА: HTTP кл╕╓нт надсила╓ нев╕рного запита\n"
+
+#: errcode.c:202
+#, c-format
+msgid "%s: ERROR: HTTP authentication is required\n"
+msgstr "%s : ПОМИЛКА: необх╕дна авторизац╕я HTTP\n"
+
+#: errcode.c:205
+#, c-format
+msgid "%s: ERROR: HTTP proxy authentication is required\n"
+msgstr "%s : ПОМИЛКА: необх╕дна авторизац╕я HTTP proxy\n"
+
+#: errcode.c:208
+#, c-format
+msgid "%s: ERROR: HTTP payment required\n"
+msgstr ""
+
+#: errcode.c:211
+#, c-format
+msgid "%s: ERROR: forbidden HTTP request\n"
+msgstr ""
+
+#: errcode.c:214
+#, c-format
+msgid "%s: ERROR: HTTP document not found\n"
+msgstr "%s : ПОМИЛКА: HTTP документ не знайдено\n"
+
+#: errcode.c:217
+#, c-format
+msgid "%s: ERROR: HTTP remote server error\n"
+msgstr "%s: ERROR: HTTP remote server error\n"
+
+#: errcode.c:220
+#, c-format
+msgid "%s: ERROR: HTTP server replied with connection timeout response\n"
+msgstr "%s : ПОМИЛКА: HTTP сервер повернув \"connection timeout\"\n"
+
+#: errcode.c:223
+#, c-format
+msgid "%s: ERROR: HTTP server replied with conflict response\n"
+msgstr ""
+
+#: errcode.c:226
+#, c-format
+msgid "%s: ERROR: document was removed from HTTP server\n"
+msgstr "%s : ПОМИЛКА: документа було видалено з HTTP сервера\n"
+
+#: errcode.c:229
+#, c-format
+msgid "%s: ERROR: you must use proxy to access this URL\n"
+msgstr "%s : ПОМИЛКА: ви мусите доступатися до цього URL через прокс╕\n"
+
+#: errcode.c:232
+#, c-format
+msgid "%s: ERROR: 306\n"
+msgstr "%s : ПОМИЛКА: 306\n"
+
+#: errcode.c:235
+#, c-format
+msgid ""
+"%s: ERROR: used HTTP method is not supported or not allowed for this URL\n"
+msgstr ""
+"%s : ПОМИЛКА: цей метод HTTP не п╕дтриму╓ться чи не дозволений для цього "
+"URL\n"
+
+#: errcode.c:238
+#, c-format
+msgid "%s: ERROR: client doesn't accept MIME type of requested URL\n"
+msgstr "%s : ПОМИЛКА: кл╕╓нт не прийма╓ тип MIME запитуваного URL\n"
+
+#: errcode.c:241
+#, c-format
+msgid "%s: ERROR: in request header is missing Content-Length: header\n"
+msgstr "%s : ПОМИЛКА: в╕дсутн╓ поле \"Content-Length:\" у заголовц╕ запита\n"
+
+#: errcode.c:244
+#, c-format
+msgid "%s: ERROR: preconditions in request failed for requested URL\n"
+msgstr ""
+
+#: errcode.c:247
+#, c-format
+msgid "%s: ERROR: request body too large\n"
+msgstr "%s : ПОМИЛКА: т╕ло запита завелике\n"
+
+#: errcode.c:250
+#, c-format
+msgid "%s: ERROR: request URL too long\n"
+msgstr "%s : ПОМИЛКА: URL запита задовгий\n"
+
+#: errcode.c:253
+#, c-format
+msgid "%s: ERROR: resource in format unsupported for this request\n"
+msgstr ""
+
+#: errcode.c:256
+#, c-format
+msgid "%s: ERROR: requested bad range of document\n"
+msgstr "%s : ПОМИЛКА: запитано нев╕рний фрагмент документа\n"
+
+#: errcode.c:259
+#, c-format
+msgid "%s: ERROR: failed to fulfill expectation from request\n"
+msgstr ""
+
+#: errcode.c:262
+#, c-format
+msgid "%s: ERROR: requested HTTP method not implemented on server side\n"
+msgstr "%s : ПОМИЛКА: метод HTTP запита не п╕дтриму╓ться сервером\n"
+
+#: errcode.c:265
+#, c-format
+msgid "%s: ERROR: gatewaying failed for this URL\n"
+msgstr "%s : ПОМИЛКА: зб╕й шлюзування для цього URL\n"
+
+#: errcode.c:268
+#, c-format
+msgid "%s: ERROR: HTTP service currently not available, check later\n"
+msgstr "%s : ПОМИЛКА: серв╕с HTTP нараз╕ недоступний, спробуйте п╕зн╕ше\n"
+
+#: errcode.c:271
+#, c-format
+msgid ""
+"%s: ERROR: timeout occured in communication between gateway and remote "
+"server\n"
+msgstr ""
+
+#: errcode.c:274
+#, c-format
+msgid ""
+"%s: ERROR: HTTP version used in request is unsupported by remote server\n"
+msgstr ""
+"%s : ERROR: використовувана у запит╕ верс╕я HTTP не п╕дтриму╓ться сервером\n"
+
+#: errcode.c:277
+#, c-format
+msgid "%s: ERROR: unable to connect to GOPHER server\n"
+msgstr "%s : ПОМИЛКА: неможливо п╕д'╓днатися до сервера GOPHER\n"
+
+#: errcode.c:280
+#, c-format
+msgid "%s: ERROR: unknown GOPHER error\n"
+msgstr "%s : ПОМИЛКА: нев╕дома помилка GOPHER\n"
+
+#: errcode.c:283
+#, c-format
+msgid "%s: ERROR: unable to connect to HTTPS server\n"
+msgstr "%s: ПОМИЛКА: неможливо п╕д'╓днатися до сервера HTTPS\n"
+
+#: errcode.c:286
+#, c-format
+msgid "%s: ERROR: unable to establish SSL control connection to FTPS server\n"
+msgstr ""
+"%s: ПОМИЛКА: неможливо встановити контрольне з'╓днання через SSL до сервера "
+"FTPS\n"
+
+#: errcode.c:289
+#, c-format
+msgid "%s: ERROR: this FTP server doesn't support SSL connections\n"
+msgstr "%s: ПОМИЛКА: цей сервер FTP не п╕дтриму╓ з'╓днання SSL\n"
+
+#: errcode.c:292
+#, c-format
+msgid "%s: ERROR: unable to establish SSL data connection to FTPS server\n"
+msgstr ""
+"%s: ПОМИЛКА неможливо встановити з'╓днання ftp data через SSL до сервера "
+"FTPS\n"
+
+#: errcode.c:295
+#, c-format
+msgid "%s: ERROR: unknown errcode : %d\n"
+msgstr "%s: ПОМИЛКА: нев╕домий код помилки : %d\n"
+
+#: file.c:31
+msgid "Can't open directory\n"
+msgstr "Не можу в╕дкрити директор╕ю\n"
+
+#: form.c:1082 form.c:1145 form.c:1300
+#, c-format
+msgid "Unsupported form type in context: %d\n"
+msgstr "Неп╕дтримуваний тип форми у контекст╕: %d\n"
+
+#: form.c:1399
+msgid "Browse"
+msgstr "Проглянути"
+
+#: form.c:1412
+msgid "URLs with forms"
+msgstr "URL'╕ з формами"
+
+#: form.c:1421
+msgid "Refresh URL list"
+msgstr "Поновити список URL"
+
+#: form.c:1455 form.c:1456 url.c:1009
+msgid "unknown"
+msgstr "нев╕домий"
+
+#: form.c:1602
+msgid "Pavuk: load form file"
+msgstr "Павук: узяти з файла"
+
+#: form.c:1626
+msgid "Fill forms"
+msgstr "Заповнити форми"
+
+#: form.c:1633
+msgid "Form number: "
+msgstr "Номер форми: "
+
+#: form.c:1645
+msgid "Action URL: "
+msgstr "URL д╕╖: "
+
+#: form.c:1654 gui_common.c:701
+msgid "Request method: "
+msgstr "Метод запиту: "
+
+#: form.c:1663 gui_common.c:720 gui_tree.c:127
+msgid "Request encoding: "
+msgstr "Кодування запиту: "
+
+#: form.c:1672
+msgid "HTML form content"
+msgstr "Вм╕ст HTML форми"
+
+#: form.c:1687
+msgid "Load HTML file ..."
+msgstr "Завантажити HTML ╕з файла ..."
+
+#: form.c:1740
+msgid "Pavuk: HTML forms editor"
+msgstr "Павук: редактор форм HTML"
+
+#: form.c:1762 gui_jscons.c:191
+msgid "Close"
+msgstr "Закрити"
+
+#: ftp.c:101
+msgid "ftp_get_response: ftp control connection closed before any response\n"
+msgstr ""
+"ftp_get_response: контрольне з'╓днання ftp закрите ран╕ш отримання якогось "
+"в╕дгука\n"
+
+#: ftp.c:172
+msgid "ftp: setsockopt TOS - THROUGHPUT failed"
+msgstr ""
+
+#: ftp.c:269 ftp.c:290 ftp.c:329
+#, fuzzy, c-format
+msgid "Error parsing FTP response to %s command - %s\n"
+msgstr "Помилка розбирання командно╖ стр╕чки б╕ля: %s\n"
+
+#: ftp.c:667
+msgid "Re-using established FTP control connection\n"
+msgstr "Використову╓мо вже встановлене контрольне з'╓днання FTP\n"
+
+#: ftp.c:877 http.c:1401
+msgid "Size differs, regeting whole\n"
+msgstr "Р╕зн╕ розм╕ри, тягнемо все знову\n"
+
+#: ftp.c:887 http.c:1283 http.c:1411
+msgid "Modified from last download - regeting whole\n"
+msgstr "Зм╕нено з часу останнього завантаження - тягнемо все знову\n"
+
+#: ftp.c:974
+msgid ""
+"Warning: FTP server undertand REST command, but can't handle it properly.\n"
+msgstr ""
+"Увага: сервер FTP розум╕╓ команду REST, але не може ╖╖ виконати в╕рно.\n"
+
+#: ftp.c:1221 ftp.c:1549
+#, c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory of %s://%s:%hu%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>List of FTP directory %s://%s:%hu/%s </H1><BR><UL>"
+msgstr ""
+
+#: ftp.c:1620
+#, c-format
+msgid ""
+"ERROR: unable to parse FTP list line :\n"
+"\t%s\n"
+msgstr ""
+
+#: ftp.c:1813
+#, c-format
+msgid "Making symlink \"%s\" to \"%s\"\n"
+msgstr "Створю╓мо символьне посилання \"%s\" до \"%s\"\n"
+
+#: gauthinfo.c:107
+msgid "Pavuk: Save auth. info file"
+msgstr "Павук: Зберегти файл даних авторизац╕╖"
+
+#: gauthinfo.c:159
+msgid "Pavuk: Load auth. info file"
+msgstr "Павук: Завантажити файл даних авторизац╕╖"
+
+#: gauthinfo.c:340
+msgid "Pavuk: Authorization info editor"
+msgstr "Павук: Редактор даних авторизац╕╖"
+
+#: gauthinfo.c:357
+msgid "Protocol"
+msgstr "Протокол"
+
+#: gauthinfo.c:358 gui_common.c:1842
+msgid "Host"
+msgstr "Хост"
+
+#: gauthinfo.c:359
+msgid "User"
+msgstr "Користувач"
+
+#: gauthinfo.c:360
+msgid "Password"
+msgstr "Пароль"
+
+#: gauthinfo.c:361
+msgid "Base dir."
+msgstr ""
+
+#: gauthinfo.c:362
+msgid "Realm"
+msgstr ""
+
+#: gauthinfo.c:363
+msgid "Scheme"
+msgstr "Схема"
+
+#: gauthinfo.c:388
+msgid "Protocol: "
+msgstr "Протокол: "
+
+#: gauthinfo.c:413 gui_common.c:1858 gui_common.c:1919 gui_common.c:1942
+#: gui_common.c:1971
+msgid "Host: "
+msgstr "Сервер: "
+
+#: gauthinfo.c:422
+msgid "User: "
+msgstr "Користувач: "
+
+#: gauthinfo.c:431 gui_common.c:2141 gui_common.c:2191 gui_common.c:2215
+msgid "Password: "
+msgstr "Пароль: "
+
+#: gauthinfo.c:440
+msgid "Base directory: "
+msgstr "Базова директор╕я: "
+
+#: gauthinfo.c:449
+msgid "Realm: "
+msgstr ""
+
+#: gauthinfo.c:467 gui_common.c:2085
+msgid "User auth. scheme"
+msgstr "Схема авторизац╕╖ User"
+
+#: gauthinfo.c:472
+msgid "Base auth. scheme"
+msgstr "Схема авторизац╕╖ Base"
+
+#: gauthinfo.c:477 gui_common.c:2087
+msgid "Digest auth. scheme"
+msgstr "Схема авторизац╕╖ Digest"
+
+#: gauthinfo.c:483 gui_common.c:2089
+msgid "NTLM auth. scheme"
+msgstr "Схема авторизац╕╖ NTLM"
+
+#: gauthinfo.c:494 gui_addurl.c:167 gui_common.c:626 gui_common.c:771
+#: gui_common.c:948 gui_common.c:1044 gui_common.c:1868 gui_common.c:2664
+#: gui_common.c:2910 gui_limits.c:673 gui_tools.c:733
+msgid "Append"
+msgstr "Додати"
+
+#: gauthinfo.c:502 gui_common.c:642 gui_common.c:778 gui_common.c:964
+#: gui_common.c:1051 gui_common.c:1874 gui_common.c:2670 gui_common.c:2916
+#: gui_limits.c:679 gui_tools.c:755
+msgid "Modify"
+msgstr "Зм╕нити"
+
+#: gauthinfo.c:510 gui_common.c:651 gui_common.c:973 gui_common.c:1880
+#: gui_common.c:2676 gui_common.c:2922 gui_limits.c:685 gui_tools.c:768
+msgid "Clear"
+msgstr "Очистити"
+
+#: gauthinfo.c:518 gui_common.c:660 gui_common.c:785 gui_common.c:982
+#: gui_common.c:1058 gui_common.c:1886 gui_common.c:2682 gui_common.c:2928
+#: gui_limits.c:691 gui_tools.c:781
+msgid "Delete"
+msgstr "Видалити"
+
+#: gauthinfo.c:531 gui_common.c:3010 gui_limits.c:759 gui_sched.c:121
+#: gui_tools.c:277
+msgid "OK"
+msgstr ""
+
+#: gauthinfo.c:542 gui_common.c:3019 gui_limits.c:768
+msgid "Apply"
+msgstr "Застосувати"
+
+#: gauthinfo.c:550
+msgid "Load"
+msgstr "Завантажити"
+
+#: gauthinfo.c:558
+msgid "Save"
+msgstr "Зберегти"
+
+#: gauthinfo.c:569 gui_about.c:76 gui_addurl.c:176 gui_common.c:3035
+#: gui_limits.c:784 gui_sched.c:130 gui_tools.c:286 gui_tree.c:608
+#: gui_tree.c:723 stats.c:504
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: gkeys.c:64 gkeys.c:81 gkeys.c:93
+#, c-format
+msgid "Unable to parse: %s\n"
+msgstr "Не можу роз╕брати: %s\n"
+
+#: gkeys.c:115
+msgid "Unable to create ~/.pavuk_keys file\n"
+msgstr "Не можу створити файл ~/.pavuk_keys\n"
+
+#: gkeys.c:119
+#, c-format
+msgid ""
+"# This file was generated by %s\n"
+"# You may edit it if you're careful!\n"
+"\n"
+msgstr ""
+"# Цей файл з╜енеровано %s\n"
+"# Можете редагувати, якщо Ви дуже обережн╕!\n"
+"\n"
+
+#: gopher.c:66
+msgid "********************* Gopher request **************\n"
+msgstr "********************* Запит Gopher **************\n"
+
+#: gopher.c:104
+#, c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory of gopher://%s:%hu/%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>Directory of gopher://%s:%hu/%s </H1><BR><BR><UL>"
+msgstr ""
+
+#: gopher.c:152
+#, c-format
+msgid ""
+"Failed to parse Gopher directory entry:\n"
+"%s\n"
+msgstr ""
+
+#: gui_about.c:39
+msgid "Pavuk: About"
+msgstr "Про Павука"
+
+#: gui_about.c:61
+#, c-format
+msgid ""
+"Pavuk %s %s\n"
+" \n"
+"an automatic WEB file grabber\n"
+" \n"
+"By Stefan Ondrejicka\n"
+" \n"
+"(ondrej@idata.sk)\n"
+" \n"
+"URL : http://www.idata.sk/~ondrej/pavuk/\n"
+" "
+msgstr ""
+"Павук %s %s\n"
+" \n"
+"автоматичний завантажувач файл╕в WEB\n"
+" \n"
+"Автор Stefan Ondrejicka\n"
+" \n"
+"(ondrej@idata.sk)\n"
+" \n"
+"URL : http://www.idata.sk/~ondrej/pavuk/\n"
+" "
+
+#: gui_api.c:168
+#, c-format
+msgid "Processed: %5d"
+msgstr "У робот╕: %5d"
+
+#: gui_api.c:170
+#, c-format
+msgid "Queued: %5d"
+msgstr "У черз╕: %5d"
+
+#: gui_api.c:172
+#, c-format
+msgid "Failed: %4d"
+msgstr "Зб╕й: %4d"
+
+#: gui_api.c:174
+#, c-format
+msgid "Rejected: %5d"
+msgstr "В╕дкинуто: %5d"
+
+#: gui_api.c:378
+msgid "Start"
+msgstr "Старт"
+
+#: gui_api.c:498
+msgid "Starting ..."
+msgstr "Старту╓мо ..."
+
+#: gui_api.c:563
+msgid "Too high timeout value for GUI interface implementation of timeout\n"
+msgstr ""
+
+#: gui_addurl.c:72 gui_main.c:251
+#, c-format
+msgid "Dropped URL : %s\n"
+msgstr "В╕дкинуто URL : %s\n"
+
+#: gui_addurl.c:126
+msgid "Pavuk: Append URL"
+msgstr "Павук: додати URL"
+
+#: gui_addurl.c:138
+msgid "New URL:"
+msgstr "Новий URL:"
+
+#: gui_common.c:579 gui_common.c:595 gui_main.c:777
+msgid "URL"
+msgstr ""
+
+#: gui_common.c:596
+msgid "Local filename"
+msgstr "Локальне ╕м'я файла"
+
+#: gui_common.c:613
+msgid "Request URL: "
+msgstr "URL запиту: "
+
+#: gui_common.c:616
+msgid "Local filename: "
+msgstr "Локальне ╕м'я файла: "
+
+#: gui_common.c:682
+msgid "Extended informations for HTTP POST request"
+msgstr "Розширена ╕нформац╕я для запиту HTTP POST"
+
+#: gui_common.c:739 gui_common.c:1012
+msgid "Query fields: "
+msgstr "Поля форми: "
+
+#: gui_common.c:753 gui_common.c:1026 gui_common.c:2609 gui_limits.c:579
+msgid "Type"
+msgstr "Тип"
+
+#: gui_common.c:754 gui_common.c:1027
+msgid "Name"
+msgstr "╤м'я"
+
+#: gui_common.c:755 gui_common.c:1028
+msgid "Value"
+msgstr "Значення"
+
+#: gui_common.c:797 gui_common.c:1070
+msgid "Type: "
+msgstr "Тип: "
+
+#: gui_common.c:826 gui_common.c:1099
+msgid "Name: "
+msgstr "╤м'я: "
+
+#: gui_common.c:828 gui_common.c:1101
+msgid "Value: "
+msgstr "Значення: "
+
+#: gui_common.c:858 gui_common.c:1131
+msgid "Pavuk: Choose form field file"
+msgstr "Павук: Вибер╕ть файл пол╕в форми"
+
+#: gui_common.c:907
+msgid "Form data"
+msgstr "Дан╕ форми"
+
+#: gui_common.c:933
+msgid "Matching action URL: "
+msgstr ""
+
+#: gui_common.c:1193
+msgid "Grabber I"
+msgstr "Тягайло ╤"
+
+#: gui_common.c:1201
+msgid "Cache Directory: "
+msgstr "Директор╕я кеша: "
+
+#: gui_common.c:1204
+msgid "Default URL prefix: "
+msgstr ""
+
+#: gui_common.c:1207
+msgid "Separate info directory: "
+msgstr ""
+
+#: gui_common.c:1210
+msgid "Index file name: "
+msgstr "╤м'я файла ╕ндекса: "
+
+#: gui_common.c:1213
+msgid "Store file name: "
+msgstr "Зберегти у файл╕: "
+
+#: gui_common.c:1216
+msgid "Identity string: "
+msgstr "Стр╕чка ╕дентиф╕кац╕╖: "
+
+#: gui_common.c:1220
+msgid "Netscape browser cache directory: "
+msgstr "Директор╕я кеша Netscape: "
+
+#: gui_common.c:1223
+msgid "Mozilla browser cache directory: "
+msgstr "Директор╕я кеша Моз╕лли: "
+
+#: gui_common.c:1228
+msgid "Browser: "
+msgstr "Переглядач: "
+
+#: gui_common.c:1232
+msgid "Reminder command: "
+msgstr "Команда нагадувача: "
+
+#: gui_common.c:1235
+msgid "Post command: "
+msgstr "Команда листування: "
+
+#: gui_common.c:1251
+msgid "How many times retry on fail: "
+msgstr "Ск╕льки раз╕в пробувати у раз╕ збою: "
+
+#: gui_common.c:1254
+msgid "How many moved links to follow: "
+msgstr "За ск╕лькома перенесеннями ганятися: "
+
+#: gui_common.c:1257
+msgid "How many times to reget file: "
+msgstr "Ск╕льки раз╕в дотягувати файл: "
+
+#: gui_common.c:1260
+msgid "Document age before syncing with server: "
+msgstr "В╕к документа до синхрон╕зац╕╖ з сервером: "
+
+#: gui_common.c:1262
+msgid " days "
+msgstr " дн╕в "
+
+#: gui_common.c:1268
+msgid "Read buffer size: "
+msgstr "Буфер для зчитаних даних:"
+
+#: gui_common.c:1273
+msgid " kB "
+msgstr " кБ "
+
+#: gui_common.c:1279
+msgid "Hash tables size: "
+msgstr "Розм╕р hash-таблиць: "
+
+#: gui_common.c:1281
+msgid " entries "
+msgstr " елемент╕в "
+
+#: gui_common.c:1295
+msgid "Sleep time between transfers: "
+msgstr "Спати м╕ж спробами: "
+
+#: gui_common.c:1297
+msgid " sec."
+msgstr " сек."
+
+#: gui_common.c:1302
+msgid "randomize"
+msgstr "випадково"
+
+#: gui_common.c:1308
+msgid "Rollback amount on reget: "
+msgstr "В╕дкочуватися при повторах на: "
+
+#: gui_common.c:1310
+msgid " bytes"
+msgstr " байт╕в"
+
+#: gui_common.c:1316
+msgid "Transfer quota: "
+msgstr "Обмеження швидкост╕: "
+
+#: gui_common.c:1318 gui_common.c:1326 gui_common.c:1335
+msgid " kB"
+msgstr " кБ"
+
+#: gui_common.c:1324
+msgid "File size quota: "
+msgstr "Обмеження розм╕ру: "
+
+#: gui_common.c:1333
+msgid "Filesystem freespace quota: "
+msgstr "Залишити в╕льним на ФС: "
+
+#: gui_common.c:1351
+msgid "Number of downloading threads: "
+msgstr "К╕льк╕сть ниток завантажування: "
+
+#: gui_common.c:1366
+msgid "Grabber II"
+msgstr "Тягайло ╤╤"
+
+#: gui_common.c:1369
+msgid "Misc settings"
+msgstr "Р╕зне"
+
+#: gui_common.c:1378
+msgid "Always generate unique name for document"
+msgstr "Завжди вигадувати ун╕кальне ╕м'я документа"
+
+#: gui_common.c:1383
+msgid "Delete FTP document after succesful download"
+msgstr "Видаляти документи FTP п╕сля вдалого витягання"
+
+#: gui_common.c:1388
+msgid "Preserve document modification time"
+msgstr "Збер╕гати час модиф╕кац╕╖ документа"
+
+#: gui_common.c:1393
+msgid "Preserve FTP document permissions"
+msgstr "Збер╕гати права доступу файл╕в FTP"
+
+#: gui_common.c:1398
+msgid "Preserve FTP symbolic links paths"
+msgstr "Збер╕гати шляхи для симольних посилань FTP"
+
+#: gui_common.c:1403
+msgid "Retrieve FTP symbolic links like files"
+msgstr "Тягти посилання FTP як файли"
+
+#: gui_common.c:1409
+msgid "Whole reget when partial not supported"
+msgstr "Тягти повн╕стю, якщо частково не виходить"
+
+#: gui_common.c:1415
+msgid "Use gzip encoding for transfer"
+msgstr "Використовувати кодування gzip при витяганн╕"
+
+#: gui_common.c:1420
+msgid "Remove improper documents"
+msgstr "Видаляти \"зб╕йн╕\" документи"
+
+#: gui_common.c:1425
+msgid "Check transferred size of document"
+msgstr "Перев╕ряти розм╕р отриманого файла"
+
+#: gui_common.c:1430
+msgid "Store directory URLs as index files"
+msgstr "Збер╕гати URL╕ директор╕й, як ╕ндексн╕ файли"
+
+#: gui_common.c:1435
+msgid "Store info files with each document"
+msgstr "Збер╕гати ╕нфо-файли кожного документа"
+
+#: gui_common.c:1440
+msgid "Send self URL as Referer for starting URLs"
+msgstr "Слати стартовий URL як Referer на самого себе"
+
+#: gui_common.c:1445
+msgid "Send If-Range header field when regeting"
+msgstr "Слати заголовок If-Range при дотягуванн╕"
+
+#: gui_common.c:1450
+msgid "Show time of start and end of downloading"
+msgstr "Показувати час початку та к╕нця завантаження"
+
+#: gui_common.c:1458
+msgid "URL scheduling strategy: "
+msgstr "Стратег╕я розкладу витягання: "
+
+#: gui_common.c:1504 gui_limits.c:447
+msgid "HTML"
+msgstr ""
+
+#: gui_common.c:1507
+#, fuzzy
+msgid "HTML document URL rewriting rules"
+msgstr "Переписування URL у HTML документах"
+
+#: gui_common.c:1517
+msgid "Rewrite URLs inside HTML doc."
+msgstr "Переписувати URL у HTML документах"
+
+#: gui_common.c:1525
+msgid "Rewrite URLs to local when stored locally"
+msgstr "М╕няти URL на локальн╕ при збереженн╕"
+
+#: gui_common.c:1531
+msgid "Rewrite all suitable URLs to local"
+msgstr "М╕няти ус╕ придатн╕ URL на локальн╕"
+
+#: gui_common.c:1537
+msgid "Rewrite all URLs to local immediately"
+msgstr "М╕няти ус╕ URL на локальн╕ негайно"
+
+#: gui_common.c:1543
+msgid "Rewrite all URLs to remote immediately"
+msgstr "М╕няти ус╕ URL на в╕ддален╕ негайно"
+
+#: gui_common.c:1549
+msgid "Rewrite only one currently download URL"
+msgstr ""
+
+#: gui_common.c:1554
+msgid "Tuning of HTML rewriting engine"
+msgstr ""
+
+#: gui_common.c:1564
+#, fuzzy
+msgid "Don't touch URL wildcard pattern: "
+msgstr "шаблони-маски"
+
+#: gui_common.c:1569
+msgid "Don't touch URL RE pattern: "
+msgstr ""
+
+#: gui_common.c:1573
+msgid "Don't touch HTML tag RE pattern: "
+msgstr ""
+
+#: gui_common.c:1651
+msgid "Net"
+msgstr "Мережа"
+
+#: gui_common.c:1658
+msgid "Allowed protocols"
+msgstr "Дозволен╕ протоколи"
+
+#: gui_common.c:1667
+msgid "HTTP"
+msgstr ""
+
+#: gui_common.c:1672
+msgid "FTP"
+msgstr ""
+
+#: gui_common.c:1677
+msgid "Gopher"
+msgstr ""
+
+#: gui_common.c:1683
+msgid "HTTPS"
+msgstr ""
+
+#: gui_common.c:1688
+msgid "FTPS"
+msgstr ""
+
+#: gui_common.c:1694
+msgid "FTP data connection type "
+msgstr "Тип з'╓днання \"FTP data\" "
+
+#: gui_common.c:1703
+msgid "Active"
+msgstr "Активне"
+
+#: gui_common.c:1710
+msgid "Passive"
+msgstr "Пасивне"
+
+#: gui_common.c:1717
+msgid "Communication timeout: "
+msgstr ""
+
+#: gui_common.c:1730
+msgid " min."
+msgstr " хв."
+
+#: gui_common.c:1736
+msgid "Maximal transfer rate: "
+msgstr "Максимальна швидк╕сть: "
+
+#: gui_common.c:1749 gui_common.c:1768
+msgid " kB/s"
+msgstr " кБ/сек"
+
+#: gui_common.c:1755
+msgid "Minimal transfer rate: "
+msgstr "М╕н╕мальна швидк╕сть: "
+
+#: gui_common.c:1774
+msgid "Local interface address: "
+msgstr "Адреса локального ╕нтерфейса: "
+
+#: gui_common.c:1785
+msgid "Additional HTTP headers: "
+msgstr "Додатков╕ заголовки HTTP: "
+
+#: gui_common.c:1796
+msgid "Additional FTP list options: "
+msgstr ""
+
+#: gui_common.c:1809
+msgid "Use wide listing of FTP directories"
+msgstr "Використовувати широкий список FTP директор╕й"
+
+#: gui_common.c:1815
+msgid "Fix detection of nonexisting FTP directories on WuFTPD FTP servers"
+msgstr ""
+
+#: gui_common.c:1821
+msgid "Use HTTP/1.1 protocol for HTTP communication"
+msgstr "Використовувати HTTP/1.1 для з'╓днань HTTP"
+
+#: gui_common.c:1827
+msgid "FTP login handshake rules"
+msgstr ""
+
+#: gui_common.c:1843
+msgid "Login handshake"
+msgstr ""
+
+#: gui_common.c:1861
+msgid "Handshake: "
+msgstr ""
+
+#: gui_common.c:1903
+msgid "Proxy"
+msgstr "Прокс╕"
+
+#: gui_common.c:1909
+msgid "Gopher proxy"
+msgstr "Gopher прокс╕"
+
+#: gui_common.c:1922 gui_common.c:1945 gui_common.c:1974
+msgid "Port: "
+msgstr "Порт: "
+
+#: gui_common.c:1926
+msgid "Gopher via HTTP proxy"
+msgstr "Gopher через HTTP прокс╕"
+
+#: gui_common.c:1931
+msgid "FTP proxy"
+msgstr "FTP прокс╕"
+
+#: gui_common.c:1948
+msgid "FTP via HTTP proxy"
+msgstr "FTP через HTTP прокс╕"
+
+#: gui_common.c:1954
+msgid "FTP via HTTP tunneling proxy"
+msgstr "Прокс╕ тунелювання FTP через HTTP"
+
+#: gui_common.c:1961
+msgid "SSL proxy"
+msgstr "SSL прокс╕"
+
+#: gui_common.c:1978
+msgid "HTTP proxy"
+msgstr "HTTP прокс╕"
+
+#: gui_common.c:1984
+msgid "Proxy: "
+msgstr "Прокс╕: "
+
+#: gui_common.c:1989
+msgid "Allow caching of documents"
+msgstr "Дозволити кешування документ╕в"
+
+#: gui_common.c:2044
+msgid "Languages"
+msgstr "Мови"
+
+#: gui_common.c:2047
+msgid "Preffered languages"
+msgstr "Улюблен╕ мови"
+
+#: gui_common.c:2052
+msgid "Language code: "
+msgstr "Код мови: "
+
+#: gui_common.c:2064
+msgid "Preffered character sets"
+msgstr "Улюблен╕ розкладки символ╕в"
+
+#: gui_common.c:2069
+msgid "Character set code: "
+msgstr "Код розкладки: "
+
+#: gui_common.c:2086
+msgid "Basic auth. scheme"
+msgstr "Схема авторизац╕╖ Basic"
+
+#: gui_common.c:2096
+msgid "Auth"
+msgstr ""
+
+#: gui_common.c:2103
+msgid "User authentification"
+msgstr "Авторизац╕я користувача"
+
+#: gui_common.c:2112 gui_common.c:2161
+msgid "Scheme: "
+msgstr "Схема: "
+
+#: gui_common.c:2138 gui_common.c:2188 gui_common.c:2212
+msgid "User name: "
+msgstr "Користувач: "
+
+#: gui_common.c:2144 gui_common.c:2194
+msgid "NTLM domain: "
+msgstr "Домен NTLM: "
+
+#: gui_common.c:2147 gui_common.c:2197
+msgid "Reuse HTTP Digest access nonce"
+msgstr ""
+
+#: gui_common.c:2152
+msgid "HTTP proxy user authentification"
+msgstr "Авторизац╕я користувача на HTTP прокс╕"
+
+#: gui_common.c:2202
+msgid "FTP proxy user authentification"
+msgstr "Авторизац╕я користувача на FTP прокс╕"
+
+#: gui_common.c:2217
+msgid "Misc"
+msgstr "Р╕зне"
+
+#: gui_common.c:2231
+msgid "E-mail address: "
+msgstr "Поштова адреса: "
+
+#: gui_common.c:2233
+msgid "Send From: header with HTTP request"
+msgstr "Надсилати заголовок \"From:\" ╕з запитом HTTP"
+
+#: gui_common.c:2247
+msgid "SSL"
+msgstr ""
+
+#: gui_common.c:2250
+msgid "SSL client certificate"
+msgstr "SSL сертиф╕кат кл╕╓нта"
+
+#: gui_common.c:2260 gui_common.c:2274
+msgid "Certificate password: "
+msgstr "Пароль сертиф╕ката: "
+
+#: gui_common.c:2263
+msgid "Certificate PEM file: "
+msgstr "Файл сертиф╕ката PEM: "
+
+#: gui_common.c:2266
+msgid "Certificate key file: "
+msgstr "Ключовий файл сертиф╕ката: "
+
+#: gui_common.c:2271
+msgid "NSS certificate config directory: "
+msgstr ""
+
+#: gui_common.c:2277
+#, fuzzy
+msgid "Accept unknown certificates"
+msgstr "SSL сертиф╕кат кл╕╓нта"
+
+#: gui_common.c:2283
+msgid "Domestic SSL ciphers policy"
+msgstr ""
+
+#: gui_common.c:2291
+msgid "List of preffered ciphers: "
+msgstr "Список улюблених шифр╕в: "
+
+#: gui_common.c:2297
+msgid "SSL protocol version"
+msgstr "Верс╕я протокола SSL"
+
+#: gui_common.c:2305
+msgid "SSLv23"
+msgstr ""
+
+#: gui_common.c:2311
+msgid "SSLv2"
+msgstr ""
+
+#: gui_common.c:2317
+msgid "SSLv3"
+msgstr ""
+
+#: gui_common.c:2324
+msgid "TLSv1"
+msgstr ""
+
+#: gui_common.c:2331
+msgid "Miscelanous SSL settings"
+msgstr "Р╕зн╕ налаштування SSL"
+
+#: gui_common.c:2342
+msgid "EGD daemon socket path: "
+msgstr ""
+
+#: gui_common.c:2347
+msgid "Unique ID for all SSL sessions"
+msgstr "Ун╕кальний ID для кожно╖ сес╕╖ SSL"
+
+#: gui_common.c:2362 gui_main.c:1843
+msgid "Log"
+msgstr "Журнал"
+
+#: gui_common.c:2369
+msgid "Try to find unique name, when original log file locked"
+msgstr "Намагатися знайти ун╕кальне ╕м'я, коли вих╕дний журнал залоковано"
+
+#: gui_common.c:2374
+msgid "Log file: "
+msgstr "Файл журнала: "
+
+#: gui_common.c:2377
+msgid "Shortlog file: "
+msgstr "Файл скороченого журналу: "
+
+#: gui_common.c:2380
+msgid "Log window length: "
+msgstr "Довжина в╕кна журналу: "
+
+#: gui_common.c:2393
+msgid "Cookies"
+msgstr "Коржики"
+
+#: gui_common.c:2396
+msgid "Disabled cookie domains"
+msgstr "Заборонен╕ домени"
+
+#: gui_common.c:2401 gui_limits.c:263
+msgid "Domain: "
+msgstr "Домен: "
+
+#: gui_common.c:2404
+msgid "Cookies settings"
+msgstr "Налаштування коржик╕в"
+
+#: gui_common.c:2413
+msgid "Update cookies"
+msgstr "Поновлювати коржики"
+
+#: gui_common.c:2418
+msgid "Send cookies"
+msgstr "В╕ддавати коржики"
+
+#: gui_common.c:2423
+msgid "Accept cookies"
+msgstr "Брати коржики"
+
+#: gui_common.c:2428
+msgid "Check cookies domain"
+msgstr "Перев╕ряти домени"
+
+#: gui_common.c:2436
+msgid "Cookies maximal number: "
+msgstr "Максимальна к╕льк╕сть коржик╕в: "
+
+#: gui_common.c:2451
+msgid "Cookie file: "
+msgstr "Файл коржик╕в: "
+
+#: gui_common.c:2537
+msgid "Filename"
+msgstr "╤мена"
+
+#: gui_common.c:2540
+msgid "Local filename conversion rules"
+msgstr "М╕сцев╕ правила перейменування файл╕в"
+
+#: gui_common.c:2548
+msgid "Replace String1 with String2 in filename"
+msgstr "Зам╕няти Стр╕чку1 Стр╕чкою2 у ╕менах"
+
+#: gui_common.c:2557
+msgid "String1: "
+msgstr "Стр╕чка1: "
+
+#: gui_common.c:2560
+msgid "String2: "
+msgstr "Стр╕чка2: "
+
+#: gui_common.c:2562
+msgid "Delete characters from filename"
+msgstr "Видаляти символи з ╕мен"
+
+#: gui_common.c:2571
+msgid "Character set: "
+msgstr "Наб╕р символ╕в: "
+
+#: gui_common.c:2573
+msgid "Replace chars from Set1 with chars from Set2 in filename"
+msgstr "Зам╕няти символи з Ряду1 символами з Ряду2 у ╕менах"
+
+#: gui_common.c:2582
+msgid "Character set1: "
+msgstr "Ряд1: "
+
+#: gui_common.c:2585
+msgid "Character set2: "
+msgstr "Ряд2: "
+
+#: gui_common.c:2592
+msgid "Base level of tree: "
+msgstr "Базовий р╕вень дерева: "
+
+#: gui_common.c:2594
+msgid "Local filename mapping rules"
+msgstr "Правила мапування для локальних файл╕в"
+
+#: gui_common.c:2610
+msgid "Match pattern"
+msgstr "Шаблон"
+
+#: gui_common.c:2611
+msgid "Rule"
+msgstr "Правило"
+
+#: gui_common.c:2631
+msgid "wildcard pattern"
+msgstr "шаблони-маски"
+
+#: gui_common.c:2638
+msgid "RE pattern"
+msgstr "шаблони RE"
+
+#: gui_common.c:2650
+msgid "Matching pattern: "
+msgstr "Шаблон: "
+
+#: gui_common.c:2657
+msgid "Construction rule: "
+msgstr "Правило конструювання: "
+
+#: gui_common.c:2697
+msgid "Advertisement"
+msgstr "Баннери"
+
+#: gui_common.c:2704
+msgid "Enable removing of advertisement banners"
+msgstr "Дозволити видалення баннер╕в"
+
+#: gui_common.c:2709
+msgid "RE for advertisement URLs: "
+msgstr "RE для URL'╕в баннер╕в: "
+
+#: gui_common.c:2821
+msgid "Javascript"
+msgstr ""
+
+#: gui_common.c:2829
+msgid "Processing of javascript"
+msgstr "Опрацьовування javascript"
+
+#: gui_common.c:2833
+msgid "Javascript patterns"
+msgstr "Шаблони Javascript"
+
+#: gui_common.c:2838
+msgid "RE for Javascript patterns: "
+msgstr "RE для шаблон╕в Javascript: "
+
+#: gui_common.c:2844
+msgid "Javascript patterns with transform rules"
+msgstr "Шаблони Javascript з правилами трансформац╕╖"
+
+#: gui_common.c:2859
+msgid "Pattern"
+msgstr "Шаблон"
+
+#: gui_common.c:2860
+msgid "Transform rule"
+msgstr "Правило трансформац╕╖"
+
+#: gui_common.c:2861
+msgid "HTML tag"
+msgstr "HTML те╜"
+
+#: gui_common.c:2862
+msgid "HTML tag attribute"
+msgstr "Атрибут HTML те╜а"
+
+#: gui_common.c:2863
+msgid "Rewrite"
+msgstr ""
+
+#: gui_common.c:2882
+msgid "Pattern: "
+msgstr "Шаблон: "
+
+#: gui_common.c:2885
+msgid "Tranform rule: "
+msgstr "Правило трансформац╕╖: "
+
+#: gui_common.c:2894
+msgid "HTML tag: "
+msgstr "HTML те╜: "
+
+#: gui_common.c:2898
+msgid "HTML tag attribute: "
+msgstr "Атрибут HTML те╜а: "
+
+#: gui_common.c:2900
+msgid "Rewrite URL part in HTML document"
+msgstr "Переписувати URL у HTML документах"
+
+#: gui_common.c:2958
+msgid "Pavuk: Common config"
+msgstr "Павук: Загальна конф╕гурац╕я"
+
+#: gui_common.c:3027
+msgid "Limitations ..."
+msgstr "Обмеження ..."
+
+#: gui_jscons.c:151
+msgid "Pavuk: JavaScript console"
+msgstr "Павук: Консоль JavaScript"
+
+#: gui_jscons.c:168
+msgid "Reload script file"
+msgstr "Перечитати файл скрипта"
+
+#: gui_jscons.c:173
+msgid "Save script to file"
+msgstr "Зберегти скрипт до файла"
+
+#: gui_jscons.c:180
+msgid "Load script to JavaScript runtime"
+msgstr ""
+
+#: gui_jscons.c:185
+msgid "Restart JavaScript runtime"
+msgstr ""
+
+#: gui_jscons.c:208
+msgid "Prompt: "
+msgstr ""
+
+#: gui_jscons.c:221
+msgid "JavaScript source file: "
+msgstr "Вих╕дний файл JavaScript: "
+
+#: gui_limits.c:48
+msgid "Tree"
+msgstr "Дерево"
+
+#: gui_limits.c:60
+msgid "Download cgi-generated pages"
+msgstr "Витягати cgi-з╜енерован╕ стор╕нки"
+
+#: gui_limits.c:66
+msgid "Recurse through FTP directory"
+msgstr "Йти рекурсивно кр╕зь директор╕╖ FTP"
+
+#: gui_limits.c:72
+msgid "Allow \"robots.txt\""
+msgstr "Зважати на \"robots.txt\""
+
+#: gui_limits.c:78
+msgid "Process HTML files downloaded over FTP"
+msgstr "Опрацьовувати отриман╕ через FTP файли HTML"
+
+#: gui_limits.c:84
+msgid "Don't leave starting site"
+msgstr "Не полишати стартового сервера"
+
+#: gui_limits.c:90
+msgid "Don't leave starting directory"
+msgstr "Не полишати стартову директор╕ю"
+
+#: gui_limits.c:96
+msgid "Don't leave site enter directory"
+msgstr ""
+
+#: gui_limits.c:102
+msgid "Download just single page"
+msgstr "Витягти лише одну стор╕нку"
+
+#: gui_limits.c:108
+msgid "Apply limiting options on inline objects"
+msgstr ""
+
+#: gui_limits.c:123
+msgid "Max. count of documents: "
+msgstr "Макс. к╕льк╕сть документ╕в: "
+
+#: gui_limits.c:126
+msgid "Max. depth of tree: "
+msgstr "Макс. глибина дерева: "
+
+#: gui_limits.c:129
+msgid "Max. levels to leave from starting site: "
+msgstr ""
+
+#: gui_limits.c:132
+msgid "Max. document size: "
+msgstr "Макс. розм╕р документа: "
+
+#: gui_limits.c:135
+msgid "Min. document size: "
+msgstr "М╕н. розм╕р документа: "
+
+#: gui_limits.c:138
+msgid "Max. site levels to leave from starting site: "
+msgstr ""
+
+#: gui_limits.c:149
+msgid "Working subdirectory :"
+msgstr "Робоча директор╕я: "
+
+#: gui_limits.c:152
+msgid "User condition script: "
+msgstr ""
+
+#: gui_limits.c:155
+msgid "Follow command: "
+msgstr ""
+
+#: gui_limits.c:166
+msgid "Patterns"
+msgstr "Шаблони"
+
+#: gui_limits.c:169 gui_limits.c:609
+msgid "Wildcard patterns"
+msgstr "Шаблони з масками"
+
+#: gui_limits.c:178 gui_limits.c:205
+msgid "Documents matching pattern: "
+msgstr ""
+
+#: gui_limits.c:182 gui_limits.c:191 gui_limits.c:209 gui_limits.c:218
+#: gui_limits.c:283
+msgid "skip: "
+msgstr ""
+
+#: gui_limits.c:183 gui_limits.c:210
+msgid "Pavuk: edit Documents matching skip pattern"
+msgstr ""
+
+#: gui_limits.c:187 gui_limits.c:214
+msgid "URL matching pattern: "
+msgstr ""
+
+#: gui_limits.c:192 gui_limits.c:219
+msgid "Pavuk: edit URL matching skip pattern"
+msgstr ""
+
+#: gui_limits.c:196 gui_limits.c:615
+msgid "RE patterns"
+msgstr "Шаблони RE"
+
+#: gui_limits.c:231
+msgid "Hosts"
+msgstr "Сервери"
+
+#: gui_limits.c:240
+msgid "Allow / Disallow sites"
+msgstr "Дозволити / Заборонити сервер"
+
+#: gui_limits.c:246
+msgid "Site: "
+msgstr "Сервер: "
+
+#: gui_limits.c:257
+msgid "Allow / Disallow domains"
+msgstr "Дозволити / Заборонити домен"
+
+#: gui_limits.c:269
+msgid "IP address RE patterns"
+msgstr "Шаблони RE для адрес IP"
+
+#: gui_limits.c:279
+msgid "Server IP address matching pattern: "
+msgstr "Шаблони для адрес IP сервер╕в: "
+
+#: gui_limits.c:284
+#, fuzzy
+msgid "Pavuk: edit Server IP address matching skip pattern"
+msgstr "Шаблони для адрес IP сервер╕в: "
+
+#: gui_limits.c:288
+msgid "Server ports"
+msgstr "Порти сервера"
+
+#: gui_limits.c:298
+#, fuzzy
+msgid "Allow/deny"
+msgstr "Дозволити/Заборонити"
+
+#: gui_limits.c:303
+msgid "Ports: "
+msgstr "Порти: "
+
+#: gui_limits.c:314
+msgid "Documents"
+msgstr "Документи"
+
+#: gui_limits.c:323
+msgid "Allow / Disallow suffix"
+msgstr "Дозволити / Заборонити суф╕кс"
+
+#: gui_limits.c:329
+msgid "Suffix: "
+msgstr "Суф╕кс: "
+
+#: gui_limits.c:340
+msgid "Allow / Disallow prefix"
+msgstr "Дозволити / Заборонити преф╕кс"
+
+#: gui_limits.c:346
+msgid "Prefix: "
+msgstr "Преф╕кс: "
+
+#: gui_limits.c:360 gui_limits.c:372
+msgid "MIME types"
+msgstr "Типи MIME"
+
+#: gui_limits.c:368
+msgid "Allow / Disallow MIME type"
+msgstr "Дозволити / Заборонити типи MIME"
+
+#: gui_limits.c:377
+msgid "MIME type: "
+msgstr "Тип MIME: "
+
+#: gui_limits.c:390
+msgid "Time"
+msgstr "Час "
+
+#: gui_limits.c:396
+msgid "Lower document time limit"
+msgstr "Нижня межа в╕ку документа"
+
+#: gui_limits.c:406
+msgid "Check if doc. time newer than this"
+msgstr "Дивитися, чи документ нов╕ший н╕ж"
+
+#: gui_limits.c:410
+msgid "Upper document time limit"
+msgstr "Верхня межа в╕ку документа"
+
+#: gui_limits.c:420
+msgid "Check if doc. time older than this"
+msgstr "Дивитися, чи документ стар╕ший н╕ж"
+
+#: gui_limits.c:429
+msgid "Maximal allowed time of downloading: "
+msgstr "Найб╕льний дозволений час завантаження: "
+
+#: gui_limits.c:432
+msgid " min"
+msgstr " хв"
+
+#: gui_limits.c:445
+msgid "Select allowed HTML tags and attributes"
+msgstr "В╕дм╕тьте дозволен╕ теги та атрибути HTML"
+
+#: gui_limits.c:462
+#, c-format
+msgid "%s of %s"
+msgstr ""
+
+#: gui_limits.c:567
+#, fuzzy
+msgid "Tag patterns"
+msgstr "Шаблони RE"
+
+#: gui_limits.c:580 gui_limits.c:657
+#, fuzzy
+msgid "Tag pattern"
+msgstr "шаблони RE"
+
+#: gui_limits.c:581
+#, fuzzy
+msgid "Atrribute pattern"
+msgstr "Шаблони Javascript"
+
+#: gui_limits.c:582 gui_limits.c:665
+#, fuzzy
+msgid "URL pattern"
+msgstr "шаблони RE"
+
+#: gui_limits.c:597
+#, fuzzy
+msgid "Pattern type: "
+msgstr "Шаблон: "
+
+#: gui_limits.c:661
+#, fuzzy
+msgid "Attribute pattern"
+msgstr "Шаблони Javascript"
+
+#: gui_limits.c:721
+msgid "Pavuk: Limits config"
+msgstr "Павук: обмеження"
+
+#: gui_limits.c:776
+msgid "Common ..."
+msgstr "Загальн╕ ..."
+
+#: gui_main.c:186
+msgid "Unable to change language during processing time!\n"
+msgstr ""
+
+#: gui_main.c:398
+msgid "Unknown window to popup"
+msgstr ""
+
+#: gui_main.c:463
+#, c-format
+msgid "Fetched URL from clipboard : %s\n"
+msgstr "Витягнутий з кишен╕ URL : %s\n"
+
+#: gui_main.c:507
+#, c-format
+msgid "Fetched URL from browser : %s\n"
+msgstr "Витягнутий у переглядача URL : %s\n"
+
+#: gui_main.c:762
+msgid "Both"
+msgstr "╤конки та текст"
+
+#: gui_main.c:763
+msgid "Icons only"
+msgstr "Лише ╕конки"
+
+#: gui_main.c:764
+msgid "Text only"
+msgstr "Лише текст"
+
+#: gui_main.c:776
+msgid "Nr."
+msgstr ""
+
+#: gui_main.c:778
+msgid "Status"
+msgstr "Стан"
+
+#: gui_main.c:779
+msgid "Size"
+msgstr "Розм╕р"
+
+#: gui_main.c:780
+msgid "Transfer rate"
+msgstr "Швидк╕сть"
+
+#: gui_main.c:781
+msgid "Elapsed time"
+msgstr "Пройшло часу"
+
+#: gui_main.c:782
+msgid "Remaining time"
+msgstr "Лишилося часу"
+
+#: gui_main.c:922
+msgid "Open _URL ..."
+msgstr "В╕дкрити _URL ..."
+
+#: gui_main.c:935
+msgid "Append URL ..."
+msgstr "Додати URL ..."
+
+#: gui_main.c:944
+msgid "Fetch URL from Clipboard"
+msgstr "Взяти URL з кишен╕"
+
+#: gui_main.c:962
+msgid "Fetch URL from browser"
+msgstr "Взяти URL у переглядача"
+
+#: gui_main.c:972
+msgid "Load scenario ..."
+msgstr "Зчитати сценар╕й ..."
+
+#: gui_main.c:981
+msgid "Add scenario ..."
+msgstr "Додати сценар╕й ..."
+
+#: gui_main.c:990
+msgid "Save scenario ..."
+msgstr "Зберегти сценар╕й ..."
+
+#: gui_main.c:999
+msgid "Save settings to ~/.pavukrc"
+msgstr "Зберегти установки до  ~/.pavukrc"
+
+#: gui_main.c:1012
+msgid "Schedule ..."
+msgstr "Розклад ..."
+
+#: gui_main.c:1021
+msgid "Auth. info editor ..."
+msgstr "Редактор Auth. info ..."
+
+#: gui_main.c:1034
+msgid "E_xit"
+msgstr "Ви_x╕д"
+
+#: gui_main.c:1043
+msgid "_File"
+msgstr "Файл(_F)"
+
+#: gui_main.c:1057
+msgid "Document _Tree ..."
+msgstr "Дерево докумен_t╕в ..."
+
+#: gui_main.c:1066
+msgid "Status page ..."
+msgstr "Перегляд стану ..."
+
+#: gui_main.c:1074
+msgid "HTML forms editor ..."
+msgstr "Редактор форм HTML ..."
+
+#: gui_main.c:1083
+msgid "Javascript console ..."
+msgstr "Консоль Javascript ..."
+
+#: gui_main.c:1096
+msgid "Clear log window"
+msgstr "Очистити в╕кно журналу"
+
+#: gui_main.c:1105
+msgid "_View"
+msgstr "Вигляд(_V)"
+
+#: gui_main.c:1121
+msgid "normal recurse"
+msgstr "звичайне викачування"
+
+#: gui_main.c:1131
+msgid "synchronize"
+msgstr "синхрон╕зувати"
+
+#: gui_main.c:1142
+msgid "single page"
+msgstr "одна стор╕нка"
+
+#: gui_main.c:1152
+msgid "update local links"
+msgstr "поновити локальн╕ посилання"
+
+#: gui_main.c:1162
+msgid "resume files"
+msgstr "перевитягти файли"
+
+#: gui_main.c:1172
+msgid "unlimited reget"
+msgstr "необмежене дотягування"
+
+#: gui_main.c:1182
+msgid "transfer but don't store"
+msgstr "тягти, не збер╕гаючи"
+
+#: gui_main.c:1192
+msgid "reminder"
+msgstr "нагадувач"
+
+#: gui_main.c:1202
+msgid "list ftp directory"
+msgstr "список ftp директор╕╖"
+
+#: gui_main.c:1212
+msgid "_Mode"
+msgstr "Режим(_M)"
+
+#: gui_main.c:1228
+msgid "C_ommon ..."
+msgstr "Загальн╕ (_C) ..."
+
+#: gui_main.c:1237
+msgid "_Limitations ..."
+msgstr "Обмеження (_L) ..."
+
+#: gui_main.c:1246
+msgid "Reset configuration"
+msgstr "В╕дновити конф╕╜урац╕ю"
+
+#: gui_main.c:1260
+msgid "Toolbar"
+msgstr "Панель ╕нструмент╕в"
+
+#: gui_main.c:1268
+msgid "Toggle toolbar"
+msgstr "Перемикнути панель ╕нструмент╕в"
+
+#: gui_main.c:1323
+msgid "Progressbar"
+msgstr "Панель поступу"
+
+#: gui_main.c:1354
+msgid "Language"
+msgstr "Мова"
+
+#: gui_main.c:1363 nls.c:33
+msgid "English"
+msgstr ""
+
+#: gui_main.c:1405
+msgid "Debug level"
+msgstr "Р╕вень в╕дладки"
+
+#: gui_main.c:1428
+msgid "All"
+msgstr "Все"
+
+#: gui_main.c:1435
+msgid "None"
+msgstr "Н╕чого"
+
+#: gui_main.c:1442
+msgid "Debug"
+msgstr "В╕дладка"
+
+#: gui_main.c:1458
+msgid "Allow tooltips"
+msgstr "Дозволити п╕дказки"
+
+#: gui_main.c:1468
+msgid "Log window autoscroll"
+msgstr "Автоматична прокрутка журналу"
+
+#: gui_main.c:1477
+msgid "Use preferences"
+msgstr "Використовувати уподобання"
+
+#: gui_main.c:1486
+msgid "Quiet"
+msgstr "Працювати мовчки"
+
+#: gui_main.c:1498
+msgid "Immediate messages"
+msgstr "Негайн╕ пов╕домлення"
+
+#: gui_main.c:1510
+msgid "_Config"
+msgstr "Параметри(_С)"
+
+#: gui_main.c:1524
+msgid "_Restart"
+msgstr "Перезапуск (_R)"
+
+#: gui_main.c:1534
+msgid "Co_ntinue"
+msgstr "Продовжити (_N)"
+
+#: gui_main.c:1544
+msgid "Sto_p"
+msgstr "Зупинитися (_P)"
+
+#: gui_main.c:1554
+msgid "_Break"
+msgstr "Урвати (_B)"
+
+#: gui_main.c:1564
+msgid "_Action"
+msgstr "Д╕╖(_A)"
+
+#: gui_main.c:1582
+msgid "About ..."
+msgstr "Про ..."
+
+#: gui_main.c:1591
+msgid "_Help"
+msgstr "Допомога(_H)"
+
+#: gui_main.c:1617
+msgid "Config"
+msgstr "Конф╕╜урац╕я"
+
+#: gui_main.c:1618
+msgid "Popup config window"
+msgstr "Вигульку╓ в╕кно конф╕╜урування"
+
+#: gui_main.c:1622
+msgid "Limits"
+msgstr "Меж╕"
+
+#: gui_main.c:1623
+msgid "Popup limits window"
+msgstr "Вигульку╓ в╕кно конф╕╜урування обмежень"
+
+#: gui_main.c:1629
+msgid "Go bg"
+msgstr "У п╕дп╕лля"
+
+#: gui_main.c:1630
+msgid "Destroy window as soon as posible and continue on terminal"
+msgstr "Знищити це в╕кно якнайшвидше та продовжити у терм╕нал╕"
+
+#: gui_main.c:1634 gui_main.c:1704
+msgid "Restart"
+msgstr "Перезапуск"
+
+#: gui_main.c:1635
+msgid "Start working on currently set starting URLs"
+msgstr "Почати роботу з╕ списком стартових URL"
+
+#: gui_main.c:1639 gui_main.c:1709
+msgid "Continue"
+msgstr "Дал╕"
+
+#: gui_main.c:1640
+msgid "Continue after stop or break"
+msgstr "Продовжити п╕сля зупинки чи уривання"
+
+#: gui_main.c:1646 gui_main.c:1714
+msgid "Stop"
+msgstr "Зупинитися"
+
+#: gui_main.c:1647
+msgid "Finish this transfer and stop"
+msgstr "Зак╕нчити цей трансфер та зупинитися"
+
+#: gui_main.c:1651 gui_main.c:1719
+msgid "Break"
+msgstr "Урвати"
+
+#: gui_main.c:1652
+msgid "Break transfer and stop"
+msgstr "Урвати трансфер та зупинитися"
+
+#: gui_main.c:1658
+msgid "Exit"
+msgstr "Вих╕д"
+
+#: gui_main.c:1659
+msgid "Immediately quit the program"
+msgstr "Негайно вийти з програми"
+
+#: gui_main.c:1724
+msgid "Show whole main window"
+msgstr "Показати головне в╕кно повн╕стю"
+
+#: gui_main.c:1729
+msgid "Quit"
+msgstr "Вийти"
+
+#: gui_main.c:1808
+msgid "Pavuk: save log"
+msgstr "Павук: зберегти журнал"
+
+#: gui_main.c:1864
+msgid "Select all"
+msgstr "Вид╕лити все"
+
+#: gui_main.c:1872
+msgid "Clear selection"
+msgstr "Зтерти вид╕лення"
+
+#: gui_main.c:1880
+msgid "Copy selection"
+msgstr "Коп╕ювати вид╕лення"
+
+#: gui_main.c:1892
+msgid "Save log ..."
+msgstr "Зберегти журнал..."
+
+#: gui_main.c:1899
+msgid "Clear log"
+msgstr "Очистити журнал"
+
+#: gui_main.c:1974 gui_main.c:2088
+msgid "Processed:       "
+msgstr "Оброблено:        "
+
+#: gui_main.c:1983 gui_main.c:2097
+msgid "Failed:       "
+msgstr "Невдач:       "
+
+#: gui_main.c:1992 gui_main.c:2106
+msgid "Queued:       "
+msgstr "У черз╕:      "
+
+#: gui_main.c:2001 gui_main.c:2115
+msgid "Rejected:       "
+msgstr "В╕дкинуто:      "
+
+#: gui_main.c:2047
+msgid "S:                     "
+msgstr ""
+
+#: gui_main.c:2056
+msgid "R:          "
+msgstr ""
+
+#: gui_main.c:2065
+msgid "ET:          "
+msgstr ""
+
+#: gui_main.c:2074
+msgid "RT:          "
+msgstr ""
+
+#: gui_scenario.c:48
+msgid "Pavuk: Scenario saver"
+msgstr "Павук: Збер╕гач сценар╕╖в"
+
+#: gui_scenario.c:140
+msgid "Pavuk: Scenario loader"
+msgstr "Павук: Завантажувач сценар╕╖в"
+
+#: gui_scenario.c:231
+msgid "Pavuk: Scenario add"
+msgstr "Павук: Додати сценар╕й"
+
+#: gui_sched.c:44 pavuk.c:495
+msgid "Error scheduling\n"
+msgstr "Помилка роботи за розкладом\n"
+
+#: gui_sched.c:68
+msgid "Pavuk: Scheduler"
+msgstr ""
+
+#: gui_sched.c:87
+msgid "Scheduling command: "
+msgstr ""
+
+#: gui_sched.c:97
+msgid "Reschedule after "
+msgstr ""
+
+#: gui_sched.c:107
+msgid " hours"
+msgstr " годин"
+
+#: gui_tools.c:54
+msgid "Time: "
+msgstr "Час: "
+
+#: gui_tools.c:63
+msgid " : "
+msgstr " : "
+
+#: gui_tools.c:249
+#, fuzzy, c-format
+msgid "Pavuk: edit %s"
+msgstr "Павук: вибер╕ть %s"
+
+#: gui_tools.c:250
+msgid "entry"
+msgstr ""
+
+#: gui_tools.c:396
+#, fuzzy
+msgid "Edit ..."
+msgstr "Виходимо ..."
+
+#: gui_tools.c:453
+#, c-format
+msgid "Pavuk: select %s"
+msgstr "Павук: вибер╕ть %s"
+
+#: gui_tools.c:454
+msgid "file"
+msgstr "файл"
+
+#: gui_tools.c:552
+msgid "Browse ..."
+msgstr "Проглянути ..."
+
+#: gui_tree.c:104
+#, c-format
+msgid "URL: %s\n"
+msgstr ""
+
+#: gui_tree.c:117 gui_tree.c:123 gui_tree.c:162
+msgid "Request type: "
+msgstr "Тип запиту: "
+
+#: gui_tree.c:138
+msgid "Query values:\n"
+msgstr ""
+
+#: gui_tree.c:168
+msgid "Status: "
+msgstr "Стан: "
+
+#: gui_tree.c:174
+msgid "not processed yet\n"
+msgstr "ще не опрацьовано\n"
+
+#: gui_tree.c:180
+msgid "loaded from NS cache\n"
+msgstr "завантажено з кеша NS\n"
+
+#: gui_tree.c:186
+msgid "loaded from local URL tree\n"
+msgstr "завантажено з локального дерева URL\n"
+
+#: gui_tree.c:192
+msgid "moved to another URL\n"
+msgstr "перем╕щено до ╕ншого URL\n"
+
+#: gui_tree.c:198
+msgid "URL not found on remote server\n"
+msgstr "URL не знайдено на в╕ддаленому сервер╕\n"
+
+#: gui_tree.c:204
+msgid "truncated\n"
+msgstr "ус╕чено\n"
+
+#: gui_tree.c:210
+msgid "downloaded OK\n"
+msgstr "витягнуто OK\n"
+
+#: gui_tree.c:216
+msgid "rejected by rules\n"
+msgstr "в╕дкинуто за правилами\n"
+
+#: gui_tree.c:222
+msgid "disabled by user\n"
+msgstr "заборонено користувачем\n"
+
+#: gui_tree.c:228
+msgid "probably recoverable error\n"
+msgstr ""
+
+#: gui_tree.c:234
+msgid "unrecoverable error\n"
+msgstr ""
+
+#: gui_tree.c:240
+msgid "unknown\n"
+msgstr "нев╕домий\n"
+
+#: gui_tree.c:250
+#, c-format
+msgid "Moved to URL: %s\n"
+msgstr "Перем╕щено до URL: %s\n"
+
+#: gui_tree.c:260
+#, c-format
+msgid "Type: %s\n"
+msgstr "Тип: %s\n"
+
+#: gui_tree.c:262
+msgid "Type: unknown\n"
+msgstr "Тип: нев╕домий\n"
+
+#: gui_tree.c:268
+#, c-format
+msgid "Size: %d\n"
+msgstr "Розм╕р: %d\n"
+
+#: gui_tree.c:277
+msgid "Modification time: %a, %d %b %Y %H:%M:%S %Z\n"
+msgstr "Востанн╓ зм╕нено: %a, %d %b %Y %H:%M:%S %Z\n"
+
+#: gui_tree.c:287
+#, c-format
+msgid "Local filename: %s\n"
+msgstr "Локальне ╕м'я файла: %s\n"
+
+#: gui_tree.c:298
+msgid "Parent URLs:\n"
+msgstr "Батьк╕вськ╕ URL'╕:\n"
+
+#: gui_tree.c:565
+msgid "Pavuk: Store tree"
+msgstr "Павук: Збереження дерева"
+
+#: gui_tree.c:607 gui_tree.c:631
+msgid "Pavuk: URL tree preview"
+msgstr "Павук: Перегляд дерева URL"
+
+#: gui_tree.c:609 gui_tree.c:715
+msgid "Store tree ..."
+msgstr "Збереження дерева ..."
+
+#: gui_tree.c:610 gui_tree.c:649
+msgid "Automaticaly watch last processed URLs"
+msgstr "Автоматично передивлятися останн╕й оброблений URL"
+
+#: gui_tree.c:611 gui_tree.c:742
+msgid "Properties"
+msgstr "Властивост╕"
+
+#: gui_tree.c:612 gui_tree.c:750
+msgid "Launch browser"
+msgstr "Запустити переглядача"
+
+#: gui_tree.c:613 gui_tree.c:758
+msgid "Disable URL"
+msgstr "Заборонити URL"
+
+#: gui_tree.c:614 gui_tree.c:766
+msgid "Enable URL"
+msgstr "Дозволити URL"
+
+#: gui_tree.c:615 gui_tree.c:774
+msgid "Download URL"
+msgstr "Витягти URL"
+
+#: gui_tree.c:618 gui_tree.c:668
+msgid "URL tree"
+msgstr "Дерево URL"
+
+#: html.c:253 htmlparser.c:254
+#, c-format
+msgid "Unsupported BASE URL -  %s (probably bad handled)\n"
+msgstr ""
+
+#: html.c:533
+msgid "Can't work on directory\n"
+msgstr "Не можу працювати з директор╕╓ю\n"
+
+#: html.c:559 html.c:563
+msgid "rewrite parent"
+msgstr ""
+
+#: http.c:366
+msgid "****************** Proxy connect request *****************\n"
+msgstr "****************** Запит Proxy connect *****************\n"
+
+#: http.c:413
+msgid "***************** Proxy connect response *****************\n"
+msgstr "***************** В╕дгук Proxy connect *****************\n"
+
+#: http.c:469
+msgid "Sending request ..."
+msgstr "Надсила╓мо запит ..."
+
+#: http.c:716
+msgid "************ Client HTTP MIME header ***************\n"
+msgstr ""
+
+#: http.c:733
+msgid "Sending data ..."
+msgstr "Надсила╓мо дан╕ ..."
+
+#: http.c:734
+msgid "************ HTTP request data ***************\n"
+msgstr "************ Дан╕ запиту HTTP ***************\n"
+
+#: http.c:744
+msgid "Waiting for response ..."
+msgstr "Чека╓мо в╕дгуку ..."
+
+#: http.c:759
+msgid "Error reading HTTP 1xx class response\n"
+msgstr ""
+
+#: http.c:764
+msgid "***************** class 1xx HTTP response ****************\n"
+msgstr ""
+
+#: http.c:874
+msgid "Connecting ..."
+msgstr "З'╓дну╓мося ..."
+
+#: http.c:1164
+msgid "*********** HTTP Server response MIME header **********\n"
+msgstr ""
+
+#: http.c:1267
+msgid "Regeting whole file\n"
+msgstr "Тягнемо увесь файл знову\n"
+
+#: http.c:1317
+#, c-format
+msgid "Unexpected response \"%d %s\" when trying to reget!\n"
+msgstr ""
+
+#: http_proxy.c:153
+#, fuzzy, c-format
+msgid "Checking HTTP proxy server %s:%hu\n"
+msgstr "Перев╕ря╓мо HTTP прокс╕ сервер %s:%d\n"
+
+#: http_proxy.c:165 http_proxy.c:177 http_proxy.c:184 http_proxy.c:193
+msgid "Failed to check proxy !\n"
+msgstr "Зб╕й перев╕рки прокс╕ !\n"
+
+#: http_proxy.c:199
+#, fuzzy, c-format
+msgid "Proxy %s:%hu is HTTP/%d.%d proxy\n"
+msgstr "Сервер %s:%d ╓ HTTP/%d.%d прокс╕ сервером\n"
+
+#: jsbind.c:77
+msgid "bad parameter"
+msgstr "нев╕рний параметер"
+
+#: jsbind.c:555
+msgid "not enough parameters"
+msgstr "замало параметр╕в"
+
+#: jsbind.c:579
+msgid "unknown limiting condition"
+msgstr "нев╕дома умова обмежень"
+
+#: lfname.c:478 lfname.c:490 lfname.c:499 lfname.c:512 lfname.c:535
+#: lfname.c:644 lfname.c:657 lfname.c:669 lfname.c:684 lfname.c:697 re.c:51
+#: re.c:61 re.c:68 re.c:80 re.c:95
+#, c-format
+msgid "Error compiling regular expression : %s\n"
+msgstr "Помилка комп╕ляц╕╖ регулярного виразу : %s\n"
+
+#: lfname.c:552 lfname.c:616 lfname.c:938 lfname.c:1056
+#, c-format
+msgid "LSP analyze error: bad token at - %s\n"
+msgstr ""
+
+#: lfname.c:949
+#, c-format
+msgid "LSP analyze error: bad numeric value at - %s\n"
+msgstr ""
+
+#: lfname.c:963
+#, c-format
+msgid "LSP analyze error: bad macro at - %s\n"
+msgstr ""
+
+#: lfname.c:991
+#, c-format
+msgid "LSP analyze error: unterminated string at - %s\n"
+msgstr ""
+
+#: lfname.c:1012 lfname.c:1028 lfname.c:1046
+#, c-format
+msgid "LSP analyze error: bad parameter type at - %s\n"
+msgstr ""
+
+#: log.c:204
+msgid "Ending log : %H:%M:%S %d.%m.%Y\n"
+msgstr "Журнал закрито : %H:%M:%S %d.%m.%Y\n"
+
+#: log.c:225
+msgid "Unable to open log file - disabling logging\n"
+msgstr "Неможливо в╕дкрити файл журналу - забороня╓мо журналювання\n"
+
+#: log.c:233
+msgid "Log file is locked by another process - "
+msgstr "Файл журналу залоковано ╕ншим процесом - "
+
+#: log.c:237
+msgid "generating new log filename\n"
+msgstr "╜енеру╓мо нове ╕м'я файла журналу\n"
+
+#: log.c:242
+msgid "disabling logging\n"
+msgstr "забороня╓мо журналювання\n"
+
+#: log.c:264
+msgid "Starting log : %H:%M:%S %d.%m.%Y\n"
+msgstr "Журнал почато : %H:%M:%S %d.%m.%Y\n"
+
+#: mozcache.c:179
+#, c-format
+msgid "Unable to open Mozilla cache index - %s\n"
+msgstr "Неможливо в╕дкрити ╕ндекс кеша Моз╕лли - %s\n"
+
+#: mozcache.c:287
+#, fuzzy, c-format
+msgid "Error opening cache index file %s\n"
+msgstr "Неможливо в╕дкрити ╕ндекс кеша Моз╕лли - %s\n"
+
+#: mozcache.c:305
+msgid "Mozilla new cache map file format not recognized"
+msgstr ""
+
+#: mozcache.c:357 mozcache.c:367
+msgid "Corrupted Mozilla cache blockfile!"
+msgstr ""
+
+#: mozcache.c:468
+msgid "Corrupted Mozilla cache map file!"
+msgstr ""
+
+#: myssl_nss.c:319
+msgid "NSS_Init: Unable to open cert database"
+msgstr ""
+
+#: myssl_nss.c:541
+#, fuzzy, c-format
+msgid "SSL connect failure - %s\n"
+msgstr "З'╓днання SSL використову╓ %s\n"
+
+#: myssl_nss.c:576
+#, fuzzy, c-format
+msgid "SSL error - %s\n"
+msgstr "Нев╕дома верс╕я SSL - \"%s\"\n"
+
+#: myssl_openssl.c:140
+msgid "Failed obtaining entropy pathname\n"
+msgstr ""
+
+#: myssl_openssl.c:150
+msgid "Failed to initialize random seed for OpenSSL via EGD daemon\n"
+msgstr ""
+
+#: myssl_openssl.c:161
+msgid "Seeding entropy pool INSECURELY!\n"
+msgstr ""
+
+#: myssl_openssl.c:276
+msgid "Unable to set certificate file (wrong password?)\n"
+msgstr "Неможливо зад╕яти файл сертиф╕кату (нев╕рний пароль?)\n"
+
+#: myssl_openssl.c:287
+msgid "Unable to set public key file\n"
+msgstr "Неможливо зад╕яти файл публ╕чного ключа\n"
+
+#: myssl_openssl.c:304
+msgid "Private key does not match the certificate public key\n"
+msgstr "Приватний ключ не в╕дпов╕да╓ публ╕чному ключев╕ сертиф╕кату\n"
+
+#: nls.c:24
+msgid "Czech"
+msgstr ""
+
+#: nls.c:25
+msgid "German"
+msgstr ""
+
+#: nls.c:26
+msgid "Spanish"
+msgstr ""
+
+#: nls.c:27
+msgid "French"
+msgstr ""
+
+#: nls.c:28
+msgid "Italian"
+msgstr ""
+
+#: nls.c:29
+msgid "Japanese"
+msgstr ""
+
+#: nls.c:30
+msgid "Polish"
+msgstr ""
+
+#: nls.c:31
+msgid "Slovak"
+msgstr ""
+
+#: nls.c:32
+msgid "Ukrainian"
+msgstr ""
+
+#: nscache.c:106
+#, c-format
+msgid "Unable to open Netscape cache index - %s\n"
+msgstr "Неможливо в╕дкрити ╕ндекс кеша Netscape - %s\n"
+
+#: ntlm_auth.c:471
+msgid "Trying to do NTLM authorization\n"
+msgstr "Намага╓мося пройти авторизац╕ю NTLM\n"
+
+#: ntlm_auth.c:480 ntlm_auth.c:561 ntlm_auth.c:642 ntlm_auth.c:722
+msgid "NTLM authorization supported only on persistent connections!\n"
+msgstr ""
+
+#: ntlm_auth.c:503 ntlm_auth.c:664
+msgid "Not enough data for NTLM authorization!\n"
+msgstr "Недостатньо даних для авторизац╕╖ NTLM!\n"
+
+#: ntlm_auth.c:504 ntlm_auth.c:665
+msgid "Missing:\n"
+msgstr "Нема╓:\n"
+
+#: ntlm_auth.c:505 ntlm_auth.c:666
+msgid "       domain\n"
+msgstr "       домен\n"
+
+#: ntlm_auth.c:506 ntlm_auth.c:667
+msgid "       username\n"
+msgstr "       користувач\n"
+
+#: ntlm_auth.c:507 ntlm_auth.c:668
+msgid "       password\n"
+msgstr "       пароль\n"
+
+#: ntlm_auth.c:508 ntlm_auth.c:669
+msgid "       local hostname\n"
+msgstr "       ╕м'я локально╖ машини\n"
+
+#: ntlm_auth.c:544 ntlm_auth.c:552 ntlm_auth.c:577 ntlm_auth.c:705
+#: ntlm_auth.c:713 ntlm_auth.c:738
+msgid "Got unexpected response\n"
+msgstr "Отримано неоч╕куваного в╕дгука\n"
+
+#: ntlm_auth.c:587
+msgid "Failed NTLM nonce negotiation\n"
+msgstr ""
+
+#: ntlm_auth.c:629
+msgid "Trying to do proxy NTLM authorization\n"
+msgstr "Намага╓мося пройти авторизац╕ю proxy NTLM\n"
+
+#: ntlm_auth.c:748
+msgid "Failed NTLM proxy nonce negotiation\n"
+msgstr ""
+
+#: options.h:193
+msgid "\t-v                 - print version number\n"
+msgstr "\t-v                 - надрукувати номер верс╕╖\n"
+
+#: options.h:204
+msgid "\t-h                 - help\n"
+msgstr "\t-h                 - допомога\n"
+
+#: options.h:218
+msgid "\t-X                 - start GUI interface\n"
+msgstr "\t-X                 - запустити з ╕нтерфейсом GUI\n"
+
+#: options.h:249
+msgid ""
+"\t-runX              - after start of GUI interface, immediately\n"
+"\t                     start processing of entered URLs\n"
+msgstr ""
+"\t-runX              - негайно п╕сля запуску ╕нтерфейса GUI interface\n"
+"\t                     почати опрацьовування введених URL'╕в\n"
+
+#: options.h:265
+msgid "\t-prefs/-noprefs    - load preferences from ~/.pavuk_prefs file\n"
+msgstr "\t-prefs/-noprefs    - чи завантажувати установки з ~/.pavuk_prefs\n"
+
+#: options.h:494
+msgid ""
+"\t-progress/-noprogress\n"
+"\t                   - show retrieving progress while running on terminal\n"
+msgstr ""
+"\t-progress/-noprogress\n"
+"\t                   - показувати поступ п╕д час роботи у терм╕нал╕\n"
+
+#: options.h:517
+msgid "\t-lmax $nr          - allowed depth of tree\n"
+msgstr "\t-lmax $nr          - дозволена глибина дерева\n"
+
+#: options.h:528
+msgid "\t-dmax $nr          - maximal number of downloaded documents\n"
+msgstr "\t-dmax $nr          - максимальна к╕льк╕сть завантажених документ╕в\n"
+
+#: options.h:539
+msgid ""
+"\t-sleep $nr         - sleep for $nr seconds between transfers,\n"
+"\t                     default 0 seconds\n"
+msgstr ""
+"\t-sleep $nr         - спати $nr секунд м╕ж завантаженнями,\n"
+"\t                     якщо не вказано -  0 секунд\n"
+
+#: options.h:551
+msgid ""
+"\t-rsleep/-norsleep  - randomize sleeping time between transfers\n"
+"\t                     from 0 to -sleep time\n"
+msgstr ""
+"\t-rsleep/-norsleep  - випадкова тривал╕сть сну м╕ж завантаженнями\n"
+"\t                     в╕д 0 до часу у -sleep\n"
+
+#: options.h:574
+msgid "\t-retry $nr         - number of retries if anything failed\n"
+msgstr "\t-retry $nr         - к╕льк╕сть спроб у раз╕ якихось збо╖в\n"
+
+#: options.h:585
+msgid "\t-nregets $nr       - max number of regets on single file, default 2\n"
+msgstr ""
+"\t-nregets $nr       - макс. к╕льк╕сть завантажувань окремого файла,\n"
+"\t                     default 2\n"
+
+#: options.h:596
+msgid ""
+"\t-nredirs $nr       - max number of followed HTTP redirections, default 5\n"
+msgstr ""
+"\t-nredirs $nr       - макс. к╕льк╕сть перенаправлень HTTP, default 5\n"
+
+#: options.h:607
+msgid ""
+"\t-timeout $nr       - timeout for network communications (min).\n"
+"\t                     0 == no timeout, default = 0\n"
+msgstr ""
+"\t-timeout $nr       - таймаут для мережевих операц╕й (хв).\n"
+"\t                     0 == без таймаута, якщо не вказано = 0\n"
+
+#: options.h:619
+msgid ""
+"\t-rollback $nr      - number of bytes to discard (counted from end\n"
+"\t                     of file) if regetting, default 0\n"
+msgstr ""
+"\t-rollback $nr      - ск╕льки байт╕в в╕дкидати (з к╕нця файла)\n"
+"\t                     при перезавантажуванн╕, якщо не вказано - 0\n"
+
+#: options.h:632
+msgid ""
+"\t-ddays $nr         - number of days since last access when document is\n"
+"\t                     checked in sync mode\n"
+msgstr ""
+"\t-ddays $nr         - к╕льк╕сть дн╕в п╕сля останнього доступа, якщо\n"
+"\t                     документ перев╕ря╓ться у режим╕ синхрон╕зац╕╖ (sync)\n"
+
+#: options.h:644
+msgid ""
+"\t-nocache/-cache    - disallow caching of HTTP documents (on proxy cache)\n"
+msgstr ""
+"\t-nocache/-cache    - дозв╕л на кешування HTTP документ╕в (у кеш╕ прокс╕)\n"
+
+#: options.h:666
+msgid "\t-noRobots/-Robots  - care about \"robots.txt\" file ?\n"
+msgstr "\t-noRobots/-Robots  - чи зважати на файл \"robots.txt\" ?\n"
+
+#: options.h:688
+msgid "\t-noFTP/-FTP        - don't download FTP files\n"
+msgstr "\t-noFTP/-FTP        - чи витягати файли FTP\n"
+
+#: options.h:710
+msgid "\t-noHTTP/-HTTP      - don't download HTTP files\n"
+msgstr "\t-noHTTP/-HTTP      - чи витягати файли HTTP\n"
+
+#: options.h:735
+msgid "\t-noSSL/-SSL        - don't download (HTTPS) SSL files\n"
+msgstr "\t-noSSL/-SSL        - чи витягати файли (HTTPS) SSL\n"
+
+#: options.h:765
+msgid "\t-noFTPS/-FTPS      - don't download FTPS files\n"
+msgstr "\t-noFTPS/-FTPS      - чи витягати файли FTPS\n"
+
+#: options.h:792
+msgid "\t-noGopher/-Gopher  - download Gopher files ?\n"
+msgstr "\t-noGopher/-Gopher  - чи витягати файли Gopher ?\n"
+
+#: options.h:814
+msgid "\t-noCGI/-CGI        - download parametric CGI pages ?\n"
+msgstr "\t-noCGI/-CGI        - чи витягати стор╕нки CGI з параметрами\n"
+
+#: options.h:836
+msgid "\t-noEnc/-Enc        - allow transfer of encoded files ?\n"
+msgstr "\t-noEnc/-Enc        - чи дозволяти трансфер закодованих файл╕в\n"
+
+#: options.h:858
+msgid ""
+"\t-noRelocate/-Relocate\n"
+"\t                   - don't rewrite links\n"
+msgstr ""
+"\t-noRelocate/-Relocate\n"
+"\t                   - чи переписувати посилання\n"
+
+#: options.h:881
+msgid ""
+"\t-FTPhtml/-noFTPhtml\n"
+"\t                   - process HTML files downloaded over FTP\n"
+msgstr ""
+"\t-FTPhtml/-noFTPhtml\n"
+"\t                   - чи опрацьовувати отриман╕ через FTP файли HTML\n"
+
+#: options.h:904
+msgid ""
+"\t-FTPlist/-noFTPlist\n"
+"\t                   - use wide FTP directory listing\n"
+msgstr ""
+"\t-FTPlist/-noFTPlist\n"
+"\t                   - чи використовувати широкий список FTP директор╕й\n"
+
+#: options.h:927
+msgid "\t-FTPdir/-noFTPdir  - recurse FTP directory\n"
+msgstr "\t-FTPdir/-noFTPdir  - чи йти рекурсивно кр╕зь директор╕╖ FTP\n"
+
+#: options.h:949
+msgid ""
+"\t-store_index/-nostore_index\n"
+"\t                   - store directory URLs as index files\n"
+msgstr ""
+"\t-store_index/-nostore_index\n"
+"\t                   - чи збер╕гати URL'╕ директор╕й як ╕ндексн╕ файли\n"
+
+#: options.h:972
+msgid ""
+"\t-force_reget/-noforce_reget\n"
+"\t                   - force reget of whole file when server doesn't\n"
+"\t                     support reget\n"
+msgstr ""
+"\t-force_reget/-noforce_reget\n"
+"\t                   - форсувати викачування всього файла, якщо сервер\n"
+"\t                     не п╕дтриму╓ reget\n"
+
+#: options.h:1000
+msgid "\t-debug             - turn on debug mode\n"
+msgstr "\t-debug             - ув╕мкнути режим в╕дладки\n"
+
+#: options.h:1030
+msgid ""
+"\t-debug_level $l    - debug level number, see manual for $l description\n"
+msgstr ""
+"\t-debug_level $l    - р╕вень режиму в╕дладки, див. опис $l у дов╕днику\n"
+
+#: options.h:1042
+msgid "\t-asite $list       - comma-separated list of allowed sites\n"
+msgstr "\t-asite $list       - список дозволених сервер╕в, розд╕лений комами\n"
+
+#: options.h:1053
+msgid "\t-dsite $list       - comma-separated list of disallowed sites\n"
+msgstr ""
+"\t-dsite $list       - список заборонених сервер╕в, розд╕лений комами\n"
+
+#: options.h:1064
+msgid "\t-adomain $list     - list of allowed domains\n"
+msgstr "\t-adomain $list     - список дозволених домен╕в\n"
+
+#: options.h:1075
+msgid "\t-ddomain $list     - list of disallowed domains\n"
+msgstr "\t-ddomain $list     - список заборонених домен╕в\n"
+
+#: options.h:1086
+msgid "\t-aprefix $list     - list of allowed directory/file prefixes\n"
+msgstr "\t-aprefix $list     - список дозволених преф╕кс╕в директор╕й/файл╕в\n"
+
+#: options.h:1097
+msgid "\t-dprefix $list     - list of disallowed directory/file prefixes\n"
+msgstr ""
+"\t-dprefix $list     - список заборонених преф╕кс╕в директор╕й/файл╕в\n"
+
+#: options.h:1108
+msgid "\t-asfx $list        - list of allowed suffixes\n"
+msgstr "\t-asfx $list        - список дозволених суф╕кс╕в\n"
+
+#: options.h:1119
+msgid "\t-dsfx $list        - list of disallowed suffixes\n"
+msgstr "\t-dsfx $list        - список заборонених суф╕кс╕в\n"
+
+#: options.h:1130
+msgid "\t-amimet $list      - list of alloved MIME types\n"
+msgstr "\t-amimet $list      - список дозволених тип╕в MIME\n"
+
+#: options.h:1141
+msgid "\t-dmimet $list      - list of disallowed MIME types\n"
+msgstr "\t-dmimet $list      - список заборонених тип╕в MIME\n"
+
+#: options.h:1152
+msgid "\t-alang $list       - list of preferred languages (only via HTTP)\n"
+msgstr "\t-alang $list       - список улюблених мов (лише через HTTP)\n"
+
+#: options.h:1163
+msgid ""
+"\t-acharset $list    - list of preferred character sets (only via HTTP)\n"
+msgstr ""
+"\t-acharset $list    - список улюблених набор╕в символ╕в (лише через HTTP)\n"
+
+#: options.h:1174
+msgid ""
+"\t-scndir $dir       - directory ,where are stored your scenarios\n"
+"\t                     (config files)\n"
+msgstr ""
+"\t-scndir $dir       - директор╕я, де збережен╕ Ваш╕ сценар╕╖\n"
+"\t                     (файли конф╕╜урац╕╖)\n"
+
+#: options.h:1186
+msgid "\t-cdir $dir         - directory for storing documents\n"
+msgstr "\t-cdir $dir         - директор╕я для збер╕гання документ╕в\n"
+
+#: options.h:1197
+msgid "\t-subdir $dir       - subdirectory of cdir to operate on\n"
+msgstr "\t-subdir $dir       - п╕ддиректор╕я, до яко╖ перейти перед роботою\n"
+
+#: options.h:1208
+msgid ""
+"\t-scenario $str     - name of scenario from scenario directory to load\n"
+"\t                     and or run\n"
+msgstr ""
+"\t-scenario $str     - ╕м'я сценар╕я з директор╕╖ сценар╕╖в, який треба\n"
+"\t                     завантажити та виконати\n"
+
+#: options.h:1220
+msgid ""
+"\t-auth_scheme 1/2/3 - HTTP authorization scheme 1-user 2-Basic 3-Digest,\n"
+"\t                     default 2\n"
+msgstr ""
+"\t-auth_scheme 1/2/3 - схема авторизац╕╖ HTTP (1-user 2-Basic 3-Digest),\n"
+"\t                     якщо не вказано - 2\n"
+
+#: options.h:1232
+msgid "\t-auth_name $str    - name for Authorization (only via HTTP)\n"
+msgstr "\t-auth_name $str    - ╕м'я для авторизац╕╖ (лише через HTTP)\n"
+
+#: options.h:1243
+msgid "\t-auth_passwd $str  - password for Authorization (only via HTTP)\n"
+msgstr "\t-auth_passwd $str  - пароль для авторизац╕╖ (лише через HTTP)\n"
+
+#: options.h:1254
+msgid ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - reuse one HTTP digest access authorization\n"
+"\t                     nonce for more requests\n"
+msgstr ""
+
+#: options.h:1278
+msgid ""
+"\t-auth_reuse_proxy_nonce/-noauth_reuse_proxy_nonce\n"
+"\t                   - reuse one HTTP proxy digest access\n"
+"\t                     authorization nonce for more requests\n"
+msgstr ""
+
+#: options.h:1305
+msgid ""
+"\t-ssl_cert_passwd $str\n"
+"\t                   - password for SSL certification file\n"
+msgstr ""
+"\t-ssl_cert_passwd $str\n"
+"\t                   - пароль для файла сертиф╕ката SSL\n"
+
+#: options.h:1321
+msgid ""
+"\t-ssl_cert_file $str\n"
+"\t                   - SSL certification file\n"
+msgstr ""
+"\t-ssl_cert_file $str\n"
+"\t                   - файл сертиф╕ката SSL\n"
+
+#: options.h:1337
+msgid "\t-ssl_key_file $str - SSL certification key file\n"
+msgstr "\t-ssl_key_file $str - файл ключа сертиф╕ката SSL\n"
+
+#: options.h:1352
+msgid ""
+"\t-ssl_cipher_list $str\n"
+"\t                   - list of prefered SSL ciphers in SSL communication\n"
+msgstr ""
+
+#: options.h:1368
+msgid "\t-egd_socket $file  - path to EGD listening socket\n"
+msgstr ""
+
+#: options.h:1380
+msgid "\t-from $str         - e-mail address used for user identification\n"
+msgstr ""
+"\t-from $str         - поштова адреса, що використову╓ться для "
+"╕дентиф╕кац╕╖\n"
+
+#: options.h:1391
+msgid ""
+"\t-send_from/-nosend_from\n"
+"\t                   - send From: header in HTTP request with your\n"
+"\t                     e-mail address\n"
+msgstr ""
+"\t-send_from/-nosend_from\n"
+"\t                   - чи надсилати поле \"From:\" у запит╕ HTTP з Вашою\n"
+"\t                     поштовою адресою\n"
+
+#: options.h:1415
+msgid "\t-identity $str     - contents of User-agent: field in HTTP request\n"
+msgstr "\t-identity $str     - значення поля \"User-agent:\" у запитах HTTP\n"
+
+#: options.h:1426
+msgid "\t-pattern $list     - list of wildcard patterns for files\n"
+msgstr "\t-pattern $list     - список шаблон╕в з масками для файл╕в\n"
+
+#: options.h:1440
+msgid "\t-rpattern $re      - RE matching pattern for files\n"
+msgstr "\t-rpattern $re      - шаблони з RE для файл╕в\n"
+
+#: options.h:1452
+msgid ""
+"\t-skip_pattern $list\n"
+"\t                   - list of skip wildcard patterns for files\n"
+msgstr ""
+
+#: options.h:1467
+msgid ""
+"\t-skip_rpattern $re\n"
+"\t                   - skip RE matching pattern for files\n"
+msgstr ""
+
+#: options.h:1480
+msgid "\t-url_pattern $list - list of wildcard patterns for urls\n"
+msgstr "\t-url_pattern $list - список шаблон╕в з масками для URL'╕в\n"
+
+#: options.h:1494
+msgid "\t-url_rpattern $re  - RE matching pattern for urls\n"
+msgstr "\t-url_rpattern $re  - список RE шаблон╕в для URL'╕в\n"
+
+#: options.h:1506
+msgid ""
+"\t-skip_url_pattern $list\n"
+"\t                   - list of wildcard patterns for urls\n"
+msgstr ""
+
+#: options.h:1521
+msgid ""
+"\t-skip_url_rpattern $re\n"
+"\t                   - RE matching patterns for urls\n"
+msgstr ""
+
+#: options.h:1534
+msgid ""
+"\t-mode $mode        - set operation mode\n"
+"\t                         normal - recurse throught WWW (default)\n"
+"\t                         linkupdate - update remote links in local tree\n"
+"\t                         sync - synchronize local tree with remote WWW\n"
+"\t                                servers\n"
+"\t                         singlepage - single page with inline objects\n"
+"\t                         singlereget - reget file until not whole\n"
+"\t                         resumeregets - reget all files which are broken\n"
+"\t                         dontstore - transfer documents, but don't store\n"
+"\t                         reminder - checks URLs if they are changed\n"
+"\t                         ftpdir - list content of FTP directory\n"
+msgstr ""
+"\t-mode $mode        - встановити режим роботи\n"
+"\t                         normal - йти кр╕зь WWW (default)\n"
+"\t                         linkupdate - поновити посилання у локальн. "
+"дерев╕\n"
+"\t                         sync - синхрон╕зувати локальне дерево з WWW\n"
+"\t                                серверами\n"
+"\t                         singlepage - ╓дина стор╕нка та ╖╖ об'╓кти\n"
+"\t                         singlereget - тягти файл, доки не витягнеться\n"
+"\t                         resumeregets - тягти ус╕ недовитягнут╕ файли\n"
+"\t                         dontstore - тягти документи, та не збер╕гати\n"
+"\t                         reminder - перев╕рити, чи не зм╕нилися URL'╕\n"
+"\t                         ftpdir - створити список директор╕╖ FTP\n"
+
+#: options.h:1555
+msgid ""
+"\t-ftp_proxy $site[:$port]\n"
+"\t                   - ftp proxy/cache server\n"
+msgstr ""
+"\t-ftp_proxy $site[:$port]\n"
+"\t                   - ftp прокс╕/кеш сервер\n"
+
+#: options.h:1567
+msgid ""
+"\t-http_proxy $site[:$port]\n"
+"\t                   - http proxy/cache server\n"
+msgstr ""
+"\t-http_proxy $site[:$port]\n"
+"\t                   - http прокс╕/кеш сервер\n"
+
+#: options.h:1579
+msgid ""
+"\t-gopher_proxy $site[:$port]\n"
+"\t                   - gopher proxy/cache server\n"
+msgstr ""
+"\t-gopher_proxy $site[:$port]\n"
+"\t                   - gopher прокс╕/кеш сервер\n"
+
+#: options.h:1594
+msgid ""
+"\t-ssl_proxy $site[:$port]\n"
+"\t                   - ssl proxy server\n"
+msgstr ""
+"\t-ssl_proxy $site[:$port]\n"
+"\t                   - ssl прокс╕ сервер\n"
+
+#: options.h:1607
+msgid ""
+"\t-gopher_httpgw/-nogopher_httpgw\n"
+"\t                   - specified gopher proxy is HTTP gateway for Gopher\n"
+msgstr ""
+"\t-gopher_httpgw/-nogopher_httpgw\n"
+"\t                   - вказаний gopher прокс╕ ╓ шлюзом HTTP до Gopher\n"
+
+#: options.h:1631
+msgid ""
+"\t-ftp_httpgw/-noftp_httpgw\n"
+"\t                   - specified ftp proxy is HTTP gateway for FTP\n"
+msgstr ""
+"\t-ftp_httpgw/-noftp_httpgw\n"
+"\t                   - вказаний ftp прокс╕ ╓ шлюзом HTTP до FTP\n"
+
+#: options.h:1655
+msgid ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - use CONNECT request to HTTP proxy for FTP\n"
+"\t                     connections\n"
+msgstr ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - використовувати запит CONNECT до HTTP прокс╕\n"
+"\t                     для з'╓днань FTP\n"
+
+#: options.h:1682
+msgid "\t-browser $str      - your preferred browser programm\n"
+msgstr "\t-browser $str      - Ваша улюблена програма перегляду WWW\n"
+
+#: options.h:1697
+msgid "\t-xmaxlog           - maximal length of log window\n"
+msgstr "\t-xmaxlog           - максимальна довжина в╕кна дурналу\n"
+
+#: options.h:1709
+msgid "\t-dumpscn $str      - save scenario in scndir with name $str\n"
+msgstr ""
+"\t-dumpscn $str      - зберегти сценар╕й у вказан╕й директор╕╖ з ╕м'ям $str\n"
+
+#: options.h:1720
+msgid "\t-maxsize $nr       - maximal allowed size of document in bytes\n"
+msgstr ""
+"\t-maxsize $nr       - максимальний дозволений розм╕р документа у байтах\n"
+
+#: options.h:1731
+msgid "\t-minsize $nr       - minimal allowed size of document in bytes\n"
+msgstr ""
+"\t-minsize $nr       - м╕н╕мальний дозволений розм╕р документа у байтах\n"
+
+#: options.h:1742
+msgid ""
+"\t-http_proxy_pass $str\n"
+"\t                   - password for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_pass $str\n"
+"\t                   - пароль для авторизац╕╖ на HTTP прокс╕\n"
+
+#: options.h:1754
+msgid ""
+"\t-http_proxy_user $str\n"
+"\t                   - user name for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - ╕м'я для авторизац╕╖ на HTTP прокс╕\n"
+
+#: options.h:1766
+msgid ""
+"\t-http_proxy_auth 1/2/3\n"
+"\t                   - authorization scheme for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_auth 1/2/3\n"
+"\t                   - схема авторизац╕╖ на HTTP прокс╕\n"
+
+#: options.h:1778
+msgid "\t-logfile $file     - name of file where mesages are stored\n"
+msgstr "\t-logfile $file     - ╕м'я файла, у якому збер╕гати пов╕домлення\n"
+
+#: options.h:1789
+msgid "\t-slogfile $file    - name of file where short log will be stored\n"
+msgstr "\t-slogfile $file    - ╕м'я файла для запису скороченого журналу\n"
+
+#: options.h:1800
+msgid "\t-stime/-nostime    - write starting and ending time of transfer\n"
+msgstr ""
+"\t-stime/-nostime    - чи записувати час початку та к╕нця завантажування\n"
+
+#: options.h:1822
+msgid ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - remove improper files or directories while running\n"
+"\t                     in sync mode\n"
+msgstr ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - чи видаляти неактуальн╕ файли чи директор╕╖, "
+"працюючи\n"
+"\t                     у режим╕ синхрон╕зац╕╖\n"
+
+#: options.h:1847
+msgid ""
+"\t-auth_file $file   - file where you have stored your auth infos\n"
+"\t                     see manual for format description\n"
+msgstr ""
+"\t-auth_file $file   - файл ╕з авторизац╕йною ╕нформац╕╓ю\n"
+"\t                     опис формату див. у дов╕днику\n"
+
+#: options.h:1859
+msgid ""
+"\t-base_level $nr    - number of levels of directory tree to omit from top\n"
+msgstr ""
+"\t-base_level $nr    - пропустити $nr р╕вн╕в дерева директор╕й з вершини\n"
+
+#: options.h:1870
+msgid "\t-ftp_active        - select active FTP data connection\n"
+msgstr "\t-ftp_active        - вибрати активний тип з'╓днання для FTP data\n"
+
+#: options.h:1881
+msgid "\t-ftp_passive       - select passive FTP data connection\n"
+msgstr "\t-ftp_passive       - вибрати пасивний тип з'╓днання для FTP data\n"
+
+#: options.h:1895
+msgid "\t-msgcat $dir       - directory where message catalogs are stored\n"
+msgstr "\t-msgcat $dir       - директор╕я з каталогами пов╕домлень\n"
+
+#: options.h:1910
+msgid "\t-language $str     - set language for messages\n"
+msgstr "\t-language $str     - встановити мову пов╕домлень\n"
+
+#: options.h:1922
+msgid "\t-quiet             - don't show output messages\n"
+msgstr "\t-quiet             - працювати мовчки\n"
+
+#: options.h:1933
+msgid "\t-verbose           - show output messages (default)\n"
+msgstr "\t-verbose           - показувати робоч╕ пов╕домлення (default)\n"
+
+#: options.h:1944
+msgid ""
+"\t-newer_than $time  - download only documents newer than $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-newer_than $time  - завантажувати лише нов╕ш╕ н╕ж $time документи\n"
+"\t                     формат $time: YYYY.MM.DD.hh:mm\n"
+
+#: options.h:1956
+msgid ""
+"\t-older_than $time  - download only documents older than $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-older_than $time  - завантажувати лише стар╕ш╕ н╕ж $time документи\n"
+"\t                     формат $time: YYYY.MM.DD.hh:mm\n"
+
+#: options.h:1968
+msgid ""
+"\t-schedule $time    - schedule pavuk start at $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+
+#: options.h:1980
+msgid ""
+"\t-reschedule $nr    - number of hours between two runs\n"
+"\t                     for cyclic scheduling\n"
+msgstr ""
+
+#: options.h:1992
+msgid ""
+"\t-dont_leave_site/-leave_site\n"
+"\t                   - don't/leave site of starting URL\n"
+msgstr ""
+"\t-dont_leave_site/-leave_site\n"
+"\t                   - чи можна полишати сервер стартового URL\n"
+
+#: options.h:2015
+msgid ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - don't/leave directory of starting URL\n"
+msgstr ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - чи можна полишати директор╕ю стартового URL\n"
+
+#: options.h:2038
+msgid ""
+"\t-preserve_time/-nopreserve_time\n"
+"\t                   - preserve document modification time\n"
+msgstr ""
+"\t-preserve_time/-nopreserve_time\n"
+"\t                   - чи збер╕гати час модиф╕кац╕╖ документа\n"
+
+#: options.h:2061
+msgid ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - preserve document permissions\n"
+msgstr ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - чи збер╕гати права доступу документа\n"
+
+#: options.h:2084
+msgid ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - preserve absolute symlinks\n"
+msgstr ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - чи збер╕гати абсолютн╕ символьн╕ посилання\n"
+
+#: options.h:2107
+msgid ""
+"\t-leave_level $nr   - how many tree levels leave from starting\n"
+"\t                     site , (0 == don't care) default 0\n"
+msgstr ""
+"\t-leave_level $nr   - ск╕льки р╕вн╕в дерева пройти в╕д стартового сервера\n"
+"\t                     (0 == ск╕льки завгодно), якщо не вказано - 0\n"
+
+#: options.h:2119
+msgid "\t-cookie_file $file - file where are stored cookie infos\n"
+msgstr "\t-cookie_file $file - файл, де збережено ╕нформац╕ю про коржики\n"
+
+#: options.h:2130
+msgid ""
+"\t-cookie_send/-nocookie_send\n"
+"\t                   - send cookie info in HTTP request\n"
+msgstr ""
+"\t-cookie_send/-nocookie_send\n"
+"\t                   - чи надсилати коржики у запитах HTTP\n"
+
+#: options.h:2153
+msgid ""
+"\t-cookie_recv/-nocookie_recv\n"
+"\t                   - accept cookies from HTTP response\n"
+msgstr ""
+"\t-cookie_recv/-nocookie_recv\n"
+"\t                   - чи брати коржики ╕з в╕дгук╕в HTTP\n"
+
+#: options.h:2176
+msgid ""
+"\t-cookie_update/-nocookie_update\n"
+"\t                   - update cookies in cookies file\n"
+msgstr ""
+"\t-cookie_update/-nocookie_update\n"
+"\t                   - чи поновлювати коржики у файл╕ корж╕в\n"
+
+#: options.h:2199
+msgid ""
+"\t-cookie_check/-nocookie_check\n"
+"\t                   - check if cookies are set for source domain\n"
+msgstr ""
+
+#: options.h:2222
+msgid "\t-cookies_max $nr   - maximal number of cookies in cookie cache\n"
+msgstr "\t-cookies_max $nr   - максимальна к╕льк╕сть коржик╕в у кеш╕\n"
+
+#: options.h:2233
+msgid ""
+"\t-disabled_cookie_domains $list\n"
+"\t                   - comma-separated list of disabled cookie domains\n"
+msgstr ""
+"\t-disabled_cookie_domains $list\n"
+"\t                   - розд╕лений комами список заборонених домен╕в "
+"коржик╕в\n"
+
+#: options.h:2245
+msgid ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - disable processing of URLs from\n"
+"\t                     attribute $ATTRIB of HTML tag $TAG\n"
+msgstr ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - заборонити опрацьовування URL'╕в\n"
+"\t                     в╕д атрибута $ATTRIB те╜а HTML $TAG\n"
+
+#: options.h:2258
+msgid ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - enable proccessing of URLs from\n"
+"\t                     attribute $ATTRIB of HTML tag $TAG\n"
+msgstr ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - дозволити опрацьовування URL'╕в\n"
+"\t                     в╕д атрибута $ATTRIB те╜а HTML $TAG\n"
+
+#: options.h:2274
+msgid "\t-gui_font $font    - font name used in GUI interface\n"
+msgstr "\t-gui_font $font    - ╕м'я шрифта для GUI ╕нтерфейса\n"
+
+#: options.h:2286
+msgid ""
+"\t-user_condition $str\n"
+"\t                   - user exit script used to restrict some URLs\n"
+"\t                     for more informations see manpage\n"
+msgstr ""
+
+#: options.h:2299
+msgid ""
+"\t-tr_del_chr $str   - characters that will be deleted from\n"
+"\t                     local filename\n"
+msgstr ""
+"\t-tr_del_chr $str   - символи, що мають бути видален╕\n"
+"\t                     з локальних ╕мен файл╕в\n"
+
+#: options.h:2311
+msgid ""
+"\t-tr_str_str $str1 $str2\n"
+"\t                   - translate $str1 to $str2 in local filename\n"
+msgstr ""
+"\t-tr_str_str $str1 $str2\n"
+"\t                   - зам╕няти $str1 на $str2 у локальних ╕менах\n"
+
+#: options.h:2323
+msgid ""
+"\t-tr_chr_chr $chrset1 $chrset2\n"
+"\t                   - translate $chrset1 to $chrset2 in local filename\n"
+msgstr ""
+"\t-tr_chr_chr $chrset1 $chrset2\n"
+"\t                   - зам╕няти $chrset1 на $chrset2 у локальних ╕менах\n"
+
+#: options.h:2335
+msgid "\t-index_name $str   - name of directory index instead of _._.html\n"
+msgstr "\t-index_name $str   - ╕м'я ╕ндексу директор╕й зам╕сть _._.html\n"
+
+#: options.h:2346
+msgid "\t-store_name $str   - filename for first downloaded document\n"
+msgstr "\t-store_name $str   - ╕м'я файла для списку завантажених документ╕в\n"
+
+#: options.h:2368
+msgid ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - compare received size of file with\n"
+"\t                     that provided by remote server\n"
+msgstr ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - чи пор╕внювати розм╕р отриманого файла\n"
+"\t                     з розм╕ром, указаним сервером\n"
+
+#: options.h:2392
+msgid ""
+"\t-urls_file $file   - URLs should be read from file, until\n"
+"\t                     line with single \".\" occurs in input\n"
+msgstr ""
+"\t-urls_file $file   - треба зчитувати URL'╕ з файла, доки не зустр╕неться\n"
+"\t                     стр╕чка лише з ╓диним символом \".\"\n"
+
+#: options.h:2404
+msgid ""
+"\t-bg/-nobg          - detach pavuk proces from terminal and\n"
+"\t                     don't output any messages on screen\n"
+msgstr ""
+"\t-bg/-nobg          - в╕д'╓днати павука в╕д терм╕налу та\n"
+"\t                     не видавати жодних пов╕домлень\n"
+
+#: options.h:2427
+msgid "\t-maxrate $nr       - limit to maximal speed of transfer (kB/s)\n"
+msgstr "\t-maxrate $nr       - обмежити максимальну швидк╕сть (кБ/с)\n"
+
+#: options.h:2438
+msgid "\t-minrate $nr       - limit to minimal speed of transfer (kB/s)\n"
+msgstr "\t-minrate $nr       - обмежити м╕н╕мальну швидк╕сть (кБ/с)\n"
+
+#: options.h:2449
+msgid "\t-bufsize $nr       - size of read buffer (kB)\n"
+msgstr "\t-bufsize $nr       - розм╕р буфера зчитування (kБ)\n"
+
+#: options.h:2460
+msgid "\t-file_quota $nr    - maximal size of file to transfer (kB)\n"
+msgstr "\t-file_quota $nr    - максимальний розм╕р файла (кБ)\n"
+
+#: options.h:2471
+msgid "\t-trans_quota $nr   - maximal amount of transfer per session (kB)\n"
+msgstr "\t-trans_quota $nr   - максимальний об'╓м даних протягом сес╕╖ (кБ)\n"
+
+#: options.h:2482
+msgid "\t-fs_quota $nr      - disk free space quota (kB)\n"
+msgstr "\t-fs_quota $nr      - залишок в╕льного м╕сця на диску (кБ)\n"
+
+#: options.h:2493
+msgid ""
+"\t-enable_js/-disable_js\n"
+"\t                   - enable downloading of javascript source files\n"
+msgstr ""
+"\t-enable_js/-disable_js\n"
+"\t                   - чи витягати файли вих╕дних текст╕в javascript\n"
+
+#: options.h:2516
+msgid ""
+"\t-fnrules $t $m $r  - local filename construction rules\n"
+"\t                     (for better description see manual)\n"
+msgstr ""
+"\t-fnrules $t $m $r  - правила конструювання локальних ╕мен файл╕в\n"
+"\t                     (див. дов╕дник для детальн╕шого опису)\n"
+
+#: options.h:2528
+msgid ""
+"\t-store_info/-nostore_info\n"
+"\t                   - store document info files with each document\n"
+msgstr ""
+
+#: options.h:2551
+msgid ""
+"\t-all_to_local/-noall_to_local\n"
+"\t                   - change all links inside HTML document to\n"
+"\t                     local immediately after download\n"
+msgstr ""
+"\t-all_to_local/-noall_to_local\n"
+"\t                   - чи переписувати ус╕ посилання у HTML на локальн╕\n"
+"\t                     негайно п╕сля витягання\n"
+
+#: options.h:2575
+msgid ""
+"\t-sel_to_local/-nosel_to_local\n"
+"\t                   - change all links inside HTML document\n"
+"\t                     which acomplish the limits, to\n"
+"\t                     local immediately after download\n"
+msgstr ""
+"\t-sel_to_local/-nosel_to_local\n"
+"\t                   - чи переписувати ус╕ посилання у HTML,\n"
+"\t                     що в╕дпов╕дають обмеженням,\n"
+"\t                     на локальн╕ негайно п╕сля витягання\n"
+
+#: options.h:2600
+msgid ""
+"\t-all_to_remote/-noall_to_remote\n"
+"\t                   - change all links inside HTML document to\n"
+"\t                     remote immediately after download and\n"
+"\t                     don't do any further changes to it\n"
+msgstr ""
+
+#: options.h:2625
+msgid "\t-remind_cmd $str   - command which sends result from reminder mode\n"
+msgstr ""
+"\t-remind_cmd $str   - команда надсилання результат╕в у режим╕ нагадувача\n"
+
+#: options.h:2636
+msgid ""
+"\t-auto_referer/-noauto_referer\n"
+"\t                   - in HTTP request send for each starting URL\n"
+"\t                     Referer: field which contains its own URL\n"
+msgstr ""
+"\t-auto_referer/-noauto_referer\n"
+"\t                   - чи використовувати власний URL у пол╕ \"Referer:\" "
+"запиту\n"
+"\t                     для стартового URL\n"
+
+#: options.h:2660
+msgid ""
+"\t-url_strategy $strategy\n"
+"\t                   - scheduling strategy for URLs\n"
+"\t                     (this means order how URLs will be downloaded)\n"
+"\t                     $strategy is one of :\n"
+"\t                        level  - level order in URL tree\n"
+"\t                        leveli - level order in URL tree,\n"
+"\t                                 but inline objects go first\n"
+"\t                        pre    - pre-order in URL tree\n"
+"\t                        prei   - pre-order in URL tree,\n"
+"\t                                 but inline objects go first\n"
+msgstr ""
+"\t-url_strategy $strategy\n"
+"\t                   - стратег╕я розкладу витягання URL'╕в\n"
+"\t                     (порядок, у якому URL'╕ буде завантажено)\n"
+"\t                     $strategy може бути одна з :\n"
+"\t                        level  - як у дерев╕ URL'╕в\n"
+"\t                        leveli - як у дерев╕ URL'╕в,\n"
+"\t                                 але inline об'╓кти спочатку\n"
+"\t                        pre    - pre-order in URL tree\n"
+"\t                        prei   - pre-order in URL tree,\n"
+"\t                                 але inline об'╓кти спочатку\n"
+
+#: options.h:2683
+msgid "\t-nscache_dir $dir  - path to Netcape browser cache directory\n"
+msgstr "\t-nscache_dir $dir  - шлях до директор╕╖ кеша переглядача Netscape\n"
+
+#: options.h:2698
+msgid "\t-ie_cache          - allow loading of files from MSIE browser cache\n"
+msgstr "\t-ie_cache          - дозволити завантаження файл╕в з кеша MSIE\n"
+
+#: options.h:2728
+msgid ""
+"\t-remove_adv/-noremove_adv\n"
+"\t                   - enable removing of advertisement banners\n"
+"\t                     assumes you have setup regular expresions\n"
+"\t                     for matching adv banners with -adv_re option\n"
+msgstr ""
+"\t-remove_adv/-noremove_adv\n"
+"\t                   - чи видаляти банери\n"
+"\t                     Ви ма╓те встановити регулярн╕ вирази для\n"
+"\t                     виявлення банер╕в опц╕╓ю -adv_re\n"
+
+#: options.h:2761
+msgid ""
+"\t-adv_re $RE        - regular expressions for matching advertisement\n"
+"\t                     banner URLs\n"
+msgstr ""
+"\t-adv_re $RE        - регулярн╕ вирази для виявлення\n"
+"\t                     URL'╕в банер╕в\n"
+
+#: options.h:2777
+msgid ""
+"\t-check_bg/-nocheck_bg\n"
+"\t                   - if running at background, don't write any\n"
+"\t                     messages to screen\n"
+msgstr ""
+"\t-check_bg/-nocheck_bg\n"
+"\t                   - працюючи у п╕дп╕лл╕, не писати жодних\n"
+"\t                     пов╕домлень на екран╕\n"
+
+#: options.h:2806
+msgid ""
+"\t-send_if_range/-nosend_if_range\n"
+"\t                   - send If-Range header in HTTP request\n"
+"\t                     turn this of when server support reget, but\n"
+"\t                     generates different Etags for two requests\n"
+msgstr ""
+"\t-send_if_range/-nosend_if_range\n"
+"\t                   - чи надсилати поле If-Range у заголовках запит╕в HTTP\n"
+"\t                     Не використовуйте, якщо сервер п╕дтриму╓ дотягування\n"
+"\t                     але ╜енеру╓ р╕зн╕ Etags для двох запит╕в\n"
+
+#: options.h:2831
+msgid "\t-sched_cmd $str    - command for scheduling\n"
+msgstr "\t-sched_cmd $str    - команда призначання розкладу роботи\n"
+
+#: options.h:2842
+msgid ""
+"\t-unique_log/-nounique_log\n"
+"\t                   - when original log file locked try to find other\n"
+"\t                     with numbering extension which is not locked\n"
+msgstr ""
+
+#: options.h:2866
+msgid ""
+"\t-post_cmd $str     - postprocessing command, which will be invoked\n"
+"\t                     after document will be successfully downloaded\n"
+msgstr ""
+"\t-post_cmd $str     - команда по зак╕нченню роботи, запуска╓ться\n"
+"\t                     п╕сля вдалого завантаження документа\n"
+
+#: options.h:2882
+msgid ""
+"\t-ssl_version $v    - version of SSL protocol used for communication,\n"
+"\t                     valid values: ssl23,ssl2,ssl3,tls1\n"
+msgstr ""
+"\t-ssl_version $v    - верс╕я протокола SSL,\n"
+"\t                     дозволен╕ значення: ssl23,ssl2,ssl3,tls1\n"
+
+#: options.h:2885
+msgid ""
+"\t-ssl_version $v    - version of SSL protocol used for communication,\n"
+"\t                     valid values: ssl23,ssl2,ssl3\n"
+msgstr ""
+"\t-ssl_version $v    - верс╕я протокола SSL,\n"
+"\t                     дозволен╕ значення: ssl23,ssl2,ssl3\n"
+
+#: options.h:2903
+msgid ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - use unique SSL ID with each SSL session\n"
+msgstr ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - чи використовувати ун╕кальний ID для кожно╖ SSL "
+"сес╕╖\n"
+
+#: options.h:2931
+msgid "\t-httpad $hdr       - additional HTTP header\n"
+msgstr "\t-httpad $hdr       - додатковий заголовок HTTP\n"
+
+#: options.h:2942
+msgid "\t-statfile $str     - statistical report from downloading progress\n"
+msgstr "\t-statfile $str     - статистичний зв╕т поступу завантаження\n"
+
+#: options.h:2956
+msgid ""
+"\t-ewait             - wait to finish program after downloading progress\n"
+"\t                     is done\n"
+msgstr ""
+"\t-ewait             - чекати завершення програми по зак╕нченню\n"
+"\t                     завантаження\n"
+
+#: options.h:2987
+msgid "\t-aip_pattern $re   - pattern for allowed IP addresses of servers\n"
+msgstr "\t-aip_pattern $re   - шаблон для дозволених адрес IP сервер╕в\n"
+
+#: options.h:3002
+msgid "\t-dip_pattern $re   - pattern for disallowed IP addresses of servers\n"
+msgstr "\t-dip_pattern $re   - шаблон для заборонених адрес IP сервер╕в\n"
+
+#: options.h:3014
+msgid ""
+"\t-site_level $nr    - maximum allowed number of sites to leave from\n"
+"\t                     starting site\n"
+msgstr ""
+"\t-site_level $nr    - максимальна к╕льк╕сть переход╕в ╕з сервера на "
+"сервер,\n"
+"\t                     починаючи в╕д стартового\n"
+
+#: options.h:3026
+msgid ""
+"\t-use_http11/-nouse_http11\n"
+"\t                   - enable or disable using of HTTP/1.1 protocol\n"
+"\t                     features, default is off now\n"
+msgstr ""
+"\t-use_http11/-nouse_http11\n"
+"\t                   - чи дозволити використання протоколу HTTP/1.1,\n"
+"\t                     якщо не вказано - заборонити\n"
+
+#: options.h:3050
+msgid ""
+"\t-max_time $nr      - set maximal amount of time for program run\n"
+"\t                     in minutes, default 0 == no limit\n"
+"\t                     you can use floating point numbers, to\n"
+"\t                     specify subminute times\n"
+msgstr ""
+"\t-max_time $nr      - встановити максимальний час роботи програми\n"
+"\t                     у хвилинах, якщо не вказано - 0 == без обмеження,\n"
+"\t                     можна використовувати нец╕л╕ значення\n"
+
+#: options.h:3065
+msgid ""
+"\t-local_ip $str     - use this local ip address of network interface.\n"
+"\t                     This option is for multihomed machines.\n"
+msgstr ""
+"\t-local_ip $str     - використовувати вказану локальну IP адресу.\n"
+"\t                     Ця опц╕я - для машин з к╕лькома адресами.\n"
+
+#: options.h:3077
+msgid ""
+"\t-request $req      - extended request informations, used to specify\n"
+"\t                     information for GET or POST requests.\n"
+"\t                     format of $req :\n"
+"\t                     \"URL:$url METHOD:[GET|POST] ENCODING:[m|u]\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\n"
+"\t                       LNAME:$local_filename\"\n"
+"\t                     (for more informations see manual page)\n"
+msgstr ""
+
+#: options.h:3095
+msgid ""
+"\t-hash_size $nr     - size of internal hash tables for performance tuning\n"
+msgstr ""
+"\t-hash_size $nr     - розм╕р внутр╕шн╕х hash-таблиць (вплива╓ на "
+"швидк╕сть)\n"
+
+#: options.h:3109
+msgid "\t-nthreads $nr      - set number of concurent downloading threads\n"
+msgstr ""
+"\t-nthreads $nr      - вказати к╕льк╕сть паралельних поток╕в завантажування\n"
+
+#: options.h:3124
+msgid ""
+"\t-immesg/-noimmesg  - write messages immediately after produced, not\n"
+"\t                     just when safe (from MT point of view)\n"
+msgstr ""
+
+#: options.h:3152
+msgid ""
+"\t-formdata $data    - used to specify HTML form fields, for HTML\n"
+"\t                     forms found during traversing document tree.\n"
+"\t                     Only forms mentiond in this option will be\n"
+"\t                     processed automaticaly.\n"
+"\t                     \"URL:$url\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\"\n"
+"\t                     (for more informations see manual page)\n"
+msgstr ""
+"\t-formdata $data    - вказу╓ поля HTML форм для HTML форм, знайдених\n"
+"\t                     п╕д час перегляду у дерева документ╕в.\n"
+"\t                     Лише вказан╕ ц╕╓ю опц╕╓ю форми будуть\n"
+"\t                     оброблен╕ автоматично.\n"
+"\t                     \"URL:$url\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\"\n"
+"\t                     (додаткову ╕нформац╕ю шукай у дов╕днику)\n"
+
+#: options.h:3170
+msgid ""
+"\t-dumpfd $nr        - number of filedescriptor where to output\n"
+"\t                     document contents instead to file\n"
+msgstr ""
+"\t-dumpfd $nr        - номер дескриптора файлу, до якого писати вм╕ст\n"
+"\t                     документ╕в зам╕сть файлу\n"
+
+#: options.h:3182
+msgid ""
+"\t-dump_urlfd $nr    - number of filedescriptor where to output\n"
+"\t                     all URLs found in documents\n"
+msgstr ""
+"\t-dump_urlfd $nr    - номер дескриптора файлу, до якого писати\n"
+"\t                     ус╕ URL'╕, знайден╕ у документ╕\n"
+
+#: options.h:3194
+msgid ""
+"\t-del_after/-nodel_after\n"
+"\t                   - delete FTP document after succesfull transfer\n"
+msgstr ""
+"\t-del_after/-nodel_after\n"
+"\t                   - чи видаляти документ FTP п╕сля вдалого завантаження\n"
+
+#: options.h:3217
+msgid ""
+"\t-unique_name/-nounique_name\n"
+"\t                   - always generate unique name for each document\n"
+msgstr ""
+"\t-unique_name/-nounique_name\n"
+"\t                   - завжди ╜енерувати ун╕кальне ╕м'я для кожного "
+"документа\n"
+
+#: options.h:3240
+msgid ""
+"\t-leave_site_enter_dir/-dont_leave_site_enter_dir\n"
+"\t                   - leave directory which we first entered on site\n"
+msgstr ""
+"\t-leave_site_enter_dir/-dont_leave_site_enter_dir\n"
+"\t                   - чи полишати першу на цьому сервер╕ директор╕ю\n"
+
+#: options.h:3263
+msgid ""
+"\t-singlepage/-nosinglepage\n"
+"\t                   - donwload single HTML page with all inline objects\n"
+msgstr ""
+"\t-singlepage/-nosinglepage\n"
+"\t                   - завантажити ╓дину HTML стор╕нку з ус╕ма ╖╖ об'╓ктами\n"
+
+#: options.h:3286
+msgid ""
+"\t-dump_after/-nodump_after\n"
+"\t                   - when used with option -dumpfd, dump document after\n"
+"\t                     successful download and processing of HTML\n"
+"\t                     documents\n"
+msgstr ""
+
+#: options.h:3311
+msgid ""
+"\t-dump_response/-nodump_response\n"
+"\t                   - when used with option -dumpfd, also responses\n"
+"\t                     from HTTP servers will be dumped\n"
+msgstr ""
+
+#: options.h:3338
+msgid ""
+"\t-auth_ntlm_domain $str\n"
+"\t                   - SMB domain name for HTTP NTLM authorization\n"
+msgstr ""
+"\t-auth_ntlm_domain $str\n"
+"\t                   - ╕м'я домена SMB для авторизац╕╖ HTTP NTLM\n"
+
+#: options.h:3354
+msgid ""
+"\t-auth_proxy_ntlm_domain $str\n"
+"\t                   - SMB domain name for HTTP proxy NTLM authorization\n"
+msgstr ""
+"\t-auth_proxy_ntlm_domain $str\n"
+"\t                   - ╕м'я домена SMB для авторизац╕╖ NTLM через HTTP "
+"прокс╕\n"
+
+#: options.h:3370
+msgid ""
+"\t-js_pattern $re    - additional RE patterns for matching URLs in DOM\n"
+"\t                     event attributes of HTML tags\n"
+msgstr ""
+
+#: options.h:3383
+msgid ""
+"\t-follow_cmd $str   - user exit script used tell if you want to follow\n"
+"\t                     any link from current HTML document\n"
+msgstr ""
+
+#: options.h:3395
+msgid ""
+"\t-retrieve_symlink/-noretrieve_symlink\n"
+"\t                   - retrieve symliks like regular files or directories\n"
+msgstr ""
+"\t-retrieve_symlink/-noretrieve_symlink\n"
+"\t                   - витягати симв. посилання як звичайн╕ "
+"файли/директор╕╖\n"
+
+#: options.h:3421
+msgid ""
+"\t-js_transform $p $t $h $a\n"
+"\t                   - custom JS pattern with transformation\n"
+"\t                     $p - pattern\n"
+"\t                     $t - transfomation\n"
+"\t                     $h - HTML tag or * or \"\"\n"
+"\t                     $a - HTML attrib\n"
+msgstr ""
+"\t-js_transform $p $t $h $a\n"
+"\t                   - специф╕чний шаблон JS з трансформац╕╓ю\n"
+"\t                     $p - шаблон\n"
+"\t                     $t - трансформац╕я\n"
+"\t                     $h - HTML те╜ чи * чи \"\"\n"
+"\t                     $a - HTML атрибут\n"
+
+#: options.h:3441
+msgid ""
+"\t-js_transform2 $p $t $h $a\n"
+"\t                   - custom JS pattern with transformation and\n"
+"\t                     rewriting of URLs in first subpattern\n"
+"\t                     $p - pattern\n"
+"\t                     $t - transfomation\n"
+"\t                     $h - HTML tag or * or \"\"\n"
+"\t                     $a - HTML attrib\n"
+msgstr ""
+"\t-js_transform2 $p $t $h $a\n"
+"\t                   - специф╕чний шаблон JS з трансформац╕╓ю та\n"
+"\t                     переписуванням URL'╕в у перш╕й частин╕ шаблона\n"
+"\t                     $p - шаблон\n"
+"\t                     $t - трансформац╕я\n"
+"\t                     $h - HTML те╜ чи * чи \"\"\n"
+"\t                     $a - HTML атрибут\n"
+
+#: options.h:3459
+msgid ""
+"\t-ftp_proxy_user $str\n"
+"\t                   - username for access authorization to FTP proxy\n"
+msgstr ""
+"\t-ftp_proxy_user $str\n"
+"\t                   - ╕м'я для авторизац╕╖ доступа до FTP прокс╕\n"
+
+#: options.h:3471
+msgid ""
+"\t-ftp_proxy_pass $str\n"
+"\t                   - password for access authorization to FTP proxy\n"
+msgstr ""
+"\t-ftp_proxy_pass $str\n"
+"\t                   - пароль для авторизац╕╖ доступа до FTP прокс╕\n"
+
+#: options.h:3483
+msgid ""
+"\t-limit_inlines/-dont_limit_inlines\n"
+"\t                   - apply limiting options on page inline objects?\n"
+msgstr ""
+
+#: options.h:3506
+msgid ""
+"\t-ftp_list_options $str\n"
+"\t                   - additional options or parameters to FTP LIST or\n"
+"\t                     NLST commands\n"
+msgstr ""
+
+#: options.h:3519
+msgid ""
+"\t-fix_wuftpd_list/-nofix_wuftpd_list\n"
+"\t                   - do extensive checking of FTP directory presence to\n"
+"\t                     workaround WuFTPD broken responses when trying\n"
+"\t                     to list nonexisting directory\n"
+msgstr ""
+
+#: options.h:3544
+#, fuzzy
+msgid ""
+"\t-post_update/-nopost_update\n"
+"\t                   - update in parent documents only links pointing\n"
+"\t                     to current document\n"
+msgstr ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - чи видаляти неактуальн╕ файли чи директор╕╖, "
+"працюючи\n"
+"\t                     у режим╕ синхрон╕зац╕╖\n"
+
+#: options.h:3568
+#, fuzzy
+msgid ""
+"\t-info_dir $dir     - separate directory where will stored info files\n"
+"\t                     instead of directly into document tree\n"
+msgstr ""
+"\t-scndir $dir       - директор╕я, де збережен╕ Ваш╕ сценар╕╖\n"
+"\t                     (файли конф╕╜урац╕╖)\n"
+
+#: options.h:3583
+msgid "\t-mozcache_dir $dir - path to Mozilla browser cache directory\n"
+msgstr "\t-mozcache_dir $dir  - шлях до директор╕╖ кеша переглядача Mozilla\n"
+
+#: options.h:3595
+msgid ""
+"\t-aport $list       - allow downloading of documents from servers\n"
+"\t                     siting on listed ports\n"
+msgstr ""
+
+#: options.h:3607
+msgid ""
+"\t-dport $list       - deny downloading of documents from servers\n"
+"\t                     siting on listed ports\n"
+msgstr ""
+
+#: options.h:3619
+msgid ""
+"\t-hack_add_index/-nohack_add_index\n"
+"\t                   - this is hack to allow adding of also directories\n"
+"\t                     of all queued files\n"
+msgstr ""
+
+#: options.h:3643
+#, fuzzy
+msgid ""
+"\t-default_prefix $str\n"
+"\t                   - default URL prefix for subdirectory of\n"
+"\t                     mirrored files\n"
+msgstr ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - чи видаляти неактуальн╕ файли чи директор╕╖, "
+"працюючи\n"
+"\t                     у режим╕ синхрон╕зац╕╖\n"
+
+#: options.h:3659
+msgid ""
+"\t-js_script_file $file\n"
+"\t                  - script file with JavaScript functions\n"
+msgstr ""
+
+#: options.h:3672
+msgid ""
+"\t-ftp_login_handshake $host $handshake\n"
+"\t                   - customize login handshake for FTP server\n"
+msgstr ""
+
+#: options.h:3687
+msgid ""
+"\t-nss_cert_dir $dir - set certificate config directory for Netscape NSS\n"
+msgstr ""
+
+#: options.h:3702
+msgid ""
+"\t-nss_accept_unknown_cert/-nonss_accept_unknown_cert\n"
+"\t                   - accept SSL server certificates not listed in\n"
+"\t                     certificate database\n"
+msgstr ""
+
+#: options.h:3734
+msgid ""
+"\t-nss_domestic_policy/-nss_export_policy\n"
+"\t                   - set policy for SSL ciphers in NSS\n"
+msgstr ""
+
+#: options.h:3765
+msgid ""
+"\t-dont_touch_url_rpattern $re\n"
+"\t                   - RE pattern of URL which should not be touched\n"
+"\t                     by URL rewriting engine\n"
+msgstr ""
+
+#: options.h:3779
+msgid ""
+"\t-dont_touch_url_pattern $list\n"
+"\t                   - wilcard patterns of URLs which should not\n"
+"\t                     be touched by URL rewriting engine\n"
+msgstr ""
+
+#: options.h:3795
+msgid ""
+"\t-dont_touch_tag_rpattern $re\n"
+"\t                   - RE pattern of HTML tag in which URLs should\n"
+"\t                     not be touched by URL rewriting engine\n"
+msgstr ""
+
+#: options.h:3809
+#, fuzzy
+msgid ""
+"\t-tag_pattern $tag $attrib $url\n"
+"\t                   - wilcard patterns for precise matching of URLs\n"
+"\t                     inside HTML tags\n"
+msgstr ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - заборонити опрацьовування URL'╕в\n"
+"\t                     в╕д атрибута $ATTRIB те╜а HTML $TAG\n"
+
+#: options.h:3825
+#, fuzzy
+msgid ""
+"\t-tag_rpattern $tag $attrib $url\n"
+"\t                   - RE patterns for precise matching of URLs\n"
+"\t                     inside HTML tags\n"
+msgstr ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - дозволити опрацьовування URL'╕в\n"
+"\t                     в╕д атрибута $ATTRIB те╜а HTML $TAG\n"
+
+#: pavuk.c:108
+msgid "QUIT signal catched\n"
+msgstr "П╕ймали сигнал QUIT\n"
+
+#: pavuk.c:259
+msgid "Not enough number of parameters \"-msgcat\"\n"
+msgstr "Замало параметр╕в для \"-msgcat\"\n"
+
+#: pavuk.c:273
+msgid "Not enough number of parameters \"-scenario\"\n"
+msgstr "Замало параметр╕в для \"-scenario\"\n"
+
+#: pavuk.c:303
+msgid "Error: Supplied bad file descriptor in -dumpfd option\n"
+msgstr "Помилка: Вказано нев╕рний дескриптор для опц╕╖ -dumpfd\n"
+
+#: pavuk.c:314
+msgid "Error: Supplied bad file descriptor in -dump_urlfd option\n"
+msgstr "Помилка: Вказано нев╕рний дескриптор для опц╕╖ -dump_urlfd\n"
+
+#: pavuk.c:364
+msgid "WARNING: scndir not specified - saving to current directory\n"
+msgstr "ПОВ╤ДОМЛЕННЯ: scndir не вказано - збер╕га╓мо до поточно╖ директор╕╖\n"
+
+#: pavuk.c:403
+msgid "Unable to fork pavuk to background - running in foreground\n"
+msgstr ""
+
+#: pavuk.c:407
+#, c-format
+msgid "Pavuk will run at backround as PID %d\n"
+msgstr "Павук працюватиме у п╕дп╕лл╕ як PID %d\n"
+
+#: pavuk.c:427
+#, c-format
+msgid "reading URLs from file - %s\n"
+msgstr "чита╓мо URL'╕ з файла - %s\n"
+
+#: recurse.c:80
+#, c-format
+msgid "Rescheduling locked URL as no. %d\n"
+msgstr ""
+
+#: recurse.c:93
+msgid "Running post-processing command\n"
+msgstr ""
+
+#: recurse.c:241
+#, c-format
+msgid "retry no. %d\n"
+msgstr "спроба. %d\n"
+
+#: recurse.c:244
+#, c-format
+msgid "URL[%2d]: %5d(%d) of %5d  %s\n"
+msgstr ""
+
+#: recurse.c:247
+#, c-format
+msgid "URL: %5d(%d) of %5d  %s\n"
+msgstr ""
+
+#: recurse.c:258 recurse.c:396
+msgid "Starting download"
+msgstr "Почина╓мо завантаження"
+
+#: recurse.c:286
+msgid "Already processed\n"
+msgstr "Вже виконано\n"
+
+#: recurse.c:293
+msgid "Disallowed by user\n"
+msgstr "Заборонено користувачем\n"
+
+#: recurse.c:307
+msgid "Disallowed by rules\n"
+msgstr "Заборонено обмеженнями\n"
+
+#: recurse.c:314
+msgid "Checking \"robots.txt\""
+msgstr "Перев╕ря╓мо \"robots.txt\""
+
+#: recurse.c:318
+msgid "Disallowed by \"robots.txt\"\n"
+msgstr "Забороненно обмеженнями \"robots.txt\"\n"
+
+#: recurse.c:328
+msgid "This URL type is not supported with ftpdir mode\n"
+msgstr "Цей тип URL не п╕дтриму╓ться у режим╕ ftpdir\n"
+
+#: recurse.c:348
+msgid "No transfer - file not expired\n"
+msgstr ""
+
+#: recurse.c:364
+#, c-format
+msgid "Starting time :  %s\n"
+msgstr "Початок роботи :  %s\n"
+
+#: recurse.c:406 recurse.c:565
+#, c-format
+msgid "Ending time :    %s\n"
+msgstr "К╕нець роботи :    %s\n"
+
+#: recurse.c:413 recurse.c:568
+msgid "download"
+msgstr "завантаження"
+
+#: recurse.c:513
+msgid "last document locked -> sleeping for 5 seconds\n"
+msgstr "останнього документа залоковано -> спимо 5 секунд\n"
+
+#: recurse.c:579
+msgid "Relocating and scanning HTML document"
+msgstr ""
+
+#: recurse.c:631
+msgid "Dumping processed document"
+msgstr ""
+
+#: recurse.c:651
+msgid "Storing document"
+msgstr "Збер╕га╓мо документ"
+
+#: recurse.c:657
+msgid "Store failed\n"
+msgstr "Зб╕й збереження\n"
+
+#: recurse.c:764 recurse.c:847
+msgid "Done"
+msgstr "Зроблено"
+
+#: recurse.c:924 remind.c:378
+msgid "Sleeping ..."
+msgstr "Спимо ..."
+
+#: recurse.c:938 remind.c:395
+msgid "Exiting ..."
+msgstr "Виходимо ..."
+
+#: recurse.c:1050
+#, c-format
+msgid "\t%s    (%d bytes)\n"
+msgstr "\t%s    (%d байт╕в)\n"
+
+#: recurse.c:1108
+msgid "Searching for files to resume"
+msgstr ""
+
+#: recurse.c:1135
+#, c-format
+msgid "Adding %s to resume list\n"
+msgstr ""
+
+#: recurse.c:1167
+msgid "Searching for documents to synchronize"
+msgstr ""
+
+#: recurse.c:1222 recurse.c:1247
+#, c-format
+msgid "Adding file %s to sync list as URL %s\n"
+msgstr ""
+
+#: remind.c:44
+#, c-format
+msgid "Checking: %s\n"
+msgstr "Перев╕ря╓мо: %s\n"
+
+#: remind.c:169
+#, c-format
+msgid "Bad reminder db entry - %s\n"
+msgstr ""
+
+#: remind.c:528
+msgid ""
+"This is the result of running pavuk reminder mode\n"
+"\n"
+msgstr ""
+"Це результат роботи павука у режим╕ нагадувача (reminder)\n"
+"\n"
+
+#: remind.c:539
+msgid "Changed URLs\n"
+msgstr "Зм╕нен╕ URL'╕\n"
+
+#: remind.c:560
+msgid "URLs with some errors\n"
+msgstr "URL'╕ з деякими помилками\n"
+
+#: robots.c:162
+msgid "transfering \"robots.txt\""
+msgstr "тягнемо \"robots.txt\""
+
+#: robots.c:165
+msgid "transfering \"robots.txt\"\n"
+msgstr "тягнемо \"robots.txt\"\n"
+
+# Чи, краще "Ти ба: йти по \"robots.txt\" до %s ???\n"
+#: robots.c:226
+#, c-format
+msgid "Hmm: redirecting \"robots.txt\" to %s ???\n"
+msgstr "Ти ба: перенаправляти \"robots.txt\" до %s ???\n"
+
+#: stats.c:139 stats.c:222
+#, c-format
+msgid "Total number of URLs in queue: %d\n"
+msgstr "Всього URL'╕в у черз╕: %d\n"
+
+#: stats.c:140 stats.c:224
+#, c-format
+msgid "Starting urls: %d\n"
+msgstr "Стартов╕ URL'╕: %d\n"
+
+#: stats.c:143 stats.c:229
+msgid "Not processed yet: %d (%3d%%)\n"
+msgstr "Ще не опрацьовано: %d (%3d%%)\n"
+
+#: stats.c:148 stats.c:236
+msgid "Processed OK: %d (%3d%%)\n"
+msgstr "Опрацьовано OK: %d (%3d%%)\n"
+
+#: stats.c:151 stats.c:242
+msgid "Loaded from local tree: %d (%3d%%)\n"
+msgstr "Завантажено з локального дерева: %d (%3d%%)\n"
+
+#: stats.c:154 stats.c:248
+msgid "Loaded from Netscape browser cache dir: %d (%3d%%)\n"
+msgstr "Завантажено з директор╕╖ кеша Netscape: %d (%3d%%)\n"
+
+#: stats.c:157 stats.c:254
+msgid "Downloaded over network: %d (%3d%%)\n"
+msgstr "Завантажено з мереж╕: %d (%3d%%)\n"
+
+#: stats.c:160 stats.c:260
+msgid "Moved to another location: %d (%3d%%)\n"
+msgstr "Переписано до ╕ншого м╕сця: %d (%3d%%)\n"
+
+#: stats.c:164 stats.c:266
+msgid "Downloaded truncated: %d (%3d%%)\n"
+msgstr "Завантажено ус╕чених: %d (%3d%%)\n"
+
+#: stats.c:170 stats.c:273
+msgid "Non fatal errors: %d (%3d%%)\n"
+msgstr "Нефатальних помилок: %d (%3d%%)\n"
+
+#: stats.c:176 stats.c:280
+msgid "Not found documents: %d (%3d%%)\n"
+msgstr "Не знайдено документ╕в: %d (%3d%%)\n"
+
+#: stats.c:182 stats.c:287
+msgid "Documents with fatal errors: %d (%3d%%)\n"
+msgstr "Документи з фатальними помилками: %d (%3d%%)\n"
+
+#: stats.c:188
+msgid "Documents with unknown status: %d (%3d%%)\n"
+msgstr "Документи у нев╕домому стан╕: %d (%3d%%)\n"
+
+#: stats.c:294
+msgid "Documents with unspecific status: %d (%3d%%)\n"
+msgstr ""
+
+#: stats.c:359
+msgid "Pavuk: save status page"
+msgstr "Павук: збереження стор╕нки статусу"
+
+#: stats.c:380 stats.c:532
+msgid "Not available yet"
+msgstr ""
+
+#: stats.c:461
+msgid "Pavuk: status page"
+msgstr "Павук: стор╕нка статусу"
+
+#: stats.c:478
+msgid "Status page"
+msgstr "Стор╕нка статусу"
+
+#: stats.c:489
+msgid "Save ..."
+msgstr "Зберегти ..."
+
+#: stats.c:496
+msgid "Refresh"
+msgstr "Поновити"
+
+#: stats.c:521
+msgid "Try download"
+msgstr "Спробувати тягти"
+
+#: tag_pattern.c:32
+#, fuzzy
+msgid "Bad -tag_pattern tag wildcard pattern\n"
+msgstr "\t-url_pattern $list - список шаблон╕в з масками для URL'╕в\n"
+
+#: tag_pattern.c:39
+#, fuzzy
+msgid "Bad -tag_pattern attribute wildcard pattern\n"
+msgstr "\t-url_pattern $list - список шаблон╕в з масками для URL'╕в\n"
+
+#: tag_pattern.c:46
+#, fuzzy
+msgid "Bad -tag_pattern url wildcard pattern\n"
+msgstr "\t-url_pattern $list - список шаблон╕в з масками для URL'╕в\n"
+
+#: tag_pattern.c:61
+msgid "Bad -tag_rpattern tag RE pattern\n"
+msgstr ""
+
+#: tag_pattern.c:63
+msgid "Bad -tag_rpattern attribute RE pattern\n"
+msgstr ""
+
+#: tag_pattern.c:65
+msgid "Bad -tag_rpattern url RE pattern\n"
+msgstr ""
+
+#: tools.c:110
+msgid "no error"
+msgstr "без помилок"
+
+#: tools.c:115
+msgid "host not found"
+msgstr "сервер не знайдено"
+
+#: tools.c:120
+msgid "temporary error (try again later)"
+msgstr "тимчасова помилка (спробуйте п╕зн╕ше)"
+
+#: tools.c:125
+msgid "non recoverable error"
+msgstr ""
+
+#: tools.c:130
+msgid "name is valid, but doesn't have an IP address"
+msgstr "╕м'я в╕рне, але не ма╓ адреси IP"
+
+#: tools.c:134
+msgid "unknown hostname translation error"
+msgstr "нев╕дома помилка трансляц╕╖ ╕мен╕ сервера"
+
+#: tools.c:315 tools.c:339 tools.c:364 tools.c:409
+msgid ""
+"Warning: locking not supported ... don't run multiple processes or threads!\n"
+msgstr ""
+
+#: tools.c:330 tools.c:353
+#, c-format
+msgid "waiting to release lock on FD : %d\n"
+msgstr ""
+
+#: uconfig.c:1035
+msgid "Bad parameter - Working subdirectory"
+msgstr "Нев╕рний параметер - Робоча п╕ддиректор╕я"
+
+#: uconfig.c:1161
+msgid "Bad parameter - Cache directory"
+msgstr "Нев╕рний параметер - Директор╕я кеша"
+
+#: uexit.c:31
+msgid "Error occured while executing user-exit script"
+msgstr ""
+
+#: update_links.c:37
+#, c-format
+msgid "Entering directory %s\n"
+msgstr "Заходимо до директор╕╖ %s\n"
+
+#: update_links.c:66
+#, c-format
+msgid "Relocating %s\n"
+msgstr "Перем╕щу╓мо %s\n"
+
+#: update_links.c:69
+#, c-format
+msgid "Omitting %s\n"
+msgstr "Пропуска╓мо %s\n"
+
+#: update_links.c:83
+#, c-format
+msgid "Leaving directory %s\n"
+msgstr "Виходимо з директор╕╖ %s\n"
+
+#: update_links.c:101
+#, c-format
+msgid "Can't open directory %s\n"
+msgstr "Неможливо в╕дкрити директор╕ю %s\n"
+
+#: url.c:1007
+#, c-format
+msgid "unsupported URL type \"%s\"\n"
+msgstr "цей тип URL не п╕дтриму╓ться \"%s\"\n"
+
+#: url.c:1159
+msgid "Moved to already processed URL.\n"
+msgstr "Пересунуто до вже опрацьованого URL.\n"
+
+#: url.c:2775
+msgid "Missing specification of URL in request\n"
+msgstr ""
+
+#: url.c:2784
+msgid "Missing request fields specification for POST request\n"
+msgstr ""
+
+#: url.c:2792
+msgid "Multipart encoding not supported with GET requests\n"
+msgstr "Multipart encoding ╕з запитами GET не п╕дтриму╓ться\n"
+
+#~ msgid "January"
+#~ msgstr "С╕чень"
+
+#~ msgid "February"
+#~ msgstr "Лютий"
+
+#~ msgid "March"
+#~ msgstr "Березень"
+
+#~ msgid "April"
+#~ msgstr "Кв╕тень"
+
+#~ msgid "May"
+#~ msgstr "Травень"
+
+#~ msgid "June"
+#~ msgstr "Червень"
+
+#~ msgid "July"
+#~ msgstr "Липень"
+
+#~ msgid "August"
+#~ msgstr "Серпень"
+
+#~ msgid "September"
+#~ msgstr "Вересень"
+
+#~ msgid "October"
+#~ msgstr "Жовтень"
+
+#~ msgid "November"
+#~ msgstr "Листопад"
+
+#~ msgid "December"
+#~ msgstr "Грудень"
+
+#~ msgid "Sun"
+#~ msgstr "Нд."
+
+#~ msgid "Mon"
+#~ msgstr "Пн."
+
+#~ msgid "Tue"
+#~ msgstr "Вт."
+
+#~ msgid "Wed"
+#~ msgstr "Ср."
+
+#~ msgid "Thu"
+#~ msgstr "Чт."
+
+#~ msgid "Fri"
+#~ msgstr "Пт."
+
+#~ msgid "Sat"
+#~ msgstr "Сб."
+
+#~ msgid "Server certificate:\n"
+#~ msgstr "Сертиф╕кат сервера:\n"
+
+#~ msgid "\t subject: %s\n"
+#~ msgstr "\t суб'╓кт: %s\n"
+
+#~ msgid "\t issuer: %s\n"
+#~ msgstr "\t видано: %s\n"

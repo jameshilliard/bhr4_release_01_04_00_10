@@ -1,0 +1,126 @@
+This is public beta release of Pavuk.
+Pavuk in Slovak language means spider.
+
+What this program does :
+-recursive HTTP, HTTP over SSL, FTP, FTP over SSL and Gopher document
+ retrieving
+-supports HTTP/1.1 with persistent connections
+-supports HTTP POST requests
+-can automaticaly fill forms from HTML documents and make POST or GET
+ requestes based on user input and form content
+-synchronizing retrieved local copies of document with remote
+-partial content retrieving on servers which suppots it (FTP and HTTP/1.1)
+-automaticaly follows moved documents
+-supports robots exclusion standard via "robots.txt" and <META NAME=robots ..>
+-supports HTTP, FTP, Gopher, SSL proxy servers
+-supports HTTP authentification (user, Basic, Digest, NTLM)
+-shows document tree
+-have interface to "at" command for scheduling
+-have optional GTK+ user interface
+-may be built with or without X Window user interface
+-can handle setup files (scenarios)
+-supports NLS via GNU gettext (so messages are translatable to many native 
+ languages)
+-can be used for fetching documents to proxy/cache server (-mode dontstore)
+-supports HTTP cookies
+-supports SOCKS(4/5) proxy
+-you can run as many as instances of pavuk in same tree without any loose
+ of data, because pavuk locks documents while procesing
+-you can limit transfer rate over network (speed throttling)
+-have powerfull mechanism for mapping URLs to local filenames (-fnrules)
+-can check URL wheter it is modified and can send list of modified URLs to any 
+ script
+-can load files from Netscape or MSIE browser cache directory
+-can filter advertisement banners
+-can automaticaly turn on/off output of messages to terminal when running
+ in foreground or background
+-can run users postprocessing scripts for each downloaded document
+-can run user scripts for decision wheter links from current HTML document
+ should be downloaded
+-optionaly can generate statistical reports from download, usable for
+ WEB site link checking
+-supports different FTP directory listing formats (SYSV, BSD, EPFL, NOVEL,
+ VMS, DOS/WINDOWS)
+-multithreading support
+-supports multiple HTTP proxies with round robin scheduling
+-have simple support for javascript using URL patterns
+-supports persistent HTTP/1.0 proxy connections
+-have simple JavaScript bindings to allow much more flexible conditions
+ for excluding URLs from transfer
+....?
+
+License :
+Everything is licensed under GPL. See COPYING and COPYING.LIB.
+
+Ported to:
+
+-Linux (x86,ppc) (gcc)
+	Single threaded: supported, works well
+	Multi threaded: supported, works well with glibc2&LinuxThreads,
+			glibc1&LinuxThreads and glibc1&pcthreads
+	GUI: Gtk+
+
+-Digital Unix 3.2 (alpha) (cc and gcc), 4.0 (alpha) (cc and egcs)
+	Single threaded: supported, works well
+	Multi threaded: supported, works well
+	GUI: Gtk+
+
+-Ultrix 4.4 (mips) (cc,egcs) (need to use bash instead of default sh to 
+                              run configure script)
+	Single threaded: supported, works well
+	Multi threaded: not supported, I don't know about any POSIX threads
+			implementation for Ultrix
+	GUI: Gtk+
+
+-NetBSD (sparc, mips) (gcc)
+	latest versions not tested
+
+-NetBSD-1.4.2 (x86) (gcc)
+	Single threaded: supported, works well
+	Multi threaded: not supported, I don't know about any POSIX threads
+			implementation for this version of NetBSD
+	GUI: Gtk+ (not tested)
+
+-OpenBSD-2.7 (x86) (gcc)
+	Single threaded: supported, works well
+	Multi threaded: supported, works well (not much tested)
+	GUI: Gtk+ (not tested)
+
+-FreeBSD-4.0 (x86) (gcc)
+	Single threaded: supported, works well
+	Multi threaded: works, sometimes I get kernel error
+			"microuptime() went backwards"
+	GUI: Gtk+ (need to pass option --with-gtk-config=gtk12-config to
+	     configure script)
+
+-WIN32 (x86) (gcc + cygwin POSIX emulation layer)
+	Single threaded: supported, works well
+	Multi threaded: doesn't work, because POSIX threads implementation is
+			not finished yet
+	GUI: win32 Gtk+ for cygwin
+
+-Solaris 7 (x86) (gcc)
+	Single threaded: supported, works well
+	Multi threaded: supported, works well with POSIX threads
+	GUI: Gtk+
+
+-QNX RtP (x86) (gcc)
+	Single threaded: supported, works well
+	Multi threaded: supported, works well with libc POSIX threads
+	GUI: Gtk+ in XPhoton
+
+-BeOS 5 PE (x86) (gcc)
+	Single threaded: supported, works except document locking
+	Multi threaded: not supported, missing POSIX threads
+	GUI: not supported
+
+-also several other UNIX-es, Mac OS X server, OS/2 reported to work
+
+Author :
+Ondrejicka Stefan
+
+Home page:
+http://pavuk.sourceforge.net/
+
+If you find any bugs please send me report and or fix. 
+If you have any suggestions, ideas or questions please contact developers.

@@ -1,0 +1,4 @@
+obj-m := mod_otp.o
+mod_otp-y := otp.o
+EXTRA_CFLAGS := -Wno-comment -DLOCK_OTP
+KBUILD_EXTRA_SYMBOLS := 

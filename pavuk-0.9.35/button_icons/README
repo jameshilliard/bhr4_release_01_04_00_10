@@ -1,0 +1,24 @@
+This directory contains colections of button icons for pavuk
+
+If you want change your icons, use your pavukrc file, and set your icons
+with Btn*Icon*: options, or befor compilation copy files which you like
+to directory src/icons.
+
+If you have any nice collection of icons for pavuk and you want to share it,
+feel free to send it to me, and I will include it to next pavuk release.
+
+Stefan Ondrejicka <ondrej@idata.sk>
+
+content
+-------
+gnome/    this directory contains icons from GNOME stock-icons, which I 
+	  colected and mapped to pavuk icons.
+
+frederic/ this colection of very nice icons commes from Frederic Toussaint,
+	  it was designed specialy for GTK+ metal theme but looks very good
+	  also with default GTK theme.
+
+old/      previous default colection.
+
+my_nice/  my colection of icons designed specialy for pavuk.
+

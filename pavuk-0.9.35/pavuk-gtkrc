@@ -1,0 +1,68 @@
+# Edit these colors and fonts however you like, after cp'ing the file to
+# another theme directory.
+# CoolIce GTK+ Theme 1999 Rodney Dawes <dobez@fnmail.com>
+# Uses ThinIce GTK+ Engine by Tomas Ogren
+# Nifty wintery-cool ice-like colors for your viewing pleasure.
+
+style "default"
+{
+  bg[SELECTED] = { 0.80, 0.80, 0.80 }
+  fg[SELECTED] = { 0.00, 0.33, 0.99 }
+  bg[ACTIVE] = { 0.80, 0.80, 0.80 }
+  fg[ACTIVE] = { 0.00, 0.33, 0.99 }
+
+  bg[NORMAL] = { 0.80, 0.80, 0.80 }
+  bg[PRELIGHT] = { 0.94, 0.94, 0.94 }
+  fg[PRELIGHT] = { 0.00, 0.33, 0.99 }
+  bg[INSENSITIVE] = { 0.80, 0.80, 0.80 }
+
+  fg[NORMAL] = { 0.00, 0.00, 0.00 }
+  
+  #font = "*-lucida-medium-r-normal-*-8-*-*-*-*-*-iso8859-1"
+  font = "-adobe-helvetica-medium-r-normal--*-110-*-*-*-*-*-*"
+}
+
+widget_class "*" style "default"
+
+style "entries" = "default"
+{
+	fg[SELECTED] = { 0.00, 0.33, 0.99 }
+	bg[SELECTED] = { 0.88, 0.88, 0.88 }
+	fg[NORMAL]   = { 0.00, 0.00, 0.00 }
+}
+
+widget_class "*Entry*" style "entries"
+
+style "bar" = "default"
+
+{
+	bg[SELECTED] = { 0.00, 0.33, 0.99 }
+}
+
+widget_class "*Bar*" style "bar"
+
+style "menu" = "default"
+{
+
+    bg[PRELIGHT] = { 0.94, 0.94, 0.94 }
+    fg[PRELIGHT] = { 0.00, 0.33, 0.99 }
+    bg[SELECTED] = { 0.94, 0.94, 0.94 }
+    fg[SELECTED] = { 0.00, 0.33, 0.99 }
+}
+
+widget_class "*Menu*" style "menu"
+
+style "ruler" = "default"
+{
+  font = "-adobe-helvetica-medium-r-normal--*-90-*-*-*-*-*-*"
+}
+
+widget_class "*Ruler*" style "ruler"
+
+style "tooltips" = "default"
+{
+	bg[NORMAL]   = { 0.00, 0.80, 0.80 }
+	font = "-adobe-helvetica-medium-r-normal--*-90-*-*-*-*-*-*"
+}
+
+widget_class "*ToolTips*" style "tooltips"

@@ -1,0 +1,1321 @@
+AC_INIT([pavuk],[0.9.35])
+AC_CONFIG_SRCDIR([src/pavuk.c])
+AC_CONFIG_HEADERS([ac-config.h])
+AM_INIT_AUTOMAKE
+
+ALL_LINGUAS="cs de es fr it ja pl sk uk"
+
+REVISION=`date +%Y-%m-%dT%H:%M`
+AC_DEFINE_UNQUOTED(REVISION, "$REVISION", [revision number of software])
+AC_SUBST(REVISION)
+AC_PREFIX_DEFAULT(/usr/local)
+
+CFLAGS="$CFLAGS $v_cflags"
+
+AC_ARG_ENABLE(debug, [  --disable-debug         turn off debugging],
+	WITH_DEBUG=$enableval, WITH_DEBUG="yes")
+
+if eval "test x$WITH_DEBUG = xyes"; then
+	AC_DEFINE_UNQUOTED(DEBUG, 1,
+		[Define if you want to compile with debuging options])
+fi
+
+AC_PROG_CC
+AC_PROG_INSTALL
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+
+AC_CANONICAL_HOST
+case $host_os in
+  *cygwin* ) ISCYGWIN=yes;;
+	 * ) ISCYGWIN=no;;
+esac
+AC_DEFINE_UNQUOTED(HOSTTYPE, "$host_os", [Set host type])
+
+if eval "test x$ISCYGWIN = xyes"; then
+	AC_MSG_CHECKING([style of cygwin paths])
+	if test -d /cygdrive/C; then
+		ac_cygwin_paths_style=new
+		AC_DEFINE_UNQUOTED(HAVE_NEWSTYLE_CYGWIN, 1,
+			[Define if you have cygwin with new paths style])
+	else
+		ac_cygwin_paths_style=old
+	fi
+	AC_MSG_RESULT($ac_cygwin_paths_style)
+
+	AC_MSG_CHECKING([whether the C compiler (${CC-cc}) supports -fnative-struct])
+	echo 'void f(){}' > conftest.c
+	if test -z "`${CC-cc} -fnative-struct -c conftest.c 2>&1`"; then
+		ac_ccfnativestruct_opt=yes
+		CFLAGS="$CFLAGS -fnative-struct"
+	else
+		ac_ccfnativestruct_opt=no
+	fi
+	rm -f conftest*
+	AC_MSG_RESULT($ac_ccfnativestruct_opt)
+
+	WINDRES="windres"
+	DEPS="pavuk.exe: pavukrc.ro"
+fi
+
+AC_MSG_CHECKING([whether using broken Apple precompiler])
+AC_RUN_IFELSE([AC_LANG_SOURCE([[
+	void exit(int);
+	int main()
+	{
+#ifdef __APPLE_CPP__
+		exit(0);
+#else
+		exit(1);
+#endif
+	}
+]])],[
+	AC_MSG_RESULT([yes])
+	CPPFLAGS="$CPPFLAGS -no-cpp-precomp"
+],[AC_MSG_RESULT(no)],[])
+
+AC_PATH_PROG(AT, at, at)
+AC_PATH_PROG(GZIP, gzip, gzip)
+AC_HEADER_STDC
+AC_PATH_X
+AC_PATH_XTRA
+
+AC_SYS_LONG_FILE_NAMES
+AC_C_BIGENDIAN
+
+if eval "test x$GCC = xyes"; then
+  if eval "! echo $CFLAGS | grep \\-Wall" > /dev/null 2> /dev/null; then
+    CFLAGS="$CFLAGS -Wall"
+  fi
+
+  if eval "test x$enable_ansi = xyes"; then
+    if eval "! echo $CFLAGS | grep \\-ansi" > /dev/null 2> /dev/null; then
+      CFLAGS="$CFLAGS -ansi"
+    fi
+
+    if eval "! echo $CFLAGS | grep \\-pedantic" > /dev/null 2> /dev/null; then
+      CFLAGS="$CFLAGS -pedantic"
+    fi
+  fi
+fi
+
+GTK_LIBS=''
+GTK_VERSION='1'
+X_LIBS="$X_EXTRA_LIBS"
+INTL_LIBS=''
+SSL_LIBS=''
+EXTRA_LIBS=''
+
+AC_CHECK_TYPE(ssize_t, long)
+
+AC_CHECK_LIB(nsl, gethostname, EXTRA_LIBS="$EXTRA_LIBS -lnsl")
+AC_CHECK_LIB(socket, socket, EXTRA_LIBS="$EXTRA_LIBS -lsocket")
+
+dnl **************************
+dnl SOCKS tests
+dnl **************************
+
+AC_ARG_ENABLE(socks,
+	[  --disable-socks            do not use SOCKS proxy support], 
+	WITH_SOCKS=$enableval, WITH_SOCKS="yes")
+
+AC_ARG_WITH(socks-includes,
+	[  --with-socks-includes=DIR  where you have socks includes],
+	WITH_SOCKS_INC="$withval")
+
+if test -n "$WITH_SOCKS_INC"; then
+	CPPFLAGS="$CPPFLAGS -I$WITH_SOCKS_INC"
+fi
+
+AC_ARG_WITH(socks-libraries,
+	[  --with-socks-libraries=DIR where you have socks libraries],
+	WITH_SOCKS_LIB="$withval")
+if test -n "$WITH_SOCKS_LIB"; then
+	LDFLAGS="$LDFLAGS -L$WITH_SOCKS_LIB"
+fi
+
+if eval test x$WITH_SOCKS = xyes; then
+	SOCKS_LIBS=''
+
+	AC_CHECK_HEADER(socks.h, AC_DEFINE_UNQUOTED(HAVE_SOCKS_H, 1, [<socks.h>]))
+	AC_CHECK_LIB(socks5, SOCKSinit,
+		SOCKS_LIBS="$SOCKS_LIBS -lsocks5")
+	if test -z "$SOCKS_LIBS"; then
+		AC_CHECK_LIB(socks, Rconnect, SOCKS_LIBS="$SOCKS_LIBS -lsocks")
+		if test -n "$SOCKS_LIBS"; then
+			AC_CHECK_LIB(resolv, main, SOCKS_LIBS="$SOCKS_LIBS -lresolv")
+                fi
+	fi
+	if test -n "$SOCKS_LIBS"; then
+		x_libs="$x_libs $SOCKS_LIBS"
+		AC_DEFINE_UNQUOTED(SOCKS, 1, [Socks proxy support])
+	fi
+fi
+
+X_LIBS="$X_LIBS $EXTRA_LIBS"
+
+dnl *************************
+dnl gettext libintl tests
+dnl *************************
+AC_ARG_ENABLE(nls,
+	[  --disable-nls              do not use Native Language Support], 
+	WITH_NLS=$enableval, WITH_NLS="yes")
+
+AC_ARG_WITH(intl-includes,
+	[  --with-intl-includes=DIR   where you have gettext includes],
+	WITH_INTL_INC="$withval")
+if test -n "$WITH_INTL_INC"; then
+	CPPFLAGS="$CPPFLAGS -I$WITH_INTL_INC"
+fi
+
+AC_ARG_WITH(intl-libraries,
+	[  --with-intl-libraries=DIR  where you have gettext libraries],
+	WITH_INTL_LIB="$withval")
+if test -n "$WITH_INTL_LIB"; then
+	LDFLAGS="$LDFLAGS -L$WITH_INTL_LIB"
+fi
+
+AC_ARG_ENABLE(utf-8,
+	[  --enable-utf-8             create language files with UTF-8], 
+	WITH_UTF=$enableval, WITH_UTF="no")
+if eval "test x$WITH_UTF = xyes"; then
+	PAVUK_UTFMODE="umo"
+else
+	PAVUK_UTFMODE="mo"
+fi
+
+if eval "test x$WITH_NLS = xyes"; then
+	AC_CHECK_LIB(c, gettext, INTL_LIBS=" ";_INTL_LIB="c")
+	if test -z "$INTL_LIBS"; then
+		AC_CHECK_LIB(intl, gettext, INTL_LIBS="-lintl";_INTL_LIB="intl")
+	fi
+	if test -n "$INTL_LIBS"; then
+		MSUBDIRS="$MSUBDIRS po"
+		x_libs="$x_libs $INTL_LIBS"
+		AC_DEFINE_UNQUOTED(GETTEXT_NLS, 1, [gettext intl stuffs])
+		AC_CHECK_LIB($_INTL_LIB, _nl_msg_cat_cntr, 
+			AC_DEFINE_UNQUOTED(HAVE_CAT_CNTR, 1,
+				[have _nl_msg_cat_cntr in libintl]))
+	fi
+
+	INST_LANG=""
+	if test -n "$LINGUAS"; then
+		for i in $LINGUAS; do
+			for j in $ALL_LINGUAS; do
+				if test "$i" = "$j"; then
+					INST_LANG="$INST_LANG $j"
+				fi
+			done
+		done
+	else
+		INST_LANG="$ALL_LINGUAS"
+	fi
+	PAVUK_LANG=""
+	PAVUK_PO=""
+	PAVUK_MO=""
+	PAVUK_POX=""
+	PAVUK_UPO=""
+	PAVUK_UMO=""
+	for i in $INST_LANG; do
+		PAVUK_LANG="$PAVUK_LANG $i"
+		PAVUK_PO="$PAVUK_PO $i.po"
+		PAVUK_MO="$PAVUK_MO $i.mo"
+		PAVUK_POX="$PAVUK_POX $i.pox"
+		PAVUK_UPO="$PAVUK_UPO $i.upo"
+		PAVUK_UMO="$PAVUK_UMO $i.umo"
+	done
+	PAVUK_ALLPO=""
+	PAVUK_ALLMO=""
+	for i in $ALL_LINGUAS; do
+		PAVUK_ALLPO="$PAVUK_ALLPO $i.po"
+		PAVUK_ALLMO="$PAVUK_ALLMO $i.mo"
+	done
+
+	AC_CHECK_PROG(MSGFMT, msgfmt, msgfmt, echo)
+	if eval "test x$MSGFMT = xmsgfmt"; then
+		AC_MSG_CHECKING([whether have GNU gettext msgfmt])
+		_tmp_grp=`msgfmt -h 2>&1 | grep '\--statistics'`
+		if test -n "$_tmp_grp" ; then
+			MSGFMTSTATS="--statistics -c -v"
+			AC_MSG_RESULT([yes])
+		else
+			AC_MSG_RESULT([no])
+		fi
+	fi
+	AC_CHECK_PROG(ICONV, iconv, iconv, echo)
+fi
+
+dnl *************************
+dnl SSL support tests
+dnl *************************
+AC_ARG_ENABLE(ssl,
+	[  --disable-ssl              do not compile with SSL support],
+	WITH_SSL=$enableval, WITH_SSL="yes")
+
+AC_ARG_WITH(ssl, [  --with-ssl=[none/auto/openssl/ssleay/nss] select type of used SSL layer],
+	WITH_SSL_VAL="$withval", WITH_SSL_VAL="auto")
+
+case "$WITH_SSL_VAL" in
+	none | auto | nss | openssl | ssleay) ;;
+	*) AC_MSG_ERROR("Bad selection in --with-ssl option !");;
+esac
+
+if eval "test x$WITH_SSL_VAL = xnone"; then
+	want_ssl_impl=no
+else
+	want_ssl_impl=yes
+fi
+
+dnl *************************
+dnl OpenSSL libraries tests
+dnl *************************
+AC_ARG_WITH(ssl-includes,
+	[  --with-ssl-includes=DIR    where you have SSLeay includes],
+	WITH_SSL_INC="$withval")
+if test -n "$WITH_SSL_INC"; then
+	CPPFLAGS="$CPPFLAGS -I$WITH_SSL_INC"
+fi
+
+AC_ARG_WITH(ssl-libraries,
+	[  --with-ssl-libraries=DIR   where you have SSLeay libraries],
+	WITH_SSL_LIB="$withval")
+if test -n "$WITH_SSL_LIB"; then
+	LDFLAGS="$LDFLAGS -L$WITH_SSL_LIB"
+fi
+
+AC_ARG_WITH(egd-socket,
+	[  --with-egd-socket=NAME     use NAME for the EGD socket],
+		egd_socket_name="$withval", egd_socket_name="" )
+if test -n "$egd_socket_name"; then
+	AC_DEFINE_UNQUOTED(EGD_SOCKET_NAME, "$egd_socket_name", 
+		[path to EGD/PRNGD socket])
+fi
+
+if test x$want_ssl_impl = xyes -a x$WITH_SSL = xyes; then
+	if eval "test x$WITH_SSL_VAL = xauto -o \
+		x$WITH_SSL_VAL = xopenssl -o x$WITH_SSL_VAL = ssleay"; then
+
+		AC_MSG_CHECKING(for OpenSSL installation directory)
+		if test -z "$WITH_SSL_LIB"; then
+			for i in "/usr/local/openssl" \
+				 "/usr/local/ssl" \
+				 "/usr/ssl" \
+				 "/usr/openssl" \
+				 "/opt/ssl" \
+				 "/opt/openssl"; do
+					if test -d "$i"; then
+						WITH_SSL_PFX="$i"
+					fi
+			done
+		fi
+		if test -n "$WITH_SSL_PFX"; then
+			CPPFLAGS="$CPPFLAGS -I$WITH_SSL_PFX/include"
+			LDFLAGS="$LDFLAGS -L$WITH_SSL_PFX/lib"
+			AC_MSG_RESULT([$WITH_SSL_PFX])
+		else
+			AC_MSG_RESULT([unknown])
+		fi
+		AC_CHECK_LIB(ssl, SSLv23_client_method, SSL_LIBS="-lssl",
+				 ,-lcrypto $EXTRA_LIBS)
+		if test -n "$SSL_LIBS"; then
+			AC_CHECK_LIB(ssl, TLSv1_client_method,
+				TLS1=yes, TLS1=no, -lcrypto $EXTRA_LIBS)
+			AC_CHECK_LIB(crypto, RAND_egd, RAND_EGD=yes)
+			AC_CHECK_HEADER(ssl.h, SSLEAY=yes, SSLEAY=no)
+			AC_CHECK_HEADER(openssl/ssl.h, OPENSSL=yes, OPENSSL=no)
+			if eval "test x$SSLEAY = xno -a  x$OPENSSL = xno"; then
+				AC_MSG_WARN("SSLeay or OpenSSL headers not found --\> use --disable-ssl option or set --with-ssl-includes to apropriate location")
+			fi
+			AC_CHECK_LIB(crypto, SSLeay,
+				SSL_LIBS="$SSL_LIBS -lcrypto", SSL_LIBS='')
+		fi
+		if test -n "$SSL_LIBS"; then
+			want_ssl_impl="no"
+		fi
+
+		if test -n "$SSL_LIBS"; then
+			x_libs="$x_libs $SSL_LIBS"
+			AC_DEFINE_UNQUOTED(USE_SSL, 1, [want SSL support])
+			AC_DEFINE_UNQUOTED(USE_SSL_IMPL_OPENSSL, 1,
+				[use OpenSSL for SSL support])
+			if eval "test x$OPENSSL = xyes"; then
+				AC_DEFINE_UNQUOTED(OPENSSL, 1,
+					[have new OpenSSL not old SSLeay libs])
+			fi
+			if eval "test x$TLS1 = xyes"; then
+				AC_DEFINE_UNQUOTED(WITH_SSL_TLS1, 1,
+					[have new OpenSSL with TLS1 support])
+			fi
+			if eval "test x$RAND_EGD = xyes"; then
+				AC_DEFINE_UNQUOTED(HAVE_RAND_EGD, 1,
+					[OpenSSL lib contains EGD/PRNGD support])
+			fi
+		fi
+	fi
+fi
+
+dnl *************************
+dnl NSS - Mozilla SSL tests
+dnl *************************
+AC_ARG_WITH(nss-includes,
+	[  --with-nss-includes=DIR    where you have NSS includes],
+	WITH_NSS_INC="$withval")
+if test -n "$WITH_NSS_INC"; then
+	CPPFLAGS="$CPPFLAGS -I$WITH_NSS_INC"
+fi
+
+AC_ARG_WITH(nspr-includes,
+	[  --with-nspr-includes=DIR   where you have NSPR includes],
+	WITH_NSPR_INC="$withval")
+if test -n "$WITH_NSPR_INC"; then
+	CPPFLAGS="$CPPFLAGS -I$WITH_NSPR_INC"
+fi
+
+AC_ARG_WITH(nss-libraries,
+	[  --with-nss-libraries=DIR   where you have NSS libraries],
+	WITH_NSS_LIB="$withval")
+if test -n "$WITH_NSS_LIB"; then
+	LDFLAGS="$LDFLAGS -L$WITH_NSS_LIB"
+fi
+
+AC_ARG_WITH(nspr-libraries,
+	[  --with-nspr-libraries=DIR  where you have NSPR libraries],
+	WITH_NSPR_LIB="$withval")
+if test -n "$WITH_NSPR_LIB"; then
+	LDFLAGS="$LDFLAGS -L$WITH_NSPR_LIB"
+fi
+
+AC_ARG_WITH(nspr-config,
+	[  --with-nspr-config=DIR     path o nspr-config script],
+	WITH_NSPR_CONF="$withval")
+
+
+if test x$want_ssl_impl = xyes -a x$WITH_SSL = xyes; then
+	if eval "test x$WITH_SSL_VAL = xauto -o x$WITH_SSL_VAL = xnss"; then
+		if test -z "$WITH_NSPR_CONF"; then
+			AC_CHECK_PROG(NSPR_CONFIG, nspr-config, "yes";WITH_NSPR_CONF="nspr-config", "no")
+
+		fi
+		if test -n "$WITH_NSPR_CONF"; then
+			NSPR_LIBS=`"$WITH_NSPR_CONF" --libs`
+			NSPR_CFLAGS=`"$WITH_NSPR_CONF" --cflags`
+		else
+			NSPR_LIBS="-lplc4 -lplds4 -lnspr4"
+			NSPR_CFLAGS=""
+		fi
+		AC_CHECK_HEADERS(prio.h nss.h ssl.h smime.h, [
+			saved_LDFLAGS="$LDFLAGS"
+			saved_CFLAGS="$CFLAGS"
+			LDFLAGS="$LDFLAGS -lssl3 -lsmime -lnss3 -lsectool -lpkcs7 $NSPR_LIBS"
+			CFLAGS="$CFLAGS $NSPR_CFLAGS"
+			AC_TRY_LINK_FUNC(NSS_Init, NSS_LIBS="-lssl3 -lsmime -lnss3 -lsectool -lpkcs7 $NSPR_LIBS"; want_ssl_impl="no")
+			LDFLAGS="$saved_LDFLAGS"
+			CFLAGS="$saved_CFLAGS"
+		])
+		AC_MSG_CHECKING(for Mozilla NSS3 support)
+		if test -z "$NSS_LIBS"; then
+			AC_MSG_RESULT([no])
+		else
+			AC_MSG_RESULT([yes])
+		fi
+
+		if test -n "$NSS_LIBS"; then
+			x_libs="$x_libs $NSS_LIBS"
+			AC_DEFINE_UNQUOTED(USE_SSL, 1, [want SSL support])
+			AC_DEFINE_UNQUOTED(USE_SSL_IMPL_NSS, 1,
+				[use Mozilla NSS3 for SSL support])
+		fi
+	fi
+fi
+
+
+dnl *********************
+dnl test for NTLM support
+dnl *********************
+AC_ARG_ENABLE(ntlm,
+	[  --disable-ntlm             do not compile with NTLM auth support],
+	WITH_NTLM=$enableval, WITH_NTLM="yes")
+
+AC_ARG_WITH(desimpl, [  --with-desimpl=[none/auto/libcrypto/libdes/libmcrypt/libgcrypt] select DES library],
+	WITH_DESIMPL_VAL="$withval", WITH_DESIMPL_VAL="auto")
+
+case "$WITH_DESIMPL_VAL" in
+	none | auto | libcrypto | libdes | libmcrypt | libgcrypt) ;;
+	*) AC_MSG_ERROR("Bad selection in --with-desimpl option !");;
+esac
+
+
+if eval "test x$WITH_NTLM = xyes"; then
+	have_crypto_lib="no"
+	if test -n "$SSL_LIBS" -a "$WITH_DESIMPL_VAL" = auto ; then
+		have_crypto_lib="yes" 
+		_have_ntlm="yes"
+		AC_CHECK_LIB(crypto, MD4_Init,
+			AC_DEFINE_UNQUOTED(HAVE_OPENSSL_MD4, 1,
+				[libcrypto from OpenSSL contains MD4 cipher]))
+	fi
+	if test x$have_crypto_lib = "xno"; then 
+		if test "$WITH_DESIMPL_VAL" = auto -o \
+			"$WITH_DESIMPL_VAL" = libmcrypt; then
+			
+			AC_CHECK_HEADER(mcrypt.h, AC_CHECK_LIB(ltdl, lt_dlopen,
+				AC_CHECK_LIB(mcrypt, mcrypt_module_open, [
+					have_crypto_lib="yes" 
+					_have_ntlm="yes"
+					x_libs="$x_libs -lmcrypt -lltdl"
+					AC_DEFINE_UNQUOTED(HAVE_MCRYPT, 1,
+						[have libmcrypt])], , -ltdl),
+				AC_CHECK_LIB(mcrypt, mcrypt_module_open, [
+					have_crypto_lib="yes" 
+					_have_ntlm="yes"
+					x_libs="$x_libs -lmcrypt"
+					AC_DEFINE_UNQUOTED(HAVE_MCRYPT, 1,
+						[have libmcrypt])])
+			))
+		fi
+
+	fi
+	if test x$have_crypto_lib = "xno"; then 
+		if test "$WITH_DESIMPL_VAL" = auto -o \
+			"$WITH_DESIMPL_VAL" = libgcrypt; then
+			AC_CHECK_PROG(LIBGCRYPT_CONFIG, libgcrypt-config,
+				"yes", "no")
+			if test "$LIBGCRYPT_CONFIG" = "yes"; then
+				AC_MSG_CHECKING([libgcrypt settings])
+				have_crypto_lib="yes"
+				_have_ntlm="yes"
+				x_libs="$x_libs `libgcrypt-config --libs`"
+				x_cflags="$x_cflags `libgcrypt-config --cflags`"
+				AC_DEFINE_UNQUOTED(HAVE_GCRYPT, 1,
+					[gcrypt support for NTLM])
+				AC_MSG_RESULT([done])
+			fi
+		fi
+	fi
+	if test x$have_crypto_lib = "xno"; then 
+		if test "$WITH_DESIMPL_VAL" = auto -o \
+			"$WITH_DESIMPL_VAL" = libcrypto; then
+			if test -z "$WITH_SSL_PFX"; then
+				AC_MSG_CHECKING(for OpenSSL installation directory)
+				if test -z "$WITH_SSL_LIB"; then
+					for i in "/usr/local/openssl" \
+						 "/usr/local/ssl" \
+						 "/usr/ssl" \
+						 "/usr/openssl" \
+						 "/opt/ssl" \
+						 "/opt/openssl"; do
+							if test -d "$i"; then
+							    WITH_SSL_PFX="$i"
+							fi
+					done
+				fi
+				if test -n "$WITH_SSL_PFX"; then
+					CPPFLAGS="$CPPFLAGS -I$WITH_SSL_PFX/include"
+					LDFLAGS="$LDFLAGS -L$WITH_SSL_PFX/lib"
+					AC_MSG_RESULT([$WITH_SSL_PFX])
+				else
+					AC_MSG_RESULT([unknown])
+				fi
+				AC_CHECK_HEADER(openssl/des.h, [
+					AC_DEFINE_UNQUOTED(OPENSSL, 1,
+					[have new OpenSSL not old SSLeay libs])]
+				)
+			fi
+			AC_CHECK_LIB(crypto, des_ecb_encrypt, [
+				have_crypto_lib="yes",
+				have_crypto_lib="no"])
+			AC_CHECK_LIB(crypto, MD4_Init,
+				AC_DEFINE_UNQUOTED(HAVE_OPENSSL_MD4, 1,
+				[libcrypto from OpenSSL contains MD4 cipher]))
+			if test x$have_crypto_lib = "xyes"; then 
+				x_libs="$x_libs -lcrypto"
+				_have_ntlm="yes"
+			fi
+		fi
+	fi
+	if test x$have_crypto_lib = "xno"; then 
+		if test "$WITH_DESIMPL_VAL" = auto -o \
+			"$WITH_DESIMPL_VAL" = libdes; then
+			AC_CHECK_LIB(des, des_ecb_encrypt, [
+				x_libs="$x_libs -ldes"
+				_have_ntlm="yes"])
+		fi
+	fi
+	if eval "test x$_have_ntlm = xyes"; then
+		AC_DEFINE_UNQUOTED(ENABLE_NTLM, 1, [NTLM authorization support])
+		AC_MSG_CHECKING([whether NTLM structures are properly aligned])
+		AC_RUN_IFELSE([AC_LANG_SOURCE([[
+			#define ____ACCONFIG_TEST___
+			#include "src/ntlm_auth.h"
+			int main()
+			{
+				if ((sizeof(ntlm_type_1_msg_t) != (NTLM_MSG1_SIZE)) ||
+				    (sizeof(ntlm_type_2_msg_t) != (NTLM_MSG2_SIZE)) ||
+				    (sizeof(ntlm_type_3_msg_t) != (NTLM_MSG3_SIZE)))
+				{
+					exit(1);
+				}
+				exit(0);
+			}
+		]])],[AC_MSG_RESULT(yes)],[AC_DEFINE_UNQUOTED(NTLM_UNPACKED_STRUCT, 1,
+			improper alignment of NTLM structures)
+		AC_MSG_RESULT(no)],[])
+	fi
+fi
+
+dnl ******************************
+dnl checks for threading libraries
+dnl ******************************
+AC_ARG_ENABLE(threads,
+	[  --enable-threads           compile with multithreading support],
+	WITH_THREADS=$enableval, WITH_THREADS="no")
+if eval "test x$WITH_THREADS = xyes"; then
+	AC_MSG_CHECKING([whether the C compiler (${CC-cc}) supports -pthread])
+	echo 'void f(){}' > conftest.c
+	if test -z "`${CC-cc} -pthread -c conftest.c 2>&1`"; then
+		ac_ccpthread_opt=yes
+		x_cflags="$x_cflags -pthread"
+		AC_DEFINE_UNQUOTED(HAVE_MT, 1, [multithreading support])
+		x_libs="-pthread $x_libs"
+		HAVE_MT="yes"
+	else
+		ac_ccpthread_opt=no
+	fi
+	rm -f conftest*
+	AC_MSG_RESULT($ac_ccpthread_opt)
+
+
+	if test "$ac_ccpthread_opt" = "no"; then
+		AC_CHECK_LIB(pthread, pthread_create, x_libs="$x_libs -lpthread";HAVE_MT="yes";PTHREAD_LIB="pthread")
+		AC_CHECK_LIB(pthreads, pthread_create, x_libs="$x_libs -lpthreads";HAVE_MT="yes";PTHREAD_LIB="pthreads")
+		if test -z "$HAVE_MT"; then
+			AC_CHECK_FUNC(pthread_create, HAVE_MT="yes")
+		fi
+		if test "$HAVE_MT" = "yes"; then
+			AC_DEFINE_UNQUOTED(HAVE_MT, 1, [multithreading support])
+			x_cflags="$x_cflags -D_REENTRANT"
+		fi
+	fi
+
+	if test "$HAVE_MT" = "yes"; then
+		AC_CHECK_FUNCS(gethostbyname_r)
+		if test "$ac_cv_func_gethostbyname_r" = "no"; then
+			if test -n "$PTHREAD_LIB"; then
+				AC_CHECK_LIB($PTHREAD_LIB, gethostbyname_r,
+					AC_DEFINE_UNQUOTED(HAVE_GETHOSTBYNAME_R,
+					1,
+					[threadsafe gethostbyname_r function]),
+					[ AC_CHECK_LIB(c_r, gethostbyname_r,
+						x_libs="$x_libs -lc_r"
+						AC_DEFINE_UNQUOTED(
+							HAVE_GETHOSTBYNAME_R, 1,
+							[threadsafe gethostbyname_r function]))
+					])
+				
+			fi
+		fi
+	fi
+fi
+
+dnl ****************************
+dnl misc GUI and GTK tests
+dnl ****************************
+AC_ARG_ENABLE(gtk,
+	[  --disable-gtk              do not compile with GTK interface],
+	WITH_GTK=$enableval, WITH_GTK="yes")
+
+AC_ARG_ENABLE(gtk2,
+	[  --disable-gtk2             do not use GTK2 (fallback to GTK1)],
+	WITH_GTK2=$enableval, WITH_GTK2="yes")
+
+AC_ARG_ENABLE(gnome,
+	[  --disable-gnome            don't install Gnome menu entry infos],
+	WITH_GNOME=$enableval, WITH_GNOME="yes")
+
+AC_ARG_ENABLE(tree,
+	[  --disable-tree             do not compile with tree preview],
+	WITH_TREE=$enableval, WITH_TREE="yes")
+
+AC_ARG_WITH(gtk-includes,
+	[  --with-gtk-includes=DIR    where you have GTK includes],
+	WITH_GTK_INC="$withval")
+if test -n "$WITH_GTK_INC"; then
+	CPPFLAGS="$CPPFLAGS -I$WITH_GTK_INC"
+fi
+
+AC_ARG_WITH(gtk-libraries,
+	[  --with-gtk-libraries=DIR   where you have GTK libraries],
+	WITH_GTK_LIB="$withval")
+if test -n "$WITH_GTK_LIB"; then
+	LDFLAGS="$LDFLAGS -L$WITH_GTK_LIB"
+fi
+
+AC_ARG_WITH(gtk-config,
+	[  --with-gtk-config=PATH     where you have GTK config script],
+	WITH_GTK_CONFIG="$withval")
+if test -z "$WITH_GTK_CONFIG"; then
+	WITH_GTK_CONFIG="gtk-config"
+fi
+
+AC_ARG_WITH(pkg-config,
+	[  --with-pkg-config=PATH     where you have pkg-config program],
+	WITH_PKG_CONFIG="$withval")
+if test -z "$WITH_PKG_CONFIG"; then
+	WITH_PKG_CONFIG="pkg-config"
+fi
+
+if eval "test x$WITH_GTK = xyes -o x$ISCYGWIN = xyes"; then
+	CFLAGS="$CFLAGS $X_CFLAGS"
+	if test -n "$x_includes" -a "$x_includes" "!=" "NONE"; then
+		CFLAGS="$CFLAGS -I$x_includes"
+	fi
+
+	LDFLAGS="$LDFLAGS $X_LDFLAGS"
+	if test -n "$x_libraries"; then
+		LDFLAGS="$LDFLAGS -L$x_libraries"
+	fi
+
+	dnl Test for X11
+	AC_CHECK_LIB(X11, XOpenDisplay, X_LIBS="-lX11 $X_LIBS $X_EXTRA_LIBS", X_LIBS="", $X_EXTRA_LIBS)
+
+	dnl Test for Xext
+	if test -n "$X_LIBS"; then
+		AC_CHECK_LIB(Xext, XShapeCombineRegion, X_LIBS="$X_LIBS -lXext", X_LIBS="$X_LIBS -lXext", $X_LIBS)
+	fi
+
+	dnl Test for Xmu
+	if test -n "$X_LIBS"; then
+		AC_CHECK_LIB(Xmu, XmuClientWindow, [
+			XMU_LIBS="-lXmu"
+			AC_DEFINE_UNQUOTED(HAVE_XMU, 1, [have Xmu library])
+			], , $X_LIBS)
+	fi
+
+	dnl Test for gtk
+	if eval "test x$WITH_GTK = xyes"; then
+        	if eval "test x$WITH_GTK2 = xyes"; then
+			if eval "test -x $WITH_PKG_CONFIG"; then
+				PKG_CONFIG="yes"
+			else
+				AC_CHECK_PROG(PKG_CONFIG, $WITH_PKG_CONFIG, "yes", "no")
+			fi
+		fi
+		if eval "test -x $WITH_GTK_CONFIG"; then
+			GTK_CONFIG="yes"
+		else
+			AC_CHECK_PROG(GTK_CONFIG, $WITH_GTK_CONFIG, "yes", "no")
+		fi
+		if eval "test x$GTK_CONFIG = xno"; then
+			AC_CHECK_PROG(GTK_CONFIG2, gtk-config-2.0, "yes";WITH_GTK_CONFIG="gtk-config-2.0", "no")
+			GTK_CONFIG="$GTK_CONFIG2"
+		fi
+		if eval "test x$GTK_CONFIG = xyes -o x$PKG_CONFIG = xyes"; then
+			if eval "test x$PKG_CONFIG = xyes"; then
+				AC_MSG_RESULT([checking for gtk configuration using pkg-config script ...])
+			else
+				AC_MSG_RESULT([checking for gtk configuration using gtk-config script ...])
+			fi
+			if eval "test x$HAVE_MT = xyes"; then
+				if eval "test x$PKG_CONFIG = xyes"; then
+					GTK_LIBS=`$WITH_PKG_CONFIG --libs gtk+-2.0 gthread-2.0`
+					GTK_CFLAGS=`$WITH_PKG_CONFIG --cflags gtk+-2.0 gthread-2.0`
+                                        GTK_VERSION="2"
+				else
+					GTK_LIBS=`$WITH_GTK_CONFIG --libs gtk gthread`
+					GTK_CFLAGS=`$WITH_GTK_CONFIG --cflags gtk gthread`
+				fi
+			else
+				if eval "test x$PKG_CONFIG = xyes"; then
+					GTK_LIBS=`$WITH_PKG_CONFIG --libs gtk+-2.0`
+					GTK_CFLAGS=`$WITH_PKG_CONFIG --cflags gtk+-2.0`
+                                        GTK_VERSION="2"
+				else
+					GTK_LIBS=`$WITH_GTK_CONFIG --libs`
+					GTK_CFLAGS=`$WITH_GTK_CONFIG --cflags`
+				fi
+			fi
+			AC_MSG_RESULT([	gtk LDFLAGS=$GTK_LIBS ])
+			AC_MSG_RESULT([	gtk CFLAGS=$GTK_CFLAGS ])
+		else
+			AC_CHECK_LIB(gtk, gtk_init, GTK_LIBS="-lgtk -lgdk -lglib $X_LIBS -lm", , $X_LIBS -lgdk -lglib -lm)
+		fi
+		if test -n "$GTK_LIBS"; then
+			GTK_LIBS="$GTK_LIBS $XMU_LIBS"
+			if eval "test x$WITH_GNOME = xyes"; then
+				AC_CHECK_PROG(GNOME_CONFIG, gnome-config, "yes", "no")
+				if eval "test x$GNOME_CONFIG = xyes"; then
+					AC_MSG_CHECKING([gnome install prefix])
+					GNOME_PREFIX=`gnome-config --prefix`
+					AC_MSG_RESULT([ $GNOME_PREFIX ])
+				fi
+			fi
+		fi
+
+		if test -n "$GTK_LIBS" ; then
+			if test -n "$GTK_LIBS"; then
+				x_libs="$x_libs $GTK_LIBS"
+				x_cflags="$x_cflags $GTK_CFLAGS"
+				AC_DEFINE_UNQUOTED(GTK_FACE, $GTK_VERSION, [with GTK+ GUI])
+				AC_DEFINE_UNQUOTED(I_FACE, 1, [with GUI])
+			else
+				AC_MSG_WARN([pavuk will build without GUI])
+			fi
+			if test "$WITH_TREE" = "yes"; then
+				AC_DEFINE_UNQUOTED(WITH_TREE, 1,
+					[with preview dialog for HTML tree])
+			fi
+		fi
+	fi
+fi
+
+dnl ****************************
+dnl Mozilla JS engine checkings
+dnl ****************************
+_cppflags=${CPPFLAGS}
+_ldflags=${LDFLAGS}
+
+AC_ARG_ENABLE(js,
+	[  --disable-js               do not compile with JS bindings],
+	WITH_MOZJS=$enableval, WITH_MOZJS="yes")
+
+AC_ARG_WITH(js-includes,
+[  --with-js-includes=DIR     where you have Mozilla JS runtime includes],[
+	if test "$withval" != "no" -a "$withval" != "yes"; then
+		CPPFLAGS="${CPPFLAGS} -I$withval"
+	fi
+])
+
+AC_ARG_WITH(js-libraries,
+[  --with-js-libraries=DIR    where you have Mozilla JS runtime libraries],[
+	if test "$withval" != "no" -a "$withval" != "yes"; then
+		LDFLAGS="${LDFLAGS} -L$withval"
+	fi
+])
+
+if test $WITH_MOZJS = yes; then
+	if test x$ISCYGWIN = xyes; then
+		CPPFLAGS="${CPPFLAGS} -DXP_PC"
+	else
+		CPPFLAGS="${CPPFLAGS} -DXP_UNIX"
+	fi
+
+	AC_CHECK_HEADERS(jsapi.h,
+		AC_CHECK_LIB(js, JS_Init,[
+			AC_DEFINE_UNQUOTED(HAVE_MOZJS, 1,
+				[with JavaScript bindings])
+			x_libs="$x_libs -ljs"],
+			AC_CHECK_LIB(mozjs, JS_Init,[
+				AC_DEFINE_UNQUOTED(HAVE_MOZJS, 1,
+					[with JavaScript bindings])
+				x_libs="$x_libs -lmozjs"],
+				CPPFLAGS=${_cppflags}
+				LDFLAGS=${_ldflags})),
+		CPPFLAGS=${_cppflags}
+		LDFLAGS=${_ldflags})
+else
+	CPPFLAGS=${_cppflags}
+	LDFLAGS=${_ldflags}
+fi
+
+dnl ********************************
+dnl all the various REGEX tests
+dnl ********************************
+AC_ARG_WITH(regex, [  --with-regex=[none/auto/posix/gnu/v8/bsd/pcre/lregex] select type of regular expressions you want to use],
+	WITH_REGEX="$withval", WITH_REGEX="auto")
+
+case "$WITH_REGEX" in
+	none | auto | posix | gnu | v8 | bsd | pcre | lregex) ;;
+	*) AC_MSG_ERROR("Bad selection in --with-regex option !");;
+esac
+
+if eval "test x$WITH_REGEX = xnone"; then
+	want_regex_impl=no
+else
+	want_regex_impl=yes
+	AC_CHECK_HEADERS(regex.h)
+fi
+
+dnl ********************************
+dnl test for POSIX regex in libregex
+dnl ********************************
+
+if eval "test x$want_regex_impl = xyes"; then
+	if eval "test x$WITH_REGEX = xauto -o x$WITH_REGEX = xlregex"; then
+		AC_CHECK_LIB(regex, regcomp, [
+			AC_DEFINE_UNQUOTED(HAVE_REGEX, 1, [REs support])
+			AC_DEFINE_UNQUOTED(HAVE_POSIX_REGEX, 1, [POSIX REs])
+			x_libs="$x_libs -lregex"; want_regex_impl="no"])
+	fi
+fi	
+
+
+dnl ********************
+dnl test for POSIX regex
+dnl ********************
+
+if eval "test x$want_regex_impl = xyes"; then
+	if eval "test x$WITH_REGEX = xauto -o x$WITH_REGEX = xposix"; then
+		AC_MSG_CHECKING([for POSIX regcomp()])
+		ac_pregcomp="no" 
+		AC_LINK_IFELSE([AC_LANG_PROGRAM([[
+		#include <sys/types.h>
+		#include <regex.h>
+		]], [[
+			regex_t pr;
+			regcomp(&pr , "" , 0);
+		]])],[ac_pregcomp="yes"],[])
+		AC_MSG_RESULT($ac_pregcomp)
+		if eval "test x$ac_pregcomp = xyes"; then
+			AC_DEFINE_UNQUOTED(HAVE_REGEX, 1, [REs support])
+			AC_DEFINE_UNQUOTED(HAVE_POSIX_REGEX, 1, [POSIX REs])
+			want_regex_impl=no
+		fi
+	fi
+fi
+
+dnl ********************
+dnl test for PCRE regex
+dnl ********************
+
+if eval "test x$want_regex_impl = xyes"; then
+	if eval "test x$WITH_REGEX = xauto -o x$WITH_REGEX = xpcre"; then
+		AC_CHECK_PROG(PCRE_CONFIG, pcre-config, "yes", "no")
+		if eval "test x$PCRE_CONFIG = xyes"; then
+			pcre_cflags=`pcre-config --cflags`
+			pcre_libs=`pcre-config --libs`
+			x_cflags="$x_cflags $pcre_cflags"
+			AC_DEFINE_UNQUOTED(HAVE_REGEX, 1, [REs support])
+			AC_DEFINE_UNQUOTED(HAVE_PCRE_REGEX, 1, [PCRE REs])
+			x_libs="$x_libs $pcre_libs"
+			want_regex_impl=no
+		else
+			AC_CHECK_LIB(pcre, pcre_compile, [
+				AC_DEFINE_UNQUOTED(HAVE_REGEX, 1, [REs support])
+				AC_DEFINE_UNQUOTED(HAVE_PCRE_REGEX, 1,
+					[PCRE REs])
+				x_libs="$x_libs -lpcre";want_regex_impl="no"])
+		fi
+	fi
+fi	
+
+dnl ********************
+dnl test for GNU regex
+dnl ********************
+
+if eval "test x$want_regex_impl = xyes"; then
+	if eval "test x$WITH_REGEX = xauto -o x$WITH_REGEX = xgnu"; then
+		AC_MSG_CHECKING([for GNU regular expressions])
+		ac_gnu_re="no"
+		AC_LINK_IFELSE([AC_LANG_PROGRAM([[]], [[
+			re_compile_pattern();
+		]])],[ac_gnu_re="yes"],[])
+		AC_MSG_RESULT($ac_gnu_re)
+		if eval "test x$ac_gnu_re = xyes"; then
+			AC_DEFINE_UNQUOTED(HAVE_REGEX, 1, [REs support])
+			AC_DEFINE_UNQUOTED(HAVE_GNU_REGEX, 1, [GNU REs])
+			want_regex_impl=no
+		fi
+	fi
+fi
+
+dnl ********************
+dnl test for Bell V8 regex
+dnl ********************
+
+if eval "test x$want_regex_impl = xyes"; then
+	if eval "test x$WITH_REGEX = xauto -o x$WITH_REGEX = xv8"; then
+		AC_MSG_CHECKING([for Bell V8 regcomp()])
+		ac_v8regcomp="no" 
+		AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <regexp.h>]], [[
+			regexp *pr;
+			pr = regcomp("");
+		]])],[ac_v8regcomp="yes"],[])
+		AC_MSG_RESULT($ac_v8regcomp)
+		if eval "test x$ac_v8regcomp = xyes"; then
+			AC_DEFINE_UNQUOTED(HAVE_REGEX, 1, [REs support])
+			AC_DEFINE_UNQUOTED(HAVE_V8_REGEX, 1, [SYSV 8 REs])
+			AC_CHECK_FUNC(regsub, 
+				AC_DEFINE_UNQUOTED(HAVE_V8_REGSUB, 1,
+					[SYSV 8 RE exports regsub]))
+			want_regex_impl=no
+		fi
+	fi
+fi
+
+dnl ********************
+dnl test for BSD regex
+dnl ********************
+
+if eval "test x$want_regex_impl = xyes"; then
+	if eval "test x$WITH_REGEX = xauto -o x$WITH_REGEX = xbsd"; then
+		AC_MSG_CHECKING([for BSD regular expressions])
+		ac_bsd_re="no"
+		AC_LINK_IFELSE([AC_LANG_PROGRAM([[]], [[
+			re_comp(".*");
+			re_exec(".*");
+		]])],[ac_bsd_re="yes"],[])
+		AC_MSG_RESULT($ac_bsd_re)
+		if eval "test x$ac_bsd_re = xyes"; then
+			AC_DEFINE_UNQUOTED(HAVE_REGEX, 1, [REs support])
+			AC_DEFINE_UNQUOTED(HAVE_BSD_REGEX, 1, [BSD REs])
+			want_regex_impl=no
+		fi
+	fi
+fi
+
+dnl **********************
+dnl check for zlib library
+dnl **********************
+_cppflags=${CPPFLAGS}
+_ldflags=${LDFLAGS}
+
+AC_ARG_WITH(zlib-includes,
+[  --with-zlib-includes=DIR   where you have Zlib includes],[
+	if test "$withval" != "no" -a "$withval" != "yes"; then
+		CPPFLAGS="${CPPFLAGS} -I$withval"
+	fi
+])
+
+AC_ARG_WITH(zlib-libraries,
+[  --with-zlib-libraries=DIR  where you have Zlib libraries],[
+	if test "$withval" != "no" -a "$withval" != "yes"; then
+		LDFLAGS="${LDFLAGS} -L$withval"
+	fi
+])
+
+AC_CHECK_HEADERS(zlib.h,
+	AC_CHECK_LIB(z, gzopen,[
+		AC_DEFINE_UNQUOTED(HAVE_ZLIB, 1, [have libz])
+		x_libs="$x_libs -lz"],
+		CPPFLAGS=${_cppflags}
+		LDFLAGS=${_ldflags}),
+	CPPFLAGS=${_cppflags}
+	LDFLAGS=${_ldflags})
+
+dnl **************************
+dnl check for Berkeley DB 1.8x
+dnl **************************
+have_db_h="no"
+have_db185_h="no"
+AC_CHECK_HEADER(db1/db.h,
+[
+  AC_DEFINE_UNQUOTED(HAVE_DB1_H, 1, [have db1/db.h])
+  have_db_h="yes"
+],[	
+  AC_MSG_CHECKING([for txn_begin in db.h])
+  AC_EGREP_HEADER(txn_begin, db.h,
+  [
+    have_DB_VERSION_STRING="yes"
+    AC_MSG_RESULT($have_DB_VERSION_STRING)
+    AC_CHECK_HEADER(db_185.h, 
+      [
+	AC_DEFINE_UNQUOTED(HAVE_DB185_H, 1, [have db185.h])
+	have_db185_h="yes"
+      ],[
+	AC_CHECK_HEADER(db4/db_185.h,
+  	  [
+	    AC_DEFINE_UNQUOTED(HAVE_DB4_DB185_H, 1, [have db4/db185.h])
+	    have_db185_h="yes"
+	  ],[
+	    AC_CHECK_HEADER(db3/db_185.h,
+	    [
+	      AC_DEFINE_UNQUOTED(HAVE_DB3_DB185_H, 1, [have db3/db185.h])
+	      have_db185_h="yes"
+	    ],[
+	      AC_CHECK_HEADER(db2/db_185.h,
+	      [
+	        AC_DEFINE_UNQUOTED(HAVE_DB2_DB185_H, 1, [have db2/db185.h])
+	        have_db185_h="yes"
+	      ])
+	    ])
+          ])
+        ])
+      ],[
+	have_db_h="yes";
+	have_DB_VERSION_STRING="no";
+	AC_MSG_RESULT($have_DB_VERSION_STRING)]
+     )]
+)
+
+if test $have_db185_h = "yes"; then
+	found_db_lib="no";
+	AC_DEFINE_UNQUOTED(DB_COMPATIBILITY_API, 1,
+		[Berkeley DB 1.8x comatibility])
+	AC_CHECK_FUNC(__db185_open, [
+		AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1, [Berkeley DB 1.8x])
+		found_db_lib="yes"])
+	if test $found_db_lib = "no"; then
+		AC_CHECK_LIB(db-4.4, __db185_open, [
+			AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1, [Berkeley DB 1.8x])
+			x_libs="$x_libs -ldb-4.4"
+			found_db_lib="yes"])
+	fi
+	if test $found_db_lib = "no"; then
+		AC_CHECK_LIB(db-4.3, __db185_open, [
+			AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1, [Berkeley DB 1.8x])
+			x_libs="$x_libs -ldb-4.3"
+			found_db_lib="yes"])
+	fi
+	if test $found_db_lib = "no"; then
+		AC_CHECK_LIB(db-4.1, __db185_open, [
+			AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1, [Berkeley DB 1.8x])
+			x_libs="$x_libs -ldb-4.1"
+			found_db_lib="yes"])
+	fi
+	if test $found_db_lib = "no"; then
+		AC_CHECK_LIB(db-4.0, __db185_open, [
+			AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1, [Berkeley DB 1.8x])
+			x_libs="$x_libs -ldb-4.0"
+			found_db_lib="yes"])
+	fi
+	if test $found_db_lib = "no"; then
+		AC_CHECK_LIB(db-3.1, __db185_open, [
+			AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1, [Berkeley DB 1.8x])
+			x_libs="$x_libs -ldb-3.1"
+			found_db_lib="yes"])
+	fi
+	if test $found_db_lib = "no"; then
+		AC_CHECK_LIB(db-3.0, __db185_open, [
+			AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1, [Berkeley DB 1.8x])
+			x_libs="$x_libs -ldb-3.0"
+			found_db_lib="yes"])
+	fi
+	if test $found_db_lib = "no"; then
+		AC_CHECK_LIB(db2, dbopen, [
+			AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1, [Berkeley DB 1.8x])
+			x_libs="$x_libs -ldb2"
+			found_db_lib="yes"])
+	fi
+	if test $found_db_lib = "no"; then
+		AC_CHECK_LIB(db, __db185_open,
+			AC_CHECK_LIB(db, txn_open, , [
+				AC_DEFINE_UNQUOTED(HAVE_BDB_18x, 1,
+					[Berkeley DB 1.8x])
+				x_libs="$x_libs -ldb"
+				found_db_lib="yes"])
+		)
+	fi
+fi
+
+dnl *******************************
+dnl IPv6 tests
+dnl *******************************
+
+AC_ARG_ENABLE(ipv6,
+	[  --disable-ipv6             do not compile with IPv6 support],
+	WITH_IPV6=$enableval, WITH_IPV6="yes")
+
+if test "$WITH_IPV6" = yes; then
+	have_ipv6_func="yes"
+	AC_CHECK_FUNCS(inet_pton,,have_ipv6_func="no")
+	AC_CHECK_FUNCS(inet_ntop,,have_ipv6_func="no")
+	AC_CHECK_FUNCS(getaddrinfo,,have_ipv6_func="no")
+	AC_CHECK_FUNCS(freeaddrinfo,,have_ipv6_func="no")
+	AC_CHECK_FUNCS(gai_strerror,,have_ipv6_func="no")
+
+	if test $have_ipv6_func = "no"; then
+		if test -d /usr/inet6/include; then
+			CPPFLAGS="$CPPFLAGS -I/usr/inet6/include"
+		fi
+		if test -d /usr/inet6/lib; then
+			LDFLAGS="$LDFLAGS -I/usr/inet6/lib"
+		fi
+		AC_CHECK_LIB(inet6, getaddrinfo,
+			have_ipv6_func="yes"; IPV6_LIBS="-linet6")
+	fi
+
+	AC_MSG_CHECKING([for IPv6 support])
+	have_ipv6_support="no"
+	if test $have_ipv6_func = "yes"; then
+		AC_LINK_IFELSE([AC_LANG_PROGRAM([[ #include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+		]], [[
+				struct sockaddr_in6 sa6;
+				struct in6_addr a6;
+				sa6.sin6_addr.s6_addr;
+				sa6.sin6_family = AF_INET6;
+				return sizeof(a6);
+		]])],[have_ipv6_support="yes"],[have_ipv6_func="no"])
+	fi
+	AC_MSG_RESULT($have_ipv6_support)
+
+	if test $have_ipv6_func = "yes"; then
+		AC_DEFINE_UNQUOTED(HAVE_INET6, 1, [IPv6 support])
+		x_libs="$x_libs $IPV6_LIBS"
+	fi
+fi
+
+AC_MSG_CHECKING([for struct sockaddr_storage])
+have_sockaddr_storage="no"
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <sys/types.h>
+#include <sys/socket.h>
+	]], [[struct sockaddr_storage ss; return sizeof(ss);]])],[
+	AC_DEFINE_UNQUOTED(HAVE_SOCKADDR_STORAGE, 1,
+		[have declared struct sockaddr_storage])
+	have_sockaddr_storage="yes"],[])
+AC_MSG_RESULT($have_sockaddr_storage)
+
+dnl *******************************
+dnl misc portability checkings
+dnl *******************************
+
+AC_CHECK_FUNCS(gettimeofday)
+
+AC_MSG_CHECKING([for tm_gmtoff inside struct tm])
+ac_tm_gmtoff="no"
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <time.h>]], [[struct tm mtm; mtm.tm_gmtoff; return 0;]])],[
+	AC_DEFINE_UNQUOTED(HAVE_GMTOFF, 1, [have tm_gmtoff inside struct tm])
+	ac_tm_gmtoff="yes"],[])
+AC_MSG_RESULT($ac_tm_gmtoff)
+
+AC_FUNC_FNMATCH
+AC_CHECK_FUNCS(setenv usleep mkstemp vsnprintf)
+AC_CHECK_FUNCS(fstatvfs, , [AC_CHECK_FUNCS(fstatfs)])
+AC_CHECK_FUNC(lstat, , x_cflags="$x_cflags -Dlstat=stat")
+AC_CHECK_FUNC(flock, ac_flock="yes", ac_flock="no")
+
+if eval "test x$ac_flock = xyes"; then
+	AC_DEFINE_UNQUOTED(HAVE_FLOCK, 1, [have flock() in libc])
+else
+	AC_MSG_CHECKING([for fcntl file locking])
+	ac_fcntl_lock="no"
+	AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <unistd.h>
+#include <fcntl.h>]], [[
+	fcntl(0,F_SETLK,F_WRLCK);
+	fcntl(0,F_SETLK,F_UNLCK);
+]])],[ac_fcntl_lock="yes"],[])
+	AC_MSG_RESULT($ac_fcntl_lock)
+	if eval "test x$ac_fcntl_lock = xyes"; then
+		AC_DEFINE_UNQUOTED(HAVE_FCNTL_LOCK, 1, [fcntl() file locking])
+	fi
+fi
+
+AC_MSG_CHECKING([for tzset])
+ac_tzset="no" 
+AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <time.h>]], [[
+	tzset();
+]])],[ac_tzset="yes"],[])
+AC_MSG_RESULT($ac_tzset)
+if eval "test x$ac_tzset = xyes"; then
+	AC_DEFINE_UNQUOTED(HAVE_TZSET, 1, [have timezon function tzset()])
+fi
+
+_saved_LIBS="$LIBS"
+LIBS="$EXTRA_LIBS"
+AC_MSG_CHECKING([h_errno accesibility])
+ac_h_errno="no" 
+AC_LINK_IFELSE([AC_LANG_PROGRAM([[
+#include <sys/types.h>
+#include <netdb.h>
+]], [[
+	h_errno = 0;
+]])],[ac_h_errno="yes"],[])
+if eval "test x$ac_h_errno = xyes"; then
+	AC_MSG_RESULT($ac_h_errno)
+else
+	ac_h_errno="no";
+	AC_LINK_IFELSE([AC_LANG_PROGRAM([[
+#define _XOPEN_SOURCE_EXTENDED
+#define _INCLUDE_XOPEN_SOURCE_EXTENDED
+#include <sys/types.h>
+#include <netdb.h>
+	]], [[
+		h_errno = 0;
+	]])],[ac_h_errno="need to define XOPEN_SOURCE_EXTENDED"],[])
+	if eval "test x$ac_h_errno = xyes"; then
+		AC_MSG_RESULT($ac_h_errno)
+		x_cflags="$x_cflags -D_XOPEN_SOURCE_EXTENDED -D_INCLUDE_XOPEN_SOURCE_EXTENDED"
+	else
+
+		AC_LINK_IFELSE([AC_LANG_PROGRAM([[
+			extern int h_errno;
+		]], [[
+			h_errno = 0;
+		]])],[ac_h_errno="yes"],[])
+		if eval "test x$ac_h_errno = xyes"; then
+			AC_MSG_RESULT([need to declare h_errno])
+			AC_DEFINE_UNQUOTED(NEED_DECLARE_H_ERRNO, 1,
+				[libc doesn't export h_errno variable])
+		else
+			AC_MSG_RESULT([imposible to access h_errno - pavuk will probably not build])
+		fi
+	fi
+fi
+LIBS="$_saved_LIBS"
+
+# Can we assume varargs are passed in order on the stack and ints == ptrs?
+AC_RUN_IFELSE([AC_LANG_SOURCE([
+#include <stdio.h>
+int main(void) {
+printf("checking data sizes for DLLISTTYPE... void * (%d), long (%d)... %s\n",
+sizeof(void *), sizeof(long),
+(sizeof(long) > (sizeof(void *))) ? "long" : "void *");
+return (sizeof(long) > (sizeof(void *))) ? 20 : 0;
+}
+])],[DLLISTMODE="void *"],[DLLISTMODE="long"],[DLLISTMODE="void *"])
+AC_DEFINE_UNQUOTED(DLLISTTYPE, $DLLISTMODE, [largest data type])
+
+AC_CHECK_FUNC(tcgetpgrp, [
+	AC_DEFINE_UNQUOTED(HAVE_TERMIOS, 1, [Define if you have tcgetpgrp()])
+	AC_MSG_CHECKING([whether getpgrp() needs PID parameter])
+	AC_RUN_IFELSE([AC_LANG_SOURCE([[#include <unistd.h>
+			int main()
+			{
+				if (getpgrp() == -1)
+					return 0;
+				else
+					return 1;
+			}
+		]])],[
+		AC_DEFINE_UNQUOTED(GETPGRP_NEED_PID, 1,
+			[getpgrp() need PID parameter])
+		AC_MSG_RESULT(yes)],[AC_MSG_RESULT(no)
+	],[])]
+)
+
+AC_CHECK_HEADERS(sys/param.h sys/stat.h sys/mount.h sys/vfs.h \
+	sys/statvfs.h sys/statfs.h arpa/inet.h)
+
+dnl *******************************
+dnl test for gnu dprint
+dnl *******************************
+
+AC_CHECK_LIB(c, dprintf, AC_DEFINE_UNQUOTED(HAVE_DPRINTF, 1, [dprintf]))
+
+dnl *******************************
+dnl misc final config stuffs
+dnl *******************************
+
+x_cflags="$CFLAGS $x_cflags"
+CFLAGS=""
+x_libs="$LDFLAGS $x_ldflags $x_libs $EXTRA_LIBS"
+
+
+AC_SUBST(GNOME_PREFIX)
+AC_SUBST(MSUBDIRS)
+AC_SUBST(NWSMAKEFILE)
+AC_SUBST(MSGFMT)
+AC_SUBST(ICONV)
+AC_SUBST(WINDRES)
+AC_SUBST(MSGFMTSTATS)
+AC_SUBST(DEPS)
+AC_SUBST(x_libs)
+AC_SUBST(x_cflags)
+
+AC_SUBST(PAVUK_PO)
+AC_SUBST(PAVUK_MO)
+AC_SUBST(PAVUK_POX)
+AC_SUBST(PAVUK_UPO)
+AC_SUBST(PAVUK_UMO)
+AC_SUBST(PAVUK_ALLMO)
+AC_SUBST(PAVUK_ALLPO)
+AC_SUBST(PAVUK_LANG)
+AC_SUBST(PAVUK_UTFMODE)
+
+echo "LDFLAGS=$x_libs"
+echo "CPPFLAGS=$CPPFLAGS"
+echo "CFLAGS=$x_cflags"
+
+AC_CONFIG_FILES([Makefile src/Makefile icons/Makefile man/Makefile po/Makefile man/pavuk.1])
+AC_OUTPUT

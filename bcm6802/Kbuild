@@ -1,0 +1,4 @@
+obj-m := bcm6802.o
+bcm6802-y := bmoca.o bbsi.o
+EXTRA_CFLAGS := -I/home/jenkins/workspace/48c2527c/thirdparty/bcm6802/bmoca
+KBUILD_EXTRA_SYMBOLS := 

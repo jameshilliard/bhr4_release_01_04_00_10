@@ -1,0 +1,5247 @@
+# ja.po for pavuk.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# SATO Satoru <ss@gnome.gr.jp>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pavuk 0.9p126\n"
+"POT-Creation-Date: 2001-07-30 10:14+0200\n"
+"PO-Revision-Date: 2000-10-22 21:24+09:00\n"
+"Last-Translator: SATO Satoru <ss@gnome.gr.jp>\n"
+"Language-Team: Japanese <translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: abstract.c:46
+#, c-format
+msgid "Suspending download for %d seconds.\n"
+msgstr ""
+
+#: abstract.c:84 doc.c:550
+msgid "File redirect\n"
+msgstr "ファイルリダイレクト\n"
+
+#: abstract.c:120
+#, c-format
+msgid "Loading copy from local NS cache - %s\n"
+msgstr "ローカルの NS キャッシュからコピーを読み込み中 - %s\n"
+
+#: abstract.c:152
+#, fuzzy, c-format
+msgid "Loading copy from local Mozilla cache - %s\n"
+msgstr "ローカルの NS キャッシュからコピーを読み込み中 - %s\n"
+
+#: abstract.c:185
+#, fuzzy, c-format
+msgid "Loading copy from local MSIE cache - %s\n"
+msgstr "ローカルの NS キャッシュからコピーを読み込み中 - %s\n"
+
+#: abstract.c:221
+msgid "Unsupported URL\n"
+msgstr "サポートされていない URL\n"
+
+#: abstract.c:341 abstract.c:377
+msgid "Warning: broken ftp transfer ...\n"
+msgstr "警告: ftp 転送が切断されました...\n"
+
+#: abstract.c:351
+msgid "Error removing FTP document from remote server\n"
+msgstr ""
+
+#: abstract.c:496
+msgid "Error reading document with \"chunked\" transfer encoding!\n"
+msgstr "\"chuked\" 転送エンコードの文書読み込み中にエラー!\n"
+
+#: ainterface.c:118
+#, c-format
+msgid "Removing unsupported URL: %s\n"
+msgstr "サポートされていない URL を消去中: %s\n"
+
+#: ainterface.c:199
+msgid "Specify at least one starting URL!"
+msgstr "最低でも一つのスタート URL を指定して下さい!"
+
+#: ainterface.c:201
+msgid "Specify at least one starting URL!\n"
+msgstr "最低でも一つのスタート URL を指定して下さい!\n"
+
+#: ainterface.c:472
+msgid "Can't list available message catalogs\n"
+msgstr "利用可能なメッセージカタログをリスト表示できません\n"
+
+#: authinfo.c:107
+msgid "Bad section - specify protocol\n"
+msgstr "不正なセクション - プロトコルを指定して下さい\n"
+
+#: authinfo.c:112
+msgid "Bad section - specify hostname\n"
+msgstr "不正なセクション - ホスト名を指定して下さい\n"
+
+#: authinfo.c:159
+#, c-format
+msgid "Unable to parse : \"%s\"\n"
+msgstr "解析できません : \"%s\"\n"
+
+#: authinfo.c:179
+#, c-format
+msgid "Bad protocol - %s\n"
+msgstr "不正なプロトコル - %s\n"
+
+#: authinfo.c:190
+#, c-format
+msgid "Bad port number %s\n"
+msgstr "不正なポート番号 %s\n"
+
+#: authinfo.c:211
+#, c-format
+msgid "Unknown auth type - %s\n"
+msgstr "不明な認証方式 - %s\n"
+
+#: cleanup.c:60
+msgid "press any key to exit\n"
+msgstr "終了するためにどれかキーを押して下さい\n"
+
+#: cmdparse.c:129
+#, fuzzy, c-format
+msgid "Error parsing commandline at: %s\n"
+msgstr ".pavuk_info ファイルフィールド解析中にエラー: %s\n"
+
+#: cmdparse.c:186
+#, fuzzy, c-format
+msgid "Unable to parse commandline: %s\n"
+msgstr "解析できません : %s\n"
+
+#: config.c:44
+#, fuzzy
+msgid "Level order"
+msgstr "レベルの順番"
+
+#: config.c:45
+#, fuzzy
+msgid "Level order, inline first"
+msgstr "レベルの順番、インラインが最初"
+
+#: config.c:46
+msgid "Pre order"
+msgstr ""
+
+#: config.c:47
+msgid "Pre order, inline first"
+msgstr ""
+
+#: config.c:115
+#, c-format
+msgid ""
+"Usage:  %s  [options]  [any number of URLS]\n"
+"pavuk-%s %s\n"
+msgstr ""
+"使い方:  %s  [オプション]  [URL の数]\n"
+"pavuk-%s %s\n"
+
+#: config.c:131
+#, fuzzy, c-format
+msgid "Type \"%s --help\" for long help\n"
+msgstr "詳細ヘルプを見るには \"%s -h\" と入力して下さい\n"
+
+#: config.c:139
+msgid "Optional features available :\n"
+msgstr "可能なオプション特性 :\n"
+
+#: config.c:141
+msgid " - Debug mode\n"
+msgstr "- デバッグモード\n"
+
+#: config.c:145
+msgid " - GNU gettext internationalization of messages\n"
+msgstr " - GNU gettext 国際化メッセージ\n"
+
+#: config.c:149
+msgid " - flock() document locking\n"
+msgstr " - flock() 文書ロック中\n"
+
+#: config.c:153
+msgid " - fcntl() document locking\n"
+msgstr " - fcntl() 文書ロック中\n"
+
+#: config.c:158
+msgid " - Gtk GUI interface\n"
+msgstr " - Gtk GUI インタフェース\n"
+
+#: config.c:161
+msgid " - URL tree preview\n"
+msgstr " - URL ツリー内覧\n"
+
+#: config.c:166
+msgid " - http over SSL\n"
+msgstr " - SSL 上の HTTP\n"
+
+#: config.c:171
+msgid " - Socks v4 proxy support\n"
+msgstr " - Socks v4 プロキシサポート\n"
+
+#: config.c:173
+msgid " - Socks v5 proxy support\n"
+msgstr " - Socks v5 プロキシサポート\n"
+
+#: config.c:177
+msgid " - with filesystem free space checking\n"
+msgstr " - ファイルシステムフリースペースチェック\n"
+
+#: config.c:181
+msgid " - with optional regex patterns in -fnrules and -*rpattern options\n"
+msgstr " - -fnrules と -*rpattern オプションでのオプション正規表現パターン\n"
+
+#: config.c:185
+msgid " - with POSIX regexp\n"
+msgstr " - POSIX 正規表現\n"
+
+#: config.c:189
+msgid " - with Bell V8 regexp\n"
+msgstr " - Bell V8 正規表現\n"
+
+#: config.c:193
+msgid " - with BSD regexp\n"
+msgstr " - BSD 正規表現\n"
+
+#: config.c:197
+msgid " - with GNU regexp\n"
+msgstr " - GNU 正規表現\n"
+
+#: config.c:201
+msgid " - with PCRE regexp\n"
+msgstr " - PCRE 正規表現\n"
+
+#: config.c:205
+msgid " - with support for loading files from Netscape browser cache\n"
+msgstr " - Netscape ブラウザキャッシュからファイルを読み込みをサポート\n"
+
+#: config.c:209
+msgid ""
+" - with support for detecting whether pavuk is running as background job\n"
+msgstr " - バックグラウンドジョブの pavuk の実行検出をサポート\n"
+
+#: config.c:213
+msgid " - with multithreading support\n"
+msgstr ""
+
+#: config.c:217
+msgid " - with NTLM authorization support\n"
+msgstr ""
+
+#: config.c:221
+msgid " - with JavaScript bindings\n"
+msgstr ""
+
+#: config.c:295
+#, c-format
+msgid "HTML tag not supported : %s.%s\n"
+msgstr "HTML タグはサポートされていません: %s.%s\n"
+
+#: config.c:654
+#, fuzzy
+msgid "Error parsing commandline\n"
+msgstr "エラースケジューリング\n"
+
+#: config.c:661
+#, fuzzy, c-format
+msgid "Not enough number of parameters for \"-%s\" option\n"
+msgstr "パラメータ \"%s\" の数が不充分です\n"
+
+#: config.c:668
+#, fuzzy, c-format
+msgid "Unknown option %s\n"
+msgstr "不明なポート \"%s\"\n"
+
+#: config.c:675
+#, c-format
+msgid "Wrong format of option %s\n"
+msgstr ""
+
+#: config.c:684
+#, c-format
+msgid "WARNING: option \"-%s\" not supported in current configuration!\n"
+msgstr ""
+
+#: config.c:697
+#, fuzzy, c-format
+msgid "Please specify number with parameter \"-%s\"\n"
+msgstr "パラメータに数字を指定して下さい: \"%s\"\n"
+
+#: config.c:762 config.c:1113 http_proxy.c:120
+#, c-format
+msgid "Unknown port \"%s\"\n"
+msgstr "不明なポート \"%s\"\n"
+
+#: config.c:778 config.c:1126
+#, c-format
+msgid "Bad auth scheme \"%s\"\n"
+msgstr "不正な認証方法 \"%s\"\n"
+
+#: config.c:788 config.c:1136
+#, c-format
+msgid "Unknow operation mode \"%s\"\n"
+msgstr "不明な操作モード \"%s\"\n"
+
+#: config.c:810
+#, fuzzy, c-format
+msgid "Please specify floating number with parameter \"-%s\"\n"
+msgstr "パラメータ \"%s\" について float 値を指定して下さい\n"
+
+#: config.c:829
+#, fuzzy, c-format
+msgid "Please specify proper condition type for -%s (%s)\n"
+msgstr "%s (%s) に対して適切な条件を指定して下さい\n"
+
+#: config.c:852
+#, fuzzy, c-format
+msgid "Please specify valid RE with parameter \"-%s\"\n"
+msgstr "パラメータ \"%s\" について適切な正規表現を指定して下さい\n"
+
+#: config.c:863 config.c:1248
+#, c-format
+msgid "Unknown URL scheduling strategy - \"%s\"\n"
+msgstr "不明な URL 巡回計画 - \"%s\"\n"
+
+#: config.c:871 config.c:1259
+#, c-format
+msgid "Unknown SSL version - \"%s\"\n"
+msgstr "不明な SSL バージョン - \"%s\"\n"
+
+#: config.c:880 config.c:1270
+#, c-format
+msgid "Invalid additional HTTP header - \"%s\"\n"
+msgstr "不正な追加 HTTP ヘッダ - \"%s\"\n"
+
+#: config.c:903 config.c:1293
+#, c-format
+msgid "Invalid request specification - \"%s\"\n"
+msgstr "不正なリクエスト指定 - \"%s\"\n"
+
+#: config.c:948
+#, fuzzy, c-format
+msgid "Invalid parameters for \"-%s\" option\n"
+msgstr "不正な時間パラメータ \"%s\"\n"
+
+#: config.c:964
+#, fuzzy, c-format
+msgid "Invalid number list \"%s\" for option \"-%s\"\n"
+msgstr "不正なリクエスト指定 - \"%s\"\n"
+
+#: config.c:981
+#, c-format
+msgid "Invalid FTP login handshake string \"%s\" for option \"-%s\"\n"
+msgstr ""
+
+#: config.c:1031
+#, c-format
+msgid "WARNING: option \"%s\" not supported in current configuration!\n"
+msgstr ""
+
+#: config.c:1055
+#, c-format
+msgid "Please specify number \"%s\"\n"
+msgstr "番号 \"%s\" を指定して下さい\n"
+
+#: config.c:1073
+#, c-format
+msgid "Only \"true\" & \"false\" is allowed : \"%s\"\n"
+msgstr "\"true\" と \"false\" だけが許されます : \"%s\"\n"
+
+#: config.c:1147
+#, c-format
+msgid "Bad time parameter \"%s\"\n"
+msgstr "不正な時間パラメータ \"%s\"\n"
+
+#: config.c:1178
+#, c-format
+msgid "Please specify floating number \"%s\"\n"
+msgstr "float 数 \"%s\" を指定して下さい\n"
+
+#: config.c:1195
+#, c-format
+msgid "Please specify proper arguments for %s\n"
+msgstr "%s についてプログラム引数を指定して下さい\n"
+
+#: config.c:1207
+#, c-format
+msgid "Please specify proper condition type for %s (%s)\n"
+msgstr "%s (%s) に対して適切な条件を指定して下さい\n"
+
+#: config.c:1235
+#, c-format
+msgid "Please specify valid RE \"%s\"\n"
+msgstr "適切な正規表現 \"%s\" を指定して下さい\n"
+
+#: config.c:1327
+#, fuzzy, c-format
+msgid "Invalid js_transform specification - \"%s\"\n"
+msgstr "不正なリクエスト指定 - \"%s\"\n"
+
+#: config.c:1347
+#, fuzzy, c-format
+msgid "Invalid number list specification - \"%s\"\n"
+msgstr "不正なリクエスト指定 - \"%s\"\n"
+
+#: config.c:1362
+#, c-format
+msgid "Invalid FTP login handshake string \"%s\".\n"
+msgstr ""
+
+#: config.c:1388
+#, c-format
+msgid "Unable to parse \"%s\"\n"
+msgstr "\"%s\" を解析できません\n"
+
+#: config.c:1430
+#, fuzzy, c-format
+msgid "ERROR: Scenario loading failed (%s)\n"
+msgstr "警告: シナリオの読み込みに失敗しました (%s)\n"
+
+#: cookie.c:216
+#, c-format
+msgid "Unable to parse : %s\n"
+msgstr "解析できません : %s\n"
+
+#: cookie.c:389
+msgid "Updating cookie file\n"
+msgstr "cookie ファイルを更新中\n"
+
+#: cookie.c:418
+msgid "Cookie file has changed - > synchronizing\n"
+msgstr "cookie ファイルが変更されました - > 同期中\n"
+
+#: cookie.c:567
+#, c-format
+msgid "Server %s is trying to set cookie for %s domain\n"
+msgstr "サーバ %s は %s ドメインについて cookie を設定しよと試行中\n"
+
+#: cookie.c:578
+#, c-format
+msgid "Removing cookie from disabled domain %s\n"
+msgstr "禁止されたドメイン %s から cookie を消去中\n"
+
+#: debugl.c:16
+msgid "HTML parsers"
+msgstr "HTML パーザ"
+
+#: debugl.c:17
+msgid "Server responses"
+msgstr "サーバ応答"
+
+#: debugl.c:18
+msgid "Client requests"
+msgstr "クライアント応答"
+
+#: debugl.c:19
+msgid "Procedure calling"
+msgstr "手続呼出し"
+
+#: debugl.c:20
+msgid "File locking"
+msgstr "ファイルロック"
+
+#: debugl.c:21
+msgid "Networking code"
+msgstr "ネットワークコード"
+
+#: debugl.c:22
+msgid "Miscelanous"
+msgstr "その他"
+
+#: debugl.c:23
+msgid "Extended user infos"
+msgstr "拡張ユーザ情報"
+
+#: debugl.c:24
+msgid "Multithreading - locking"
+msgstr "マルチスレッド - ロック"
+
+#: debugl.c:25
+msgid "Multithreading - threads"
+msgstr "マルチスレッド - スレッド"
+
+#: debugl.c:26
+msgid "POST request data"
+msgstr "POST リクエストデータ"
+
+#: debugl.c:27
+msgid "Limiting conditions"
+msgstr ""
+
+#: debugl.c:66
+#, c-format
+msgid "Bad debug level selection : %s\n"
+msgstr "不正なデバッグレベル選択 : %s\n"
+
+#: decode.c:184
+msgid "decode"
+msgstr "デコード"
+
+#: digest_auth.c:155
+msgid "Trying to do HTTP Digest authorization\n"
+msgstr ""
+
+#: digest_auth.c:202
+msgid "Trying to do HTTP proxy Digest authorization\n"
+msgstr ""
+
+#: dinfo.c:368 dinfo.c:387
+#, c-format
+msgid "Error parsing .pavuk_info file field: %s\n"
+msgstr ".pavuk_info ファイルフィールド解析中にエラー: %s\n"
+
+#: doc.c:297
+msgid "Transfering data"
+msgstr "転送データ"
+
+#: doc.c:312
+msgid "setsockopt: SO_RCVBUF failed"
+msgstr "setsockopt: SO_RCVBUF に失敗しました"
+
+#: doc.c:333
+msgid "storing document"
+msgstr "文書を保存中"
+
+#: doc.c:399
+#, fuzzy
+msgid "Document transfer data"
+msgstr "データ転送完了"
+
+#: doc.c:420
+msgid "Data transfer done"
+msgstr "データ転送完了"
+
+#: doc.c:597
+#, c-format
+msgid "Trying to resume from position %d \n"
+msgstr "位置 %d からの再開を試行中\n"
+
+#: doc.c:662
+msgid "Opening connection"
+msgstr "起動時の接続"
+
+#: doc.c:686
+msgid "Loading local copy\n"
+msgstr "ローカルコピーを読み込み\n"
+
+#: doc.c:912
+msgid "File may be truncated\n"
+msgstr "ファイルは壊れている可能性があります\n"
+
+#: doc.c:936
+msgid "Decoding document - OK\n"
+msgstr "文書をデコード - OK\n"
+
+#: doc.c:939
+msgid "Decoding document - failed\n"
+msgstr "文書をデコード - 失敗\n"
+
+#: doc.c:942
+msgid "Unsupported document encoding\n"
+msgstr "サポートされていない文書エンコード\n"
+
+#: doc.c:946
+msgid "Received Encoded file but decoding not allowed (untouched)\n"
+msgstr ""
+"エンコードされたファイルを受け取りましたがデコードは不可です(untouched)\n"
+
+#: doc.c:1116
+#, c-format
+msgid "Removing improper document : %s\n"
+msgstr "不適切な文書を消去 : %s\n"
+
+#: doc.c:1178 doc.c:1244
+msgid "Local file"
+msgstr "ローカルファイル"
+
+#: doc.c:1184
+msgid "Gopher/Text File"
+msgstr "Gopher/テキストファイル"
+
+#: doc.c:1187
+msgid "Gopher/Directory"
+msgstr "Gopher/ディレクトリ"
+
+#: doc.c:1190
+msgid "Gopher/CSO phone book"
+msgstr "Gopher/CSO 電話帳"
+
+#: doc.c:1193
+msgid "Gopher/Error"
+msgstr "Gopher/エラー"
+
+#: doc.c:1196
+msgid "Gopher/BINHEX"
+msgstr "Gopher/BINHEX"
+
+#: doc.c:1199
+msgid "Gopher/DOS bin"
+msgstr "Gopher/DOS バイナリ"
+
+#: doc.c:1202
+msgid "Gopher/UUencoded"
+msgstr ""
+
+#: doc.c:1205
+msgid "Gopher/Search index"
+msgstr "Gopher/検索索引"
+
+#: doc.c:1208
+msgid "Gopher/Telnet session"
+msgstr "Gopher/Telnet セッション"
+
+#: doc.c:1211
+msgid "Gopher/bin"
+msgstr "Gopher/バイナリ"
+
+#: doc.c:1214
+msgid "Gopher/Duplicated server"
+msgstr "Gopher/重複するサーバ"
+
+#: doc.c:1217
+msgid "Gopher/TN3270"
+msgstr ""
+
+#: doc.c:1220
+msgid "Gopher/GIF"
+msgstr ""
+
+#: doc.c:1223
+msgid "Gopher/Image"
+msgstr "Gopher/画像"
+
+#: doc.c:1229
+msgid "FTP/Directory"
+msgstr "FTP/ディレクトリ"
+
+#: doc.c:1231
+msgid "FTP/File"
+msgstr "FTP/ファイル"
+
+#: doc.c:1235
+msgid "FTPS/Directory"
+msgstr "FTPS/ディレクトリ"
+
+#: doc.c:1237
+msgid "FTPS/File"
+msgstr "FTPS/ファイル"
+
+#: doc.c:1240
+msgid "Unsupported type"
+msgstr "サポートされていないタイプ"
+
+#: doc.c:1447
+#, c-format
+msgid "S: %s [R: %s] [ET: %s] [RT: %s] \r"
+msgstr ""
+
+#: doc.c:1450
+#, c-format
+msgid "S: %s [R: %s] [ET: %s] \r"
+msgstr ""
+
+#: doc.c:1490
+#, c-format
+msgid "Waiting to releases document lock on: %s\n"
+msgstr "文書のロック解放を待っています: %s\n"
+
+#: doc.c:1730
+msgid "Rewriting links inside parent documents"
+msgstr "親文書内のリンクを書き直し中"
+
+#: errcode.c:21
+#, c-format
+msgid "%s: user break\n"
+msgstr "%s: ユーザによる停止\n"
+
+#: errcode.c:28
+#, c-format
+msgid "%s: OK\n"
+msgstr ""
+
+#: errcode.c:31
+#, c-format
+msgid "%s: ERROR: storing document\n"
+msgstr "%s: エラー: 文書保存\n"
+
+#: errcode.c:34
+#, c-format
+msgid "%s: ERROR: opening file\n"
+msgstr "%s: エラー: 文書を開く\n"
+
+#: errcode.c:37
+#, c-format
+msgid "%s: ERROR: URL pointing to local directory is not supported\n"
+msgstr ""
+"%s: エラー: ローカルディレクトリへの URL 指示はサポートされていません\n"
+
+#: errcode.c:40
+#, c-format
+msgid "%s: ERROR: unknown\n"
+msgstr "%s: エラー: 不明\n"
+
+#: errcode.c:43
+#, c-format
+msgid "%s: ERROR: document is locked\n"
+msgstr "%s: エラー: 文書がロックされています\n"
+
+#: errcode.c:46
+#, c-format
+msgid "%s: ERROR: reading socket\n"
+msgstr "%s: エラー: ソケット読み込み\n"
+
+#: errcode.c:49
+#, c-format
+msgid "%s: MESSAGE: bigger than maximal allowed size\n"
+msgstr "%s: メッセージ: 許されるサイズよりも大きい\n"
+
+#: errcode.c:52
+#, c-format
+msgid "%s: MESSAGE: disabled by user-exit script condition\n"
+msgstr "%s: メッセージ: user-exit スクリプト条件は禁止されています\n"
+
+#: errcode.c:55
+#, c-format
+msgid "%s: MESSAGE: smaller than minimal allowed size\n"
+msgstr "%s: メッセージ: 許される最小サイズよりも小さい\n"
+
+#: errcode.c:58
+#, c-format
+msgid "%s: MESSAGE: this mime type is not allowed (%s)\n"
+msgstr "%s: メッセージ: この MIME タイプは禁止されています (%s)\n"
+
+#: errcode.c:61
+#, c-format
+msgid "%s: ERROR: error in proxy connect\n"
+msgstr "%s: エラー: プロキシ接続でエラー\n"
+
+#: errcode.c:64
+#, c-format
+msgid "%s: ERROR: transfer broken by user\n"
+msgstr "%s: エラー: ユーザが転送を停止\n"
+
+#: errcode.c:67
+#, c-format
+msgid "%s: MESSAGE: file modification time doesn't fit to specified interval\n"
+msgstr "%s: メッセージ: ファイル変更時間が指定時間間隔に一致しません\n"
+
+#: errcode.c:70
+#, c-format
+msgid "%s: ERROR: file has zero size - possible error\n"
+msgstr "%s: エラー: ファイルは空です - おそらくエラーです\n"
+
+#: errcode.c:73
+#, c-format
+msgid "%s: MESSAGE: document was already processed\n"
+msgstr "%s: メッセージ: 文書は既に処理済み\n"
+
+#: errcode.c:76
+#, c-format
+msgid "%s: MESSAGE: document was disabled by user\n"
+msgstr "%s: メッセージ: 文書はユーザによって禁止されました\n"
+
+#: errcode.c:79
+#, c-format
+msgid "%s: MESSAGE: document was disabled by limiting rules\n"
+msgstr "%s: メッセージ: 文書は制限ルールによって禁止されました\n"
+
+#: errcode.c:82
+#, c-format
+msgid "%s: WARNING: transfer rate lower than minimal allowed\n"
+msgstr "%s: 警告: 転送レートが許される値よりも低いです\n"
+
+#: errcode.c:85
+#, c-format
+msgid "%s: WARNING: file size quota exceeded, rest will be truncated\n"
+msgstr "%s: 警告: ファイルサイズ制限を越えたので残りは壊れたものになります\n"
+
+#: errcode.c:88
+#, c-format
+msgid "%s: WARNING: transfer quota exceeded, breaking download\n"
+msgstr "%s: 警告: 転送量制限を越えたのでダウンロードを中止します\n"
+
+#: errcode.c:91
+#, c-format
+msgid "%s: ERROR: low free space on filesystem, breaking transfer\n"
+msgstr "%s: 警告: ファイルシステムの容量が足りないので転送を中止します\n"
+
+#: errcode.c:94
+#, c-format
+msgid ""
+"%s: WARNING: maximal allowed running time exceeded, downloading will break\n"
+msgstr "%s: 警告: 許される最大実行時間を越えたのでダウンロードを中止します\n"
+
+#: errcode.c:97
+#, c-format
+msgid "%s: ERROR: unnown FTP error\n"
+msgstr "%s: エラー: 不明な FTP エラー\n"
+
+#: errcode.c:100
+#, c-format
+msgid "%s: ERROR: FTP server doesn't support REST command\n"
+msgstr "%s: エラー: FTP サーバは REST コマンドをサポートしていません\n"
+
+#: errcode.c:104
+#, c-format
+msgid "%s: ERROR: unable to list directory content\n"
+msgstr "%s: エラー: ディレクトリ内容をリスト表示できません\n"
+
+#: errcode.c:107
+#, c-format
+msgid "%s: ERROR: unable to connect to FTP server\n"
+msgstr "%s: エラー: FTP サーバへ接続できません\n"
+
+#: errcode.c:110
+#, c-format
+msgid "%s: ERROR: FTP authentification - bad username\n"
+msgstr "%s: エラー: FTP 認証 - 不正なユーザ名\n"
+
+#: errcode.c:113
+#, c-format
+msgid "%s: ERROR: FTP authentification - bad password\n"
+msgstr "%s: エラー: FTP 認証 - 不正なパスワード\n"
+
+#: errcode.c:116
+#, fuzzy, c-format
+msgid "%s: ERROR: FTP proxy authentification - bad username\n"
+msgstr "%s: エラー: FTP 認証 - 不正なユーザ名\n"
+
+#: errcode.c:119
+#, fuzzy, c-format
+msgid "%s: ERROR: FTP proxy authentification - bad password\n"
+msgstr "%s: エラー: FTP 認証 - 不正なパスワード\n"
+
+#: errcode.c:122
+#, c-format
+msgid "%s: ERROR: unable to open FTP data connection\n"
+msgstr "%s: エラー: FTP データ接続を開けません\n"
+
+#: errcode.c:125
+#, c-format
+msgid "%s: ERROR: unable to get file from FTP server\n"
+msgstr "%s: エラー: FTPサーバからファイルを取得できません\n"
+
+#: errcode.c:128
+#, c-format
+msgid "%s: ERROR: FTP server doesn't support MDTM command\n"
+msgstr "%s: エラー: FTP サーバは MDTM コマンドをサポートしていません\n"
+
+#: errcode.c:131
+#, c-format
+msgid "%s: ERROR: file from FTP server is truncated\n"
+msgstr "%s: エラー: FTP サーバからのファイルが壊れています\n"
+
+#: errcode.c:135
+#, c-format
+msgid "%s: MESSAGE: reget unneeded - file is up to date\n"
+msgstr "%s: メッセージ: 再取得が未完了 - ファイルは最新です\n"
+
+#: errcode.c:138
+#, c-format
+msgid "%s: MESSAGE: FTP transfer not allowed because of rules\n"
+msgstr "%s: メッセージ: FTP 転送はルールによって禁止されています\n"
+
+#: errcode.c:141
+#, c-format
+msgid ""
+"%s: WARNING: FTP directory URL, but FTP directory not allowed (-FTPdir)\n"
+msgstr "%s: 警告: FTP のディレクトリ URL ですが、禁止されています(-FTPdir)\n"
+
+#: errcode.c:144
+#, c-format
+msgid "%s: WARNING: FTP login_handshake failed\n"
+msgstr ""
+
+#: errcode.c:147
+#, c-format
+msgid "%s: ERROR: unknown HTTP error\n"
+msgstr "%s: エラー: 不明な HTTP エラー\n"
+
+#: errcode.c:150
+#, c-format
+msgid "%s: ERROR: unable to connect to HTTP server\n"
+msgstr "%s: エラー: HTTP サーバに接続できません\n"
+
+#: errcode.c:153
+#, c-format
+msgid "%s: ERROR: HTTP server doesn't support partial content retrieving\n"
+msgstr "%s: エラー: HTTP サーバは部分的な内容の取得をサポートしていません\n"
+
+#: errcode.c:156
+#, c-format
+msgid "%s: ERROR: broken HTTP request send\n"
+msgstr "%s: エラー: 間違った HTTP リクエストを送出\n"
+
+#: errcode.c:159
+#, fuzzy, c-format
+msgid "%s: ERROR: failed to read HTTP response\n"
+msgstr "%s: エラー: HTTP リクエストデータを送れません\n"
+
+#: errcode.c:162
+#, c-format
+msgid "%s: ERROR: unexpected HTTP response code after trying to reget\n"
+msgstr ""
+
+#: errcode.c:166
+#, c-format
+msgid "%s: ERROR: unable to send HTTP request data\n"
+msgstr "%s: エラー: HTTP リクエストデータを送れません\n"
+
+#: errcode.c:169
+#, c-format
+msgid "%s: MESSAGE: redirecting to another location\n"
+msgstr "%s: メッセージ: 他の場所へリダイレクト\n"
+
+#: errcode.c:172
+#, c-format
+msgid "%s: ERROR: HTTP document is truncated\n"
+msgstr "%s: エラー: HTTP 文書は壊れています\n"
+
+#: errcode.c:175
+#, c-format
+msgid "%s: ERROR: cyclic redirection!\n"
+msgstr "%s: エラー: 循環するリダイレクト!\n"
+
+#: errcode.c:178
+#, c-format
+msgid "%s: ERROR: redirecting to unsupported URL\n"
+msgstr "%s: エラー: サポートされていない URL へのリダイレクト\n"
+
+#: errcode.c:181
+#, c-format
+msgid "%s: ERROR: unable to connect to proxy server\n"
+msgstr "%s: エラー: プロキシサーバへ接続できません\n"
+
+#: errcode.c:184
+#, fuzzy, c-format
+msgid "%s: ERROR: received bad redirect response from server\n"
+msgstr "%s: エラー: 文書は HTTP サーバから削除されました\n"
+
+#: errcode.c:187
+#, fuzzy, c-format
+msgid "%s: ERROR: unable to do NTLM authorization\n"
+msgstr "%s: エラー: FTP データ接続を開けません\n"
+
+#: errcode.c:190
+#, fuzzy, c-format
+msgid "%s: ERROR: unable to do HTTP Digest authorization\n"
+msgstr "%s: エラー: HTTP リクエストデータを送れません\n"
+
+#: errcode.c:193
+#, fuzzy, c-format
+msgid "%s: ERROR: unable to do NTLM proxy authorization\n"
+msgstr "%s: エラー: FTP データ接続を開けません\n"
+
+#: errcode.c:196
+#, fuzzy, c-format
+msgid "%s: ERROR: unable to do HTTP proxy Digest authorization\n"
+msgstr "%s: エラー: HTTP リクエストデータを送れません\n"
+
+#: errcode.c:199
+#, fuzzy, c-format
+msgid "%s: ERROR: HTTP client sends bad request\n"
+msgstr "%s: エラー: HTTP クライアントは不正なリクエストを送出\n"
+
+#: errcode.c:202
+#, c-format
+msgid "%s: ERROR: HTTP authentication is required\n"
+msgstr "%s: エラー: HTTP 認証が必要です\n"
+
+#: errcode.c:205
+#, c-format
+msgid "%s: ERROR: HTTP proxy authentication is required\n"
+msgstr "%s: エラー: HTTP プロキシ認証が必要です\n"
+
+#: errcode.c:208
+#, c-format
+msgid "%s: ERROR: HTTP payment required\n"
+msgstr "%s: エラー: HTTP 支払が必要です\n"
+
+#: errcode.c:211
+#, c-format
+msgid "%s: ERROR: forbidden HTTP request\n"
+msgstr "%s: エラー: 隠蔽された HTTP リクエスト\n"
+
+#: errcode.c:214
+#, c-format
+msgid "%s: ERROR: HTTP document not found\n"
+msgstr "%s: エラー: HTTP 文書がみつかりません\n"
+
+#: errcode.c:217
+#, c-format
+msgid "%s: ERROR: HTTP remote server error\n"
+msgstr "%s: エラー: HTTP リモートサーバエラー\n"
+
+#: errcode.c:220
+#, c-format
+msgid "%s: ERROR: HTTP server replied with connection timeout response\n"
+msgstr "%s: エラー: HTTP サーバは接続タイムアウト応答を返しました\n"
+
+#: errcode.c:223
+#, c-format
+msgid "%s: ERROR: HTTP server replied with conflict response\n"
+msgstr "%s: エラー: HTTP サーバは conflict 応答を返しました\n"
+
+#: errcode.c:226
+#, c-format
+msgid "%s: ERROR: document was removed from HTTP server\n"
+msgstr "%s: エラー: 文書は HTTP サーバから削除されました\n"
+
+#: errcode.c:229
+#, c-format
+msgid "%s: ERROR: you must use proxy to access this URL\n"
+msgstr ""
+
+#: errcode.c:232
+#, fuzzy, c-format
+msgid "%s: ERROR: 306\n"
+msgstr "%s: エラー: 不明\n"
+
+#: errcode.c:235
+#, c-format
+msgid ""
+"%s: ERROR: used HTTP method is not supported or not allowed for this URL\n"
+msgstr ""
+
+#: errcode.c:238
+#, c-format
+msgid "%s: ERROR: client doesn't accept MIME type of requested URL\n"
+msgstr ""
+
+#: errcode.c:241
+#, c-format
+msgid "%s: ERROR: in request header is missing Content-Length: header\n"
+msgstr ""
+
+#: errcode.c:244
+#, fuzzy, c-format
+msgid "%s: ERROR: preconditions in request failed for requested URL\n"
+msgstr "%s: エラー: サポートされていない URL へのリダイレクト\n"
+
+#: errcode.c:247
+#, fuzzy, c-format
+msgid "%s: ERROR: request body too large\n"
+msgstr "%s: エラー: プロキシサーバへ接続できません\n"
+
+#: errcode.c:250
+#, fuzzy, c-format
+msgid "%s: ERROR: request URL too long\n"
+msgstr "%s: エラー: 間違った HTTP リクエストを送出\n"
+
+#: errcode.c:253
+#, fuzzy, c-format
+msgid "%s: ERROR: resource in format unsupported for this request\n"
+msgstr "%s: エラー: サポートされていない URL へのリダイレクト\n"
+
+#: errcode.c:256
+#, fuzzy, c-format
+msgid "%s: ERROR: requested bad range of document\n"
+msgstr "%s: エラー: 文書保存\n"
+
+#: errcode.c:259
+#, fuzzy, c-format
+msgid "%s: ERROR: failed to fulfill expectation from request\n"
+msgstr "%s: エラー: FTPサーバからファイルを取得できません\n"
+
+#: errcode.c:262
+#, fuzzy, c-format
+msgid "%s: ERROR: requested HTTP method not implemented on server side\n"
+msgstr "%s: エラー: HTTP リモートサーバエラー\n"
+
+#: errcode.c:265
+#, fuzzy, c-format
+msgid "%s: ERROR: gatewaying failed for this URL\n"
+msgstr "%s: エラー: 文書を開く\n"
+
+#: errcode.c:268
+#, fuzzy, c-format
+msgid "%s: ERROR: HTTP service currently not available, check later\n"
+msgstr "%s: エラー: HTTP サーバは部分的な内容の取得をサポートしていません\n"
+
+#: errcode.c:271
+#, c-format
+msgid ""
+"%s: ERROR: timeout occured in communication between gateway and remote "
+"server\n"
+msgstr ""
+
+#: errcode.c:274
+#, fuzzy, c-format
+msgid ""
+"%s: ERROR: HTTP version used in request is unsupported by remote server\n"
+msgstr "%s: エラー: HTTP サーバは部分的な内容の取得をサポートしていません\n"
+
+#: errcode.c:277
+#, c-format
+msgid "%s: ERROR: unable to connect to GOPHER server\n"
+msgstr "%s: エラー: Gopher サーバに接続できません\n"
+
+#: errcode.c:280
+#, c-format
+msgid "%s: ERROR: unknown GOPHER error\n"
+msgstr "%s: エラー: 不明な Gopher エラー\n"
+
+#: errcode.c:283
+#, c-format
+msgid "%s: ERROR: unable to connect to HTTPS server\n"
+msgstr "%s: エラー: HTTPS サーバに接続できません\n"
+
+#: errcode.c:286
+#, c-format
+msgid "%s: ERROR: unable to establish SSL control connection to FTPS server\n"
+msgstr "%s: エラー: FTPS サーバと SSL コントロール接続を確立できません\n"
+
+#: errcode.c:289
+#, c-format
+msgid "%s: ERROR: this FTP server doesn't support SSL connections\n"
+msgstr "%s: エラー: この FTP サーバは SSL 接続をサポートしていません\n"
+
+#: errcode.c:292
+#, c-format
+msgid "%s: ERROR: unable to establish SSL data connection to FTPS server\n"
+msgstr "%s: エラー: FTPS サーバと SSL データ接続を確立できません\n"
+
+#: errcode.c:295
+#, c-format
+msgid "%s: ERROR: unknown errcode : %d\n"
+msgstr "%s: エラー: 不明なエラーコード: %d\n"
+
+#: file.c:35
+msgid "Can't open directory\n"
+msgstr "ディレクトリを開けません\n"
+
+#: form.c:1074 form.c:1139 form.c:1296
+#, c-format
+msgid "Unsupported form type in context: %d\n"
+msgstr "コンテキスト内にサポートされていないタイプ: %d\n"
+
+#: form.c:1395
+msgid "Browse"
+msgstr "閲覧"
+
+#: form.c:1410
+msgid "URLs with forms"
+msgstr "フォーム付き URL"
+
+#: form.c:1419
+msgid "Refresh URL list"
+msgstr "URL リストを更新"
+
+#: form.c:1453 form.c:1454 url.c:1002
+msgid "unknown"
+msgstr "不明"
+
+#: form.c:1604
+msgid "Pavuk: load form file"
+msgstr "Pavuk: フォームファイルを読み込み"
+
+#: form.c:1628
+msgid "Fill forms"
+msgstr "ファイルフォーム"
+
+#: form.c:1635
+msgid "Form number: "
+msgstr "フォーム番号"
+
+#: form.c:1647
+msgid "Action URL: "
+msgstr "アクション URL: "
+
+#: form.c:1656 gui_common.c:706
+msgid "Request method: "
+msgstr "リクエスト方法: "
+
+#: form.c:1665 gui_common.c:725 gui_tree.c:140
+msgid "Request encoding: "
+msgstr "リクエストエンコード: "
+
+#: form.c:1674
+msgid "HTML form content"
+msgstr "HTML フォーム内容"
+
+#: form.c:1689
+msgid "Load HTML file ..."
+msgstr "HTML ファイルを読み込み中 ..."
+
+#: form.c:1742
+msgid "Pavuk: HTML forms editor"
+msgstr "Pavuk: HTML フォームエディタ"
+
+#: form.c:1764 gui_jscons.c:192
+msgid "Close"
+msgstr "閉じる"
+
+#: ftp.c:118
+msgid "ftp_get_response: ftp control connection closed before any response\n"
+msgstr ""
+"ftp_get_response: 何ら応答なしに ftp コントロール接続が閉じられました\n"
+
+#: ftp.c:189
+msgid "ftp: setsockopt TOS - THROUGHPUT failed"
+msgstr "ftp: setsockopt TOS - THROUGHPUT に失敗しました"
+
+#: ftp.c:551
+msgid "Re-using established FTP control connection\n"
+msgstr "確立された FTP コントロール接続を再利用します\n"
+
+#: ftp.c:758 http.c:1392
+msgid "Size differs, regeting whole\n"
+msgstr "サイズが違うのですべて再取得中\n"
+
+#: ftp.c:768 http.c:1278 http.c:1402
+msgid "Modified from last download - regeting whole\n"
+msgstr "最後のダウンロードからの変更 - すべて再取得中\n"
+
+#: ftp.c:849
+msgid ""
+"Warning: FTP server undertand REST command, but can't handle it properly.\n"
+msgstr ""
+
+#: ftp.c:1094 ftp.c:1421
+#, c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory of %s://%s:%d%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>List of FTP directory %s://%s:%d/%s </H1><BR><UL>"
+msgstr ""
+
+#: ftp.c:1490
+#, c-format
+msgid ""
+"ERROR: unable to parse FTP list line :\n"
+"\t%s\n"
+msgstr ""
+"エラー: FTP リスト行を解析できません:\n"
+"\t%s\n"
+
+#: ftp.c:1683
+#, c-format
+msgid "Making symlink \"%s\" to \"%s\"\n"
+msgstr "\"%s\" から \"%s\" へのシンボリックリンクを生成中\n"
+
+#: gauthinfo.c:107
+msgid "Pavuk: Save auth. info file"
+msgstr "Pavuk: auth. 情報ファイルを保存"
+
+#: gauthinfo.c:159
+msgid "Pavuk: Load auth. info file"
+msgstr "Pavuk: auth. 情報ファイルを読み込み"
+
+#: gauthinfo.c:340
+msgid "Pavuk: Authorization info editor"
+msgstr "Pavuk: 認証情報エディタ"
+
+#: gauthinfo.c:359
+msgid "Protocol"
+msgstr "プロトコル"
+
+#: gauthinfo.c:360 gui_common.c:1819
+msgid "Host"
+msgstr "ホスト"
+
+#: gauthinfo.c:361
+msgid "User"
+msgstr "ユーザ"
+
+#: gauthinfo.c:362
+msgid "Password"
+msgstr "パスワード"
+
+#: gauthinfo.c:363
+msgid "Base dir."
+msgstr "基本ディレクトリ"
+
+#: gauthinfo.c:364
+msgid "Realm"
+msgstr "Realm"
+
+#: gauthinfo.c:365
+msgid "Scheme"
+msgstr "方法"
+
+#: gauthinfo.c:394
+msgid "Protocol: "
+msgstr "プロトコル: "
+
+#: gauthinfo.c:419 gui_common.c:1837 gui_common.c:1898 gui_common.c:1921
+#: gui_common.c:1950
+msgid "Host: "
+msgstr "ホスト: "
+
+#: gauthinfo.c:428
+msgid "User: "
+msgstr "ユーザ: "
+
+#: gauthinfo.c:437 gui_common.c:2120 gui_common.c:2170 gui_common.c:2194
+msgid "Password: "
+msgstr "パスワード: "
+
+#: gauthinfo.c:446
+msgid "Base directory: "
+msgstr "基本ディレクトリ: "
+
+#: gauthinfo.c:455
+msgid "Realm: "
+msgstr "Realm: "
+
+#: gauthinfo.c:473 gui_common.c:2064
+msgid "User auth. scheme"
+msgstr "ユーザ認証方法"
+
+#: gauthinfo.c:478
+msgid "Base auth. scheme"
+msgstr "基本認証方法"
+
+#: gauthinfo.c:483 gui_common.c:2066
+msgid "Digest auth. scheme"
+msgstr "ダイジェスト認証方法"
+
+#: gauthinfo.c:489 gui_common.c:2068
+#, fuzzy
+msgid "NTLM auth. scheme"
+msgstr "ユーザ認証方法"
+
+#: gauthinfo.c:500 gui_addurl.c:171 gui_common.c:629 gui_common.c:778
+#: gui_common.c:957 gui_common.c:1057 gui_common.c:1847 gui_common.c:2620
+#: gui_common.c:2868 gui_tools.c:648
+msgid "Append"
+msgstr "追加"
+
+#: gauthinfo.c:508 gui_common.c:645 gui_common.c:785 gui_common.c:973
+#: gui_common.c:1064 gui_common.c:1853 gui_common.c:2626 gui_common.c:2874
+#: gui_tools.c:670
+msgid "Modify"
+msgstr "変更"
+
+#: gauthinfo.c:516 gui_common.c:654 gui_common.c:982 gui_common.c:1859
+#: gui_common.c:2632 gui_common.c:2880 gui_tools.c:683
+msgid "Clear"
+msgstr "クリア"
+
+#: gauthinfo.c:524 gui_common.c:663 gui_common.c:792 gui_common.c:991
+#: gui_common.c:1071 gui_common.c:1865 gui_common.c:2638 gui_common.c:2886
+#: gui_tools.c:696
+msgid "Delete"
+msgstr "消去"
+
+#: gauthinfo.c:537 gui_common.c:2963 gui_limits.c:512 gui_sched.c:131
+msgid "OK"
+msgstr "了解"
+
+#: gauthinfo.c:548 gui_common.c:2972 gui_limits.c:521
+msgid "Apply"
+msgstr "適用"
+
+#: gauthinfo.c:556
+msgid "Load"
+msgstr "読み込み"
+
+#: gauthinfo.c:564
+msgid "Save"
+msgstr "保存"
+
+#: gauthinfo.c:575 gui_about.c:67 gui_addurl.c:180 gui_common.c:2988
+#: gui_limits.c:537 gui_sched.c:140 gui_tree.c:657 gui_tree.c:797 stats.c:507
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: gkeys.c:64 gkeys.c:82 gkeys.c:95
+#, c-format
+msgid "Unable to parse: %s\n"
+msgstr "解析不能: %s\n"
+
+#: gkeys.c:117
+msgid "Unable to create ~/.pavuk_keys file\n"
+msgstr "~/.pavuk_keys ファイルを生成できません\n"
+
+#: gkeys.c:121
+#, c-format
+msgid ""
+"# This file was generated by %s\n"
+"# You may edit it if you're careful!\n"
+"\n"
+msgstr ""
+"# このファイルは %s によって生成されました。\n"
+"# 編集するときは注意して下さい !\n"
+"\n"
+
+#: gopher.c:65
+msgid "********************* Gopher request **************\n"
+msgstr "********************* Gopher リクエスト **************\n"
+
+#: gopher.c:103
+#, c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n"
+"<HTML>\n"
+"<TITLE>\n"
+"Directory of gopher://%s:%d/%s\n"
+"</TITLE>\n"
+"<BODY>\n"
+"<H1 ALIGN=CENTER><B>Directory of gopher://%s:%d/%s </H1><BR><BR><UL>"
+msgstr ""
+
+#: gopher.c:151
+#, c-format
+msgid ""
+"Failed to parse Gopher directory entry:\n"
+"%s\n"
+msgstr ""
+
+#: gui_about.c:38
+msgid "Pavuk: About"
+msgstr "Pavuk: 概要"
+
+#: gui_about.c:60
+#, c-format
+msgid ""
+"Pavuk %s %s\n"
+" \n"
+"an automatic WEB file grabber\n"
+" \n"
+"By Stefan Ondrejicka\n"
+" \n"
+"(ondrej@idata.sk)\n"
+" \n"
+"URL : http://www.idata.sk/~ondrej/pavuk/\n"
+" "
+msgstr ""
+"Pavuk %s %s\n"
+" \n"
+"自動 WEB ファイルグラバー\n"
+" \n"
+"Stefan Ondrejicka 作\n"
+" \n"
+"(ondrej@idata.sk)\n"
+" \n"
+"URL : http://www.idata.sk/~ondrej/pavuk/\n"
+" "
+
+#: gui_api.c:168
+#, c-format
+msgid "Processed: %5d"
+msgstr "プロトコル: %5d"
+
+#: gui_api.c:170
+#, c-format
+msgid "Queued: %5d"
+msgstr "キュー: %5d"
+
+#: gui_api.c:172
+#, c-format
+msgid "Failed: %4d"
+msgstr "失敗: %4d"
+
+#: gui_api.c:174
+#, c-format
+msgid "Rejected: %5d"
+msgstr "拒否: %5d"
+
+#: gui_api.c:475 gui_api.c:492
+msgid "Start"
+msgstr "開始"
+
+#: gui_api.c:616
+msgid "Starting ..."
+msgstr "開始 ..."
+
+#: gui_api.c:681
+#, fuzzy
+msgid "Too high timeout value for GUI interface implementation of timeout\n"
+msgstr "接続の GUI インタフェース実装に対してタイムアウト時間が長すぎます\n"
+
+#: gui_addurl.c:73 gui_main.c:270
+#, c-format
+msgid "Dropped URL : %s\n"
+msgstr "ダウンロードした URL : %s\n"
+
+#: gui_addurl.c:128
+msgid "Pavuk: Append URL"
+msgstr "Pavuk: 追加 URL"
+
+#: gui_addurl.c:140
+msgid "New URL:"
+msgstr "新規 URL:"
+
+#: gui_common.c:580 gui_common.c:596 gui_main.c:803
+msgid "URL"
+msgstr ""
+
+#: gui_common.c:597
+msgid "Local filename"
+msgstr "ローカルファイル名"
+
+#: gui_common.c:616
+msgid "Request URL: "
+msgstr "リクエスト URL: "
+
+#: gui_common.c:619
+msgid "Local filename: "
+msgstr "ローカルファイル名: "
+
+#: gui_common.c:687
+msgid "Extended informations for HTTP POST request"
+msgstr "HTTP POST リクエストに対する拡張情報"
+
+#: gui_common.c:744 gui_common.c:1023
+msgid "Query fields: "
+msgstr "キューフィールド: "
+
+#: gui_common.c:758 gui_common.c:1037 gui_common.c:2563
+msgid "Type"
+msgstr "タイプ"
+
+#: gui_common.c:759 gui_common.c:1038
+msgid "Name"
+msgstr "名前"
+
+#: gui_common.c:760 gui_common.c:1039
+msgid "Value"
+msgstr "値"
+
+#: gui_common.c:804 gui_common.c:1083
+msgid "Type: "
+msgstr "タイプ: "
+
+#: gui_common.c:833 gui_common.c:1112
+msgid "Name: "
+msgstr "名前: "
+
+#: gui_common.c:835 gui_common.c:1114
+msgid "Value: "
+msgstr "値: "
+
+#: gui_common.c:865 gui_common.c:1144
+msgid "Pavuk: Choose form field file"
+msgstr "Pavuk: フォームフィールドファイルを選択"
+
+#: gui_common.c:914
+msgid "Form data"
+msgstr "フォームデータ"
+
+#: gui_common.c:942
+msgid "Matching action URL: "
+msgstr "一致アクション URL: "
+
+#: gui_common.c:1206
+msgid "Grabber I"
+msgstr "グラバー I"
+
+#: gui_common.c:1214
+msgid "Cache Directory: "
+msgstr "キャッシュディレクトリ: "
+
+#: gui_common.c:1217
+msgid "Default URL prefix: "
+msgstr ""
+
+#: gui_common.c:1220
+#, fuzzy
+msgid "Separate info directory: "
+msgstr "基本ディレクトリ: "
+
+#: gui_common.c:1223
+msgid "Index file name: "
+msgstr "索引ファイル名: "
+
+#: gui_common.c:1226
+msgid "Store file name: "
+msgstr "保存するファイル名: "
+
+#: gui_common.c:1229
+msgid "Identity string: "
+msgstr "識別文字列: "
+
+#: gui_common.c:1233
+msgid "Netscape browser cache directory: "
+msgstr "Netscape ブラウザキャッシュディレクトリ: "
+
+#: gui_common.c:1236
+#, fuzzy
+msgid "Mozilla browser cache directory: "
+msgstr "Netscape ブラウザキャッシュディレクトリ: "
+
+#: gui_common.c:1241
+msgid "Browser: "
+msgstr "ブラウザ: "
+
+#: gui_common.c:1245
+msgid "Reminder command: "
+msgstr "reminder コマンド: "
+
+#: gui_common.c:1248
+msgid "Post command: "
+msgstr "POST コマンド: "
+
+#: gui_common.c:1264
+msgid "How many times retry on fail: "
+msgstr "失敗したときの再試行回数: "
+
+#: gui_common.c:1267
+msgid "How many moved links to follow: "
+msgstr "連続するリンクを移動する回数: "
+
+#: gui_common.c:1270
+msgid "How many times to reget file: "
+msgstr "ファイルを再取得するまでの時間: "
+
+#: gui_common.c:1273
+msgid "Document age before syncing with server: "
+msgstr "サーバと同期させるまでの文書の寿命: "
+
+#: gui_common.c:1275
+msgid " days "
+msgstr " 日 "
+
+#: gui_common.c:1281
+msgid "Read buffer size: "
+msgstr "読み込みバッファサイズ: "
+
+#: gui_common.c:1286
+msgid " kB "
+msgstr ""
+
+#: gui_common.c:1292
+msgid "Hash tables size: "
+msgstr "ハッシュテーブルサイズ: "
+
+#: gui_common.c:1294
+msgid " entries "
+msgstr ""
+
+#: gui_common.c:1308
+msgid "Sleep time between transfers: "
+msgstr "転送間の休止時間: "
+
+#: gui_common.c:1310
+msgid " sec."
+msgstr " 秒"
+
+#: gui_common.c:1315
+msgid "randomize"
+msgstr ""
+
+#: gui_common.c:1321
+msgid "Rollback amount on reget: "
+msgstr "再取得での巻き返し量: "
+
+#: gui_common.c:1323
+msgid " bytes"
+msgstr " バイト"
+
+#: gui_common.c:1329
+msgid "Transfer quota: "
+msgstr "転送量制限: "
+
+#: gui_common.c:1331 gui_common.c:1339 gui_common.c:1348
+msgid " kB"
+msgstr ""
+
+#: gui_common.c:1337
+msgid "File size quota: "
+msgstr "ファイルサイズ制限: "
+
+#: gui_common.c:1346
+msgid "Filesystem freespace quota: "
+msgstr "ファイルシステムフリースペース制限: "
+
+#: gui_common.c:1364
+msgid "Number of downloading threads: "
+msgstr "ダウンロードスレッド数: "
+
+#: gui_common.c:1392
+msgid "Grabber II"
+msgstr "グラバー II"
+
+#: gui_common.c:1395
+msgid "HTML document URL rewriting"
+msgstr "HTML 文書 URL 書き直し"
+
+#: gui_common.c:1404
+msgid "Rewrite URLs inside HTML doc."
+msgstr "HTML 文書内の URL を書き直し"
+
+#: gui_common.c:1412
+msgid "Rewrite URLs to local when stored locally"
+msgstr "ローカルの保存するときに URL をローカルに書き直す"
+
+#: gui_common.c:1418
+msgid "Rewrite all suitable URLs to local"
+msgstr "すべての適切な URL をローカルに書き直す"
+
+#: gui_common.c:1424
+msgid "Rewrite all URLs to local immediately"
+msgstr "すべての URL をローカルに即座に書き直す"
+
+#: gui_common.c:1430
+msgid "Rewrite all URLs to remote immediately"
+msgstr "すべての URL をリモートに即座に書き直す"
+
+#: gui_common.c:1436
+msgid "Rewrite only one currently download URL"
+msgstr ""
+
+#: gui_common.c:1442
+msgid "Misc settings"
+msgstr "その他の設定"
+
+#: gui_common.c:1451
+msgid "Always generate unique name for document"
+msgstr "常に文書について固有な名前を生成"
+
+#: gui_common.c:1456
+msgid "Delete FTP document after succesful download"
+msgstr "ダウンロード成功後に FTP 文書を消去"
+
+#: gui_common.c:1461
+msgid "Preserve document modification time"
+msgstr "文書の変更時間を保持"
+
+#: gui_common.c:1466
+msgid "Preserve FTP document permissions"
+msgstr "FTP 文書のパーミッションを保持"
+
+#: gui_common.c:1471
+#, fuzzy
+msgid "Preserve FTP symbolic links paths"
+msgstr "FTP シンボリックリンクを保持"
+
+#: gui_common.c:1476
+#, fuzzy
+msgid "Retrieve FTP symbolic links like files"
+msgstr "FTP シンボリックリンクを保持"
+
+#: gui_common.c:1482
+msgid "Whole reget when partial not supported"
+msgstr "部分的な取得が禁止されているときにすべてを再取得"
+
+#: gui_common.c:1488
+msgid "Use gzip encoding for transfer"
+msgstr "転送のさいに gzip エンコードを使用"
+
+#: gui_common.c:1493
+msgid "Remove improper documents"
+msgstr "不適切な文書を消去"
+
+#: gui_common.c:1498
+msgid "Check transferred size of document"
+msgstr "文書の転送サイズをチェック"
+
+#: gui_common.c:1503
+msgid "Store directory URLs as index files"
+msgstr "ディレクトリ URL を index ファイルとして保存"
+
+#: gui_common.c:1508
+msgid "Store info files with each document"
+msgstr "各文書について情報ファイルを保存"
+
+#: gui_common.c:1513
+msgid "Send self URL as Referer for starting URLs"
+msgstr "開始 URL に対する Referer として URL 自身を送る"
+
+#: gui_common.c:1518
+msgid "Send If-Range header field when regeting"
+msgstr "再取得のときに If-Range ヘッダフィールドを送る"
+
+#: gui_common.c:1523
+msgid "Show time of start and end of downloading"
+msgstr "ダウンロードの開始、終了の時間を表示"
+
+#: gui_common.c:1531
+msgid "URL scheduling strategy: "
+msgstr "URL 巡回計画: "
+
+#: gui_common.c:1628
+msgid "Net"
+msgstr "ネット"
+
+#: gui_common.c:1635
+msgid "Allowed protocols"
+msgstr "可能なプロトコル"
+
+#: gui_common.c:1644
+msgid "HTTP"
+msgstr ""
+
+#: gui_common.c:1649
+msgid "FTP"
+msgstr ""
+
+#: gui_common.c:1654
+msgid "Gopher"
+msgstr ""
+
+#: gui_common.c:1660
+msgid "HTTPS"
+msgstr ""
+
+#: gui_common.c:1665
+msgid "FTPS"
+msgstr ""
+
+#: gui_common.c:1671
+msgid "FTP data connection type "
+msgstr "FTP データ接続タイプ "
+
+#: gui_common.c:1680
+msgid "Active"
+msgstr "アクティブ"
+
+#: gui_common.c:1687
+msgid "Passive"
+msgstr ""
+
+#: gui_common.c:1694
+msgid "Communication timeout: "
+msgstr "接続タイムアウト: "
+
+#: gui_common.c:1707
+msgid " min."
+msgstr " 分"
+
+#: gui_common.c:1713
+msgid "Maximal transfer rate: "
+msgstr "最大転送レート: "
+
+#: gui_common.c:1726 gui_common.c:1745
+msgid " kB/s"
+msgstr ""
+
+#: gui_common.c:1732
+msgid "Minimal transfer rate: "
+msgstr "最低転送レート: "
+
+#: gui_common.c:1751
+msgid "Local interface address: "
+msgstr "ローカルインタフェースアドレス: "
+
+#: gui_common.c:1762
+msgid "Additional HTTP headers: "
+msgstr "追加 HTTP ヘッダ: "
+
+#: gui_common.c:1773
+#, fuzzy
+msgid "Additional FTP list options: "
+msgstr "追加 HTTP ヘッダ: "
+
+#: gui_common.c:1786
+msgid "Use wide listing of FTP directories"
+msgstr "FTP ディレクトリの詳細リストを利用"
+
+#: gui_common.c:1792
+msgid "Fix detection of nonexisting FTP directories on WuFTPD FTP servers"
+msgstr ""
+
+#: gui_common.c:1798
+msgid "Use HTTP/1.1 protocol for HTTP communication"
+msgstr "HTTP 接続に HTTP/1.1 プロトコルを使用"
+
+#: gui_common.c:1804
+msgid "FTP login handshake rules"
+msgstr ""
+
+#: gui_common.c:1820
+msgid "Login handshake"
+msgstr ""
+
+#: gui_common.c:1840
+msgid "Handshake: "
+msgstr ""
+
+#: gui_common.c:1882
+msgid "Proxy"
+msgstr "プロキシ"
+
+#: gui_common.c:1888
+msgid "Gopher proxy"
+msgstr "Gopher プロキシ"
+
+#: gui_common.c:1901 gui_common.c:1924 gui_common.c:1953
+msgid "Port: "
+msgstr "ポート: "
+
+#: gui_common.c:1905
+msgid "Gopher via HTTP proxy"
+msgstr "HTTP プロキシを介した Gopher"
+
+#: gui_common.c:1910
+msgid "FTP proxy"
+msgstr "FTP プロキシ"
+
+#: gui_common.c:1927
+msgid "FTP via HTTP proxy"
+msgstr "HTTP プロキシを介した FTP"
+
+#: gui_common.c:1933
+msgid "FTP via HTTP tunneling proxy"
+msgstr "HTTP トンネルプロキシを介した FTP"
+
+#: gui_common.c:1940
+msgid "SSL proxy"
+msgstr "SSL プロキシ"
+
+#: gui_common.c:1957
+msgid "HTTP proxy"
+msgstr "HTTP プロキシ"
+
+#: gui_common.c:1963
+msgid "Proxy: "
+msgstr "プロキシ: "
+
+#: gui_common.c:1968
+msgid "Allow caching of documents"
+msgstr "文書のキャッシュを許可"
+
+#: gui_common.c:2023
+msgid "Languages"
+msgstr "言語"
+
+#: gui_common.c:2026
+msgid "Preffered languages"
+msgstr ""
+
+#: gui_common.c:2031
+#, fuzzy
+msgid "Language code: "
+msgstr "言語"
+
+#: gui_common.c:2043
+#, fuzzy
+msgid "Preffered character sets"
+msgstr "キャラクタセット"
+
+#: gui_common.c:2048
+#, fuzzy
+msgid "Character set code: "
+msgstr "キャラクタセット: "
+
+#: gui_common.c:2065
+#, fuzzy
+msgid "Basic auth. scheme"
+msgstr "基本認証方法"
+
+#: gui_common.c:2075
+msgid "Auth"
+msgstr "認証"
+
+#: gui_common.c:2082
+#, fuzzy
+msgid "User authentification"
+msgstr "HTTP ユーザ認証"
+
+#: gui_common.c:2091 gui_common.c:2140
+#, fuzzy
+msgid "Scheme: "
+msgstr "方法"
+
+#: gui_common.c:2117 gui_common.c:2167 gui_common.c:2191
+#, fuzzy
+msgid "User name: "
+msgstr "ユーザ: "
+
+#: gui_common.c:2123 gui_common.c:2173
+#, fuzzy
+msgid "NTLM domain: "
+msgstr "ドメイン: "
+
+#: gui_common.c:2126 gui_common.c:2176
+msgid "Reuse HTTP Digest access nonce"
+msgstr "臨時 HTTP ダイジェストアクセスを再利用"
+
+#: gui_common.c:2131
+msgid "HTTP proxy user authentification"
+msgstr "HTTP プロキシユーザ認証"
+
+#: gui_common.c:2181
+#, fuzzy
+msgid "FTP proxy user authentification"
+msgstr "HTTP プロキシユーザ認証"
+
+#: gui_common.c:2196
+msgid "Misc"
+msgstr ""
+
+#: gui_common.c:2210
+msgid "E-mail address: "
+msgstr "E-mail アドレス: "
+
+#: gui_common.c:2212
+msgid "Send From: header with HTTP request"
+msgstr "Send From: HTTP リクエストを伴うヘッダ"
+
+#: gui_common.c:2226
+msgid "SSL"
+msgstr ""
+
+#: gui_common.c:2229
+msgid "SSL client certificate"
+msgstr "SSL クライアント証明"
+
+#: gui_common.c:2238
+msgid "Certificate password: "
+msgstr "証明パスワード: "
+
+#: gui_common.c:2241
+msgid "Certificate PEM file: "
+msgstr "証明 PEM ファイル: "
+
+#: gui_common.c:2244
+msgid "Certificate key file: "
+msgstr "証明キーファイル: "
+
+#: gui_common.c:2247
+msgid "List of preffered ciphers: "
+msgstr "利用したい暗号のリスト: "
+
+#: gui_common.c:2253
+msgid "SSL protocol version"
+msgstr "SSL プロトコルバージョン"
+
+#: gui_common.c:2261
+msgid "SSLv23"
+msgstr ""
+
+#: gui_common.c:2267
+msgid "SSLv2"
+msgstr ""
+
+#: gui_common.c:2273
+msgid "SSLv3"
+msgstr ""
+
+#: gui_common.c:2280
+msgid "TLSv1"
+msgstr ""
+
+#: gui_common.c:2287
+#, fuzzy
+msgid "Miscelanous SSL settings"
+msgstr "その他の設定"
+
+#: gui_common.c:2297
+msgid "EGD daemon socket path: "
+msgstr ""
+
+#: gui_common.c:2301
+msgid "Unique ID for all SSL sessions"
+msgstr "すべての SSL セッションに対して固有の ID"
+
+#: gui_common.c:2316 gui_main.c:1896
+msgid "Log"
+msgstr "ログ"
+
+#: gui_common.c:2323
+msgid "Try to find unique name, when original log file locked"
+msgstr ""
+"オリジナルログファイルがロックされているときに固有名をみつけることを試みる"
+
+#: gui_common.c:2328
+msgid "Log file: "
+msgstr "ログファイル: "
+
+#: gui_common.c:2331
+msgid "Shortlog file: "
+msgstr "簡易ログファイル: "
+
+#: gui_common.c:2334
+msgid "Log window length: "
+msgstr "ログウィンドウ長: "
+
+#: gui_common.c:2347
+msgid "Cookies"
+msgstr ""
+
+#: gui_common.c:2350
+msgid "Disabled cookie domains"
+msgstr "cookie ドメインを禁止"
+
+#: gui_common.c:2355 gui_limits.c:247
+msgid "Domain: "
+msgstr "ドメイン: "
+
+#: gui_common.c:2358
+#, fuzzy
+msgid "Cookies settings"
+msgstr "その他の設定"
+
+#: gui_common.c:2367
+msgid "Update cookies"
+msgstr "cookie を更新"
+
+#: gui_common.c:2372
+msgid "Send cookies"
+msgstr "cookie を送る"
+
+#: gui_common.c:2377
+msgid "Accept cookies"
+msgstr "cookie を受け入れる"
+
+#: gui_common.c:2382
+msgid "Check cookies domain"
+msgstr "cookie ドメインをチェック"
+
+#: gui_common.c:2390
+msgid "Cookies maximal number: "
+msgstr "cookie 最大個数: "
+
+#: gui_common.c:2405
+msgid "Cookie file: "
+msgstr "cookie ファイル: "
+
+#: gui_common.c:2491
+msgid "Filename"
+msgstr "ファイル名"
+
+#: gui_common.c:2494
+msgid "Local filename conversion rules"
+msgstr "ローカルファイル名変換ルール"
+
+#: gui_common.c:2502
+msgid "Replace String1 with String2 in filename"
+msgstr "ファイル名内の String1 を String2 で置き換え"
+
+#: gui_common.c:2511
+msgid "String1: "
+msgstr ""
+
+#: gui_common.c:2514
+msgid "String2: "
+msgstr ""
+
+#: gui_common.c:2516
+msgid "Delete characters from filename"
+msgstr "ファイル名から文字を消去"
+
+#: gui_common.c:2525
+msgid "Character set: "
+msgstr "キャラクタセット: "
+
+#: gui_common.c:2527
+msgid "Replace chars from Set1 with chars from Set2 in filename"
+msgstr "ファイル名内の Set1 の文字を Set2 の文字を置き換え"
+
+#: gui_common.c:2536
+msgid "Character set1: "
+msgstr "キャラクタセット1: "
+
+#: gui_common.c:2539
+msgid "Character set2: "
+msgstr "キャラクタセット2: "
+
+#: gui_common.c:2546
+msgid "Base level of tree: "
+msgstr "ツリーの基本レベル: "
+
+#: gui_common.c:2548
+msgid "Local filename mapping rules"
+msgstr "ローカルファイル名対応ルール"
+
+#: gui_common.c:2564
+msgid "Match pattern"
+msgstr "一致パターン"
+
+#: gui_common.c:2565
+msgid "Rule"
+msgstr "ルール"
+
+#: gui_common.c:2587
+msgid "wildcard pattern"
+msgstr "ワイルドカードパターン"
+
+#: gui_common.c:2594
+msgid "RE pattern"
+msgstr "正規表現パターン"
+
+#: gui_common.c:2606
+msgid "Matching pattern: "
+msgstr "一致パターン: "
+
+#: gui_common.c:2613
+msgid "Construction rule: "
+msgstr "構成ルール: "
+
+#: gui_common.c:2653
+msgid "Advertisement"
+msgstr "公告"
+
+#: gui_common.c:2660
+msgid "Enable removing of advertisement banners"
+msgstr "宣伝バナーの消去機能を有効にする"
+
+#: gui_common.c:2665
+msgid "RE for advertisement URLs: "
+msgstr "宣伝 URL に対する正規表現: "
+
+#: gui_common.c:2777
+msgid "Javascript"
+msgstr ""
+
+#: gui_common.c:2785
+msgid "Processing of javascript"
+msgstr ""
+
+#: gui_common.c:2789
+#, fuzzy
+msgid "Javascript patterns"
+msgstr "一致パターン"
+
+#: gui_common.c:2794
+#, fuzzy
+msgid "RE for Javascript patterns: "
+msgstr "URL 一致パターン: "
+
+#: gui_common.c:2800
+msgid "Javascript patterns with transform rules"
+msgstr ""
+
+#: gui_common.c:2815
+#, fuzzy
+msgid "Pattern"
+msgstr "正規表現パターン"
+
+#: gui_common.c:2816
+#, fuzzy
+msgid "Transform rule"
+msgstr "転送レート"
+
+#: gui_common.c:2817
+#, fuzzy
+msgid "HTML tag"
+msgstr "HTML パーザ"
+
+#: gui_common.c:2818
+#, fuzzy
+msgid "HTML tag attribute"
+msgstr "許される HTML タグと属性を選択"
+
+#: gui_common.c:2819
+msgid "Rewrite"
+msgstr ""
+
+#: gui_common.c:2840
+#, fuzzy
+msgid "Pattern: "
+msgstr "正規表現パターン"
+
+#: gui_common.c:2843
+#, fuzzy
+msgid "Tranform rule: "
+msgstr "転送量制限: "
+
+#: gui_common.c:2852
+msgid "HTML tag: "
+msgstr ""
+
+#: gui_common.c:2856
+#, fuzzy
+msgid "HTML tag attribute: "
+msgstr "許される HTML タグと属性を選択"
+
+#: gui_common.c:2858
+#, fuzzy
+msgid "Rewrite URL part in HTML document"
+msgstr "HTML 文書内の URL を書き直し"
+
+#: gui_common.c:2913
+msgid "Pavuk: Common config"
+msgstr "Pavuk: 共通設定"
+
+#: gui_common.c:2980
+msgid "Limitations ..."
+msgstr "制限 ..."
+
+#: gui_jscons.c:150
+#, fuzzy
+msgid "Pavuk: JavaScript console"
+msgstr "Pavuk: auth. 情報ファイルを保存"
+
+#: gui_jscons.c:169
+msgid "Reload script file"
+msgstr ""
+
+#: gui_jscons.c:174
+#, fuzzy
+msgid "Save script to file"
+msgstr "シナリオを保存 ..."
+
+#: gui_jscons.c:181
+msgid "Load script to JavaScript runtime"
+msgstr ""
+
+#: gui_jscons.c:186
+msgid "Restart JavaScript runtime"
+msgstr ""
+
+#: gui_jscons.c:215
+#, fuzzy
+msgid "Prompt: "
+msgstr "ポート: "
+
+#: gui_jscons.c:228
+msgid "JavaScript source file: "
+msgstr ""
+
+#: gui_limits.c:44
+msgid "Tree"
+msgstr "ツリー"
+
+#: gui_limits.c:56
+msgid "Download cgi-generated pages"
+msgstr "cgi の生成するページをダウンロード"
+
+#: gui_limits.c:62
+msgid "Recurse through FTP directory"
+msgstr "FTP ディレクトリを再帰"
+
+#: gui_limits.c:68
+msgid "Allow \"robots.txt\""
+msgstr "\"robots.txt\" を許可"
+
+#: gui_limits.c:74
+msgid "Process HTML files downloaded over FTP"
+msgstr "FTP を通じて HTML ファイルを処理"
+
+#: gui_limits.c:80
+msgid "Don't leave starting site"
+msgstr "開始サイトを離れない"
+
+#: gui_limits.c:86
+msgid "Don't leave starting directory"
+msgstr "開始ディレクトリを離れない"
+
+#: gui_limits.c:92
+msgid "Don't leave site enter directory"
+msgstr "入ったディレクトリのサイトを離れない"
+
+#: gui_limits.c:98
+msgid "Download just single page"
+msgstr "単一ページをダウンロード"
+
+#: gui_limits.c:104
+msgid "Apply limiting options on inline objects"
+msgstr ""
+
+#: gui_limits.c:119
+msgid "Max. count of documents: "
+msgstr "文書の最大個数: "
+
+#: gui_limits.c:122
+msgid "Max. depth of tree: "
+msgstr "ツリーの最大深さ: "
+
+#: gui_limits.c:125
+msgid "Max. levels to leave from starting site: "
+msgstr "開始サイトから離れる最大レベル: "
+
+#: gui_limits.c:128
+msgid "Max. document size: "
+msgstr "最大文書サイズ: "
+
+#: gui_limits.c:131
+msgid "Min. document size: "
+msgstr "最小文書サイズ: "
+
+#: gui_limits.c:134
+msgid "Max. site levels to leave from starting site: "
+msgstr "開始サイトから離れる最大サイトレベル: "
+
+#: gui_limits.c:145
+msgid "Working subdirectory :"
+msgstr "作業用サブディレクトリ: "
+
+#: gui_limits.c:148
+msgid "User condition script: "
+msgstr "ユーザ条件スクリプト: "
+
+#: gui_limits.c:151
+#, fuzzy
+msgid "Follow command: "
+msgstr "POST コマンド: "
+
+#: gui_limits.c:162
+#, fuzzy
+msgid "Patterns"
+msgstr "正規表現パターン"
+
+#: gui_limits.c:165
+msgid "Wildcard patterns"
+msgstr "ワイルドカードパターン"
+
+#: gui_limits.c:174 gui_limits.c:195
+msgid "Documents matching pattern: "
+msgstr "文書一致パターン: "
+
+#: gui_limits.c:177 gui_limits.c:183 gui_limits.c:198 gui_limits.c:204
+#: gui_limits.c:266
+msgid "skip: "
+msgstr "スキップ: "
+
+#: gui_limits.c:180 gui_limits.c:201
+msgid "URL matching pattern: "
+msgstr "URL 一致パターン: "
+
+#: gui_limits.c:186
+msgid "RE patterns"
+msgstr "正規表現パターン"
+
+#: gui_limits.c:215
+msgid "Hosts"
+msgstr "ホスト"
+
+#: gui_limits.c:224
+msgid "Allow / Disallow sites"
+msgstr "許可/禁止サイト"
+
+#: gui_limits.c:230
+msgid "Site: "
+msgstr "サイト: "
+
+#: gui_limits.c:241
+msgid "Allow / Disallow domains"
+msgstr "許可/禁止ドメイン"
+
+#: gui_limits.c:253
+msgid "IP address RE patterns"
+msgstr "IP アドレス正規表現パターン"
+
+#: gui_limits.c:263
+msgid "Server IP address matching pattern: "
+msgstr "サーバ IP アドレス一致パターン: "
+
+#: gui_limits.c:269
+#, fuzzy
+msgid "Server ports"
+msgstr "サーバ応答"
+
+#: gui_limits.c:279
+msgid "Allow/denny"
+msgstr ""
+
+#: gui_limits.c:284
+#, fuzzy
+msgid "Ports: "
+msgstr "ポート: "
+
+#: gui_limits.c:295
+msgid "Documents"
+msgstr "文書"
+
+#: gui_limits.c:304
+msgid "Allow / Disallow suffix"
+msgstr "許可/禁止 suffix"
+
+#: gui_limits.c:310
+msgid "Suffix: "
+msgstr ""
+
+#: gui_limits.c:321
+msgid "Allow / Disallow prefix"
+msgstr "許可/禁止 prefix"
+
+#: gui_limits.c:327
+msgid "Prefix: "
+msgstr ""
+
+#: gui_limits.c:341 gui_limits.c:353
+msgid "MIME types"
+msgstr "MIME タイプ"
+
+#: gui_limits.c:349
+msgid "Allow / Disallow MIME type"
+msgstr "許可/禁止 MIME タイプ"
+
+#: gui_limits.c:358
+#, fuzzy
+msgid "MIME type: "
+msgstr "MIME タイプ"
+
+#: gui_limits.c:371
+msgid "Time"
+msgstr "時間"
+
+#: gui_limits.c:377
+msgid "Lower document time limit"
+msgstr "文書時間制限下限"
+
+#: gui_limits.c:387
+msgid "Check if doc. time newer than this"
+msgstr "文書の時間がこれよりも新しいかどうかチェック"
+
+#: gui_limits.c:391
+msgid "Upper document time limit"
+msgstr "文書時間制限上限"
+
+#: gui_limits.c:401
+msgid "Check if doc. time older than this"
+msgstr "文書時間がこれよりも古いかどうかチェック"
+
+#: gui_limits.c:410
+msgid "Maximal allowed time of downloading: "
+msgstr "許されるダウンロード最大時間: "
+
+#: gui_limits.c:413
+msgid " min"
+msgstr " 分"
+
+#: gui_limits.c:426
+msgid "Select allowed HTML tags and attributes"
+msgstr "許される HTML タグと属性を選択"
+
+#: gui_limits.c:428
+msgid "HTML"
+msgstr ""
+
+#: gui_limits.c:443
+#, c-format
+msgid "%s of %s"
+msgstr ""
+
+#: gui_limits.c:476
+msgid "Pavuk: Limits config"
+msgstr "Pavuk: 制限設定"
+
+#: gui_limits.c:529
+msgid "Common ..."
+msgstr "共通 ..."
+
+#: gui_main.c:433
+msgid "Unknown window to popup"
+msgstr "不明なポップアップウィンドウ"
+
+#: gui_main.c:498
+#, c-format
+msgid "Fetched URL from clipboard : %s\n"
+msgstr "クリップボードから URL を取得 : %s\n"
+
+#: gui_main.c:542
+#, fuzzy, c-format
+msgid "Fetched URL from browser : %s\n"
+msgstr "クリップボードから URL を取得 : %s\n"
+
+#: gui_main.c:788
+msgid "Both"
+msgstr "両方"
+
+#: gui_main.c:789
+msgid "Icons only"
+msgstr "アイコンだけ"
+
+#: gui_main.c:790
+msgid "Text only"
+msgstr "テキストだけ"
+
+#: gui_main.c:802
+msgid "Nr."
+msgstr ""
+
+#: gui_main.c:804
+msgid "Status"
+msgstr "状態"
+
+#: gui_main.c:805
+msgid "Size"
+msgstr "容量"
+
+#: gui_main.c:806
+msgid "Transfer rate"
+msgstr "転送レート"
+
+#: gui_main.c:807
+msgid "Elapsed time"
+msgstr "経過時間"
+
+#: gui_main.c:808
+msgid "Remaining time"
+msgstr "残り時間"
+
+#: gui_main.c:956
+msgid "Open _URL ..."
+msgstr "URL を開く(_U) ..."
+
+#: gui_main.c:969
+msgid "Append URL ..."
+msgstr "追加 URL ..."
+
+#: gui_main.c:978
+msgid "Fetch URL from Clipboard"
+msgstr "クリップボードから URL を取得"
+
+#: gui_main.c:996
+#, fuzzy
+msgid "Fetch URL from browser"
+msgstr "クリップボードから URL を取得"
+
+#: gui_main.c:1006
+msgid "Load scenario ..."
+msgstr "シナリオを読み込み ..."
+
+#: gui_main.c:1015
+msgid "Add scenario ..."
+msgstr "シナリオを追加 ..."
+
+#: gui_main.c:1024
+msgid "Save scenario ..."
+msgstr "シナリオを保存 ..."
+
+#: gui_main.c:1033
+msgid "Save settings to ~/.pavukrc"
+msgstr "設定を ~/.pavukrc に保存"
+
+#: gui_main.c:1046
+msgid "Schedule ..."
+msgstr "予定 ..."
+
+#: gui_main.c:1055
+msgid "Auth. info editor ..."
+msgstr "認証情報編集 ..."
+
+#: gui_main.c:1068
+msgid "E_xit"
+msgstr "終了(_x)"
+
+#: gui_main.c:1077
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: gui_main.c:1093
+msgid "Document _Tree ..."
+msgstr "文書ツリー(_T) ..."
+
+#: gui_main.c:1102
+msgid "Status page ..."
+msgstr "状態ページ ..."
+
+#: gui_main.c:1110
+msgid "HTML forms editor ..."
+msgstr "HTML フォーム編集 ..."
+
+#: gui_main.c:1119
+msgid "Javascript console ..."
+msgstr ""
+
+#: gui_main.c:1132
+msgid "Clear log window"
+msgstr "ログウィンドウを初期化"
+
+#: gui_main.c:1141
+msgid "_View"
+msgstr "観覧(_V)"
+
+#: gui_main.c:1159
+msgid "normal recurse"
+msgstr "普通の再帰"
+
+#: gui_main.c:1169
+msgid "synchronize"
+msgstr "同期"
+
+#: gui_main.c:1180
+msgid "single page"
+msgstr "単一ページ"
+
+#: gui_main.c:1190
+msgid "update local links"
+msgstr "ローカルリンクを更新"
+
+#: gui_main.c:1200
+msgid "resume files"
+msgstr "ファイルを再開"
+
+#: gui_main.c:1210
+msgid "unlimited reget"
+msgstr "制限なしの再取得"
+
+#: gui_main.c:1220
+msgid "transfer but don't store"
+msgstr "転送し、しかし保存しない"
+
+#: gui_main.c:1230
+msgid "reminder"
+msgstr ""
+
+#: gui_main.c:1240
+msgid "list ftp directory"
+msgstr "FTP ディレクトリのリスト"
+
+#: gui_main.c:1250
+msgid "_Mode"
+msgstr "モード(_M)"
+
+#: gui_main.c:1268
+msgid "C_ommon ..."
+msgstr "共通(_o) ..."
+
+#: gui_main.c:1277
+msgid "_Limitations ..."
+msgstr "制限(_L) ..."
+
+#: gui_main.c:1286
+msgid "Reset configuration"
+msgstr "設定をリセット"
+
+#: gui_main.c:1301
+msgid "Toolbar"
+msgstr "ツールバー"
+
+#: gui_main.c:1309
+msgid "Toggle toolbar"
+msgstr "ツールバーを切り替え"
+
+#: gui_main.c:1364
+msgid "Progressbar"
+msgstr "進行状況表示バー"
+
+#: gui_main.c:1396
+msgid "Language"
+msgstr "言語"
+
+#: gui_main.c:1446
+msgid "Debug level"
+msgstr "デバッグレベル"
+
+#: gui_main.c:1469
+msgid "All"
+msgstr "すべて"
+
+#: gui_main.c:1476
+msgid "None"
+msgstr "なし"
+
+#: gui_main.c:1483
+msgid "Debug"
+msgstr "デバッグ"
+
+#: gui_main.c:1499
+#, fuzzy
+msgid "Allow tooltips"
+msgstr "可能なプロトコル"
+
+#: gui_main.c:1509
+msgid "Log window autoscroll"
+msgstr "ログウィンドウ自動スクロール"
+
+#: gui_main.c:1518
+msgid "Use preferences"
+msgstr "設定を使用"
+
+#: gui_main.c:1527
+msgid "Quiet"
+msgstr "静粛"
+
+#: gui_main.c:1539
+msgid "Immediate messages"
+msgstr "即座のメッセージ"
+
+#: gui_main.c:1551
+msgid "_Config"
+msgstr "設定(_C)"
+
+#: gui_main.c:1567
+msgid "_Restart"
+msgstr "再起動(_R)"
+
+#: gui_main.c:1577
+msgid "Co_ntinue"
+msgstr "続行(_n)"
+
+#: gui_main.c:1587
+msgid "Sto_p"
+msgstr "停止(_p)"
+
+#: gui_main.c:1597
+msgid "_Break"
+msgstr "中断(_B)"
+
+#: gui_main.c:1607
+msgid "_Action"
+msgstr "アクション(_A)"
+
+#: gui_main.c:1627
+msgid "About ..."
+msgstr "概要 ..."
+
+#: gui_main.c:1636
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: gui_main.c:1667
+msgid "Config"
+msgstr "設定"
+
+#: gui_main.c:1668
+msgid "Popup config window"
+msgstr "設定ウィンドウをポップアップ"
+
+#: gui_main.c:1672
+msgid "Limits"
+msgstr "制限"
+
+#: gui_main.c:1673
+msgid "Popup limits window"
+msgstr "制限ウィンドウをポップアップ"
+
+#: gui_main.c:1679
+msgid "Go bg"
+msgstr "バックグラウンドで動作"
+
+#: gui_main.c:1680
+msgid "Destroy window as soon as posible and continue on terminal"
+msgstr "ウィンドウを終了し、可能なかぎりすぐに端末上で続行"
+
+#: gui_main.c:1684 gui_main.c:1757
+msgid "Restart"
+msgstr "再起動"
+
+#: gui_main.c:1685
+msgid "Start working on currently set starting URLs"
+msgstr "今設定されている開始 URL で作業開始"
+
+#: gui_main.c:1689 gui_main.c:1762
+msgid "Continue"
+msgstr "続行"
+
+#: gui_main.c:1690
+msgid "Continue after stop or break"
+msgstr "停止、あるいは中断後で続行"
+
+#: gui_main.c:1696 gui_main.c:1767
+msgid "Stop"
+msgstr "停止"
+
+#: gui_main.c:1697
+msgid "Finish this transfer and stop"
+msgstr "転送を終了し、停止"
+
+#: gui_main.c:1701 gui_main.c:1772
+msgid "Break"
+msgstr "中断"
+
+#: gui_main.c:1702
+msgid "Break transfer and stop"
+msgstr "転送を中断し、停止"
+
+#: gui_main.c:1708
+msgid "Exit"
+msgstr "終了"
+
+#: gui_main.c:1709
+msgid "Immediately quit the program"
+msgstr "即座にプログラムを終了"
+
+#: gui_main.c:1777
+msgid "Show whole main window"
+msgstr "すべてのメインウィンドウを表示"
+
+#: gui_main.c:1782
+msgid "Quit"
+msgstr "終了"
+
+#: gui_main.c:1861
+#, fuzzy
+msgid "Pavuk: save log"
+msgstr "Pavuk: 状態ページを保存"
+
+#: gui_main.c:1924
+msgid "Select all"
+msgstr ""
+
+#: gui_main.c:1932
+msgid "Clear selection"
+msgstr ""
+
+#: gui_main.c:1940
+msgid "Copy selection"
+msgstr ""
+
+#: gui_main.c:1952
+#, fuzzy
+msgid "Save log ..."
+msgstr "保存 ..."
+
+#: gui_main.c:1959
+#, fuzzy
+msgid "Clear log"
+msgstr "ログウィンドウを初期化"
+
+#: gui_main.c:2046 gui_main.c:2164
+msgid "Processed:       "
+msgstr "処理済:          "
+
+#: gui_main.c:2055 gui_main.c:2173
+msgid "Failed:       "
+msgstr "失敗:         "
+
+#: gui_main.c:2064 gui_main.c:2182
+msgid "Queued:       "
+msgstr "待機:         "
+
+#: gui_main.c:2073 gui_main.c:2191
+msgid "Rejected:       "
+msgstr "拒否された:     "
+
+#: gui_main.c:2123
+msgid "S:                     "
+msgstr ""
+
+#: gui_main.c:2132
+msgid "R:          "
+msgstr ""
+
+#: gui_main.c:2141
+msgid "ET:          "
+msgstr ""
+
+#: gui_main.c:2150
+msgid "RT:          "
+msgstr ""
+
+#: gui_scenario.c:46
+msgid "Pavuk: Scenario saver"
+msgstr "Pavuk: シナリオ保存"
+
+#: gui_scenario.c:139
+msgid "Pavuk: Scenario loader"
+msgstr "Pavuk: シナリオ読み込み"
+
+#: gui_scenario.c:231
+msgid "Pavuk: Scenario add"
+msgstr "Pavuk: シナリオ追加"
+
+#: gui_sched.c:55 pavuk.c:495
+msgid "Error scheduling\n"
+msgstr "エラースケジューリング\n"
+
+#: gui_sched.c:78
+msgid "Pavuk: Scheduler"
+msgstr "Pavuk: スケジューラ"
+
+#: gui_sched.c:97
+msgid "Scheduling command: "
+msgstr "スケジュールコマンド: "
+
+#: gui_sched.c:107
+msgid "Reschedule after "
+msgstr "後で再スケジュール "
+
+#: gui_sched.c:117
+msgid " hours"
+msgstr " 時間"
+
+#: gui_tools.c:28
+msgid "January"
+msgstr "1 月"
+
+#: gui_tools.c:29
+msgid "February"
+msgstr "2 月"
+
+#: gui_tools.c:30
+msgid "March"
+msgstr "3 月"
+
+#: gui_tools.c:31
+msgid "April"
+msgstr "4 月"
+
+#: gui_tools.c:32
+msgid "May"
+msgstr "5 月"
+
+#: gui_tools.c:33
+msgid "June"
+msgstr "6 月"
+
+#: gui_tools.c:34
+msgid "July"
+msgstr "7 月"
+
+#: gui_tools.c:35
+msgid "August"
+msgstr "8 月"
+
+#: gui_tools.c:36
+msgid "September"
+msgstr "9 月"
+
+#: gui_tools.c:37
+msgid "October"
+msgstr "10 月"
+
+#: gui_tools.c:38
+msgid "November"
+msgstr "11 月"
+
+#: gui_tools.c:39
+msgid "December"
+msgstr "12 月"
+
+#: gui_tools.c:43
+msgid "Sun"
+msgstr "日"
+
+#: gui_tools.c:44
+msgid "Mon"
+msgstr "月"
+
+#: gui_tools.c:45
+msgid "Tue"
+msgstr "火"
+
+#: gui_tools.c:46
+msgid "Wed"
+msgstr "水"
+
+#: gui_tools.c:47
+msgid "Thu"
+msgstr "木"
+
+#: gui_tools.c:48
+msgid "Fri"
+msgstr "金"
+
+#: gui_tools.c:49
+msgid "Sat"
+msgstr "土"
+
+#: gui_tools.c:171
+msgid "Time: "
+msgstr "時間: "
+
+#: gui_tools.c:180
+msgid " : "
+msgstr " : "
+
+#: gui_tools.c:360
+#, c-format
+msgid "Pavuk: select %s"
+msgstr "Pavuk: %s を選択"
+
+#: gui_tools.c:361
+#, fuzzy
+msgid "file"
+msgstr "ファイル(_F)"
+
+#: gui_tools.c:459
+msgid "Browse ..."
+msgstr "閲覧 ..."
+
+#: gui_tree.c:117
+#, c-format
+msgid "URL: %s\n"
+msgstr "URL: %s\n"
+
+#: gui_tree.c:130 gui_tree.c:136 gui_tree.c:175
+msgid "Request type: "
+msgstr "リクエストタイプ: "
+
+#: gui_tree.c:151
+msgid "Query values:\n"
+msgstr "問い合わせ値:\n"
+
+#: gui_tree.c:181
+msgid "Status: "
+msgstr "状態"
+
+#: gui_tree.c:187
+msgid "not processed yet\n"
+msgstr "まだ未処理\n"
+
+#: gui_tree.c:193
+msgid "loaded from NS cache\n"
+msgstr "NS キャッシュから読み込み\n"
+
+#: gui_tree.c:199
+msgid "loaded from local URL tree\n"
+msgstr "ローカル URL ツリーから読み込み\n"
+
+#: gui_tree.c:205
+msgid "moved to another URL\n"
+msgstr "他の URL へ移動\n"
+
+#: gui_tree.c:211
+msgid "URL not found on remote server\n"
+msgstr "リモートサーバ上で URL がみつかりませんでした\n"
+
+#: gui_tree.c:217
+msgid "truncated\n"
+msgstr "壊れている\n"
+
+#: gui_tree.c:223
+msgid "downloaded OK\n"
+msgstr "ダウンロード完了\n"
+
+#: gui_tree.c:229
+msgid "rejected by rules\n"
+msgstr "ルールで拒否された\n"
+
+#: gui_tree.c:235
+msgid "disabled by user\n"
+msgstr "ユーザによって禁止された\n"
+
+#: gui_tree.c:241
+msgid "probably recoverable error\n"
+msgstr "おそらく回復不可能なエラー\n"
+
+#: gui_tree.c:247
+msgid "unrecoverable error\n"
+msgstr "回復可能なエラー\n"
+
+#: gui_tree.c:253
+msgid "unknown\n"
+msgstr "不明\n"
+
+#: gui_tree.c:263
+#, c-format
+msgid "Moved to URL: %s\n"
+msgstr "URL へ移動: %s\n"
+
+#: gui_tree.c:273
+#, c-format
+msgid "Type: %s\n"
+msgstr "タイプ: %s\n"
+
+#: gui_tree.c:275
+msgid "Type: unknown\n"
+msgstr "タイプ: 不明\n"
+
+#: gui_tree.c:281
+#, c-format
+msgid "Size: %d\n"
+msgstr "サイズ: %d\n"
+
+#: gui_tree.c:290
+msgid "Modification time: %a, %d %b %Y %H:%M:%S %Z\n"
+msgstr "変更時間: %a、%d %b %Y %H:%M:%S %Z\n"
+
+#: gui_tree.c:300
+#, c-format
+msgid "Local filename: %s\n"
+msgstr "ローカルファイル名: %s\n"
+
+#: gui_tree.c:311
+msgid "Parent URLs:\n"
+msgstr "親 URL:\n"
+
+#: gui_tree.c:612
+msgid "Pavuk: Store tree"
+msgstr "Pavuk: ツリーを保持"
+
+#: gui_tree.c:656 gui_tree.c:684
+msgid "Pavuk: URL tree preview"
+msgstr "Pavuk: URL ツリーを内覧"
+
+#: gui_tree.c:659 gui_tree.c:788
+msgid "Store tree ..."
+msgstr "ツリーを保持 ..."
+
+#: gui_tree.c:660 gui_tree.c:704
+msgid "Automaticaly watch last processed URLs"
+msgstr "自動的に最後に処理された URL を閲覧"
+
+#: gui_tree.c:662 gui_tree.c:821
+msgid "Properties"
+msgstr "プロパティ"
+
+#: gui_tree.c:663 gui_tree.c:829
+msgid "Launch browser"
+msgstr "ブラウザを起動"
+
+#: gui_tree.c:664 gui_tree.c:837
+msgid "Disable URL"
+msgstr "URL を禁止にする"
+
+#: gui_tree.c:665 gui_tree.c:845
+msgid "Enable URL"
+msgstr "URL を許可する"
+
+#: gui_tree.c:666 gui_tree.c:853
+msgid "Download URL"
+msgstr "URL をダウンロード"
+
+#: gui_tree.c:670 gui_tree.c:724
+msgid "URL tree"
+msgstr "URL ツリー"
+
+#: html.c:253 htmlparser.c:281
+#, c-format
+msgid "Unsupported BASE URL -  %s (probably bad handled)\n"
+msgstr "サポートされていない base URL - %s (おそらく上手く処理されません)\n"
+
+#: html.c:522
+msgid "Can't work on directory\n"
+msgstr "ディレクトリ上で作業できません\n"
+
+#: html.c:548 html.c:552
+msgid "rewrite parent"
+msgstr "親を再書き込み"
+
+#: http.c:366
+msgid "****************** Proxy connect request *****************\n"
+msgstr "***************** プロキシ接続リクエスト *****************\n"
+
+#: http.c:413
+msgid "***************** Proxy connect response *****************\n"
+msgstr "******************** プロキシ接続応答 ********************\n"
+
+#: http.c:469
+msgid "Sending request ..."
+msgstr "リクエストを送っています ..."
+
+#: http.c:716
+msgid "************ Client HTTP MIME header ***************\n"
+msgstr "********* クライアント HTTP MIME ヘッダ ************\n"
+
+#: http.c:733
+msgid "Sending data ..."
+msgstr "データを送っています ..."
+
+#: http.c:734
+msgid "************ HTTP request data ***************\n"
+msgstr "*********** HTTP リクエストデータ ************\n"
+
+#: http.c:744
+msgid "Waiting for response ..."
+msgstr "応答を待っています ..."
+
+#: http.c:759
+msgid "Error reading HTTP 1xx class response\n"
+msgstr "HTTP 1xx クラス応答を読み込み中にエラー\n"
+
+#: http.c:764
+msgid "***************** class 1xx HTTP response ****************\n"
+msgstr "****************** クラス 1xx HTTP 応答 ******************\n"
+
+#: http.c:875
+msgid "Connecting ..."
+msgstr "接続しています ..."
+
+#: http.c:1159
+msgid "*********** HTTP Server response MIME header **********\n"
+msgstr "*********** HTTP サーバ応答 MIME ヘッダ **********\n"
+
+#: http.c:1262
+msgid "Regeting whole file\n"
+msgstr "すべてのファイルを再取得\n"
+
+#: http.c:1312
+#, c-format
+msgid "Unexpected response \"%d %s\" when trying to reget!\n"
+msgstr ""
+
+#: http_proxy.c:150
+#, c-format
+msgid "Checking HTTP proxy server %s:%d\n"
+msgstr ""
+
+#: http_proxy.c:162 http_proxy.c:174 http_proxy.c:181 http_proxy.c:190
+msgid "Failed to check proxy !\n"
+msgstr ""
+
+#: http_proxy.c:196
+#, c-format
+msgid "Proxy %s:%d is HTTP/%d.%d proxy\n"
+msgstr ""
+
+#: jsbind.c:76
+#, fuzzy
+msgid "bad parameter"
+msgstr "不正な時間パラメータ \"%s\"\n"
+
+#: jsbind.c:529
+#, fuzzy
+msgid "not enough parameters"
+msgstr "パラメータ \"%s\" の数が不充分です\n"
+
+#: jsbind.c:553
+msgid "unknown limiting condition"
+msgstr ""
+
+#: lfname.c:479 lfname.c:491 lfname.c:500 lfname.c:513 lfname.c:536
+#: lfname.c:645 lfname.c:658 lfname.c:670 lfname.c:685 lfname.c:698 re.c:51
+#: re.c:61 re.c:68 re.c:80 re.c:95
+#, c-format
+msgid "Error compiling regular expression : %s\n"
+msgstr "正規表現を解釈中にエラー: %s\n"
+
+#: lfname.c:553 lfname.c:617 lfname.c:939 lfname.c:1057
+#, c-format
+msgid "LSP analyze error: bad token at - %s\n"
+msgstr "LSP 解析エラー: %s で不正なトークン\n"
+
+#: lfname.c:950
+#, c-format
+msgid "LSP analyze error: bad numeric value at - %s\n"
+msgstr "LSP 解析エラー: %s で不正な数値\n"
+
+#: lfname.c:964
+#, c-format
+msgid "LSP analyze error: bad macro at - %s\n"
+msgstr "LSP 解析エラー: %s で間違ったマクロ\n"
+
+#: lfname.c:992
+#, c-format
+msgid "LSP analyze error: unterminated string at - %s\n"
+msgstr "LSP 解析エラー: %s で終了していない文字列\n"
+
+#: lfname.c:1013 lfname.c:1029 lfname.c:1047
+#, c-format
+msgid "LSP analyze error: bad parameter type at - %s\n"
+msgstr "LSP 解析エラー: %s で不正なパラメータタイプ\n"
+
+#: log.c:203
+msgid "Ending log : %H:%M:%S %d.%m.%Y\n"
+msgstr "ログ終了: %H:%M:%S %d.%m.%Y\n"
+
+#: log.c:224
+msgid "Unable to open log file - disabling logging\n"
+msgstr "ログファイルを開くことができません - ログ機能を無効にします\n"
+
+#: log.c:232
+msgid "Log file is locked by another process - "
+msgstr "ログファイルが他のプロセスによってロックされています - "
+
+#: log.c:236
+msgid "generating new log filename\n"
+msgstr "新規ログファイル名を生成\n"
+
+#: log.c:241
+msgid "disabling logging\n"
+msgstr "ログ機能を無効にする\n"
+
+#: log.c:263
+msgid "Starting log : %H:%M:%S %d.%m.%Y\n"
+msgstr "ログを開始: %H:%M:%S %d.%m.%Y\n"
+
+#: mozcache.c:184
+#, fuzzy, c-format
+msgid "Unable to open Mozilla cache index - %s\n"
+msgstr "Netscape キャッシュ索引を開けません - %s\n"
+
+#: myssl.c:49
+msgid "Failed obtaining entropy pathname\n"
+msgstr ""
+
+#: myssl.c:59
+msgid "Failed to initialize random seed for OpenSSL via EGD daemon\n"
+msgstr ""
+
+#: myssl.c:70
+msgid "Seeding entropy pool INSECURELY!\n"
+msgstr ""
+
+#: myssl.c:157
+msgid "Unable to set certificate file (wrong password?)\n"
+msgstr "証明ファイルを設定できません(パスワードが違いませんか?)\n"
+
+#: myssl.c:167
+msgid "Unable to set public key file\n"
+msgstr "公開鍵ファイルを設定できません\n"
+
+#: myssl.c:183
+msgid "Private key does not match the certificate public key\n"
+msgstr "秘密鍵は証明公開鍵と対応していません\n"
+
+#: myssl.c:231
+#, c-format
+msgid "SSL connection is using %s\n"
+msgstr "%s を使用して SSL 接続\n"
+
+#: myssl.c:234
+msgid "Server certificate:\n"
+msgstr "サーバ証明:\n"
+
+#: myssl.c:238
+#, c-format
+msgid "\t subject: %s\n"
+msgstr ""
+
+#: myssl.c:243
+#, c-format
+msgid "\t issuer: %s\n"
+msgstr ""
+
+#: nscache.c:103
+#, c-format
+msgid "Unable to open Netscape cache index - %s\n"
+msgstr "Netscape キャッシュ索引を開けません - %s\n"
+
+#: ntlm_auth.c:416
+msgid "Trying to do NTLM authorization\n"
+msgstr ""
+
+#: ntlm_auth.c:425 ntlm_auth.c:506 ntlm_auth.c:587 ntlm_auth.c:667
+msgid "NTLM authorization supported only on persistent connections!\n"
+msgstr ""
+
+#: ntlm_auth.c:448 ntlm_auth.c:609
+msgid "Not enough data for NTLM authorization!\n"
+msgstr ""
+
+#: ntlm_auth.c:449 ntlm_auth.c:610
+#, fuzzy
+msgid "Missing:\n"
+msgstr "その他の設定"
+
+#: ntlm_auth.c:450 ntlm_auth.c:611
+msgid "       domain\n"
+msgstr ""
+
+#: ntlm_auth.c:451 ntlm_auth.c:612
+msgid "       username\n"
+msgstr ""
+
+#: ntlm_auth.c:452 ntlm_auth.c:613
+msgid "       password\n"
+msgstr ""
+
+#: ntlm_auth.c:453 ntlm_auth.c:614
+msgid "       local hostname\n"
+msgstr ""
+
+#: ntlm_auth.c:489 ntlm_auth.c:497 ntlm_auth.c:522 ntlm_auth.c:650
+#: ntlm_auth.c:658 ntlm_auth.c:683
+msgid "Got unexpected response\n"
+msgstr ""
+
+#: ntlm_auth.c:532
+msgid "Failed NTLM nonce negotiation\n"
+msgstr ""
+
+#: ntlm_auth.c:574
+msgid "Trying to do proxy NTLM authorization\n"
+msgstr ""
+
+#: ntlm_auth.c:693
+msgid "Failed NTLM proxy nonce negotiation\n"
+msgstr ""
+
+#: options.h:193
+msgid "\t-v                 - print version number\n"
+msgstr "\t-v                 - バージョン番号を表示\n"
+
+#: options.h:204
+msgid "\t-h                 - help\n"
+msgstr "\t-h                 - ヘルプ\n"
+
+#: options.h:218
+msgid "\t-X                 - start GUI interface\n"
+msgstr "\t-X                 - GUI インタフェースを起動\n"
+
+#: options.h:249
+msgid ""
+"\t-runX              - after start of GUI interface, immediately\n"
+"\t                     start processing of entered URLs\n"
+msgstr ""
+"\t-runX              - GUI インタフェースの開始後にすぐに\n"
+"\t                     入力 URL の処理を開始\n"
+
+#: options.h:265
+msgid "\t-prefs/-noprefs    - load preferences from ~/.pavuk_prefs file\n"
+msgstr "\t-prefs/-noprefs    - ~/.pavuk_prefs ファイルから設定を読み込み\n"
+
+#: options.h:494
+msgid ""
+"\t-progress/-noprogress\n"
+"\t                   - show retrieving progress while running on terminal\n"
+msgstr ""
+"\t-progress/-noprogress\n"
+"\t                   - 端末上で動作中に回収進行状況を表示\n"
+
+#: options.h:517
+msgid "\t-lmax $nr          - allowed depth of tree\n"
+msgstr "\t-lmax $nr          - 可能なツリーの深さ\n"
+
+#: options.h:528
+msgid "\t-dmax $nr          - maximal number of downloaded documents\n"
+msgstr "\t-dmax $nr          - ダウンロード文書の最大数\n"
+
+#: options.h:539
+msgid ""
+"\t-sleep $nr         - sleep for $nr seconds between transfers,\n"
+"\t                     default 0 seconds\n"
+msgstr "\t-sleep $nr         - $nr 秒間転送を停止 (デフォルトは 0 秒)\n"
+
+#: options.h:551
+#, fuzzy
+msgid ""
+"\t-rsleep/-norsleep  - randomize sleeping time between transfers\n"
+"\t                     from 0 to -sleep time\n"
+msgstr "\t-sleep $nr         - $nr 秒間転送を停止 (デフォルトは 0 秒)\n"
+
+#: options.h:574
+msgid "\t-retry $nr         - number of retries if anything failed\n"
+msgstr "\t-retry $nr         - 何らかのエラー時の再試行回数\n"
+
+#: options.h:585
+msgid "\t-nregets $nr       - max number of regets on single file, default 2\n"
+msgstr "\t-nregets $nr       - 一つのファイルの再取得回数(デフォルトは 2)\n"
+
+#: options.h:596
+msgid ""
+"\t-nredirs $nr       - max number of followed HTTP redirections, default 5\n"
+msgstr ""
+"\t-nredirs $nr       - 連続する HTTP リダイレクトの最大個数(デフォルトは 5)\n"
+
+#: options.h:607
+msgid ""
+"\t-timeout $nr       - timeout for network communications (min).\n"
+"\t                     0 == no timeout, default = 0\n"
+msgstr ""
+"\t-timeout $nr       - ネットワーク接続のタイムアウト時間(分)\n"
+"\t                     0 == タイムアウトなし(デフォルト)\n"
+
+#: options.h:619
+msgid ""
+"\t-rollback $nr      - number of bytes to discard (counted from end\n"
+"\t                     of file) if regetting, default 0\n"
+msgstr ""
+"\t-rollback $nr      - 再取得時に(ファイルの終端から)捨てるバイト数\n"
+"\t                     (デフォルトは 0)\n"
+
+#: options.h:632
+msgid ""
+"\t-ddays $nr         - number of days since last access when document is\n"
+"\t                     checked in sync mode\n"
+msgstr ""
+"\t-ddays $nr         - sync モードで文書をチェックするまでの\n"
+"\t                     最後のアクセスからの日数\n"
+
+#: options.h:644
+msgid ""
+"\t-nocache/-cache    - disallow caching of HTTP documents (on proxy cache)\n"
+msgstr ""
+"\t-nocache/-cache    - HTTP 文書 "
+"のキャッシュを許可しない(プロキシキャッシュ)\n"
+
+#: options.h:666
+msgid "\t-noRobots/-Robots  - care about \"robots.txt\" file ?\n"
+msgstr "\t-noRobots/-Robots  - \"robots.txt\" ファイルを考慮するかどうか\n"
+
+#: options.h:688
+msgid "\t-noFTP/-FTP        - don't download FTP files\n"
+msgstr "\t-noFTP/-FTP        - FTP ファイルをダウンロードしない\n"
+
+#: options.h:710
+msgid "\t-noHTTP/-HTTP      - don't download HTTP files\n"
+msgstr "\t-noHTTP/-HTTP      - HTTP ファイルをダウンロードしない\n"
+
+#: options.h:735
+msgid "\t-noSSL/-SSL        - don't download (HTTPS) SSL files\n"
+msgstr "\t-noSSL/-SSL        - (HTTPS) SSL ファイルをダウンロードしない\n"
+
+#: options.h:765
+msgid "\t-noFTPS/-FTPS      - don't download FTPS files\n"
+msgstr "\t-noFTPS/-FTPS      - FTPS ファイルをダウンロードしない\n"
+
+#: options.h:792
+msgid "\t-noGopher/-Gopher  - download Gopher files ?\n"
+msgstr "\t-noGopher/-Gopher  - Gopher ファイルをダウンロードするかどうか\n"
+
+#: options.h:814
+msgid "\t-noCGI/-CGI        - download parametric CGI pages ?\n"
+msgstr ""
+"\t-noCGI/-CGI        - パラメトリック CGI ページをダウンロードしない(する)\n"
+
+#: options.h:836
+msgid "\t-noEnc/-Enc        - allow transfer of encoded files ?\n"
+msgstr "\t-noEnc/-Enc        - エンコードファイルの転送を許可しない(する)\n"
+
+#: options.h:858
+msgid ""
+"\t-noRelocate/-Relocate\n"
+"\t                   - don't rewrite links\n"
+msgstr ""
+"\t-noRelocate/-Relocate\n"
+"\t                   - リンクを再書き込みしない\n"
+
+#: options.h:881
+msgid ""
+"\t-FTPhtml/-noFTPhtml\n"
+"\t                   - process HTML files downloaded over FTP\n"
+msgstr ""
+"\t-FTPhtml/-noFTPhtml\n"
+"\t                   - FTP を通じて HTML ファイルをダウンロード\n"
+
+#: options.h:904
+msgid ""
+"\t-FTPlist/-noFTPlist\n"
+"\t                   - use wide FTP directory listing\n"
+msgstr ""
+"\t-FTPlist/-noFTPlist\n"
+"\t                   - ワイド FTP ディレクトリリストを使用\n"
+
+#: options.h:927
+msgid "\t-FTPdir/-noFTPdir  - recurse FTP directory\n"
+msgstr "\t-FTPdir/-noFTPdir  - FTP ディレクトリを再帰する\n"
+
+#: options.h:949
+msgid ""
+"\t-store_index/-nostore_index\n"
+"\t                   - store directory URLs as index files\n"
+msgstr ""
+"\t-store_index/-nostore_index\n"
+"\t                   - ディレクトリ URL を index ファイルに保存\n"
+
+#: options.h:972
+msgid ""
+"\t-force_reget/-noforce_reget\n"
+"\t                   - force reget of whole file when server doesn't\n"
+"\t                     support reget\n"
+msgstr ""
+"\t-force_reget/-noforce_reget\n"
+"\t                   - サーバが再取得を禁止していてもすべての\n"
+"\t                     ファイルを強制的に再取得\n"
+
+#: options.h:1000
+msgid "\t-debug             - turn on debug mode\n"
+msgstr "\t-debug             - デバッグモード\n"
+
+#: options.h:1030
+msgid ""
+"\t-debug_level $l    - debug level number, see manual for $l description\n"
+msgstr "\t-debug_level $l    - デバッグレベル(マニュアル $l の説明を参照)\n"
+
+#: options.h:1042
+msgid "\t-asite $list       - comma-separated list of allowed sites\n"
+msgstr "\t-asite $list       - カンマで区切られた、許されるサイトのリスト\n"
+
+#: options.h:1053
+msgid "\t-dsite $list       - comma-separated list of disallowed sites\n"
+msgstr "\t-dsite $list       - カンマで区切られた、禁止されたサイトのリスト\n"
+
+#: options.h:1064
+msgid "\t-adomain $list     - list of allowed domains\n"
+msgstr "\t-adomain $list     - 許されるドメインのリスト\n"
+
+#: options.h:1075
+msgid "\t-ddomain $list     - list of disallowed domains\n"
+msgstr "\t-ddomain $list     - 禁止されたドメインのリスト\n"
+
+#: options.h:1086
+msgid "\t-aprefix $list     - list of allowed directory/file prefixes\n"
+msgstr "\t-aprefix $list     - 許されるディレクトリ/ファイル prefix のリスト\n"
+
+#: options.h:1097
+msgid "\t-dprefix $list     - list of disallowed directory/file prefixes\n"
+msgstr ""
+"\t-dprefix $list     - 禁止されたディレクトリ/ファイル prefix のリスト\n"
+
+#: options.h:1108
+msgid "\t-asfx $list        - list of allowed suffixes\n"
+msgstr "\t-asfx $list        - 許される suffix のリスト\n"
+
+#: options.h:1119
+msgid "\t-dsfx $list        - list of disallowed suffixes\n"
+msgstr "\t-dsfx $list        - 禁止された suffix のリスト\n"
+
+#: options.h:1130
+msgid "\t-amimet $list      - list of alloved MIME types\n"
+msgstr "\t-amimet $list      - 許される MIME タイプリスト\n"
+
+#: options.h:1141
+msgid "\t-dmimet $list      - list of disallowed MIME types\n"
+msgstr "\t-dmimet $list      - 禁止された MIME タイプリスト\n"
+
+#: options.h:1152
+msgid "\t-alang $list       - list of preferred languages (only via HTTP)\n"
+msgstr "\t-alang $list       - 使いたい言語のリスト(HTTP のみ)\n"
+
+#: options.h:1163
+msgid ""
+"\t-acharset $list    - list of preferred character sets (only via HTTP)\n"
+msgstr "\t-acharset $list    - 使いたいキャラクタセットのリスト(HTTP のみ)\n"
+
+#: options.h:1174
+msgid ""
+"\t-scndir $dir       - directory ,where are stored your scenarios\n"
+"\t                     (config files)\n"
+msgstr ""
+"\t-scndir $dir       - シナリオ(設定ファイル)を保存する\n"
+"\t                     ディレクトリ\n"
+
+#: options.h:1186
+msgid "\t-cdir $dir         - directory for storing documents\n"
+msgstr "\t-cdir $dir         - 文書を保存するディレクトリ\n"
+
+#: options.h:1197
+msgid "\t-subdir $dir       - subdirectory of cdir to operate on\n"
+msgstr "\t-subdir $dir       - 作業用の cdir のサブディレクトリ\n"
+
+#: options.h:1208
+msgid ""
+"\t-scenario $str     - name of scenario from scenario directory to load\n"
+"\t                     and or run\n"
+msgstr ""
+"\t-scenario $str     - 読み込みあるいは実行用のシナリオディレクトリ\n"
+"\t                     からのシナリオ名\n"
+
+#: options.h:1220
+msgid ""
+"\t-auth_scheme 1/2/3 - HTTP authorization scheme 1-user 2-Basic 3-Digest,\n"
+"\t                     default 2\n"
+msgstr ""
+"\t-auth_scheme 1/2/3 - HTTP 認証方法 : 1-ユーザ 2-基本 3-ダイジェスト\n"
+"\t                     (デフォルトは 2)\n"
+
+#: options.h:1232
+msgid "\t-auth_name $str    - name for Authorization (only via HTTP)\n"
+msgstr "\t-auth_name $str    - 認証名 (HTTP のみ)\n"
+
+#: options.h:1243
+msgid "\t-auth_passwd $str  - password for Authorization (only via HTTP)\n"
+msgstr "\t-auth_passwd $str  - 認証パスワード (HTTP のみ)\n"
+
+#: options.h:1254
+msgid ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - reuse one HTTP digest access authorization\n"
+"\t                     nonce for more requests\n"
+msgstr ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - リクエスト時に一回目の HTTP ダイジェスト\n"
+"\t                     アクセス認証を臨時に再利用\n"
+
+#: options.h:1278
+msgid ""
+"\t-auth_reuse_proxy_nonce/-noauth_reuse_proxy_nonce\n"
+"\t                   - reuse one HTTP proxy digest access\n"
+"\t                     authorization nonce for more requests\n"
+msgstr ""
+"\t-auth_reuse_proxy_nonce/-noauth_reuse_proxy_nonce\n"
+"\t                   - リクエスト時に一回目の HTTP プロキシ\n"
+"\t                     ダイジェストアクセス認証を再利用\n"
+
+#: options.h:1305
+msgid ""
+"\t-ssl_cert_passwd $str\n"
+"\t                   - password for SSL certification file\n"
+msgstr ""
+"\t-ssl_cert_passwd $str\n"
+"\t                   - SSL 証明ファイルのためのパスワード\n"
+
+#: options.h:1321
+msgid ""
+"\t-ssl_cert_file $str\n"
+"\t                   - SSL certification file\n"
+msgstr ""
+"\t-ssl_cert_file $str\n"
+"\t                   - SSL 証明ファイル\n"
+
+#: options.h:1337
+msgid "\t-ssl_key_file $str - SSL certification key file\n"
+msgstr "\t-ssl_key_file $str - SSL 証明キーファイル\n"
+
+#: options.h:1352
+msgid ""
+"\t-ssl_cipher_list $str\n"
+"\t                   - list of prefered SSL ciphers in SSL communication\n"
+msgstr ""
+"\t-ssl_cipher_list $str\n"
+"\t                   - SSL 接続で使いたい SSL 暗号のリスト\n"
+
+#: options.h:1368
+msgid "\t-egd_socket $file  - path to EGD listening socket\n"
+msgstr ""
+
+#: options.h:1380
+msgid "\t-from $str         - e-mail address used for user identification\n"
+msgstr "\t-from $str         - 身元証明に使う email アドレス\n"
+
+#: options.h:1391
+msgid ""
+"\t-send_from/-nosend_from\n"
+"\t                   - send From: header in HTTP request with your\n"
+"\t                     e-mail address\n"
+msgstr ""
+"\t-send_from/-nosend_from\n"
+"\t                   - send From: email アドレス内と一緒に送る HTTP \n"
+"\t                     リクエストでのヘッダ\n"
+
+#: options.h:1415
+msgid "\t-identity $str     - contents of User-agent: field in HTTP request\n"
+msgstr ""
+"\t-identity $str     - User-agent の内容: HTTP リクエスト\n"
+"\t                     内のフィールド\n"
+
+#: options.h:1426
+msgid "\t-pattern $list     - list of wildcard patterns for files\n"
+msgstr "\t-pattern $list     - ファイルのワイルドカードパターンのリスト\n"
+
+#: options.h:1440
+msgid "\t-rpattern $re      - RE matching pattern for files\n"
+msgstr "\t-rpattern $re      - ファイルの正規表現マッチパターン\n"
+
+#: options.h:1452
+msgid ""
+"\t-skip_pattern $list\n"
+"\t                   - list of skip wildcard patterns for files\n"
+msgstr ""
+"\t-skip_pattern $list\n"
+"\t                   - ファイルのスキップワイルドカード\n"
+"\t                     パターンのリスト\n"
+
+#: options.h:1467
+msgid ""
+"\t-skip_rpattern $re\n"
+"\t                   - skip RE matching pattern for files\n"
+msgstr ""
+"\t-skip_rpattern $re\n"
+"\t                   - ファイルのスキップ正規表現マッチパターン\n"
+
+#: options.h:1480
+msgid "\t-url_pattern $list - list of wildcard patterns for urls\n"
+msgstr "\t-url_pattern $list - URL のワイルドカードパターンリスト\n"
+
+#: options.h:1494
+msgid "\t-url_rpattern $re  - RE matching pattern for urls\n"
+msgstr "\t-url_rpattern $re  - URL の正規表現マッチパターン\n"
+
+#: options.h:1506
+msgid ""
+"\t-skip_url_pattern $list\n"
+"\t                   - list of wildcard patterns for urls\n"
+msgstr ""
+"\t-skip_url_pattern $list\n"
+"\t                   - URL のワイルドカードパターンリスト\n"
+
+#: options.h:1521
+msgid ""
+"\t-skip_url_rpattern $re\n"
+"\t                   - RE matching patterns for urls\n"
+msgstr ""
+"\t-skip_url_rpattern $re\n"
+"\t                   - URL の正規表現マッチパターン\n"
+
+#: options.h:1534
+msgid ""
+"\t-mode $mode        - set operation mode\n"
+"\t                         normal - recurse throught WWW (default)\n"
+"\t                         linkupdate - update remote links in local tree\n"
+"\t                         sync - synchronize local tree with remote WWW\n"
+"\t                                servers\n"
+"\t                         singlepage - single page with inline objects\n"
+"\t                         singlereget - reget file until not whole\n"
+"\t                         resumeregets - reget all files which are broken\n"
+"\t                         dontstore - transfer documents, but don't store\n"
+"\t                         reminder - checks URLs if they are changed\n"
+"\t                         ftpdir - list content of FTP directory\n"
+msgstr ""
+"\t-mode $mode        - 動作モードを設定\n"
+"\t                         normal - WWW (デフォルト)を通じたリソース\n"
+"\t                         linkupdate - ローカルツリー内のリモートリンクを\n"
+"\t                                      アップデート\n"
+"\t                         sync - リモート WWW サーバとローカルツリーを\n"
+"\t                                同調させる\n"
+"\t                         singlepage - インラインオブジェクトと一緒に単一\n"
+"\t                                      ページを取得\n"
+"\t                         singlereget - 一部のファイルを再取得\n"
+"\t                         resumeregets - すべての壊れたファイルを再取得\n"
+"\t                         dontstore - 文書を転送するが保存しない\n"
+"\t                         reminder - 変更された URL をチェック\n"
+"\t                         ftpdir - FTP ディレクトリの中身をリスト表示\n"
+
+#: options.h:1555
+msgid ""
+"\t-ftp_proxy $site[:$port]\n"
+"\t                   - ftp proxy/cache server\n"
+msgstr ""
+"\t-ftp_proxy $site[:$port]\n"
+"\t                   - FTP プロキシ/キャッシュサーバ\n"
+
+#: options.h:1567
+msgid ""
+"\t-http_proxy $site[:$port]\n"
+"\t                   - http proxy/cache server\n"
+msgstr ""
+"\t-http_proxy $site[:$port]\n"
+"\t                   - HTTP プロキシ/キャッシュサーバ\n"
+
+#: options.h:1579
+msgid ""
+"\t-gopher_proxy $site[:$port]\n"
+"\t                   - gopher proxy/cache server\n"
+msgstr ""
+"\t-gopher_proxy $site[:$port]\n"
+"\t                   - Gopher プロキシ/キャッシュサーバ\n"
+
+#: options.h:1594
+msgid ""
+"\t-ssl_proxy $site[:$port]\n"
+"\t                   - ssl proxy server\n"
+msgstr ""
+"\t-ssl_proxy $site[:$port]\n"
+"\t                   - SSL プロキシサーバ\n"
+
+#: options.h:1607
+msgid ""
+"\t-gopher_httpgw/-nogopher_httpgw\n"
+"\t                   - specified gopher proxy is HTTP gateway for Gopher\n"
+msgstr ""
+"\t-gopher_httpgw/-nogopher_httpgw\\n\"\n"
+"\t                   - Gopher プロキシを Gopher 用の HTTP ゲート\n"
+"\t                     ウェイとして指定\n"
+
+#: options.h:1631
+msgid ""
+"\t-ftp_httpgw/-noftp_httpgw\n"
+"\t                   - specified ftp proxy is HTTP gateway for FTP\n"
+msgstr ""
+"\t-ftp_httpgw/-noftp_httpgw\n"
+"\t                   - FTP プロキシを FTP 用の HTTP ゲート\n"
+"\t                     ウェイとして指定\n"
+
+#: options.h:1655
+msgid ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - use CONNECT request to HTTP proxy for FTP\n"
+"\t                     connections\n"
+msgstr ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - FTP 接続用の HTTP プロキシで CONNECT\n"
+"\t                     リクエストを使用\n"
+
+#: options.h:1682
+msgid "\t-browser $str      - your preferred browser programm\n"
+msgstr "\t-browser $str      - 指定ブラウザプログラム\n"
+
+#: options.h:1697
+msgid "\t-xmaxlog           - maximal length of log window\n"
+msgstr "\t-xmaxlog           - ログウィンドウの最大長\n"
+
+#: options.h:1709
+msgid "\t-dumpscn $str      - save scenario in scndir with name $str\n"
+msgstr "\t-dumpscn $str      - シナリオを $str という scndir に保存\n"
+
+#: options.h:1720
+msgid "\t-maxsize $nr       - maximal allowed size of document in bytes\n"
+msgstr "\t-maxsize $nr       - 許される文書の最大サイズ(バイト)\n"
+
+#: options.h:1731
+msgid "\t-minsize $nr       - minimal allowed size of document in bytes\n"
+msgstr "\t-minsize $nr       - 許される最小サイズ(バイト)\n"
+
+#: options.h:1742
+msgid ""
+"\t-http_proxy_pass $str\n"
+"\t                   - password for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_pass $str\n"
+"\t                   - HTTP プロキシ認証パスワード\n"
+
+#: options.h:1754
+msgid ""
+"\t-http_proxy_user $str\n"
+"\t                   - user name for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - HTTP プロキシ認証ユーザ名\n"
+
+#: options.h:1766
+msgid ""
+"\t-http_proxy_auth 1/2/3\n"
+"\t                   - authorization scheme for HTTP proxy authorization\n"
+msgstr ""
+"\t-http_proxy_auth 1/2/3\n"
+"\t                   - HTTP プロキシ認証の認証方法\n"
+
+#: options.h:1778
+msgid "\t-logfile $file     - name of file where mesages are stored\n"
+msgstr "\t-logfile $file     - メッセージを保存するファイル名\n"
+
+#: options.h:1789
+msgid "\t-slogfile $file    - name of file where short log will be stored\n"
+msgstr "\t-slogfile $file    - 簡易ログを保存するファイル名\n"
+
+#: options.h:1800
+msgid "\t-stime/-nostime    - write starting and ending time of transfer\n"
+msgstr "\t-stime/-nostime    - 転送の開始、終了時間を書き込む\n"
+
+#: options.h:1822
+msgid ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - remove improper files or directories while running\n"
+"\t                     in sync mode\n"
+msgstr ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - sync モードで不適切なファイルやディレ\n"
+"\t                     クトリを削除\n"
+
+#: options.h:1847
+msgid ""
+"\t-auth_file $file   - file where you have stored your auth infos\n"
+"\t                     see manual for format description\n"
+msgstr ""
+"\t-auth_file $file   - 認証情報を保存するファイル(形式の\n"
+"\t                     詳細についてはマニュアルを参照)\n"
+
+#: options.h:1859
+msgid ""
+"\t-base_level $nr    - number of levels of directory tree to omit from top\n"
+msgstr ""
+"\t-base_level $nr    - 最上層から省略するためのディレクトリの\n"
+"\t                     階層レベル\n"
+
+#: options.h:1870
+msgid "\t-ftp_active        - select active FTP data connection\n"
+msgstr "\t-ftp_active        - アクティブな FTP データ接続を選択\n"
+
+#: options.h:1881
+msgid "\t-ftp_passive       - select passive FTP data connection\n"
+msgstr "\t-ftp_passive       - アクティブでない FTP データ接続を選択\n"
+
+#: options.h:1895
+msgid "\t-msgcat $dir       - directory where message catalogs are stored\n"
+msgstr "\t-msgcat $dir       - メッセージカタログの保存場所\n"
+
+#: options.h:1910
+msgid "\t-language $str     - set language for messages\n"
+msgstr "\t-language $str     - メッセージのための言語を設定\n"
+
+#: options.h:1922
+msgid "\t-quiet             - don't show output messages\n"
+msgstr "\t-quiet             - 出力メッセージを表示しない\n"
+
+#: options.h:1933
+msgid "\t-verbose           - show output messages (default)\n"
+msgstr "\t-verbose           - 出力メッセージを表示(デフォルト)\n"
+
+#: options.h:1944
+msgid ""
+"\t-newer_than $time  - download only documents newer than $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-newer_than $time  - $time より新しい文書だけダウンロード。\n"
+"\t                     $time のフォーマット: YYYY.MM.DD.hh:mm\n"
+
+#: options.h:1956
+msgid ""
+"\t-older_than $time  - download only documents older than $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-older_than $time  - $time よりも古い文書だけダウンロード。\n"
+"\t                     $time のフォーマット: YYYY.MM.DD.hh:mm\n"
+
+#: options.h:1968
+msgid ""
+"\t-schedule $time    - schedule pavuk start at $time\n"
+"\t                     format of $time: YYYY.MM.DD.hh:mm\n"
+msgstr ""
+"\t-schedule $time    - pavuk の動作開始時間を $time に指定。\n"
+"\t                     $time のフォーマット: YYYY.MM.DD.hh:mm\n"
+
+#: options.h:1980
+msgid ""
+"\t-reschedule $nr    - number of hours between two runs\n"
+"\t                     for cyclic scheduling\n"
+msgstr "\t-reschedule $nr    - 巡回時間の間隔(時間)\n"
+
+#: options.h:1992
+msgid ""
+"\t-dont_leave_site/-leave_site\n"
+"\t                   - don't/leave site of starting URL\n"
+msgstr ""
+"\t-dont_leave_site/-leave_site\\n\"\n"
+"\t                   - 開始時の URL のサイトを残しておく\n"
+
+#: options.h:2015
+msgid ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - don't/leave directory of starting URL\n"
+msgstr ""
+"\t-dont_leave_dir/-leave_dir\n"
+"\t                   - 開始時の URL のディレクトリを残しておく\n"
+
+#: options.h:2038
+msgid ""
+"\t-preserve_time/-nopreserve_time\n"
+"\t                   - preserve document modification time\n"
+msgstr ""
+"\t-preserve_time/-nopreserve_time\n"
+"\t                   - 文書の変更時間を保持\n"
+
+#: options.h:2061
+msgid ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - preserve document permissions\n"
+msgstr ""
+"\t-preserve_perm/-nopreserve_perm\n"
+"\t                   - 文書のパーミッションを保持\n"
+
+#: options.h:2084
+msgid ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - preserve absolute symlinks\n"
+msgstr ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - シンボリックリンクを保持\n"
+
+#: options.h:2107
+msgid ""
+"\t-leave_level $nr   - how many tree levels leave from starting\n"
+"\t                     site , (0 == don't care) default 0\n"
+msgstr ""
+
+#: options.h:2119
+msgid "\t-cookie_file $file - file where are stored cookie infos\n"
+msgstr "\t-cookie_file $file - cookie 情報を保存するファイル\n"
+
+#: options.h:2130
+msgid ""
+"\t-cookie_send/-nocookie_send\n"
+"\t                   - send cookie info in HTTP request\n"
+msgstr ""
+"\t-cookie_send/-nocookie_send\n"
+"\t                   - HTTP リクエスト時に cookie 情報を送る\n"
+
+#: options.h:2153
+msgid ""
+"\t-cookie_recv/-nocookie_recv\n"
+"\t                   - accept cookies from HTTP response\n"
+msgstr ""
+"\t-cookie_recv/-nocookie_recv\n"
+"\t                   - HTTP 応答からの cookie を受け入れる\n"
+
+#: options.h:2176
+msgid ""
+"\t-cookie_update/-nocookie_update\n"
+"\t                   - update cookies in cookies file\n"
+msgstr ""
+"\t-cookie_update/-nocookie_update\n"
+"\t                   - cookie ファイルの cookie を更新\n"
+
+#: options.h:2199
+msgid ""
+"\t-cookie_check/-nocookie_check\n"
+"\t                   - check if cookies are set for source domain\n"
+msgstr ""
+"\t-cookie_check/-nocookie_check\n"
+"\t                   - cookie がソースドメインに対して設定されて\n"
+"\t                     いるかどうかをチェックする\n"
+
+#: options.h:2222
+msgid "\t-cookies_max $nr   - maximal number of cookies in cookie cache\n"
+msgstr "\t-cookies_max $nr   - cookie キャッシュ内の cookie の最大数\n"
+
+#: options.h:2233
+msgid ""
+"\t-disabled_cookie_domains $list\n"
+"\t                   - comma-separated list of disabled cookie domains\n"
+msgstr ""
+"\t-disabled_cookie_domains $list\n"
+"\t                   -  カンマで区切られた、禁止された cookie\n"
+"\t                      ドメインのリスト\n"
+
+#: options.h:2245
+msgid ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - disable processing of URLs from\n"
+"\t                     attribute $ATTRIB of HTML tag $TAG\n"
+msgstr ""
+"\t-disable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - HTML タグ $TAG の属性 $ATTRIB からの\n"
+"\t                     URL の処理を無効にする\n"
+
+#: options.h:2258
+msgid ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\n"
+"\t                   - enable proccessing of URLs from\n"
+"\t                     attribute $ATTRIB of HTML tag $TAG\n"
+msgstr ""
+"\t-enable_html_tag $TAG,[$ATTRIB][;...]\\n\"\n"
+"\t                   - HTML タグ $TAG の属性 $ATTRIB からの\n"
+"\t                     URL の処理を有効にする\n"
+
+#: options.h:2274
+msgid "\t-gui_font $font    - font name used in GUI interface\n"
+msgstr "\t-gui_font $font    - GUI インタフェースのフォント名\n"
+
+#: options.h:2286
+msgid ""
+"\t-user_condition $str\n"
+"\t                   - user exit script used to restrict some URLs\n"
+"\t                     for more informations see manpage\n"
+msgstr ""
+"\t-user_condition $str\n"
+"\t                   - 厳格ないくつかの URL について user-exit\n"
+"\t                     スクリプトを使用(詳細についてはマニュアルを\n"
+"\t                     参照)\n"
+
+#: options.h:2299
+msgid ""
+"\t-tr_del_chr $str   - characters that will be deleted from\n"
+"\t                     local filename\n"
+msgstr "\t-tr_del_chr $str   - ローカルファイル名から取り除くキャラクタ\n"
+
+#: options.h:2311
+msgid ""
+"\t-tr_str_str $str1 $str2\n"
+"\t                   - translate $str1 to $str2 in local filename\n"
+msgstr ""
+"\t-tr_str_str $str1 $str2\n"
+"\t                   - ローカルファイル名内で $str1 を $str2 へ変換\n"
+
+#: options.h:2323
+msgid ""
+"\t-tr_chr_chr $chrset1 $chrset2\n"
+"\t                   - translate $chrset1 to $chrset2 in local filename\n"
+msgstr ""
+"\t-tr_chr_chr $chrset1 $chrset2\n"
+"\t                   - ローカルファイル名内で $chrset1 を \n"
+"\t                     $chrset2 へ変換\n"
+
+#: options.h:2335
+msgid "\t-index_name $str   - name of directory index instead of _._.html\n"
+msgstr ""
+"\t-index_name $str   - _._.html の代りに使うディレクトリインデックス名\n"
+
+#: options.h:2346
+msgid "\t-store_name $str   - filename for first downloaded document\n"
+msgstr "\t-store_name $str   - 最初にダウンロードした文書のファイル名\n"
+
+#: options.h:2368
+msgid ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - compare received size of file with\n"
+"\t                     that provided by remote server\n"
+msgstr ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - リモートサーバが提供するサイズ情報と\n"
+"\t                     受け取ったファイルのサイズを比較\n"
+
+#: options.h:2392
+msgid ""
+"\t-urls_file $file   - URLs should be read from file, until\n"
+"\t                     line with single \".\" occurs in input\n"
+msgstr ""
+"\t-urls_file $file   - URL を入力に \".\" が現れる行までファイルから\n"
+"\t                     読み込む\n"
+
+#: options.h:2404
+msgid ""
+"\t-bg/-nobg          - detach pavuk proces from terminal and\n"
+"\t                     don't output any messages on screen\n"
+msgstr ""
+"\t-bg/-nobg          - pavuk プロセスを端末から切離し、画面に\n"
+"\t                     何もメッセージを出力しない\n"
+
+#: options.h:2427
+msgid "\t-maxrate $nr       - limit to maximal speed of transfer (kB/s)\n"
+msgstr "\t-maxrate $nr       - 転送最大速度の制限 (kB/s)\n"
+
+#: options.h:2438
+msgid "\t-minrate $nr       - limit to minimal speed of transfer (kB/s)\n"
+msgstr "\t-minrate $nr       - 転送最低速度の制限 (kB/s)\n"
+
+#: options.h:2449
+msgid "\t-bufsize $nr       - size of read buffer (kB)\n"
+msgstr "\t-bufsize $nr       - 読み込みバッファサイズ (kB)\n"
+
+#: options.h:2460
+msgid "\t-file_quota $nr    - maximal size of file to transfer (kB)\n"
+msgstr "\t-file_quota $nr    - 転送ファイルの最大サイズ (kB)\n"
+
+#: options.h:2471
+msgid "\t-trans_quota $nr   - maximal amount of transfer per session (kB)\n"
+msgstr "\t-trans_quota $nr   - セッション毎の転送量総計の最大値 (kB)\n"
+
+#: options.h:2482
+msgid "\t-fs_quota $nr      - disk free space quota (kB)\n"
+msgstr "\t-fs_quota $nr      - ディスクフリースペースの割り当て (kB)\n"
+
+#: options.h:2493
+msgid ""
+"\t-enable_js/-disable_js\n"
+"\t                   - enable downloading of javascript source files\n"
+msgstr ""
+"\t-enable_js/-disable_js\n"
+"\t                   - javascript ソースファイルのダウンロードを\n"
+"\t                     可能にする\n"
+
+#: options.h:2516
+msgid ""
+"\t-fnrules $t $m $r  - local filename construction rules\n"
+"\t                     (for better description see manual)\n"
+msgstr ""
+"\t-fnrules $t $m $r  - ローカルファイル名の生成ルール\n"
+"\t                     (詳細についてはマニュアルを参照)\n"
+
+#: options.h:2528
+msgid ""
+"\t-store_info/-nostore_info\n"
+"\t                   - store document info files with each document\n"
+msgstr ""
+"\t-store_info/-nostore_info\n"
+"\t                   - 各文書毎に文書情報ファイルを保存\n"
+
+#: options.h:2551
+msgid ""
+"\t-all_to_local/-noall_to_local\n"
+"\t                   - change all links inside HTML document to\n"
+"\t                     local immediately after download\n"
+msgstr ""
+"\t-all_to_local/-noall_to_local\n"
+"\t                   - ダウンロード直後にHTML 文書内のすべての\n"
+"\t                     リンクをローカルに変換\n"
+
+#: options.h:2575
+msgid ""
+"\t-sel_to_local/-nosel_to_local\n"
+"\t                   - change all links inside HTML document\n"
+"\t                     which acomplish the limits, to\n"
+"\t                     local immediately after download\n"
+msgstr ""
+"\t-sel_to_local/-nosel_to_local\n"
+"\t                   - ダウンロード直後に条件を満足するすべての\n"
+"\t                     HTML 文書内のリンクをローカルに保存\n"
+
+#: options.h:2600
+msgid ""
+"\t-all_to_remote/-noall_to_remote\n"
+"\t                   - change all links inside HTML document to\n"
+"\t                     remote immediately after download and\n"
+"\t                     don't do any further changes to it\n"
+msgstr ""
+"\t-all_to_remote/-noall_to_remote\n"
+"\t                   - ダウンロード直後に HTML 文書内のすべての\n"
+"\t                     リンクをリモートで保存し、それ以上変化を\n"
+"\t                     加えない\n"
+
+#: options.h:2625
+msgid "\t-remind_cmd $str   - command which sends result from reminder mode\n"
+msgstr "\t-remind_cmd $str   - reminder モードで結果を送るコマンド\n"
+
+#: options.h:2636
+msgid ""
+"\t-auto_referer/-noauto_referer\n"
+"\t                   - in HTTP request send for each starting URL\n"
+"\t                     Referer: field which contains its own URL\n"
+msgstr ""
+"\t-auto_referer/-noauto_referer\n"
+"\t                   - 開始時の各 URL へ送る HTTP リクエストの\n"
+"\t                     Referer: フィールドはそれらの URL を含む\n"
+
+#: options.h:2660
+msgid ""
+"\t-url_strategy $strategy\n"
+"\t                   - scheduling strategy for URLs\n"
+"\t                     (this means order how URLs will be downloaded)\n"
+"\t                     $strategy is one of :\n"
+"\t                        level  - level order in URL tree\n"
+"\t                        leveli - level order in URL tree,\n"
+"\t                                 but inline objects go first\n"
+"\t                        pre    - pre-order in URL tree\n"
+"\t                        prei   - pre-order in URL tree,\n"
+"\t                                 but inline objects go first\n"
+msgstr ""
+"\t-url_strategy $strategy\n"
+"\t                   - URL についての巡回計画\n"
+"\t                     (すなわちいくつの URL をダウンロードするか)\n"
+"\t                     $strategy の項目:\n"
+"\t                       level  - URL ツリー内の深さ順\n"
+"\t                       leveli - URL ツリー内の深さ順、ただしイン\n"
+"\t                                ラインオブジェクトを先に\n"
+"\t                       pre    - URL ツリーの先順で\n"
+"\t                       pre    - URL ツリーの先順で、ただしインラ\n"
+"\t                                インオブジェクトを先に\n"
+
+#: options.h:2683
+msgid "\t-nscache_dir $dir  - path to Netcape browser cache directory\n"
+msgstr "\t-nscache_dir $dir  - Netscape キャッシュディレクトリのパス\n"
+
+#: options.h:2698
+#, fuzzy
+msgid "\t-ie_cache          - allow loading of files from MSIE browser cache\n"
+msgstr " - Netscape ブラウザキャッシュからファイルを読み込みをサポート\n"
+
+#: options.h:2728
+msgid ""
+"\t-remove_adv/-noremove_adv\n"
+"\t                   - enable removing of advertisement banners\n"
+"\t                     assumes you have setup regular expresions\n"
+"\t                     for matching adv banners with -adv_re option\n"
+msgstr ""
+"\t-remove_adv/-noremove_adv\n"
+"\t                   - 宣伝バナーの削除機能を有効にする。\n"
+"\t                     正規表現を設定し、一致する宣伝バナーを\n"
+"\t                     削除するには -adv_re オプションが使用\n"
+
+#: options.h:2761
+msgid ""
+"\t-adv_re $RE        - regular expressions for matching advertisement\n"
+"\t                     banner URLs\n"
+msgstr "\t-adv_re $RE        - 宣伝バナー URL に一致する正規表現\n"
+
+#: options.h:2777
+msgid ""
+"\t-check_bg/-nocheck_bg\n"
+"\t                   - if running at background, don't write any\n"
+"\t                     messages to screen\n"
+msgstr ""
+"\t-check_bg/-nocheck_bg\n"
+"\t                   - バックグラウンドで動作中にメッセージを\n"
+"\t                     画面に出力しない\n"
+
+#: options.h:2806
+msgid ""
+"\t-send_if_range/-nosend_if_range\n"
+"\t                   - send If-Range header in HTTP request\n"
+"\t                     turn this of when server support reget, but\n"
+"\t                     generates different Etags for two requests\n"
+msgstr ""
+"\t-send_if_range/-nosend_if_range\n"
+"\t                   - サーバが再取得をサポートするが二つの\n"
+"\t                     リクエストについて異なる Etags を生成する\n"
+"\t                     ような場合にHTTP リクエスト内で if_Range\n"
+"\t                     ヘッダを送る\n"
+
+#: options.h:2831
+msgid "\t-sched_cmd $str    - command for scheduling\n"
+msgstr "\t-sched_cmd $str    - スケジュールコマンド\n"
+
+#: options.h:2842
+#, fuzzy
+msgid ""
+"\t-unique_log/-nounique_log\n"
+"\t                   - when original log file locked try to find other\n"
+"\t                     with numbering extension which is not locked\n"
+msgstr ""
+"\t-unique_log/-nounique_log\n"
+"\t                   - オリジナルログファイルがロックされている\n"
+"\t                     場合にロックされていない他の with numbering \n"
+"\t                     extension をみつけようと試みる\n"
+
+#: options.h:2866
+msgid ""
+"\t-post_cmd $str     - postprocessing command, which will be invoked\n"
+"\t                     after document will be successfully downloaded\n"
+msgstr ""
+"\t-post_cmd $str     - 文書のダウンロード成功後に実行される\n"
+"\t                     後処理用のコマンド\n"
+
+#: options.h:2882
+msgid ""
+"\t-ssl_version $v    - version of SSL protocol used for communication,\n"
+"\t                     valid values: ssl23,ssl2,ssl3,tls1\n"
+msgstr ""
+"\t-ssl_version $v    - 接続時に使用するSSL プロトコルの\n"
+"\t                     バージョン。有効な値は ssl23、ssl2、\n"
+"\t                     ssl3、tls1。\n"
+
+#: options.h:2885
+msgid ""
+"\t-ssl_version $v    - version of SSL protocol used for communication,\n"
+"\t                     valid values: ssl23,ssl2,ssl3\n"
+msgstr ""
+"\t-ssl_version $v    - 接続時に使用する SSL プロトコルの\n"
+"\t                     バージョン。有効な値は ssl23、ssl2、\n"
+"\t                     ssl3。\n"
+
+#: options.h:2903
+msgid ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - use unique SSL ID with each SSL session\n"
+msgstr ""
+"\t-unique_sslid/-nounique_sslid\n"
+"\t                   - 各 SSL セッションについて固有の SSL ID を\n"
+"\t                     使用\n"
+
+#: options.h:2931
+msgid "\t-httpad $hdr       - additional HTTP header\n"
+msgstr "\t-httpad $hdr       - 追加 HTTP ヘッダ\n"
+
+#: options.h:2942
+msgid "\t-statfile $str     - statistical report from downloading progress\n"
+msgstr "\t-statfile $str     - ダウンロード進行状況の統計レポート\n"
+
+#: options.h:2956
+msgid ""
+"\t-ewait             - wait to finish program after downloading progress\n"
+"\t                     is done\n"
+msgstr "\t-ewait             - ダウンロード終了後にプログラムを終了\n"
+
+#: options.h:2987
+msgid "\t-aip_pattern $re   - pattern for allowed IP addresses of servers\n"
+msgstr "\t-aip_pattern $re   - 許されるサーバの IP アドレスのパターン\n"
+
+#: options.h:3002
+msgid "\t-dip_pattern $re   - pattern for disallowed IP addresses of servers\n"
+msgstr "\t-dip_pattern $re   - 禁止されたサーバの IP アドレスのパターン\n"
+
+#: options.h:3014
+msgid ""
+"\t-site_level $nr    - maximum allowed number of sites to leave from\n"
+"\t                     starting site\n"
+msgstr ""
+"\t-site_level $nr    - 開始時のサイトから離れた許されるサイトの\n"
+"\t                     最大数\n"
+
+#: options.h:3026
+msgid ""
+"\t-use_http11/-nouse_http11\n"
+"\t                   - enable or disable using of HTTP/1.1 protocol\n"
+"\t                     features, default is off now\n"
+msgstr ""
+"\t-use_http11/-nouse_http11\n"
+"\t                   - HTTP/1.1 プロトコル機能を使用する\n"
+"\t                     (デフォルトではオフ)\n"
+
+#: options.h:3050
+#, fuzzy
+msgid ""
+"\t-max_time $nr      - set maximal amount of time for program run\n"
+"\t                     in minutes, default 0 == no limit\n"
+"\t                     you can use floating point numbers, to\n"
+"\t                     specify subminute times\n"
+msgstr ""
+"\t-max_time $nr      - プログラムの最大総実行時間を分で設定\n"
+"\t                     (デフォルトは 0 で制限なし)\n"
+
+#: options.h:3065
+msgid ""
+"\t-local_ip $str     - use this local ip address of network interface.\n"
+"\t                     This option is for multihomed machines.\n"
+msgstr ""
+"\t-local_ip $str     - 使用するネットワークインタフェースの\n"
+"\t                     ローカル IP アドレス。マルチホームの\n"
+"\t                     マシンについて使用\n"
+
+#: options.h:3077
+msgid ""
+"\t-request $req      - extended request informations, used to specify\n"
+"\t                     information for GET or POST requests.\n"
+"\t                     format of $req :\n"
+"\t                     \"URL:$url METHOD:[GET|POST] ENCODING:[m|u]\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\n"
+"\t                       LNAME:$local_filename\"\n"
+"\t                     (for more informations see manual page)\n"
+msgstr ""
+"\t-request $req      - GET あるいは POST リクエストに対して指定する\n"
+"\t                     のに使用する拡張リクエスト情報\n"
+"\t                     $req のフォーマット:\n"
+"\t                     \"URL:$url METHOD:[GET|POST] ENCODING:[m|u]\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\n"
+"\t                       LNAME:$local_filename\"\n"
+"\t                     (詳細についてはマニュアルを参照)\n"
+
+#: options.h:3095
+msgid ""
+"\t-hash_size $nr     - size of internal hash tables for performance tuning\n"
+msgstr ""
+"\t-hash_size $nr     - パフォーマンスチューニングのための\n"
+"\t                     内部ハッシュテーブルのサイズ\n"
+
+#: options.h:3109
+msgid "\t-nthreads $nr      - set number of concurent downloading threads\n"
+msgstr "\t-nthreads $nr      - 同時ダウンロードスレッド数を設定\n"
+
+#: options.h:3124
+msgid ""
+"\t-immesg/-noimmesg  - write messages immediately after produced, not\n"
+"\t                     just when safe (from MT point of view)\n"
+msgstr ""
+"\t-immesg/-noimmesg  - (MT の観点から)安全でなくとも発生後に即座に\n"
+"\t                     メッセージを出力\n"
+
+#: options.h:3152
+msgid ""
+"\t-formdata $data    - used to specify HTML form fields, for HTML\n"
+"\t                     forms found during traversing document tree.\n"
+"\t                     Only forms mentiond in this option will be\n"
+"\t                     processed automaticaly.\n"
+"\t                     \"URL:$url\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\"\n"
+"\t                     (for more informations see manual page)\n"
+msgstr ""
+"\t-formdata $data    - 文書ツリーを横断する間にみつかった HTML \n"
+"\t                     フォームについて指定 HTML フォームフィー\n"
+"\t                     ルドを使用。このオプションで指定されたフ\n"
+"\t                     ォームだけが自動的に処理される。\n"
+"\t                     \"URL:$url\n"
+"\t                       FIELD:$variable=$value\n"
+"\t                       FILE:$variable=$filename\"\n"
+"\t                     (詳細についてはマニュアルを参照)\n"
+
+#: options.h:3170
+msgid ""
+"\t-dumpfd $nr        - number of filedescriptor where to output\n"
+"\t                     document contents instead to file\n"
+msgstr ""
+"\t-dumpfd $nr        - ファイルの代りに文書の内容を出力する\n"
+"\t                     フィールドスクリプタ数\n"
+
+#: options.h:3182
+msgid ""
+"\t-dump_urlfd $nr    - number of filedescriptor where to output\n"
+"\t                     all URLs found in documents\n"
+msgstr ""
+"\t-dump_urlfd $nr    - 文書内でみつかったすべての URL を出力\n"
+"\t                     するフィールドスクリプタ数\n"
+
+#: options.h:3194
+msgid ""
+"\t-del_after/-nodel_after\n"
+"\t                   - delete FTP document after succesfull transfer\n"
+msgstr ""
+"\t-del_after/-nodel_after\n"
+"\t                   - FTP 文書を転送成功後に消去\n"
+
+#: options.h:3217
+msgid ""
+"\t-unique_name/-nounique_name\n"
+"\t                   - always generate unique name for each document\n"
+msgstr ""
+"\t-unique_name/-nounique_name\n"
+"\t                   - 常に各文書に対して固有の名前を生成\n"
+
+#: options.h:3240
+msgid ""
+"\t-leave_site_enter_dir/-dont_leave_site_enter_dir\n"
+"\t                   - leave directory which we first entered on site\n"
+msgstr ""
+"\t-leave_site_enter_dir/-dont_leave_site_enter_dir\n"
+"\t                   - 最初に入ったサイトのディレクトリを離れる\n"
+
+#: options.h:3263
+msgid ""
+"\t-singlepage/-nosinglepage\n"
+"\t                   - donwload single HTML page with all inline objects\n"
+msgstr ""
+"\t-singlepage/-nosinglepage\n"
+"\t                   - すべてのインラインオブジェクトと一緒に\n"
+"\t                     HTML ページをダウンロード\n"
+
+#: options.h:3286
+#, fuzzy
+msgid ""
+"\t-dump_after/-nodump_after\n"
+"\t                   - when used with option -dumpfd, dump document after\n"
+"\t                     successful download and processing of HTML\n"
+"\t                     documents\n"
+msgstr ""
+"\t-all_to_remote/-noall_to_remote\n"
+"\t                   - ダウンロード直後に HTML 文書内のすべての\n"
+"\t                     リンクをリモートで保存し、それ以上変化を\n"
+"\t                     加えない\n"
+
+#: options.h:3311
+#, fuzzy
+msgid ""
+"\t-dump_response/-nodump_response\n"
+"\t                   - when used with option -dumpfd, also responses\n"
+"\t                     from HTTP servers will be dumped\n"
+msgstr ""
+"\t-auth_reuse_nonce/-noauth_reuse_nonce\n"
+"\t                   - リクエスト時に一回目の HTTP ダイジェスト\n"
+"\t                     アクセス認証を臨時に再利用\n"
+
+#: options.h:3338
+#, fuzzy
+msgid ""
+"\t-auth_ntlm_domain $str\n"
+"\t                   - SMB domain name for HTTP NTLM authorization\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - HTTP プロキシ認証ユーザ名\n"
+
+#: options.h:3354
+#, fuzzy
+msgid ""
+"\t-auth_proxy_ntlm_domain $str\n"
+"\t                   - SMB domain name for HTTP proxy NTLM authorization\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - HTTP プロキシ認証ユーザ名\n"
+
+#: options.h:3370
+msgid ""
+"\t-js_pattern $re    - additional RE patterns for matching URLs in DOM\n"
+"\t                     event attributes of HTML tags\n"
+msgstr ""
+
+#: options.h:3383
+#, fuzzy
+msgid ""
+"\t-follow_cmd $str   - user exit script used tell if you want to follow\n"
+"\t                     any link from current HTML document\n"
+msgstr ""
+"\t-dump_urlfd $nr    - 文書内でみつかったすべての URL を出力\n"
+"\t                     するフィールドスクリプタ数\n"
+
+#: options.h:3395
+#, fuzzy
+msgid ""
+"\t-retrieve_symlink/-noretrieve_symlink\n"
+"\t                   - retrieve symliks like regular files or directories\n"
+msgstr ""
+"\t-preserve_slinks/-nopreserve_slinks\n"
+"\t                   - シンボリックリンクを保持\n"
+
+#: options.h:3421
+msgid ""
+"\t-js_transform $p $t $h $a\n"
+"\t                   - custom JS pattern with transformation\n"
+"\t                     $p - pattern\n"
+"\t                     $t - transfomation\n"
+"\t                     $h - HTML tag or * or \"\"\n"
+"\t                     $a - HTML attrib\n"
+msgstr ""
+
+#: options.h:3441
+msgid ""
+"\t-js_transform2 $p $t $h $a\n"
+"\t                   - custom JS pattern with transformation and\n"
+"\t                     rewriting of URLs in first subpattern\n"
+"\t                     $p - pattern\n"
+"\t                     $t - transfomation\n"
+"\t                     $h - HTML tag or * or \"\"\n"
+"\t                     $a - HTML attrib\n"
+msgstr ""
+
+#: options.h:3459
+#, fuzzy
+msgid ""
+"\t-ftp_proxy_user $str\n"
+"\t                   - username for access authorization to FTP proxy\n"
+msgstr ""
+"\t-http_proxy_user $str\n"
+"\t                   - HTTP プロキシ認証ユーザ名\n"
+
+#: options.h:3471
+#, fuzzy
+msgid ""
+"\t-ftp_proxy_pass $str\n"
+"\t                   - password for access authorization to FTP proxy\n"
+msgstr ""
+"\t-http_proxy_pass $str\n"
+"\t                   - HTTP プロキシ認証パスワード\n"
+
+#: options.h:3483
+#, fuzzy
+msgid ""
+"\t-limit_inlines/-dont_limit_inlines\n"
+"\t                   - apply limiting options on page inline objects?\n"
+msgstr ""
+"\t-singlepage/-nosinglepage\n"
+"\t                   - すべてのインラインオブジェクトと一緒に\n"
+"\t                     HTML ページをダウンロード\n"
+
+#: options.h:3506
+#, fuzzy
+msgid ""
+"\t-ftp_list_options $str\n"
+"\t                   - additional options or parameters to FTP LIST or\n"
+"\t                     NLST commands\n"
+msgstr ""
+"\t-ftp_dirtyproxy/-noftp_dirtyproxy\n"
+"\t                   - FTP 接続用の HTTP プロキシで CONNECT\n"
+"\t                     リクエストを使用\n"
+
+#: options.h:3519
+msgid ""
+"\t-fix_wuftpd_list/-nofix_wuftpd_list\n"
+"\t                   - do extensive checking of FTP directory presence to\n"
+"\t                     workaround WuFTPD broken responses when trying\n"
+"\t                     to list nonexisting directory\n"
+msgstr ""
+
+#: options.h:3544
+#, fuzzy
+msgid ""
+"\t-post_update/-nopost_update\n"
+"\t                  - update in parent documents only links pointing\n"
+"\t                    to current document\n"
+msgstr ""
+"\t-remove_old/-noremove_old\n"
+"\t                   - sync モードで不適切なファイルやディレ\n"
+"\t                     クトリを削除\n"
+
+#: options.h:3568
+#, fuzzy
+msgid ""
+"\t-info_dir $dir    - separate directory where will stored info files\n"
+"\t                    instead of directly into document tree\n"
+msgstr ""
+"\t-scndir $dir       - シナリオ(設定ファイル)を保存する\n"
+"\t                     ディレクトリ\n"
+
+#: options.h:3583
+#, fuzzy
+msgid "\t-mozcache_dir $dir - path to Mozilla browser cache directory\n"
+msgstr "\t-nscache_dir $dir  - Netscape キャッシュディレクトリのパス\n"
+
+#: options.h:3595
+msgid ""
+"\t-aport $list       - allow downloading of documents from servers\n"
+"\t                     siting on listed ports\n"
+msgstr ""
+
+#: options.h:3607
+msgid ""
+"\t-dport $list       - deny downloading of documents from servers\n"
+"\t                     siting on listed ports\n"
+msgstr ""
+
+#: options.h:3619
+#, fuzzy
+msgid ""
+"\t-hack_add_index/-nohack_add_index\n"
+"\t                   - this is hack to allow adding of also directories\n"
+"\t                     of all queued files\n"
+msgstr ""
+"\t-check_size/-nocheck_size\n"
+"\t                   - リモートサーバが提供するサイズ情報と\n"
+"\t                     受け取ったファイルのサイズを比較\n"
+
+#: options.h:3643
+msgid ""
+"\t-default_prefix $str\n"
+"\t                  - default URL prefix for subdirectory of\n"
+"\t                    mirrored files\n"
+msgstr ""
+
+#: options.h:3659
+#, fuzzy
+msgid ""
+"\t-js_script_file $file\n"
+"\t                  - script file with JavaScript functions\n"
+msgstr ""
+"\t-ssl_cert_file $str\n"
+"\t                   - SSL 証明ファイル\n"
+
+#: options.h:3672
+msgid ""
+"\t-ftp_login_handshake $host $handshake\n"
+"\t                   - customize login handshake for FTP server\n"
+msgstr ""
+
+#: pavuk.c:106
+msgid "QUIT signal catched\n"
+msgstr "QUIT シグナルを受け取りました\n"
+
+#: pavuk.c:259
+msgid "Not enough number of parameters \"-msgcat\"\n"
+msgstr "パラメータ \"-msgcat\" の数が不充分です\n"
+
+#: pavuk.c:273
+msgid "Not enough number of parameters \"-scenario\"\n"
+msgstr "パラメータ \"-scenario\" の数が不充分です\n"
+
+#: pavuk.c:303
+msgid "Error: Supplied bad file descriptor in -dumpfd option\n"
+msgstr ""
+"エラー: -dumpfd オプション内で不正なファイルデスクリプタが渡されました\n"
+
+#: pavuk.c:314
+msgid "Error: Supplied bad file descriptor in -dump_urlfd option\n"
+msgstr ""
+"エラー: -dump_urlfd オプション内で不正なファイルデスクリプタが渡されました\n"
+
+#: pavuk.c:366
+msgid "WARNING: scndir not specified - saving to current directory\n"
+msgstr "警告: scndir が指定されていません - 今のディレクトリに保存します\n"
+
+#: pavuk.c:403
+msgid "Unable to fork pavuk to background - running in foreground\n"
+msgstr ""
+"pavuk をバックグラウンドに fork できません - フォアグラウンドで実行します\n"
+
+#: pavuk.c:407
+#, c-format
+msgid "Pavuk will run at backround as PID %d\n"
+msgstr "Pavuk は PID %d でバックグラウンドで実行します\n"
+
+#: pavuk.c:427
+#, c-format
+msgid "reading URLs from file - %s\n"
+msgstr "ファイルから URL を読み込み中 - %s\n"
+
+#: recurse.c:82
+#, c-format
+msgid "Rescheduling locked URL as no. %d\n"
+msgstr "ロックされた URL を no. %d で再スケジュール\n"
+
+#: recurse.c:95
+msgid "Running post-processing command\n"
+msgstr "処理後コマンドを実行中\n"
+
+#: recurse.c:243
+#, c-format
+msgid "retry no. %d\n"
+msgstr "再試行 no. %d\n"
+
+#: recurse.c:246
+#, c-format
+msgid "URL[%2d]: %5d(%d) of %5d  %s\n"
+msgstr ""
+
+#: recurse.c:249
+#, c-format
+msgid "URL: %5d(%d) of %5d  %s\n"
+msgstr ""
+
+#: recurse.c:260 recurse.c:394
+msgid "Starting download"
+msgstr "ダウンロード開始"
+
+#: recurse.c:284
+msgid "Already processed\n"
+msgstr "既に処理済\n"
+
+#: recurse.c:291
+msgid "Disallowed by user\n"
+msgstr "ユーザによって禁止された\n"
+
+#: recurse.c:305
+msgid "Disallowed by rules\n"
+msgstr "ルールで禁止された\n"
+
+#: recurse.c:312
+msgid "Checking \"robots.txt\""
+msgstr "\"robots.txt\" をチェック中"
+
+#: recurse.c:316
+msgid "Disallowed by \"robots.txt\"\n"
+msgstr "\"robots.txt\" で禁止された\n"
+
+#: recurse.c:326
+msgid "This URL type is not supported with ftpdir mode\n"
+msgstr "この URL タイプは ftpdir モードではサポートされていません\n"
+
+#: recurse.c:346
+msgid "No transfer - file not expired\n"
+msgstr "転送なし - ファイルは未完了\n"
+
+#: recurse.c:362
+#, c-format
+msgid "Starting time :  %s\n"
+msgstr "開始時間 :  %s\n"
+
+#: recurse.c:404 recurse.c:563
+#, c-format
+msgid "Ending time :    %s\n"
+msgstr "終了時間 :   %s\n"
+
+#: recurse.c:411 recurse.c:566
+msgid "download"
+msgstr "ダウンロード"
+
+#: recurse.c:511
+msgid "last document locked -> sleeping for 5 seconds\n"
+msgstr "最後の文書がロックされています -> 5 秒間休止します\n"
+
+#: recurse.c:577
+#, fuzzy
+msgid "Relocating and scanning HTML document"
+msgstr "HTML 文書を再配置中"
+
+#: recurse.c:629
+#, fuzzy
+msgid "Dumping processed document"
+msgstr "まだ未処理\n"
+
+#: recurse.c:649
+msgid "Storing document"
+msgstr "文書を保存中"
+
+#: recurse.c:655
+msgid "Store failed\n"
+msgstr "保存失敗\n"
+
+#: recurse.c:762 recurse.c:845
+msgid "Done"
+msgstr "完了"
+
+#: recurse.c:922 remind.c:379
+msgid "Sleeping ..."
+msgstr "休止中 ..."
+
+#: recurse.c:936 remind.c:396
+msgid "Exiting ..."
+msgstr "終了中 ..."
+
+#: recurse.c:1048
+#, c-format
+msgid "\t%s    (%d bytes)\n"
+msgstr "\t%s  (%d バイト)\n"
+
+#: recurse.c:1106
+msgid "Searching for files to resume"
+msgstr "再開するファイルを検索"
+
+#: recurse.c:1133
+#, c-format
+msgid "Adding %s to resume list\n"
+msgstr "%s を再開リストに追加\n"
+
+#: recurse.c:1165
+msgid "Searching for documents to synchronize"
+msgstr "同期する文書を検索"
+
+#: recurse.c:1220 recurse.c:1245
+#, fuzzy, c-format
+msgid "Adding file %s to sync list as URL %s\n"
+msgstr "同期リストに %s を追加\n"
+
+#: remind.c:45
+#, c-format
+msgid "Checking: %s\n"
+msgstr "チェック: %s\n"
+
+#: remind.c:170
+#, c-format
+msgid "Bad reminder db entry - %s\n"
+msgstr "不正な reminder データベースエントリ - %s\n"
+
+#: remind.c:529
+msgid ""
+"This is the result of running pavuk reminder mode\n"
+"\n"
+msgstr ""
+"pavuk を reminder モードで実行した結果\n"
+"\n"
+
+#: remind.c:540
+msgid "Changed URLs\n"
+msgstr "変更された URL\n"
+
+#: remind.c:561
+msgid "URLs with some errors\n"
+msgstr "エラーの起きた URL\n"
+
+#: robots.c:166
+msgid "transfering \"robots.txt\""
+msgstr "\"robots.txt\" を転送"
+
+#: robots.c:169
+msgid "transfering \"robots.txt\"\n"
+msgstr "\"robots.txt\" を転送\n"
+
+#: robots.c:230
+#, c-format
+msgid "Hmm: redirecting \"robots.txt\" to %s ???\n"
+msgstr "Hmm: \"robots.txt\" を %s へリダイレクト ???\n"
+
+#: stats.c:138 stats.c:221
+#, c-format
+msgid "Total number of URLs in queue: %d\n"
+msgstr "キュー内の URL の総計: %d\n"
+
+#: stats.c:139 stats.c:223
+#, c-format
+msgid "Starting urls: %d\n"
+msgstr "開始 URL: %d\n"
+
+#: stats.c:142 stats.c:228
+msgid "Not processed yet: %d (%3d%%)\n"
+msgstr "まだ処理途中: %d (%3d%%)\n"
+
+#: stats.c:147 stats.c:235
+msgid "Processed OK: %d (%3d%%)\n"
+msgstr "処理完了: %d (%3d%%)\n"
+
+#: stats.c:150 stats.c:241
+msgid "Loaded from local tree: %d (%3d%%)\n"
+msgstr "ローカルツリーから読み込み: %d (%3d%%)\n"
+
+#: stats.c:153 stats.c:247
+msgid "Loaded from Netscape browser cache dir: %d (%3d%%)\n"
+msgstr "Netscape キャッシュディレクトリから読み込み : %d (%3d%%)\n"
+
+#: stats.c:156 stats.c:253
+msgid "Downloaded over network: %d (%3d%%)\n"
+msgstr "ネットワークを通じてダウンロード: %d (%3d%%)\n"
+
+#: stats.c:159 stats.c:259
+msgid "Moved to another location: %d (%3d%%)\n"
+msgstr "他の場所へ移動: %d (%3d%%)\n"
+
+#: stats.c:163 stats.c:265
+msgid "Downloaded truncated: %d (%3d%%)\n"
+msgstr "ダウンロードしたものが壊れています: %d (%3d%%)\n"
+
+#: stats.c:169 stats.c:272
+msgid "Non fatal errors: %d (%3d%%)\n"
+msgstr "致命的なエラーなし: %d (%3d%%)\n"
+
+#: stats.c:175 stats.c:279
+msgid "Not found documents: %d (%3d%%)\n"
+msgstr "みつからない文書: %d (%3d%%)\n"
+
+#: stats.c:181 stats.c:286
+msgid "Documents with fatal errors: %d (%3d%%)\n"
+msgstr "致命的なエラーのあった文書: %d (%3d%%)\n"
+
+#: stats.c:187
+msgid "Documents with unknown status: %d (%3d%%)\n"
+msgstr "状態不明の文書: %d (%3d%%)\n"
+
+#: stats.c:293
+msgid "Documents with unspecific status: %d (%3d%%)\n"
+msgstr "不明確な状態の文書: %d (%3d%%)\n"
+
+#: stats.c:358
+msgid "Pavuk: save status page"
+msgstr "Pavuk: 状態ページを保存"
+
+#: stats.c:379 stats.c:537
+msgid "Not available yet"
+msgstr "まだ利用できません"
+
+#: stats.c:462
+msgid "Pavuk: status page"
+msgstr "Pavuk: 状態ページ"
+
+#: stats.c:479
+msgid "Status page"
+msgstr "状態ページ"
+
+#: stats.c:492
+msgid "Save ..."
+msgstr "保存 ..."
+
+#: stats.c:499
+msgid "Refresh"
+msgstr "更新"
+
+#: stats.c:526
+msgid "Try download"
+msgstr "ダウンロード試行"
+
+#: tools.c:109
+msgid "no error"
+msgstr "エラーなし"
+
+#: tools.c:114
+msgid "host not found"
+msgstr "ホストがみつかりません"
+
+#: tools.c:119
+msgid "temporary error (try again later)"
+msgstr "一時的エラー(後で再試行して下さい)"
+
+#: tools.c:124
+msgid "non recoverable error"
+msgstr "回復不能なエラー"
+
+#: tools.c:129
+msgid "name is valid, but doesn't have an IP address"
+msgstr "名前は適切ですが、IP アドレスを持っていません"
+
+#: tools.c:133
+msgid "unknown hostname translation error"
+msgstr "不明なホスト名転送エラー"
+
+#: tools.c:315 tools.c:330
+#, c-format
+msgid "waiting to release lock on FD : %d\n"
+msgstr "FD 上でのロックの解除を待っています: %d\n"
+
+#: uconfig.c:998
+msgid "Bad parameter - Working subdirectory"
+msgstr "不正なパラメータ - 作業サブディレクトリ"
+
+#: uconfig.c:1178
+msgid "Bad parameter - Cache directory"
+msgstr "不正なパラメータ - キャッシュディレクトリ"
+
+#: uexit.c:30
+msgid "Error occured while executing user-exit script"
+msgstr "user-exit スクリプトを実行中にエラーが起こりました"
+
+#: update_links.c:40
+#, c-format
+msgid "Entering directory %s\n"
+msgstr "ディレクトリ %s に入ります\n"
+
+#: update_links.c:69
+#, c-format
+msgid "Relocating %s\n"
+msgstr "%s を再配置中\n"
+
+#: update_links.c:72
+#, c-format
+msgid "Omitting %s\n"
+msgstr "%s を省略中\n"
+
+#: update_links.c:86
+#, c-format
+msgid "Leaving directory %s\n"
+msgstr "ディレクトリ %s を離れます\n"
+
+#: update_links.c:104
+#, c-format
+msgid "Can't open directory %s\n"
+msgstr "ディレクトリ %s を開けません\n"
+
+#: url.c:1000
+#, c-format
+msgid "unsupported URL type \"%s\"\n"
+msgstr "URL タイプ \"%s\" はサポートされていません\n"
+
+#: url.c:1152
+msgid "Moved to already processed URL.\n"
+msgstr "既に処理済の URL へ移動します\n"
+
+#: url.c:2767
+#, fuzzy
+msgid "Missing specification of URL in request\n"
+msgstr "POST リクエストに対するリクエストフィールド指定がみつかりません\n"
+
+#: url.c:2776
+msgid "Missing request fields specification for POST request\n"
+msgstr "POST リクエストに対するリクエストフィールド指定がみつかりません\n"
+
+#: url.c:2784
+msgid "Multipart encoding not supported with GET requests\n"
+msgstr "GET リクエストについてマルチパートエンコードはサポートされていません\n"
+
+#~ msgid "Unknown switch %s\n"
+#~ msgstr "不明なスイッチ %s\n"
+
+#~ msgid "%s: ERROR: unable to change directory\n"
+#~ msgstr "%s: エラー: ディレクトリを移動できません\n"
+
+#~ msgid "Download javascript script sources"
+#~ msgstr "javascript ソースをダウンロード"
+
+#~ msgid "Other lang. code: "
+#~ msgstr "他の言語コード: "
+
+#~ msgid "Other Charset code: "
+#~ msgstr "他のキャラクタコード: "
+
+#~ msgid "Other MIME type: "
+#~ msgstr "他の MIME タイプ: "
+
+#~ msgid "HUH: don't know how to gateway FTP when proxy not specified\n"
+#~ msgstr ""
+#~ "HUH: プロキシが指定されていないので FTP へのゲートウェイが不明です\n"
+
+#~ msgid "HUH: don't know how to gateway Gopher when proxy not specified\n"
+#~ msgstr ""
+#~ "HUH: プロキシが指定されていないので Gopher へのゲートウェイが不明です\n"
+
+#~ msgid "HUH: this protocol is not supported for gatewaying\n"
+#~ msgstr "HUH: このプロトコルはゲートウェイでサポートされていません\n"
+
+#~ msgid "Not enough number of parameters \"-scndir\"\n"
+#~ msgstr "パラメータ \"-scndir\" の数が不充分です\n"
+
+#~ msgid "WARNING: Scenario \"%s\" can't be loaded - scenario dir not set\n"
+#~ msgstr ""
+#~ "警告: シナリオ \"%s\" は読み込めません - "
+#~ "シナリオディレクトリが設定されていません\n"
+
+#~ msgid "Searching for links"
+#~ msgstr "リンクを検索中"
+
+#~ msgid "Adjusting document links"
+#~ msgstr "文書リンクを調整中"

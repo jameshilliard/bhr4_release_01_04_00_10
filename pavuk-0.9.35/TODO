@@ -1,0 +1,37 @@
+This file contains description of features which eventually will be implemented
+in any future version. Any of fields can be here long time and any can be
+removed without implementing it.
+We will appreciate any comments on issues mentioned here or any requests for
+new features not mentioned here.
+
+* message catalog for more languages, update languages (any volunteers ?)
+* new mode for accelerated per parts download of big files in multithreaded
+  version (proposed by Sergey Taranenko and Joachim von Thadden)
+* buffering of parent document updates (propsed by Honza Tomasek)
+* restart scenario with errors
+* reschedule failed URLs
+* optionaly allow scan of FTP directories
+* add doc titles to tree preview
+* support for tunneling HTTP over HTTP proxy using CONNECT request
+* checking of Content-MD5: in sync mode (proposed by Mark D. Anderson)
+* checking of full path (idea by Tim Small)
+* WML support
+* --scnhelp
+* solve somehow move to Unicode in Gtk+-2.0 (g_conv/iconv in console xprintf)
+* support for modifying <IMG HEIGHT WIDTH> as proposed Georg
+* start slowly adding tooltips for unclear options in GUI
+* gtk+-2.0 config via pkg-config
+* fix the GTK2.0 warnings and problems
+* JS for proxy assigning
+* document JavaScript bindings
+* add GnuTLS support
+* convert all io to bufio
+* support for -preserve_old (in .old/)
+
+* ftp dir symlinks !
+
+* mode MIRROR does not remove empty directories if they were removed on the
+  remote system
+* mode MIRROR does not have the same file modification times (local time offset)
+* -remove_before_store: does it cover all occasions when a file is modified?
+

@@ -1,0 +1,41 @@
+/* XPM */
+static char *gobg_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"    24    24        10            1",
+/* colors */
+"  c none",
+". c #000000",
+"# c #c0c0c0",
+"a c #ffffff",
+"b c #808080",
+"c c #595959",
+"d c #a0a0a0",
+"e c #008080",
+"f c #00ff00",
+"g c #00ff00",
+/* pixels */
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+" aaaaaaaaaaaaaaaaaaaaa  ",
+" a###################b  ",
+" a#bbbbbbbbbbbbbbbbb#b  ",
+" a#b...............a#b  ",
+" a#b.g.............a#b  ",
+" a#b..g............a#b  ",
+" a#b.g..gg.........a#b  ",
+" a#b...............a#b  ",
+" a#b...............a#b  ",
+" a#b...............a#b  ",
+" a#b...............a#b  ",
+" a#b...............a#b  ",
+" a#b...............a#b  ",
+" a#aaaaaaaaaaaaaaaaa#b  ",
+" a###################b  ",
+" bbbbbbbbbbbbbbbbbbbbb  ",
+"                        "
+"                        ",
+"                        ",
+"                        "
+};

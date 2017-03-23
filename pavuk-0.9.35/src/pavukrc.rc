@@ -1,0 +1,4 @@
+#include "pavukrc.h"
+
+PAVUK_ICON	ICON		"pavuk.ico"
+

@@ -1,0 +1,23 @@
+Proto: ftp
+Host: ftp.idata.sk
+Pass: heslo
+User: ondrej
+Base: /home/ondrej/
+
+Proto: ftp
+Host: ftp.idata.sk
+Pass: ondrej@idata.sk
+User: ftp
+Base: /pub
+
+Proto: http
+Host: www
+Pass: heslo
+User: user
+Base: /gimpwww
+
+Proto: http
+Host: www
+Pass: ine heslo
+User: ja
+

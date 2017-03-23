@@ -1,0 +1,258 @@
+Wget-Pavuk.HOWTO
+****************
+
+This file contains base information for wget users who are starting using
+pavuk.
+
+I am not very authoritative person to write this kind of document.I am not
+regulary using wget, so some of informations contained in this document may
+be confused. I just was asked to provide such kind of informations, so I am
+trying to write it.
+
+I will appreciate any corrections and contributions to this document.
+
+* Stevo Ondrejicka
+
+
+Mapping of wget options to pavuk options
+----------------------------------------
+
+It is not possible to map exectly all options, because wget have some features
+which pavuk lacks and vice versa. Also some of options doesn't behave exactly
+same in pavuk.
+
+_________________________________________________________________________
+| Wget                             | Pavuk                              |
+|-----------------------------------------------------------------------|
+| * version information                                                 |
+| -V, --version                    | -v                                 |
+|-----------------------------------------------------------------------|
+| * options help                                                        |
+| -h, --help                       | -h                                 |
+|-----------------------------------------------------------------------|
+| * puting job at background                                            |
+| -b, --background                 | -bg                                |
+|-----------------------------------------------------------------------|
+| * log messages                                                        |
+| -a, --append-file=FILE           | -log_file FILE                     |
+| -o, --output-file=FILE           | no option to force overwrite of    |
+|                                  | log file, always appending         |
+|-----------------------------------------------------------------------|
+| * debuging                                                            |
+| -d, --debug                      | -debug -debug_level LEVEL          |
+|                                  | pavuk allows to focus on interested|
+|                                  | messages by selecting of debug     |
+|                                  | level - html,protos,protoc,protod  |
+|                                  |         procs,locks,net,misc,user  |
+|                                  |         mtlock,mtthr               |
+|-----------------------------------------------------------------------|
+| * verbosity of messages                                               |
+| -q, --quiet                      | -quiet                             |
+| -v, --verbose                    | -verbose                           |
+| -nv, --non-verbose               | this option doesn't have any       |
+|                                  | meaning for pavuk, because pavuk   |
+|                                  | have better tunning of verbosity   |
+|                                  | using -debug_level option          |
+|-----------------------------------------------------------------------|
+| * input of starting URLs from file                                    |
+| -i, --input-file=FILE            | -urls_file FILE                    |
+|-----------------------------------------------------------------------|
+| * force processing of all files as HTML file                          |
+| -F,  --force-html                | no similar option, pavuk rely on   |
+|                                  | proper MIME types sent by servers. |
+|                                  | For local files pavuk tries to     |
+|                                  | guess HTML files by extensions or  |
+|                                  | by contents                        |
+|-----------------------------------------------------------------------|
+| * number of attempts to get document after fail                       |
+| -t, --tries=NUMBER               | -retry NUMBER                      |
+| 0 means unlimited                | 0 means unlimited                  |
+|-----------------------------------------------------------------------|
+| * writing document to specified file                                  |
+| -O, --output-document=FILE       | -store_name FILE                   |
+|-----------------------------------------------------------------------|
+| * reusing of already downloaded file                                  |
+| -nc, --no-clobber                | this is default pavuk behavior     |
+|                                  | and can't be turned off            |
+|-----------------------------------------------------------------------|
+| * resuming of broken downloads                                        |
+| -c, --continue                   | this is pavuk default behaviour    |
+|                                  | pavuk always prefix document names |
+|                                  | with ".in_" and just after download|
+|                                  | is finished it renames file to     |
+|                                  | regular name, this way it can      |
+|                                  | properly detect and restart broken |
+|                                  | downloads                          |
+|-----------------------------------------------------------------------|
+| * progress meter                                                      |
+| --dot-style=STYLE                | pavuk have only one style of       |
+|                                  | progress (numeric) and it can be   |
+|                                  | only turned on/off using -progress |
+|                                  | and -noprogress option (default is |
+|                                  | turned off)                        |
+|-----------------------------------------------------------------------|
+| * synchronizing                                                       |
+| -N, --timestamping               | -mode sync                         |
+|-----------------------------------------------------------------------|
+| * output of protocol level communication with servers                 |
+| -S, --server-response            | -debug -debug_level LEVEL          |
+|                                  | LEVEL protos - for server responses|
+|                                  | LEVEL protoc - for pavuk requests  |
+|                                  | LEVEL protod - POST data sent in   |
+|                                  |                HTTP POST request   |
+|                                  | you can activate multiple debug    |
+|                                  | levels - for example :             |
+|                                  |  -debug_level protos,protoc        |
+|-----------------------------------------------------------------------|
+| * checking of URLs validity                                           |
+| --spider                         | something similar cand be achived  |
+|                                  | by -mode remind option.             |
+|                                  | it reports broken and modified     |
+|                                  | links not everything               |
+|                                  | you must use also -remind_cmd      |
+|                                  | option to set program which will   |
+|                                  | process output (default is mailx)  |
+|-----------------------------------------------------------------------| 
+| * communication timeout                                               |
+| -T, --timeout=SECONDS            | -timeout MINUTES                   |
+|-----------------------------------------------------------------------|
+| * delaying of transfers                                               |
+| -w, --wait=SECONDS               | -sleep SECONDS                     |
+|-----------------------------------------------------------------------|
+| * enabling/disabling connections through proxy                        |
+| -Y, --proxy=on/off               | no similar option, if proxy is     |
+|                                  | specified, it is always used       |
+|-----------------------------------------------------------------------|
+| * retrieval quota                                                     |
+| -Q, --quota=NUMBER               | -trans_quota NUMBER                |
+| wget stops download just after   | pavuk stops download right after   |
+| file download is finished after  | transfer quota is exeede (also in  |
+| quota is exeeded                 | midle of transfer)                 |
+|-----------------------------------------------------------------------|
+| * adjusting of local directory layout of downloaded files             |
+| -nd, --no-directories            | -fnrules F "*" "%n"                |
+| -x, --force-directories          | this is default for pavuk          |
+| -nH, --no-host-directories       | -base_level 2                      |
+|                                  | or -fnrules F "*" "%d/%n"          |
+| -P, --directory-prefix=PREFIX    | -cdir PREFIX                       |
+| --cut-dirs=NUMBER                | -base_level NUMBER+1               |
+|-----------------------------------------------------------------------|
+| * authorization for accessing documents                               |
+| --http-user=USER                 | -auth_name USER                    |
+| --http-passwd=PASS               | -auth_passwd PASS                  |
+|-----------------------------------------------------------------------|
+| * caching of documents on proxy server                                |
+| -C, --cache=on/off               | -cache -nocache                    |
+|-----------------------------------------------------------------------|
+| * workaround for buggy HTTP servers with bad Content-Length header    |
+| --ignore-length                  | -check_size/-nocheck_size          |
+|-----------------------------------------------------------------------|
+| * adding custom fields to HTTP request header                         |
+| --header=STRING                  | -httpad STRING                     |
+|-----------------------------------------------------------------------|
+| * proxy authorization                                                 |
+| --proxy-user=USER                | -http_proxy_user USER              |
+| --proxy-passwd=PASS              | -http_proxy_pass PASS              |
+|-----------------------------------------------------------------------|
+| * storing HTTP response headers                                       |
+| -s, --save-headers               | pavuk never stores HTTP responses  |
+|                                  | within documents, it provides      |
+|                                  | -store_info, to store this         |
+|                                  | information in sepearate files in  |
+|                                  | .pavuk_info directory              |
+|-----------------------------------------------------------------------|
+| * spoofing of User-Agent: request field                               |
+| -U, --user-agent=AGENT           | -identity AGENT                    |
+|-----------------------------------------------------------------------|
+| * preserving of symbolic links when transfering through FTP           |
+| --retr-symlinks                  | -preserve_slinks/-nopreserve_slinks|
+|-----------------------------------------------------------------------|
+| * globbing in FTP transfers                                           |
+| -g, --glob=on/off                | no exactly similar functionality   |
+|                                  | pavuk allow to specify wildcard    |
+|                                  | patterns and regular expressions   |
+|                                  | with options                       |
+|                                  | -pattern, -rpattern, -skip_pattern |
+|                                  | -skip_rpattern, -url_patter,       |
+|                                  | -url_rpattern, -skip_url_pattern   |
+|                                  | -skip_url_rpatter                  |
+|                                  | this patterns arre applied on all  |
+|                                  | URLs not just FTP URLs             |
+|-----------------------------------------------------------------------|
+| * setting of FTP data connection type                                 |
+| --passive-ftp                    | -ftp_active/-ftp_passive           |
+|-----------------------------------------------------------------------|
+| * recursing through WWW                                               |
+| -r, --recursive                  | this is default pavuk behaviour    |
+|-----------------------------------------------------------------------|
+| * limiting recursion level                                            |
+| -l, --level=NUMBER               | -lmax NUMBER                       |
+| 0 unlimited                      | 0 unlimited                        |
+|-----------------------------------------------------------------------|
+| * prefetching files to proxy                                          |
+| --delete-after                   | -mode dontstore                    |
+|-----------------------------------------------------------------------|
+| * converting links in HTML documents                                  |
+| -k, --convert-links              | default pavuk behaviour, it is     |
+|                                  | possible to set how to convert the |
+|                                  | as default pavuk maintain          |
+|                                  | consistency of links inside HTML   |
+|                                  | documents, so all links are always |
+|                                  | valid and when documents is stored |
+|                                  | to local tree, pavuk overwrites    |
+|                                  | links in all HTML documents which  |
+|                                  | points to it.                      |
+|                                  | default behaviour is possible to   |
+|                                  | change with options:               |
+|                                  | -all_to_local, -sel_to_local,      |
+|                                  | -all_to_remote                     |
+|-----------------------------------------------------------------------|
+| * mirroring                                                           |
+| -m, --mirror                     | -mode sync                         |
+|-----------------------------------------------------------------------|
+| * directory listings handling                                         |
+| -nr, --dont-remove-listing       | -store_index/-nostore_index        |
+|                                  | pavuk as default converts all      |
+|                                  | directory listing to HTML files and|
+|                                  | as default are this files stored.  |
+|-----------------------------------------------------------------------|
+| * allowing/disallowing of specified suffixes (file extensions)        |
+| -A, --accept=LIST                | -asfx LIST                         |
+| -R, --reject=LIST                | -dsfx LIST                         |
+|-----------------------------------------------------------------------|
+| * allowing/disallowing of specified domains                           |
+| -D, --domains=LIST               | -adomain LIST                      |
+| --exclude-domains=LIST           | -ddomain LIST                      |
+|-----------------------------------------------------------------------|
+| * following of relative only URLs                                     |
+| -L, --relative                   | no similar option                  |
+|-----------------------------------------------------------------------|
+| * enabling of transfers from FTP servers                              |
+| --follow-ftp                     | -FTP/-noFTP                        |
+|-----------------------------------------------------------------------|
+| * spaning to other servers                                            |
+| -H, --span-hosts                 | this is default pavuk behaviour    |
+|                                  | it is possible to change it with   |
+|                                  | -dont_leave_site/-leave_site       |
+|-----------------------------------------------------------------------|
+| * allowing/disallowing of specified directories (prefixes)            |
+| -I, --include-directories=LIST   | -aprefix LIST                      |
+| -X, --exclude-directories=LIST   | -dprefix LIST                      |
+|-----------------------------------------------------------------------|
+| * DNS lookup                                                          |
+| -nh, --no-host-lookup            | no similar option                  |
+|                                  | pavuk always caches DNS request in |
+|                                  | local hash table                   |
+|-----------------------------------------------------------------------|
+| * disable ascending to parent directories                             |
+| -np, --no-parent                 | -dont_leave_dir/-leave_dir         |
+|-----------------------------------------------------------------------|
+
+
+This document I wrote looking at "wget --help" output and sometimes checking 
+info documentation of wget. The version of wget I have is "GNU Wget 1.5.3"
+as distributed with RedHat 6.2 .
+If you find any bugs/mistakes/typos/... please tell me and I will try to 
+correct it.
+
+

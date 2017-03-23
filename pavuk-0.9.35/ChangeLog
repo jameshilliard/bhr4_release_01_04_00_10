@@ -1,0 +1,1585 @@
+version 0.3 (Jul 14 1997)
+-----------
+* enhanced X Window  user interface - now supports keyboard focus traversing 
+  between widgets (work not perfect)
+* most of widgets are modified
+* new feature added - updating remote URL references in local tree to local in 
+  HTML documents
+* now is posible to enter more starting URLs  
+* many bug fixes
+
+version 0.3pl1 (Aug 6 1997)
+--------------
+* avoid to change modification time of file (I wana to implement document tree
+  synchronisation soon)
+* removed bug which results in hang when try to transfer moved robots.txt file
+* now moved URLs are correctly rewritten in HTML document (broken in 0.3)
+* more verbose reporting about moved documents
+
+version 0.5 (Sep 25 1997)
+--------------
+* now every host name is converted to lower case to prevent redundance
+* some changes in widget library 
+* implemented transparent "reget" with FTP or HTTP protocol. Not every HTTP
+  server supports reget. (Apache 1.2, Netscape, MSIIS, and ever HTTP/1.1 
+  compliant server)
+* now all files are at first stored with temporary name (possible use of reget
+  in another run of program). When download is finished file gets true filename.
+* new mode "resume regets" is implemented
+* code restructulisation
+* functions to convert date string to internal format (synchronisation ...)
+* new mode "singlepage" added - download only one HML document with all inline
+  objects (pictures, ...)
+* server side map are now handled correctly
+* repaired bug when anchor names are not writen in local URLs when rewriting
+  (broken in 0.3, 0.3pl1, in previous versions was good)
+* changes in file naming rules (each directory index is now stored in _._.html
+  file not in index.html or ftp_dir_index.html) == better reverse transformation 
+  from filename to URL. 
+* implemented HTTP and FTP synchronization
+* added new mode to SButton widget and its succesors to emulate on/off button
+* Toggle implemented transparently (mixed use of SButton > , CheckButton , 
+  CheckME)
+* asynchronous connect when running in X Window mode
+* !!!!!!!!!!!! changed name for subdirectory where www documents are stored from
+  !!!!!!!!!!!! "www" to "http" (this make one of my colleague very sick :-))
+* timeouts are now handled via "select()"
+* now is each URL added to hash table too for better performance in 
+  was_before() function - this means litle more work for each URL but when
+  working on big set of URLs this will save lot of CPU time.
+* simple SSL support by using of SSLeay
+* removed some bugs
+* added FTP proxy support
+* update X Window interface and scheduler to reflect all changes
+* updated documentation
+
+version 0.5pl1 (Sep 30 1997)
+--------------
+* removed bug which avoid use of X Window interface when compiled without SSL
+  support
+* start to rewrite some of widgets
+* all modes which scans local document tree now scans only  desired directories
+* removed bug when pavuk sometimes hangs for long period if you try to schedule 
+
+version 0.6 (Nov 11 1997)
+-----------
+* all command line parameters are handled transparently via param table
+* each parameter is now posible to handle in "pavukrc" file
+* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* WOW WOW WOW I finaly solve that problem with that dirty TreeWidget !!!!
+* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* keyboard control for TreeWidget (ScrollTreeWidget)
+* removed one big memory leak in get_abs_file_path()
+* Combo widget
+* Configuration managment via so called scenarios
+* many bug fixes in X window interface
+* more command line switches (oposits for booleans)
+* removed bug in file_is_html() while checking if file successfuly opened
+* removed bug in close_socket() -> "if (sock < 0) close(sock)" 
+  ^^^^.. I love you strace.
+
+version 0.6pl1 (Nov 13 1997)
+--------------
+* removed mistake with list parameters ( -asite , -dsite , -ddomain ...)
+* removed bugs in -v -h parameters checking
+
+version 0.6pl2 (Nov 16 1997)
+--------------
+* repared some bugs - scenario loading, Domain Allow/disallow switch ...
+* extended scenario loader/saver to allow scenario dir selection
+* repared html parser - \n or \r inside parsed tag results in bugy result
+* command-line scenario saver
+
+version 0.6pl3 (Dec 2 1997)
+--------------
+* limitation for size of transfered document added (-maxsize)
+* limitation for MIME type of transfered document via HTTP/HTTPS 
+  (-amimet/-dmimet)
+* authorization for HTTP proxy added
+* repared bug - Xtoolkit standart parameter were not recognized
+* repared bug - when parent document were not successuly processed ,
+  stays locked
+* repared bug - when using HTTP proxy && conecting to SSL server
+* added SSL proxy support
+* added Gopher proxy support
+* added gatewaing FTP and Gopher via HTTP proxy
+* better FTP data connection handling
+* progres meter on terminal (-progres)
+* Log widget implemented
+
+version 0.7 (Dec 30 1997)
+-----------
+* rewriten message reporting system for X Window - now based on Log widget
+* added NLS support via GNU gettext
+* created slovak message catalog by ondrej@idata.sk (zatial bez diakritiky)
+* implemented removing of improper files directories (in sync mode)
+* bug in FTP synchronization removed - bugy reply code check
+* some needless FTP commands are not send while retrieving directory list -
+  (MDTM . RETR)
+* ftp data connection is established befor REST while restarting FTP transfer - 
+  sometimes FTP server starts transfer from beginig instead of from given 
+  position (I dont known why)
+* checking of file size when synchronizing (FTP only)
+* better FTP control connection handling
+* some bug fixes
+* loging messages to file
+* solved problems with FTP synchronization
+
+version 0.7pl1 (Jan 13 1998)
+--------------
+* added support for HTTP/HTTPS URLs with authentification informations :
+  http://user:password@host:port/....
+* in sync mode used standart UTC time instead of localtime - gmtime()
+* ftp command MDTM sent only when required
+* handling of HTML tag <META HTTP-EQUIV="Refresh" Content="..; URL=...">
+* added in file stored authentification informations (read manual for authinfo
+  file format)
+* added more entries into mime type selection dialog 
+  (from apache mime.types file)
+* now pavuk sets return code of program to number of failed transfers
+* now you can optionaly omit some directory levels from local doc tree 
+  (try set -base_level $nr at command line and you will see what this means) 
+* checking of write() fail
+* progres is now reported corectly when restarting transfer
+* changed some of widgets to have translatable strings
+* repared bug in ScrollWin widget code , when TreeList or Log widget sometimes 
+  jumps up
+* asynchronous DNS name resolving via external process
+  (breakable in X11 interface)
+* dirty solved error in Col and Row widget when resizable widget gets zero size
+* german message catalog by Jürgen Grieb
+
+version 0.7pl2 (Jan 15 1998)
+--------------
+* repared compile bug in update_links.c (when compiling without X Window
+  interface support)
+* implemented buffered DNS requests in dns_gethostbyname()
+* repared bug when downloading FTP directory via HTTP gateway and gateway 
+  returns HTML document with local nor remote URLs
+* implemeted so called dirty ftp proxy (-ftp_dirtyproxy) using CONNECT 
+  request to HTTP proxy.
+* repared bug in filename_to_url() http.password and http.user are not 
+  initialised to NULL
+* synchronisation with FTP<->HTTP gateway is now posible
+* to translatable message catalog added geometry of window
+
+version 0.7pl3 (Jan 26 1998)
+--------------
+* in sync mode is now reported corectly ,that document is up to date
+* implemented active FTP data connection
+* new slovak message catalog in ISO-8859-2 encoding by me
+* you can now specify directory wrom which will be message catalog loaded
+  (-msgcat or NLSMessageCatalogDir:)
+* rewriten passing of X-attributes to be smarter translatable
+* now each comand line switch can have own help text ==> easier management
+  of massage catalogs && self documenting switches
+* rewriten all interface dependent staff to easier support GTK
+* some initial GTK things done
+ 
+version 0.8 (Feb 27 1998)
+-----------
+* automake/autoconf compilation-configuration scripts == very easy
+  installation
+* GTK interface
+* gnu-win32 portability
+* rewriten HTML parsing code + HTML4.0 support
+* fcntl locking on systems, where flock not supported
+* some bugs in X-interface solved
+* GTK Calendar widget
+* minor bug fixes
+* restriction on document creation time implemented
+* rewriten parts of X-toolkit interface to look similiar as GTK interface
+* czech message catalog by Petr Vyhnalek 
+
+version 0.8pl1 (Mar 25 1998)
+--------------
+* some memory leaks removed
+* URL based synchronisation
+* command line scheduling (-schedule) 
+* repared configure script : don't fail configuring GTK interface when Xpm or 
+  Xext libraries not succesfully checked, gettext in glibc2 
+* cyclic rescheduling (-reschedule)
+* limit set of documents only on starting site (-dont_leave_site/-leave_site) 
+* limit set of documents only on starting directory on starting site
+  (-dont_leave_dir/-leave_dir)
+* updated GTK interface for GTK+-0.99.4 =<
+* inline objects are on same level of tree as parent when checking deep limit
+* new option (-leave_level) to limit number of levels outside from starting 
+  site 
+* you can now disable compiling of URL tree preview (big memory save)
+  run configure script with --disable-tree 
+* solved bug in xinterface.c , which causes segfault in sprintf with some 
+  versions of libc.
+* man page is installable via make install
+* solved problems in widgets, which refuse to run Xt interface in some 
+  configurations
+
+version 0.8pl2 (Mar 30 1998)
+--------------
+* repared bug in url_to_absolute_url() , when relative URL start with / , 
+  was oddly rewriten.
+* localedir in configure script now point in right place
+* added pavuk.spec to distribution (for building RPMS)
+* repared configure script to detect right Xext,Xt library in some i
+  configurations
+* extended set of unsafe characters in URL for encoding
+
+version 0.8pl3 (Jun 9 1998)
+--------------
+* repared bug when pavuk seg faults if redirecting to unsupported protocol
+* repared bug when pavuk miss part of tag between atribute name and value 
+  of attribute while rewriting links inside HTML document
+* repared bug in GTK interface - reading of uninitialised values
+
+version 0.8pl4 (Jul 19 1998)
+--------------
+* added function CardBoxSwitchTo() to allow switching of Tabs in CardBox widget
+* added "Open URL" dialog to File menu
+* new mode "dontstore" implemented, for fetching files to proxy-cache
+  servers
+* added logo to About dialog
+
+version 0.9 (Aug 5 1998)
+-----------
+* repared bug in HTTP proxy code
+* totaly rewriten internal handling of URL tree !!!!!! 
+  (thank to Marc David Rovners base idea and my hard long work :-) )
+* now icons works in tree preview with GTK interface as in Xt interface
+* updated czech message catalog
+* window delete event is now handled right in GTK interface
+ 
+version 0.9pl1 (Aug 9 1998)
+--------------
+* solved problems while compiling v0.9 without GUI
+* repared bugs excelently reported by Dmitry Semenov
+  - HTTP reget doesn't work in sync mode
+  - -preserve_time doesn't work with FTP and only in sync mode
+* I have get working menu with Tree preview in GTK interface :-) as in Xt 
+  interface
+* it is now posible to disable processing of some URLs by using of Tree
+  preview
+
+version 0.9pl2 (Sep 6 1998)
+--------------
+* minor bug fixes reported by some users
+* repared bug ,when -cdir ends with '/' and using -base_level switch results 
+  to broken filenames
+* implemented interactive downloading using URL tree preview dialog
+* solved problem in GTK URL tree preview with more starting URLs
+* URL tree preview dialog in Xt interface is now not modal
+* basic support for sending and receiving HTTP cookies (writing to cookie file
+  not supported yet, GUI can't hand cookie parameters - only via cmd-line)
+
+version 0.9pl3 (Sep 20 1998)
+--------------
+* inteligent updating of cookie file implemented (the some file may be updated
+  with more proceses concurently without cookie looses)
+* GUI interface for cookies setup
+* HTML file on FTP server is processed right
+* repared rewriting of redirected url with fragment name specification
+* you can now download from URL tree preview manualy files which were broken or 
+  rejected
+
+version 0.9pl4 (Jan 6 1999)
+--------------
+* cookie file may contain any coments started by '#' 
+  (not saved back after update)
+* host name translation errors are reported now right
+* buffered IO implemented
+* some minor bug fixes 
+* repared any segfaults
+* new & more icons for URL tree preview
+* HTML tag & attribute restrictions for slection of URL's from HTML docs
+* checking cookies if source domain is equal with domain attribute of 
+  Set-Cookie MIME entry
+* cookie file is now right ordered (not reversed each time :-)
+* new czech message catalog in ISO8859-2 encoding by Petr Vyhnalek
+* added new switch -gui_font , which allows you to set font used in 
+  GUI interface
+* added new switch -language for used to set language of messages while
+  compiled with GNU gettext support
+* added very simple SOCKS(4/5) support (not tested yet)
+* -pattern accepts comma-separated list of documentname matching patterns
+* new option -url_pattern to enter comma-separated list of url matching
+  patterns
+* -user_condition options added to provide option for user to specify by
+  external script or program if URL should be processed or not
+* repared bug when extra space characters in scenario file are not removed 
+* repared seg-fault while doing HTTP reget (thank to Orestes Sanchez Benavente)
+* added -disabled_cookie_domains option
+
+version 0.9pl5 (Jan 28 1999)
+--------------
+* you can now immediately change communication language from GTK GUI
+* added gtk-config script to configure script for GTK configuration checkings
+* added client certification stuff for HTTPS (SSL) (not tested yet)
+* some segfaults repared in GUI code
+* repared time handling bugs
+* added realm info to authinfo file
+* HTTP authorization schemes are now handled properly
+* HTTP digest access authorization implemented (it work with my apache server)
+
+version 0.9pl6 (Feb 28 1999)
+--------------
+* when compiling with SSLeay lib using md5 computing rutines from libcrypto.a
+  instead of apaches md5c.c
+* reuse of HTTP digest access nonce in more following requests is now 
+  implemented 
+* digest authorization with proxy server
+* added QueryGeometry to all Nws widgets for windows autosizing 
+  (finaly - I am so lazy :-))
+* filename conversion rutines for changing local filename 
+  (delete set of characters , change string to string , tr like char to char)
+* language change now work too if some files were processed 
+  (Tree preview not destroyed)
+* while changing language all visible windows stay visible
+* menu entry labels are GNOME compliant
+* beautify of xinterface.c
+* rewriten Xt interface to support language change from GUI
+* each file selection entry now have browse button
+* send QUIT signal while running in text mode and pavuk will exit safe
+* added sample of Xt resources file for Pavuk
+* thank to Håvard Skinnemoen added some features from gtk+-1.1.* 
+        - new style of adding childs to scrolled windows
+        - parsing of ~/.pavuk-gtkrc
+* solved win32/cygwin32/unix file path madnes
+
+version 0.9pl7 (Mar 30 1999)
+--------------
+* changes for support GTK+-1.2.0
+* removed sk and cs ascii message catalogs from distribution
+* repared comandline time parameter scaning routine
+* all labels in GTK interface are now left justified
+* scheduling now work well
+* solved problems when compiling without GNU gettext support and with GUI 
+  support
+* a lot of GTK improvements
+* better processing of some stupid HTML constructions
+* HTML comments and inline scripts are not parsed && processed
+* default location of system pavukrc changed from $(prefix)/lib/pavukrc
+  to $(prefix)/etc/pavukrc
+* added a lot of new HTML tags for processing
+
+version 0.9pl8 (Apr 12 1999)
+--------------
+* now compile with gettext support on systems without LC_MESSAGES defined
+* checking of robots.txt now work again (thank to Stefan Stidl)
+  - checking disabled in many previous versions because of oddly writen 
+    condition :-(
+* better detection of cyclic HTTP redirections
+* repared SEG fault while in GUI and HTTP redirection to already processed
+  document occurs
+* new icons for buttons added from Andreas Kraska . If you want old buttons, 
+  execute configure script with --disable-new_buttons option.
+* accelerated menubar with GTK+-1.2<
+* using putenv on system where setenv & unsetenv not found
+* a lot of minor bug fixes
+
+version 0.9pl9 (Apr 18 1999)
+--------------
+* repared bug, when all documents downloaded over HTTP/HTTPS were processed as
+  HTML documents (a lot of rewriting operations on binary files :-()
+* repared implementation of setenv/unsetenv on systems where not implemented
+  (thank to Orestes Sanchez Benavente)
+* timeout on connect() call
+* now pavuk work on filesystems, where doesn't work link() call (FAT)
+* better detection of already downloaded directories
+* not buffered read while reading document data from net
+* new Action menu
+* enhanced use of GTK+-1.2 < features (GTK 1.0.x compatibility preserved)
+
+version 0.9pl10 (Apr 25 1999)
+---------------
+* repared bugs in net_connect() function
+* repared bug while using active ftp connection
+* you can now miniaturize main pavuk window (GTK+ only)
+* !!!!! -progres option repared to -progress
+* new option -runX (you can immediately start downloading files after GUI 
+  interface is started)
+* simple support for CSS
+* a lot of bugs fixed
+
+version 0.9pl11 (May 2 1999)
+---------------
+* new -index_name option used to change default name of directory index
+* new -store_name option used to set filename for document downloaded with
+  -mode singlepage
+* changed version of used autoconf (1.3) and automake (1.4)
+* support for processing standalone CSS files
+* doesn't get SIGPIPE when decoding encoded file (not fork-ing in GUI)
+* using CTree widget instead of Tree with GTK+-1.2
+
+version 0.9pl12 (May 5 1999)
+---------------
+* new option -ftplist to use wide listing of FTP directories (using LIST 
+  ftp cmd instead of NLST) (only unix style of list supported)
+* new option -preserve_perm to preserve options of ftp files 
+  (assume -ftplist option)
+* now pavuk saves ftp symbolic links as symbolick links not normal files
+* new option -preserve_slinks to leave point symbolic link to same location
+  as on remote server.
+* Go Bg button now work properly with GTK+ (thank to Jan Kratochvil)
+* new option -FTPhtml/-noFTPhtml to enable/disable processing of files
+  downloaded over FTP protocol
+* anchor names for FTP urls now parsed right
+
+version 0.9pl13 (May 16 1999)
+---------------
+* pavuk now removes empty directories in local document tree
+* directories are now processed right
+* new option -min_size to eliminate transfer of small documents 
+* new options -skip_url_pattern and -skip_pattern
+* repared bug in document time preservation (thank to Tomas Dobrovolny)
+* while updating parent document links, and it is locked, pavuk will wait
+  until lock will be released
+* locked document is allways rescheduled
+
+version 0.9pl14 (May 23 1999)
+---------------
+* thank to Steffen Kern added droping of URL's to url list and pavuk main window
+  (for example from netscape)
+* thank to Tomas Dobrovolny fixed some minor bugs in configure.in script
+* new HTML tags for table backgrounds added (thank to Szabolcs Szakacsits)
+* new -htDig option for cooperation with htDig web indexing program
+* new option -check_size/-nocheck_size for enabling/disabling checking of
+  document size (some HTTP servers report bad Content-length: header)
+* minor bug fixes
+
+version 0.9pl15 (Jun 21 1999)
+---------------
+* many fixes and changes in HTML parser code
+* better support for Cascading Style Sheets
+* lot of patches from Szabolcs Szakacsits and Stefen Kern added
+* fettching of URLs from clipboard implemented for GTK and Xt GUI
+* repared encoding of URLs (thank to Marc Haber and Szabolcs Szakacsits)
+* new option -urls_file (for reading URLs from file or stdin)
+* get SSL stuff working again (was broken because of non-blocking IO)
+* updated czech message catalog (by Petr Cech)
+* new icons in icons/ directory
+* a lot of changes / bug fixes
+
+version 0.9pl16 (Jun 29 1999)
+---------------
+* checking for zero size of file
+* fixed bug with using -store_name option (thank to Marc Haber)
+* new type of log file added (option -slogfile)
+* -mode resumeregets now recurse through links
+* removed many memory leaks inside new HTML and CSS parser code
+* removed some random crashes with Xt GUI
+
+version 0.9pl17 (Jul 06 1999)
+---------------
+* bigger read buffer -> better read performance on fast connections
+* new option -identity for specifying User-Agent: HTTP request field
+* new option -nosend_from for deny sending From: field with HTTP request
+* new option -nostore_index used to tell pavuk not to store documents 
+  referenced with directory URLs
+* new option -acharset used to specify set of preffered document encodings
+  for HTTP protocol
+* changed selection retrieving with GTK+ GUI
+* better native language switching in internetionalized environment
+* bug fixes
+
+version 0.9pl18 (Jul 26 1999)
+---------------
+* support for EPLF format listing of FTP directories
+* support for Novel format listing of FTP directories
+* repared one typo which breaks compilation without GUI
+* automatical prefferences saving/loading to file ~/.pavuk_prefs
+* loading & saving of menu accelerator keys to prefs file
+* fixed type casting bug in html/css parser code (thank to Robert Gasch)
+* support for newer openssl versions (0.9.3<)
+* better & nicer progress meter
+* limatation of transfer speed (max/min)
+* my CERN HTTP/proxy server is somehow odd - synchronization of WWW pages
+  wont work if you specify port number in URL (currious), so port number
+  was removed from URL if portnumber is default.
+* sync mode work now well when spaning to another server
+* sync mode work again with servers which not respond right 304 code (mea culpa)
+* added Apply button to configuration dialogs
+* fixed lot of bugs in net_connect function
+* instaltion of pavuk icons to $(prefix)/share/icons/
+* new quota options (quota for file size, transfer amount and free space on
+  filesystem)
+* solved bug, when Gtk+ URL list not show its contents
+* solved bug, when pavuk crashes on redirection to unsupported URL
+* corrected fetching of URI: header content for redirected URLs
+* several bug fixes and improvements
+
+version 0.9pl19 (Sep 06 1999)
+---------------
+* changed URL equivalence checking from filename based to URL based
+* internal URL representation now contains its local filename  , this means
+  lower memory footprint, but bigger memory consumption
+* several minor memoryleaks removed
+* implemented universal & flexible mapping mechanism URL -> local filename
+  based on RE or wildcard patterns and simple rules (see manual , 
+  option -fnrules) (thank for James Feeney base idea)
+* implemented optional saving of info files for each document (each info file
+  contain  source URL of document and documents downloaded via HTTP/HTTPS have
+  there whole HTTP header)
+* repared parsing of standalone CSS files
+* if is enabled storing of info files and you change default local tree layout
+  (with -fnrules or -base_level or -tr_* options) now will URLs newer overlap
+* new option -all_to_local used to force rewriting all URLs in HTML document, 
+  to point to expected location
+* new reminder mode for checking if any URL was modified in given period
+* code cleanups
+* new option -sel_to_local used to force rewriting all URLs in HTML document, 
+  which acomplish to limits, to point to expected location
+* many corrections in messages (thank to Colin Marquardt)
+* repared bug in removing BASE tag from HTML code, and now is not removed, but
+  commented out (thank for bug report and idea to Jan Tomasek)
+* added icons to OK && Cancel buttons in Gtk interface (GTK+ only)
+* changed all GtkList widgets to GtkCList
+* added Clear & Modify buttons to each editlist dialog (GTK+ only)
+* you can now optionaly change pixmaps for buttons from pavukrc file
+  (see all Btn*Icon*: statements)
+* fixed bug in ftp directory translation to HTML when using passwords with 
+  FTP URL
+* finaly I fixed that bug which randomly puts trash to pattern options in GUI
+  interface. strtok() is realy bad function :-(
+* fstatfs emulation on SYSV systems using fstatvfs
+* better detection of heder files where is fstatfs declared
+* repared Seg Fault when using cookies (thank to Andrew Hall)
+* added more icons to GTK+ dialogs (thank to Frederic Toussaint)
+* each dialog window can be closed with Esc key (GTK+1.2 only)
+* each menu entry can have now assigned shortcut (GTK+1.2 only)
+* make uninstall now work well (thank to Colin Marquardt)
+* option -lmax now work properly with inline objects
+  (thank to Bernd Lutkenhoner)
+* removed old_buttons
+* actualized German message catalog (thank to Colin Marquardt), please if you
+  speak german check it and possible errors report to Colin
+* new option -check_cookie for enabling checking if cookie is set for from 
+  which commes
+* fixed bug in cookie handling code
+* collections of button icons for pavuk in button_icons/
+* a bit fixed URL redirection code for nonabsolute URLs
+* fixed detection of base URL of document for documents with URL with search 
+  string
+* new French message catalog (many thanks to Frederic Toussaint), please if you
+  speak french check it and possible corrections report to author
+* actualized Czech message catalog (thank to Petr Cech)
+
+version 0.9pl20 (Sep 29 1999)
+---------------
+* new option -all_to_remote used to leave all links inside HTML document to
+  remote location (proposed by Diego Antona Archilla)
+* fixed incompatibility with GTK+-1.0
+* with starting HTTP URLs now pavuk sends optionaly as Referer: field self URL
+  see option -auto_referer (proposed by Sergey Taranenko)
+* fixed segfault in cookie modification code
+* numbering of documents with overlaying local names for differen URLs
+* new better HTML tag handling rutines
+* removed a lot of memory leaks
+* URL downloading order strategies implemented (idea by Sergey Taranenko)
+* replaced GtkText widget with GtkCList widget in log window
+* now works limiting of length of log in GTK+ interface
+* fetching files from Netscape browser cache directory 
+  (great idea by Sergey Taranenko)
+* new Spanish message catalog by Javier Comeron
+
+version 0.9pl21 (Oct 13 1999)
+---------------
+* support for removing advertisement banners from HTML pages 
+  (base idea by Mika Joukainen)
+* timestamps are writen to regular log file when starting and ending log
+  (proposed by Jan Tomasek)
+* support for Bell V8 inmplementation of regular expresions (as used in cygwin)
+* fixed SegFault which occurs while loading scenarios during downloading 
+  progress (thank to Sergey Taranenko)
+* authorization info editor (only for GTK+ GUI)
+* new option -check_bg/-nocheck_bg used to detect if we run as background job,
+  if so don't write any messages to screen
+* fixed some errors in Xt interface errors
+* fixed bug when stdout isn't flushed before _exit() 
+  (thank to Szabolcs Szakacsits)
+* new option -send_if_range/-nosend_if_range. This option should be used when
+  HTTP server supports reget, but sometimes generates different Etag field
+  for not changed document (if Etag and If-Range field differs reget will start
+  from begining of file)
+* locking of log file
+* optional numbering of log file when log file locked (option -unique_log)
+  (proposed by Sergey Taranenko)
+* several messages fixes (thank to Colin Marquardt)
+* running of post processing command after successful download of document
+  see option -post_cmd (proposed by Sergey Taranenko)
+* counting of fatal errors
+* fixed core dump in lfname structure cleanup when using fnmatch patterns
+  (thank to Kevin Gamiels report)
+* fixed bug which causes some broken links
+* fixed bug which causes bug when compiling Xt version of interface with 
+  support for loading files from Netscape browser cache
+  (thank to Niraj Sachdeva)
+* portability to HPUX solved (thank to Niraj Sachdeva)
+* fixed bugs and oddities in sync mode code (thank to Szabolcs Szakacsits)
+* fixed typo which causes problems using mode linkupdate from command line
+  (thank to Szabolcs Szakacsits)
+* fixed bug when using -store_info, pavuk leaves opened some of lock 
+  files, this causes Too many open files error (thank to Dawit Yimam)
+* significant speedup of sync mode
+* some internationalization fixes (thank to Javier Comeron)
+* several bug fixes in local name assigning code (when using -fnrules option)
+* fixed posible problems with timeout detection in GTK+ interface
+* now is posible to specify template of scheduling command 
+  (look for -sched_cmd option)
+* fixed bad behavior with "" urls inside HTML documents
+* fixed bug in URL parsing when contains both anchor and searchstr
+
+version 0.9pl22 (Nov ?? 1999)
+------------
+* fixed portability to systems which doesn't declare h_errno
+* got rid of all dirty strtok()s (I hope without mistakes)
+* removed all configuration environment values !!!!!!!!
+* fixed problems with loading files from NS cache on big endian machines
+* more properties for URL displayed in URL tree preview (GTK only)
+* added UI configuration for -stime option
+* fixed some bugs in base URL of document handling in HTML parser (thank to
+  Laurent Salles report)
+* fixed functionality of -min_size option (thank to Frank Baumgart)
+* fixed segfault when running user condition script (thank to Frank Baumgart)
+* added support for BSD regular expressions
+* added support for GNU regular expressions
+* started debug levels imlementation
+* selection of SSL client methods version implemented, option -ssl_version
+  (thank to Ians idea)
+* handling of &amp; and &#38; inside URLs (thank to Matts note)
+* fixed typo in configure script which casues misconfiguration in some cases
+* fixed handling of URLs with \n \r \t characters
+* repared handling of nonblocking IOs (thak to Szabolcs Szakacsits solution)
+* fixed bugy behaviour of get_abs_file_path() function
+* optional unique SSL ID with all SSL sesions (thank to Jeff Roberson howto)
+* added handling of starting urls in form server:[port]/...
+* added new Append URL dialog for appending URLs within downloading progress
+  (GTK only)
+* added proxy authorization with CONNECT request
+* fixed handling of \ and " characters inside quoted strings
+* added new option -httpad to be able to add some user defined HTTP headers
+  in HTTP requests
+* implemented statistical reports for downloading progress (can be saved to 
+  file - -statfile option, or previewed inside GTK UI window)
+* fixed limits checking (prefix,postfix,patterns) for HTTP URLs with search 
+  string part
+* changed debug mode controling with -debug_level option
+* new WIN32 specific option -ewait, to enable user to control if console
+  will disapear after pavuk will finished (proposed by Jan Tomasek)
+* started writing NEWS document, to enable users briefly know new pavuk 
+  features in particular pavuk versions without reading huge ChangeLog file
+* new chance to save URL tree structure from URL tree preview dialog 
+  window (GTK+-1.2 only)
+* .pavuk_info directories are now omited, when scanning local document tree
+  in linkupdate,resumeregets and local tree based sync mode
+* fixed pavuks behavior of option -check_bg on systems where getpgrp() needs
+  PID parameter
+
+version 0.9pl23 (Dec 20 1999)
+---------------
+* huge internal rewrite, changed handling of some globals - big step to 
+  MT version, cleanup of internal algorithms
+* implemented new mode (ftpdir) for listing contents of FTP directories
+  (proposed by Niraj Sachdeva)
+* added new macro %m (domain name) to -fnrules option
+* changed handling of encoded documents - now are decoded only HTML and 
+  plain text documents all othere will be stored encoded
+* fixed corruption of cookies.txt file after user break
+* completely changed handling of refresh META tag - broken in several 
+  previous releases
+* fixed potability to FreeBSD (thank to Holdrich Kristian)
+* new options -aip_pattern & -dip_pattern for specifying allowed IP 
+  addreses with regular patterns (proposed by Samuel Laker)
+* fixed bug in option -debug_level setting to "all" (thank to Andreas Mohr)
+* fixed loging to nonanonymous FTP servers through HTTP gateway proxy
+  (thank to Andreas Mohr)
+* new option -site_level for limiting how many site levels to leave from 
+  starting site
+* TOS settings for FTP data and control connection
+* introduced new protocol FTPS for making SSL connection to FTP servers 
+  with SSL support
+* if you will set environment variable PAVUKRC_FILE, pavuk will read this 
+  file as user pavukrc file instead of ~/.pavukrc file (proposed by 
+  Andreas Mohr)
+* fixed SSL reading function, which should cause in some cases lost of data 
+  at end of file or hang in select()
+* fixed problems with makealldirs() on WIN32 platform
+* added additional informations (size,processing time) to structured log
+  file (proposed by Dave Becket)
+* fixed problems with restarting in GUI interfaces
+* fixed preblem with URLs with slashes at end of query string (thank to 
+  Dave Becket report)
+* fixed problem with naming of local copies of FTP directories when 
+  downloading trough HTTP gateway
+* added new HTML tag for URL processing CSOBJ/HT
+* added new URL schemes for processing (tel,fax,modem,sms - from IETF drafts)
+* automatic handling of unsafe characters inside filenames (now handled only
+  Windows - \:*?"<>|) (proposed by Jan Tomasek)
+* configure script now detects if msgfmt supports --statistics option
+  (proposed by Dave Becket)
+* fixed hangup after blocking locking inside document read loop
+* implemented much cleaner blocking locking
+* fixed several odd behaviours when generating localname of document
+* implemented simple adjusting of too long filenames
+* partialy implemented HTTP/1.1 protocol with persistent connections !!!
+* new options -use_http11/-nouse_http11 for enablibg or disabling HTTP/1.1
+  protocol support
+* many many bug fixes
+* extended URL based sync mode. Now you can specify subdirectory which 
+  contains mirrored documents (with option -subdir) and that directory is 
+  scanned befor for documents, and after URL based synchronization is finished
+  pavuk starts checking URLs from local tree, which were not checked in URL
+  based synchronization.
+* get rid of most of unsafe static buffers
+* support for deflate encoding method via zlib
+* handling of 1xx HTTP response codes
+* bit changed behaviour with -site_level & -leave_level when processing
+  moved URLs
+* more automatic scan for OpenSSL || SSLeay libraries location
+* fixed bug , which causes segfault, if BASE URL is unknown or unsupported
+  (thank to Jeff Robersons report)
+* applyed patch from Jeff Roberson, which enables to use specified local
+  netwok interface for communication (usefull for multihomed hosts)
+  uses new option -local_ip
+* thanks to Colin Marquardt improved quality of manual
+* fixed linkupdate to work properly again (thank to Jaydeep Desais report)
+
+version 0.9pl24 (Feb 09 2000)
+---------------
+* implemented parsing of VMS style FTP directory listings
+* solved problems with FTP control connections, when pavuk breaks data 
+  transfer before finished
+* rewriten from scratch URL parser - now is cleaner, easyer extensible, 
+  faster and with lower memory footprint, and I hope conformable with
+  RFC 2396
+* new routine for comparing URLs based on url structure instead of URL 
+  string - means faster and with lower memory footprint
+* bit better internal handling of query strings
+* fixed segfault with decoding nonHTML documents
+* fixed handling of FTP list processing on FTP servers which doesn't include
+  "total xxx" line on top of directory listing
+* added support for parsing old style BSD directories listings
+* removed some random memory leaks introduced in previous release
+* fixed closeups of several unhandled HTTP/1.1 persistant connections with
+  remaining unrequired data
+* fixed again handling of moved URLs with -leave_level option
+* fixed ftpdir mode behaviour with some of HTTP gateways for FTP (for example
+  Squid) (thanks to Niraj Sachdeva)
+* implemented HTTP POST requests (see option -request)
+* implemented parsing of DOS/Windows style FTP directory listings
+* fixed handling of oddly detected persistant connections when using HTTP/1.0
+  and talking to HTTP/1.1 server which doesn't respond with Connection: close
+  header
+* fixed "Zero size" posible error reporting only for cases when we don't know
+  exact size or size is non zero
+* implemented dialog for editing HTML forms (GTK+ only)
+* new option -hash_size for performance tuning when mirroring large amount
+  of URLs
+* now supports FTP URLs as defined in RFC (ftp://serv.dom/path for relative
+  path to login directory and ftp://serv.dom//path for absolute path from FTP
+  server root directory)
+* changed behavior when doing FTP directory listings (CWD path + NLST/LIST 
+  changed to NLST/LIST /path)
+* rejection of UNIX special files (sockets, devices, fifos) in FTP directory
+  listings
+* fixed segfault on empty FTP directory listings
+* fixed segfault in document info storing code
+* rewriten document locking routine, because of posible race conditions and
+  errors in previous implementation
+* enhancement for -fnrules option, which allows much higher flexibility in
+  local name asignment to document (undocumented and not well tested yet)
+* fixed unfunctional -store_name option
+* fixed h_errno test in configure script, to work on SYSV systems (thak to
+  Marc Chantome)
+* implemented droping of URLs to URL Append dialog
+* implemented option to be able to follow downloading process inside 
+  URL tree preview window (GTK+-1.2 only) (proposed by Francois RicharC)
+* fixed odd behavior of FTP URL parser on WIN32 platform with FTP URLs in
+  form ftp://ftp.server.dom//absolute/path/...
+* fixed bug in new FTP directory procesing routines when listing directories
+  on MS FTP servers (thank to LE FAUCHEUR Frederic)
+* fixed bug in routine which is computing difference between GMT and local 
+  time (on some platforms localtime() and gmtime() returns same staticaly
+  allocated buffer for returning result)
+* updated Properties view in URL Tree preview to show POST request infos
+* support for inserting POST request inside URL tree from Form editor
+  dialog
+* repared URL parser to support URLs in form http://www.server.dom?xxxx
+  http://www.server.dom#xxx
+* fixed posible segfault in FTP code, which may occure, when pavuk is not 
+  able to establish data connection
+* fixed bugs in scenario saving code (thank to Peter Erbak, Bill Miller)
+* fixed cookies handling with moved documents
+
+version 0.9pl25 (Mar ?? 1999)
+---------------
+* get rid of all Xt GUI code
+* fixed bug in code which handles filesystem unsafe characters in Win32
+* fixed bug in sync mode which stops crawling when starting document is
+  up to date (thank to Dave Becket)
+* fixed minor bug in hadling of ; character inside URL
+* implemnted support for multiple HTTP proxy servers with inteligent round
+  robin scheduling
+* fixed segfault when using ftp/gopher HTTP gateway and cookies are enabled
+  for sending
+* fixed bug in url_compare() function which have bad results when comparing
+  URLs with different scheme (thank to Niraj Sachdeva)
+* fixed uninitialized HOME environment variable checking (thank to Andreas
+  Mohr)
+* added check for db_185.h to configure script when looking for Berkeley DB1
+  header files (thank to Roar Bergheim)
+* fixed checking of start/end time limits in sync mode (thank to Peter Thalman)
+* fixed segfault with moved robots.txt files (thank to Bill Miller)
+* fixed bug in function filename_to_url() which causes odd behavior mostly
+  in sync mode (thank to Peter Thalman)
+* fixed HTTP proxy Digest authorization code
+* added posibility to use authinfo file to store proxy authorization
+  informations
+* implemented optional multithreading support (now works only console version,
+  GTK version need some further changes and testing)
+* changed URL encoding/decoding handling, now user must enter regulary
+  encoded URLs
+* several simplification changes in Makefile.am files (thank to aldomel)
+* fixes to configure.in script Makefile.in files to get working 
+  'make distcheck' (thanks to aldomel)
+* simplified recomputation of GMT time from local time on systems with
+  tm_gmtoff inside struct tm (thank to Robert Brennecke)
+* corrected pavuk behaviour when -request contains some unpredicable request
+  specifications (thank to aldomel)
+* fixed compilation with --disable-tree
+* fixed SSL read/write errors handling (thank to Jeff Roberson)
+* splited gui code to more modules
+* fixed segfault when trying to preview document properties in URL tree 
+  preview dialog
+* fixed scheduling from UI
+* bit changed statusbar in UI
+* zilion miscelanous changes to get working GUI with multithreading
+* workaround HP-UX NAME_MAX/PATH_MAX settings to disable automatic adjusting
+  of long filenames to 14/255 limits (thank to Niraj Sachdeva)
+* get working again -store_name option (thank to Orestes Sanchez Benavente
+  and Jan Tomasek)
+* fixed posible problems with reading and writing via SSL on nonblocking
+  sockets.
+* fixed functionality of -local_ip option when you change it in GUI
+* fixed rewriting of URLs in HTML form action tags
+* optimalized header files dependencies - faster compilation
+* removed minor memory leaks in HTML forms processing code
+* corrected parsing of FTP response to PASV command to be able to cooperate
+  with publicfile FTP server (thank to Felix von Leitner)
+* fixed implementation of html_tag_co_elem() function
+* implemented chance to fill noninteractively HTML forms when matching form
+  is found (many thanks to Jeff Robersons idea and first implementation)
+* implemented dumping of documents to any supplied file descriptor (thank to
+  Honza Tomasek)
+* corrected pavuk process exit value computation (redirected documents are
+  not counted as failed yet) (thank to Thomas Coppock)
+* fixed bug in function url_to_absolute_url() which causes bad behaviour with 
+  URLs ending with -index_name. (thank to Antoine Martin)
+* --------- released testing version 0.9pl25c
+* implemented code for saving session data to ~/.pavuk_keys in GTK interface
+* corrected handling of multiline lists in HTML form filling dialog
+* corrected several bugs in HTML forms parsing code
+* fixed hangup on exit when using language switching from GUI menu
+* fixed posible segfault when HTTP server respond with inproper response
+* --------- released testing version 0.9pl25d
+* added several sample identity strings to combobox in GUI
+* added files for integration to Gnome menu
+* fixed bug with -fnrules F ... caused by FNM_PATHNAME flag passed to 
+  fnmatch() with some libc implementations (thank to Nicolay Mausz)
+* corrected bad behaviour of function get_abs_file_path_oss() which expands
+  wrong way relative paths to absolute paths
+* changed behaviour of 'Load scenario' which now resets configuration before
+  loading scenario and added new function 'Add scenario' which behaves same
+  as 'Load scenario' before
+* fixed bug introduced in 0.9pl25a which damages url structure and cause 
+  cycling of download and hangups or segfaults on exit
+* adjusted NS cache directory access routines to be safe when accessing from
+  multiple threads
+* ---------- released testing version 0.9p25e
+* fixed segfault caused by wrong call to tl_str_concat() in doc_download()
+* fixed GUI compilation without NLS support (thanks to Gabor Z. Papp)
+* fixed Toggle toolbar functionality
+* minor corrections in Makefiles (thanks to Petr Cech)
+* fixed pavuk.spec file to properly build RPMs
+* updated Slovak,Cech,Spanish massage catalogs (thanks to all authors)
+
+version 0.9pl26 (Aug 31 2000)
+---------------
+* added new Italian message catalog by Antonio Fragola
+* updated German message catalog (thanks to Colin Marquardt)
+* fixed sending of HTTP Content-type: request header with POST requests
+* implemented optional deleting of remote FTP documents after successfull
+  transfer (idea by Gabor Z. Papp)
+* you can now optionaly disable the numbering of overlaying documents to 
+  achive unique name using option -nounigue_name (idea by Nicolay Mausz)
+* added patch from Nicolay Mausz which implemnts new rmpar function in
+  -fnrules option syntax
+* fixed bug in SSL reading code which raises error when session was regulary
+  closed on other side (thanks to Martijn van Oosterhout patch)
+* fixed cooperation with SSL FTP servers which indicates succesful swith to
+  SSL mode with 234 response code (thanks to Martijn van Oosterhout patch)
+* fixed opening of FTP data connections. Old code should make deadlocks in
+  communication with some proxy servers. (thanks to Martijn van Oosterhout)
+* fixed typo in config.h which refuses compilation on HP-UX (thanks to Niraj
+  Sachdeva)
+* ---------- released testing version 0.9p26a
+* better checking for pthreads support in configure script
+* added option --with-gtk-config to configure script, to allow easier
+  configuration on system with such weird renaming of libs/scripts as
+  on FreeBSD
+* added handling of HTTP server response fields Content-Location:,
+  Content-Base:, Base: for setting base URL of document (thanks to Robo
+  Dobozy)
+* warning Zero lenght ... will now not apear with HTTP documents which
+  doesn't contain Content-Lenght: response field
+* fixed total document size computation of partialy transfered documents
+  if server doesn't provide Content-Lenght: header but only Content-Range:
+* fixed broken robots.txt parser
+* support for extended robots.txt standart with new Allow: statement
+* -request option was extended to allow specify in request also destination
+  filename of document in local filesystem
+* -debug_level user show now also filename where document is stored
+* fixed bug in robots.c when host name field in robots structure was 
+  deallocated without discarding data when restarting
+* added MT locking of robots data; without locking should cause unpredicable
+  segfaults
+* now it is possible to enter empty values for form data in POST request 
+  specification dialog
+* form editor dialog now properly extracts also hidden fields
+* corrected handling of HTTP response code 303 with POST requests, now pavuk
+  correctly redirects to GET request as it should
+* ---------- released testing version 0.9p26b
+* added support for PCRE regular expression in -*rpattern options and in 
+  -fnrules option
+* -amime -dmime options now accepts also wildcard patterns
+* added TLSv1 support for HTTPS/FTPS communication
+* added new option in configure script --with-regex, which allow to select
+  preffered regular expression type (one of none/auto/posix/gnu/v8/bsd/pcre)
+* fixed compilation error in lfname.c when none of supported regular 
+  expressions types was configured
+* enabled substring substitution in -lfname option when using Bell V8 regular
+  expressions and regsub() function is available (cygwin b20 doesn't export it)
+* added new option -dump_urlsfd to enable outputing URLs from downloaded HTML
+  documents to selected file descriptor - usable for scripting
+* addjusted filenames handling in WIN32 version to support new style of mapping
+  win32 paths to POSIX paths in newer cygwin-1.x.y versions
+* corrected comparing of URLs in -formdata option (thanks to Jeff Roberson)
+* ---------- released testing version 0.9pl26c
+* fixed seg-fault on parsing supported URLs with missing scheme dependant
+  part of URL string (thanks to Marc Tooley).
+* fixed problem with sleep() implementations which use SIGALRM for wake up
+  in multithreaded version (thanks to Antoine Martin)
+* new option -dont_leave_site_enter_dir/-leave_site_enter_dir which allows to
+  limit leaving of directory which we entered first on the site
+* enabled option -store_name to work also in other modes than just singlepage
+* wrote small document wget-pavuk.HOWTO for wget users who are starting to 
+  use pavuk
+* updated manual page
+* -h option works now properly when -bg option is also used (thanks to
+  Artem Frolov)
+* attempt for workaround signal handling inconsistency in multithreading
+  environment (thanks to Antoine Martin)
+* define DB_LIBRARY_COMPATIBILITY_API in nscache.c before including db_185.h
+  to force reading 1.8x Berkeley DB format with 3.xx library
+* updated Slovak message catalog
+* ---------- released testing version 0.9pl26d
+* fixed problems with frozed threads on Solaris when starting download (thanks
+  to Antoine Martin)
+* added call to FreeConsole when running pavuk with -bg option on Win32 
+  systems (thanks to Andreas Mohr)
+* added some gdk_flush() calls to status list modification code to force 
+  better updates
+* added new option -singlepage/-nosinglepage to overcome limits of -mode
+  singlepage (thanks to Joël Savignon)
+* now in sync mode is also checked size of documents downloaded over HTTP
+  (thanks to Raun Nohavitza)
+* added check for ssize_t type, without it wan't compile on Ultrix
+* ---------- released testing version 0.9pl26e
+* added support to using network paths on WIN32 with cygwin-1.1 =<
+* fixed broken -dont_leave_site_dir option
+* added commandline passwords hiding feature (thanks to Steven Haryanto)
+* fixed behaviour of -dont_leave_site_dir with moved site enter URLs
+* updated German and Spanish translations (thanks to Javier and Colin)
+
+version 0.9pl27 (Dec 13 2000)
+---------------
+* fixed infinite loop bug when both -store_name && -request options are used
+  (thak to Matthew)
+* add new menu to GUI for selecting starting URLs from opened documents inside
+  Netscape
+* fixed bug which causes to reload mostly all HTML documents in sync mode 
+  because of sizes comapring
+* fixed bug in parsing FnameRules: scenario field (thanks to Le Faucheur
+  Frederic)
+* fixed freeze on scenario loading from GUI in multithreaded version (thanks
+  to Le Faucheur Frederic)
+* query string from HTTP/HTTPS URLs are now not decoded when generating 
+  local names
+* new naming convention for local documents downloaded via POST request
+  name#query (thanks to mda)
+* fixed bug which causes hangs or segfaults when using -formdata option,
+  because of doublefreeing memory chunk (thanks to Matthew)
+* added two new patterns (<script , <style) to routine for guessing HTML files
+* fixed dumping of wrong ENCODING: fields in -formdata, -request infos to 
+  oscenario file (thanks to Matthew)
+* ---------- released testing version 0.9pl27a
+* now works -disable_html_tag all or -enable_html_tag all to disable/enable 
+  all HTML tags
+* fixed fast spawning loop in multithreaded version caused by bad use of
+  pthread_cond_timedwait() (thanks to Bjorn R. Bjornsson)
+* fixed progress display bug showing size in bytes instead of kilobytes
+  (thanks to Andreas Mohr)
+* fixed bug in FTP code when pavuk opens twice data connection for directory
+  listings (thanks to Raun Nohavitza)
+* fixed stupid bug when pavuk uses short int type instead of unsigned short
+  for storing port numbers (thanks to Raun Nohavitza)
+* fixed checking of HTML document types with added encoding after MIME type
+  (thanks to Brunie-Taton Alain)
+* repaired broken site level computing on sites with moved starting documents
+  in -site_level option
+* implemented functions for launching commands on WIN32 with system()-like
+  function when cygwin not installed (thanks to Thierry Régnier)
+* added support for loading files from MSIE cache on Win32, and added options
+  -ie_cache/-noie_cache to enable/disable this feature
+* backported improvements to gaccel code from chbg. Now it is much more
+  reliable.
+* added new macro %q to -fnrules option, which will be replaced with urlencoded
+  query string from POS/GET request specification
+* fixed big memory leak in old style fnrules evaluation function caused by bad
+  block nesting
+* added two new functions (sif, !, &, |) to -fnrules option. ! is logical NOT
+  for numeric values. & is logical AND for num. values, | is logical OR for
+  numeric values. sif is decision between two strings by condition.
+  (sif (cond) (val_if_cond_true) (val_if_cond_false)) is eqivalent for C
+  expression (cond) ? (val_if_cond_true) : (val_if_cond_false)
+* added checks to reject compilation of NS cache reading code with BerkeleyDB
+  2.0 and above because of incompatible database format. NScache uses 1.8x hash.
+* corected support for reading NS cache on big endian platforms based on patch
+  for my NScache program from ...
+* made HTTP/1.1 default (still possible to switch to HTTP/1.0 with option
+  -nouse_http11)
+* changed handling of parent urls in URL structure. Now is used linked list
+  instead of nul terminated array. It is much safer for handling in MT.
+* fixed segfault on redirection of robots.txt when HTTP/1.1 enabled cased by
+  bad handling of persistant connections
+* fixed bug in robots.txt file parsing code which causes infinite loops with
+  some robots.txt files
+* fixed memory leaks on robots.txt redirections
+* fixed segfault when using -mode dontstore in multithreaded mode, caused by
+  allocating shorter buffer for storing temporary unique name :-(
+* fix to be able to compile with gtk-1.3 (aka gtk-2.0)
+* added support for HTTP redirection on 307 response code
+* added description messages for all HTTP/1.1 response codes which may occure
+  and cause unknow errors just with numeric description
+* fixed bug in processing of HTTP/1.1 chunked transfer encoding types
+  after moved URLs because of oddly initialized trailer reading flags :-(
+* it is possible now enter on commandline otions unsupported in current
+  compile time configuration, pavuk now only displays warning instead of
+  raising error and exiting (thanks to Bjorn R. Bjornsson)
+* fixed compilation when threads are enabled support for regular exprssions
+  is disabled or not present
+* added locking of robots.txt info structure to prevent downloading it 
+  concurrently with multiple threads when compiled with MT support
+* ---------- released testing version 0.9pl27b
+* fixed compilation bug when compiling without SSL support (thanks to 
+  Le Faucheur Frederic)
+* fixed bug made in previous testing release which causes segfault always
+  when opening Limits config dialog because of use of unitialized pointer
+* added support for long/short commandline options with GNU getopt like syntax
+  and compatibility with old format of pavuk options (no short options defined
+  yet)
+* changed handling of scenarios from commandline. Scenario is now loaded at time
+  when is --scenario option processed by commandline parser instead of prior to
+  commandline parsing as before.
+* now it is not mandatory to specify --scndir option before loading scenario.
+* ---------- released testing version 0.9pl27c
+* more reliable implementation of asynchronous DNS client/server for GUI
+  version. Now guarantees atomicity of reads/writes, so no possible of
+  protocol inconsistence after user break in middle of communication.
+* internal restructuralization of code (hope not, but may lead to problems)
+* fixed bug in preserving of presistant connections on robot.txt redirects
+* fixed unnecessary closures of persistant connections in sync mode after
+  304 response code
+* added new options -dump_after/-nodump_after for use with -dumpfd option.
+  this option control when will be document dumped to output (immediatly or
+  after download&processing)
+* added new options -dump_response/-nodump_response for dumping also HTTP
+  responses to -dumpfd
+* fixed bug in parsing CSS inside HTML tags
+* removed support for extracting destination URL from HTML after HTTP 
+  redirects. It must be broken server which doesn't send Location: header
+  after redirect ... not worth to add workarounds for this problem
+* rewrote from scratch the HTML parser (this means I'v got rid of the
+  oldest, worsest writen code in pavuk). It seemds it should be bit faster
+  and is much better extensible an maintainable.
+* removed few small memory leaks
+* added simple support for javascript patterns in DOM event attributes of tags,
+  based on regular expressions
+* ---------- released testing version 0.9pl27d
+* fixed several memory leaks
+* fixed bug in base64 encoding routine which was failing with non ASCII
+  characters above 127
+* changed way how is handled Digest authorization
+* implemented NTLM authorization
+* implemented NTLM proxy authorization
+* now -auth_scheme & -http_proxy_auth options accept also textual parameters
+  "user" "Basic" "Digest" "NTLM" besides numeric 1 2 3 4
+* total restructuralization and cleanup of HTTP handling code. I was carefull,
+  but it may lead to problems.
+* now works NTLM and Digest authorization also with CONNECT requests
+* minor changes in common settings dialog
+* fixed bug in processing js patterns caused by bad tag attributes
+* added new option -js_patterns to allow parsing of custom javascript patterns
+  inside HTML documents
+* added support for parsing also script body and look for patterns line by line
+  (works also for files referenced by <SCRIPT SRC=...>
+* implemented handling of proxy redirects (305 HTTP response)
+* fixed compilation bug caused by undeclared _mt_dumpfd_lock_ mutex (thanks
+  to Le Faucheur Frederic)
+* fixed bug in handling locales in national environment (thanks to Milan
+  Kerslager)
+* added Czech translation to Gnome desktop entry for pavuk (thanks to Milan
+  Kerslager)
+* ---------- released testing version 0.9pl27e
+* implemented detection of broken HTTP/1.0 proxies which don't handle properly
+  downgrading to HTTP/1.0 when communicating with server which use newer HTTP
+  protocol version (this causes bug when trying to use persistent connections)
+* more paranoia checkings of reading/writing sockets in HTTP code
+* automatic request repeat after premature closure of persistent HTTP 
+  connection
+* added support for robots excluding with <META NAME="robots" content="...">
+  (thanks to Markus Mayer)
+* fixed compilation bug with OpenSSL-0.9.6 because of new MD4 implementation
+  int this OpenSSL version (thanks to Le Faucheur Frederic)
+* fixed bug in new html parsing engine which fails to parse properly rest of 
+  document after <script>...</script>
+* added support for HTTP/1.0 Keep-Alive proxy connections
+* ---------- released testing version 0.9pl27f
+* added install script for NSIS win32 installer
+* fixed compilation bugs when building without GUI
+* portability fixes to QNX RtP
+* updated auth info edit dialog for NTLM support
+* fixed possible MT race condition in gopher directory persing routine
+* fixed confusion of ftp code with -remove_old & -ftplist when in sync mode
+  files disapeared from server were processed like directories which failed 
+  (thanks to galanga)
+* ported to BeOS 5 PE (works fine except file locking)
+* added support for javascrip parsing in javascript:... URLs inside any
+  supported HTML attribute
+* fixed ftp directory listing when using active ftp data connections
+* added option -follow_cmd which allows you to execute some script which
+  can decide if pavuk should follow links from current document (thanks to
+  Georg Rehm and hashao)
+* adjusted establishment of active ftp data connections to be able to handle
+  properly states, when server is unable or don't want to connect before 
+  sending response
+* leading/trailing spaces are removed from attributes before processing it 
+  as URL to support broken sites ...
+* ---------- released testing version 0.9pl27g
+* fixed segfault when Location: contains relative URL after redirect
+* fixed broken timestamping of HTML files in sync mode (thanks to Le Faucheur
+  Frederic)
+* fixed segfault on broken HTML tags with leading spaces and unclosed quotes
+* if -store_info is active also rejected URLs contain stored MIME header 
+  (thanks to Georg Rehm)
+* don't apply limiting conditions (minsize/maxsize/mimet) on robots.txt
+  documents
+* fixed segfault when -norelocate option is activated (thanks to Markus Mayer)
+* added O_BINARY to several open calls to prevent possible problems on Win32
+* added new options -retrieve_symlink/-noretrieve_symlink to enable
+  downloading of symbolic links from FTP server as regular files (thanks to 
+  Petr Cech & Andras Korn)
+* fixed segfault in robots info cleanup code
+* implemented new -js_transform option to allow bit more powerfull support
+  for js patterns. No rewriting supported now (thanks to Mark D. Anderson)
+* fixed problems when compiling with PCRE support
+* ---------- released testing version 0.9pl27h
+* fixed segfault on broken meta refresh tag (thanks to Georg Rehm)
+* fixed bug in removing of trailing spaces from URLs (thanks to Le Faucheur
+  Frederic)
+* added support for access authorization to FTP proxy server (thanks to Beno 
+  Kardel)
+* added GUI config for -js_transform option
+* fixed bug in processing javascript bodies enclosed between <script></script>,
+  which causes breakin of ending </script> tag
+* -js_pattern patterns without substrings are now omited
+* fixed broken behaviour of pavuk when while regeting file receives empty
+  response, it will process it as proper HTTP/0.9 response and stops regeting
+  file (thanks to Christian Axbrink)
+* simplified that horrible dialogs for adding preffered languages,charsets and
+  mime types
+* added new debug level "limits" for debuging limiting conditions
+* updated manual page
+* fixed deadlock on closing log file
+* ---------- released testing version 0.9pl27i
+* updated Czech message catalog (thanks to Petr Cech)
+* added initialization of GTK locales
+* added posibility to generate massage catalogs in UTF-8 encoding for
+  use with future versions of GTK+
+* fixed problems with switching languge multiple times in GUI window
+* updated documentation
+* updated German message catalog (thanks to Colin Marquardt)
+* fixed retrieving of URLs from selection and via DND to omit illegal CRLF
+  characters (thanks to Aleksander Adamowski)
+* adjusted win32 installer script to support installing message catalogs
+* added support for setting message catalog path on WIN32 to install directory
+* better handling of WIN32 paths in GUI
+* added window icon to WIN32 version
+
+version 0.9pl28 (Aug ?? 2001)
+---------------
+* added new option (-limit_inlines/-dont_limit_inlines) to disable checking
+  of limiting options for inline objects (thanks to Olivier Sirol)
+* fixed bug with special characters in filenames on FTP servers (thanks to
+  Joël GRONDIN), same for Gopher directories
+* FTP directory listings are now transfered in ASCII mode (thanks to Joël
+  GRONDIN)
+* removed MT race condition in calling inet_ntoa()
+* added new option -ftp_list_options to allow passing options to FTP LIST/NLST
+  commands
+* support for multiple WWW-Authenticate: and Proxy-Authenticate: in HTTP
+  response (thanks to Monika Nowotnik)
+* ported to AtheOS
+* fixed improperly handled rewriting of links in HTML documents pointing to
+  itself (thanks to Nicolay Mausz)
+* added new function (getval) to -fnrules option extened syntax rule for
+  getting values of query parameters of URL (thanks to Nicolay Mausz)
+* added initialization of OpenSSL PRNG randomizer to prevent message
+  "PRNG not seeded" on some platforms (thanks to Albert Chin)
+* ---------- released testing version 0.9pl28a
+* compilation fixes for nongcc compilers and bigendian architectures (thanks
+  to Albert Chin)
+* fixed segfault which occured always when used unknown long option
+* added forgoten gdk options to option table
+* fixed compilation without NTLM support enabled (thanks to Georg Rehm)
+* added option --disable-ntlm to configure script to be able to compile
+  pavuk without NTLM authorization support (thanks to Albert Chin)
+* fixed segfault which occurs when closing Common config dialog (thanks to
+  Georg Rehm)
+* fixed all notworking options using regular patters when pavuk is compiled
+  as multithreaded program (thanks to Mirko)
+* fixed NTLM implementation to be able to work properly on bigendian machines,
+  with non GCC compilers and on 64bit platforms
+* fixed leaking of file descriptors after "File redirect" when have before
+  persistent connection opened
+* improved URL queue handling and downloading threads management
+* changed internaly handling of filename assignemnts (not well tested yet,
+  can cause instability or deadlocks in MT)
+* fixed segfault when no URL is specified in -request or -formdata options
+  (thanks to Andrew Price)
+* fixed segfault when using -formdata option caused by freeing already freed
+  memory chunk (thanks to Andrew Price)
+* removed several minor memory leaks
+* added checking of BerkeleyDB implementation in libc in configure script
+* updated French message catalog (thanks to Le Faucheur Frederic and
+  Pascal Adoux)
+* added new option -fix_wuftpd, to fix broken wuftpd behaviour, when it
+  doesn't raise error when listing not exixting directory (thanks to
+  Joël GRONDIN)
+* ---------- released testing version 0.9pl28b
+* added new option -post_update/-nopost_update to force pavuks URL updating
+  engine to update in parents documents only URL currently downloaded
+* %o macro is supporte now also in simple -fnrules macros
+* added two new macros to -fnrules option - %M == mime type of document,
+  %E == standard extension of document MIME type. This two new macros work
+  properly only when used with -post_update options. (thanks to Majkel
+  Kretschmar)
+* in sync mode are now processed at first links from direcory scan (if -subdir
+  was specified) and than just other links.
+* added two new functions to -fnrules option rules (getext - gets extension
+  from path , seq - string equal)
+* fixed scheduling, broken by changes to support long options
+* fixed commandline parser, so it again support --long-opt=val style of
+  options
+* using mkstemp instead of tmpnam when available (thanks to Frédéric
+  L . W . Meunier)
+* type icons in tree view were replaces with smaller icons
+* new option -info_dir which allows you to store pavuk_info files outside
+  of document tree
+* fixed bug, when after reget of document also unnecesary documents are
+  loaded to memory, this can cause out of memory situations with big
+  documents (thanks to Jinghua Liu)
+* added new option -js_transform2 which have similar function as -js_transform
+  just it allows also rewriting of matched URLs. This is also very suitable to
+  add tags/attributes which are not supported by pavuk at default.
+* added forgoten handling of GUI configuration of -js_transform option
+* new faster growing hash function to allow bigger size hashes when downloading
+  huge amount of documents
+* ---------- released testing version 0.9pl28c
+* fixed resources leaking after reopening of netscape cache index
+* better handling of netscape chache index file after modifiying with some
+  other program
+* added support for loading files form mozilla browser chache directory
+* fixed broken saving of document infos for rejected files (thanks to Georg
+  Rehm)
+* changed a bit logic of lists when cleaning lists and deleting fields (thanks
+  to Marco Strack)
+* implemented new options -aport/-dport to allow/deny downloading of documents
+  from servers at specified ports (thanks to Georg Rehm)
+* fixed bug in handling patterns in GUI (thanks to Georg Rehm)
+* added to configure script checking of POSIX regex in libregex (as on recent
+  cygwin versions)
+* fixed compilation of MT version (thans to Jeremy P. Campbell)
+* ---------- released testing version 0.9pl28d
+* fixed problems with -preserve_time on win2000 (thanks to Andreas Schiling)
+* added new option -hack_add_index/-nohack_add_index usefull to more extensive
+  site mirroring when for each URL taken from HTML documents also directory
+  of the document is added to queue (thanks to stvictor)
+* better handling of unsafe characters in HTTP requests
+* updated manual page
+* after unexpected error while regeting, the .in_ file now will be always
+  preserved
+* ftp directories are not insterted into queue twice when doing directory
+  based synchronization (thanks to Joël GRONDIN)
+* no more problems with duplicating FTP directory indexes in sync mode
+  (thanks to Joël GRONDIN)
+* on error in scenario file pavuk now exits with error instead of continuing
+  (thanks to Joël GRONDIN)
+* when processing symlink from FTP server which points to directory, pavuk
+  will make link to directory not to directory index file (thanks to Joël
+  GRONDIN)
+* if HTTP server sends Content-Length: in response and option -check_size is
+  active, than pavuk now reads exactly this size without waiting on 
+  connection close even when not using persistent connections. This (thanks to 
+  Glen Stewart)
+* ---------- released testing version 0.9pl28e
+* fixed SSL library detection on SYSV systems with libsock (thanks to Eun-Mok)
+* added new option -default_prefix to simplify mirroring when -base_level
+  option is used
+* -max_time option now allows to specify subminute times
+* in GUI it is now possible to enter subminute communication timeout
+* added right button menu to log widget
+* ---------- released testing version 0.9pl28f
+* new function "ud" for -fnrules option used for decoding URL encoded
+  strings (thanks to Tony Gale)
+* applied patch from Albert Chin
+   -  new -egd_socket <path> command-line option
+   -  new --egd-socket=<path> autoconf option to provide a hard-coded
+      compile-time path for the EGD socket
+   -  use RAND_file_name to get the pathname of the EGD socket if RANDFILE
+      env variable is set instead of RAND_EGD_SOCKET_PATH env variable
+   -  new --with-zlib-includes=DIR and --with-zlib-libraries=DIR autoconf
+      options to specify location of zlib library
+  (many thanks to Albert Chin)
+* fixed bug in URL rewriting engine (thanks to Nicolay Mausz)
+* fixed broken -mode reminder (thanks to Andrea Tasso)
+* fixed bug in parsing ftp URLs with transfer type specified (thanks to
+  Richard Ems)
+* replaced old config.sub, config.guess files with new versions from
+  automake-2.50 and adapted for atheos (thanks to Petr Cech)
+* in -formdata and -request options it is now possible to specify requests
+  without any field entered (thanks to Dima Nemchenko)
+* fixed broken behaviour of -limit_inlines/-dont_limit_inlines option
+* fixed sync mode with mirrors with changed layout of local tree
+* rewriten limiting conditions checking engine
+* ---------- released testing version 0.9pl28g
+* fixed msgfmt detection in configure script (thanks to Richard Ems)
+* fixed compilationa without SSL support (thanks to Richard Ems)
+* updated Spanish Message catalog for 0.9pl27 (thanks to Francisco Javier
+  Comerón Gayoso)
+* rewriten limiting conditions checking engine again
+* implemented JavaScript bindings to enable users to use more flexible
+  conditions for excluding URLs from download (new option -js_script_file)
+* implemented new function "jsf" for -fnrules option which allows execution
+  of JavaScript functions by name
+* ---------- released testing version 0.9pl28h
+* implemented JavaScript console dialog
+* fixed segfault which occured always after unexpected HTTP response when
+  regeting files (thanks to ha shao)
+* implemented workaround for ftp servers which understand REST command but
+  always restart from scratch (greeting MS :-)) (thanks to Raun Nohavitza)
+* exported new atribute of url in Javascript bindings (html_tag) which holds
+  source HTML tag of particular URL when level == 0
+* new method "get_sub" of PavukFnrules class in JS bindings for getting
+  subpatterns from -fnrules patterns
+* more enhancements for JS bindings classes
+* fixed hangup in http_throw_message_body()
+* fixed possible race condition when using url_set_path()
+* added new option -ftp_login_handshake to enable customizing of FTP server
+  login procedure (thanks to Marko Daris)
+* added new option -rsleep for randomizing sleep time between transfers in
+  interval 0 -> -sleep (thanks to Christian Canella)
+* added new Japanese message catalog by SATO Satoru (thanks)
+* ---------- released testing version 0.9pl28i
+* rewrote detection of BerkeleyBD 1.8x in configure script
+* updated French message catalog (thanks to Frederic Le Faucher)
+* fixed compilation with Gtk+-1.0
+* applied IRIX portability patch from Albert Chin (thanks)
+* fixed compilation on newest version of cygwin (thanks to Pablo Blasco)
+
+version 0.9pl29 (??? ?? 2001)
+---------------
+* redesigned SSL implementation
+* FTPS now works perfectly over proxy
+* added support for Netscape NSS as replacement for OpenSSL SSL layer
+* fixed detection BerkeleyBD 1.8x header files
+* ---------- released testing version 0.9pl29a
+* FTP active mode now uses address from getsockname() instead from gethostname()
+* applied changes made between 0.9pl28i and 0.9pl28
+* added IPv6 networking support including FTP support by RFC1639 and RFC2428
+* added new options -dont_touch_url_pattern -dont_touch_url_rpattern to deny
+  download and rewrite of particular URLs in HTML tags
+* added clause into COPYING file about linking pavuk with OpenSSL
+* applied part of patch from Albert Chin (thanks!)
+  - fixed prototype declarations in htmlparser code
+  - added include arpa/inet.h in http_proxy.c
+  - fixed declarations in html_proxy.c, ftp.c to make some compilers happy
+  - rewrite of configure script to use config file instead of horrible looking
+    infinite compilation commandlines
+* updated win32 installer config file - pavuk.nsi
+* added README.win32 file to source distribution
+* added new Polish message catalog by Przemyslaw Sulek (thanks!)
+* ---------- released testing version 0.9pl29b
+* updated Czech message catalog by Petr Cech (thanks!)
+* updated Polish message catalog by Przemyslaw Sulek (thanks!)
+* added new Ukrainian message catalog by Dmytro O. Redchuk (thanks!)
+* fixed typing of variables in ntl_auth.c (thanks to Petr Cech)
+* added new options -dont_touch_tag_rpattern to deny download and rewrite
+  of URLs in particular HTML tags
+* droped GTK+-1.0.x GUI support (sorry)
+* fixed swithing of languages in GUI
+* much better handling of GoBg function ... now is GUI cleanup done mostly
+  immediatly without waiting for ending transfer
+* added two new properties to PavukUrl class in JS bindings to allow writing
+  of content based limiting options (both are defined when level == 0)
+  - .html_doc - full content of parent document of URL
+  - .html_doc_offset - offset of current HTML tag in parent document of URL
+* fixed compilation without IPv6 support
+* po/Makefile now uses generated list of catalogs instead of hand writen
+* LINGUAS support in configure script
+* fixed initialization NSS library after config changes
+* -unique_sslid option is now supported when using NSS as SSL library
+* new options -nss_domestic_policy/-nss_export_policy to allow selection
+  of SSL ciphers suites in NSS for U.S. Domestic or for Export ciphers
+* support for libmcrypt/libgcrypt DES in ntlm code to allow not to use
+  non GPL compatible libcrypto from OpenSSL
+* removed default javascript patterns
+* applied patch from Harald Forster (thanks!)
+  - fixed *printf formats for shorts and chars
+  - fixed handling of va_list in xvaprintf 
+  - fixed bugs in dllist* routines 
+* using safe vsnprintf instead of vsprintf when available
+* fixed IPv6 support to work with FreeBSD
+* replaced libc ctype functions with own functions to be not dependent on
+  proper locale
+* fixed get_1qstr() to not fail when last char is \ (back slash)
+* added GUI config for -dont_touch* options
+* added support for no EOL closed strings in gui_xprint()
+* hopefully fixed the reason for crashing randomly in multithreaded mode
+  caused by trashing URL structure temporary linked insided hash tables
+  (thanks to all who reported the MT crashes)
+* when loading preferences (-prefs) always reset config to prevent adding
+  cumulative options loaded form rc files (thanks to Harald Forster)
+* loading scenario and reseting config from GUI no more leaks memory
+* updated Japanese message catalog (thanks to Sato Satoru)
+* fixed bug with -max_time option causing total pavuk confusion (thanks to 
+  Gema Pizana)
+* the entered not applied config changes in common and limits dialogs will 
+  not disapper when trying to popup already visible dialogs (thanks to Harald
+  Forster)
+* ---------- released testing version 0.9pl29c
+* added new spec file for building multiple RPMS of pavuk with different
+  configurations (thanks to Rami El-Charif )
+* added support for new format of Mozilla cache
+* implemented new options -tag_pattern & -tag_rpattern to allow precise
+  matching of URLs inside HTML tags based on matching of HTML tag, HTML
+  attribute and URL patterns (thanks to Huaxin Wang)
+* updated man page
+* updated Slovak message catalog
+* switched to use newer autoconf(2.50) & automake(1.4-p4) versions
+* processing of HTML files downloaded over gopher is now supported
+* retry for document transfer is now performed always when it is
+  clever to do so. Increased default number of retries to 2.
+* fixed storing of local name for URL into scenario (thanks to Stephen Sweigart)
+* when you will specify LNAME: filed in -formdata specification, it
+  will be used like local name for the request
+* !!! changed exit values of pavuk process. Now 0 means everything was OK,
+  1 means configuration error and 2 means that there were some problems
+  with some documents
+* MacOSX portability fixes
+* fixed routine for adding starting URLs to allow entering file: URLs
+* fixed segfaulting in cookie expiration code (thanks to Mark D. Anderson)
+* fixed compilation with disabled regexp support
+* fixed segfaulting when using -asite/-dsite/-adomain/-ddomain options and
+  file: URL appears in the html documents (thanks to farquat)
+* ---------- released testing version 0.9pl29d
+* several random fixes
+* fixed NTLM nonce decoding
+* fixed getval and rmpar functions of fnrules option (thanx to Alexey Morozov)
+* fixed ssl_write functions which sometimes hangs printing error message forever
+  (thanks to Robert Dobozy)
+* fixed optional sending of WC/ASCII type of NTLM T3 messages
+* ---------- released testing version 0.9pl29e
+* Netli measurement code added
+* SSL rewrite
+* First Sourceforge release
+* ---------- released testing version 0.9pl29f (Jun 3 2003)
+* bug fixes
+* ---------- released testing version 0.9pl30a (Jul 12 2003)
+* fixed build system for translation files
+* added -referer/-noreferer option
+* updated german translations
+* updated autoconf stuff and rebuild all Makefiles using autoconf 2.57
+* included lots of updates and newer files floating around in the net
+* ---------- released testing version 0.9pl30b (2004-07-05)
+* fixed buffer overflow (BUG #984898)
+* added AREA tag onClick event in htmltags.c to make javascript work.
+* added a number of mimetype extensions to mimetype.h
+* fixed OPTION element default value for certain common case.
+* made POST the default form method in get_data_socket()
+* fixed buffer overflows in digest authentication code
+* fixed crash for META-Refresh URL's
+* introduced new source-code design to get rid of tabs:
+  indent --no-space-after-function-call-names
+         --no-space-after-parentheses
+         --dont-break-procedure-type
+         --no-space-after-for
+         --no-space-after-if
+         --no-space-after-while
+         --no-tabs
+         --brace-indent0
+         --dont-line-up-parentheses
+  or
+  indent -npcs -nprs -npsl -nsaf -nsai -nsaw -nut -bli0 -nlp
+  Sources will be modified step by step. Care is necessary, as indent fails
+  on the MT-macros! A new target reindent in source reindents the whole sources
+  directory.
+* migrated large parts of code to ANSI-C, fixed lots of warning messages
+* added --disabled-gtk2 option to autoconfig and GTK_FACE define now holds the
+  GTK version number, some fixes are necessary for GTK2
+* security fixes preventing possible buffer overflows
+* cleanup of build system
+* fixed wrong name building (BUG #1012746)
+* ---------- released version 0.9.31 (2004-11-08)
+* security fixes preventing possible buffer overflows
+* cleanup build (language installation works again)
+* added more const statements allover the source
+* fixed HTML entity decoding error (thanks Michal Toma for the report)
+* compiles with GTK2, but still brings run-time warnings (BUG #1068224)
+* fixed handling of local anchors (<A HREF="#link">)
+* fixed handling of path seperators in search strings (BUG #1064453)
+* read support for KDE2 cookie file (~/.kde/share/apps/kcookiejar/cookies)
+* Added --enable-utf-8 option to configure, which produces all locale files
+  in UTF-8 encoding.
+* ---------- released version 0.9.32 (2005-03-17)
+* slovak locale updated
+* dont_leave_site condition no longer differentiates between protocols (HTTP,
+  HTTPS, ...)
+* fixed bug in case there are quoting characters inside a quoted string
+* fixed strange URL's in the form <a href="?...."> to use the parent document
+  instead of no document
+* security patches
+* fixed .pavukrc error (BUG #1247202)
+* ---------- released version 0.9.33 (2005-09-27)
+* fixed 64bit problems (BUG #1226863)
+* updated German locale, fixes done by Debian developers (Hey, please inform
+  us about errors. Scanning the net and all distributions for possible fixes
+  is not very helpful.)
+* ---------- released version 0.9.34 (2006-01-09)
+* security fixes
+* some minor bug fixes
+* reworked build system a lot, fixed RPM spec file
+* now builds fine using most of the possibilities pavuk provides
+* RPM builts on openSUSE build service for SUSE since version 9.3, Fedora
+  since version 4 and Mandriva since version 2006
+* RPM packages can be found here:
+  http://software.opensuse.org/download/home:/dstoecker/
+* ---------- released version 0.9.35 (2007-02-21)

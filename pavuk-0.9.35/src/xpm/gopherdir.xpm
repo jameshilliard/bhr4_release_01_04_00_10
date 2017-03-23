@@ -1,0 +1,25 @@
+/* XPM */
+static char *gopherdir_xpm[] = {
+"14 14 5 1",
+/* colors */
+". c none",
+"# c #727272",
+"a c #80b0b0",
+"b c #e0e0e0",
+"c c #0a0a0a",
+/* pixels */
+"..............",
+"..............",
+"...####.......",
+"..#aaaa#......",
+"##aaaaaa#####.",
+"##bbbbbbbbbb#c",
+"##baaaaaaaaa#c",
+"##baaaaaaaaa#c",
+"##baaaaaaaaa#c",
+"##baaaaaaaaa#c",
+"##baaaaaaaaa#c",
+"##baaaaaaaaa#c",
+"#############c",
+"..cccccccccccc"};
+
